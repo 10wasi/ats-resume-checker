@@ -57,9 +57,6 @@ export const metadata: Metadata = {
     description:
       "Free AI resume analyzer and job resume checker — instant ATS-friendly feedback.",
   },
-  verification: {
-    google: "Fzn210VwpRc6YzJJrIe3FN8Zn239C9hf6s4mbcZ89QM",
-  },
 };
 
 export default function RootLayout({
@@ -73,6 +70,12 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${inter.variable} ${poppins.variable} font-sans`}
     >
+      <head>
+        <meta
+          name="google-site-verification"
+          content="Fzn210VwpRc6YzJJrIe3FN8Zn239C9hf6s4mbcZ89QM"
+        />
+      </head>
       <body
         className="min-h-screen bg-[#f8f9fb] text-slate-900 antialiased"
         suppressHydrationWarning
