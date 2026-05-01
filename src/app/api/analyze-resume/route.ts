@@ -18,6 +18,12 @@ export const maxDuration = 120;
 const MAX_RESUME_CHARS = 24_000;
 const MAX_JD_CHARS = 12_000;
 
+function hasResumeLlmApiKey(): boolean {
+  const g = process.env.GROQ_API_KEY?.trim();
+  const o = process.env.OPENAI_API_KEY?.trim();
+  return Boolean(g || o);
+}
+
 type Body = {
   text?: string;
   jobDescription?: string;
@@ -64,7 +70,10 @@ export async function POST(req: NextRequest) {
   }
 
   const hasJd = Boolean(jobDescription?.length);
-  const outcome = await analyzeResumeWithOpenAI(text, jobDescription);
+  const llmConfigured = hasResumeLlmApiKey();
+  const outcome = llmConfigured
+    ? await analyzeResumeWithOpenAI(text, jobDescription)
+    : ({ ok: false as const, error: "llm_not_configured" });
 
   if (outcome.ok) {
     const shaped = applyReportTier(outcome.data);
@@ -80,10 +89,15 @@ export async function POST(req: NextRequest) {
     });
   }
 
-  console.warn(
-    "[analyze-resume] Falling back to offline qualitative + rule score:",
-    outcome.error?.slice(0, 200)
-  );
+  if (process.env.NODE_ENV !== "production") {
+    const reason = llmConfigured
+      ? outcome.error?.slice(0, 200) ?? "(unknown)"
+      : "missing GROQ_API_KEY and OPENAI_API_KEY";
+    console.warn(
+      "[analyze-resume] LLM path skipped or failed; using rules + offline qualitative:",
+      reason
+    );
+  }
 
   const signals = extractResumeSignals(
     text,

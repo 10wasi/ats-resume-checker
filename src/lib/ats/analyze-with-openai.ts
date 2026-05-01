@@ -84,8 +84,21 @@ export async function analyzeResumeWithOpenAI(
     }
     content = raw;
   } catch (e) {
-    console.error("Resume analyze LLM error:", e);
-    let msg = "Request could not be completed.";
+    if (process.env.NODE_ENV !== "production") {
+      console.error("Resume analyze LLM error:", e);
+    } else {
+      const brief =
+        e instanceof Error
+          ? e.message.slice(0, 160)
+          : typeof e === "object" &&
+              e !== null &&
+              "status" in e &&
+              typeof (e as { status: unknown }).status === "number"
+            ? `status ${(e as { status: number }).status}`
+            : "unknown";
+      console.error("[resume-llm]", brief);
+    }
+    let msg = "Upstream LLM request failed.";
     if (e && typeof e === "object" && "status" in e) {
       const st = (e as { status?: number }).status;
       if (st === 429) {
@@ -93,8 +106,6 @@ export async function analyzeResumeWithOpenAI(
       } else if (st === 401) {
         msg = "API authentication failed.";
       }
-    } else if (e instanceof Error) {
-      msg = e.message;
     }
     return { ok: false, error: msg, status: 502 };
   }

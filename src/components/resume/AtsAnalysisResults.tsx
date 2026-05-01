@@ -340,14 +340,17 @@ export function AtsAnalysisResults({
 
   return (
     <div className="mx-auto w-full max-w-[1320px] space-y-8 px-1 pb-12 sm:space-y-10 sm:px-0">
-      {demoMode ? (
+      {process.env.NODE_ENV === "development" && demoMode ? (
         <div
           className="rounded-2xl border border-amber-200/90 bg-amber-50/95 px-4 py-3 text-sm text-amber-950 shadow-soft"
           role="status"
         >
-          <span className="font-semibold">Deterministic mode.</span> Live model
-          unavailable — scores use the rules engine and offline qualitative
-          signals.
+          <span className="font-semibold">Dev only.</span> AI narrative path
+          did not run (missing API keys or LLM error). Scores still use the same
+          deterministic rules engine and offline qualitative merge — set{" "}
+          <code className="rounded bg-amber-100/80 px-1">GROQ_API_KEY</code> or{" "}
+          <code className="rounded bg-amber-100/80 px-1">OPENAI_API_KEY</code>{" "}
+          on the server for live model output.
         </div>
       ) : null}
 
