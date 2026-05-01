@@ -5,13 +5,13 @@ export function WebSiteJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "ResumeIQ",
+    name: "ATS Resume Checker",
     description:
-      "Free resume checker, ATS score tools, and job-search guides from ResumeIQ.",
+      "Check ATS score of your resume and improve job chances instantly. Free CV score tool and guides.",
     url: base,
     publisher: {
       "@type": "Organization",
-      name: "ResumeIQ",
+      name: "ATS Resume Checker",
       url: base,
     },
   };

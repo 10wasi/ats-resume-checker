@@ -26,14 +26,14 @@ export function HeroSection() {
             Free AI resume checker · ATS resume score · CV checker online free
           </p>
           <h1 className="mt-6 text-balance font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-[3.5rem] lg:leading-[1.05]">
-            Free AI resume checker &amp;{" "}
-            <span className="text-gradient">ATS score analyzer</span>
+            <span className="text-gradient">ATS Resume Checker</span>
+            <span className="text-slate-900"> - Free CV Score Tool</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            Resume optimization tool for job seekers, students, new graduates,
-            and software engineers. Upload or paste your resume, optionally add
-            a job post, and get an honest ATS-style score plus keyword and
-            formatting feedback — no login.
+            Check ATS score of your resume and improve job chances instantly.
+            Upload or paste your resume, add a job post optionally, and get an
+            honest ATS-style score plus keyword and formatting feedback — no
+            login.
           </p>
           <div className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
             <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base">

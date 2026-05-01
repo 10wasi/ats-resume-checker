@@ -2,6 +2,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
+import { WebApplicationJsonLd } from "@/components/seo/WebApplicationJsonLd";
 import { WebSiteJsonLd } from "@/components/seo/WebSiteJsonLd";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BlogHighlightsSection } from "@/components/home/BlogHighlightsSection";
@@ -11,6 +12,10 @@ import {
   HowItWorksSection,
 } from "@/components/home/HomeSections";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
+import { getSiteUrl } from "@/lib/site-url";
+
+const siteUrl = getSiteUrl();
+const homeUrl = `${siteUrl}/`;
 
 const TestimonialsSection = dynamic(
   () =>
@@ -41,31 +46,32 @@ const FaqSection = dynamic(
 );
 
 export const metadata: Metadata = {
-  title:
-    "Free AI Resume Checker & ATS Score Analyzer | CV Checker Online Free",
+  title: { absolute: "ATS Resume Checker - Free CV Score Tool" },
   description:
-    "Free resume checker and AI resume analyzer. Get your ATS resume score (0–100), skills match, experience analysis, and keyword tips — no login. Resume optimization tool for job seekers and software engineers.",
+    "Check ATS score of your resume and improve job chances instantly",
   keywords: [
-    "free resume checker",
-    "AI resume analyzer",
-    "ATS resume score",
-    "CV checker online free",
-    "resume optimization tool",
-    "resume review AI",
+    "ATS resume checker",
+    "free CV score",
+    "resume ATS score",
+    "ATS optimization",
+    "CV checker online",
     "job resume checker",
   ],
-  alternates: { canonical: "/" },
+  alternates: { canonical: homeUrl },
+  robots: { index: true, follow: true },
   openGraph: {
-    title: "Free AI Resume Checker & ATS Score Analyzer | ResumeIQ",
+    title: "ATS Resume Checker - Free CV Score Tool",
     description:
-      "Free AI resume analyzer and ATS score checker. Upload or paste your resume, get instant feedback — resume review AI built for real job searches.",
+      "Check ATS score of your resume and improve job chances instantly",
     type: "website",
+    url: homeUrl,
   },
 };
 
 export default function HomePage() {
   return (
     <>
+      <WebApplicationJsonLd />
       <WebSiteJsonLd />
       <FaqJsonLd />
       <HeroSection />

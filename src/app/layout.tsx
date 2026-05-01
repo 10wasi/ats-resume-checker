@@ -22,40 +22,48 @@ const siteUrl = getSiteUrl();
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default:
-      "ResumeIQ — Free AI Resume Checker & ATS Score Analyzer (2026)",
-    template: "%s · ResumeIQ",
+    default: "ATS Resume Checker - Free CV Score Tool",
+    template: "%s | ATS Resume Checker",
   },
   description:
-    "Free resume checker, AI resume analyzer, and ATS resume score tool. CV checker online free for job seekers, students, and software engineers — resume optimization and resume review AI with no login.",
+    "Check ATS score of your resume and improve job chances instantly",
   keywords: [
-    "free resume checker",
-    "AI resume analyzer",
-    "ATS resume score",
-    "CV checker online free",
-    "resume optimization tool",
-    "resume review AI",
-    "job resume checker",
-    "ResumeIQ",
+    "ATS resume checker",
+    "free CV score",
+    "resume ATS score",
+    "CV checker",
+    "job resume",
+    "ATS optimization",
   ],
-  applicationName: "ResumeIQ",
-  authors: [{ name: "ResumeIQ" }],
-  creator: "ResumeIQ",
-  publisher: "ResumeIQ",
+  applicationName: "ATS Resume Checker",
+  authors: [{ name: "ATS Resume Checker" }],
+  creator: "ATS Resume Checker",
+  publisher: "ATS Resume Checker",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "ResumeIQ",
-    title: "Free AI Resume Checker & ATS Score Analyzer | ResumeIQ",
+    siteName: "ATS Resume Checker",
+    title: "ATS Resume Checker - Free CV Score Tool",
     description:
-      "Free online resume checker with ATS score (0–100), keyword optimization, and formatting feedback.",
+      "Check ATS score of your resume and improve job chances instantly",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free AI Resume Checker & ATS Score Analyzer | ResumeIQ",
+    title: "ATS Resume Checker - Free CV Score Tool",
     description:
-      "Free AI resume analyzer and job resume checker — instant ATS-friendly feedback.",
+      "Check ATS score of your resume and improve job chances instantly",
   },
 };
 
