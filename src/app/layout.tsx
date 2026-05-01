@@ -57,6 +57,9 @@ export const metadata: Metadata = {
     description:
       "Free AI resume analyzer and job resume checker — instant ATS-friendly feedback.",
   },
+  verification: {
+    google: "Fzn210VwpRc6YzJJrIe3FN8Zn239C9hf6s4mbcZ89QM",
+  },
 };
 
 export default function RootLayout({
