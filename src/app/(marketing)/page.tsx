@@ -2,7 +2,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
-import { WebApplicationJsonLd } from "@/components/seo/WebApplicationJsonLd";
+import { HomeWebApplicationJsonLd } from "@/components/seo/HomeWebApplicationJsonLd";
 import { WebSiteJsonLd } from "@/components/seo/WebSiteJsonLd";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BlogHighlightsSection } from "@/components/home/BlogHighlightsSection";
@@ -12,10 +12,6 @@ import {
   HowItWorksSection,
 } from "@/components/home/HomeSections";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
-import { getSiteUrl } from "@/lib/site-url";
-
-const siteUrl = getSiteUrl();
-const homeUrl = `${siteUrl}/`;
 
 const TestimonialsSection = dynamic(
   () =>
@@ -46,33 +42,14 @@ const FaqSection = dynamic(
 );
 
 export const metadata: Metadata = {
-  title: { absolute: "ATS Resume Checker - Free CV Score Tool" },
-  description:
-    "Check ATS score of your resume and improve job chances instantly",
-  keywords: [
-    "ATS resume checker",
-    "free CV score",
-    "resume ATS score",
-    "ATS optimization",
-    "CV checker online",
-    "job resume checker",
-  ],
-  alternates: { canonical: homeUrl },
-  robots: { index: true, follow: true },
-  openGraph: {
-    title: "ATS Resume Checker - Free CV Score Tool",
-    description:
-      "Check ATS score of your resume and improve job chances instantly",
-    type: "website",
-    url: homeUrl,
-  },
+  alternates: { canonical: "/" },
 };
 
 export default function HomePage() {
   return (
     <>
-      <WebApplicationJsonLd />
       <WebSiteJsonLd />
+      <HomeWebApplicationJsonLd />
       <FaqJsonLd />
       <HeroSection />
       <AdPlaceholder

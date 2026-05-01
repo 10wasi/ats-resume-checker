@@ -1,7 +1,7 @@
 import { getSiteUrl } from "@/lib/site-url";
 
-/** Schema.org WebApplication for homepage — supports rich results eligibility. */
-export function WebApplicationJsonLd() {
+/** Schema.org WebApplication for the homepage / primary web app entry. */
+export function HomeWebApplicationJsonLd() {
   const base = getSiteUrl();
   const schema = {
     "@context": "https://schema.org",
@@ -10,7 +10,6 @@ export function WebApplicationJsonLd() {
     url: `${base}/`,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Any",
-    browserRequirements: "Requires JavaScript.",
     offers: {
       "@type": "Offer",
       price: "0",

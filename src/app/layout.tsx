@@ -29,26 +29,20 @@ export const metadata: Metadata = {
     "Check ATS score of your resume and improve job chances instantly",
   keywords: [
     "ATS resume checker",
-    "free CV score",
-    "resume ATS score",
-    "CV checker",
+    "CV score tool",
+    "free resume checker",
+    "ATS score",
+    "resume optimization",
     "job resume",
-    "ATS optimization",
   ],
   applicationName: "ATS Resume Checker",
   authors: [{ name: "ATS Resume Checker" }],
   creator: "ATS Resume Checker",
   publisher: "ATS Resume Checker",
-  alternates: {
-    canonical: "/",
-  },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
+    googleBot: { index: true, follow: true },
   },
   openGraph: {
     type: "website",
