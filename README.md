@@ -1,84 +1,45 @@
-# ATS Resume Checker
+# 🚀 ATS Resume Checker
 
-Free **ATS resume checker** and **CV score** tool for **job applications**. Upload or paste a resume, optionally match a job description, and get ATS-style feedback with **SEO-optimized** educational content. Built with **Next.js**, React, and modern web technologies.
+Free ATS Resume Checker tool to analyze your resume score and improve job chances.
 
-**Live site:** [ats-resume-checker-pearl.vercel.app](https://ats-resume-checker-pearl.vercel.app/)  
 **Repository:** [github.com/10wasi/ats-resume-checker](https://github.com/10wasi/ats-resume-checker)
 
-## What this project offers
+## 🔥 Features
 
-- **Resume / CV analysis** -- parser-friendly text extraction, keyword alignment hints, and actionable scoring-style feedback
-- **ATS and job-search content** -- blog guides on ATS screening, **CV optimization**, **resume keywords**, and format best practices
-- **Technical SEO** -- structured metadata, sitemap, internal linking, and indexable marketing pages
-- **Privacy-minded utility** -- no paywall in the core flow; deploy your own instance with your API keys
+- Check ATS resume score instantly
+- Optimize CV for job applications
+- Improve resume keywords
 
-## Tech stack
+## 🌐 Live Demo
 
-- **Next.js 14** (App Router)
-- **React 18** and **TypeScript**
-- **Tailwind CSS**
-- Optional **OpenAI** for analysis (see `.env.example`)
+[https://ats-resume-checker-pearl.vercel.app/](https://ats-resume-checker-pearl.vercel.app/)
 
-## Requirements
+## 💡 Use Case
 
-- Node.js 18+
-- npm (or pnpm / yarn)
+Helps job seekers pass ATS systems and get shortlisted faster.
 
-## Setup
+## 📈 SEO Optimized
+
+- Blog content
+- Keyword targeting
+- Fast loading
+
+## 🛠️ Developers
 
 ```bash
 git clone https://github.com/10wasi/ats-resume-checker.git
 cd ats-resume-checker
 npm install
-```
-
-Copy environment template and fill in values:
-
-```bash
 cp .env.example .env.local
-```
-
-## Development
-
-```bash
 npm run dev
 ```
 
-Open the URL printed in the terminal (default port may be `3847` per `package.json`; use `npm run dev:3000` for port 3000).
+Build: `npm run build` · Start: `npm start` · Deploy on [Vercel](https://vercel.com) with env vars from `.env.example`. Use `npm run dev:3000` for port 3000.
 
-## Build
+## 📄 License
 
-```bash
-npm run build
-npm start
-```
+Use and modify for your own projects; see dependency licenses in `node_modules` and package metadata.
 
-## Deploy
+---
 
-Works on [Vercel](https://vercel.com): import this repo, set env vars from `.env.example`, deploy. Do **not** commit `.env` or `.env.local`.
-
-## GitHub repository About (one-time)
-
-GitHub **description** and **topics** are edited on the website (not stored in git). Use the gear icon next to **About** on your repo home page, or **Settings**.
-
-**Description** (paste exactly):
-
-> Free ATS Resume Checker tool to analyze CV score and optimize resumes for job applications. Built with SEO optimization and modern web technologies.
-
-**Website:** `https://ats-resume-checker-pearl.vercel.app/`
-
-**Topics** (add each): `ats-resume`, `resume-checker`, `cv-tool`, `job-application`, `seo-tool`
-
-Optional extras: `nextjs`, `typescript`, `tailwindcss`, `applicant-tracking-system`, `resume-optimization`.
-
-### GitHub CLI
-
-If you use [GitHub CLI](https://cli.github.com/) (`gh auth login` first):
-
-```bash
-gh repo edit --description "Free ATS Resume Checker tool to analyze CV score and optimize resumes for job applications. Built with SEO optimization and modern web technologies." --add-topic ats-resume --add-topic resume-checker --add-topic cv-tool --add-topic job-application --add-topic seo-tool --homepage "https://ats-resume-checker-pearl.vercel.app/"
-```
-
-## License
-
-Use and modify for your own projects; see dependency licenses in `node_modules` and upstream package metadata.
+⭐ **Star this repo if you like it!**

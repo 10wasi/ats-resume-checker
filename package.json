@@ -2,7 +2,7 @@
   "name": "ai-resume-ats-checker",
   "version": "0.1.0",
   "private": true,
-  "description": "Free ATS Resume Checker tool to analyze CV score and optimize resumes for job applications. Built with SEO optimization and modern web technologies.",
+  "description": "Free ATS Resume Checker tool to analyze your resume score and improve job chances.",
   "homepage": "https://ats-resume-checker-pearl.vercel.app/",
   "repository": {
     "type": "git",
