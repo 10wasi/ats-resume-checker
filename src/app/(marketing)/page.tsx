@@ -11,6 +11,7 @@ import {
   HeroSection,
   HowItWorksSection,
 } from "@/components/home/HomeSections";
+import { HomeSeoContent } from "@/components/home/HomeSeoContent";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 const TestimonialsSection = dynamic(
@@ -41,8 +42,33 @@ const FaqSection = dynamic(
   }
 );
 
+const HOME_TITLE =
+  "Free ATS Resume Checker – Check Your CV Score in Seconds";
+const HOME_DESCRIPTION =
+  "Improve your resume score instantly using our free ATS resume checker. Optimize your CV for job applications and get hired faster.";
+
 export const metadata: Metadata = {
+  title: HOME_TITLE,
+  description: HOME_DESCRIPTION,
+  keywords: [
+    "ATS resume checker",
+    "resume score",
+    "CV optimization",
+    "ATS keywords",
+    "job application resume",
+    "free resume checker",
+    "ATS friendly",
+  ],
   alternates: { canonical: "/" },
+  openGraph: {
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
+    url: "/",
+  },
+  twitter: {
+    title: HOME_TITLE,
+    description: HOME_DESCRIPTION,
+  },
 };
 
 export default function HomePage() {
@@ -52,6 +78,7 @@ export default function HomePage() {
       <HomeWebApplicationJsonLd />
       <FaqJsonLd />
       <HeroSection />
+      <HomeSeoContent />
       <AdPlaceholder
         label="Advertisement · content area"
         className="py-6 sm:py-8"

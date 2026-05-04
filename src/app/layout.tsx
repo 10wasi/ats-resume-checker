@@ -22,18 +22,19 @@ const siteUrl = getSiteUrl();
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "ATS Resume Checker - Free CV Score Tool",
+    default: "Free ATS Resume Checker – Check Your CV Score in Seconds",
     template: "%s | ATS Resume Checker",
   },
   description:
-    "Check ATS score of your resume and improve job chances instantly",
+    "Improve your resume score instantly using our free ATS resume checker. Optimize your CV for job applications and get hired faster.",
   keywords: [
     "ATS resume checker",
-    "CV score tool",
+    "resume score",
+    "CV optimization",
+    "ATS keywords",
+    "job application resume",
     "free resume checker",
     "ATS score",
-    "resume optimization",
-    "job resume",
   ],
   applicationName: "ATS Resume Checker",
   authors: [{ name: "ATS Resume Checker" }],
@@ -49,15 +50,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "ATS Resume Checker",
-    title: "ATS Resume Checker - Free CV Score Tool",
+    title: "Free ATS Resume Checker – Check Your CV Score in Seconds",
     description:
-      "Check ATS score of your resume and improve job chances instantly",
+      "Improve your resume score instantly using our free ATS resume checker. Optimize your CV for job applications and get hired faster.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ATS Resume Checker - Free CV Score Tool",
+    title: "Free ATS Resume Checker – Check Your CV Score in Seconds",
     description:
-      "Check ATS score of your resume and improve job chances instantly",
+      "Improve your resume score instantly using our free ATS resume checker. Optimize your CV for job applications and get hired faster.",
   },
 };
 

@@ -25,13 +25,12 @@ export function HeroSection() {
             <IconSparkle className="h-3.5 w-3.5 shrink-0 text-[#4ade80]" />
             Free AI resume checker · ATS resume score · CV checker online free
           </p>
-          <h1 className="mt-6 text-balance font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-[3.5rem] lg:leading-[1.05]">
-            <span className="text-gradient">ATS Resume Checker</span>
-            <span className="text-slate-900"> - Free CV Score Tool</span>
+          <h1 className="mt-6 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.75rem] lg:leading-[1.12]">
+            Free ATS Resume Checker – Improve Your CV Score Instantly (2026)
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            Check ATS score of your resume and improve job chances instantly.
-            Upload or paste your resume, add a job post optionally, and get an
+            Check your resume score and strengthen every job application resume.
+            Upload or paste your CV, add a job post optionally, and get an
             honest ATS-style score plus keyword and formatting feedback — no
             login.
           </p>
@@ -60,7 +59,7 @@ export function HeroSection() {
                 <span className="h-2.5 w-2.5 rounded-full bg-amber-400" />
                 <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
                 <span className="ml-2 hidden sm:inline">
-                  resumeiq.app · score
+                  ATS checker · score preview
                 </span>
               </div>
               <span className="pill border-emerald-200 bg-emerald-50 text-emerald-700">

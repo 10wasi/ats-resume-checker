@@ -8,12 +8,16 @@ export const ATS_LANDING_RELATED_POSTS: readonly {
     title: "How to Pass ATS Resume Screening in 2026",
   },
   {
-    slug: "best-resume-format-job-interviews-2026",
-    title: "Best Resume Format to Get Job Interviews",
+    slug: "top-resume-keywords-that-get-you-hired-fast",
+    title: "Top Resume Keywords That Get You Hired Fast",
   },
   {
     slug: "why-resume-rejected-by-ats",
-    title: "Why Your Resume Gets Rejected by ATS",
+    title: "Why Your Resume Gets Rejected by ATS (Complete Guide)",
+  },
+  {
+    slug: "best-resume-format-job-interviews-2026",
+    title: "Best Resume Format for ATS (Step-by-Step Guide)",
   },
   {
     slug: "how-to-improve-resume-score-instantly",

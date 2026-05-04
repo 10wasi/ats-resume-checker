@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/blog";
 
 export function BlogHighlightsSection() {
-  const posts = getAllPosts().slice(0, 4);
+  const posts = getAllPosts().slice(0, 5);
 
   return (
     <section className="bg-slate-50/80 py-20 sm:py-24">
@@ -25,7 +25,7 @@ export function BlogHighlightsSection() {
             Browse all posts
           </Link>
         </div>
-        <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {posts.map((post) => (
             <li key={post.slug}>
               <article className="card-elevated flex h-full flex-col overflow-hidden">
