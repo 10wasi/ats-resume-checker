@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ats-resume-checker-pearl.vercel.app/sitemap.xml

@@ -4,7 +4,8 @@ import { getSiteUrl } from "@/lib/site-url";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = getSiteUrl();
+  /** Origin only, no trailing slash — every <loc> is `${base}/path`. */
+  const base = getSiteUrl().replace(/\/$/, "");
   const staticPaths: {
     path: string;
     priority: number;
