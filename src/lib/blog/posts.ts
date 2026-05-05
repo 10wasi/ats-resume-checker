@@ -6,6 +6,219 @@ import { atsResumeFormat2026Post } from "./posts-ats-resume-format-2026";
 import { careerPillarPosts } from "./posts-career-pillars";
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "top-ats-resume-mistakes-that-get-you-rejected-fix-them-fast",
+    title: "Top ATS Resume Mistakes That Get You Rejected (Fix Them Fast)",
+    seoTitle:
+      "Top ATS Resume Mistakes That Get You Rejected (Fix Them Fast) | ResumeIQ",
+    description:
+      "The most common ATS resume mistakes, CV errors, and resume rejection triggers, with practical fixes you can apply in one sitting.",
+    date: "2026-05-05",
+    author: "ResumeIQ Editorial",
+    coverVariant: "emerald",
+    tags: ["ATS resume", "resume mistakes", "CV errors", "resume rejection"],
+    keywords: [
+      "ATS resume",
+      "resume mistakes",
+      "CV errors",
+      "resume rejection",
+      "fix resume fast",
+    ],
+    content: `
+# Top ATS Resume Mistakes That Get You Rejected (Fix Them Fast)
+
+You know the feeling. You find a role that matches your experience almost perfectly. You apply, wait, refresh your inbox ten times, and then... silence.
+
+Most job seekers assume they were not qualified enough. In reality, the bigger issue is often this: your **ATS resume** did not survive the first screening pass.
+
+I once worked with a candidate named Adeel (name changed), a solid operations manager with eight years of experience. Great results, strong references, real impact. He had sent 70+ applications and got only two interviews. The problem was not his background. It was his document. His resume had fancy design blocks, missing keywords, and vague bullets. We fixed the structure and language in one weekend. In three weeks, he got five interview calls.
+
+That is the pattern I keep seeing. Small **resume mistakes** create big outcomes.
+
+Below are the most common **CV errors** that quietly lead to **resume rejection**, plus exactly how to fix each one fast.
+
+## Mistake 1: Designing for looks, not parsing
+
+This is the #1 issue in modern job search. A resume can look beautiful to a human and still break in an applicant tracking system.
+
+### What usually goes wrong
+
+- Two-column templates that scramble reading order
+- Text inside icons, graphics, or text boxes
+- Header/footer sections that hide important details
+- Exported PDFs where text is not selectable
+
+When parsing fails, your skills and experience may not map to the right fields. Then your ATS resume score drops before anyone evaluates your actual fit.
+
+### Fast fix
+
+Use a simple one-column layout with clear headings:
+
+- Summary (optional)
+- Experience
+- Skills
+- Education
+
+Then test your file: copy and paste your resume text into a plain editor. If the order is weird, fix formatting first. Structure beats style every time.
+
+## Mistake 2: Keyword mismatch with the job description
+
+A lot of candidates hear "add keywords" and either ignore it or overdo it.
+
+### What usually goes wrong
+
+- Using broad terms instead of role-specific terms
+- Listing skills in one section but never showing them in experience
+- Copy-pasting the job post word-for-word (big red flag)
+
+If the posting says "stakeholder management," "forecasting," and "SQL," but your resume says only "team player with analytical mindset," the system sees weak relevance.
+
+### Fast fix
+
+Read the job description once for meaning and once for recurring terms. Pick the 8 to 12 terms that truly match your background. Then place them naturally in your experience bullets and skills section.
+
+Think of keywords as translation, not trickery.
+
+## Mistake 3: Generic bullets with no proof
+
+Most resumes fail here. You might have done great work, but your bullets do not show it.
+
+### What usually goes wrong
+
+- "Responsible for managing projects"
+- "Worked with cross-functional teams"
+- "Helped improve operations"
+
+These lines are not technically wrong, but they are weak. They do not prove outcomes.
+
+### Fast fix
+
+Use this mini formula:
+
+**Action + Scope + Result**
+
+For example:
+
+- "Led weekly planning across 3 teams, reducing delivery delays by 22% in one quarter."
+- "Built a vendor tracking workflow that cut procurement turnaround from 9 days to 5 days."
+
+Strong bullets help both machines and humans. ATS can detect clearer relevance signals, and recruiters see impact faster.
+
+## Mistake 4: Weak or confusing job titles
+
+Creative titles can hurt discoverability.
+
+### What usually goes wrong
+
+- Internal titles nobody recognizes
+- Branded titles that hide role level
+- Missing clarity for career transitions
+
+If your title says "Customer Happiness Ninja," ATS and recruiters may miss you for "Customer Success Manager" searches.
+
+### Fast fix
+
+Keep your official title, but add a standard market title when needed.
+
+Example:
+
+**Customer Happiness Ninja (Customer Success Manager)**
+
+This avoids misclassification and improves search match without being dishonest.
+
+## Mistake 5: Overstuffed skills section
+
+Many resumes have 35 to 50 skills listed like a shopping receipt. It looks impressive for two seconds, then creates doubt.
+
+### What usually goes wrong
+
+- Listing tools used once years ago
+- No priority order for role-critical skills
+- Skills not backed by experience bullets
+
+Recruiters spot this fast. So do systems that compare claimed skills with contextual usage.
+
+### Fast fix
+
+Trim to relevant, defensible skills only. Group them cleanly:
+
+- Technical skills
+- Tools/platforms
+- Domain skills
+
+Then cross-check: every critical skill should appear in at least one real project or role bullet. If you cannot discuss it confidently in an interview, remove it.
+
+## Mistake 6: Ignoring basic hygiene (the silent killer)
+
+This sounds obvious, but it still causes daily resume rejection.
+
+### What usually goes wrong
+
+- Wrong phone number or broken LinkedIn URL
+- Inconsistent dates
+- Typos in headline or section titles
+- Old resume version sent to the wrong role
+
+These are "trust leaks." Even if you are qualified, they signal low attention to detail.
+
+### Fast fix
+
+Before applying, do a two-minute preflight:
+
+1. Check contact info.
+2. Check links.
+3. Check date consistency.
+4. Check target role in your summary and filename.
+
+Simple, boring, powerful.
+
+## Mistake 7: Sending one master resume to every role
+
+High-volume applying feels productive, but one generic document underperforms.
+
+### What usually goes wrong
+
+- Same headline for different role types
+- Same bullet order regardless of target job
+- No adaptation for industry language
+
+A generic resume does not usually fail hard. It fails quietly by looking "almost relevant."
+
+### Fast fix
+
+Keep a master version, then create tailored copies quickly:
+
+- Update the headline
+- Reorder top 4 to 6 bullets for relevance
+- Adjust keyword phrasing to the posting language
+
+This takes 15 to 20 minutes and dramatically improves quality.
+
+## Final checklist before you click Apply
+
+Use this quick audit every time:
+
+- Is your format ATS-safe (one column, readable text, standard headings)?
+- Are role-specific keywords naturally included?
+- Do your top bullets show measurable outcomes?
+- Are your job titles clear and searchable?
+- Is your skills section focused and defensible?
+- Are all links, dates, and contact details correct?
+- Did you tailor this version for this role?
+
+If you can answer "yes" to these, your resume is already ahead of most applicants.
+
+## One practical next step
+
+If you want a quick quality check before applying, run your file through the tool and review the weak points immediately.
+
+**Check your resume score using our free ATS Resume Checker**: [Free ATS Resume Checker](/resume-checker)
+
+You can also start from our [homepage](/) to read more guides and optimization tips.
+
+The goal is not to game software. The goal is clarity. A strong ATS resume makes it easier for the right recruiter to find and trust your work.
+    `.trim(),
+  },
   ...careerPillarPosts,
   atsFreshersGuidePost,
   atsRejectionReasonsPost,

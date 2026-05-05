@@ -43,9 +43,9 @@ const FaqSection = dynamic(
 );
 
 const HOME_TITLE =
-  "Free ATS Resume Checker – Check Your CV Score in Seconds";
+  "Free ATS Resume Checker – Get Your Resume Score Instantly (2026)";
 const HOME_DESCRIPTION =
-  "Improve your resume score instantly using our free ATS resume checker. Optimize your CV for job applications and get hired faster.";
+  "Check your resume ATS score instantly and improve your chances of getting hired. Free CV optimization tool with instant results.";
 
 export const metadata: Metadata = {
   title: HOME_TITLE,
