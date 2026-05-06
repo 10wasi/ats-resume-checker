@@ -35,7 +35,7 @@ export function HeroSection() {
           </p>
           <div className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
             <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base">
-              Check My Resume Score Free
+              Check Your Resume Score Now
             </Link>
             <Link
               href="/blog"
