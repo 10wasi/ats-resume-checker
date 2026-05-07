@@ -231,7 +231,7 @@ Here are battle-tested tips:
 - Save as PDF unless the application asks for DOCX
 - Use bullet points, not paragraphs of prose
 - Avoid icons next to important information
-- Keep file names professional (e.g., `Aisha-Khan-Resume.pdf`)
+- Keep file names professional (e.g., \`Aisha-Khan-Resume.pdf\`)
 
 If you remove visual clutter and keep the structure clean, parsing accuracy goes up dramatically. That single change can lift your score more than any keyword trick.
 
