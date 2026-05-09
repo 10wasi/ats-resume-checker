@@ -3,6 +3,7 @@ import { atsFreshersGuidePost } from "./posts-ats-freshers-2026";
 import { atsRejectionReasonsPost } from "./posts-ats-rejection-reasons";
 import { resumeKeywords2026GuidePost } from "./posts-resume-keywords-2026-guide";
 import { atsResumeFormat2026Post } from "./posts-ats-resume-format-2026";
+import { atsFriendly2026CompleteGuidePost } from "./posts-ats-friendly-2026-complete-guide";
 import { careerPillarPosts } from "./posts-career-pillars";
 
 export const blogPosts: BlogPost[] = [
@@ -846,6 +847,7 @@ The goal is not to game software. The goal is clarity. A strong ATS resume makes
   atsRejectionReasonsPost,
   resumeKeywords2026GuidePost,
   atsResumeFormat2026Post,
+  atsFriendly2026CompleteGuidePost,
   {
     slug: "free-resume-checker-online-2026",
     title:
