@@ -5,33 +5,48 @@ export type FaqItem = {
 
 export const homepageFaqItems: FaqItem[] = [
   {
-    question: "Is this resume checker really free?",
+    question: "What is an ATS resume checker?",
     answer:
-      "Yes. ResumeIQ is a free resume checker and AI resume analyzer: you can upload or paste a resume, run an ATS-style score, and download a text or PDF report without creating an account or entering payment details.",
+      "An ATS resume checker reviews your resume using signals similar to applicant tracking systems: whether text extracts cleanly, whether your sections are easy to map (Experience, Skills, Education), and how well your wording lines up with a job post if you paste one. It is a rehearsal pass—so you can tighten an ATS friendly resume before a real portal swallows your file.",
   },
   {
-    question: "How accurate is the ATS resume score?",
+    question: "How accurate are ATS scores?",
     answer:
-      "The score reflects readable structure, keyword coverage, bullet strength, and common ATS risks — similar signals to what a job resume checker or recruiter skim would notice. Use it to prioritize edits, not as a guarantee of interviews.",
+      "No third-party score can mirror every employer’s internal system. What we offer is directionally accurate feedback: parsing risks, keyword fit, bullet strength, and formatting habits that commonly trip up hiring software. Use the number to prioritize edits and improve your ATS score over time—not as a promise you will get an interview.",
+  },
+  {
+    question: "Why do resumes fail ATS systems?",
+    answer:
+      "The usual culprits are broken or image-only PDFs, layouts that scramble reading order, non-standard section titles, weak or missing job keywords, and bullets that never show impact. Sometimes there is also a straight skills mismatch—but many qualified people lose out first on fixable formatting and resume optimization issues.",
+  },
+  {
+    question: "How can I improve my ATS score?",
+    answer:
+      "Start with a clean export (selectable text, one-column layout, boring headings). Then align honest keywords from the posting into experience bullets—not a pasted wall of jargon. Rewrite weak bullets with action, scope, and outcome. Re-run the checker until the preview reads cleanly. Small, truthful changes beat keyword stuffing every time.",
+  },
+  {
+    question: "Is this resume checker really free?",
+    answer:
+      "Yes. This free ATS Resume Checker lets you upload or paste a resume, run an ATS-style score, and review feedback without creating an account or entering a card. We believe you should be able to improve an ATS compatible resume before anyone asks you to pay for anything.",
   },
   {
     question: "Will an ATS read my file the same way?",
     answer:
-      "Check the extracted text preview first. If the order or wording looks wrong in the preview, parsers may struggle too — fix the source document, then re-run this CV checker online free before you apply.",
+      "Always check the extracted text preview first. If the order or wording looks wrong there, many parsers will struggle too—fix the source document, then re-run this online resume checker before you apply.",
   },
   {
     question: "Which file formats can I use?",
     answer:
-      "PDF and DOCX up to 10 MB. Scanned image PDFs may not extract well; export from Word or Google Docs with selectable text for the cleanest resume optimization results.",
+      "PDF and DOCX up to 10 MB. Scanned image PDFs may not extract well; export from Word or Google Docs with selectable text for the cleanest results.",
   },
   {
     question: "Do you store my resume?",
     answer:
-      "Your file is processed for the request to generate feedback. Treat it like any online resume review AI tool: avoid pasting confidential data you would not put in a normal application.",
+      "Your file is processed for the request to generate feedback. Avoid pasting confidential data you would not put in a normal application.",
   },
   {
     question: "Do I need a job description?",
     answer:
-      "No. You still get an ATS score and formatting feedback. Adding a posting improves keyword optimization and match language — ideal when you have a specific role in mind.",
+      "No—you still get structure and score feedback. Adding a posting sharpens keyword optimization and match language, which helps when you are serious about a specific role.",
   },
 ];

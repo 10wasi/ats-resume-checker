@@ -10,6 +10,8 @@ import {
   FeatureHighlights,
   HeroSection,
   HowItWorksSection,
+  HomeTrustStrip,
+  ProblemSolutionSection,
 } from "@/components/home/HomeSections";
 import { HomeSeoContent } from "@/components/home/HomeSeoContent";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
@@ -51,13 +53,16 @@ export const metadata: Metadata = {
   title: HOME_TITLE,
   description: HOME_DESCRIPTION,
   keywords: [
-    "ATS resume checker",
-    "resume score",
+    "ATS Resume Checker",
+    "ATS friendly resume",
+    "improve ATS score",
+    "resume optimization",
+    "ATS compatible resume",
+    "online resume checker",
+    "ATS resume score",
     "CV optimization",
-    "ATS keywords",
-    "job application resume",
     "free resume checker",
-    "ATS friendly",
+    "job application resume",
   ],
   alternates: { canonical: "/" },
   openGraph: {
@@ -78,14 +83,16 @@ export default function HomePage() {
       <HomeWebApplicationJsonLd />
       <FaqJsonLd />
       <HeroSection />
-      <HomeSeoContent />
+      <ProblemSolutionSection />
+      <FeatureHighlights />
+      <HowItWorksSection />
+      <HomeTrustStrip />
       <AdPlaceholder
         label="Advertisement · content area"
         className="py-6 sm:py-8"
       />
       <BlogHighlightsSection />
-      <FeatureHighlights />
-      <HowItWorksSection />
+      <HomeSeoContent />
       <TestimonialsSection />
       <FaqSection />
       <section className="container-page pb-24 pt-12">
@@ -100,22 +107,22 @@ export default function HomePage() {
           />
           <div className="relative">
             <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Free AI resume checker — built for traffic, not upsells.
+              Ready to see what hiring software sees?
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-300">
-              Run a free ATS score check, fix keyword gaps, and ship a cleaner
-              CV. No pricing tiers — just a utility site that helps you apply
-              with confidence.
+              Run a free check, fix what matters, and send your next application
+              knowing your resume reads like an ATS friendly, interview-ready
+              document—not a mystery to parsers.
             </p>
             <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
               <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base">
-                Improve Your Resume
+                Check my resume free
               </Link>
               <Link
                 href="/blog"
                 className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-700 bg-slate-900/60 px-8 text-base font-semibold text-white transition hover:border-slate-500 hover:bg-slate-900"
               >
-                Read the blog
+                Learn resume optimization tips
               </Link>
             </div>
           </div>
