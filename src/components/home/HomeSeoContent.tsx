@@ -8,7 +8,7 @@ export function HomeSeoContent() {
       className="border-b border-slate-200/80 bg-white py-16 sm:py-20"
       aria-labelledby="home-seo-guide-heading"
     >
-      <div className="container-page max-w-4xl">
+      <article className="container-page max-w-4xl">
         <h2
           id="home-seo-guide-heading"
           className="font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl"
@@ -25,7 +25,11 @@ export function HomeSeoContent() {
             <strong className="font-semibold text-slate-900">
               ATS resume checker
             </strong>{" "}
-            gives you a clear{" "}
+            — a focused{" "}
+            <strong className="font-semibold text-slate-900">
+              online resume checker
+            </strong>{" "}
+            for real openings — gives you a clear{" "}
             <Link
               href={RESUME_CHECKER_PATH}
               className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/35 underline-offset-2 hover:text-[#16a34a]"
@@ -37,7 +41,15 @@ export function HomeSeoContent() {
             <strong className="font-semibold text-slate-900">
               CV optimization
             </strong>{" "}
-            — without a paywall or login.
+            and an{" "}
+            <strong className="font-semibold text-slate-900">
+              ATS compatible resume
+            </strong>
+            — without a paywall or login. The aim is simple:{" "}
+            <strong className="font-semibold text-slate-900">
+              improve your ATS score
+            </strong>{" "}
+            honestly before a portal decides for you.
           </p>
 
           <h3 className="pt-2 font-display text-xl font-bold text-slate-900">
@@ -97,7 +109,7 @@ export function HomeSeoContent() {
             <strong className="font-semibold text-slate-900">
               job application resume
             </strong>{" "}
-            echoes the skills you can defend in an interview.             Tighten weak lines,
+            echoes the skills you can defend in an interview. Tighten weak lines,
             add one metric where you can, and re-run our tool to confirm your{" "}
             <strong className="font-semibold text-slate-900">
               resume score
@@ -152,14 +164,21 @@ export function HomeSeoContent() {
           </p>
 
           <p className="rounded-2xl border border-slate-200 bg-slate-50/80 px-5 py-4 text-slate-600">
-            Ready to optimize your CV?{" "}
+            Ready to tighten your story?{" "}
             <Link
               href={RESUME_CHECKER_PATH}
               className="font-semibold text-[#4ade80] hover:text-[#16a34a]"
             >
-              Run the ATS resume checker
-            </Link>{" "}
-            — then explore more{" "}
+              See my ATS score — free
+            </Link>
+            {" · "}
+            <Link
+              href="/blog/how-to-make-your-resume-ats-friendly-2026-complete-guide"
+              className="font-semibold text-slate-800 underline underline-offset-2 hover:text-slate-950"
+            >
+              Read the ATS-friendly guide
+            </Link>
+            {" — then explore more "}
             <Link
               href="/blog"
               className="font-semibold text-slate-800 underline underline-offset-2 hover:text-slate-950"
@@ -169,7 +188,7 @@ export function HomeSeoContent() {
             for format, screening, and keyword strategy.
           </p>
         </div>
-      </div>
+      </article>
     </section>
   );
 }

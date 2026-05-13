@@ -49,4 +49,24 @@ export const homepageFaqItems: FaqItem[] = [
     answer:
       "No—you still get structure and score feedback. Adding a posting sharpens keyword optimization and match language, which helps when you are serious about a specific role.",
   },
+  {
+    question: "What does my ATS score actually measure?",
+    answer:
+      "It summarizes readability, structure, keyword coverage, and—when you add a posting—how closely your language mirrors that role. Think of it as a rehearsal for applicant software: a practical way to improve your ATS score and resume optimization before you upload to a real portal—not a guarantee a company uses the same weighting.",
+  },
+  {
+    question: "Is this ATS resume checker useful for UK and US applications?",
+    answer:
+      "Yes. Employers in both markets rely on similar parsing and search patterns inside ATS tools. Keep honest spelling consistent with your target market (UK vs US English), then use this online resume checker on the exact file you plan to submit.",
+  },
+  {
+    question: "Should I stuff keywords to beat the ATS?",
+    answer:
+      "No—keyword stuffing reads hollow to humans and can backfire when a recruiter reads your file. Weave truthful terms from the posting into experience and skills where you can explain them. That is how you build an ATS friendly resume that still sounds like you.",
+  },
+  {
+    question: "How often should I re-run the checker?",
+    answer:
+      "After every meaningful edit: new role, reordered bullets, layout change, or a different job description. Small tweaks can change extraction, so a quick second pass keeps your ATS compatible resume aligned with what parsers will see.",
+  },
 ];

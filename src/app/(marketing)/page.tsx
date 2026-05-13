@@ -9,6 +9,8 @@ import { BlogHighlightsSection } from "@/components/home/BlogHighlightsSection";
 import {
   FeatureHighlights,
   HeroSection,
+  HomeAtsEducationSection,
+  HomeQuickResumeTipsSection,
   HowItWorksSection,
   HomeTrustStrip,
   ProblemSolutionSection,
@@ -87,6 +89,8 @@ export default function HomePage() {
       <FeatureHighlights />
       <HowItWorksSection />
       <HomeTrustStrip />
+      <HomeAtsEducationSection />
+      <HomeQuickResumeTipsSection />
       <AdPlaceholder
         label="Advertisement · content area"
         className="py-6 sm:py-8"
@@ -116,7 +120,7 @@ export default function HomePage() {
             </p>
             <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
               <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base">
-                Check my resume free
+                See my score — free
               </Link>
               <Link
                 href="/blog"

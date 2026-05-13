@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState, type ReactNode } from "react";
 import type { AtsAnalysisResult } from "@/lib/ats/types";
 import type { ScoreBreakdown } from "@/lib/ats/score-engine";
@@ -172,6 +173,36 @@ function IconDownload({ className = "h-4 w-4" }: { className?: string }) {
 
 const LIST_PREVIEW = 6;
 
+function scoreContext(score: number): { band: string; explainer: string } {
+  const s = Math.round(Math.max(0, Math.min(100, score)));
+  if (s < 45) {
+    return {
+      band: "Plenty of room to tighten things up",
+      explainer:
+        "That usually means layout or headings are making extraction harder, or your proof does not yet line up with how employers search. Work through the suggestions below—small, truthful edits often move the needle faster than a full rewrite.",
+    };
+  }
+  if (s < 65) {
+    return {
+      band: "You are in the running",
+      explainer:
+        "Structure is often workable; the wins now come from stronger bullets, missing keywords, or a cleaner export. Start with the numbered actions, then re-run on the exact file you plan to upload.",
+    };
+  }
+  if (s < 82) {
+    return {
+      band: "Solid footing",
+      explainer:
+        "This is broadly ATS friendly: recruiters and parsers can follow your story. Keep matching language to each posting and adding numbers where they are honest.",
+    };
+  }
+  return {
+    band: "Strong shape",
+    explainer:
+      "Scanability looks good. Next pass is human polish: trim filler, sharpen the summary, and make sure every claim is interview-ready.",
+  };
+}
+
 function useExpandedList<T>(items: T[]) {
   const [open, setOpen] = useState(false);
   const needsToggle = items.length > LIST_PREVIEW;
@@ -202,6 +233,23 @@ export function AtsAnalysisResults({
     const full = buildCareerInsights(analysis);
     return { ...full, insights_unlocked: true as const };
   }, [analysis]);
+
+  const scoreInfo = useMemo(
+    () => scoreContext(analysis.ats_score),
+    [analysis.ats_score]
+  );
+
+  const nextSteps = useMemo(() => {
+    const fromActions = insights.improvement_actions.filter(Boolean).slice(0, 3);
+    if (fromActions.length >= 3) return fromActions;
+    const merged: string[] = [...fromActions];
+    for (const q of insights.quick_fix_checklist) {
+      const t = q.trim();
+      if (!t || merged.length >= 3) continue;
+      if (!merged.includes(t)) merged.push(t);
+    }
+    return merged.slice(0, 3);
+  }, [insights.improvement_actions, insights.quick_fix_checklist]);
 
   const missingTags = useMemo(() => {
     const set = new Set<string>();
@@ -336,6 +384,7 @@ export function AtsAnalysisResults({
     "Echo critical phrases from the target posting where truthful.",
     "Use standard headings and a single column for ATS extraction.",
     "Keep page-one above-the-fold focused on role fit and top wins.",
+    "Match UK or US spelling to the posting and region you are applying in.",
   ];
 
   return (
@@ -358,10 +407,10 @@ export function AtsAnalysisResults({
       <div className="flex flex-col gap-4 rounded-2xl border border-zinc-200/90 bg-white px-4 py-4 shadow-soft sm:flex-row sm:items-center sm:justify-between sm:px-6">
         <div>
           <p className="text-[11px] font-bold uppercase tracking-wider text-zinc-500">
-            Report
+            Your report
           </p>
           <p className="mt-0.5 text-sm font-medium text-zinc-800">
-            Export or run again
+            Save a copy or run again after you edit
             {sourceFileName ? (
               <span className="text-zinc-400">
                 {" "}
@@ -378,7 +427,7 @@ export function AtsAnalysisResults({
               disabled={recheckDisabled || recheckLoading}
               className="h-10 rounded-xl border border-zinc-200 bg-white px-4 text-sm font-medium text-zinc-900 shadow-sm transition hover:border-zinc-300 hover:bg-zinc-50 disabled:opacity-50"
             >
-              {recheckLoading ? "Rechecking…" : "Recheck resume"}
+              {recheckLoading ? "Rechecking…" : "Recheck my resume"}
             </button>
           ) : null}
           <button
@@ -386,7 +435,7 @@ export function AtsAnalysisResults({
             onClick={downloadFull}
             className="h-10 rounded-xl bg-zinc-900 px-4 text-sm font-medium text-white shadow-sm transition hover:bg-zinc-800"
           >
-            Download report
+            Download full report
           </button>
           <button
             type="button"
@@ -394,7 +443,7 @@ export function AtsAnalysisResults({
             disabled={pdfLoading}
             className="h-10 rounded-xl border border-zinc-200 bg-white px-4 text-sm font-medium text-zinc-800 shadow-sm transition hover:bg-zinc-50 disabled:opacity-60"
           >
-            {pdfLoading ? "PDF…" : "PDF"}
+            {pdfLoading ? "PDF…" : "Export PDF"}
           </button>
         </div>
       </div>
@@ -405,7 +454,10 @@ export function AtsAnalysisResults({
       ) : null}
 
       {/* Hero + composite signals */}
-      <section className="overflow-hidden rounded-2xl border border-zinc-200/90 bg-white shadow-soft-lg">
+      <article
+        className="overflow-hidden rounded-2xl border border-zinc-200/90 bg-white shadow-soft-lg"
+        aria-labelledby="ats-score-heading"
+      >
         <div className="relative bg-gradient-to-br from-white via-emerald-50/40 to-brand-50/50 px-4 py-10 sm:px-8 sm:py-14">
           <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-gradient-to-br from-emerald-300/35 to-teal-300/30 blur-3xl" />
           <div className="pointer-events-none absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-gradient-to-tr from-emerald-200/30 to-transparent blur-3xl" />
@@ -414,18 +466,41 @@ export function AtsAnalysisResults({
             <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-zinc-500">
               Resume analysis
             </p>
-            <h2 className="mt-3 font-display text-2xl font-semibold tracking-tight text-zinc-950 sm:text-3xl">
-              Your ATS Resume Score
+            <h2
+              id="ats-score-heading"
+              className="mt-3 font-display text-2xl font-semibold tracking-tight text-zinc-950 sm:text-3xl"
+            >
+              Your ATS resume score
             </h2>
-            <div className="mt-10 flex justify-center">
+            <p className="mx-auto mt-3 max-w-lg text-pretty text-sm leading-relaxed text-zinc-600 sm:text-base">
+              A single number from this{" "}
+              <strong className="font-semibold text-zinc-800">
+                ATS Resume Checker
+              </strong>{" "}
+              run—use it to prioritize resume optimization, not to predict an
+              offer.
+            </p>
+            <div className="mt-10 flex justify-center px-2">
               <CircularAtsScore
                 value={analysis.ats_score}
                 size={224}
+                className="origin-center scale-[0.9] sm:scale-100"
                 scoreLabel="Score"
                 showBand
                 variant="premium"
               />
             </div>
+            <p className="mx-auto mt-8 max-w-xl text-pretty text-sm leading-relaxed text-zinc-700 sm:text-base">
+              <span className="font-semibold text-zinc-900">
+                {scoreInfo.band}.
+              </span>{" "}
+              {scoreInfo.explainer}
+            </p>
+            <p className="mx-auto mt-4 max-w-lg text-pretty text-xs leading-relaxed text-zinc-500 sm:text-sm">
+              If the extracted text preview looked messy, fix the source file
+              first—then you are truly improving your ATS score for the version
+              employers receive.
+            </p>
           </div>
 
           <div className="relative mx-auto mt-12 max-w-4xl">
@@ -458,6 +533,31 @@ export function AtsAnalysisResults({
                 </div>
               )}
             </div>
+            {nextSteps.length > 0 ? (
+              <div className="mt-8 rounded-2xl border border-emerald-200/80 bg-white/85 px-5 py-5 shadow-sm backdrop-blur-sm sm:px-7 sm:py-6">
+                <p className="text-[11px] font-bold uppercase tracking-wider text-emerald-900">
+                  Start here (next edits)
+                </p>
+                <ol className="mt-4 space-y-3 text-left text-sm leading-relaxed text-zinc-800">
+                  {nextSteps.map((step, i) => (
+                    <li key={i} className="flex gap-3">
+                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-xs font-bold text-emerald-900 tabular-nums">
+                        {i + 1}
+                      </span>
+                      <span className="pt-0.5 text-pretty">{step}</span>
+                    </li>
+                  ))}
+                </ol>
+                <p className="mt-4 text-xs leading-relaxed text-zinc-500">
+                  Edited your file? Hit{" "}
+                  <strong className="font-medium text-zinc-700">
+                    Recheck my resume
+                  </strong>{" "}
+                  so this online resume checker scores the version you will
+                  actually submit.
+                </p>
+              </div>
+            ) : null}
           </div>
         </div>
 
@@ -468,11 +568,17 @@ export function AtsAnalysisResults({
               Score breakdown
             </p>
             <h3 className="mt-1 font-display text-xl font-semibold text-zinc-950 sm:text-2xl">
-              Dimension cards
+              What shaped this score
             </h3>
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-zinc-600">
-              Weighted components from this run. Keyword strength is also
-              reflected in the Keyword card using your full text signals.
+              These blocks add up to the number up top. A lower slice here
+              usually points to layout, keywords, or proof—not that you are a
+              weak candidate. The keyword row also reflects how your full text
+              reads for an{" "}
+              <strong className="font-semibold text-zinc-800">
+                ATS compatible resume
+              </strong>
+              .
             </p>
           </div>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -522,7 +628,34 @@ export function AtsAnalysisResults({
             />
           </div>
         </div>
-      </section>
+      </article>
+
+      <nav
+        className="flex flex-col items-center gap-2 rounded-xl border border-zinc-100 bg-zinc-50/80 px-4 py-4 text-center sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-4 sm:py-3"
+        aria-label="Related resume guides"
+      >
+        <span className="text-xs font-medium text-zinc-500 sm:text-sm">
+          Go deeper:
+        </span>
+        <Link
+          href="/blog/how-to-make-your-resume-ats-friendly-2026-complete-guide"
+          className="text-xs font-semibold text-emerald-700 underline decoration-emerald-200 underline-offset-4 hover:text-emerald-900 sm:text-sm"
+        >
+          ATS friendly resume guide
+        </Link>
+        <Link
+          href="/blog/10-resume-mistakes-ats-rejections-2026"
+          className="text-xs font-semibold text-emerald-700 underline decoration-emerald-200 underline-offset-4 hover:text-emerald-900 sm:text-sm"
+        >
+          Common ATS mistakes
+        </Link>
+        <Link
+          href="/blog/why-resume-rejected-ats-top-reasons-fixes"
+          className="text-xs font-semibold text-emerald-700 underline decoration-emerald-200 underline-offset-4 hover:text-emerald-900 sm:text-sm"
+        >
+          Why resumes get rejected
+        </Link>
+      </nav>
 
       {/* AI insights */}
       <section className="rounded-2xl border border-zinc-200/90 bg-white p-5 shadow-soft-lg sm:p-8 lg:p-10">
@@ -892,10 +1025,11 @@ export function AtsAnalysisResults({
         >
           <div>
             <span className="font-semibold text-zinc-950">
-              Tips from this run
+              Practical tips from this run
             </span>
             <p className="mt-1 text-xs text-zinc-500">
-              Playbook habits plus tailored suggestions.
+              Habits that help every application, plus notes tailored to your
+              file.
             </p>
           </div>
           <span

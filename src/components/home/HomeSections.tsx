@@ -170,7 +170,7 @@ export function ProblemSolutionSection() {
                 href={RESUME_CHECKER_PATH}
                 className="btn-gradient inline-flex px-7 text-sm sm:text-base"
               >
-                Run the ATS Resume Checker
+                See my score — free
               </Link>
             </div>
           </div>
@@ -215,6 +215,159 @@ export function HomeTrustStrip() {
             </div>
           </div>
         ))}
+      </div>
+    </section>
+  );
+}
+
+/**
+ * Trust + education grid: ATS context for US/UK job seekers + internal links.
+ */
+export function HomeAtsEducationSection() {
+  const blocks = [
+    {
+      title: "Why ATS-friendly resumes matter",
+      body: "In busy hiring queues, software often ingests your file before a person does. An ATS friendly resume—clean text, clear headings—helps you improve your visibility without gaming the system.",
+      href: "/blog/how-to-make-your-resume-ats-friendly-2026-complete-guide",
+      cta: "Read the 2026 guide",
+    },
+    {
+      title: "How ATS systems read your file",
+      body: "Most tools pull out skills, titles, and dates into searchable fields. If your layout hides text or shuffles order, recruiters may not find you when they search— even with great experience.",
+      href: "/blog/how-to-make-your-resume-ats-friendly-2026-complete-guide",
+      cta: "How parsing works",
+    },
+    {
+      title: "Common resume mistakes",
+      body: "Image-only PDFs, flashy multi-column templates, and buzzword-heavy bullets with no proof are repeat offenders. Small fixes can improve your ATS score more than another font change.",
+      href: "/blog/10-resume-mistakes-ats-rejections-2026",
+      cta: "10 mistakes to avoid",
+    },
+    {
+      title: "Why resumes get rejected early",
+      body: "Sometimes it is fit; often it is format or missing keywords next to real skills. Separating parser issues from a true role mismatch saves you from rewriting the wrong thing.",
+      href: "/blog/why-resume-rejected-ats-top-reasons-fixes",
+      cta: "Rejection reasons + fixes",
+    },
+  ];
+  return (
+    <section
+      className="border-b border-slate-200/80 bg-white py-16 sm:py-20"
+      aria-labelledby="home-ats-edu-heading"
+    >
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="section-eyebrow mx-auto">Understanding ATS</p>
+          <h2
+            id="home-ats-edu-heading"
+            className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
+          >
+            What you are up against—and how resume optimization helps
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
+            Whether you are in the US, UK, or applying remotely, the same rules
+            tend to apply: build an{" "}
+            <strong className="font-semibold text-slate-900">
+              ATS compatible resume
+            </strong>
+            , align honest keywords, and check before you send.
+          </p>
+        </div>
+        <ul className="mt-14 grid gap-6 sm:grid-cols-2 lg:gap-8">
+          {blocks.map((b) => (
+            <li key={b.title}>
+              <article className="flex h-full flex-col rounded-2xl border border-slate-200/90 bg-slate-50/40 p-6 shadow-sm transition hover:border-emerald-200/80 hover:bg-white hover:shadow-md sm:p-7">
+                <h3 className="font-display text-lg font-bold text-slate-900">
+                  {b.title}
+                </h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-600 sm:text-[15px]">
+                  {b.body}
+                </p>
+                <Link
+                  href={b.href}
+                  className="mt-5 inline-flex text-sm font-semibold text-[#16a34a] underline decoration-[#4ade80]/50 underline-offset-4 transition hover:text-[#15803d]"
+                >
+                  {b.cta} →
+                </Link>
+              </article>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+/** Short, skimmable tips for retention and trust. */
+export function HomeQuickResumeTipsSection() {
+  const tips = [
+    {
+      title: "Lead with fit",
+      body: "Put role-relevant wins in the top third of page one—recruiters skim there first.",
+    },
+    {
+      title: "Mirror the posting—honestly",
+      body: "Reuse phrases from the job description only where you can explain them in an interview.",
+    },
+    {
+      title: "One column wins",
+      body: "Simple layouts are easier for ATS and for tired humans on a phone screen.",
+    },
+    {
+      title: "Prove, don't declare",
+      body: 'Swap "hard worker" for a bullet with scope, tool, or outcome.',
+    },
+    {
+      title: "Re-check after edits",
+      body: "Run the online resume checker again on the exact file you will upload.",
+    },
+    {
+      title: "Keep a master file",
+      body: "Duplicate and tailor per role cluster instead of starting from scratch every time.",
+    },
+  ];
+  return (
+    <section
+      className="border-b border-slate-200/70 bg-gradient-to-b from-slate-50/90 to-white py-16 sm:py-20"
+      aria-labelledby="home-quick-tips-heading"
+    >
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
+          <div className="max-w-xl">
+            <p className="section-eyebrow">Quick wins</p>
+            <h2
+              id="home-quick-tips-heading"
+              className="mt-3 font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl"
+            >
+              Resume tips you can use in the next ten minutes
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base">
+              Small changes add up. Pair these with our{" "}
+              <strong className="font-semibold text-slate-900">
+                ATS Resume Checker
+              </strong>{" "}
+              to see what moves the needle for your file.
+            </p>
+          </div>
+          <Link
+            href={RESUME_CHECKER_PATH}
+            className="inline-flex h-11 shrink-0 items-center justify-center rounded-xl bg-slate-900 px-5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800"
+          >
+            See my score — free
+          </Link>
+        </div>
+        <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {tips.map((t) => (
+            <li key={t.title}>
+              <div className="h-full rounded-xl border border-slate-200/80 bg-white px-4 py-4 shadow-sm sm:px-5 sm:py-5">
+                <p className="text-sm font-semibold text-slate-900">{t.title}</p>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                  {t.body}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
@@ -384,12 +537,18 @@ export function HowItWorksSection() {
             </li>
           ))}
         </ol>
-        <div className="mt-12 flex justify-center">
+        <div className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link
             href={RESUME_CHECKER_PATH}
             className="btn-gradient px-8 text-base font-semibold"
           >
-            Start with step 1 — upload your resume
+            Show me my ATS score
+          </Link>
+          <Link
+            href="/blog/how-to-make-your-resume-ats-friendly-2026-complete-guide"
+            className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-6 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-accent-400 hover:text-accent-600"
+          >
+            Read the ATS-friendly guide
           </Link>
         </div>
       </div>

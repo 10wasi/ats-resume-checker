@@ -11,15 +11,18 @@ export function ResumeCheckerSeoIntro() {
     >
       <h1
         id="resume-ats-heading"
-        className="max-w-4xl font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
+        className="max-w-4xl text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
       >
-        Resume ATS Checker
+        ATS Resume Checker: know your score before you hit apply
       </h1>
       <p className="mt-4 max-w-3xl text-pretty text-base leading-relaxed text-slate-600 sm:text-lg">
-        Upload or paste your résumé for an{" "}
-        <strong className="font-semibold text-slate-800">ATS-style score</strong>{" "}
-        (0–100), strengths and gaps, and actionable suggestions — optional job
-        posting for keyword match. Same analysis flow, one place.
+        Paste or upload for a frank, ATS-style read—structure, keywords, and
+        where an{" "}
+        <strong className="font-semibold text-slate-800">
+          ATS friendly resume
+        </strong>{" "}
+        still has room to grow. Add a job post when you want sharper resume
+        optimization for one role.
       </p>
 
       <h2 className="mt-10 text-lg font-semibold tracking-tight text-slate-900 sm:text-xl">
