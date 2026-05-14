@@ -1,4 +1,5 @@
 import type { BlogPost } from "./types";
+import { qualifiedCandidatesRejected2026Post } from "./posts-qualified-candidates-rejected-2026";
 import { atsFreshersGuidePost } from "./posts-ats-freshers-2026";
 import { atsRejectionReasonsPost } from "./posts-ats-rejection-reasons";
 import { resumeKeywords2026GuidePost } from "./posts-resume-keywords-2026-guide";
@@ -9,6 +10,7 @@ import { atsKeywordsTechJobs2026Post } from "./posts-ats-keywords-tech-2026";
 import { careerPillarPosts } from "./posts-career-pillars";
 
 export const blogPosts: BlogPost[] = [
+  qualifiedCandidatesRejected2026Post,
   {
     slug: "best-ats-resume-checker-free-online-for-job-seekers-2026-guide",
     title:
