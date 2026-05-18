@@ -14,6 +14,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "", priority: 1, changeFrequency: "weekly" },
     { path: RESUME_CHECKER_PATH, priority: 0.95, changeFrequency: "weekly" },
     { path: "/blog", priority: 0.85, changeFrequency: "weekly" },
+    {
+      path: "/ultimate-ats-resume-guide",
+      priority: 0.9,
+      changeFrequency: "monthly",
+    },
     { path: "/about", priority: 0.7, changeFrequency: "monthly" },
     { path: "/contact", priority: 0.7, changeFrequency: "monthly" },
     { path: "/privacy", priority: 0.65, changeFrequency: "monthly" },

@@ -7,6 +7,7 @@ export type SiteNavItem = { readonly href: string; readonly label: string };
 /** Product links (footer + dashboard footer). */
 export const SITE_TOOLS: SiteNavItem[] = [
   { href: RESUME_CHECKER_PATH, label: "Resume & ATS checker" },
+  { href: "/ultimate-ats-resume-guide", label: "Ultimate ATS guide" },
   { href: "/blog", label: "Blog" },
 ];
 

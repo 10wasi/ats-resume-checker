@@ -49,7 +49,14 @@ export function HomeSeoContent() {
             <strong className="font-semibold text-slate-900">
               improve your ATS score
             </strong>{" "}
-            honestly before a portal decides for you.
+            honestly before a portal decides for you. For a single bookmarkable overview, read our{" "}
+            <Link
+              href="/ultimate-ats-resume-guide"
+              className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/35 underline-offset-2 hover:text-[#16a34a]"
+            >
+              ultimate ATS resume guide
+            </Link>
+            .
           </p>
 
           <h3 className="pt-2 font-display text-xl font-bold text-slate-900">
