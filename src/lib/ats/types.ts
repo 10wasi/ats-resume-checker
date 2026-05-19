@@ -29,6 +29,10 @@ export type AtsAnalysisResult = {
   suggestions: string[];
   keyword_match_score: number;
   missing_keywords: string[];
+  /** Terms from the job post found in your resume (when a JD was provided). */
+  matched_keywords?: string[];
+  /** Skills and tools detected in resume text (lexicon + parsing). */
+  detected_skills?: string[];
   formatting_issues: string[];
   grammar_issues: string[];
   readability_score: number;

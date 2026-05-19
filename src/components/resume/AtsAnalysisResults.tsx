@@ -10,6 +10,7 @@ import {
   downloadTextFile,
 } from "@/lib/ats/export-analysis";
 import { CircularAtsScore } from "./CircularAtsScore";
+import { AtsResultsInsightsPanel } from "./AtsResultsInsightsPanel";
 
 type Props = {
   analysis: AtsAnalysisResult;
@@ -656,6 +657,14 @@ export function AtsAnalysisResults({
           Why resumes get rejected
         </Link>
       </nav>
+
+      <AtsResultsInsightsPanel
+        analysis={analysis}
+        showJobMatch={showJobMatch}
+        onRecheck={onRecheck}
+        recheckLoading={recheckLoading}
+        recheckDisabled={recheckDisabled}
+      />
 
       {/* AI insights */}
       <section className="rounded-2xl border border-zinc-200/90 bg-white p-5 shadow-soft-lg sm:p-8 lg:p-10">

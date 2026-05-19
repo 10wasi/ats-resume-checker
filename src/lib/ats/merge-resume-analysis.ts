@@ -116,6 +116,10 @@ export function mergeResumeAnalysis(
     suggestions,
     keyword_match_score,
     missing_keywords: mergedMissing,
+    matched_keywords: hasJobDescription
+      ? dedupeStrings(signals.jdKeywordsMatched, 20)
+      : undefined,
+    detected_skills: dedupeStrings(signals.skillsFound, 24),
     formatting_issues,
     grammar_issues,
     readability_score,

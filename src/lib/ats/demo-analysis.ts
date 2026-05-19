@@ -23,6 +23,16 @@ const DEMO_BASE: Omit<
   ],
   keyword_match_score: 70,
   missing_keywords: ["React", "REST APIs", "Team Collaboration"],
+  matched_keywords: ["JavaScript", "TypeScript", "Agile", "CI/CD"],
+  detected_skills: [
+    "javascript",
+    "typescript",
+    "python",
+    "react",
+    "node.js",
+    "sql",
+    "git",
+  ],
   formatting_issues: [
     "No clear section headings",
     "Inconsistent bullet formatting",
