@@ -485,7 +485,7 @@ Pick a structure that parses cleanly, place honest keywords where searches look,
 
 Your experience already happened. The example shows how to let it be seen.
 
-One last reminder: save versions with dates in the filename (`FirstName_LastName_Marketing_2026-05.pdf`) so you always know which **ATS compatible resume** you tested before you hit submit. Small habits like that prevent the classic mistake—uploading an old draft because you were rushing on mobile.
+One last reminder: save versions with dates in the filename (e.g. FirstName_LastName_Marketing_2026-05.pdf) so you always know which **ATS compatible resume** you tested before you hit submit. Small habits like that prevent the classic mistake—uploading an old draft because you were rushing on mobile.
 
 Good luck out there. You have the examples. Now make them yours—and test them.
 `.trim(),
