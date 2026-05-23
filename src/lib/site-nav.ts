@@ -8,6 +8,7 @@ export type SiteNavItem = { readonly href: string; readonly label: string };
 export const SITE_TOOLS: SiteNavItem[] = [
   { href: RESUME_CHECKER_PATH, label: "Resume & ATS checker" },
   { href: "/ultimate-ats-resume-guide", label: "Ultimate ATS guide" },
+  { href: "/ats-resume-checklist-2026", label: "ATS resume checklist" },
   { href: "/blog", label: "Blog" },
 ];
 
