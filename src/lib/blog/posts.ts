@@ -1,4 +1,5 @@
 import type { BlogPost } from "./types";
+import { resumeSkillsAtsVisibility2026Post } from "./posts-resume-skills-ats-visibility-2026";
 import { atsFriendlyResumeExamples2026Post } from "./posts-ats-friendly-resume-examples-2026";
 import { atsResumeKeywordsVisibility2026Post } from "./posts-ats-resume-keywords-visibility-2026";
 import { beatAtsFilters2026Post } from "./posts-beat-ats-filters-2026";
@@ -13,6 +14,7 @@ import { atsKeywordsTechJobs2026Post } from "./posts-ats-keywords-tech-2026";
 import { careerPillarPosts } from "./posts-career-pillars";
 
 export const blogPosts: BlogPost[] = [
+  resumeSkillsAtsVisibility2026Post,
   atsFriendlyResumeExamples2026Post,
   atsResumeKeywordsVisibility2026Post,
   beatAtsFilters2026Post,
