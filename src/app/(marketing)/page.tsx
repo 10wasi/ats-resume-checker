@@ -9,11 +9,15 @@ import { BlogHighlightsSection } from "@/components/home/BlogHighlightsSection";
 import {
   FeatureHighlights,
   HeroSection,
+  HomeAuthorityHubSection,
+  HomeChecklistSection,
   HomeAtsEducationSection,
+  HomeProblemsWeDetectSection,
   HomeQuickResumeTipsSection,
+  HomeTrustedBySection,
+  HomeWhyAtsRejectsSection,
   HowItWorksSection,
   HomeTrustStrip,
-  ProblemSolutionSection,
 } from "@/components/home/HomeSections";
 import { HomeSeoContent } from "@/components/home/HomeSeoContent";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
@@ -47,24 +51,26 @@ const FaqSection = dynamic(
 );
 
 const HOME_TITLE =
-  "Free ATS Resume Checker Online – Check Your Resume Score Instantly";
+  "Free ATS Resume Checker Online | ATS Score, Keywords & Resume Tips";
 const HOME_DESCRIPTION =
-  "Check your resume ATS score instantly using our free ATS resume checker. Improve your CV and increase your chances of getting hired.";
+  "Free ATS Resume Checker: analyze your resume, find missing keywords, fix formatting issues, and improve ATS compatibility. ATS friendly resume tips for US & UK job seekers.";
 
 export const metadata: Metadata = {
   title: HOME_TITLE,
   description: HOME_DESCRIPTION,
   keywords: [
     "ATS Resume Checker",
+    "Free ATS Resume Checker",
     "ATS friendly resume",
-    "improve ATS score",
     "resume optimization",
-    "ATS compatible resume",
-    "online resume checker",
+    "resume keywords",
     "ATS resume score",
-    "CV optimization",
-    "free resume checker",
-    "job application resume",
+    "resume formatting",
+    "ATS compatible resume",
+    "improve ATS score",
+    "online resume checker",
+    "ATS resume tips",
+    "resume ATS test",
   ],
   alternates: { canonical: "/" },
   openGraph: {
@@ -85,10 +91,14 @@ export default function HomePage() {
       <HomeWebApplicationJsonLd />
       <FaqJsonLd />
       <HeroSection />
-      <ProblemSolutionSection />
+      <HomeTrustedBySection />
+      <HomeWhyAtsRejectsSection />
+      <HomeProblemsWeDetectSection />
       <FeatureHighlights />
       <HowItWorksSection />
+      <HomeChecklistSection />
       <HomeTrustStrip />
+      <HomeAuthorityHubSection />
       <HomeAtsEducationSection />
       <HomeQuickResumeTipsSection />
       <AdPlaceholder
@@ -111,16 +121,16 @@ export default function HomePage() {
           />
           <div className="relative">
             <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Ready to see what hiring software sees?
+              Ready to improve ATS compatibility?
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-300">
-              Run a free check, fix what matters, and send your next application
-              knowing your resume reads like an ATS friendly, interview-ready
-              document—not a mystery to parsers.
+              Use our free ATS Resume Checker to analyze your resume and improve
+              ATS compatibility. Fix keywords, formatting, and proof—then apply
+              with a file you have actually tested.
             </p>
             <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
               <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base">
-                See my score — free
+                Analyze My Resume Free
               </Link>
               <Link
                 href="/blog"

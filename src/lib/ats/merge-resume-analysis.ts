@@ -1,3 +1,4 @@
+import { deriveAtsCompatibilityRating } from "./compatibility-rating";
 import type { AtsAnalysisResult } from "./types";
 import type { ResumeSignals } from "./extract-resume-signals";
 import type { EngineScoreResult } from "./score-engine";
@@ -54,6 +55,39 @@ export function buildOfflineQualitativeFallback(
       "Tip: paste your best bullet here and add a number — time saved, dollars, % improvement, or scale (users/requests).",
     ],
   };
+}
+
+function deriveResumeStrengths(
+  signals: ResumeSignals,
+  formatting_issues: string[],
+  hasJobDescription: boolean
+): string[] {
+  const out: string[] = [];
+  if (signals.summaryPresent) {
+    out.push("Summary or profile section detected—helps keyword and human skims.");
+  }
+  if (signals.skillsSectionPresent) {
+    out.push("Dedicated skills section improves ATS searchability.");
+  }
+  if (signals.bulletCount >= 6) {
+    out.push("Healthy number of experience bullets for impact and parsing.");
+  }
+  if (formatting_issues.length === 0) {
+    out.push("No major layout or ATS formatting flags on this export.");
+  }
+  if (
+    hasJobDescription &&
+    signals.jdKeywords.length > 0 &&
+    signals.jdCoverageRatio >= 0.55
+  ) {
+    out.push(
+      `Solid posting keyword overlap (${Math.round(signals.jdCoverageRatio * 100)}% of extracted terms).`
+    );
+  }
+  if (signals.experiencePresent) {
+    out.push("Experience section mapped clearly for parsers.");
+  }
+  return out.slice(0, 6);
 }
 
 function dedupeStrings(items: string[], max: number): string[] {
@@ -113,6 +147,12 @@ export function mergeResumeAnalysis(
   const result: AtsAnalysisResult = {
     ats_score: engine.score,
     score_breakdown: breakdown,
+    ats_compatibility_rating: deriveAtsCompatibilityRating(engine.score),
+    resume_strengths: deriveResumeStrengths(
+      signals,
+      formatting_issues,
+      hasJobDescription
+    ),
     suggestions,
     keyword_match_score,
     missing_keywords: mergedMissing,
@@ -129,6 +169,13 @@ export function mergeResumeAnalysis(
 
   if (hasJobDescription) {
     result.job_match_score = computeDeterministicJobMatch(breakdown);
+    if (signals.jdKeywords.length > 0) {
+      result.keyword_match_detail = {
+        matched: signals.jdKeywordsMatched.length,
+        total: signals.jdKeywords.length,
+        coverage_percent: Math.round(signals.jdCoverageRatio * 100),
+      };
+    }
   }
 
   return result;

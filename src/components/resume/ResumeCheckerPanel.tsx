@@ -540,7 +540,7 @@ export function ResumeCheckerPanel() {
                       Analyzing…
                     </>
                   ) : (
-                    "Analyze my resume"
+                    "Analyze My Resume Free"
                   )}
                 </Button>
 

@@ -9,17 +9,19 @@ import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Free ATS Resume Checker – Improve Your Resume Score Instantly",
+      "Free ATS Resume Checker | Analyze Resume Score & Keywords",
   },
   description:
-    "Free ATS resume checker: instant score (0–100), strengths & weaknesses, and improvement tips. Upload PDF/DOCX or paste text; optional job post for keyword match — no login.",
+    "Analyze your resume with our free ATS Resume Checker: ATS score, keyword match %, missing keywords, formatting issues, compatibility rating, and downloadable report. No login required.",
   keywords: [
-    "ATS resume checker",
-    "free resume checker",
-    "improve resume score",
-    "ATS score",
-    "resume analyzer",
-    "CV checker",
+    "ATS Resume Checker",
+    "Free ATS Resume Checker",
+    "ATS resume score",
+    "resume keywords",
+    "resume optimization",
+    "ATS compatible resume",
+    "resume formatting",
+    "resume ATS test",
   ],
   alternates: { canonical: RESUME_CHECKER_PATH },
   openGraph: {

@@ -95,9 +95,50 @@ export function AtsResultsInsightsPanel({
   }, [analysis.missing_keywords]);
 
   const detectedSkills = (analysis.detected_skills ?? []).slice(0, 20);
+  const keywordDetail = analysis.keyword_match_detail;
+  const compatibility = analysis.ats_compatibility_rating;
 
   return (
     <div className="space-y-6 sm:space-y-8">
+      {(compatibility || keywordDetail) && showJobMatch ? (
+        <div className="grid gap-4 sm:grid-cols-2">
+          {compatibility ? (
+            <div className="rounded-2xl border border-zinc-200/90 bg-white p-5 shadow-soft">
+              <p className="text-[11px] font-bold uppercase tracking-wider text-zinc-500">
+                ATS compatibility rating
+              </p>
+              <p className="mt-2 font-display text-2xl font-bold text-zinc-950">
+                {compatibility.label}
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+                {compatibility.description}
+              </p>
+            </div>
+          ) : null}
+          {keywordDetail ? (
+            <div className="rounded-2xl border border-zinc-200/90 bg-white p-5 shadow-soft">
+              <p className="text-[11px] font-bold uppercase tracking-wider text-zinc-500">
+                Keyword match vs posting
+              </p>
+              <p className="mt-2 font-display text-2xl font-bold tabular-nums text-zinc-950">
+                {keywordDetail.matched}/{keywordDetail.total}
+                <span className="ml-2 text-lg font-semibold text-emerald-700">
+                  ({keywordDetail.coverage_percent}%)
+                </span>
+              </p>
+              <div className="mt-4 h-2.5 overflow-hidden rounded-full bg-zinc-100">
+                <div
+                  className="h-full rounded-full bg-gradient-to-r from-emerald-500 to-teal-500"
+                  style={{ width: `${keywordDetail.coverage_percent}%` }}
+                />
+              </div>
+              <p className="mt-3 text-xs leading-relaxed text-zinc-500">
+                Percentage of job-description terms found in your resume text.
+              </p>
+            </div>
+          ) : null}
+        </div>
+      ) : null}
       <section
         className="rounded-2xl border border-zinc-200/90 bg-white p-5 shadow-soft sm:p-7"
         aria-labelledby="why-score-matters-heading"
@@ -205,15 +246,32 @@ export function AtsResultsInsightsPanel({
           ATS keyword insights
         </h2>
         <p className="mt-2 text-sm leading-relaxed text-zinc-600">
-          Keyword coverage:{" "}
-          <strong className="font-semibold text-zinc-800">
-            {Math.round(analysis.keyword_match_score)}/100
-          </strong>
-          . Honest{" "}
-          <strong className="font-semibold text-zinc-800">
-            resume optimization
-          </strong>
-          , not stuffing.
+          {keywordDetail && showJobMatch ? (
+            <>
+              Posting terms matched:{" "}
+              <strong className="font-semibold text-zinc-800">
+                {keywordDetail.matched} of {keywordDetail.total} (
+                {keywordDetail.coverage_percent}%)
+              </strong>
+              . Overall keyword signal:{" "}
+              <strong className="font-semibold text-zinc-800">
+                {Math.round(analysis.keyword_match_score)}/100
+              </strong>
+              .
+            </>
+          ) : (
+            <>
+              Keyword coverage:{" "}
+              <strong className="font-semibold text-zinc-800">
+                {Math.round(analysis.keyword_match_score)}/100
+              </strong>
+              . Honest{" "}
+              <strong className="font-semibold text-zinc-800">
+                resume optimization
+              </strong>
+              , not stuffing.
+            </>
+          )}
         </p>
 
         {showJobMatch && matched.length > 0 ? (

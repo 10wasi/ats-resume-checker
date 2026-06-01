@@ -25,6 +25,15 @@ export function buildAnalysisExportText(
     "SCORES",
     "------",
     line("ATS score", analysis.ats_score),
+    analysis.ats_compatibility_rating
+      ? line("ATS compatibility", analysis.ats_compatibility_rating.label)
+      : "",
+    analysis.keyword_match_detail
+      ? line(
+          "Posting keyword match",
+          `${analysis.keyword_match_detail.matched}/${analysis.keyword_match_detail.total} (${analysis.keyword_match_detail.coverage_percent}%)`
+        )
+      : "",
     "",
     analysis.score_breakdown
       ? [
@@ -44,6 +53,12 @@ export function buildAnalysisExportText(
     line("Readability", analysis.readability_score),
     analysis.job_match_score != null
       ? line("Job match", analysis.job_match_score)
+      : "",
+    "",
+    list("RESUME STRENGTHS", analysis.resume_strengths ?? []),
+    "",
+    analysis.matched_keywords?.length
+      ? list("MATCHED POSTING KEYWORDS", analysis.matched_keywords)
       : "",
     "",
     list("MISSING KEYWORDS", analysis.missing_keywords),

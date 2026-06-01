@@ -22,19 +22,22 @@ const siteUrl = getSiteUrl();
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Free ATS Resume Checker – Check Your CV Score in Seconds",
+    default:
+      "Free ATS Resume Checker | ATS Score, Keywords & Resume Optimization",
     template: "%s | ATS Resume Checker",
   },
   description:
-    "Improve your resume score instantly using our free ATS resume checker. Optimize your CV for job applications and get hired faster.",
+    "Free ATS Resume Checker for job seekers: analyze your resume, find missing keywords, fix ATS formatting issues, and improve ATS compatibility. ATS friendly resume tips for US & UK.",
   keywords: [
-    "ATS resume checker",
-    "resume score",
-    "CV optimization",
-    "ATS keywords",
-    "job application resume",
-    "free resume checker",
-    "ATS score",
+    "ATS Resume Checker",
+    "Free ATS Resume Checker",
+    "ATS friendly resume",
+    "resume optimization",
+    "resume keywords",
+    "ATS resume score",
+    "resume formatting",
+    "ATS compatible resume",
+    "online resume checker",
   ],
   applicationName: "ATS Resume Checker",
   authors: [{ name: "ATS Resume Checker" }],

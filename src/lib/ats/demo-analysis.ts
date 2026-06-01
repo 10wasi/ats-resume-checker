@@ -1,3 +1,4 @@
+import { deriveAtsCompatibilityRating } from "./compatibility-rating";
 import type { AtsAnalysisResult } from "./types";
 import type { ScoreBreakdown } from "./score-engine";
 
@@ -16,6 +17,17 @@ const DEMO_BASE: Omit<
 > = {
   ats_score: 72,
   score_breakdown: DEMO_BREAKDOWN,
+  ats_compatibility_rating: deriveAtsCompatibilityRating(72),
+  keyword_match_detail: {
+    matched: 4,
+    total: 7,
+    coverage_percent: 57,
+  },
+  resume_strengths: [
+    "Dedicated skills section improves ATS searchability.",
+    "Healthy number of experience bullets for impact and parsing.",
+    "Experience section mapped clearly for parsers.",
+  ],
   suggestions: [
     "Add a Skills section grouped by stack (languages, frameworks, infra) and mirror the posting.",
     "Quantify at least half your bullets with %, $, time saved, or user scale.",

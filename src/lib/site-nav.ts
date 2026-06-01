@@ -16,6 +16,7 @@ export const SITE_TOOLS: SiteNavItem[] = [
 /** Sticky marketing header + mobile nav strip. */
 export const SITE_MARKETING_NAV: SiteNavItem[] = [
   { href: RESUME_CHECKER_PATH, label: "Resume checker" },
+  { href: "/ats-resume-hub", label: "Resources" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },

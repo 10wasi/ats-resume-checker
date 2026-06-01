@@ -272,9 +272,19 @@ export function AtsAnalysisResults({
   const expPct = hasBreakdown ? pctOfMax(breakdown.experience, 25) : null;
   const atsPct = hasBreakdown ? pctOfMax(breakdown.ats, 20) : null;
   const formatPct = hasBreakdown ? pctOfMax(breakdown.formatting, 15) : null;
+  const eduPct = hasBreakdown ? pctOfMax(breakdown.education, 10) : null;
   const keywordPct = Math.round(
     Math.max(0, Math.min(100, analysis.keyword_match_score))
   );
+  const postingKeywordPct =
+    showJobMatch && analysis.keyword_match_detail
+      ? analysis.keyword_match_detail.coverage_percent
+      : null;
+  const compatibility = analysis.ats_compatibility_rating;
+  const resumeStrengths =
+    analysis.resume_strengths?.length
+      ? analysis.resume_strengths
+      : insights.strengths.slice(0, 5);
 
   const strengthsList = useExpandedList(insights.strengths);
   const weaknessesList = useExpandedList(insights.weaknesses);
@@ -502,6 +512,29 @@ export function AtsAnalysisResults({
               first—then you are truly improving your ATS score for the version
               employers receive.
             </p>
+            {compatibility ? (
+              <div className="mx-auto mt-6 inline-flex max-w-lg flex-col items-center gap-2 rounded-2xl border border-emerald-200/80 bg-white/90 px-5 py-4 shadow-sm sm:flex-row sm:gap-4">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-zinc-500">
+                  ATS compatibility
+                </span>
+                <span
+                  className={`rounded-full px-4 py-1 text-sm font-bold ${
+                    compatibility.tone === "excellent"
+                      ? "bg-emerald-100 text-emerald-900"
+                      : compatibility.tone === "good"
+                        ? "bg-teal-100 text-teal-900"
+                        : compatibility.tone === "fair"
+                          ? "bg-amber-100 text-amber-950"
+                          : "bg-rose-100 text-rose-950"
+                  }`}
+                >
+                  {compatibility.label}
+                </span>
+                <p className="text-center text-xs leading-relaxed text-zinc-600 sm:text-left sm:text-sm">
+                  {compatibility.description}
+                </p>
+              </div>
+            ) : null}
           </div>
 
           <div className="relative mx-auto mt-12 max-w-4xl">
@@ -510,8 +543,16 @@ export function AtsAnalysisResults({
             </p>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-5">
               <CompositeMetricCard
-                label="Keyword coverage"
-                value={analysis.keyword_match_score}
+                label={
+                  postingKeywordPct != null
+                    ? "Posting keyword match"
+                    : "Keyword coverage"
+                }
+                value={
+                  postingKeywordPct != null
+                    ? postingKeywordPct
+                    : analysis.keyword_match_score
+                }
               />
               <CompositeMetricCard
                 label="Readability & structure"
@@ -623,13 +664,57 @@ export function AtsAnalysisResults({
               label="Keywords"
               icon={IconKeyword}
               percent={keywordPct}
-              detail="Coverage across your résumé text"
+              detail={
+                analysis.keyword_match_detail
+                  ? `${analysis.keyword_match_detail.matched}/${analysis.keyword_match_detail.total} posting terms in text`
+                  : "Coverage across your résumé text"
+              }
               gradientClass="bg-gradient-to-br from-emerald-100/95 via-white to-teal-50/50"
               iconBg="bg-gradient-to-br from-emerald-500 to-teal-600"
+            />
+            <MetricCard
+              label="Education"
+              icon={IconFmt}
+              percent={eduPct}
+              detail={hasBreakdown ? "Weight · up to 10 pts" : "—"}
+              gradientClass="bg-gradient-to-br from-violet-100/95 via-white to-indigo-50/50"
+              iconBg="bg-gradient-to-br from-violet-500 to-indigo-600"
             />
           </div>
         </div>
       </article>
+
+      {resumeStrengths.length > 0 ? (
+        <section
+          className="rounded-2xl border border-emerald-200/80 bg-gradient-to-br from-emerald-50/60 via-white to-white p-5 shadow-soft sm:p-7"
+          aria-labelledby="resume-strengths-heading"
+        >
+          <h2
+            id="resume-strengths-heading"
+            className="font-display text-xl font-semibold text-zinc-950"
+          >
+            Resume strengths
+          </h2>
+          <p className="mt-2 text-sm text-zinc-600">
+            What is already working in this export—build on these while you fix
+            gaps below.
+          </p>
+          <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+            {resumeStrengths.map((s, i) => (
+              <li
+                key={i}
+                className="flex gap-3 rounded-xl border border-emerald-100/80 bg-white/80 px-4 py-3 text-sm leading-relaxed text-zinc-700"
+              >
+                <span
+                  className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-emerald-500"
+                  aria-hidden
+                />
+                {s}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
 
       <nav
         className="flex flex-col items-center gap-2 rounded-xl border border-zinc-100 bg-zinc-50/80 px-4 py-4 text-center sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-4 sm:py-3"

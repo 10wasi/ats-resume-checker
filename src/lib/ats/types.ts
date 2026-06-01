@@ -20,11 +20,29 @@ export type CareerInsights = {
   qa_scorecard: QaScorecardRow[];
 };
 
+export type KeywordMatchDetail = {
+  matched: number;
+  total: number;
+  coverage_percent: number;
+};
+
+export type AtsCompatibilityRating = {
+  label: string;
+  description: string;
+  tone: "excellent" | "good" | "fair" | "needs-work";
+};
+
 export type AtsAnalysisResult = {
   /** Overall 0–100 — deterministic rule-based score (stable for same input). */
   ats_score: number;
   /** Component scores when the score engine provides a full breakdown. */
   score_breakdown?: ScoreBreakdown;
+  /** Human-readable compatibility band derived from ats_score. */
+  ats_compatibility_rating?: AtsCompatibilityRating;
+  /** Posting keyword overlap when a job description was provided. */
+  keyword_match_detail?: KeywordMatchDetail;
+  /** Positive signals surfaced for the results report. */
+  resume_strengths?: string[];
   /** Rule-based + curated AI tips (deterministic slice first). */
   suggestions: string[];
   keyword_match_score: number;

@@ -23,30 +23,30 @@ export function HeroSection() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="section-eyebrow">
             <IconSparkle className="h-3.5 w-3.5 shrink-0 text-[#4ade80]" />
-            Free ATS Resume Checker · online resume checker for US &amp; UK job
-            seekers
+            Free ATS Resume Checker · resume optimization for US &amp; UK
           </p>
           <h1 className="mt-6 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.85rem] lg:leading-[1.1]">
-            You hit submit—then nothing. Let&apos;s fix what hiring software
-            actually sees.
+            Stop Losing Interviews to ATS Filters
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            Online applications in the US and UK usually go through applicant
-            software before a recruiter reads your name. If your file is hard to
-            parse or your wording doesn&apos;t match the role, you can be screened
-            out on a technicality—not because you&apos;re unqualified. Our{" "}
+            Analyze your resume, discover missing keywords, identify ATS issues,
+            and improve recruiter visibility in minutes. Our{" "}
             <strong className="font-semibold text-slate-800">
-              ATS Resume Checker
+              free ATS Resume Checker
             </strong>{" "}
-            shows a realistic read of your content so you can tighten an{" "}
+            shows what hiring software sees—so you can build an{" "}
             <strong className="font-semibold text-slate-800">
               ATS friendly resume
             </strong>{" "}
-            and move on with confidence.
+            and an{" "}
+            <strong className="font-semibold text-slate-800">
+              ATS compatible resume
+            </strong>{" "}
+            before you hit submit again.
           </p>
           <div className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
             <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base">
-              See my ATS score — free
+              Analyze My Resume Free
             </Link>
             <Link
               href="/blog"
@@ -93,6 +93,311 @@ export function HeroSection() {
             </div>
           </div>
         </div>
+      </div>
+    </section>
+  );
+}
+
+/** Social proof strip — trust without inflated metrics. */
+export function HomeTrustedBySection() {
+  const stats = [
+    { value: "Free", label: "No signup required to run your first check" },
+    { value: "Minutes", label: "Upload, paste a job post, get actionable fixes" },
+    { value: "US & UK", label: "Built for competitive online application markets" },
+  ];
+  return (
+    <section className="border-b border-slate-200/70 bg-white py-12 sm:py-14">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <p className="text-center text-sm font-semibold uppercase tracking-wider text-slate-500">
+          Trusted by job seekers optimizing real applications
+        </p>
+        <div className="mt-8 grid gap-6 sm:grid-cols-3">
+          {stats.map((s) => (
+            <div
+              key={s.label}
+              className="rounded-2xl border border-slate-100 bg-slate-50/50 px-6 py-6 text-center"
+            >
+              <p className="font-display text-2xl font-bold text-[#16a34a] sm:text-3xl">
+                {s.value}
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                {s.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/** Why ATS rejects — emotional + educational. */
+export function HomeWhyAtsRejectsSection() {
+  return (
+    <section
+      className="border-b border-slate-200/80 bg-slate-50/90 py-16 sm:py-20"
+      aria-labelledby="why-ats-rejects-heading"
+    >
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="section-eyebrow mx-auto">Why ATS rejects resumes</p>
+          <h2
+            id="why-ats-rejects-heading"
+            className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
+          >
+            You are not always rejected—you are sometimes unread
+          </h2>
+          <p className="mt-4 text-lg leading-relaxed text-slate-600">
+            Applicant tracking systems ingest files, extract text, and help
+            recruiters search. When your resume never maps cleanly—or critical{" "}
+            <strong className="font-semibold text-slate-900">
+              ATS resume keywords
+            </strong>{" "}
+            never appear in plain text—you may not surface even with the right
+            background.
+          </p>
+        </div>
+        <ul className="mx-auto mt-12 grid max-w-4xl gap-4 sm:grid-cols-2">
+          {[
+            "Two-column templates that scramble reading order for parsers",
+            "Skills trapped in icons instead of searchable text",
+            "Job titles and tools that do not match posting language",
+            "Strong experience buried on page two while bots skim page one",
+          ].map((item) => (
+            <li
+              key={item}
+              className="flex gap-3 rounded-xl border border-slate-200/80 bg-white px-5 py-4 text-sm leading-relaxed text-slate-700"
+            >
+              <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-rose-400" />
+              {item}
+            </li>
+          ))}
+        </ul>
+        <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-slate-600">
+          Learn fixes in our{" "}
+          <Link
+            href="/blog/why-resume-rejected-ats-top-reasons-fixes"
+            className="font-semibold text-[#16a34a] underline decoration-[#4ade80]/40 underline-offset-2"
+          >
+            ATS rejection reasons guide
+          </Link>
+          .
+        </p>
+      </div>
+    </section>
+  );
+}
+
+/** Problems the checker surfaces — Jobscan-style clarity. */
+export function HomeProblemsWeDetectSection() {
+  const problems = [
+    {
+      title: "Missing keywords",
+      body: "Compare your resume to a job description and see which posting terms are absent.",
+    },
+    {
+      title: "Formatting & parsing risks",
+      body: "Catch layouts that break extraction—columns, graphics, weak headings.",
+    },
+    {
+      title: "Weak impact bullets",
+      body: "Spot vague bullets and get stronger phrasing ideas with metrics where honest.",
+    },
+    {
+      title: "Low keyword match %",
+      body: "See matched vs total posting terms—not just a vague score.",
+    },
+    {
+      title: "ATS compatibility rating",
+      body: "Understand overall readiness: Excellent, Good, Fair, or Needs work.",
+    },
+    {
+      title: "Priority fixes",
+      body: "Know what to fix first: layout, keywords, summary, or experience proof.",
+    },
+  ];
+  return (
+    <section
+      className="border-b border-slate-200/70 bg-white py-16 sm:py-20"
+      aria-labelledby="problems-detect-heading"
+    >
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="section-eyebrow mx-auto">What we detect</p>
+          <h2
+            id="problems-detect-heading"
+            className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
+          >
+            ATS problems we detect on your resume
+          </h2>
+          <p className="mt-4 text-base text-slate-600 sm:text-lg">
+            A focused{" "}
+            <strong className="font-semibold text-slate-900">
+              online resume checker
+            </strong>{" "}
+            —not a generic grammar tool. Built for{" "}
+            <strong className="font-semibold text-slate-900">
+              resume ATS test
+            </strong>{" "}
+            workflows before you apply.
+          </p>
+        </div>
+        <ul className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {problems.map((p) => (
+            <li
+              key={p.title}
+              className="card-elevated flex h-full flex-col p-6"
+            >
+              <h3 className="font-display text-lg font-bold text-slate-900">
+                {p.title}
+              </h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                {p.body}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+/** Checklist preview + link to full resource. */
+export function HomeChecklistSection() {
+  const items = [
+    "Copy-paste test passed—logical text order",
+    "Single-column ATS resume format for uploads",
+    "Must-have posting keywords in experience bullets",
+    "Contact info in body; standard headings",
+    "Ran online resume checker on export you will submit",
+  ];
+  return (
+    <section
+      className="border-b border-slate-200/80 bg-gradient-to-b from-emerald-50/40 to-white py-16 sm:py-20"
+      aria-labelledby="home-checklist-heading"
+    >
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div>
+            <p className="section-eyebrow">ATS-friendly resume checklist</p>
+            <h2
+              id="home-checklist-heading"
+              className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900"
+            >
+              Pre-submit checklist (print-friendly)
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-600">
+              Use our full{" "}
+              <Link
+                href="/ats-resume-checklist-2026"
+                className="font-semibold text-[#16a34a] underline decoration-[#4ade80]/40 underline-offset-2"
+              >
+                ATS resume checklist
+              </Link>{" "}
+              or run these five essentials before every batch.
+            </p>
+            <Link
+              href="/ats-resume-checklist-2026"
+              className="mt-6 inline-flex text-sm font-semibold text-[#16a34a] underline decoration-[#4ade80]/50 underline-offset-4"
+            >
+              Open full checklist →
+            </Link>
+          </div>
+          <ul className="space-y-3 rounded-2xl border border-emerald-200/80 bg-white p-6 shadow-soft sm:p-8">
+            {items.map((item) => (
+              <li key={item} className="flex gap-3 text-sm text-slate-700">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-emerald-100 text-emerald-800">
+                  ✓
+                </span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/** Authority hub — internal linking pillar. */
+export function HomeAuthorityHubSection() {
+  const guides = [
+    {
+      title: "ATS resume examples",
+      href: "/blog/best-ats-friendly-resume-examples-2026",
+      desc: "Good vs bad layouts and bullet patterns that parse cleanly.",
+    },
+    {
+      title: "ATS resume keywords",
+      href: "/blog/best-ats-resume-keywords-improve-visibility-2026",
+      desc: "Ethical keyword placement to improve ATS score and visibility.",
+    },
+    {
+      title: "ATS resume format",
+      href: "/blog/best-ats-resume-format-2026-templates-tips",
+      desc: "Templates, typography, and resume formatting tips that work in 2026.",
+    },
+    {
+      title: "ATS resume mistakes",
+      href: "/blog/10-resume-mistakes-ats-rejections-2026",
+      desc: "Ten mistakes that trigger rejections—and fast fixes.",
+    },
+    {
+      title: "Improve ATS score",
+      href: "/blog/how-to-improve-resume-score-instantly",
+      desc: "Quick wins and a practical iteration loop after you analyze.",
+    },
+    {
+      title: "Complete resource hub",
+      href: "/ats-resume-hub",
+      desc: "All guides, checker, and checklist in one map.",
+    },
+  ];
+  return (
+    <section
+      className="border-b border-slate-200/70 bg-slate-50/80 py-16 sm:py-20"
+      aria-labelledby="authority-hub-heading"
+    >
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="section-eyebrow mx-auto">Resume resources</p>
+          <h2
+            id="authority-hub-heading"
+            className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
+          >
+            Guides to improve ATS compatibility
+          </h2>
+          <p className="mt-4 text-slate-600">
+            Deep dives written for job seekers—not keyword fluff. Start with the{" "}
+            <Link
+              href="/ats-resume-hub"
+              className="font-semibold text-[#16a34a] underline underline-offset-2"
+            >
+              ATS resume hub
+            </Link>
+            .
+          </p>
+        </div>
+        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {guides.map((g) => (
+            <li key={g.href}>
+              <Link
+                href={g.href}
+                className="flex h-full flex-col rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm transition hover:border-emerald-200 hover:shadow-md"
+              >
+                <h3 className="font-display text-lg font-bold text-slate-900">
+                  {g.title}
+                </h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+                  {g.desc}
+                </p>
+                <span className="mt-4 text-sm font-semibold text-[#16a34a]">
+                  Read guide →
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
@@ -170,7 +475,7 @@ export function ProblemSolutionSection() {
                 href={RESUME_CHECKER_PATH}
                 className="btn-gradient inline-flex px-7 text-sm sm:text-base"
               >
-                See my score — free
+                Analyze My Resume Free
               </Link>
             </div>
           </div>
@@ -353,7 +658,7 @@ export function HomeQuickResumeTipsSection() {
             href={RESUME_CHECKER_PATH}
             className="inline-flex h-11 shrink-0 items-center justify-center rounded-xl bg-slate-900 px-5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800"
           >
-            See my score — free
+            Analyze My Resume Free
           </Link>
         </div>
         <ul className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -461,9 +766,9 @@ export function FeatureHighlights() {
     <section className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
         <p className="section-eyebrow mx-auto">What you get</p>
-        <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-          Everything you need for an ATS friendly resume—without the SaaS runaround
-        </h2>
+          <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+            How our ATS Resume Checker works
+          </h2>
         <p className="mt-4 text-lg text-slate-600">
           This is a focused{" "}
           <strong className="font-semibold text-slate-900">online resume checker</strong>{" "}
@@ -516,7 +821,7 @@ export function HowItWorksSection() {
         <div className="mx-auto max-w-2xl text-center">
           <p className="section-eyebrow mx-auto">Simple 3-step process</p>
           <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            Upload. Analyze. Improve—then apply with your head held high
+            Upload. Analyze. Improve—then apply with confidence
           </h2>
         </div>
         <ol className="mt-14 grid gap-6 md:grid-cols-3">
@@ -542,7 +847,7 @@ export function HowItWorksSection() {
             href={RESUME_CHECKER_PATH}
             className="btn-gradient px-8 text-base font-semibold"
           >
-            Show me my ATS score
+            Analyze My Resume Free
           </Link>
           <Link
             href="/blog/how-to-make-your-resume-ats-friendly-2026-complete-guide"
