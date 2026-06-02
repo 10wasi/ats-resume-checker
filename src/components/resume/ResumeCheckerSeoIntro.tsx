@@ -56,6 +56,13 @@ export function ResumeCheckerSeoIntro() {
         >
           re-check your resume
         </Link>
+        . Need a focused workflow? Try our{" "}
+        <Link
+          href="/resume-job-description-match"
+          className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/40 underline-offset-4 visited:text-[#22c55e] hover:text-[#16a34a]"
+        >
+          resume vs job description match analyzer
+        </Link>
         .
       </p>
       <ul className="mt-4 grid gap-2 sm:grid-cols-2 lg:max-w-4xl">

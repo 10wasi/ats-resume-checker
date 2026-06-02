@@ -32,8 +32,15 @@ export type AtsCompatibilityRating = {
   tone: "excellent" | "good" | "fair" | "needs-work";
 };
 
+export type KeywordCategoryBreakdown = {
+  technical_skills: string[];
+  soft_skills: string[];
+  tools_platforms: string[];
+  certifications: string[];
+};
+
 export type AtsAnalysisResult = {
-  /** Overall 0â€“100 â€” deterministic rule-based score (stable for same input). */
+  /** Overall 0–100 — deterministic rule-based score (stable for same input). */
   ats_score: number;
   /** Component scores when the score engine provides a full breakdown. */
   score_breakdown?: ScoreBreakdown;
@@ -43,6 +50,9 @@ export type AtsAnalysisResult = {
   keyword_match_detail?: KeywordMatchDetail;
   /** Positive signals surfaced for the results report. */
   resume_strengths?: string[];
+  /** Posting keyword groups for clearer actioning in match analyzer. */
+  missing_keyword_categories?: KeywordCategoryBreakdown;
+  found_keyword_categories?: KeywordCategoryBreakdown;
   /** Rule-based + curated AI tips (deterministic slice first). */
   suggestions: string[];
   keyword_match_score: number;

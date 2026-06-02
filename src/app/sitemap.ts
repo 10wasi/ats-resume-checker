@@ -18,6 +18,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.95,
       changeFrequency: "weekly",
     },
+    {
+      path: "/resume-job-description-match",
+      priority: 0.9,
+      changeFrequency: "weekly",
+    },
     { path: "/blog", priority: 0.85, changeFrequency: "weekly" },
     {
       path: "/ultimate-ats-resume-guide",

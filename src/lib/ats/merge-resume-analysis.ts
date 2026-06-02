@@ -1,5 +1,5 @@
 import { deriveAtsCompatibilityRating } from "./compatibility-rating";
-import type { AtsAnalysisResult } from "./types";
+import type { AtsAnalysisResult, KeywordCategoryBreakdown } from "./types";
 import type { ResumeSignals } from "./extract-resume-signals";
 import type { EngineScoreResult } from "./score-engine";
 import {
@@ -24,6 +24,85 @@ const FORMAT_FLAG_MESSAGES: Record<string, string> = {
     "No summary/profile block — a tight 2-line opener helps keyword and human skims.",
 };
 
+const CERT_HINTS = [
+  "certified",
+  "certification",
+  "certificate",
+  "pmp",
+  "cpa",
+  "acls",
+  "bls",
+  "rn",
+  "aws certified",
+  "google certified",
+  "scrum master",
+];
+const SOFT_HINTS = [
+  "communication",
+  "leadership",
+  "collaboration",
+  "stakeholder",
+  "cross-functional",
+  "teamwork",
+  "presentation",
+  "mentoring",
+  "problem solving",
+  "time management",
+  "negotiation",
+];
+const TOOL_HINTS = [
+  "salesforce",
+  "hubspot",
+  "jira",
+  "figma",
+  "tableau",
+  "power bi",
+  "excel",
+  "workday",
+  "epic",
+  "slack",
+  "teams",
+  "google ads",
+  "meta ads",
+  "ga4",
+  "aws",
+  "azure",
+  "gcp",
+  "docker",
+  "kubernetes",
+  "react",
+  "node",
+  "sql",
+  "python",
+];
+
+function categorizeKeywords(items: string[]): KeywordCategoryBreakdown {
+  const buckets: KeywordCategoryBreakdown = {
+    technical_skills: [],
+    soft_skills: [],
+    tools_platforms: [],
+    certifications: [],
+  };
+  for (const raw of items) {
+    const term = raw.trim();
+    if (!term) continue;
+    const low = term.toLowerCase();
+    if (CERT_HINTS.some((h) => low.includes(h))) {
+      if (!buckets.certifications.includes(term)) buckets.certifications.push(term);
+      continue;
+    }
+    if (SOFT_HINTS.some((h) => low.includes(h))) {
+      if (!buckets.soft_skills.includes(term)) buckets.soft_skills.push(term);
+      continue;
+    }
+    if (TOOL_HINTS.some((h) => low.includes(h)) || /[+/#]|\d/.test(low)) {
+      if (!buckets.tools_platforms.includes(term)) buckets.tools_platforms.push(term);
+      continue;
+    }
+    if (!buckets.technical_skills.includes(term)) buckets.technical_skills.push(term);
+  }
+  return buckets;
+}
 /** When the LLM is unavailable, still return coach-style text grounded in signals. */
 export function buildOfflineQualitativeFallback(
   signals: ResumeSignals
@@ -156,8 +235,14 @@ export function mergeResumeAnalysis(
     suggestions,
     keyword_match_score,
     missing_keywords: mergedMissing,
+    missing_keyword_categories: hasJobDescription
+      ? categorizeKeywords(mergedMissing)
+      : undefined,
     matched_keywords: hasJobDescription
       ? dedupeStrings(signals.jdKeywordsMatched, 20)
+      : undefined,
+    found_keyword_categories: hasJobDescription
+      ? categorizeKeywords(dedupeStrings(signals.jdKeywordsMatched, 20))
       : undefined,
     detected_skills: dedupeStrings(signals.skillsFound, 24),
     formatting_issues,

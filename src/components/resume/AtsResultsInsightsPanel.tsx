@@ -39,6 +39,28 @@ function TagList({
   );
 }
 
+function KeywordBucket({
+  title,
+  items,
+  variant,
+}: {
+  title: string;
+  items: string[];
+  variant: "found" | "missing";
+}) {
+  return (
+    <div className="rounded-lg border border-zinc-200 bg-white p-3">
+      <p className="text-xs font-semibold text-zinc-700">{title}</p>
+      {items.length > 0 ? (
+        <div className="mt-2 flex flex-wrap gap-2">
+          <TagList items={items.slice(0, 8)} variant={variant} />
+        </div>
+      ) : (
+        <p className="mt-2 text-xs text-zinc-500">None detected.</p>
+      )}
+    </div>
+  );
+}
 function PriorityCard({
   title,
   detail,
@@ -97,6 +119,27 @@ export function AtsResultsInsightsPanel({
   const detectedSkills = (analysis.detected_skills ?? []).slice(0, 20);
   const keywordDetail = analysis.keyword_match_detail;
   const compatibility = analysis.ats_compatibility_rating;
+  const missingByCategory = analysis.missing_keyword_categories;
+  const foundByCategory = analysis.found_keyword_categories;
+  const keywordOptimizationSuggestions = useMemo(() => {
+    const out: string[] = [];
+    if (missingByCategory?.technical_skills?.length) {
+      out.push("Add missing technical skills to recent bullets with measurable impact.");
+    }
+    if (missingByCategory?.tools_platforms?.length) {
+      out.push("Name tools/platforms in plain text (not icons) under experience and skills.");
+    }
+    if (missingByCategory?.certifications?.length) {
+      out.push("Place required certifications in a dedicated Certifications section.");
+    }
+    if (missingByCategory?.soft_skills?.length) {
+      out.push("Show soft skills in context: stakeholder, cross-functional, leadership outcomes.");
+    }
+    if (out.length === 0) {
+      out.push("Maintain keyword alignment by tailoring your top three bullets per posting.");
+    }
+    return out.slice(0, 4);
+  }, [missingByCategory]);
 
   return (
     <div className="space-y-6 sm:space-y-8">
@@ -302,6 +345,62 @@ export function AtsResultsInsightsPanel({
             No major keyword gaps flagged for this posting.
           </p>
         ) : null}
+
+        {(missingByCategory || foundByCategory) && showJobMatch ? (
+          <details className="mt-6 rounded-xl border border-zinc-200/90 bg-zinc-50/50 p-4">
+            <summary className="cursor-pointer text-sm font-semibold text-zinc-900">
+              Expand keyword groups (technical, soft, tools, certifications)
+            </summary>
+            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+              <KeywordBucket
+                title="Missing technical skills"
+                items={missingByCategory?.technical_skills ?? []}
+                variant="missing"
+              />
+              <KeywordBucket
+                title="Missing soft skills"
+                items={missingByCategory?.soft_skills ?? []}
+                variant="missing"
+              />
+              <KeywordBucket
+                title="Missing tools/platforms"
+                items={missingByCategory?.tools_platforms ?? []}
+                variant="missing"
+              />
+              <KeywordBucket
+                title="Missing certifications"
+                items={missingByCategory?.certifications ?? []}
+                variant="missing"
+              />
+            </div>
+            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+              <KeywordBucket
+                title="Found technical skills"
+                items={foundByCategory?.technical_skills ?? []}
+                variant="found"
+              />
+              <KeywordBucket
+                title="Found tools/platforms"
+                items={foundByCategory?.tools_platforms ?? []}
+                variant="found"
+              />
+            </div>
+          </details>
+        ) : null}
+
+        <div className="mt-6 rounded-xl border border-zinc-100 bg-white p-4">
+          <p className="text-xs font-bold uppercase tracking-wider text-zinc-500">
+            Keyword optimization suggestions
+          </p>
+          <ul className="mt-3 space-y-2 text-sm text-zinc-700">
+            {keywordOptimizationSuggestions.map((tip, i) => (
+              <li key={i} className="flex gap-2">
+                <span className="text-emerald-600">•</span>
+                <span>{tip}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         {detectedSkills.length > 0 ? (
           <div className="mt-6 border-t border-zinc-100 pt-6">

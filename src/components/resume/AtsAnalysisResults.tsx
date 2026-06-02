@@ -560,13 +560,13 @@ export function AtsAnalysisResults({
               />
               {showJobMatch && analysis.job_match_score != null ? (
                 <CompositeMetricCard
-                  label="Posting alignment"
+                  label="Overall match score"
                   value={analysis.job_match_score}
                 />
               ) : (
                 <div className="flex flex-col justify-center rounded-2xl border border-dashed border-zinc-200/90 bg-white/60 px-5 py-6 text-center shadow-sm">
                   <p className="text-sm font-medium text-zinc-700">
-                    Posting alignment
+                    Overall match score
                   </p>
                   <p className="mt-2 text-xs leading-relaxed text-zinc-500">
                     Add a job description when you score again for a match
