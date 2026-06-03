@@ -11,6 +11,7 @@ import {
 } from "@/lib/ats/export-analysis";
 import { CircularAtsScore } from "./CircularAtsScore";
 import { AtsResultsInsightsPanel } from "./AtsResultsInsightsPanel";
+import { PersonalizedImprovementPlan } from "./PersonalizedImprovementPlan";
 
 type Props = {
   analysis: AtsAnalysisResult;
@@ -715,6 +716,11 @@ export function AtsAnalysisResults({
           </ul>
         </section>
       ) : null}
+
+      <PersonalizedImprovementPlan
+        analysis={analysis}
+        showJobMatch={showJobMatch}
+      />
 
       <nav
         className="flex flex-col items-center gap-2 rounded-xl border border-zinc-100 bg-zinc-50/80 px-4 py-4 text-center sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-4 sm:py-3"
