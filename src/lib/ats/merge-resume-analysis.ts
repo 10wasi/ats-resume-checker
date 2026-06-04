@@ -7,6 +7,8 @@ import {
   deriveKeywordCoverageScore,
   deriveReadabilityScore,
 } from "./score-engine";
+import { buildOfflineAiImprovements } from "./build-offline-ai-improvements";
+import { extractResumeSnippets } from "./extract-resume-snippets";
 import type { AiQualitativePayload } from "./parse-analysis";
 
 const FORMAT_FLAG_MESSAGES: Record<string, string> = {
@@ -169,6 +171,35 @@ function deriveResumeStrengths(
   return out.slice(0, 6);
 }
 
+function deriveResumeWeaknesses(
+  formatting_issues: string[],
+  grammar_issues: string[],
+  missing_keywords: string[],
+  signals: ResumeSignals
+): string[] {
+  const out: string[] = [];
+  formatting_issues.slice(0, 4).forEach((x) => out.push(x));
+  grammar_issues.slice(0, 3).forEach((x) => out.push(x));
+  if (missing_keywords.length > 0) {
+    out.push(
+      `Missing posting keywords: ${missing_keywords.slice(0, 5).join(", ")}${missing_keywords.length > 5 ? "…" : ""}.`
+    );
+  }
+  if (!signals.summaryPresent) {
+    out.push("No summary/profile block—keyword and human skims start weaker.");
+  }
+  if (!signals.skillsSectionPresent) {
+    out.push("No dedicated skills section—tools may be harder for ATS to find.");
+  }
+  if (
+    signals.bulletCount > 0 &&
+    signals.bulletsWithMetrics < Math.max(2, signals.bulletCount / 2)
+  ) {
+    out.push("Few bullets include measurable outcomes—add metrics where truthful.");
+  }
+  return dedupeStrings(out, 8);
+}
+
 function dedupeStrings(items: string[], max: number): string[] {
   const seen = new Set<string>();
   const out: string[] = [];
@@ -186,7 +217,8 @@ export function mergeResumeAnalysis(
   engine: EngineScoreResult,
   signals: ResumeSignals,
   ai: AiQualitativePayload,
-  hasJobDescription: boolean
+  hasJobDescription: boolean,
+  resumeText?: string
 ): AtsAnalysisResult {
   const ruleMissing = signals.jdKeywordsMissing.slice(0, 10);
   const mergedMissing = dedupeStrings(
@@ -223,6 +255,14 @@ export function mergeResumeAnalysis(
   const keyword_match_score = deriveKeywordCoverageScore(breakdown);
   const readability_score = deriveReadabilityScore(breakdown);
 
+  const snippets = resumeText?.trim()
+    ? extractResumeSnippets(resumeText)
+    : { summary: "", skills: "", bullets: [] };
+
+  const ai_resume_improvements =
+    ai.ai_resume_improvements ??
+    buildOfflineAiImprovements(signals, ai, snippets, hasJobDescription);
+
   const result: AtsAnalysisResult = {
     ats_score: engine.score,
     score_breakdown: breakdown,
@@ -232,6 +272,13 @@ export function mergeResumeAnalysis(
       formatting_issues,
       hasJobDescription
     ),
+    resume_weaknesses: deriveResumeWeaknesses(
+      formatting_issues,
+      grammar_issues,
+      mergedMissing,
+      signals
+    ),
+    ai_resume_improvements,
     suggestions,
     keyword_match_score,
     missing_keywords: mergedMissing,

@@ -112,7 +112,8 @@ export async function POST(req: NextRequest) {
     engine,
     signals,
     offline,
-    hasJd
+    hasJd,
+    text
   );
   const shaped = applyReportTier(analysis);
 

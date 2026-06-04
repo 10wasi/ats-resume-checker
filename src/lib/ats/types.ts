@@ -39,8 +39,26 @@ export type KeywordCategoryBreakdown = {
   certifications: string[];
 };
 
+/** Original vs improved pair for the AI rewrite assistant UI. */
+export type RewritePair = {
+  label: string;
+  original: string;
+  improved: string;
+};
+
+/** AI-generated rewrite bundle surfaced after analysis. */
+export type AiResumeImprovements = {
+  improved_summary: RewritePair;
+  improved_skills: RewritePair;
+  experience_bullets: RewritePair[];
+  keyword_suggestions: string[];
+  rewrite_suggestions: string[];
+  achievement_statements: RewritePair[];
+  action_verbs: string[];
+};
+
 export type AtsAnalysisResult = {
-  /** Overall 0ñ100 ó deterministic rule-based score (stable for same input). */
+  /** Overall 0ù100 ù deterministic rule-based score (stable for same input). */
   ats_score: number;
   /** Component scores when the score engine provides a full breakdown. */
   score_breakdown?: ScoreBreakdown;
@@ -50,6 +68,10 @@ export type AtsAnalysisResult = {
   keyword_match_detail?: KeywordMatchDetail;
   /** Positive signals surfaced for the results report. */
   resume_strengths?: string[];
+  /** Gaps and risks for quick scanning on the results page. */
+  resume_weaknesses?: string[];
+  /** AI rewrite assistant: summaries, bullets, keywords, verbs. */
+  ai_resume_improvements?: AiResumeImprovements;
   /** Posting keyword groups for clearer actioning in match analyzer. */
   missing_keyword_categories?: KeywordCategoryBreakdown;
   found_keyword_categories?: KeywordCategoryBreakdown;

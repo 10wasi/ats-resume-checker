@@ -64,7 +64,7 @@ export async function analyzeResumeWithOpenAI(
       model,
       response_format: { type: "json_object" },
       temperature: 0.2,
-      max_tokens: 3072,
+      max_tokens: 4096,
       messages: [
         {
           role: "system",
@@ -119,7 +119,8 @@ export async function analyzeResumeWithOpenAI(
     engine,
     signals,
     parsed.data,
-    hasJd
+    hasJd,
+    trimmedResume
   );
 
   return { ok: true, data: merged };

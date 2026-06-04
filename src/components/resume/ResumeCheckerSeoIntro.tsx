@@ -62,6 +62,13 @@ export function ResumeCheckerSeoIntro() {
           className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/40 underline-offset-4 visited:text-[#22c55e] hover:text-[#16a34a]"
         >
           resume vs job description match analyzer
+        </Link>{" "}
+        or the{" "}
+        <Link
+          href="/ai-resume-rewrite"
+          className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/40 underline-offset-4 visited:text-[#22c55e] hover:text-[#16a34a]"
+        >
+          AI resume rewrite guide
         </Link>
         .
       </p>

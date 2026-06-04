@@ -12,6 +12,7 @@ import {
 import { CircularAtsScore } from "./CircularAtsScore";
 import { AtsResultsInsightsPanel } from "./AtsResultsInsightsPanel";
 import { PersonalizedImprovementPlan } from "./PersonalizedImprovementPlan";
+import { AiResumeImprovements } from "./AiResumeImprovements";
 
 type Props = {
   analysis: AtsAnalysisResult;
@@ -286,6 +287,10 @@ export function AtsAnalysisResults({
     analysis.resume_strengths?.length
       ? analysis.resume_strengths
       : insights.strengths.slice(0, 5);
+  const resumeWeaknesses =
+    analysis.resume_weaknesses?.length
+      ? analysis.resume_weaknesses
+      : insights.weaknesses.slice(0, 8);
 
   const strengthsList = useExpandedList(insights.strengths);
   const weaknessesList = useExpandedList(insights.weaknesses);
@@ -716,6 +721,68 @@ export function AtsAnalysisResults({
           </ul>
         </section>
       ) : null}
+
+      {resumeWeaknesses.length > 0 ? (
+        <section
+          className="rounded-2xl border border-rose-200/80 bg-gradient-to-br from-rose-50/50 via-white to-white p-5 shadow-soft sm:p-7"
+          aria-labelledby="resume-weaknesses-heading"
+        >
+          <h2
+            id="resume-weaknesses-heading"
+            className="font-display text-xl font-semibold text-zinc-950"
+          >
+            Resume weaknesses
+          </h2>
+          <p className="mt-2 text-sm text-zinc-600">
+            Gaps to fix before you apply—paired with AI rewrites and priority
+            fixes below.
+          </p>
+          <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+            {resumeWeaknesses.map((w, i) => (
+              <li
+                key={i}
+                className="flex gap-3 rounded-xl border border-rose-100/80 bg-white/80 px-4 py-3 text-sm leading-relaxed text-zinc-700"
+              >
+                <span
+                  className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-rose-500"
+                  aria-hidden
+                />
+                {w}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
+      {missingTags.length > 0 ? (
+        <section
+          className="rounded-2xl border border-amber-200/80 bg-gradient-to-br from-amber-50/40 via-white to-white p-5 shadow-soft sm:p-7"
+          aria-labelledby="missing-keywords-heading"
+        >
+          <h2
+            id="missing-keywords-heading"
+            className="font-display text-xl font-semibold text-zinc-950"
+          >
+            Missing keywords
+          </h2>
+          <p className="mt-2 text-sm text-zinc-600">
+            Terms from the job posting not found in your résumé text—add only
+            where you can speak to them honestly.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {missingTags.map((kw) => (
+              <span
+                key={kw}
+                className="rounded-full border border-amber-200 bg-white px-3 py-1 text-xs font-semibold text-amber-950"
+              >
+                {kw}
+              </span>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      <AiResumeImprovements analysis={analysis} />
 
       <PersonalizedImprovementPlan
         analysis={analysis}
