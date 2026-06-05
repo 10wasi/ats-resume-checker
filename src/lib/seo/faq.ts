@@ -5,9 +5,24 @@ export type FaqItem = {
 
 export const homepageFaqItems: FaqItem[] = [
   {
+    question: "What is an ATS resume optimization platform?",
+    answer:
+      "ResumeIQ combines an ATS Resume Checker, resume match analyzer, keyword finder, ATS resume examples, checklist, and AI resume rewrite assistant in one free flow. You analyze your file, compare it to a job description, and get actionable resume optimization—not just a single score.",
+  },
+  {
     question: "What is an ATS resume checker?",
     answer:
       "An ATS resume checker reviews your resume using signals similar to applicant tracking systems: whether text extracts cleanly, whether your sections are easy to map (Experience, Skills, Education), and how well your wording lines up with a job post if you paste one. It is a rehearsal pass—so you can tighten an ATS friendly resume before a real portal swallows your file.",
+  },
+  {
+    question: "What is a resume match score?",
+    answer:
+      "A resume match score estimates how closely your resume language aligns with a specific job description—keyword overlap, structure fit, and posting-aware gaps. Paste a job post in the checker to see your match score alongside your ATS score and missing resume keywords.",
+  },
+  {
+    question: "Where can I find ATS resume examples?",
+    answer:
+      "Our ATS resume examples guide shows good vs bad layouts, bullet patterns, and keyword placement for 2026. Start from the homepage tools grid or read the full guide at /blog/best-ats-friendly-resume-examples-2026.",
   },
   {
     question: "How accurate are ATS scores?",

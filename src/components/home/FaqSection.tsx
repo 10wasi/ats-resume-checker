@@ -6,11 +6,11 @@ export function FaqSection() {
       <div className="mx-auto max-w-2xl text-center">
         <p className="section-eyebrow mx-auto">FAQ</p>
         <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-          Questions job seekers actually ask
+          FAQ — ATS resume checker &amp; optimization
         </h2>
         <p className="mt-4 text-lg text-slate-600">
-          Straight answers about ATS scores, resume optimization, and what this
-          tool can (and can&apos;t) do for you.
+          Straight answers about ATS scores, resume match score, resume keywords,
+          ATS resume examples, and what this platform can do for your job search.
         </p>
       </div>
       <div className="mx-auto mt-12 max-w-3xl divide-y divide-slate-200 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-soft">

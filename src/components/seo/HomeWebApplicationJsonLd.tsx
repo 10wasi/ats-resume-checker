@@ -8,7 +8,7 @@ export function HomeWebApplicationJsonLd() {
     "@type": "WebApplication",
     name: "ATS Resume Checker",
     description:
-      "Free ATS resume checker and CV score tool. Optimize your resume for applicant tracking systems and job applications.",
+      "Free ATS resume optimization platform: ATS score, resume match score, missing keywords, ATS resume examples, checklist, and AI resume rewrite assistant.",
     url: `${base}/`,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Any",
