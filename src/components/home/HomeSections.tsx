@@ -29,35 +29,50 @@ export function HeroSection() {
             Stop Losing Interviews to ATS Filters
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            Analyze resumes, find missing keywords, compare against job
-            descriptions, and improve ATS visibility. One{" "}
+            Analyze your resume, discover missing keywords, compare against job
+            descriptions, and improve ATS visibility. Our free{" "}
             <strong className="font-semibold text-slate-800">
-              ATS resume optimization
+              ATS Resume Checker
             </strong>{" "}
-            platform—free scoring,{" "}
-            <strong className="font-semibold text-slate-800">
-              resume match score
-            </strong>{" "}
-            insights, and{" "}
+            helps you build an{" "}
             <strong className="font-semibold text-slate-800">
               ATS friendly resume
             </strong>{" "}
-            fixes before you apply.
+            with honest{" "}
+            <strong className="font-semibold text-slate-800">
+              resume optimization
+            </strong>{" "}
+            —not guesswork the night before you apply.
           </p>
           <div className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
             <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base">
               Analyze My Resume Free
             </Link>
             <Link
-              href="/blog"
+              href="/resume-job-description-match"
               className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-8 text-base font-semibold text-slate-800 shadow-sm transition hover:border-accent-400 hover:text-accent-500"
             >
-              Read free resume guides
+              Match to a job posting
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500">
-            No account, no card, no tricks—just honest feedback to help you improve your ATS score and resume optimization before the next application.
+            Free to use. No account or credit card. Built for US and UK job
+            seekers who want clear fixes—not another generic template.
           </p>
+          <ul className="mx-auto mt-8 flex max-w-xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-slate-500">
+            <li className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+              ATS score &amp; match %
+            </li>
+            <li className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+              Missing ATS keywords
+            </li>
+            <li className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+              AI rewrite suggestions
+            </li>
+          </ul>
         </div>
 
         <div className="relative mx-auto mt-16 max-w-4xl">
@@ -283,6 +298,107 @@ export function HomeAtsResumeExamplesSection() {
   );
 }
 
+/** Resume match analyzer preview — drives traffic to JD match tool. */
+export function HomeResumeMatchPreviewSection() {
+  return (
+    <section
+      className="border-b border-slate-200/70 bg-white py-16 sm:py-20"
+      aria-labelledby="match-preview-heading"
+    >
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div>
+            <p className="section-eyebrow">Resume match analyzer</p>
+            <h2
+              id="match-preview-heading"
+              className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900"
+            >
+              Compare your resume to any job description
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-600">
+              Paste a posting and see your match score, missing{" "}
+              <strong className="font-semibold text-slate-900">
+                ATS keywords
+              </strong>
+              , found terms, and skill gaps—so you know what to tailor before
+              you apply. Same honest{" "}
+              <strong className="font-semibold text-slate-900">
+                resume optimization
+              </strong>{" "}
+              workflow, focused on one role at a time.
+            </p>
+            <Link
+              href="/resume-job-description-match"
+              className="btn-gradient mt-6 inline-flex px-7 text-sm"
+            >
+              Run resume match analyzer
+            </Link>
+          </div>
+          <div className="rounded-2xl border border-slate-200/90 bg-slate-50/80 p-5 shadow-soft sm:p-6">
+            <p className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
+              Match preview
+            </p>
+            <div className="mt-4 grid gap-4 sm:grid-cols-2">
+              <div className="rounded-xl border border-white bg-white p-4 shadow-sm">
+                <p className="text-xs font-semibold text-slate-500">
+                  Overall match
+                </p>
+                <p className="mt-1 font-display text-3xl font-bold text-slate-900">
+                  72<span className="text-lg text-slate-500">%</span>
+                </p>
+                <div className="mt-3 h-2 overflow-hidden rounded-full bg-slate-100">
+                  <div className="h-full w-[72%] rounded-full bg-gradient-to-r from-brand-500 to-brand-600" />
+                </div>
+              </div>
+              <div className="rounded-xl border border-white bg-white p-4 shadow-sm">
+                <p className="text-xs font-semibold text-slate-500">
+                  ATS compatibility
+                </p>
+                <p className="mt-1 font-display text-xl font-bold text-emerald-700">
+                  Good
+                </p>
+                <p className="mt-2 text-xs text-slate-600">
+                  Layout parses cleanly; keyword gaps remain.
+                </p>
+              </div>
+            </div>
+            <div className="mt-4">
+              <p className="text-xs font-semibold text-slate-700">
+                Missing keywords
+              </p>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {["React", "CI/CD", "Stakeholder", "SQL"].map((kw) => (
+                  <span
+                    key={kw}
+                    className="rounded-full border border-amber-200 bg-amber-50 px-2.5 py-0.5 text-xs font-semibold text-amber-950"
+                  >
+                    {kw}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div className="mt-4">
+              <p className="text-xs font-semibold text-slate-700">
+                Found keywords
+              </p>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {["JavaScript", "Agile", "Git", "API"].map((kw) => (
+                  <span
+                    key={kw}
+                    className="rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-950"
+                  >
+                    {kw}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /** Final conversion CTA. */
 export function HomeStrongCtaSection() {
   return (
@@ -300,12 +416,16 @@ export function HomeStrongCtaSection() {
             Ready to stop losing interviews to ATS filters?
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
-            Run the{" "}
+            Upload your resume, paste a job description, and walk away knowing
+            what to fix. Free{" "}
             <strong className="font-semibold text-white">ATS Resume Checker</strong>
-            , compare against your target job, and leave with a prioritized
-            plan—score, missing{" "}
-            <strong className="font-semibold text-white">resume keywords</strong>
-            , AI rewrites, and checklist in one session.
+            , missing{" "}
+            <strong className="font-semibold text-white">ATS keywords</strong>
+            ,{" "}
+            <strong className="font-semibold text-white">ATS resume examples</strong>
+            , and a clear path to an{" "}
+            <strong className="font-semibold text-white">ATS friendly resume</strong>
+            —in one session.
           </p>
           <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
             <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base">
@@ -374,17 +494,16 @@ export function HomeWhyAtsRejectsSection() {
             You are not always rejected—you are sometimes unread
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-slate-600">
-            Applicant tracking systems ingest files, extract text, and help
-            recruiters search. When your resume never maps cleanly—or critical{" "}
-            <strong className="font-semibold text-slate-900">
-              resume keywords
-            </strong>{" "}
-            never appear in plain text—you may not surface even with the right
-            background. That is why{" "}
+            You can be qualified and still go quiet after you hit apply. Often
+            the issue is not your experience—it is how hiring software reads
+            your file. When text extracts in the wrong order, or your{" "}
+            <strong className="font-semibold text-slate-900">ATS keywords</strong>{" "}
+            never show up in plain language, recruiters may never see your best
+            work. That is fixable with the right{" "}
             <strong className="font-semibold text-slate-900">
               resume optimization
             </strong>{" "}
-            starts with parsing, not padding.
+            pass before you submit.
           </p>
         </div>
         <ul className="mx-auto mt-12 grid max-w-4xl gap-4 sm:grid-cols-2">
@@ -460,18 +579,17 @@ export function HomeProblemsWeDetectSection() {
             id="problems-detect-heading"
             className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
           >
-            ATS problems we detect on your resume
+            ATS problems we detect
           </h2>
           <p className="mt-4 text-base text-slate-600 sm:text-lg">
-            A focused{" "}
+            The{" "}
             <strong className="font-semibold text-slate-900">
-              online resume checker
+              ATS Resume Checker
             </strong>{" "}
-            —not a generic grammar tool. Built for{" "}
-            <strong className="font-semibold text-slate-900">
-              resume ATS test
-            </strong>{" "}
-            workflows before you apply.
+            flags what actually moves the needle: parsing,{" "}
+            <strong className="font-semibold text-slate-900">ATS keywords</strong>
+            , bullet strength, and fit against a real job post—not vague grammar
+            scores.
           </p>
         </div>
         <ul className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -511,12 +629,12 @@ export function HomeChecklistSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <div>
-            <p className="section-eyebrow">ATS resume checklist</p>
+            <p className="section-eyebrow">ATS checklist preview</p>
             <h2
               id="home-checklist-heading"
               className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900"
             >
-              ATS Resume Checklist — pre-submit QA
+              ATS checklist preview — before you hit submit
             </h2>
             <p className="mt-4 text-base leading-relaxed text-slate-600">
               Five essentials every{" "}

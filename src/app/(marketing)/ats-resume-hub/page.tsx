@@ -1,7 +1,10 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
+import { AtsResumeHubActionPlan } from "@/components/hub/AtsResumeHubActionPlan";
+import { AtsResumeHubSectionGrid } from "@/components/hub/AtsResumeHubSectionGrid";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
+import { AtsResumeHubItemListJsonLd } from "@/components/seo/AtsResumeHubItemListJsonLd";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import {
@@ -10,47 +13,27 @@ import {
   ATS_RESUME_HUB_PATH,
 } from "@/lib/content/ats-resume-hub-body";
 import { atsResumeHubFaqItems } from "@/lib/seo/ats-resume-hub-faq";
-import { getSiteUrl } from "@/lib/site-url";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
-
-const PAGE_TITLE = "The Complete ATS Resume Resource Hub for Job Seekers";
+import { buildCtrMetadata, CTR_ATS_HUB } from "@/lib/seo/ctr-metadata";
 
 const KEYWORDS = [
   "ATS Resume Checker",
   "ATS friendly resume",
-  "improve ATS score",
-  "ATS compatible resume",
-  "ATS resume keywords",
   "ATS resume examples",
   "ATS resume checklist",
-  "resume optimization",
+  "ATS resume keywords",
   "ATS resume format",
-  "ATS resume mistakes",
+  "ATS resume hub",
+  "resume optimization",
+  "ATS compatible resume",
   "online resume checker",
-  "ATS resume tips",
-  "US UK job seekers",
 ];
 
-export const metadata: Metadata = {
-  title: atsResumeHubSeo.title,
-  description: atsResumeHubSeo.description,
+export const metadata = buildCtrMetadata(CTR_ATS_HUB, {
+  canonical: ATS_RESUME_HUB_PATH,
   keywords: KEYWORDS,
-  alternates: {
-    canonical: ATS_RESUME_HUB_PATH,
-  },
-  openGraph: {
-    title: atsResumeHubSeo.title,
-    description: atsResumeHubSeo.description,
-    url: `${getSiteUrl().replace(/\/$/, "")}${ATS_RESUME_HUB_PATH}`,
-    type: "article",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: atsResumeHubSeo.title,
-    description: atsResumeHubSeo.description,
-  },
-  robots: { index: true, follow: true },
-};
+  ogType: "article",
+});
 
 export default function AtsResumeHubPage() {
   return (
@@ -59,6 +42,13 @@ export default function AtsResumeHubPage() {
         path={ATS_RESUME_HUB_PATH}
         title={atsResumeHubSeo.title}
         description={atsResumeHubSeo.description}
+      />
+      <AtsResumeHubItemListJsonLd />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "ATS Resume Hub", path: ATS_RESUME_HUB_PATH },
+        ]}
       />
       <PageFaqJsonLd items={atsResumeHubFaqItems} />
       <article className="relative">
@@ -85,39 +75,51 @@ export default function AtsResumeHubPage() {
           <header className="mt-8">
             <p className="section-eyebrow">Free resource hub · ResumeIQ</p>
             <h1 className="mt-4 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl sm:leading-tight lg:text-5xl">
-              {PAGE_TITLE}
+              The Complete ATS Resume Resource Hub
             </h1>
             <p className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
-              Your central home for{" "}
+              Your central home for the{" "}
               <strong className="font-semibold text-slate-800">
-                ATS resume format
+                ATS Resume Checker
+              </strong>
+              ,{" "}
+              <strong className="font-semibold text-slate-800">
+                ATS friendly resume
+              </strong>{" "}
+              guides,{" "}
+              <strong className="font-semibold text-slate-800">
+                ATS resume examples
+              </strong>
+              ,{" "}
+              <strong className="font-semibold text-slate-800">
+                ATS resume checklist
               </strong>
               ,{" "}
               <strong className="font-semibold text-slate-800">
                 ATS resume keywords
               </strong>
-              ,{" "}
+              , and{" "}
               <strong className="font-semibold text-slate-800">
-                ATS resume examples
-              </strong>
-              , and the{" "}
-              <strong className="font-semibold text-slate-800">
-                ATS resume checklist
+                ATS resume format
               </strong>{" "}
-              —everything in one place so you can{" "}
-              <strong className="font-semibold text-slate-800">
-                improve ATS score
-              </strong>{" "}
-              signals without tab-hopping at midnight. Start with our{" "}
-              <Link
-                href={RESUME_CHECKER_PATH}
-                className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/40 underline-offset-4 hover:text-[#16a34a]"
-              >
-                ATS Resume Checker
-              </Link>
-              , then follow the path that matches your problem.
+              —nine linked sections so you never tab-hop at midnight again.
             </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-6 text-sm">
+                Run ATS Resume Checker
+              </Link>
+              <Link
+                href="/resume-job-description-match"
+                className="inline-flex h-11 items-center rounded-xl border border-slate-200 bg-white px-6 text-sm font-semibold text-slate-800 shadow-sm hover:border-emerald-300"
+              >
+                Match to job description
+              </Link>
+            </div>
           </header>
+
+          <div className="mt-10">
+            <AtsResumeHubSectionGrid />
+          </div>
 
           <AdPlaceholder label="Advertisement · resource hub" className="mt-10" />
 
@@ -125,20 +127,27 @@ export default function AtsResumeHubPage() {
             <BlogContent content={atsResumeHubBody} />
           </div>
 
+          <div className="mt-14">
+            <AtsResumeHubActionPlan />
+          </div>
+
+          <AdPlaceholder label="Advertisement · hub footer" className="mt-14" />
+
           <section
-            className="mt-16 border-t border-slate-200 pt-14"
+            id="ats-hub-faq"
+            className="scroll-mt-24 mt-16 border-t border-slate-200 pt-14"
             aria-labelledby="ats-hub-faq-heading"
           >
             <h2
               id="ats-hub-faq-heading"
               className="font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl"
             >
-              FAQ: Using the ATS Resume Hub
+              FAQ: The Complete ATS Resume Resource Hub
             </h2>
             <p className="mt-3 text-slate-600">
-              Quick answers on navigating hub resources, the{" "}
+              Quick answers on hub navigation, the{" "}
               <strong className="font-semibold text-slate-800">
-                online resume checker
+                ATS Resume Checker
               </strong>
               , and building an{" "}
               <strong className="font-semibold text-slate-800">
@@ -162,29 +171,46 @@ export default function AtsResumeHubPage() {
 
           <BlogResumeCta />
 
-          <p className="mt-10 text-center text-sm text-slate-500">
-            Related:{" "}
-            <Link
-              href="/ultimate-ats-resume-guide"
-              className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/35 underline-offset-2 hover:text-[#16a34a]"
-            >
-              Ultimate ATS guide
-            </Link>
-            {" · "}
-            <Link
-              href="/ats-resume-checklist-2026"
-              className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/35 underline-offset-2 hover:text-[#16a34a]"
-            >
-              ATS resume checklist
-            </Link>
-            {" · "}
-            <Link
-              href="/blog"
-              className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/35 underline-offset-2 hover:text-[#16a34a]"
-            >
-              all articles
-            </Link>
-          </p>
+          <nav
+            className="not-prose mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6"
+            aria-label="Related hub resources"
+          >
+            <p className="text-sm font-semibold text-slate-900">
+              Internal links — explore the platform
+            </p>
+            <ul className="mt-4 grid gap-2 text-sm sm:grid-cols-2">
+              <li>
+                <Link href={RESUME_CHECKER_PATH} className="text-[#16a34a] underline">
+                  ATS Resume Checker
+                </Link>
+              </li>
+              <li>
+                <Link href="/resume-job-description-match" className="text-[#16a34a] underline">
+                  Resume job match analyzer
+                </Link>
+              </li>
+              <li>
+                <Link href="/ai-resume-rewrite" className="text-[#16a34a] underline">
+                  AI resume rewrite
+                </Link>
+              </li>
+              <li>
+                <Link href="/ats-resume-checklist-2026" className="text-[#16a34a] underline">
+                  ATS resume checklist
+                </Link>
+              </li>
+              <li>
+                <Link href="/ultimate-ats-resume-guide" className="text-[#16a34a] underline">
+                  Ultimate ATS guide
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="text-[#16a34a] underline">
+                  All blog articles
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
       </article>
     </>

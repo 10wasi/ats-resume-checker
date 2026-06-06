@@ -1,42 +1,50 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { ResumeCheckerPanel } from "@/components/resume/ResumeCheckerPanel";
 import { ResumeCheckerSeoIntro } from "@/components/resume/ResumeCheckerSeoIntro";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
+import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResumeCheckerWebApplicationJsonLd } from "@/components/seo/ResumeCheckerWebApplicationJsonLd";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
+import { buildCtrMetadata, CTR_RESUME_CHECKER } from "@/lib/seo/ctr-metadata";
+import {
+  HOWTO_RESUME_CHECKER,
+  HOWTO_URLS,
+} from "@/lib/seo/how-to-steps";
+import { homepageFaqItems } from "@/lib/seo/faq";
 
-export const metadata: Metadata = {
-  title: {
-    absolute:
-      "Free ATS Resume Checker | Analyze Resume Score & Keywords",
-  },
-  description:
-    "Analyze your resume with our free ATS Resume Checker: ATS score, keyword match %, missing keywords, formatting issues, compatibility rating, and downloadable report. No login required.",
+export const metadata = buildCtrMetadata(CTR_RESUME_CHECKER, {
+  canonical: RESUME_CHECKER_PATH,
+  absoluteTitle: true,
   keywords: [
     "ATS Resume Checker",
-    "Free ATS Resume Checker",
     "ATS resume score",
     "resume keywords",
     "resume optimization",
     "ATS compatible resume",
-    "resume formatting",
-    "resume ATS test",
   ],
-  alternates: { canonical: RESUME_CHECKER_PATH },
-  openGraph: {
-    title:
-      "Free ATS Resume Checker – Improve Your Resume Score Instantly | ResumeIQ",
-    description:
-      "Improve your resume score instantly: ATS-style check, clear feedback, optional job match — free.",
-    type: "website",
-  },
-};
+});
+
+const checkerFaq = homepageFaqItems.slice(0, 6);
 
 export default function ResumeCheckerPage() {
   return (
     <>
       <ResumeCheckerWebApplicationJsonLd />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "ATS Resume Checker", path: RESUME_CHECKER_PATH },
+        ]}
+      />
+      <HowToJsonLd
+        name="How to check your resume with the ATS Resume Checker"
+        description={CTR_RESUME_CHECKER.description}
+        steps={HOWTO_RESUME_CHECKER}
+        path={HOWTO_URLS.checker}
+      />
+      <PageFaqJsonLd items={checkerFaq} />
       <div className="min-h-full w-full">
         <div className="border-b border-zinc-200/90 bg-white/90 px-4 py-3 backdrop-blur sm:px-8">
           <nav

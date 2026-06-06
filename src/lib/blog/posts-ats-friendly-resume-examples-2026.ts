@@ -11,10 +11,9 @@ import type { BlogPost } from "./types";
 export const atsFriendlyResumeExamples2026Post: BlogPost = {
   slug: "best-ats-friendly-resume-examples-2026",
   title: "Best ATS-Friendly Resume Examples That Actually Work in 2026",
-  seoTitle:
-    "Best ATS-Friendly Resume Examples 2026 | Format, Structure & Free Checker",
+  seoTitle: "ATS Resume Examples That Work in 2026 (Free)",
   description:
-    "See ATS friendly resume examples that work in 2026: good vs bad layouts, formatting rules, keyword placement, templates to avoid, and a free ATS Resume Checker to test your file.",
+    "Good vs bad ATS resume examples: layout, bullets, keywords. See what parses—and test your file with our free ATS checker.",
   date: "2026-05-21",
   author: "ResumeIQ Editorial",
   coverVariant: "indigo",

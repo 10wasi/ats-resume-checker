@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
+import { OrganizationJsonLd } from "@/components/seo/OrganizationJsonLd";
 import { getSiteUrl } from "@/lib/site-url";
 
 const inter = Inter({
@@ -22,12 +23,11 @@ const siteUrl = getSiteUrl();
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default:
-      "Free ATS Resume Checker | ATS Score, Keywords & Resume Optimization",
+    default: "Free ATS Resume Checker | Score & Keywords",
     template: "%s | ATS Resume Checker",
   },
   description:
-    "Free ATS Resume Checker for job seekers: analyze your resume, find missing keywords, fix ATS formatting issues, and improve ATS compatibility. ATS friendly resume tips for US & UK.",
+    "Upload free. Get your ATS score, missing keywords, and fixes for an ATS friendly resume. Match to any job post—no signup.",
   keywords: [
     "ATS Resume Checker",
     "Free ATS Resume Checker",
@@ -53,15 +53,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "ATS Resume Checker",
-    title: "Free ATS Resume Checker – Check Your CV Score in Seconds",
+    title: "Free ATS Resume Checker — See Your Score in Minutes",
     description:
-      "Improve your resume score instantly using our free ATS resume checker. Optimize your CV for job applications and get hired faster.",
+      "Upload free. Get your ATS score, missing keywords, and fixes for an ATS friendly resume. Match to any job post—no signup.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free ATS Resume Checker – Check Your CV Score in Seconds",
+    title: "Free ATS Resume Checker — See Your Score in Minutes",
     description:
-      "Improve your resume score instantly using our free ATS resume checker. Optimize your CV for job applications and get hired faster.",
+      "Upload free. Get your ATS score, missing keywords, and fixes for an ATS friendly resume. Match to any job post—no signup.",
   },
 };
 
@@ -86,6 +86,7 @@ export default function RootLayout({
         className="min-h-screen bg-[#f8f9fb] text-slate-900 antialiased"
         suppressHydrationWarning
       >
+        <OrganizationJsonLd />
         {children}
       </body>
     </html>

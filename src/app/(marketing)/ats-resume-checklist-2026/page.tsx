@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import {
@@ -10,8 +11,12 @@ import {
   ATS_RESUME_CHECKLIST_PATH,
 } from "@/lib/content/ats-resume-checklist-body";
 import { atsResumeChecklistFaqItems } from "@/lib/seo/ats-resume-checklist-faq";
-import { getSiteUrl } from "@/lib/site-url";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
+import { buildCtrMetadata, CTR_ATS_CHECKLIST } from "@/lib/seo/ctr-metadata";
+import {
+  HOWTO_ATS_CHECKLIST,
+  HOWTO_URLS,
+} from "@/lib/seo/how-to-steps";
 
 const PAGE_TITLE = "The Ultimate ATS Resume Checklist for 2026";
 
@@ -30,26 +35,11 @@ const KEYWORDS = [
   "US UK job seekers",
 ];
 
-export const metadata: Metadata = {
-  title: atsResumeChecklistSeo.title,
-  description: atsResumeChecklistSeo.description,
+export const metadata = buildCtrMetadata(CTR_ATS_CHECKLIST, {
+  canonical: ATS_RESUME_CHECKLIST_PATH,
   keywords: KEYWORDS,
-  alternates: {
-    canonical: ATS_RESUME_CHECKLIST_PATH,
-  },
-  openGraph: {
-    title: atsResumeChecklistSeo.title,
-    description: atsResumeChecklistSeo.description,
-    url: `${getSiteUrl().replace(/\/$/, "")}${ATS_RESUME_CHECKLIST_PATH}`,
-    type: "article",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: atsResumeChecklistSeo.title,
-    description: atsResumeChecklistSeo.description,
-  },
-  robots: { index: true, follow: true },
-};
+  ogType: "article",
+});
 
 export default function AtsResumeChecklistPage() {
   return (
@@ -58,6 +48,18 @@ export default function AtsResumeChecklistPage() {
         path={ATS_RESUME_CHECKLIST_PATH}
         title={atsResumeChecklistSeo.title}
         description={atsResumeChecklistSeo.description}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "ATS Resume Checklist", path: ATS_RESUME_CHECKLIST_PATH },
+        ]}
+      />
+      <HowToJsonLd
+        name="How to use the ATS resume checklist before applying"
+        description={CTR_ATS_CHECKLIST.description}
+        steps={HOWTO_ATS_CHECKLIST}
+        path={HOWTO_URLS.checklist}
       />
       <PageFaqJsonLd items={atsResumeChecklistFaqItems} />
       <article className="relative">

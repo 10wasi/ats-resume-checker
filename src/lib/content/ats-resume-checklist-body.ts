@@ -14,10 +14,9 @@
 export const ATS_RESUME_CHECKLIST_PATH = "/ats-resume-checklist-2026" as const;
 
 export const atsResumeChecklistSeo = {
-  title:
-    "Ultimate ATS Resume Checklist (2026) | Format, Keywords & Free Checker",
+  title: "ATS Resume Checklist 2026 — Free Pre-Submit QA",
   description:
-    "The ultimate ATS Resume Checklist for 2026: formatting, keywords, structure, mistakes to avoid, recruiter skim tips, and a print-friendly checklist—plus a free ATS Resume Checker to improve ATS compatibility.",
+    "Free ATS resume checklist: format, keywords, contact block, export QA. Print it, tick each item, then run the checker before you apply.",
 } as const;
 
 export const atsResumeChecklistImageAlts = [

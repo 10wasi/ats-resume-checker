@@ -14,10 +14,9 @@
 export const ATS_RESUME_HUB_PATH = "/ats-resume-hub" as const;
 
 export const atsResumeHubSeo = {
-  title:
-    "ATS Resume Hub (2026) | Checker, Checklist, Keywords, Examples & Guides",
+  title: "ATS Resume Hub — Free Checker, Guides & Tools",
   description:
-    "The complete ATS Resume Hub for job seekers: free ATS Resume Checker, formatting guides, keyword tips, resume examples, rejection fixes, checklists, and paths to improve ATS compatibility in 2026.",
+    "Your ATS resume hub: free checker, checklist, examples, keywords, format, and job match. One place to fix before every application.",
 } as const;
 
 export const atsResumeHubImageAlts = [
@@ -31,13 +30,39 @@ export const atsResumeHubImageAlts = [
 export const atsResumeHubBody = `
 You open twelve tabs. One blog says “use keywords.” Another screams “single column only.” A third promises a magic template. You close the laptop feeling more confused than when you started—and still no interview.
 
-That scatter is exactly why this **ATS Resume Hub** exists.
+That scatter is exactly why **The Complete ATS Resume Resource Hub** exists.
 
-Instead of hunting random advice, you get one calm map: how applicant tracking systems read files, where **ATS resume mistakes** hide, how to place **ATS resume keywords**, what **ATS resume examples** actually look like in plain text, and when to run an **online resume checker** before you waste another Sunday applying blind.
+Instead of hunting random advice, you get one calm map: **ATS Resume Checker** tooling, **ATS friendly resume** structure, **ATS resume examples**, **ATS resume checklist**, **ATS resume keywords**, **ATS resume format**, job-description matching, mistake diagnostics, and a final action plan—all interlinked.
 
-This hub is built for real job seekers in the US and UK who want **resume optimization** that feels human—not robotic. Bookmark it. Share it with a friend who thinks silence means they are not good enough. It usually means the hallway their resume walked through was broken.
+Start from the [ResumeIQ homepage](/). When you are ready to test your export, use our [free ATS Resume Checker](/resume-checker).
 
-Start from the [ResumeIQ homepage](/) anytime. When you are ready to test your export, use our [free ATS Resume Checker](/resume-checker) as your **ATS resume analysis tool**.
+## ATS Resume Guide
+
+Your foundation layer: how applicant tracking systems parse files, what recruiters search for, and how to **improve ATS score** without keyword stuffing. Deep dive: [Ultimate ATS resume guide](/ultimate-ats-resume-guide) and [complete ATS friendly resume guide](/blog/how-to-make-your-resume-ats-friendly-2026-complete-guide). Run the [checker](/resume-checker) after every major edit.
+
+## ATS Resume Checklist
+
+Pre-submit QA in one sitting—copy-paste test, headings, contact in body, keyword proof, correct export file. Full printable version: [ATS resume checklist 2026](/ats-resume-checklist-2026). Pair with the [resume match analyzer](/resume-job-description-match) when tailoring to a posting.
+
+## ATS Resume Examples
+
+See good vs bad layouts and bullet patterns—not templates to copy blindly. Start here: [best ATS-friendly resume examples](/blog/best-ats-friendly-resume-examples-2026). Compare structure before you chase synonyms.
+
+## ATS Keywords Guide
+
+**ATS resume keywords** are searchable proof: tools, methods, certifications, domain terms. Ethical placement guide: [ATS resume keywords for visibility](/blog/best-ats-resume-keywords-improve-visibility-2026). Skills companion: [resume skills for ATS](/blog/best-resume-skills-improve-ats-visibility-2026).
+
+## ATS Formatting Guide
+
+**ATS resume format** comes first—single column, standard headings, selectable text. Primary guide: [best ATS resume format 2026](/blog/best-ats-resume-format-2026-templates-tips). If paste-from-PDF scrambles order, fix layout before keywords.
+
+## Resume vs Job Description Matching
+
+**Match resume to job description** with resume match score, missing keywords, and skill gaps. Free tool: [Resume vs job description match analyzer](/resume-job-description-match). Also available inside the [ATS Resume Checker](/resume-checker) when you paste a posting.
+
+## ATS Resume Mistakes
+
+Silence is often mechanical—not personal failure. Diagnose with [10 resume mistakes that trigger ATS rejections](/blog/10-resume-mistakes-ats-rejections-2026), [why resumes get rejected](/blog/why-resume-rejected-ats-top-reasons-fixes), and [top ATS mistakes fix them fast](/blog/top-ats-resume-mistakes-that-get-you-rejected-fix-them-fast).
 
 ## How to use this hub (pick your path)
 

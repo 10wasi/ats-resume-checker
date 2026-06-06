@@ -9,8 +9,13 @@ export function FaqSection() {
           FAQ — ATS resume checker &amp; optimization
         </h2>
         <p className="mt-4 text-lg text-slate-600">
-          Straight answers about ATS scores, resume match score, resume keywords,
-          ATS resume examples, and what this platform can do for your job search.
+          Plain answers about the{" "}
+          <strong className="font-semibold text-slate-800">ATS Resume Checker</strong>
+          , building an{" "}
+          <strong className="font-semibold text-slate-800">ATS friendly resume</strong>
+          , and honest{" "}
+          <strong className="font-semibold text-slate-800">resume optimization</strong>
+          —without overpromising what any tool can guarantee.
         </p>
       </div>
       <div className="mx-auto mt-12 max-w-3xl divide-y divide-slate-200 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-soft">

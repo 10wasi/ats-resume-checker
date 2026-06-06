@@ -10,6 +10,9 @@ import {
 } from "@/components/blog/BlogExtras";
 import { ArticleJsonLd } from "@/components/blog/ArticleJsonLd";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
+import { blogFaqBySlug } from "@/lib/seo/blog-page-faq";
 
 import { getSiteUrl } from "@/lib/site-url";
 
@@ -57,6 +60,7 @@ export default function BlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   const minutes = readingTimeMinutes(post.content);
+  const faqItems = blogFaqBySlug[post.slug];
   const related = getAllPosts()
     .filter((p) => p.slug !== post.slug)
     .slice(0, 3);
@@ -64,6 +68,14 @@ export default function BlogPostPage({ params }: Props) {
   return (
     <article className="relative">
       <ArticleJsonLd post={post} slug={post.slug} />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+          { name: post.title, path: `/blog/${post.slug}` },
+        ]}
+      />
+      {faqItems ? <PageFaqJsonLd items={faqItems} /> : null}
       <div
         className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[420px] bg-mesh"
         aria-hidden

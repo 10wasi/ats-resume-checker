@@ -3,9 +3,24 @@ import type { FaqItem } from "./faq";
 /** FAQ for /ats-resume-hub — rendered on-page and in FAQPage JSON-LD. */
 export const atsResumeHubFaqItems: FaqItem[] = [
   {
+    question: "What is The Complete ATS Resume Resource Hub?",
+    answer:
+      "It is ResumeIQ's central hub linking the ATS Resume Checker, ATS resume guide, checklist, examples, keywords guide, formatting guide, job match analyzer, mistakes articles, FAQ, and a final action plan—built for topical clarity and faster resume optimization.",
+  },
+  {
     question: "What is an ATS Resume Hub?",
     answer:
       "An ATS Resume Hub is a central resource page that organizes guides, checklists, examples, and tools for building ATS-friendly resumes. Instead of searching randomly, job seekers follow curated paths for formatting, keywords, rejection fixes, and score improvement.",
+  },
+  {
+    question: "Where do I find ATS resume examples and checklist?",
+    answer:
+      "Use the hub section grid: ATS resume examples link to our 2026 examples guide; the ATS resume checklist links to the printable checklist page. Both connect back to the free ATS Resume Checker for validation.",
+  },
+  {
+    question: "How do ATS resume keywords and format work together?",
+    answer:
+      "ATS resume format ensures parsers read your file in logical order. ATS resume keywords ensure recruiters find honest terms when they search. Fix format first with the formatting guide, then align keywords using the keywords guide and job match analyzer.",
   },
   {
     question: "Where should I start in the ATS Resume Hub?",

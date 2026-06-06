@@ -1,19 +1,17 @@
 import { getSiteUrl } from "@/lib/site-url";
+import { RESUME_JD_MATCH_PATH } from "@/lib/content/resume-job-description-match-body";
 
-/** Schema.org WebApplication for the homepage / primary web app entry. */
-export function HomeWebApplicationJsonLd() {
-  const base = getSiteUrl();
+export function ResumeJdMatchWebApplicationJsonLd() {
+  const base = getSiteUrl().replace(/\/$/, "");
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    name: "ATS Resume Checker",
+    name: "Resume vs Job Description Match Analyzer",
     description:
-      "Free ATS Resume Checker: upload your resume, get ATS score, missing keywords, and resume optimization fixes. Match to job posts—no account.",
-    url: `${base}/`,
+      "Free tool to match resume to job description. Get resume match score, ATS keyword checker results, missing keywords, and ATS friendly resume fixes.",
+    url: `${base}${RESUME_JD_MATCH_PATH}`,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Any",
-    browserRequirements: "Requires JavaScript. Requires HTML5.",
-    inLanguage: "en-US",
     offers: {
       "@type": "Offer",
       price: "0",

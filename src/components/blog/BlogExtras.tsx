@@ -105,6 +105,14 @@ export function BlogCoverPlaceholder({
  * Supports: # H1, ## H2, ### H3, paragraphs, [-] bullets, [1.] ordered,
  * inline **bold** and [text](url) links, and "---" rules.
  */
+function slugifyHeading(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-");
+}
+
 export function BlogContent({ content }: { content: string }) {
   const blocks = content.split(/\n\n+/).map((b) => b.trim()).filter(Boolean);
 
@@ -126,12 +134,14 @@ export function BlogContent({ content }: { content: string }) {
       return;
     }
     if (block.startsWith("## ")) {
+      const heading = block.slice(3);
       out.push(
         <h2
           key={idx}
-          className="mt-12 font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl"
+          id={slugifyHeading(heading)}
+          className="scroll-mt-24 mt-12 font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl"
         >
-          {block.slice(3)}
+          {heading}
         </h2>
       );
       return;

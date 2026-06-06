@@ -15,7 +15,7 @@ export function ResumeCheckerWebApplicationJsonLd() {
     browserRequirements: "Requires JavaScript.",
     url,
     description:
-      "Free ATS-style resume check: score 0–100, strengths, weaknesses, improvements, keyword and posting match. Upload PDF or DOCX or paste text.",
+      "Free ATS Resume Checker: analyze score, keyword match %, missing terms, formatting flags, and compatibility. Upload PDF or paste text.",
     offers: {
       "@type": "Offer",
       price: "0",
