@@ -4,6 +4,7 @@ import { getAllPosts } from "@/lib/blog";
 import { readingTimeMinutes } from "@/lib/blog/reading-time";
 import { BlogCoverPlaceholder } from "@/components/blog/BlogExtras";
 import { BlogIndexJsonLd } from "@/components/blog/BlogIndexJsonLd";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 
 import { getSiteUrl } from "@/lib/site-url";
@@ -11,9 +12,9 @@ import { getSiteUrl } from "@/lib/site-url";
 const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
-  title: "Blog — Free Resume Checker, ATS Score & Resume Optimization Guides",
+  title: "Resume Blog — ATS Checker, Keywords & Optimization",
   description:
-    "SEO-friendly guides: free resume checker tips, ATS resume score improvement, AI resume analyzer workflow, CV checker online free best practices, and job resume checker strategies for 2026.",
+    "Guides on ATS Resume Checker scoring, ATS keywords, ATS friendly resume format, resume match score, and resume optimization for 2026 job seekers.",
   alternates: { canonical: "/blog" },
   robots: { index: true, follow: true },
   keywords: [
@@ -47,15 +48,21 @@ export default function BlogIndexPage() {
 
   return (
     <div className="container-page py-14 sm:py-20">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+        ]}
+      />
       <BlogIndexJsonLd posts={posts} />
       <div className="mx-auto max-w-3xl text-center">
         <p className="section-eyebrow mx-auto">The ResumeIQ blog</p>
         <h1 className="mt-6 font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-          Free resume checker guides &amp; ATS tips
+          ATS Resume Checker Guides &amp; Resume Optimization Tips
         </h1>
         <p className="mt-5 text-lg leading-relaxed text-slate-600">
-          Practical articles on using a free resume checker, raising your ATS
-          resume score, and fixing real issues job seekers face in 2026.
+          Practical articles on ATS keywords, resume match score, ATS friendly
+          resume format, and resume optimization for 2026 job seekers.
         </p>
       </div>
 

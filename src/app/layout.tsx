@@ -23,11 +23,11 @@ const siteUrl = getSiteUrl();
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Free ATS Resume Checker | Score & Keywords",
+    default: "ATS Resume Checker — Free Score & Keywords",
     template: "%s | ATS Resume Checker",
   },
   description:
-    "Upload free. Get your ATS score, missing keywords, and fixes for an ATS friendly resume. Match to any job post—no signup.",
+    "Free ATS resume checker: upload PDF, get your score, missing ATS keywords, and resume optimization fixes. Build an ATS friendly resume—no signup.",
   keywords: [
     "ATS Resume Checker",
     "Free ATS Resume Checker",
@@ -53,15 +53,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "ATS Resume Checker",
-    title: "Free ATS Resume Checker — See Your Score in Minutes",
+    title: "ATS Resume Checker — Free Score, Keywords & Fixes",
     description:
-      "Upload free. Get your ATS score, missing keywords, and fixes for an ATS friendly resume. Match to any job post—no signup.",
+      "Free ATS resume checker: upload PDF, get your score, missing ATS keywords, and resume optimization fixes. Build an ATS friendly resume—no signup.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free ATS Resume Checker — See Your Score in Minutes",
+    title: "ATS Resume Checker — Free Score, Keywords & Fixes",
     description:
-      "Upload free. Get your ATS score, missing keywords, and fixes for an ATS friendly resume. Match to any job post—no signup.",
+      "Free ATS resume checker: upload PDF, get your score, missing ATS keywords, and resume optimization fixes. Build an ATS friendly resume—no signup.",
   },
 };
 

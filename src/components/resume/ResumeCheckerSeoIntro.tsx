@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ATS_LANDING_RELATED_POSTS } from "@/lib/seo/ats-landing";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
+import { CTR_RESUME_CHECKER } from "@/lib/seo/ctr-metadata";
 
 /** Single-page SEO copy for /resume-checker (one H1; supporting H2s only here). */
 export function ResumeCheckerSeoIntro() {
@@ -13,7 +14,7 @@ export function ResumeCheckerSeoIntro() {
         id="resume-ats-heading"
         className="max-w-4xl text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
       >
-        ATS Resume Checker: know your score before you hit apply
+        {CTR_RESUME_CHECKER.h1}
       </h1>
       <p className="mt-4 max-w-3xl text-pretty text-base leading-relaxed text-slate-600 sm:text-lg">
         Paste or upload for a frank, ATS-style read—structure, keywords, and

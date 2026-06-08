@@ -12,9 +12,9 @@ export const atsResumeKeywordsVisibility2026Post: BlogPost = {
   slug: "best-ats-resume-keywords-improve-visibility-2026",
   title:
     "Best ATS Resume Keywords That Actually Improve Resume Visibility in 2026",
-  seoTitle: "ATS Resume Keywords Guide — Boost Visibility",
+  seoTitle: "ATS Keywords Guide — Placement Without Stuffing",
   description:
-    "Which ATS resume keywords matter and where to place them—without stuffing. Pair with our free checker to find gaps in your posting.",
+    "Which ATS keywords matter and where to place them for resume optimization. Free ATS Resume Checker finds gaps in your target job post.",
   date: "2026-05-20",
   author: "ResumeIQ Editorial",
   coverVariant: "sky",

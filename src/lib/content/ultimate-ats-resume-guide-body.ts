@@ -15,10 +15,9 @@ export const ULTIMATE_ATS_GUIDE_PATH = "/ultimate-ats-resume-guide" as const;
 
 /** Use for <title> / OpenGraph (can differ slightly from on-page H1). */
 export const ultimateAtsGuideSeo = {
-  title:
-    "Ultimate ATS Resume Guide (2026) | Format, Keywords, Tips & Free Checker",
+  title: "Resume Optimization Guide — ATS Format & Keywords",
   description:
-    "The ultimate ATS resume guide for US and UK job seekers: how ATS works, ATS resume format rules, keywords, mistakes, recruiter skims, and how to improve ATS score—with a free ATS Resume Checker.",
+    "Complete resume optimization guide: ATS friendly resume format, ATS keywords, scoring, and mistakes. Free ATS Resume Checker workflow included.",
 } as const;
 
 export const ultimateAtsGuideImageAlts = [

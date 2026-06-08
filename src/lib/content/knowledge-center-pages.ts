@@ -1,73 +1,84 @@
-/** Ten knowledge center sections — hub grid, anchors, and ItemList schema. */
+/** ATS Knowledge Center — canonical index of all pillar guides. */
 
-export type HubSection = {
+export const KNOWLEDGE_CENTER_PATH = "/knowledge-center" as const;
+
+export type KnowledgeCenterPage = {
   id: string;
   title: string;
+  shortTitle: string;
   description: string;
   href: string;
   cta: string;
 };
 
-export const ATS_HUB_SECTIONS: HubSection[] = [
+export const KNOWLEDGE_CENTER_PAGES: KnowledgeCenterPage[] = [
   {
-    id: "ats-resume-examples",
+    id: "examples",
     title: "ATS Resume Examples",
+    shortTitle: "Examples",
     description:
-      "Good vs bad layouts, bullet patterns, and ATS resume examples that parse cleanly.",
+      "Good vs bad layouts, bullet patterns, and real ATS resume examples that parse cleanly in 2026.",
     href: "/ats-resume-examples",
     cta: "View examples",
   },
   {
-    id: "ats-resume-checklist",
+    id: "checklist",
     title: "ATS Resume Checklist",
+    shortTitle: "Checklist",
     description:
       "Print-friendly pre-submit checklist for format, keywords, contact block, and export QA.",
     href: "/ats-resume-checklist-2026",
     cta: "Open checklist",
   },
   {
-    id: "ats-keywords-guide",
-    title: "ATS Keywords Guide",
+    id: "keywords",
+    title: "ATS Resume Keywords Guide",
+    shortTitle: "Keywords",
     description:
-      "Ethical ATS resume keywords placement—technical skills, tools, and certifications with proof.",
+      "Where to place ATS resume keywords—skills, tools, certifications—with proof, not stuffing.",
     href: "/ats-resume-keywords",
     cta: "Keyword strategy",
   },
   {
-    id: "ats-formatting-guide",
-    title: "ATS Formatting Guide",
+    id: "format",
+    title: "ATS Resume Formatting Guide",
+    shortTitle: "Formatting",
     description:
       "ATS resume format rules: single column, standard headings, typography, and file types.",
     href: "/ats-resume-format",
     cta: "Format guide",
   },
   {
-    id: "ats-resume-mistakes",
+    id: "mistakes",
     title: "ATS Resume Mistakes",
+    shortTitle: "Mistakes",
     description:
-      "Top ATS resume mistakes that trigger rejections—and fast fixes before you apply again.",
+      "Top ATS resume mistakes that trigger silent rejections—and fast fixes before you apply again.",
     href: "/ats-resume-mistakes",
     cta: "Avoid mistakes",
   },
   {
-    id: "resume-job-match",
+    id: "match",
     title: "Resume vs Job Description Matching",
+    shortTitle: "Job match",
     description:
       "Match resume to job description—resume match score, missing keywords, and skill gaps.",
     href: "/resume-job-description-match",
     cta: "Run match analyzer",
   },
   {
-    id: "ats-score-explained",
+    id: "score",
     title: "ATS Score Explained",
+    shortTitle: "ATS score",
     description:
       "What an ATS score measures, what it does not, and how to improve yours before you apply.",
     href: "/ats-score-explained",
     cta: "Understand scoring",
   },
   {
-    id: "ats-friendly-guide",
+    id: "friendly",
     title: "ATS-Friendly Resume Guide",
+    shortTitle: "ATS-friendly",
     description:
       "Step-by-step guide to building an ATS friendly resume from structure through export.",
     href: "/ats-friendly-resume-guide",
@@ -76,17 +87,33 @@ export const ATS_HUB_SECTIONS: HubSection[] = [
   {
     id: "industry-keywords",
     title: "Resume Keywords by Industry",
+    shortTitle: "By industry",
     description:
       "Industry-specific resume keywords for tech, healthcare, finance, marketing, and more.",
     href: "/resume-keywords-by-industry",
     cta: "Industry keywords",
   },
   {
-    id: "ats-templates",
+    id: "templates",
     title: "ATS Resume Templates Guide",
+    shortTitle: "Templates",
     description:
       "Which ATS resume templates work, which to avoid, and how to test any layout before upload.",
     href: "/ats-resume-templates",
     cta: "Template guide",
   },
 ];
+
+export function getKnowledgePage(id: string): KnowledgeCenterPage | undefined {
+  return KNOWLEDGE_CENTER_PAGES.find((p) => p.id === id);
+}
+
+export function getRelatedKnowledgePages(
+  excludeId: string,
+  limit = 4
+): KnowledgeCenterPage[] {
+  return KNOWLEDGE_CENTER_PAGES.filter((p) => p.id !== excludeId).slice(
+    0,
+    limit
+  );
+}

@@ -13,6 +13,7 @@ import {
   HomeStrongCtaSection,
   HomeWhyAtsRejectsSection,
 } from "@/components/home/HomeSections";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { buildCtrMetadata, CTR_HOME } from "@/lib/seo/ctr-metadata";
 
 const FaqSection = dynamic(
@@ -44,6 +45,7 @@ export const metadata = buildCtrMetadata(CTR_HOME, {
 export default function HomePage() {
   return (
     <>
+      <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }]} />
       <WebSiteJsonLd />
       <HomeWebApplicationJsonLd />
       <HomePlatformJsonLd />

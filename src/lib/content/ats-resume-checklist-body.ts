@@ -14,9 +14,9 @@
 export const ATS_RESUME_CHECKLIST_PATH = "/ats-resume-checklist-2026" as const;
 
 export const atsResumeChecklistSeo = {
-  title: "ATS Resume Checklist 2026 — Free Pre-Submit QA",
+  title: "ATS Resume Checklist — Free Pre-Submit QA (2026)",
   description:
-    "Free ATS resume checklist: format, keywords, contact block, export QA. Print it, tick each item, then run the checker before you apply.",
+    "Free ATS resume checklist for resume optimization: format, ATS keywords, contact block, export QA. Tick each item, then run the ATS Resume Checker.",
 } as const;
 
 export const atsResumeChecklistImageAlts = [

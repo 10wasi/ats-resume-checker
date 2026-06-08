@@ -14,9 +14,54 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "", priority: 1, changeFrequency: "weekly" },
     { path: RESUME_CHECKER_PATH, priority: 0.95, changeFrequency: "weekly" },
     {
+      path: "/knowledge-center",
+      priority: 0.95,
+      changeFrequency: "weekly",
+    },
+    {
       path: "/ats-resume-hub",
       priority: 0.95,
       changeFrequency: "weekly",
+    },
+    {
+      path: "/ats-resume-examples",
+      priority: 0.9,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/ats-resume-keywords",
+      priority: 0.9,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/ats-resume-format",
+      priority: 0.9,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/ats-resume-mistakes",
+      priority: 0.9,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/ats-score-explained",
+      priority: 0.9,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/ats-friendly-resume-guide",
+      priority: 0.9,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/resume-keywords-by-industry",
+      priority: 0.9,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/ats-resume-templates",
+      priority: 0.9,
+      changeFrequency: "monthly",
     },
     {
       path: "/resume-job-description-match",

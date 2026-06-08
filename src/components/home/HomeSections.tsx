@@ -6,6 +6,7 @@ import {
   IconUpload,
 } from "@/components/ui/Icons";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
+import { CTR_HOME } from "@/lib/seo/ctr-metadata";
 
 export function HeroSection() {
   return (
@@ -26,7 +27,7 @@ export function HeroSection() {
             Free ATS Resume Checker · resume optimization for US &amp; UK
           </p>
           <h1 className="mt-6 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.85rem] lg:leading-[1.1]">
-            Stop Losing Interviews to ATS Filters
+            {CTR_HOME.h1}
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
             Analyze your resume, discover missing keywords, compare against job

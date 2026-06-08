@@ -11,7 +11,14 @@ export function OrganizationJsonLd() {
     url: base,
     logo: `${base}/favicon.ico`,
     description:
-      "Free ATS Resume Checker and resume optimization tools for job seekers in the US and UK.",
+      "Free ATS Resume Checker with resume match score, ATS keywords analysis, and resume optimization tools to build an ATS friendly resume.",
+    knowsAbout: [
+      "ATS Resume Checker",
+      "ATS friendly resume",
+      "resume match score",
+      "ATS keywords",
+      "resume optimization",
+    ],
     sameAs: [],
     contactPoint: {
       "@type": "ContactPoint",

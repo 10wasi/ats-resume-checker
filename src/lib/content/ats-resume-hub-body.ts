@@ -14,9 +14,9 @@
 export const ATS_RESUME_HUB_PATH = "/ats-resume-hub" as const;
 
 export const atsResumeHubSeo = {
-  title: "ATS Resume Hub — Free Checker, Guides & Tools",
+  title: "ATS Friendly Resume Hub — Checker, Guides & Tools",
   description:
-    "Your ATS resume hub: free checker, checklist, examples, keywords, format, and job match. One place to fix before every application.",
+    "ATS friendly resume hub: free ATS Resume Checker, resume match score tool, ATS keywords guides, and resume optimization resources—one place to fix before apply.",
 } as const;
 
 export const atsResumeHubImageAlts = [

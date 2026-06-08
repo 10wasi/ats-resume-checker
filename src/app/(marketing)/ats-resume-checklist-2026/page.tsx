@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
+import { KnowledgeCenterRelated } from "@/components/knowledge/KnowledgeCenterRelated";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
@@ -10,6 +11,7 @@ import {
   atsResumeChecklistSeo,
   ATS_RESUME_CHECKLIST_PATH,
 } from "@/lib/content/ats-resume-checklist-body";
+import { KNOWLEDGE_CENTER_PATH } from "@/lib/content/knowledge-center-pages";
 import { atsResumeChecklistFaqItems } from "@/lib/seo/ats-resume-checklist-faq";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 import { buildCtrMetadata, CTR_ATS_CHECKLIST } from "@/lib/seo/ctr-metadata";
@@ -17,8 +19,6 @@ import {
   HOWTO_ATS_CHECKLIST,
   HOWTO_URLS,
 } from "@/lib/seo/how-to-steps";
-
-const PAGE_TITLE = "The Ultimate ATS Resume Checklist for 2026";
 
 const KEYWORDS = [
   "ATS Resume Checklist",
@@ -52,6 +52,7 @@ export default function AtsResumeChecklistPage() {
       <BreadcrumbJsonLd
         items={[
           { name: "Home", path: "/" },
+          { name: "Knowledge Center", path: KNOWLEDGE_CENTER_PATH },
           { name: "ATS Resume Checklist", path: ATS_RESUME_CHECKLIST_PATH },
         ]}
       />
@@ -79,6 +80,15 @@ export default function AtsResumeChecklistPage() {
                 </Link>
               </li>
               <li aria-hidden>/</li>
+              <li>
+                <Link
+                  href={KNOWLEDGE_CENTER_PATH}
+                  className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/35 underline-offset-2 hover:text-[#16a34a]"
+                >
+                  Knowledge Center
+                </Link>
+              </li>
+              <li aria-hidden>/</li>
               <li className="text-slate-700">ATS resume checklist</li>
             </ol>
           </nav>
@@ -86,7 +96,7 @@ export default function AtsResumeChecklistPage() {
           <header className="mt-8">
             <p className="section-eyebrow">Free resource · ResumeIQ</p>
             <h1 className="mt-4 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl sm:leading-tight lg:text-5xl">
-              {PAGE_TITLE}
+              {CTR_ATS_CHECKLIST.h1}
             </h1>
             <p className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
               A practical, print-friendly{" "}
@@ -172,24 +182,12 @@ export default function AtsResumeChecklistPage() {
             </div>
           </section>
 
-          <BlogResumeCta />
+          <KnowledgeCenterRelated
+            excludeId="checklist"
+            relatedIds={["format", "friendly", "keywords", "score"]}
+          />
 
-          <p className="mt-10 text-center text-sm text-slate-500">
-            Related:{" "}
-            <Link
-              href="/blog/best-ats-friendly-resume-examples-2026"
-              className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/35 underline-offset-2 hover:text-[#16a34a]"
-            >
-              ATS-friendly resume examples
-            </Link>
-            {" · "}
-            <Link
-              href="/blog"
-              className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/35 underline-offset-2 hover:text-[#16a34a]"
-            >
-              all resume articles
-            </Link>
-          </p>
+          <BlogResumeCta />
         </div>
       </article>
     </>

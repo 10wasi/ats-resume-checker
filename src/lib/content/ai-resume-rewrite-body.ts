@@ -6,9 +6,9 @@
 export const AI_RESUME_REWRITE_PATH = "/ai-resume-rewrite" as const;
 
 export const aiResumeRewriteSeo = {
-  title: "AI Resume Rewrite & ATS Optimization (Free) | ResumeIQ",
+  title: "AI Resume Rewrite — Free ATS Optimization Tool",
   description:
-    "Free AI resume rewrite assistant with ATS resume checker scoring. Get improved summary, skills, bullets, keyword suggestions, and resume optimization—paste a job description for tailored fixes.",
+    "Free AI resume rewrite with ATS scoring. Stronger bullets, ATS keywords, and resume optimization suggestions tailored to your job description.",
 } as const;
 
 export const aiResumeRewriteBody = `

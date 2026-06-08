@@ -12,6 +12,7 @@ import {
   atsResumeHubSeo,
   ATS_RESUME_HUB_PATH,
 } from "@/lib/content/ats-resume-hub-body";
+import { KNOWLEDGE_CENTER_PATH } from "@/lib/content/knowledge-center-pages";
 import { atsResumeHubFaqItems } from "@/lib/seo/ats-resume-hub-faq";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 import { buildCtrMetadata, CTR_ATS_HUB } from "@/lib/seo/ctr-metadata";
@@ -75,7 +76,7 @@ export default function AtsResumeHubPage() {
           <header className="mt-8">
             <p className="section-eyebrow">Free resource hub · ResumeIQ</p>
             <h1 className="mt-4 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl sm:leading-tight lg:text-5xl">
-              The Complete ATS Resume Resource Hub
+              {CTR_ATS_HUB.h1}
             </h1>
             <p className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
               Your central home for the{" "}
@@ -202,6 +203,11 @@ export default function AtsResumeHubPage() {
               <li>
                 <Link href="/ultimate-ats-resume-guide" className="text-[#16a34a] underline">
                   Ultimate ATS guide
+                </Link>
+              </li>
+              <li>
+                <Link href={KNOWLEDGE_CENTER_PATH} className="text-[#16a34a] underline">
+                  ATS Knowledge Center
                 </Link>
               </li>
               <li>

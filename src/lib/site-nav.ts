@@ -9,6 +9,7 @@ export const SITE_TOOLS: SiteNavItem[] = [
   { href: RESUME_CHECKER_PATH, label: "Resume & ATS checker" },
   { href: "/resume-job-description-match", label: "Resume job match analyzer" },
   { href: "/ai-resume-rewrite", label: "AI resume rewrite" },
+  { href: "/knowledge-center", label: "ATS Knowledge Center" },
   { href: "/ats-resume-hub", label: "ATS resume hub" },
   { href: "/ultimate-ats-resume-guide", label: "Ultimate ATS guide" },
   { href: "/ats-resume-checklist-2026", label: "ATS resume checklist" },
@@ -18,7 +19,7 @@ export const SITE_TOOLS: SiteNavItem[] = [
 /** Sticky marketing header + mobile nav strip. */
 export const SITE_MARKETING_NAV: SiteNavItem[] = [
   { href: RESUME_CHECKER_PATH, label: "Resume checker" },
-  { href: "/ats-resume-hub", label: "Resources" },
+  { href: "/knowledge-center", label: "Resources" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
