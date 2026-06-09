@@ -516,7 +516,13 @@ export function AtsAnalysisResults({
             <p className="mx-auto mt-4 max-w-lg text-pretty text-xs leading-relaxed text-zinc-500 sm:text-sm">
               If the extracted text preview looked messy, fix the source file
               first—then you are truly improving your ATS score for the version
-              employers receive.
+              employers receive.{" "}
+              <Link
+                href="/ats-score-explained"
+                className="font-semibold text-[#16a34a] underline underline-offset-2"
+              >
+                What your ATS score means →
+              </Link>
             </p>
             {compatibility ? (
               <div className="mx-auto mt-6 inline-flex max-w-lg flex-col items-center gap-2 rounded-2xl border border-emerald-200/80 bg-white/90 px-5 py-4 shadow-sm sm:flex-row sm:gap-4">

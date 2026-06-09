@@ -9,7 +9,7 @@ export function HomePlatformJsonLd() {
     "@type": "ItemList",
     name: "ATS Resume Optimization Platform Tools",
     description:
-      "Free tools for ATS resume checking, job match scoring, keyword finding, examples, checklists, and AI resume rewrites.",
+      "Free tools for ATS resume checking, job match scoring, keyword finding, bullet generation, examples, checklists, and AI resume rewrites.",
     itemListElement: [
       {
         "@type": "ListItem",
@@ -26,26 +26,38 @@ export function HomePlatformJsonLd() {
       {
         "@type": "ListItem",
         position: 3,
-        name: "ATS Resume Examples",
-        url: `${base}/blog/best-ats-friendly-resume-examples-2026`,
+        name: "ATS Keywords Finder",
+        url: `${base}/ats-keywords-finder`,
       },
       {
         "@type": "ListItem",
         position: 4,
+        name: "Resume Bullet Generator",
+        url: `${base}/resume-bullet-generator`,
+      },
+      {
+        "@type": "ListItem",
+        position: 5,
+        name: "Resume Examples Library",
+        url: `${base}/resume-examples`,
+      },
+      {
+        "@type": "ListItem",
+        position: 6,
         name: "ATS Resume Checklist",
         url: `${base}/ats-resume-checklist-2026`,
       },
       {
         "@type": "ListItem",
-        position: 5,
-        name: "Resume Keywords Finder",
-        url: `${base}/blog/best-ats-resume-keywords-improve-visibility-2026`,
+        position: 7,
+        name: "ATS Knowledge Center",
+        url: `${base}/knowledge-center`,
       },
       {
         "@type": "ListItem",
-        position: 6,
+        position: 8,
         name: "AI Resume Rewrite",
-        url: `${base}/ai-resume-rewrite`,
+        url: `${base}${RESUME_CHECKER_PATH}`,
       },
     ],
   };

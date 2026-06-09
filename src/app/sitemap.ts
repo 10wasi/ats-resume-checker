@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getPostSlugs } from "@/lib/blog";
+import { getAtsResumeRoleSlugs } from "@/lib/content/ats-resume-roles/registry";
 import { getResumeExampleSlugs } from "@/lib/content/resume-examples/registry";
 import { getSiteUrl } from "@/lib/site-url";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
@@ -103,6 +104,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority,
     })
   );
+  for (const role of getAtsResumeRoleSlugs()) {
+    entries.push({
+      url: `${base}/ats-resume/${role}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    });
+  }
   for (const slug of getResumeExampleSlugs()) {
     entries.push({
       url: `${base}/resume-examples/${slug}`,

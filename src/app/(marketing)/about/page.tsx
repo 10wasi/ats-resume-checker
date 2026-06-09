@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 export const metadata: Metadata = {
@@ -10,6 +11,13 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "About", path: "/about" },
+        ]}
+      />
     <div className="container-prose py-16 sm:py-20">
       <p className="section-eyebrow">About</p>
       <h1 className="mt-6 font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
@@ -55,5 +63,6 @@ export default function AboutPage() {
         </Link>
       </div>
     </div>
+    </>
   );
 }

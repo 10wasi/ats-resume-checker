@@ -7,11 +7,15 @@ import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import {
   HeroSection,
   HomeAtsResumeExamplesSection,
+  HomeAuthorityHubSection,
   HomeChecklistSection,
-  HomeProblemsWeDetectSection,
+  HomeCoreToolsGridSection,
+  HomeKeywordsGuidePreviewSection,
   HomeResumeMatchPreviewSection,
+  HomeRoleExamplesSection,
   HomeStrongCtaSection,
-  HomeWhyAtsRejectsSection,
+  HomeTrustedBySection,
+  HomeTrustStrip,
 } from "@/components/home/HomeSections";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { buildCtrMetadata, CTR_HOME } from "@/lib/seo/ctr-metadata";
@@ -51,19 +55,19 @@ export default function HomePage() {
       <HomePlatformJsonLd />
       <FaqJsonLd />
       <HeroSection />
-      <HomeWhyAtsRejectsSection />
-      <HomeProblemsWeDetectSection />
+      <HomeTrustedBySection />
+      <HomeCoreToolsGridSection />
+      <HomeTrustStrip />
+      <HomeAtsResumeExamplesSection />
+      <HomeChecklistSection />
+      <HomeResumeMatchPreviewSection />
+      <HomeKeywordsGuidePreviewSection />
+      <HomeRoleExamplesSection />
       <AdPlaceholder
         label="Advertisement · resume tools"
         className="border-b border-slate-100 py-6 sm:py-8"
       />
-      <HomeAtsResumeExamplesSection />
-      <HomeChecklistSection />
-      <HomeResumeMatchPreviewSection />
-      <AdPlaceholder
-        label="Advertisement · guides"
-        className="border-b border-slate-100 py-6 sm:py-8"
-      />
+      <HomeAuthorityHubSection />
       <FaqSection />
       <HomeStrongCtaSection />
     </>

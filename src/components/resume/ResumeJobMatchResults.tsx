@@ -1,8 +1,12 @@
 "use client";
 
-import { useMemo } from "react";
+import Link from "next/link";
+import { useMemo, useState } from "react";
 import type { AtsAnalysisResult } from "@/lib/ats/types";
 import { buildJobMatchReport } from "@/lib/ats/build-job-match-report";
+import { buildAnalysisExportText, downloadTextFile } from "@/lib/ats/export-analysis";
+import { AnalysisPlatformNextSteps } from "@/components/tools/AnalysisPlatformNextSteps";
+import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 type Props = {
   analysis: AtsAnalysisResult;
@@ -89,6 +93,24 @@ export function ResumeJobMatchResults({
   recheckLoading = false,
 }: Props) {
   const report = useMemo(() => buildJobMatchReport(analysis), [analysis]);
+  const [copied, setCopied] = useState(false);
+
+  const copyMissing = async () => {
+    const text = report.missingKeywords.join(", ");
+    if (!text) return;
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
+    } catch {
+      /* ignore */
+    }
+  };
+
+  const downloadSummary = () => {
+    const text = buildAnalysisExportText(analysis);
+    downloadTextFile(text, "resume-match-summary.txt");
+  };
 
   return (
     <div className="space-y-6 sm:space-y-8">
@@ -108,8 +130,26 @@ export function ResumeJobMatchResults({
         </h2>
         <p className="mt-2 max-w-2xl text-sm text-zinc-600">
           Your resume match score, ATS compatibility, keyword gaps, and
-          prioritized fixes—tailored to this posting.
+          prioritized fixes—tailored to this posting.{" "}
+          <Link href="/ats-score-explained" className="font-semibold text-[#16a34a] underline">
+            ATS score explained
+          </Link>
         </p>
+        <div className="mt-4 flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={downloadSummary}
+            className="rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-semibold text-zinc-800 hover:bg-zinc-50"
+          >
+            Download summary
+          </button>
+          <Link
+            href={RESUME_CHECKER_PATH}
+            className="rounded-lg bg-emerald-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-emerald-700"
+          >
+            Full ATS check + AI rewrites
+          </Link>
+        </div>
         {onRecheck ? (
           <button
             type="button"
@@ -162,6 +202,15 @@ export function ResumeJobMatchResults({
           <div className="mt-4">
             <KeywordChips items={report.missingKeywords} variant="missing" />
           </div>
+          {report.missingKeywords.length > 0 ? (
+            <button
+              type="button"
+              onClick={copyMissing}
+              className="mt-4 text-xs font-semibold text-[#16a34a] hover:underline"
+            >
+              {copied ? "Copied missing keywords" : "Copy missing keywords"}
+            </button>
+          ) : null}
         </section>
         <section className="rounded-2xl border border-emerald-200/80 bg-white p-5 shadow-soft sm:p-6">
           <h3 className="font-display text-lg font-semibold text-zinc-950">
@@ -324,6 +373,8 @@ export function ResumeJobMatchResults({
           />
         </div>
       </section>
+
+      <AnalysisPlatformNextSteps variant="match" />
     </div>
   );
 }

@@ -8,6 +8,8 @@ export type SiteNavItem = { readonly href: string; readonly label: string };
 export const SITE_TOOLS: SiteNavItem[] = [
   { href: RESUME_CHECKER_PATH, label: "Resume & ATS checker" },
   { href: "/resume-job-description-match", label: "Resume job match analyzer" },
+  { href: "/ats-keywords-finder", label: "ATS keywords finder" },
+  { href: "/resume-bullet-generator", label: "Resume bullet generator" },
   { href: "/ai-resume-rewrite", label: "AI resume rewrite" },
   { href: "/knowledge-center", label: "ATS Knowledge Center" },
   { href: "/resume-examples", label: "Resume examples library" },

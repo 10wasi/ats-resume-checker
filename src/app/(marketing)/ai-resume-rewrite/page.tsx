@@ -86,6 +86,29 @@ export default function AiResumeRewritePage() {
             </p>
           </header>
 
+          <div className="mt-10 rounded-2xl border border-emerald-200/90 bg-gradient-to-br from-emerald-50/90 to-white p-6 sm:p-8">
+            <p className="text-sm font-semibold uppercase tracking-wide text-emerald-800">
+              Run the checker for live AI rewrites
+            </p>
+            <p className="mt-2 text-base leading-relaxed text-slate-700">
+              Upload or paste your resume on the{" "}
+              <Link
+                href={RESUME_CHECKER_PATH}
+                className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"
+              >
+                ATS Resume Checker
+              </Link>
+              . Add an optional job description for tailored bullet rewrites,
+              keyword gaps, and a prioritized improvement plan—free.
+            </p>
+            <Link
+              href={RESUME_CHECKER_PATH}
+              className="mt-5 inline-flex items-center justify-center rounded-xl bg-[#16a34a] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#15803d]"
+            >
+              Open ATS Resume Checker →
+            </Link>
+          </div>
+
           <AdPlaceholder label="Advertisement · resource" className="mt-10" />
 
           <div className="mt-10">

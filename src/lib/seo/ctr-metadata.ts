@@ -161,6 +161,26 @@ export const CTR_ULTIMATE_GUIDE: PageCtrMeta = {
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
+export const CTR_ATS_KEYWORDS_FINDER: PageCtrMeta = {
+  title: "ATS Keywords Finder — Extract From Job Posts Free",
+  description:
+    "Free ATS keywords finder: paste a job description, get skills, tools, and certifications to use in resume optimization. Then check match free.",
+  ogTitle: "ATS Keywords Finder — Free Job Description Tool",
+  h1: "ATS Keywords Finder: Extract Terms From Any Job Post",
+  primaryKeyword: "ATS keywords finder",
+  richSnippets: ["WebApplication", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_BULLET_GENERATOR: PageCtrMeta = {
+  title: "Resume Bullet Generator — ATS-Friendly Bullets Free",
+  description:
+    "Free resume bullet generator: turn duties into impact bullets for resume optimization. Copy suggestions, then score your resume in our ATS checker.",
+  ogTitle: "Resume Bullet Point Generator — Free ATS Bullets",
+  h1: "Resume Bullet Point Generator for ATS Resumes",
+  primaryKeyword: "resume bullet generator",
+  richSnippets: ["WebApplication", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
 export const CTR_RESUME_EXAMPLES_LIBRARY: PageCtrMeta = {
   title: "Resume Examples Library — ATS-Friendly by Role",
   description:

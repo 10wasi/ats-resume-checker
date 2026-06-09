@@ -14,6 +14,8 @@ type Props = {
   intro: ReactNode;
   faqHeading: string;
   faqIntro: ReactNode;
+  breadcrumbParent?: { label: string; path: string };
+  eyebrow?: string;
 };
 
 export function ResumeExamplePage({
@@ -21,7 +23,13 @@ export function ResumeExamplePage({
   intro,
   faqHeading,
   faqIntro,
+  breadcrumbParent,
+  eyebrow = "Resume Examples Library · ResumeIQ",
 }: Props) {
+  const parent = breadcrumbParent ?? {
+    label: "Resume Examples",
+    path: RESUME_EXAMPLES_LIBRARY_PATH,
+  };
   return (
     <>
       <ResourceGuideJsonLd
@@ -32,7 +40,7 @@ export function ResumeExamplePage({
       <BreadcrumbJsonLd
         items={[
           { name: "Home", path: "/" },
-          { name: "Resume Examples", path: RESUME_EXAMPLES_LIBRARY_PATH },
+          { name: parent.label, path: parent.path },
           { name: example.breadcrumbLabel, path: example.path },
         ]}
       />
@@ -56,10 +64,10 @@ export function ResumeExamplePage({
               <li aria-hidden>/</li>
               <li>
                 <Link
-                  href={RESUME_EXAMPLES_LIBRARY_PATH}
+                  href={parent.path}
                   className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/35 underline-offset-2 hover:text-[#16a34a]"
                 >
-                  Resume Examples
+                  {parent.label}
                 </Link>
               </li>
               <li aria-hidden>/</li>
@@ -68,7 +76,7 @@ export function ResumeExamplePage({
           </nav>
 
           <header className="mt-8">
-            <p className="section-eyebrow">Resume Examples Library · ResumeIQ</p>
+            <p className="section-eyebrow">{eyebrow}</p>
             <h1 className="mt-4 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl sm:leading-tight lg:text-5xl">
               {example.ctr.h1}
             </h1>

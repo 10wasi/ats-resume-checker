@@ -134,9 +134,9 @@ export function HomeCoreToolsGridSection() {
     {
       title: "ATS Resume Examples",
       desc: "See good vs bad layouts, bullet patterns, and ATS resume examples that parse cleanly in 2026.",
-      href: "/blog/best-ats-friendly-resume-examples-2026",
+      href: "/resume-examples",
       cta: "View examples",
-      badge: "Guide",
+      badge: "Examples",
     },
     {
       title: "ATS Resume Checklist",
@@ -146,17 +146,24 @@ export function HomeCoreToolsGridSection() {
       badge: "Checklist",
     },
     {
-      title: "Resume Keywords Finder",
-      desc: "Discover resume keywords from any posting—technical skills, tools, certifications, and soft skills.",
-      href: "/blog/best-ats-resume-keywords-improve-visibility-2026",
+      title: "ATS Keywords Finder",
+      desc: "Paste a job post—extract technical skills, tools, certifications, and soft skills instantly.",
+      href: "/ats-keywords-finder",
       cta: "Find keywords",
       badge: "Keywords",
     },
     {
+      title: "Resume Bullet Generator",
+      desc: "Draft impact-style bullets from your role, action, and metrics—copy and refine for ATS.",
+      href: "/resume-bullet-generator",
+      cta: "Generate bullets",
+      badge: "Bullets",
+    },
+    {
       title: "AI Resume Rewrite",
-      desc: "Original vs improved summary, skills, and bullets with one-click copy—paired with your ATS score.",
-      href: "/ai-resume-rewrite",
-      cta: "See AI rewrites",
+      desc: "Full-resume AI rewrites, improvement plan, and ATS score in the checker flow.",
+      href: RESUME_CHECKER_PATH,
+      cta: "Run checker",
       badge: "AI",
     },
   ];
@@ -180,9 +187,9 @@ export function HomeCoreToolsGridSection() {
             paying for a dozen separate tools.
           </p>
         </div>
-        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {tools.map((tool) => (
-            <li key={tool.href}>
+            <li key={tool.title}>
               <Link
                 href={tool.href}
                 className="group flex h-full flex-col rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm transition hover:border-emerald-300 hover:shadow-md"
@@ -215,19 +222,19 @@ export function HomeAtsResumeExamplesSection() {
       title: "Single-column ATS layout",
       good: "Standard headings, plain-text skills, bullets in body—parses in logical order.",
       bad: "Two-column Canva templates that scramble experience and skills on extract.",
-      href: "/blog/best-ats-friendly-resume-examples-2026",
+      href: "/ats-resume-examples",
     },
     {
       title: "Impact bullets with metrics",
       good: "Led migration of 12 services, cutting deploy time 40% using CI/CD and AWS.",
       bad: "Responsible for various projects and team collaboration duties.",
-      href: "/blog/best-ats-friendly-resume-examples-2026",
+      href: "/resume-examples/software-engineer",
     },
     {
       title: "Keyword placement",
       good: "Posting terms in summary, skills, and recent experience bullets—with proof.",
       bad: "Hidden keyword block in white font or skills cloud with no context.",
-      href: "/blog/best-ats-resume-keywords-improve-visibility-2026",
+      href: "/ats-resume-keywords",
     },
   ];
   return (
@@ -285,15 +292,138 @@ export function HomeAtsResumeExamplesSection() {
           ))}
         </ul>
         <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-slate-600">
-          More layouts and role-specific samples in our{" "}
+          Browse the{" "}
           <Link
-            href="/ats-resume-hub"
+            href="/resume-examples"
             className="font-semibold text-[#16a34a] underline underline-offset-2"
           >
-            ATS resume hub
+            Resume Examples Library
+          </Link>{" "}
+          and{" "}
+          <Link
+            href="/knowledge-center"
+            className="font-semibold text-[#16a34a] underline underline-offset-2"
+          >
+            ATS Knowledge Center
           </Link>
           .
         </p>
+      </div>
+    </section>
+  );
+}
+
+/** ATS keywords guide + finder preview. */
+export function HomeKeywordsGuidePreviewSection() {
+  return (
+    <section
+      className="border-b border-slate-200/70 bg-slate-50/80 py-16 sm:py-20"
+      aria-labelledby="keywords-preview-heading"
+    >
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+          <div>
+            <p className="section-eyebrow">ATS keywords</p>
+            <h2
+              id="keywords-preview-heading"
+              className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900"
+            >
+              Find ATS keywords—then place them with proof
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-slate-600">
+              Extract terms from any job post with the free{" "}
+              <strong className="font-semibold text-slate-900">ATS Keywords Finder</strong>
+              , then learn ethical placement in our{" "}
+              <Link
+                href="/ats-resume-keywords"
+                className="font-semibold text-[#16a34a] underline underline-offset-2"
+              >
+                ATS keywords guide
+              </Link>
+              .
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link href="/ats-keywords-finder" className="btn-gradient px-6 text-sm">
+                ATS Keywords Finder
+              </Link>
+              <Link
+                href="/resume-keywords-by-industry"
+                className="inline-flex h-11 items-center rounded-xl border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-800 hover:border-emerald-300"
+              >
+                Keywords by industry
+              </Link>
+            </div>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft">
+            <p className="text-xs font-semibold text-slate-500">Sample extraction</p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {["Python", "SQL", "Tableau", "stakeholder", "AWS", "Agile"].map(
+                (kw) => (
+                  <span
+                    key={kw}
+                    className="rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-950"
+                  >
+                    {kw}
+                  </span>
+                )
+              )}
+            </div>
+            <p className="mt-4 text-xs text-slate-600">
+              Paste a real posting to see skills, tools, certs, and soft skills—copy
+              with one click.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/** Role-specific ATS resume guides — long-tail internal links. */
+export function HomeRoleExamplesSection() {
+  const roles = [
+    { label: "Software engineers", href: "/ats-resume/software-engineer" },
+    { label: "Data analysts", href: "/ats-resume/data-analyst" },
+    { label: "Project managers", href: "/ats-resume/project-manager" },
+    { label: "Marketing", href: "/ats-resume/marketing-professionals" },
+    { label: "Customer service", href: "/ats-resume/customer-service" },
+    { label: "Accountants", href: "/ats-resume/accountants" },
+    { label: "HR professionals", href: "/ats-resume/hr-professionals" },
+  ];
+  return (
+    <section
+      className="border-b border-slate-200/70 bg-white py-16 sm:py-20"
+      aria-labelledby="role-guides-heading"
+    >
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="section-eyebrow mx-auto">By role</p>
+          <h2
+            id="role-guides-heading"
+            className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900"
+          >
+            ATS resume guides for your profession
+          </h2>
+          <p className="mt-4 text-slate-600">
+            Role-specific examples, keyword tips, and mistakes—plus the{" "}
+            <Link href="/resume-examples" className="font-semibold text-[#16a34a] underline">
+              full examples library
+            </Link>
+            .
+          </p>
+        </div>
+        <ul className="mt-10 flex flex-wrap justify-center gap-3">
+          {roles.map((r) => (
+            <li key={r.href}>
+              <Link
+                href={r.href}
+                className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-800 transition hover:border-emerald-300 hover:text-[#16a34a]"
+              >
+                {r.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
@@ -679,33 +809,33 @@ export function HomeAuthorityHubSection() {
   const guides = [
     {
       title: "ATS resume examples",
-      href: "/blog/best-ats-friendly-resume-examples-2026",
+      href: "/ats-resume-examples",
       desc: "Good vs bad layouts and bullet patterns that parse cleanly.",
     },
     {
       title: "ATS resume keywords",
-      href: "/blog/best-ats-resume-keywords-improve-visibility-2026",
+      href: "/ats-resume-keywords",
       desc: "Ethical keyword placement to improve ATS score and visibility.",
     },
     {
       title: "ATS resume format",
-      href: "/blog/best-ats-resume-format-2026-templates-tips",
-      desc: "Templates, typography, and resume formatting tips that work in 2026.",
+      href: "/ats-resume-format",
+      desc: "Templates, typography, and formatting rules that parse in 2026.",
     },
     {
       title: "ATS resume mistakes",
-      href: "/blog/10-resume-mistakes-ats-rejections-2026",
-      desc: "Ten mistakes that trigger rejections—and fast fixes.",
+      href: "/ats-resume-mistakes",
+      desc: "Mistakes that trigger rejections—and fast fixes.",
     },
     {
-      title: "Improve ATS score",
-      href: "/blog/how-to-improve-resume-score-instantly",
-      desc: "Quick wins and a practical iteration loop after you analyze.",
+      title: "ATS score explained",
+      href: "/ats-score-explained",
+      desc: "What your score means and how to improve before you apply.",
     },
     {
-      title: "Complete resource hub",
-      href: "/ats-resume-hub",
-      desc: "All guides, checker, and checklist in one map.",
+      title: "Knowledge Center",
+      href: "/knowledge-center",
+      desc: "Ten guides, tools, and checklists in one library.",
     },
   ];
   return (
