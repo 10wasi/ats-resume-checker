@@ -161,6 +161,16 @@ export const CTR_ULTIMATE_GUIDE: PageCtrMeta = {
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
+export const CTR_RESUME_EXAMPLES_LIBRARY: PageCtrMeta = {
+  title: "Resume Examples Library — ATS-Friendly by Role",
+  description:
+    "Free resume examples library: software engineer, data analyst, PM, marketing, HR, and more. ATS-friendly samples—test yours with our free ATS Resume Checker.",
+  ogTitle: "Resume Examples Library — ATS-Friendly Role Samples",
+  h1: "Resume Examples Library: ATS-Friendly Samples by Role",
+  primaryKeyword: "resume examples",
+  richSnippets: ["ItemList", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
 export const CTR_AI_REWRITE: PageCtrMeta = {
   title: "AI Resume Rewrite — Free ATS Optimization Tool",
   description:

@@ -10,6 +10,7 @@ export const SITE_TOOLS: SiteNavItem[] = [
   { href: "/resume-job-description-match", label: "Resume job match analyzer" },
   { href: "/ai-resume-rewrite", label: "AI resume rewrite" },
   { href: "/knowledge-center", label: "ATS Knowledge Center" },
+  { href: "/resume-examples", label: "Resume examples library" },
   { href: "/ats-resume-hub", label: "ATS resume hub" },
   { href: "/ultimate-ats-resume-guide", label: "Ultimate ATS guide" },
   { href: "/ats-resume-checklist-2026", label: "ATS resume checklist" },

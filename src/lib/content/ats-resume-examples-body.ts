@@ -97,6 +97,7 @@ That loop—format check, score check, match check—is the workflow in our [ATS
 
 ## Related guides
 
+- [Resume Examples Library](/resume-examples) — software engineer, data analyst, PM, and more by role
 - [ATS Resume Templates Guide](/ats-resume-templates) — which starting layouts survive upload
 - [ATS-Friendly Resume Guide](/ats-friendly-resume-guide) — build from scratch
 - [ATS Score Explained](/ats-score-explained) — what your checker results mean

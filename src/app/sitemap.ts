@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getPostSlugs } from "@/lib/blog";
+import { getResumeExampleSlugs } from "@/lib/content/resume-examples/registry";
 import { getSiteUrl } from "@/lib/site-url";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
@@ -21,6 +22,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       path: "/ats-resume-hub",
       priority: 0.95,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/resume-examples",
+      priority: 0.92,
       changeFrequency: "weekly",
     },
     {
@@ -97,6 +103,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority,
     })
   );
+  for (const slug of getResumeExampleSlugs()) {
+    entries.push({
+      url: `${base}/resume-examples/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    });
+  }
   for (const slug of getPostSlugs()) {
     entries.push({
       url: `${base}/blog/${slug}`,
