@@ -4,9 +4,9 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 export const metadata: Metadata = {
-  title: "About ResumeIQ",
+  title: "About ResumeIQ — Free Resume Optimization Platform",
   description:
-    "ResumeIQ is a free AI resume checker and ATS score analyzer for job seekers, students, new graduates, and software engineers.",
+    "About ResumeIQ: free ATS resume checker, match tools, and career guides for job seekers. Editorial standards, privacy-first design, and contactable support.",
 };
 
 export default function AboutPage() {
@@ -40,8 +40,15 @@ export default function AboutPage() {
           align your CV with a real posting, that is the whole point.
         </p>
         <p>
-          Editorial guides on the blog are written for job seekers, not for
-          algorithms — each article links back to the{" "}
+          Editorial guides in the{" "}
+          <Link
+            href="/career-success-hub"
+            className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/40 underline-offset-4 visited:text-[#22c55e] hover:text-[#16a34a]"
+          >
+            Career Success Hub
+          </Link>{" "}
+          and blog are written for job seekers—not for algorithms. Each guide
+          links back to the{" "}
           <Link
             href={RESUME_CHECKER_PATH}
             className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/40 underline-offset-4 visited:text-[#22c55e] hover:text-[#16a34a]"
@@ -50,6 +57,23 @@ export default function AboutPage() {
           </Link>{" "}
           so you can verify changes on your own file.
         </p>
+      </div>
+      <div className="mt-10 grid gap-4 sm:grid-cols-3">
+        <TrustCard
+          title="Privacy-first"
+          body="Resumes are processed for your request—not sold or stored long-term. Read our Privacy Policy."
+          href="/privacy"
+        />
+        <TrustCard
+          title="Editorial quality"
+          body="Guides include examples, FAQs, and actionable steps—not thin SEO filler."
+          href="/knowledge-center"
+        />
+        <TrustCard
+          title="Real support"
+          body="Questions or feedback? We read the contact inbox and update docs when something is unclear."
+          href="/contact"
+        />
       </div>
       <div className="mt-12 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
         <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-7">
@@ -64,5 +88,25 @@ export default function AboutPage() {
       </div>
     </div>
     </>
+  );
+}
+
+function TrustCard({
+  title,
+  body,
+  href,
+}: {
+  title: string;
+  body: string;
+  href: string;
+}) {
+  return (
+    <Link
+      href={href}
+      className="block rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-emerald-300"
+    >
+      <h2 className="font-display text-lg font-semibold text-slate-900">{title}</h2>
+      <p className="mt-2 text-sm leading-relaxed text-slate-600">{body}</p>
+    </Link>
   );
 }

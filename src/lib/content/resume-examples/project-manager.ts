@@ -28,7 +28,7 @@ export const projectManagerExample: ResumeExampleEntry = {
     "ATS Resume Checker",
     "Agile resume",
   ],
-  relatedSlugs: ["marketing-manager", "hr-manager", "software-engineer"],
+  relatedSlugs: ["product-manager", "marketing-manager", "hr-manager"],
   faqItems: [
     {
       question: "Should project managers put PMP on their resume?",

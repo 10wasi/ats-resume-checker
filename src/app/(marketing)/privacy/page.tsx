@@ -1,13 +1,22 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
+  title: "Privacy Policy — ResumeIQ",
   description:
-    "ResumeIQ privacy policy — resumes, cookies, optional advertising (e.g. Google AdSense), and how we handle usage data for the free ATS resume checker.",
+    "ResumeIQ privacy policy: how we handle resumes, cookies, analytics, and advertising (including Google AdSense). Transparent data practices for our free ATS resume checker.",
 };
 
 export default function PrivacyPage() {
   return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Privacy Policy", path: "/privacy" },
+        ]}
+      />
     <div className="container-prose py-16">
       <p className="section-eyebrow">Legal</p>
       <h1 className="mt-6 font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
@@ -66,7 +75,19 @@ export default function PrivacyPage() {
           .
         </Section>
       </div>
+      <p className="mt-10 text-sm text-slate-500">
+        See also{" "}
+        <Link href="/terms" className="font-semibold text-[#16a34a] underline underline-offset-2">
+          Terms of Service
+        </Link>{" "}
+        and{" "}
+        <Link href="/contact" className="font-semibold text-[#16a34a] underline underline-offset-2">
+          Contact
+        </Link>
+        .
+      </p>
     </div>
+    </>
   );
 }
 

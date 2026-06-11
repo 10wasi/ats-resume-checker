@@ -384,11 +384,13 @@ export function HomeRoleExamplesSection() {
   const roles = [
     { label: "Software engineers", href: "/ats-resume/software-engineer" },
     { label: "Data analysts", href: "/ats-resume/data-analyst" },
+    { label: "Product managers", href: "/ats-resume/product-manager" },
     { label: "Project managers", href: "/ats-resume/project-manager" },
-    { label: "Marketing", href: "/ats-resume/marketing-professionals" },
+    { label: "Marketing managers", href: "/ats-resume/marketing-manager" },
     { label: "Customer service", href: "/ats-resume/customer-service" },
-    { label: "Accountants", href: "/ats-resume/accountants" },
-    { label: "HR professionals", href: "/ats-resume/hr-professionals" },
+    { label: "Accountants", href: "/ats-resume/accountant" },
+    { label: "HR managers", href: "/ats-resume/hr-manager" },
+    { label: "Graphic designers", href: "/ats-resume/graphic-designer" },
   ];
   return (
     <section
@@ -831,6 +833,11 @@ export function HomeAuthorityHubSection() {
       title: "ATS score explained",
       href: "/ats-score-explained",
       desc: "What your score means and how to improve before you apply.",
+    },
+    {
+      title: "Career Success Hub",
+      href: "/career-success-hub",
+      desc: "Resume checker, match tool, optimization guides, and role examples in one hub.",
     },
     {
       title: "Knowledge Center",

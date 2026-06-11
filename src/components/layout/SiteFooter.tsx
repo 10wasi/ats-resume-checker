@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Logo } from "@/components/brand/Logo";
 import {
+  SITE_CAREER_PAGES,
   SITE_COMPANY,
   SITE_LEGAL,
   SITE_TOOLS,
@@ -10,15 +11,15 @@ export function SiteFooter() {
   return (
     <footer className="mt-auto border-t border-slate-200/80 bg-slate-950 text-slate-300">
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block transition opacity-100 hover:opacity-90">
               <Logo wordmarkClassName="text-white" />
             </Link>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-400">
-              Free AI resume checker and ATS score analyzer. Built for job seekers,
-              students, new grads, and software engineers who need a fast, honest
-              resume review — no paywall.
+              Free resume optimization platform: ATS checker, match score, keywords
+              tools, and career guides. Editorial content written for job seekers—
+              transparent privacy policy, contactable team, no paywall on core tools.
             </p>
             <Link
               href="/resume-checker"
@@ -28,6 +29,7 @@ export function SiteFooter() {
             </Link>
           </div>
           <FooterColumn title="Tools" links={SITE_TOOLS} />
+          <FooterColumn title="Career guides" links={SITE_CAREER_PAGES} />
           <FooterColumn
             title="Company & legal"
             links={[...SITE_COMPANY, ...SITE_LEGAL]}

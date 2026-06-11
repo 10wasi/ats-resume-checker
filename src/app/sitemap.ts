@@ -16,6 +16,46 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "", priority: 1, changeFrequency: "weekly" },
     { path: RESUME_CHECKER_PATH, priority: 0.95, changeFrequency: "weekly" },
     {
+      path: "/career-success-hub",
+      priority: 0.96,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/resume-review",
+      priority: 0.92,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/resume-optimization",
+      priority: 0.93,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/resume-score-checker",
+      priority: 0.91,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/resume-keywords-checker",
+      priority: 0.91,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/ats-resume-checker",
+      priority: 0.94,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/ats-keywords-finder",
+      priority: 0.92,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/resume-bullet-generator",
+      priority: 0.9,
+      changeFrequency: "weekly",
+    },
+    {
       path: "/knowledge-center",
       priority: 0.95,
       changeFrequency: "weekly",

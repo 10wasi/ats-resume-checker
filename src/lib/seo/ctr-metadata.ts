@@ -12,61 +12,61 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: "ATS Resume Checker — Free Score & Keywords",
+  title: "Free ATS Resume Checker — Score in 60 Seconds",
   description:
-    "Free ATS resume checker: upload PDF, get your score, missing ATS keywords, and resume optimization fixes. Build an ATS friendly resume—no signup.",
-  ogTitle: "ATS Resume Checker — Free Score, Keywords & Fixes",
-  h1: "Free ATS Resume Checker for Resume Optimization",
+    "Upload resume free → ATS score, missing keywords & fix list in seconds. Resume optimization without signup. See what hiring software sees before you apply.",
+  ogTitle: "Free ATS Resume Checker — Instant Score & Keywords",
+  h1: "Free ATS Resume Checker & Resume Optimization Platform",
   primaryKeyword: "ATS Resume Checker",
   richSnippets: ["FAQPage", "WebApplication", "ItemList", "Organization", "BreadcrumbList"],
 };
 
 export const CTR_RESUME_CHECKER: PageCtrMeta = {
-  title: "ATS Resume Checker — Free Score & Keyword Scan",
+  title: "Resume Checker — Free ATS Score & Keyword Scan",
   description:
-    "Upload resume free. Get ATS score, keyword gaps, format flags, and resume optimization tips—see what hiring software sees before you apply.",
-  ogTitle: "Free ATS Resume Checker — Instant Score & Keywords",
-  h1: "ATS Resume Checker: Score & Keywords Before You Apply",
-  primaryKeyword: "ATS Resume Checker",
+    "Free resume checker: upload PDF, get ATS score, keyword gaps & format warnings in one scan. Fix resume optimization issues before recruiters see your file.",
+  ogTitle: "Free Resume Checker — ATS Score & Keywords",
+  h1: "Resume Checker: Free ATS Score & Keyword Analysis",
+  primaryKeyword: "resume checker",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_RESUME_MATCH: PageCtrMeta = {
-  title: "Resume Match Score — Free Job Description Tool",
+  title: "Resume Match Score — Free vs Job Description",
   description:
-    "Get your resume match score vs any job post. See missing ATS keywords, skill gaps, and resume optimization fixes—free, before you apply.",
-  ogTitle: "Resume Match Score — Free ATS Keyword Comparison",
-  h1: "Resume Match Score: Compare Resume to Job Description",
+    "Paste any job post → instant resume match score, missing keywords & skill gaps. Free resume match tool to raise ATS visibility before you hit apply.",
+  ogTitle: "Resume Match Score — Free Job Description Tool",
+  h1: "Resume Match Tool: Score vs Job Description",
   primaryKeyword: "resume match score",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_ATS_EXAMPLES: PageCtrMeta = {
-  title: "ATS Resume Examples — Good vs Bad Layouts (Free)",
+  title: "ATS Resume Examples — What Parses vs Breaks (Free)",
   description:
-    "ATS resume examples that parse: layouts, bullets, ATS keywords. See what works, what breaks, and test your file with our free ATS Resume Checker.",
-  ogTitle: "ATS Resume Examples — What Parses in 2026",
-  h1: "ATS Resume Examples: Good vs Bad for Resume Optimization",
+    "ATS resume examples with good vs bad layouts, bullets & keywords. See what hiring software reads—then test your PDF free with our resume checker.",
+  ogTitle: "ATS Resume Examples — Good vs Bad Layouts",
+  h1: "ATS Resume Examples: Layouts That Parse in 2026",
   primaryKeyword: "ATS resume examples",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_ATS_CHECKLIST: PageCtrMeta = {
-  title: "ATS Resume Checklist — Free Pre-Submit QA (2026)",
+  title: "ATS Resume Checklist — Print Before You Apply (Free)",
   description:
-    "Free ATS resume checklist for resume optimization: format, ATS keywords, contact block, export QA. Tick each item, then run the ATS Resume Checker.",
-  ogTitle: "ATS Resume Checklist — Print & Use Before Applying",
-  h1: "ATS Resume Checklist for Resume Optimization",
+    "Free ATS resume checklist: format, keywords, contact block & export QA. Tick every item, then run the resume checker—catch rejections before you submit.",
+  ogTitle: "ATS Resume Checklist — Pre-Submit QA",
+  h1: "ATS Resume Checklist: Final QA Before Submit",
   primaryKeyword: "ATS resume checklist",
   richSnippets: ["FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_ATS_KEYWORDS: PageCtrMeta = {
-  title: "ATS Keywords Guide — Placement Without Stuffing",
+  title: "ATS Resume Keywords — Where to Place Them (Free)",
   description:
-    "Which ATS keywords matter and where to place them for resume optimization. Free ATS Resume Checker finds gaps in your target job post.",
-  ogTitle: "ATS Keywords — Improve Resume Visibility in 2026",
-  h1: "ATS Keywords: Where They Belong on Your Resume",
+    "ATS resume keywords guide: which terms matter, where they belong & how to avoid stuffing. Extract gaps from job posts with our free keywords tools.",
+  ogTitle: "ATS Resume Keywords Guide — Ethical Placement",
+  h1: "ATS Resume Keywords: Placement That Raises Match Score",
   primaryKeyword: "ATS keywords",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
@@ -182,23 +182,83 @@ export const CTR_BULLET_GENERATOR: PageCtrMeta = {
 };
 
 export const CTR_RESUME_EXAMPLES_LIBRARY: PageCtrMeta = {
-  title: "Resume Examples Library — ATS-Friendly by Role",
+  title: "Resume Examples — 9 ATS-Friendly Role Samples (Free)",
   description:
-    "Free resume examples library: software engineer, data analyst, PM, marketing, HR, and more. ATS-friendly samples—test yours with our free ATS Resume Checker.",
-  ogTitle: "Resume Examples Library — ATS-Friendly Role Samples",
-  h1: "Resume Examples Library: ATS-Friendly Samples by Role",
+    "Nine resume examples: software engineer, data analyst, product & project manager, marketing, HR & more. Keywords, mistakes & free ATS checker.",
+  ogTitle: "Resume Examples Library — ATS Samples by Role",
+  h1: "Resume Examples: ATS-Friendly Samples by Industry",
   primaryKeyword: "resume examples",
   richSnippets: ["ItemList", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_AI_REWRITE: PageCtrMeta = {
-  title: "AI Resume Rewrite — Free ATS Optimization Tool",
+  title: "AI Resume Rewrite — Free Bullet & Keyword Fixes",
   description:
-    "Free AI resume rewrite with ATS scoring. Stronger bullets, ATS keywords, and resume optimization suggestions tailored to your job description.",
-  ogTitle: "AI Resume Rewrite — ATS Keywords & Bullet Fixes",
-  h1: "AI Resume Rewrite for Resume Optimization",
+    "Free AI resume rewrite in the checker flow: stronger bullets, ATS keywords & optimization tips tailored to your job post. No paywall on core analysis.",
+  ogTitle: "AI Resume Rewrite — Free ATS Optimization",
+  h1: "AI Resume Rewrite for Stronger ATS Resumes",
   primaryKeyword: "resume optimization",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_CAREER_SUCCESS_HUB: PageCtrMeta = {
+  title: "Career Success Hub — Resume Tools & Guides (Free)",
+  description:
+    "Free Career Success Hub: resume checker, match tool, keywords checker, optimization guides, ATS examples & checklist—one connected workflow for job seekers.",
+  ogTitle: "Career Success Hub — Resume Optimization Platform",
+  h1: "Career Success Hub: Resume Tools & Optimization Guides",
+  primaryKeyword: "resume optimization",
+  richSnippets: ["ItemList", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_REVIEW: PageCtrMeta = {
+  title: "Free Resume Review — Rubric + ATS Check (2026)",
+  description:
+    "Free resume review guide: 10-minute rubric recruiters use, plus ATS checker & match tool. Fix clarity, keywords & format before you apply.",
+  ogTitle: "Resume Review Guide — Free ATS + Human Checklist",
+  h1: "Free Resume Review: Rubric, ATS Check & Next Steps",
+  primaryKeyword: "resume review",
+  richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_OPTIMIZATION: PageCtrMeta = {
+  title: "Resume Optimization — 5-Step ATS Workflow (Free)",
+  description:
+    "Resume optimization workflow: score, match keywords, fix format, upgrade bullets & checklist QA. Free tools connected end to end—no thin tips.",
+  ogTitle: "Resume Optimization Guide — Free ATS Workflow",
+  h1: "Resume Optimization: Step-by-Step ATS Workflow",
+  primaryKeyword: "resume optimization",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_SCORE_CHECKER: PageCtrMeta = {
+  title: "Resume Score Checker — Free ATS Rating Tool",
+  description:
+    "Free resume score checker: ATS compatibility, keyword coverage & format flags in one scan. Learn what your score means & how to improve fast.",
+  ogTitle: "Resume Score Checker — Free ATS Analysis",
+  h1: "Resume Score Checker: What Your ATS Rating Means",
+  primaryKeyword: "resume score checker",
+  richSnippets: ["Article", "FAQPage", "WebApplication", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_KEYWORDS_CHECKER: PageCtrMeta = {
+  title: "Resume Keywords Checker — Find Missing ATS Terms",
+  description:
+    "Free resume keywords checker: extract terms from job posts, compare to your resume & fix gaps ethically. Keywords finder + match tool included.",
+  ogTitle: "Resume Keywords Checker — Free ATS Gap Scan",
+  h1: "Resume Keywords Checker: Find & Fix Missing Terms",
+  primaryKeyword: "resume keywords",
+  richSnippets: ["Article", "FAQPage", "WebApplication", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_ATS_RESUME_CHECKER_LANDING: PageCtrMeta = {
+  title: "ATS Resume Checker — Free Parse & Keyword Scan",
+  description:
+    "Free ATS resume checker: upload PDF, get score, keyword gaps, format warnings & improvement plan. Built for job seekers who need results—not fluff.",
+  ogTitle: "ATS Resume Checker — Free Score & Fixes",
+  h1: "ATS Resume Checker: Free Score, Keywords & Fixes",
+  primaryKeyword: "ATS Resume Checker",
+  richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export function buildCtrMetadata(

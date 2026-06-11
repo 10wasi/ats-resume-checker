@@ -4,6 +4,7 @@ import { dataAnalystExample } from "./data-analyst";
 import { graphicDesignerExample } from "./graphic-designer";
 import { hrManagerExample } from "./hr-manager";
 import { marketingManagerExample } from "./marketing-manager";
+import { productManagerExample } from "./product-manager";
 import { projectManagerExample } from "./project-manager";
 import { softwareEngineerExample } from "./software-engineer";
 import type { ResumeExampleEntry } from "./types";
@@ -14,6 +15,7 @@ export const RESUME_EXAMPLES: ResumeExampleEntry[] = [
   softwareEngineerExample,
   dataAnalystExample,
   projectManagerExample,
+  productManagerExample,
   marketingManagerExample,
   customerServiceExample,
   accountantExample,

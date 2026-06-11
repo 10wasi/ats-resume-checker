@@ -50,14 +50,20 @@ export function HomePlatformJsonLd() {
       {
         "@type": "ListItem",
         position: 7,
+        name: "Career Success Hub",
+        url: `${base}/career-success-hub`,
+      },
+      {
+        "@type": "ListItem",
+        position: 8,
         name: "ATS Knowledge Center",
         url: `${base}/knowledge-center`,
       },
       {
         "@type": "ListItem",
-        position: 8,
-        name: "AI Resume Rewrite",
-        url: `${base}${RESUME_CHECKER_PATH}`,
+        position: 9,
+        name: "Resume Optimization Guide",
+        url: `${base}/resume-optimization`,
       },
     ],
   };

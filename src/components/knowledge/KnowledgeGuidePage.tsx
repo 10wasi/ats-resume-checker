@@ -4,6 +4,7 @@ import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { KnowledgeCenterRelated } from "@/components/knowledge/KnowledgeCenterRelated";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { TopicClusterLinks } from "@/components/seo/TopicClusterLinks";
 import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
@@ -133,6 +134,8 @@ export function KnowledgeGuidePage({
               ))}
             </div>
           </section>
+
+          <TopicClusterLinks />
 
           <KnowledgeCenterRelated
             excludeId={knowledgeCenterId}

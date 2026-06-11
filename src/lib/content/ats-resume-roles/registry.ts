@@ -52,15 +52,31 @@ export const ATS_RESUME_ROLES: AtsResumeRoleEntry[] = [
     exampleSlug: "project-manager",
     breadcrumbLabel: "Project managers",
     ctr: {
-      title: "ATS Resume for Project Managers — ATS Guide",
+      title: "Project Manager Resume — ATS Guide & Example",
       description:
-        "ATS resume for project managers: Agile, stakeholder, budget keywords with proof. Example + optimization tips + free checker.",
-      h1: "ATS Resume for Project Managers",
-      primaryKeyword: "ATS resume project manager",
+        "Project manager resume for ATS: Agile, budget & stakeholder keywords with proof. Example, mistakes & free resume checker.",
+      h1: "Project Manager Resume: ATS-Friendly Guide",
+      primaryKeyword: "project manager resume",
       richSnippets: ["Article", "FAQPage", "BreadcrumbList"],
     },
     roleIntro:
       "PM postings blend methodology, scale, and delivery metrics. This page shows an ATS-friendly project manager resume that recruiters can scan fast.",
+  },
+  {
+    slug: "product-manager",
+    path: "/ats-resume/product-manager",
+    exampleSlug: "product-manager",
+    breadcrumbLabel: "Product managers",
+    ctr: {
+      title: "Product Manager Resume — ATS Guide & Example",
+      description:
+        "Product manager resume for ATS: roadmap, OKRs, discovery & SQL keywords. Example, tips & free ATS Resume Checker.",
+      h1: "Product Manager Resume: ATS-Friendly Guide",
+      primaryKeyword: "product manager resume",
+      richSnippets: ["Article", "FAQPage", "BreadcrumbList"],
+    },
+    roleIntro:
+      "Product roles filter on shipping proof, experimentation, and metrics—not vision decks. See how to structure a product manager resume parsers and PMs can search.",
   },
   {
     slug: "marketing-professionals",
@@ -125,6 +141,70 @@ export const ATS_RESUME_ROLES: AtsResumeRoleEntry[] = [
     },
     roleIntro:
       "HR resumes must signal HRIS fluency, hiring volume, and compliance—not generic people skills. See a working ATS example.",
+  },
+  {
+    slug: "marketing-manager",
+    path: "/ats-resume/marketing-manager",
+    exampleSlug: "marketing-manager",
+    breadcrumbLabel: "Marketing managers",
+    ctr: {
+      title: "Marketing Manager Resume — ATS Guide & Example",
+      description:
+        "Marketing manager resume for ATS: SEO, campaigns, ROI & CRM keywords. Example, mistakes & free checker.",
+      h1: "Marketing Manager Resume: ATS-Friendly Guide",
+      primaryKeyword: "marketing manager resume",
+      richSnippets: ["Article", "FAQPage", "BreadcrumbList"],
+    },
+    roleIntro:
+      "Marketing resumes need channel proof and numbers. This guide shows keyword placement for marketing manager resumes that parse cleanly.",
+  },
+  {
+    slug: "accountant",
+    path: "/ats-resume/accountant",
+    exampleSlug: "accountant",
+    breadcrumbLabel: "Accountants",
+    ctr: {
+      title: "Accountant Resume — ATS Guide & Example",
+      description:
+        "Accountant resume for ATS: GAAP, reconciliations & ERP keywords with proof. Example + free ATS Resume Checker.",
+      h1: "Accountant Resume: ATS-Friendly Guide",
+      primaryKeyword: "accountant resume",
+      richSnippets: ["Article", "FAQPage", "BreadcrumbList"],
+    },
+    roleIntro:
+      "Finance postings search GAAP, close cycles, and ERP systems. Build an accountant resume that surfaces credentials and parse-friendly structure.",
+  },
+  {
+    slug: "hr-manager",
+    path: "/ats-resume/hr-manager",
+    exampleSlug: "hr-manager",
+    breadcrumbLabel: "HR managers",
+    ctr: {
+      title: "HR Manager Resume — ATS Guide & Example",
+      description:
+        "HR manager resume for ATS: talent acquisition, HRIS & employee relations keywords. Example + free checker.",
+      h1: "HR Manager Resume: ATS-Friendly Guide",
+      primaryKeyword: "HR manager resume",
+      richSnippets: ["Article", "FAQPage", "BreadcrumbList"],
+    },
+    roleIntro:
+      "HR manager resumes must show hiring volume, HRIS tools, and policy work—not generic people skills. See an ATS-friendly example.",
+  },
+  {
+    slug: "graphic-designer",
+    path: "/ats-resume/graphic-designer",
+    exampleSlug: "graphic-designer",
+    breadcrumbLabel: "Graphic designers",
+    ctr: {
+      title: "Graphic Designer Resume — ATS Guide & Example",
+      description:
+        "Graphic designer resume for ATS: Adobe CC, brand systems & campaign keywords. Plain-layout example + free checker.",
+      h1: "Graphic Designer Resume: ATS-Friendly Guide",
+      primaryKeyword: "graphic designer resume",
+      richSnippets: ["Article", "FAQPage", "BreadcrumbList"],
+    },
+    roleIntro:
+      "Creative portfolios impress humans; online applications need a plain ATS version. Learn how graphic designer resumes can list tools and outcomes without breaking parsers.",
   },
 ];
 

@@ -1,51 +1,47 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
-import { ResumeExamplesRelated } from "@/components/examples/ResumeExamplesRelated";
+import { CareerHubRelated } from "@/components/career/CareerHubRelated";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
-import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { TopicClusterLinks } from "@/components/seo/TopicClusterLinks";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
-import type { ResumeExampleEntry } from "@/lib/content/resume-examples/types";
-import { RESUME_EXAMPLES_LIBRARY_PATH } from "@/lib/content/resume-examples/registry";
+import { CAREER_SUCCESS_HUB_PATH } from "@/lib/content/career-success-hub/registry";
+import type { CareerLandingEntry } from "@/lib/content/career-success-hub/types";
+import type { FaqItem } from "@/lib/seo/faq";
 
 type Props = {
-  example: ResumeExampleEntry;
+  entry: CareerLandingEntry;
   intro: ReactNode;
   faqHeading: string;
-  faqIntro: ReactNode;
-  breadcrumbParent?: { label: string; path: string };
-  eyebrow?: string;
+  faqIntro?: ReactNode;
+  toolCta?: ReactNode;
 };
 
-export function ResumeExamplePage({
-  example,
+export function CareerLandingPage({
+  entry,
   intro,
   faqHeading,
   faqIntro,
-  breadcrumbParent,
-  eyebrow = "Resume Examples Library · ResumeIQ",
+  toolCta,
 }: Props) {
-  const parent = breadcrumbParent ?? {
-    label: "Resume Examples",
-    path: RESUME_EXAMPLES_LIBRARY_PATH,
-  };
+  const faqItems: FaqItem[] = entry.faqItems;
   return (
     <>
       <ResourceGuideJsonLd
-        path={example.path}
-        title={example.seo.title}
-        description={example.seo.description}
+        path={entry.path}
+        title={entry.ctr.title}
+        description={entry.ctr.description}
       />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", path: "/" },
-          { name: parent.label, path: parent.path },
-          { name: example.breadcrumbLabel, path: example.path },
+          { name: "Career Success Hub", path: CAREER_SUCCESS_HUB_PATH },
+          { name: entry.breadcrumbLabel, path: entry.path },
         ]}
       />
-      <PageFaqJsonLd items={example.faqItems} />
+      <PageFaqJsonLd items={faqItems} />
       <article className="relative">
         <div
           className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[380px] bg-mesh"
@@ -65,46 +61,52 @@ export function ResumeExamplePage({
               <li aria-hidden>/</li>
               <li>
                 <Link
-                  href={parent.path}
+                  href={CAREER_SUCCESS_HUB_PATH}
                   className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/35 underline-offset-2 hover:text-[#16a34a]"
                 >
-                  {parent.label}
+                  Career Success Hub
                 </Link>
               </li>
               <li aria-hidden>/</li>
-              <li className="text-slate-700">{example.breadcrumbLabel}</li>
+              <li className="text-slate-700">{entry.breadcrumbLabel}</li>
             </ol>
           </nav>
 
           <header className="mt-8">
-            <p className="section-eyebrow">{eyebrow}</p>
+            <p className="section-eyebrow">Career Success Hub · ResumeIQ</p>
             <h1 className="mt-4 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl sm:leading-tight lg:text-5xl">
-              {example.ctr.h1}
+              {entry.ctr.h1}
             </h1>
             <div className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
               {intro}
             </div>
           </header>
 
+          {toolCta ? <div className="mt-10">{toolCta}</div> : null}
+
           <AdPlaceholder label="Advertisement · resource" className="mt-10" />
 
           <div className="mt-10">
-            <BlogContent content={example.body} />
+            <BlogContent content={entry.body} />
           </div>
+
+          <TopicClusterLinks />
 
           <section
             className="mt-16 border-t border-slate-200 pt-14"
-            aria-labelledby="resume-example-faq-heading"
+            aria-labelledby="career-faq-heading"
           >
             <h2
-              id="resume-example-faq-heading"
+              id="career-faq-heading"
               className="font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl"
             >
               {faqHeading}
             </h2>
-            <div className="mt-3 text-slate-600">{faqIntro}</div>
+            {faqIntro ? (
+              <div className="mt-3 text-slate-600">{faqIntro}</div>
+            ) : null}
             <div className="mt-10 space-y-10">
-              {example.faqItems.map((item) => (
+              {faqItems.map((item) => (
                 <div key={item.question}>
                   <h3 className="text-lg font-semibold text-slate-900">
                     {item.question}
@@ -117,10 +119,7 @@ export function ResumeExamplePage({
             </div>
           </section>
 
-          <TopicClusterLinks />
-
-          <ResumeExamplesRelated currentSlug={example.slug} />
-
+          <CareerHubRelated currentId={entry.id} />
           <BlogResumeCta />
         </div>
       </article>

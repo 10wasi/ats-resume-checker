@@ -11,6 +11,7 @@ export const SITE_TOOLS: SiteNavItem[] = [
   { href: "/ats-keywords-finder", label: "ATS keywords finder" },
   { href: "/resume-bullet-generator", label: "Resume bullet generator" },
   { href: "/ai-resume-rewrite", label: "AI resume rewrite" },
+  { href: "/career-success-hub", label: "Career Success Hub" },
   { href: "/knowledge-center", label: "ATS Knowledge Center" },
   { href: "/resume-examples", label: "Resume examples library" },
   { href: "/ats-resume-hub", label: "ATS resume hub" },
@@ -19,9 +20,19 @@ export const SITE_TOOLS: SiteNavItem[] = [
   { href: "/blog", label: "Blog" },
 ];
 
+/** High-intent SEO landing pages (footer resources column). */
+export const SITE_CAREER_PAGES: SiteNavItem[] = [
+  { href: "/resume-review", label: "Resume review" },
+  { href: "/resume-optimization", label: "Resume optimization" },
+  { href: "/resume-score-checker", label: "Resume score checker" },
+  { href: "/resume-keywords-checker", label: "Resume keywords checker" },
+  { href: "/ats-resume-checker", label: "ATS resume checker guide" },
+];
+
 /** Sticky marketing header + mobile nav strip. */
 export const SITE_MARKETING_NAV: SiteNavItem[] = [
   { href: RESUME_CHECKER_PATH, label: "Resume checker" },
+  { href: "/career-success-hub", label: "Career Hub" },
   { href: "/knowledge-center", label: "Resources" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },

@@ -1,13 +1,22 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
-  title: "Terms of Service",
+  title: "Terms of Service — ResumeIQ",
   description:
-    "ResumeIQ terms of service — acceptable use and disclaimers for the AI resume checker.",
+    "ResumeIQ terms of service: acceptable use, disclaimers, and limitations for the free ATS resume checker and career guides.",
 };
 
 export default function TermsPage() {
   return (
+    <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Terms of Service", path: "/terms" },
+        ]}
+      />
     <div className="container-prose py-16">
       <p className="section-eyebrow">Legal</p>
       <h1 className="mt-6 font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
@@ -50,7 +59,19 @@ export default function TermsPage() {
           with an updated date at the top of this page.
         </Section>
       </div>
+      <p className="mt-10 text-sm text-slate-500">
+        See also{" "}
+        <Link href="/privacy" className="font-semibold text-[#16a34a] underline underline-offset-2">
+          Privacy Policy
+        </Link>{" "}
+        and{" "}
+        <Link href="/contact" className="font-semibold text-[#16a34a] underline underline-offset-2">
+          Contact
+        </Link>
+        .
+      </p>
     </div>
+    </>
   );
 }
 
