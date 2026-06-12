@@ -59,12 +59,30 @@ export const KNOWLEDGE_CENTER_PAGES: KnowledgeCenterPage[] = [
   },
   {
     id: "match",
-    title: "Resume vs Job Description Matching",
-    shortTitle: "Job match",
+    title: "Resume Match Tool",
+    shortTitle: "Match tool",
     description:
-      "Match resume to job description—resume match score, missing keywords, and skill gaps.",
+      "Free resume match analyzer—paste a job description for match score, missing keywords, and skill gaps.",
     href: "/resume-job-description-match",
     cta: "Run match analyzer",
+  },
+  {
+    id: "match-score",
+    title: "Resume Match Score Guide",
+    shortTitle: "Match score",
+    description:
+      "What resume match score means, good benchmarks, and how to improve keyword overlap before you apply.",
+    href: "/resume-match-score",
+    cta: "Read match guide",
+  },
+  {
+    id: "industry-examples",
+    title: "Resume Examples by Role",
+    shortTitle: "By role",
+    description:
+      "Nine industry resume examples with ATS keywords, mistakes, tips, and FAQs—software, data, PM, marketing, and more.",
+    href: "/resume-examples",
+    cta: "View examples",
   },
   {
     id: "score",

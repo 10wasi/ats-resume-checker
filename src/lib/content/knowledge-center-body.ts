@@ -23,6 +23,26 @@ Start with the [free ATS Resume Checker](/resume-checker) on the file you plan t
 - [Resume Match Analyzer](/resume-job-description-match) — posting-specific match %
 - [AI Resume Rewrite](/ai-resume-rewrite) — suggested bullet improvements after analysis
 
+## Resume match score (posting-specific)
+
+**If you have one role you care about** → [Resume Match Score Guide](/resume-match-score) → [Resume Match Analyzer](/resume-job-description-match) → re-run [ATS Resume Checker](/resume-checker)
+
+Match score is not the same as ATS score. The dedicated guide explains benchmarks and tailoring without keyword stuffing.
+
+## Industry resume examples (9 roles)
+
+Each role page includes an ATS-friendly sample, industry keywords, mistakes, optimization tips, and FAQ:
+
+- [Software engineer](/resume-examples/software-engineer) · [Data analyst](/resume-examples/data-analyst) · [Product manager](/resume-examples/product-manager)
+- [Project manager](/resume-examples/project-manager) · [Marketing manager](/resume-examples/marketing-manager) · [Accountant](/resume-examples/accountant)
+- [HR manager](/resume-examples/hr-manager) · [Customer service](/resume-examples/customer-service) · [Graphic designer](/resume-examples/graphic-designer)
+
+Full index: [Resume Examples Library](/resume-examples). ATS-focused role guides live at /ats-resume/software-engineer and similar role URLs linked from each example.
+
+## Career Success Hub
+
+All tools in one place—checker, review, optimization, score & keywords guides: [Career Success Hub](/career-success-hub).
+
 ## Long-form companion
 
 For end-to-end theory and advanced scenarios, see the [Ultimate ATS Resume Guide](/ultimate-ats-resume-guide) and the [ATS Resume Hub](/ats-resume-hub).

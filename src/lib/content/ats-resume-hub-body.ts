@@ -46,7 +46,7 @@ Pre-submit QA in one sitting—copy-paste test, headings, contact in body, keywo
 
 ## ATS Resume Examples
 
-See good vs bad layouts and bullet patterns—not templates to copy blindly. Start here: [best ATS-friendly resume examples](/blog/best-ats-friendly-resume-examples-2026). Compare structure before you chase synonyms.
+See good vs bad layouts and bullet patterns—not templates to copy blindly. Start here: [best ATS-friendly resume examples](/ats-resume-examples). Compare structure before you chase synonyms.
 
 ## ATS Keywords Guide
 
@@ -75,7 +75,7 @@ Not every problem needs the same guide. Use this routing:
 → [Keyword visibility guide](/blog/best-ats-resume-keywords-improve-visibility-2026) → [skills for ATS](/blog/best-resume-skills-improve-ats-visibility-2026) → [rejection reasons](/blog/why-resume-rejected-ats-top-reasons-fixes)
 
 **“I need to see working examples.”**  
-→ [ATS resume examples](/blog/best-ats-friendly-resume-examples-2026) → [ultimate ATS guide](/ultimate-ats-resume-guide)
+→ [ATS resume examples](/ats-resume-examples) → [ultimate ATS guide](/ultimate-ats-resume-guide)
 
 **“I am qualified but invisible.”**  
 → [Qualified but rejected](/blog/why-qualified-candidates-still-get-rejected-2026) → [beat ATS filters](/blog/how-to-beat-ats-resume-filters-2026) → checker again
@@ -100,7 +100,7 @@ A single viral tip cannot cover that stack. A **hub** connects:
 - **Tooling** — the [ATS Resume Checker](/resume-checker)
 - **Structure** — format guides and [ATS resume checklist](/ats-resume-checklist-2026)
 - **Language** — keyword and skills guides
-- **Patterns** — [ATS resume examples](/blog/best-ats-friendly-resume-examples-2026)
+- **Patterns** — [ATS resume examples](/ats-resume-examples)
 - **Diagnostics** — rejection and mistake articles
 - **Iteration** — score improvement playbooks
 
@@ -182,7 +182,7 @@ Primary guide: [best ATS resume format for 2026](/blog/best-ats-resume-format-20
 
 **Good pattern:** Name and contact → headline → summary → Employer A + dates + bullets → Employer B → Skills → Education. Top-to-bottom like a letter.
 
-See annotated layouts in [ATS resume examples](/blog/best-ats-friendly-resume-examples-2026).
+See annotated layouts in [ATS resume examples](/ats-resume-examples).
 
 ### Print-friendly structure checklist
 
@@ -280,7 +280,7 @@ Examples beat abstract rules. The hub’s example library shows **structure and 
 - One-column flow that passes the paste test
 - Page-one proof aligned with the posting
 
-Start here: [best ATS-friendly resume examples for 2026](/blog/best-ats-friendly-resume-examples-2026).
+Start here: [best ATS-friendly resume examples for 2026](/ats-resume-examples).
 
 ### Mini before-and-after
 
@@ -300,7 +300,7 @@ Related: [best resume format for jobs 2026](/blog/best-resume-format-for-jobs-20
 
 Contact block in body → Headline “Product Marketing Manager — B2B SaaS” → Two-line summary with HubSpot, GA4, SQL → Acme Analytics, title, dates, three bullets with tools and metrics → Prior employer with two bullets → Grouped Skills → Education.
 
-That flow mirrors [ATS resume examples](/blog/best-ats-friendly-resume-examples-2026)—copy structure, not someone else’s numbers.
+That flow mirrors [ATS resume examples](/ats-resume-examples)—copy structure, not someone else’s numbers.
 
 ### Role-specific paths
 
@@ -502,7 +502,7 @@ If a tired recruiter cannot find your proof in six seconds, software probably st
 
 **Examples & patterns**
 
-- [ATS resume examples](/blog/best-ats-friendly-resume-examples-2026)
+- [ATS resume examples](/ats-resume-examples)
 
 **Rejection & fixes**
 
@@ -541,7 +541,7 @@ Silence after applying hurts. This hub will not fix biased hiring or budget free
 
 - What is an ATS resume checklist and when do I use it? → [Checklist page](/ats-resume-checklist-2026)
 - How do I optimize keywords without lying? → [Keywords guide](/blog/best-ats-resume-keywords-improve-visibility-2026)
-- What do good resume examples look like? → [Examples article](/blog/best-ats-friendly-resume-examples-2026)
+- What do good resume examples look like? → [Examples article](/ats-resume-examples)
 - Why do strong candidates get rejected? → [Rejection guides](/blog/why-resume-rejected-ats-top-reasons-fixes)
 - How fast can I improve my score? → [Instant improvement guide](/blog/how-to-improve-resume-score-instantly)
 
@@ -580,7 +580,7 @@ Save this hub checklist in Notes beside the dedicated checklist page—use the h
 
 ## Conclusion: one hub, many fixes, same goal
 
-Job search in 2026 is noisy. Tabs multiply. Advice contradicts itself. This **ATS Resume Hub** exists so you have **one trustworthy map**: test with the [ATS Resume Checker](/resume-checker), fix format with the [checklist](/ats-resume-checklist-2026), align language with [keyword guides](/blog/best-ats-resume-keywords-improve-visibility-2026), learn patterns from [ATS resume examples](/blog/best-ats-friendly-resume-examples-2026), and diagnose silence with [rejection guides](/blog/why-resume-rejected-ats-top-reasons-fixes).
+Job search in 2026 is noisy. Tabs multiply. Advice contradicts itself. This **ATS Resume Hub** exists so you have **one trustworthy map**: test with the [ATS Resume Checker](/resume-checker), fix format with the [checklist](/ats-resume-checklist-2026), align language with [keyword guides](/blog/best-ats-resume-keywords-improve-visibility-2026), learn patterns from [ATS resume examples](/ats-resume-examples), and diagnose silence with [rejection guides](/blog/why-resume-rejected-ats-top-reasons-fixes).
 
 You do not need to become an ATS engineer. You need a repeatable loop that turns “I hope this works” into “I checked the file I am sending.” Share this hub when someone you care about is stuck in application silence—it is usually fixable.
 

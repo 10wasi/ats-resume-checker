@@ -1,12 +1,10 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { buildCtrMetadata, CTR_TERMS } from "@/lib/seo/ctr-metadata";
 
-export const metadata: Metadata = {
-  title: "Terms of Service — ResumeIQ",
-  description:
-    "ResumeIQ terms of service: acceptable use, disclaimers, and limitations for the free ATS resume checker and career guides.",
-};
+export const metadata = buildCtrMetadata(CTR_TERMS, {
+  canonical: "/terms",
+});
 
 export default function TermsPage() {
   return (

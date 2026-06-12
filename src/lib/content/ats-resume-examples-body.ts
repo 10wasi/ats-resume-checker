@@ -95,10 +95,71 @@ Summary bridges old domain → target role. Mirror language from the posting in 
 
 That loop—format check, score check, match check—is the workflow in our [ATS Knowledge Center](/knowledge-center).
 
+## Full resume examples by role
+
+Use these industry pages when you want a complete sample—not just layout patterns:
+
+| Role | Resume example | ATS role guide |
+|------|----------------|----------------|
+| Software engineer | [Example](/resume-examples/software-engineer) | [ATS guide](/ats-resume/software-engineer) |
+| Data analyst | [Example](/resume-examples/data-analyst) | [ATS guide](/ats-resume/data-analyst) |
+| Product manager | [Example](/resume-examples/product-manager) | [ATS guide](/ats-resume/product-manager) |
+| Project manager | [Example](/resume-examples/project-manager) | [ATS guide](/ats-resume/project-manager) |
+| Marketing manager | [Example](/resume-examples/marketing-manager) | [ATS guide](/ats-resume/marketing-manager) |
+| Accountant | [Example](/resume-examples/accountant) | [ATS guide](/ats-resume/accountant) |
+| HR manager | [Example](/resume-examples/hr-manager) | [ATS guide](/ats-resume/hr-manager) |
+| Customer service | [Example](/resume-examples/customer-service) | [ATS guide](/ats-resume/customer-service) |
+| Graphic designer | [Example](/resume-examples/graphic-designer) | [ATS guide](/ats-resume/graphic-designer) |
+
+Browse all nine: [Resume Examples Library](/resume-examples).
+
+## Section-by-section ATS rules
+
+### Header & contact
+Keep name and contact in the **body** of page one—not a decorative banner. Phone, email, city, and LinkedIn as plain text. No icons-only contact rows.
+
+### Summary / profile
+Two or three lines: target role + years + domain + one metric. Mirror the job title when truthful. Skip objective statements from 2008.
+
+### Experience
+Reverse chronological. Each role: **Company · Title · Month Year – Month Year**. Three to five bullets with **verb + scope + tool + result**. This is where 80% of keyword matching happens.
+
+### Skills
+Support bullets—do not replace them. Group by category if helpful (Languages, Cloud, Analytics). Avoid rating bars and percentage grids.
+
+### Education & certifications
+Spell credentials fully once (Project Management Professional, not only PMP) if the posting uses the long form.
+
+## Before-and-after: layout comparison
+
+**Bad (common Canva export)**
+- Two columns: skills left, jobs right → parser merges columns; dates attach to wrong employers
+- Logo watermark behind text → garbled extraction
+- "Core Competencies" box with 35 keywords → no proof
+
+**Good (checker-tested)**
+- Single column, 10–11pt body font, standard margins
+- "Experience" heading exactly—not "Where I've Made Impact"
+- Bullets reference tools from the posting inside outcomes
+
+Paste-test: select all text in your PDF → Notepad. If reading order is nonsense, fix the source before chasing keywords.
+
+## Match score workflow for examples
+
+Examples teach structure; **your** posting dictates language:
+
+1. Pick the closest role example above.
+2. Run [Resume Match Analyzer](/resume-job-description-match) on your target JD.
+3. Add missing terms to **your** bullets with honest proof.
+4. Re-test with [ATS Resume Checker](/resume-checker).
+
+Deep dive: [Resume Match Score Guide](/resume-match-score).
+
 ## Related guides
 
-- [Resume Examples Library](/resume-examples) — software engineer, data analyst, PM, and more by role
+- [Resume Examples Library](/resume-examples) — nine ATS-friendly samples by profession
 - [ATS Resume Templates Guide](/ats-resume-templates) — which starting layouts survive upload
 - [ATS-Friendly Resume Guide](/ats-friendly-resume-guide) — build from scratch
 - [ATS Score Explained](/ats-score-explained) — what your checker results mean
+- [Career Success Hub](/career-success-hub) — tools, checklists, and optimization guides
 `;

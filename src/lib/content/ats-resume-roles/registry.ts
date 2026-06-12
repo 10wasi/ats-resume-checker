@@ -79,22 +79,6 @@ export const ATS_RESUME_ROLES: AtsResumeRoleEntry[] = [
       "Product roles filter on shipping proof, experimentation, and metrics—not vision decks. See how to structure a product manager resume parsers and PMs can search.",
   },
   {
-    slug: "marketing-professionals",
-    path: "/ats-resume/marketing-professionals",
-    exampleSlug: "marketing-manager",
-    breadcrumbLabel: "Marketing professionals",
-    ctr: {
-      title: "ATS Resume for Marketing Professionals — Guide",
-      description:
-        "ATS resume for marketing managers: SEO, campaigns, ROI metrics, and CRM keywords. Example + free ATS Resume Checker.",
-      h1: "ATS Resume for Marketing Professionals",
-      primaryKeyword: "ATS resume marketing",
-      richSnippets: ["Article", "FAQPage", "BreadcrumbList"],
-    },
-    roleIntro:
-      "Marketing resumes need channel proof and numbers—not adjectives. See how to place SEO, paid, and pipeline keywords for ATS visibility.",
-  },
-  {
     slug: "customer-service",
     path: "/ats-resume/customer-service",
     exampleSlug: "customer-service",
@@ -109,38 +93,6 @@ export const ATS_RESUME_ROLES: AtsResumeRoleEntry[] = [
     },
     roleIntro:
       "Support roles filter on CRM tools, CSAT, and handle time. Build a customer service resume parsers and hiring managers can search.",
-  },
-  {
-    slug: "accountants",
-    path: "/ats-resume/accountants",
-    exampleSlug: "accountant",
-    breadcrumbLabel: "Accountants",
-    ctr: {
-      title: "ATS Resume for Accountants — ATS-Friendly Example",
-      description:
-        "ATS resume for accountants: GAAP, reconciliations, ERP keywords with proof. Example + free ATS Resume Checker.",
-      h1: "ATS Resume for Accountants",
-      primaryKeyword: "ATS resume accountant",
-      richSnippets: ["Article", "FAQPage", "BreadcrumbList"],
-    },
-    roleIntro:
-      "Finance postings search GAAP, close cycles, and ERP names. This accountant resume example shows parse-friendly structure and keyword placement.",
-  },
-  {
-    slug: "hr-professionals",
-    path: "/ats-resume/hr-professionals",
-    exampleSlug: "hr-manager",
-    breadcrumbLabel: "HR professionals",
-    ctr: {
-      title: "ATS Resume for HR Professionals — Guide & Example",
-      description:
-        "ATS resume for HR managers: talent acquisition, HRIS, employee relations. Example + optimization tips + free checker.",
-      h1: "ATS Resume for HR Professionals",
-      primaryKeyword: "ATS resume HR",
-      richSnippets: ["Article", "FAQPage", "BreadcrumbList"],
-    },
-    roleIntro:
-      "HR resumes must signal HRIS fluency, hiring volume, and compliance—not generic people skills. See a working ATS example.",
   },
   {
     slug: "marketing-manager",

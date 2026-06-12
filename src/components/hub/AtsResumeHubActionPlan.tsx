@@ -30,7 +30,7 @@ const STEPS = [
     title: "Study ATS resume examples",
     detail:
       "Mirror structure and bullet patterns from layouts that parse cleanly.",
-    href: "/blog/best-ats-friendly-resume-examples-2026",
+    href: "/ats-resume-examples",
   },
   {
     title: "Re-check and apply",

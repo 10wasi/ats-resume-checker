@@ -288,7 +288,7 @@ Why it works: recognizable title, tools as **ATS keywords**, outcome in plain te
 **Methods:** A/B testing, lifecycle email, budget pacing  
 **Domains:** B2B SaaS, fintech
 
-More layouts: [best ATS-friendly resume examples for 2026](/blog/best-ats-friendly-resume-examples-2026).
+More layouts: [best ATS-friendly resume examples for 2026](/ats-resume-examples).
 
 ### Annotated skeleton (text-only)
 
@@ -425,7 +425,7 @@ You already did the hard part: building the career. This page helps the document
 
 Bookmark it. Share it with a friend who thinks silence means they are not good enough—it usually means the hallway their resume walked through was broken.
 
-Return to the [homepage](/) for more tools, explore [ATS-friendly resume examples](/blog/best-ats-friendly-resume-examples-2026), and when you are ready to validate your export, **check your ATS score** with our [ATS Resume Checker](/resume-checker)—the fastest way to turn anxiety into a completed list.
+Return to the [homepage](/) for more tools, explore [ATS-friendly resume examples](/ats-resume-examples), and when you are ready to validate your export, **check your ATS score** with our [ATS Resume Checker](/resume-checker)—the fastest way to turn anxiety into a completed list.
 
 Your next application deserves a file you have actually checked—not one you hope will be fine.
 `.trim();

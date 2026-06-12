@@ -119,7 +119,7 @@ This page is designed to route users to the right next step:
 
 - Formatting issues? Read [ATS resume format guide](/blog/best-ats-resume-format-2026-templates-tips)
 - Keyword gaps? Read [ATS resume keywords guide](/blog/best-ats-resume-keywords-improve-visibility-2026)
-- Need examples? Open [ATS resume examples](/blog/best-ats-friendly-resume-examples-2026)
+- Need examples? Open [ATS resume examples](/ats-resume-examples)
 - Rejections despite fit? Read [ATS rejection reasons](/blog/why-resume-rejected-ats-top-reasons-fixes)
 - Need quick wins? Open [improve ATS score guide](/blog/how-to-improve-resume-score-instantly)
 

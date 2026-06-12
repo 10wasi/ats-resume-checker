@@ -1,12 +1,10 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { buildCtrMetadata, CTR_PRIVACY } from "@/lib/seo/ctr-metadata";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy — ResumeIQ",
-  description:
-    "ResumeIQ privacy policy: how we handle resumes, cookies, analytics, and advertising (including Google AdSense). Transparent data practices for our free ATS resume checker.",
-};
+export const metadata = buildCtrMetadata(CTR_PRIVACY, {
+  canonical: "/privacy",
+});
 
 export default function PrivacyPage() {
   return (

@@ -13,6 +13,7 @@ import { CircularAtsScore } from "./CircularAtsScore";
 import { AtsResultsInsightsPanel } from "./AtsResultsInsightsPanel";
 import { PersonalizedImprovementPlan } from "./PersonalizedImprovementPlan";
 import { AiResumeImprovements } from "./AiResumeImprovements";
+import { AnalysisPlatformNextSteps } from "@/components/tools/AnalysisPlatformNextSteps";
 
 type Props = {
   analysis: AtsAnalysisResult;
@@ -1459,6 +1460,10 @@ export function AtsAnalysisResults({
             )}
           </div>
         </section>
+      </div>
+
+      <div className="mt-8">
+        <AnalysisPlatformNextSteps variant="checker" />
       </div>
     </div>
   );

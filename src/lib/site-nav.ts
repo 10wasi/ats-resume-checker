@@ -24,6 +24,7 @@ export const SITE_TOOLS: SiteNavItem[] = [
 export const SITE_CAREER_PAGES: SiteNavItem[] = [
   { href: "/resume-review", label: "Resume review" },
   { href: "/resume-optimization", label: "Resume optimization" },
+  { href: "/resume-match-score", label: "Resume match score guide" },
   { href: "/resume-score-checker", label: "Resume score checker" },
   { href: "/resume-keywords-checker", label: "Resume keywords checker" },
   { href: "/ats-resume-checker", label: "ATS resume checker guide" },

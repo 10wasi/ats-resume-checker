@@ -11,8 +11,18 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/ats-resume-checker",
-        destination: "/resume-checker",
+        source: "/ats-resume/marketing-professionals",
+        destination: "/ats-resume/marketing-manager",
+        permanent: true,
+      },
+      {
+        source: "/ats-resume/accountants",
+        destination: "/ats-resume/accountant",
+        permanent: true,
+      },
+      {
+        source: "/ats-resume/hr-professionals",
+        destination: "/ats-resume/hr-manager",
         permanent: true,
       },
     ];

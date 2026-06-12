@@ -12,11 +12,11 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: "Free ATS Resume Checker — Score in 60 Seconds",
+  title: "ATS Resume Checker — Free Score & Match Tool",
   description:
-    "Upload resume free → ATS score, missing keywords & fix list in seconds. Resume optimization without signup. See what hiring software sees before you apply.",
-  ogTitle: "Free ATS Resume Checker — Instant Score & Keywords",
-  h1: "Free ATS Resume Checker & Resume Optimization Platform",
+    "Free ATS resume checker + resume match score. Upload PDF → keyword gaps, format fixes & optimization plan. Built for job seekers—no signup.",
+  ogTitle: "Free ATS Resume Checker — Score, Keywords & Match",
+  h1: "ATS Resume Checker & Resume Optimization Platform",
   primaryKeyword: "ATS Resume Checker",
   richSnippets: ["FAQPage", "WebApplication", "ItemList", "Organization", "BreadcrumbList"],
 };
@@ -32,13 +32,59 @@ export const CTR_RESUME_CHECKER: PageCtrMeta = {
 };
 
 export const CTR_RESUME_MATCH: PageCtrMeta = {
-  title: "Resume Match Score — Free vs Job Description",
+  title: "Resume Match Tool — Free vs Job Description",
   description:
     "Paste any job post → instant resume match score, missing keywords & skill gaps. Free resume match tool to raise ATS visibility before you hit apply.",
-  ogTitle: "Resume Match Score — Free Job Description Tool",
+  ogTitle: "Resume Match Tool — Free Job Description Analyzer",
   h1: "Resume Match Tool: Score vs Job Description",
   primaryKeyword: "resume match score",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_MATCH_SCORE: PageCtrMeta = {
+  title: "Resume Match Score — What It Means (Free Guide)",
+  description:
+    "Resume match score explained: vs ATS score, what good looks like & how to improve keyword overlap. Free match analyzer + keywords workflow included.",
+  ogTitle: "Resume Match Score Guide — Improve Before You Apply",
+  h1: "Resume Match Score: Meaning, Benchmarks & How to Improve",
+  primaryKeyword: "resume match score",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_ABOUT: PageCtrMeta = {
+  title: "About ResumeIQ — Free Resume Optimization Platform",
+  description:
+    "About ResumeIQ: free ATS resume checker, match tools & career guides. Privacy-first, editorial standards, and contactable support for job seekers.",
+  h1: "About ResumeIQ: Free Resume Optimization for Job Seekers",
+  primaryKeyword: "ATS Resume Checker",
+  richSnippets: ["Organization", "BreadcrumbList"],
+};
+
+export const CTR_CONTACT: PageCtrMeta = {
+  title: "Contact ResumeIQ — Support & Feedback",
+  description:
+    "Contact ResumeIQ for resume checker feedback, bug reports, partnerships, or press. We read every message—real support for a free ATS tool.",
+  h1: "Contact ResumeIQ",
+  primaryKeyword: "ATS Resume Checker",
+  richSnippets: ["Organization", "BreadcrumbList"],
+};
+
+export const CTR_PRIVACY: PageCtrMeta = {
+  title: "Privacy Policy — ResumeIQ ATS Resume Checker",
+  description:
+    "ResumeIQ privacy policy: resume handling, cookies, analytics & advertising. We process files for your request—we do not sell your resume data.",
+  h1: "Privacy Policy",
+  primaryKeyword: "ATS Resume Checker",
+  richSnippets: ["BreadcrumbList"],
+};
+
+export const CTR_TERMS: PageCtrMeta = {
+  title: "Terms of Service — ResumeIQ",
+  description:
+    "ResumeIQ terms of service: acceptable use and disclaimers for the free ATS resume checker, match tools, and career guides.",
+  h1: "Terms of Service",
+  primaryKeyword: "ATS Resume Checker",
+  richSnippets: ["BreadcrumbList"],
 };
 
 export const CTR_ATS_EXAMPLES: PageCtrMeta = {

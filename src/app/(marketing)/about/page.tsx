@@ -1,13 +1,14 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
+import { aboutFaqItems } from "@/lib/seo/about-faq";
+import { buildCtrMetadata, CTR_ABOUT } from "@/lib/seo/ctr-metadata";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
-export const metadata: Metadata = {
-  title: "About ResumeIQ — Free Resume Optimization Platform",
-  description:
-    "About ResumeIQ: free ATS resume checker, match tools, and career guides for job seekers. Editorial standards, privacy-first design, and contactable support.",
-};
+export const metadata = buildCtrMetadata(CTR_ABOUT, {
+  canonical: "/about",
+  keywords: ["ATS Resume Checker", "resume optimization", "resume checker"],
+});
 
 export default function AboutPage() {
   return (
@@ -18,10 +19,11 @@ export default function AboutPage() {
           { name: "About", path: "/about" },
         ]}
       />
+      <PageFaqJsonLd items={aboutFaqItems} />
     <div className="container-prose py-16 sm:py-20">
       <p className="section-eyebrow">About</p>
       <h1 className="mt-6 font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-        A free utility — not another resume SaaS.
+        {CTR_ABOUT.h1}
       </h1>
       <div className="mt-8 space-y-5 text-base leading-relaxed text-slate-700 sm:text-lg">
         <p>
@@ -75,6 +77,17 @@ export default function AboutPage() {
           href="/contact"
         />
       </div>
+      <section className="mt-14 border-t border-slate-200 pt-12">
+        <h2 className="font-display text-2xl font-bold text-slate-900">FAQ</h2>
+        <div className="mt-8 space-y-8">
+          {aboutFaqItems.map((item) => (
+            <div key={item.question}>
+              <h3 className="text-lg font-semibold text-slate-900">{item.question}</h3>
+              <p className="mt-2 leading-relaxed text-slate-700">{item.answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
       <div className="mt-12 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
         <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-7">
           Improve Your Resume

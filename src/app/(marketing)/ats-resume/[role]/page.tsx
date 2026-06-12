@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { ResumeExamplePage } from "@/components/examples/ResumeExamplePage";
+import { getAtsGuideSection } from "@/lib/content/ats-resume-roles/ats-guide-sections";
 import {
   getAtsResumeRole,
   getAtsResumeRoleSlugs,
@@ -39,6 +40,7 @@ export default function AtsResumeRolePage({ params }: Props) {
     breadcrumbLabel: role.breadcrumbLabel,
     ctr: { ...example.ctr, ...role.ctr, h1: role.ctr.h1 },
     seo: { title: role.ctr.title, description: role.ctr.description },
+    body: `${example.body}\n${getAtsGuideSection(role.slug)}`,
   };
 
   return (

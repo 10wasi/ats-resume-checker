@@ -82,6 +82,14 @@ export const CAREER_HUB_INDEX: CareerHubIndexItem[] = [
     badge: "Tool",
   },
   {
+    id: "resume-match-score",
+    title: "Resume Match Score Guide",
+    description:
+      "What match score means, good benchmarks, and how to improve keyword overlap ethically.",
+    path: "/resume-match-score",
+    badge: "Guide",
+  },
+  {
     id: "ats-examples",
     title: "ATS Resume Examples",
     description:

@@ -22,7 +22,7 @@ export const homepageFaqItems: FaqItem[] = [
   {
     question: "Where can I find ATS resume examples?",
     answer:
-      "Our ATS resume examples guide shows good vs bad layouts, bullet patterns, and keyword placement for 2026. Start from the homepage tools grid or read the full guide at /blog/best-ats-friendly-resume-examples-2026.",
+      "Our ATS resume examples guide shows good vs bad layouts, bullet patterns, and keyword placement for 2026. Start from the homepage tools grid or read the full guide at /ats-resume-examples.",
   },
   {
     question: "How accurate are ATS scores?",

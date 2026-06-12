@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { buildCtrMetadata, CTR_CONTACT } from "@/lib/seo/ctr-metadata";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
-export const metadata: Metadata = {
-  title: "Contact ResumeIQ",
-  description:
-    "Contact ResumeIQ for feedback on the free resume checker, partnerships, or media inquiries.",
-};
+export const metadata = buildCtrMetadata(CTR_CONTACT, {
+  canonical: "/contact",
+  keywords: ["ATS Resume Checker", "resume checker", "contact"],
+});
 
 export default function ContactPage() {
   return (

@@ -116,6 +116,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
     },
     {
+      path: "/resume-match-score",
+      priority: 0.91,
+      changeFrequency: "weekly",
+    },
+    {
       path: "/ai-resume-rewrite",
       priority: 0.9,
       changeFrequency: "weekly",
