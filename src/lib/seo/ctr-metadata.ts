@@ -237,6 +237,36 @@ export const CTR_BULLET_GENERATOR: PageCtrMeta = {
   richSnippets: ["WebApplication", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
+export const CTR_RESUME_SKILLS_ANALYZER: PageCtrMeta = {
+  title: "Resume Skills Analyzer — Detect ATS Skills Free",
+  description:
+    "Free resume skills analyzer: scan your resume for technical skills, tools, and gaps vs a job description. Then run full ATS match & keyword fixes.",
+  ogTitle: "Resume Skills Analyzer — Free ATS Skill Scan",
+  h1: "Resume Skills Analyzer: Find Skills & Gaps Fast",
+  primaryKeyword: "resume skills analyzer",
+  richSnippets: ["WebApplication", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_SUMMARY_GENERATOR: PageCtrMeta = {
+  title: "Resume Summary Generator — ATS Headlines Free",
+  description:
+    "Free resume summary generator: draft professional summary lines for your role, years, and highlights. Copy, refine, then score in our ATS checker.",
+  ogTitle: "Resume Summary Generator — Free Professional Summaries",
+  h1: "Resume Summary Generator for ATS Resumes",
+  primaryKeyword: "resume summary generator",
+  richSnippets: ["WebApplication", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_ACHIEVEMENT_GENERATOR: PageCtrMeta = {
+  title: "Resume Achievement Generator — Impact Bullets Free",
+  description:
+    "Free resume achievement generator: turn actions, metrics, and context into ATS-friendly achievement bullets. Copy and validate in the resume checker.",
+  ogTitle: "Resume Achievement Generator — Free Impact Lines",
+  h1: "Resume Achievement Generator for Stronger Bullets",
+  primaryKeyword: "resume achievement generator",
+  richSnippets: ["WebApplication", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
 export const CTR_RESUME_EXAMPLES_LIBRARY: PageCtrMeta = {
   title: "Resume Examples — 9 ATS-Friendly Role Samples (Free)",
   description:

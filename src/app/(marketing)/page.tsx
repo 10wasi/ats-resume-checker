@@ -18,6 +18,7 @@ import {
   HomeTrustedBySection,
   HomeTrustStrip,
 } from "@/components/home/HomeSections";
+import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { buildCtrMetadata, CTR_HOME } from "@/lib/seo/ctr-metadata";
 
@@ -59,6 +60,7 @@ export default function HomePage() {
       <HomeTrustedBySection />
       <HomeCoreToolsGridSection />
       <HomeTrustStrip />
+      <TestimonialsSection />
       <HomeAtsResumeExamplesSection />
       <HomeChecklistSection />
       <HomeResumeMatchPreviewSection />

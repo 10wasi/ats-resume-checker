@@ -82,6 +82,30 @@ export const CAREER_HUB_INDEX: CareerHubIndexItem[] = [
     badge: "Tool",
   },
   {
+    id: "resume-skills-analyzer",
+    title: "Resume Skills Analyzer",
+    description:
+      "Detect skills and tools in your resume—compare to a job post for honest gap spotting.",
+    path: "/resume-skills-analyzer",
+    badge: "Tool",
+  },
+  {
+    id: "resume-summary-generator",
+    title: "Resume Summary Generator",
+    description:
+      "Draft professional summary lines from role, years, and highlights—copy and refine.",
+    path: "/resume-summary-generator",
+    badge: "Tool",
+  },
+  {
+    id: "resume-achievement-generator",
+    title: "Resume Achievement Generator",
+    description:
+      "Turn one accomplishment into ATS-friendly achievement bullets with metrics.",
+    path: "/resume-achievement-generator",
+    badge: "Tool",
+  },
+  {
     id: "resume-match-score",
     title: "Resume Match Score Guide",
     description:

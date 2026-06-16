@@ -26,6 +26,12 @@ export function AnalysisPlatformNextSteps({ variant = "match" }: Props) {
             body: "Re-analyze, then upload the exact PDF you tested.",
             href: "/resume-job-description-match",
           },
+          {
+            n: 4,
+            title: "Skills & achievements",
+            body: "Scan skills or draft achievement bullets before re-checking.",
+            href: "/resume-skills-analyzer",
+          },
         ]
       : [
           {
@@ -44,6 +50,12 @@ export function AnalysisPlatformNextSteps({ variant = "match" }: Props) {
             title: "Final QA",
             body: "Use the ATS checklist before you submit.",
             href: "/ats-resume-checklist-2026",
+          },
+          {
+            n: 4,
+            title: "Skills & summary tools",
+            body: "Scan skills or draft a summary before re-checking.",
+            href: "/resume-skills-analyzer",
           },
         ];
 

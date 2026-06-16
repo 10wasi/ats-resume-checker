@@ -167,6 +167,27 @@ export function HomeCoreToolsGridSection() {
       badge: "Bullets",
     },
     {
+      title: "Resume Skills Analyzer",
+      desc: "Scan resume text for skills and tools—compare against a job post to spot honest gaps.",
+      href: "/resume-skills-analyzer",
+      cta: "Analyze skills",
+      badge: "Skills",
+    },
+    {
+      title: "Resume Summary Generator",
+      desc: "Draft professional summary lines from role, years, and highlights—copy and tailor.",
+      href: "/resume-summary-generator",
+      cta: "Draft summary",
+      badge: "Summary",
+    },
+    {
+      title: "Resume Achievement Generator",
+      desc: "Turn one win into impact bullets with action, metric, and context inputs.",
+      href: "/resume-achievement-generator",
+      cta: "Generate achievements",
+      badge: "Achievements",
+    },
+    {
       title: "AI Resume Rewrite",
       desc: "Full-resume AI rewrites, improvement plan, and ATS score in the checker flow.",
       href: RESUME_CHECKER_PATH,

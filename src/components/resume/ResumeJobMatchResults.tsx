@@ -6,6 +6,7 @@ import type { AtsAnalysisResult } from "@/lib/ats/types";
 import { buildJobMatchReport } from "@/lib/ats/build-job-match-report";
 import { buildAnalysisExportText, downloadTextFile } from "@/lib/ats/export-analysis";
 import { AnalysisPlatformNextSteps } from "@/components/tools/AnalysisPlatformNextSteps";
+import { AtsPassLikelihoodCard } from "@/components/resume/AtsPassLikelihoodCard";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 type Props = {
@@ -189,6 +190,8 @@ export function ResumeJobMatchResults({
           }
         />
       </div>
+
+      <AtsPassLikelihoodCard analysis={analysis} hasJobDescription />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <section className="rounded-2xl border border-amber-200/80 bg-white p-5 shadow-soft sm:p-6">
@@ -375,6 +378,27 @@ export function ResumeJobMatchResults({
       </section>
 
       <AnalysisPlatformNextSteps variant="match" />
+
+      <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 sm:p-6">
+        <p className="text-sm font-semibold text-slate-900">More free tools</p>
+        <ul className="mt-3 flex flex-wrap gap-2 text-sm">
+          <li>
+            <Link href="/resume-skills-analyzer" className="font-semibold text-[#16a34a] underline">
+              Skills analyzer →
+            </Link>
+          </li>
+          <li>
+            <Link href="/resume-summary-generator" className="font-semibold text-[#16a34a] underline">
+              Summary generator →
+            </Link>
+          </li>
+          <li>
+            <Link href="/resume-achievement-generator" className="font-semibold text-[#16a34a] underline">
+              Achievement generator →
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

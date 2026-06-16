@@ -62,6 +62,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
     },
     {
+      path: "/resume-skills-analyzer",
+      priority: 0.9,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/resume-summary-generator",
+      priority: 0.89,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/resume-achievement-generator",
+      priority: 0.89,
+      changeFrequency: "weekly",
+    },
+    {
       path: "/knowledge-center",
       priority: 0.95,
       changeFrequency: "weekly",

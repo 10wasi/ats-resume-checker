@@ -13,6 +13,7 @@ import { CircularAtsScore } from "./CircularAtsScore";
 import { AtsResultsInsightsPanel } from "./AtsResultsInsightsPanel";
 import { PersonalizedImprovementPlan } from "./PersonalizedImprovementPlan";
 import { AiResumeImprovements } from "./AiResumeImprovements";
+import { AtsPassLikelihoodCard } from "./AtsPassLikelihoodCard";
 import { AnalysisPlatformNextSteps } from "@/components/tools/AnalysisPlatformNextSteps";
 
 type Props = {
@@ -548,6 +549,12 @@ export function AtsAnalysisResults({
                 </p>
               </div>
             ) : null}
+            <div className="mx-auto mt-8 max-w-3xl">
+              <AtsPassLikelihoodCard
+                analysis={analysis}
+                hasJobDescription={showJobMatch}
+              />
+            </div>
           </div>
 
           <div className="relative mx-auto mt-12 max-w-4xl">
