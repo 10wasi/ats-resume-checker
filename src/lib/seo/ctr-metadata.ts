@@ -87,6 +87,16 @@ export const CTR_TERMS: PageCtrMeta = {
   richSnippets: ["BreadcrumbList"],
 };
 
+export const CTR_RESUME_KEYWORDS_DATABASE: PageCtrMeta = {
+  title: "Resume Keywords Database — ATS Lists by Role",
+  description:
+    "Searchable resume keywords database: ATS skills, verbs & phrases for 10 professions. Software, data, PM, marketing & more—free checker & match tool.",
+  ogTitle: "Resume Keywords by Profession — ATS Database",
+  h1: "Resume Keywords Database: ATS Lists by Profession",
+  primaryKeyword: "resume keywords",
+  richSnippets: ["ItemList", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
 export const CTR_ATS_EXAMPLES: PageCtrMeta = {
   title: "ATS Resume Examples — What Parses vs Breaks (Free)",
   description:

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getPostSlugs } from "@/lib/blog";
 import { getAtsResumeRoleSlugs } from "@/lib/content/ats-resume-roles/registry";
+import { getResumeKeywordsSlugs } from "@/lib/content/resume-keywords/registry";
 import { getResumeExampleSlugs } from "@/lib/content/resume-examples/registry";
 import { getSiteUrl } from "@/lib/site-url";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
@@ -38,6 +39,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       path: "/resume-keywords-checker",
       priority: 0.91,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/resume-keywords",
+      priority: 0.94,
       changeFrequency: "weekly",
     },
     {
@@ -155,6 +161,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.85,
+    });
+  }
+  for (const slug of getResumeKeywordsSlugs()) {
+    entries.push({
+      url: `${base}/resume-keywords/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.88,
     });
   }
   for (const slug of getResumeExampleSlugs()) {

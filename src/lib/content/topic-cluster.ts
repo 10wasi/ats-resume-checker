@@ -18,6 +18,11 @@ export const TOPIC_CLUSTER_LINKS = [
     desc: "ATS-friendly samples by role",
   },
   {
+    href: "/resume-keywords",
+    label: "Resume Keywords Database",
+    desc: "ATS keyword lists by profession",
+  },
+  {
     href: "/ats-resume-checklist-2026",
     label: "ATS Resume Checklist",
     desc: "Pre-submit QA before you apply",

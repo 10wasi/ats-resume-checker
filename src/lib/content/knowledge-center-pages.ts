@@ -103,6 +103,15 @@ export const KNOWLEDGE_CENTER_PAGES: KnowledgeCenterPage[] = [
     cta: "Build ATS-friendly",
   },
   {
+    id: "keywords-database",
+    title: "Resume Keywords Database",
+    shortTitle: "Keywords DB",
+    description:
+      "Searchable ATS resume keywords by profession—skills, verbs, phrases, and examples for ten roles.",
+    href: "/resume-keywords",
+    cta: "Browse keywords",
+  },
+  {
     id: "industry-keywords",
     title: "Resume Keywords by Industry",
     shortTitle: "By industry",

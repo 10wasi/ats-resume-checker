@@ -153,6 +153,13 @@ export function HomeCoreToolsGridSection() {
       badge: "Keywords",
     },
     {
+      title: "Resume Keywords Database",
+      desc: "ATS keyword lists by profession—skills, verbs, phrases, and example bullets.",
+      href: "/resume-keywords",
+      cta: "Browse keywords",
+      badge: "Database",
+    },
+    {
       title: "Resume Bullet Generator",
       desc: "Draft impact-style bullets from your role, action, and metrics—copy and refine for ATS.",
       href: "/resume-bullet-generator",
@@ -307,6 +314,80 @@ export function HomeAtsResumeExamplesSection() {
             ATS Knowledge Center
           </Link>
           .
+        </p>
+      </div>
+    </section>
+  );
+}
+
+/** Resume keywords by profession — links to keyword database. */
+export function HomeResumeKeywordsByProfessionSection() {
+  const professions = [
+    { label: "Software engineer", href: "/resume-keywords/software-engineer" },
+    { label: "Data analyst", href: "/resume-keywords/data-analyst" },
+    { label: "Product manager", href: "/resume-keywords/product-manager" },
+    { label: "Project manager", href: "/resume-keywords/project-manager" },
+    { label: "Marketing manager", href: "/resume-keywords/marketing-manager" },
+    { label: "Business analyst", href: "/resume-keywords/business-analyst" },
+    { label: "Accountant", href: "/resume-keywords/accountant" },
+    { label: "HR manager", href: "/resume-keywords/hr-manager" },
+    { label: "Customer service", href: "/resume-keywords/customer-service" },
+    { label: "Graphic designer", href: "/resume-keywords/graphic-designer" },
+  ];
+  return (
+    <section
+      className="border-b border-slate-200/70 bg-white py-16 sm:py-20"
+      aria-labelledby="keywords-by-profession-heading"
+    >
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="section-eyebrow mx-auto">Keyword database</p>
+          <h2
+            id="keywords-by-profession-heading"
+            className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900"
+          >
+            Resume keywords by profession
+          </h2>
+          <p className="mt-4 text-slate-600">
+            ATS-friendly keyword lists—technical skills, verbs, phrases, and example bullets—for
+            ten common roles. Browse the full{" "}
+            <Link
+              href="/resume-keywords"
+              className="font-semibold text-[#16a34a] underline underline-offset-2"
+            >
+              Resume Keywords Database
+            </Link>
+            , then test gaps in the{" "}
+            <Link
+              href="/resume-job-description-match"
+              className="font-semibold text-[#16a34a] underline underline-offset-2"
+            >
+              Resume Match Analyzer
+            </Link>
+            .
+          </p>
+        </div>
+        <ul className="mt-10 flex flex-wrap justify-center gap-3">
+          {professions.map((p) => (
+            <li key={p.href}>
+              <Link
+                href={p.href}
+                className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-800 transition hover:border-emerald-300 hover:text-[#16a34a]"
+              >
+                {p.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-8 text-center text-sm text-slate-600">
+          Extract posting-specific terms with the{" "}
+          <Link href="/ats-keywords-finder" className="font-semibold text-[#16a34a] underline">
+            ATS Keywords Finder
+          </Link>{" "}
+          · Placement guide:{" "}
+          <Link href="/ats-resume-keywords" className="font-semibold text-[#16a34a] underline">
+            ATS Resume Keywords
+          </Link>
         </p>
       </div>
     </section>

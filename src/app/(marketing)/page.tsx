@@ -11,6 +11,7 @@ import {
   HomeChecklistSection,
   HomeCoreToolsGridSection,
   HomeKeywordsGuidePreviewSection,
+  HomeResumeKeywordsByProfessionSection,
   HomeResumeMatchPreviewSection,
   HomeRoleExamplesSection,
   HomeStrongCtaSection,
@@ -62,6 +63,7 @@ export default function HomePage() {
       <HomeChecklistSection />
       <HomeResumeMatchPreviewSection />
       <HomeKeywordsGuidePreviewSection />
+      <HomeResumeKeywordsByProfessionSection />
       <HomeRoleExamplesSection />
       <AdPlaceholder
         label="Advertisement · resume tools"
