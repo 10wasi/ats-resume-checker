@@ -1,0 +1,465 @@
+import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
+
+export type RelatedResourceItem = {
+  href: string;
+  title: string;
+  description: string;
+};
+
+/** Canonical catalog — one entry per URL for consistent internal linking. */
+export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
+  checker: {
+    href: RESUME_CHECKER_PATH,
+    title: "ATS Resume Checker",
+    description: "Free ATS score, keyword gaps, format flags, and AI rewrites.",
+  },
+  atsResumeCheckerGuide: {
+    href: "/ats-resume-checker",
+    title: "How ATS Resume Checker Works",
+    description: "Upload workflow, scoring signals, and what to fix first.",
+  },
+  match: {
+    href: "/resume-job-description-match",
+    title: "Resume Match Analyzer",
+    description: "Resume match score vs any job description with missing keywords.",
+  },
+  matchScoreGuide: {
+    href: "/resume-match-score",
+    title: "Resume Match Score Guide",
+    description: "What match % means, benchmarks, and how to improve overlap.",
+  },
+  keywordsFinder: {
+    href: "/ats-keywords-finder",
+    title: "ATS Keywords Finder",
+    description: "Extract skills and tools from any job posting instantly.",
+  },
+  keywordsChecker: {
+    href: "/resume-keywords-checker",
+    title: "Resume Keywords Checker",
+    description: "Find missing resume keywords vs job posts ethically.",
+  },
+  resumeKeywordsDb: {
+    href: "/resume-keywords",
+    title: "Resume Keywords Database",
+    description: "ATS keyword lists, verbs, and bullets by profession.",
+  },
+  skillsAnalyzer: {
+    href: "/resume-skills-analyzer",
+    title: "Resume Skills Analyzer",
+    description: "Detect skills in your resume and gaps vs a job post.",
+  },
+  bulletGenerator: {
+    href: "/resume-bullet-generator",
+    title: "Resume Bullet Generator",
+    description: "Draft impact-style bullets from role, action, and metrics.",
+  },
+  summaryGenerator: {
+    href: "/resume-summary-generator",
+    title: "Resume Summary Generator",
+    description: "Professional summary lines from role and highlights.",
+  },
+  achievementGenerator: {
+    href: "/resume-achievement-generator",
+    title: "Resume Achievement Generator",
+    description: "Turn one win into metric-driven achievement bullets.",
+  },
+  aiRewrite: {
+    href: "/ai-resume-rewrite",
+    title: "AI Resume Rewrite",
+    description: "How AI bullet rewrites work in the checker flow.",
+  },
+  checklist: {
+    href: "/ats-resume-checklist-2026",
+    title: "ATS Resume Checklist",
+    description: "Pre-submit QA for format, keywords, and PDF export.",
+  },
+  examples: {
+    href: "/resume-examples",
+    title: "Resume Examples Library",
+    description: "Nine ATS-friendly samples with keywords and mistakes.",
+  },
+  atsExamples: {
+    href: "/ats-resume-examples",
+    title: "ATS Resume Examples Guide",
+    description: "Good vs bad layouts that parse in applicant tracking systems.",
+  },
+  knowledgeCenter: {
+    href: "/knowledge-center",
+    title: "ATS Knowledge Center",
+    description: "Ten guides on format, keywords, match score, and mistakes.",
+  },
+  careerHub: {
+    href: "/career-success-hub",
+    title: "Career Success Hub",
+    description: "Connected tools and optimization workflows for job seekers.",
+  },
+  atsHub: {
+    href: "/ats-resume-hub",
+    title: "ATS Friendly Resume Hub",
+    description: "Checker, guides, role pages, and tools in one hub.",
+  },
+  ultimateGuide: {
+    href: "/ultimate-ats-resume-guide",
+    title: "Ultimate ATS Resume Guide",
+    description: "Complete resume optimization: format, keywords, and scoring.",
+  },
+  resumeOptimization: {
+    href: "/resume-optimization",
+    title: "Resume Optimization Workflow",
+    description: "Five-step ATS workflow from score to checklist QA.",
+  },
+  resumeReview: {
+    href: "/resume-review",
+    title: "Free Resume Review",
+    description: "Recruiter-style rubric plus ATS checker next steps.",
+  },
+  scoreChecker: {
+    href: "/resume-score-checker",
+    title: "Resume Score Checker Guide",
+    description: "What resume scores measure and how to interpret results.",
+  },
+  keywordsGuide: {
+    href: "/ats-resume-keywords",
+    title: "ATS Resume Keywords Guide",
+    description: "Where keywords belong and how to avoid stuffing.",
+  },
+  formatGuide: {
+    href: "/ats-resume-format",
+    title: "ATS Resume Format Guide",
+    description: "Layout, headings, and file types that parse cleanly.",
+  },
+  mistakesGuide: {
+    href: "/ats-resume-mistakes",
+    title: "ATS Resume Mistakes",
+    description: "Silent rejection triggers and fast fixes before you apply.",
+  },
+  atsScoreGuide: {
+    href: "/ats-score-explained",
+    title: "ATS Score Explained",
+    description: "How ATS scoring differs from resume match score.",
+  },
+  friendlyGuide: {
+    href: "/ats-friendly-resume-guide",
+    title: "ATS Friendly Resume Guide",
+    description: "Step-by-step build and test workflow.",
+  },
+  industryKeywords: {
+    href: "/resume-keywords-by-industry",
+    title: "Resume Keywords by Industry",
+    description: "Sector-specific ATS keyword patterns.",
+  },
+  templatesGuide: {
+    href: "/ats-resume-templates",
+    title: "ATS Resume Templates",
+    description: "Which templates parse vs layouts that break ATS.",
+  },
+  blog: {
+    href: "/blog",
+    title: "Resume & ATS Blog",
+    description: "Deep guides on scoring, keywords, and job search strategy.",
+  },
+  about: {
+    href: "/about",
+    title: "About ResumeIQ",
+    description: "Mission, editorial standards, and privacy-first tooling.",
+  },
+  contact: {
+    href: "/contact",
+    title: "Contact ResumeIQ",
+    description: "Product feedback, partnerships, and support.",
+  },
+  privacy: {
+    href: "/privacy",
+    title: "Privacy Policy",
+    description: "How resume files and analytics are handled.",
+  },
+  terms: {
+    href: "/terms",
+    title: "Terms of Service",
+    description: "Acceptable use for free ATS tools and guides.",
+  },
+};
+
+const DEFAULT_KEYS = [
+  "checker",
+  "match",
+  "keywordsFinder",
+  "checklist",
+  "knowledgeCenter",
+  "careerHub",
+] as const;
+
+/** Curated related clusters per route — avoids generic duplicate lists. */
+const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
+  "/": ["checker", "match", "knowledgeCenter", "careerHub", "ultimateGuide", "atsHub"],
+  "/ats-keywords-finder": [
+    "checker",
+    "match",
+    "keywordsChecker",
+    "resumeKeywordsDb",
+    "skillsAnalyzer",
+    "keywordsGuide",
+  ],
+  "/resume-bullet-generator": [
+    "checker",
+    "achievementGenerator",
+    "aiRewrite",
+    "examples",
+    "checklist",
+    "resumeOptimization",
+  ],
+  "/resume-skills-analyzer": [
+    "checker",
+    "match",
+    "keywordsFinder",
+    "resumeKeywordsDb",
+    "skillsAnalyzer",
+    "keywordsGuide",
+  ],
+  "/resume-summary-generator": [
+    "checker",
+    "match",
+    "summaryGenerator",
+    "bulletGenerator",
+    "friendlyGuide",
+    "checklist",
+  ],
+  "/resume-achievement-generator": [
+    "checker",
+    "bulletGenerator",
+    "aiRewrite",
+    "examples",
+    "checklist",
+    "resumeOptimization",
+  ],
+  "/ai-resume-rewrite": [
+    "checker",
+    "match",
+    "bulletGenerator",
+    "achievementGenerator",
+    "keywordsFinder",
+    "resumeOptimization",
+  ],
+  "/resume-job-description-match": [
+    "checker",
+    "matchScoreGuide",
+    "keywordsFinder",
+    "skillsAnalyzer",
+    "checklist",
+    "keywordsGuide",
+  ],
+  "/resume-match-score": [
+    "match",
+    "checker",
+    "atsScoreGuide",
+    "keywordsFinder",
+    "keywordsGuide",
+    "checklist",
+  ],
+  "/ats-resume-checklist-2026": [
+    "checker",
+    "match",
+    "formatGuide",
+    "keywordsGuide",
+    "mistakesGuide",
+    "examples",
+  ],
+  "/ultimate-ats-resume-guide": [
+    "checker",
+    "knowledgeCenter",
+    "formatGuide",
+    "keywordsGuide",
+    "checklist",
+    "careerHub",
+  ],
+  "/resume-keywords": [
+    "keywordsFinder",
+    "keywordsChecker",
+    "checker",
+    "match",
+    "industryKeywords",
+    "keywordsGuide",
+  ],
+  "/resume-examples": [
+    "checker",
+    "examples",
+    "atsExamples",
+    "bulletGenerator",
+    "checklist",
+    "match",
+  ],
+  "/ats-resume-examples": [
+    "examples",
+    "checker",
+    "formatGuide",
+    "templatesGuide",
+    "mistakesGuide",
+    "checklist",
+  ],
+  "/knowledge-center": [
+    "ultimateGuide",
+    "checker",
+    "careerHub",
+    "formatGuide",
+    "keywordsGuide",
+    "matchScoreGuide",
+  ],
+  "/career-success-hub": [
+    "checker",
+    "resumeOptimization",
+    "resumeReview",
+    "knowledgeCenter",
+    "atsHub",
+    "checklist",
+  ],
+  "/ats-resume-hub": [
+    "checker",
+    "friendlyGuide",
+    "knowledgeCenter",
+    "careerHub",
+    "examples",
+    "checklist",
+  ],
+  "/ats-resume-checker": [
+    "checker",
+    "atsResumeCheckerGuide",
+    "scoreChecker",
+    "match",
+    "checklist",
+    "keywordsGuide",
+  ],
+  "/resume-review": [
+    "checker",
+    "match",
+    "checklist",
+    "resumeOptimization",
+    "scoreChecker",
+    "examples",
+  ],
+  "/resume-optimization": [
+    "checker",
+    "match",
+    "keywordsFinder",
+    "checklist",
+    "ultimateGuide",
+    "careerHub",
+  ],
+  "/resume-score-checker": [
+    "checker",
+    "atsScoreGuide",
+    "atsResumeCheckerGuide",
+    "match",
+    "checklist",
+    "formatGuide",
+  ],
+  "/resume-keywords-checker": [
+    "keywordsFinder",
+    "resumeKeywordsDb",
+    "checker",
+    "match",
+    "keywordsGuide",
+    "industryKeywords",
+  ],
+  "/ats-resume-keywords": [
+    "keywordsFinder",
+    "keywordsChecker",
+    "resumeKeywordsDb",
+    "checker",
+    "industryKeywords",
+    "match",
+  ],
+  "/ats-resume-format": [
+    "checker",
+    "templatesGuide",
+    "mistakesGuide",
+    "friendlyGuide",
+    "checklist",
+    "examples",
+  ],
+  "/ats-resume-mistakes": [
+    "checker",
+    "formatGuide",
+    "checklist",
+    "mistakesGuide",
+    "keywordsGuide",
+    "match",
+  ],
+  "/ats-score-explained": [
+    "checker",
+    "matchScoreGuide",
+    "scoreChecker",
+    "match",
+    "resumeOptimization",
+    "checklist",
+  ],
+  "/ats-friendly-resume-guide": [
+    "checker",
+    "formatGuide",
+    "keywordsGuide",
+    "friendlyGuide",
+    "checklist",
+    "examples",
+  ],
+  "/resume-keywords-by-industry": [
+    "resumeKeywordsDb",
+    "keywordsFinder",
+    "keywordsChecker",
+    "keywordsGuide",
+    "checker",
+    "match",
+  ],
+  "/ats-resume-templates": [
+    "formatGuide",
+    "checker",
+    "examples",
+    "mistakesGuide",
+    "templatesGuide",
+    "checklist",
+  ],
+  "/blog": [
+    "checker",
+    "match",
+    "knowledgeCenter",
+    "ultimateGuide",
+    "careerHub",
+    "keywordsGuide",
+  ],
+  "/about": ["checker", "careerHub", "knowledgeCenter", "contact", "privacy", "blog"],
+  "/contact": ["checker", "about", "privacy", "terms", "careerHub", "blog"],
+  "/privacy": ["terms", "contact", "about", "checker", "careerHub", "blog"],
+  "/terms": ["privacy", "contact", "about", "checker", "knowledgeCenter", "blog"],
+};
+
+const BLOG_POST_KEYS = [
+  "checker",
+  "match",
+  "keywordsGuide",
+  "formatGuide",
+  "checklist",
+  "ultimateGuide",
+] as const;
+
+function resolveKeys(path: string): readonly string[] {
+  if (path.startsWith("/blog/")) return BLOG_POST_KEYS;
+  return PATH_RELATED_KEYS[path] ?? DEFAULT_KEYS;
+}
+
+export function getRelatedResources(
+  path: string,
+  options?: { excludeHref?: string; limit?: number }
+): RelatedResourceItem[] {
+  const limit = options?.limit ?? 6;
+  const exclude = options?.excludeHref;
+  const seen = new Set<string>();
+  const items: RelatedResourceItem[] = [];
+
+  for (const key of resolveKeys(path)) {
+    const item = RESOURCE_CATALOG[key];
+    if (!item || seen.has(item.href) || item.href === exclude) continue;
+    seen.add(item.href);
+    items.push(item);
+    if (items.length >= limit) break;
+  }
+
+  return items;
+}

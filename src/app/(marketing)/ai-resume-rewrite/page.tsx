@@ -2,6 +2,7 @@ import Link from "next/link";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import {
@@ -138,6 +139,8 @@ export default function AiResumeRewritePage() {
               ))}
             </div>
           </section>
+
+          <RelatedResources path={AI_RESUME_REWRITE_PATH} excludeHref={AI_RESUME_REWRITE_PATH} />
 
           <BlogResumeCta />
         </div>

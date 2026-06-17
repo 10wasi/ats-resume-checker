@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { resumeSummaryGeneratorBody } from "@/lib/content/resume-summary-generator-body";
@@ -116,6 +117,7 @@ export default function ResumeSummaryGeneratorPage() {
               ))}
             </div>
           </section>
+          <RelatedResources path={PATH} excludeHref={PATH} />
           <BlogResumeCta />
         </div>
       </article>

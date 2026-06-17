@@ -96,7 +96,7 @@ export default function ResumeKeywordsIndexPage() {
             <BlogContent content={resumeKeywordsIndexBody} />
           </div>
 
-          <TopicClusterLinks />
+          <TopicClusterLinks path={RESUME_KEYWORDS_PATH} />
 
           <section className="mt-16 border-t border-slate-200 pt-14">
             <h2 className="font-display text-2xl font-bold text-slate-900">

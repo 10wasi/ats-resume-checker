@@ -85,7 +85,7 @@ export default function CareerSuccessHubPage() {
             </Link>
           </header>
           <CareerSuccessHubGrid />
-          <TopicClusterLinks heading="Core topic cluster" />
+          <TopicClusterLinks path={CAREER_SUCCESS_HUB_PATH} />
           <section className="mt-16 border-t border-slate-200 pt-14">
             <h2 className="font-display text-2xl font-bold text-slate-900">
               FAQ: Career Success Hub

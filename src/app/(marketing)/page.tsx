@@ -18,6 +18,7 @@ import {
   HomeTrustedBySection,
   HomeTrustStrip,
 } from "@/components/home/HomeSections";
+import { HomeTopicAuthoritySection } from "@/components/home/HomeTopicAuthoritySection";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { buildCtrMetadata, CTR_HOME } from "@/lib/seo/ctr-metadata";
@@ -59,6 +60,7 @@ export default function HomePage() {
       <HeroSection />
       <HomeTrustedBySection />
       <HomeCoreToolsGridSection />
+      <HomeTopicAuthoritySection />
       <HomeTrustStrip />
       <TestimonialsSection />
       <HomeAtsResumeExamplesSection />

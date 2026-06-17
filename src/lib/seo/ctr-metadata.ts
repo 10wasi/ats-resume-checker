@@ -37,7 +37,7 @@ export const CTR_RESUME_MATCH: PageCtrMeta = {
     "Paste any job post → instant resume match score, missing keywords & skill gaps. Free resume match tool to raise ATS visibility before you hit apply.",
   ogTitle: "Resume Match Tool — Free Job Description Analyzer",
   h1: "Resume Match Tool: Score vs Job Description",
-  primaryKeyword: "resume match score",
+  primaryKeyword: "resume match tool",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
@@ -52,12 +52,12 @@ export const CTR_RESUME_MATCH_SCORE: PageCtrMeta = {
 };
 
 export const CTR_ABOUT: PageCtrMeta = {
-  title: "About ResumeIQ — Free Resume Optimization Platform",
+  title: "About ResumeIQ — Free ATS Resume Platform",
   description:
-    "About ResumeIQ: free ATS resume checker, match tools & career guides. Privacy-first, editorial standards, and contactable support for job seekers.",
+    "About ResumeIQ: mission, editorial standards, and privacy-first ATS resume checker tools. Learn who we are and how we help job seekers optimize resumes.",
   h1: "About ResumeIQ: Free Resume Optimization for Job Seekers",
-  primaryKeyword: "ATS Resume Checker",
-  richSnippets: ["Organization", "BreadcrumbList"],
+  primaryKeyword: "about ResumeIQ",
+  richSnippets: ["Organization", "BreadcrumbList", "FAQPage"],
 };
 
 export const CTR_CONTACT: PageCtrMeta = {
@@ -65,16 +65,16 @@ export const CTR_CONTACT: PageCtrMeta = {
   description:
     "Contact ResumeIQ for resume checker feedback, bug reports, partnerships, or press. We read every message—real support for a free ATS tool.",
   h1: "Contact ResumeIQ",
-  primaryKeyword: "ATS Resume Checker",
-  richSnippets: ["Organization", "BreadcrumbList"],
+  primaryKeyword: "contact ResumeIQ",
+  richSnippets: ["Organization", "BreadcrumbList", "FAQPage"],
 };
 
 export const CTR_PRIVACY: PageCtrMeta = {
-  title: "Privacy Policy — ResumeIQ ATS Resume Checker",
+  title: "Privacy Policy — ResumeIQ",
   description:
-    "ResumeIQ privacy policy: resume handling, cookies, analytics & advertising. We process files for your request—we do not sell your resume data.",
+    "ResumeIQ privacy policy: how resume uploads, cookies, analytics, and ads are handled. We process files for your request—we do not sell resume data.",
   h1: "Privacy Policy",
-  primaryKeyword: "ATS Resume Checker",
+  primaryKeyword: "privacy policy",
   richSnippets: ["BreadcrumbList"],
 };
 
@@ -83,7 +83,7 @@ export const CTR_TERMS: PageCtrMeta = {
   description:
     "ResumeIQ terms of service: acceptable use and disclaimers for the free ATS resume checker, match tools, and career guides.",
   h1: "Terms of Service",
-  primaryKeyword: "ATS Resume Checker",
+  primaryKeyword: "terms of service",
   richSnippets: ["BreadcrumbList"],
 };
 
@@ -130,20 +130,20 @@ export const CTR_ATS_KEYWORDS: PageCtrMeta = {
 export const CTR_ATS_HUB: PageCtrMeta = {
   title: "ATS Friendly Resume Hub — Checker, Guides & Tools",
   description:
-    "ATS friendly resume hub: free ATS Resume Checker, resume match score tool, ATS keywords guides, and resume optimization resources—one place to fix before apply.",
-  ogTitle: "ATS Resume Hub — Free Checker & Resume Optimization",
+    "ATS friendly resume hub: free checker, match tool, role guides, keywords resources, and optimization workflows—one place to fix before you apply.",
+  ogTitle: "ATS Resume Hub — Free Checker & Guides",
   h1: "ATS Friendly Resume Hub: Tools & Guides",
-  primaryKeyword: "ATS friendly resume",
+  primaryKeyword: "ATS friendly resume hub",
   richSnippets: ["FAQPage", "ItemList", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_KNOWLEDGE_CENTER: PageCtrMeta = {
-  title: "ATS Knowledge Center — Resume Optimization Guides",
+  title: "ATS Knowledge Center — 10 Resume Guides (Free)",
   description:
-    "Ten free guides: ATS Resume Checker workflow, ATS friendly resume, ATS keywords, resume match score, format, mistakes, and resume optimization.",
-  ogTitle: "ATS Knowledge Center — Free Resume Guides & Tools",
+    "Ten free ATS guides: format, keywords, match score, mistakes, examples, and checklist—each links to the free resume checker workflow.",
+  ogTitle: "ATS Knowledge Center — Free Resume Guides",
   h1: "ATS Knowledge Center for Resume Optimization",
-  primaryKeyword: "resume optimization",
+  primaryKeyword: "ATS knowledge center",
   richSnippets: ["ItemList", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
@@ -190,10 +190,10 @@ export const CTR_ATS_FRIENDLY: PageCtrMeta = {
 export const CTR_INDUSTRY_KEYWORDS: PageCtrMeta = {
   title: "Resume Keywords by Industry — ATS Visibility Guide",
   description:
-    "Industry ATS keywords for tech, healthcare, finance, and more. Tailor your ATS friendly resume, then check resume match score free.",
+    "Industry ATS keywords for tech, healthcare, finance, and more. Tailor your resume by sector, then check match score with our free tools.",
   ogTitle: "Resume Keywords by Industry — ATS Guide 2026",
   h1: "Resume Keywords by Industry for ATS Optimization",
-  primaryKeyword: "ATS keywords",
+  primaryKeyword: "resume keywords by industry",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
@@ -208,12 +208,12 @@ export const CTR_ATS_TEMPLATES: PageCtrMeta = {
 };
 
 export const CTR_ULTIMATE_GUIDE: PageCtrMeta = {
-  title: "Resume Optimization Guide — ATS Format & Keywords",
+  title: "Ultimate ATS Resume Guide — Format, Keywords & Score",
   description:
-    "Complete resume optimization guide: ATS friendly resume format, ATS keywords, scoring, and mistakes. Free ATS Resume Checker workflow included.",
-  ogTitle: "Ultimate ATS Resume Guide — Format, Keywords & Score",
-  h1: "Resume Optimization: The Complete ATS Resume Guide",
-  primaryKeyword: "resume optimization",
+    "The complete ATS resume guide: format rules, keyword placement, scoring, and mistakes. Step-by-step workflow with free checker and match tools.",
+  ogTitle: "Ultimate ATS Resume Guide — Full Optimization",
+  h1: "Ultimate ATS Resume Guide: Format, Keywords & Score",
+  primaryKeyword: "ultimate ATS resume guide",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
@@ -280,20 +280,20 @@ export const CTR_RESUME_EXAMPLES_LIBRARY: PageCtrMeta = {
 export const CTR_AI_REWRITE: PageCtrMeta = {
   title: "AI Resume Rewrite — Free Bullet & Keyword Fixes",
   description:
-    "Free AI resume rewrite in the checker flow: stronger bullets, ATS keywords & optimization tips tailored to your job post. No paywall on core analysis.",
+    "Free AI resume rewrite in the checker: stronger bullets, ATS keywords & fixes tailored to your job post. Learn how rewrites work—no paywall on core analysis.",
   ogTitle: "AI Resume Rewrite — Free ATS Optimization",
   h1: "AI Resume Rewrite for Stronger ATS Resumes",
-  primaryKeyword: "resume optimization",
+  primaryKeyword: "AI resume rewrite",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_CAREER_SUCCESS_HUB: PageCtrMeta = {
   title: "Career Success Hub — Resume Tools & Guides (Free)",
   description:
-    "Free Career Success Hub: resume checker, match tool, keywords checker, optimization guides, ATS examples & checklist—one connected workflow for job seekers.",
-  ogTitle: "Career Success Hub — Resume Optimization Platform",
+    "Career Success Hub: resume checker, match tool, keywords checker, examples, checklist, and guides—one connected workflow for job seekers.",
+  ogTitle: "Career Success Hub — Resume Tools Platform",
   h1: "Career Success Hub: Resume Tools & Optimization Guides",
-  primaryKeyword: "resume optimization",
+  primaryKeyword: "career success hub",
   richSnippets: ["ItemList", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
@@ -330,20 +330,20 @@ export const CTR_RESUME_SCORE_CHECKER: PageCtrMeta = {
 export const CTR_RESUME_KEYWORDS_CHECKER: PageCtrMeta = {
   title: "Resume Keywords Checker — Find Missing ATS Terms",
   description:
-    "Free resume keywords checker: extract terms from job posts, compare to your resume & fix gaps ethically. Keywords finder + match tool included.",
+    "Resume keywords checker workflow: extract terms from job posts, compare to your resume & fix gaps ethically. Keywords finder + match tool included.",
   ogTitle: "Resume Keywords Checker — Free ATS Gap Scan",
   h1: "Resume Keywords Checker: Find & Fix Missing Terms",
-  primaryKeyword: "resume keywords",
+  primaryKeyword: "resume keywords checker",
   richSnippets: ["Article", "FAQPage", "WebApplication", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_ATS_RESUME_CHECKER_LANDING: PageCtrMeta = {
-  title: "ATS Resume Checker — Free Parse & Keyword Scan",
+  title: "How ATS Resume Checker Works — Free PDF Scan",
   description:
-    "Free ATS resume checker: upload PDF, get score, keyword gaps, format warnings & improvement plan. Built for job seekers who need results—not fluff.",
-  ogTitle: "ATS Resume Checker — Free Score & Fixes",
-  h1: "ATS Resume Checker: Free Score, Keywords & Fixes",
-  primaryKeyword: "ATS Resume Checker",
+    "How the ATS resume checker scores PDFs: keyword gaps, format warnings, pass likelihood & improvement plan. Free upload—learn the workflow before you apply.",
+  ogTitle: "How ATS Resume Checker Works — Free Tool",
+  h1: "How ATS Resume Checker Works: Score, Keywords & Fixes",
+  primaryKeyword: "how ATS resume checker works",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 

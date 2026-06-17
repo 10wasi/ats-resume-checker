@@ -5,6 +5,7 @@ import { AtsResumeHubSectionGrid } from "@/components/hub/AtsResumeHubSectionGri
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { AtsResumeHubItemListJsonLd } from "@/components/seo/AtsResumeHubItemListJsonLd";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import {
@@ -170,53 +171,9 @@ export default function AtsResumeHubPage() {
             </div>
           </section>
 
-          <BlogResumeCta />
+          <RelatedResources path={ATS_RESUME_HUB_PATH} excludeHref={ATS_RESUME_HUB_PATH} />
 
-          <nav
-            className="not-prose mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-6"
-            aria-label="Related hub resources"
-          >
-            <p className="text-sm font-semibold text-slate-900">
-              Internal links — explore the platform
-            </p>
-            <ul className="mt-4 grid gap-2 text-sm sm:grid-cols-2">
-              <li>
-                <Link href={RESUME_CHECKER_PATH} className="text-[#16a34a] underline">
-                  ATS Resume Checker
-                </Link>
-              </li>
-              <li>
-                <Link href="/resume-job-description-match" className="text-[#16a34a] underline">
-                  Resume job match analyzer
-                </Link>
-              </li>
-              <li>
-                <Link href="/ai-resume-rewrite" className="text-[#16a34a] underline">
-                  AI resume rewrite
-                </Link>
-              </li>
-              <li>
-                <Link href="/ats-resume-checklist-2026" className="text-[#16a34a] underline">
-                  ATS resume checklist
-                </Link>
-              </li>
-              <li>
-                <Link href="/ultimate-ats-resume-guide" className="text-[#16a34a] underline">
-                  Ultimate ATS guide
-                </Link>
-              </li>
-              <li>
-                <Link href={KNOWLEDGE_CENTER_PATH} className="text-[#16a34a] underline">
-                  ATS Knowledge Center
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-[#16a34a] underline">
-                  All blog articles
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          <BlogResumeCta />
         </div>
       </article>
     </>

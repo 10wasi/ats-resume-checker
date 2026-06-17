@@ -24,7 +24,7 @@ function resolvePages(excludeId: string, relatedIds?: string[]) {
 export function KnowledgeCenterRelated({
   excludeId,
   relatedIds,
-  heading = "Related guides in the ATS Knowledge Center",
+  heading = "Related resources",
 }: Props) {
   const pages = resolvePages(excludeId, relatedIds);
 

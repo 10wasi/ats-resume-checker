@@ -11,8 +11,12 @@ import {
 import { ArticleJsonLd } from "@/components/blog/ArticleJsonLd";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
+import { PageFaqSection } from "@/components/seo/PageFaqSection";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { blogFaqBySlug } from "@/lib/seo/blog-page-faq";
+import { blogGenericFaqItems } from "@/lib/seo/blog-generic-faq";
 
 import { getSiteUrl } from "@/lib/site-url";
 
@@ -60,7 +64,7 @@ export default function BlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   const minutes = readingTimeMinutes(post.content);
-  const faqItems = blogFaqBySlug[post.slug];
+  const faqItems = blogFaqBySlug[post.slug] ?? blogGenericFaqItems;
   const related = getAllPosts()
     .filter((p) => p.slug !== post.slug)
     .slice(0, 3);
@@ -81,12 +85,13 @@ export default function BlogPostPage({ params }: Props) {
         aria-hidden
       />
       <div className="container-prose py-12 sm:py-16">
-        <Link
-          href="/blog"
-          className="inline-flex items-center gap-1 text-sm font-semibold text-[#4ade80] transition visited:text-[#22c55e] hover:text-[#16a34a]"
-        >
-          <span aria-hidden>←</span> Back to blog
-        </Link>
+        <PageBreadcrumbs
+          items={[
+            { name: "Home", path: "/" },
+            { name: "Blog", path: "/blog" },
+            { name: post.title, path: `/blog/${post.slug}` },
+          ]}
+        />
 
         <header className="mt-8">
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-slate-500">
@@ -122,6 +127,14 @@ export default function BlogPostPage({ params }: Props) {
         <div className="mt-12">
           <BlogContent content={post.content} />
         </div>
+
+        <PageFaqSection
+          heading="FAQ"
+          items={faqItems}
+          className="mt-16"
+        />
+
+        <RelatedResources path={`/blog/${post.slug}`} />
 
         <BlogResumeCta />
       </div>

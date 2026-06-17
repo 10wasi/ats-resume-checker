@@ -3,6 +3,7 @@ import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { KnowledgeCenterGrid } from "@/components/knowledge/KnowledgeCenterGrid";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { KnowledgeCenterItemListJsonLd } from "@/components/seo/KnowledgeCenterItemListJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
@@ -128,6 +129,8 @@ export default function KnowledgeCenterPage() {
               ))}
             </div>
           </section>
+
+          <RelatedResources path={KNOWLEDGE_CENTER_PATH} excludeHref={KNOWLEDGE_CENTER_PATH} />
 
           <BlogResumeCta />
         </div>

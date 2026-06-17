@@ -14,7 +14,7 @@ export function CareerHubRelated({ currentId }: Props) {
         id="career-hub-related-heading"
         className="font-display text-xl font-bold text-slate-900"
       >
-        More from the Career Success Hub
+        Related resources
       </h2>
       <ul className="mt-5 grid gap-3 sm:grid-cols-2">
         {items.map((item) => (

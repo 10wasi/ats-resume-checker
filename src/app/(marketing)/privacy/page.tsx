@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { buildCtrMetadata, CTR_PRIVACY } from "@/lib/seo/ctr-metadata";
 
 export const metadata = buildCtrMetadata(CTR_PRIVACY, {
@@ -16,7 +18,13 @@ export default function PrivacyPage() {
         ]}
       />
     <div className="container-prose py-16">
-      <p className="section-eyebrow">Legal</p>
+      <PageBreadcrumbs
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Privacy Policy", path: "/privacy" },
+        ]}
+      />
+      <p className="section-eyebrow mt-8">Legal</p>
       <h1 className="mt-6 font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
         Privacy Policy
       </h1>
@@ -84,6 +92,7 @@ export default function PrivacyPage() {
         </Link>
         .
       </p>
+      <RelatedResources path="/privacy" excludeHref="/privacy" />
     </div>
     </>
   );

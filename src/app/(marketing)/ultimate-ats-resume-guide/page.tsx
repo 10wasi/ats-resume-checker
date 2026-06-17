@@ -3,6 +3,7 @@ import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { KnowledgeCenterRelated } from "@/components/knowledge/KnowledgeCenterRelated";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import {
@@ -155,6 +156,8 @@ export default function UltimateAtsResumeGuidePage() {
             excludeId="friendly"
             relatedIds={["keywords", "score", "match", "checklist"]}
           />
+
+          <RelatedResources path={ULTIMATE_ATS_GUIDE_PATH} excludeHref={ULTIMATE_ATS_GUIDE_PATH} />
 
           <BlogResumeCta />
         </div>

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { buildCtrMetadata, CTR_TERMS } from "@/lib/seo/ctr-metadata";
 
 export const metadata = buildCtrMetadata(CTR_TERMS, {
@@ -16,7 +18,13 @@ export default function TermsPage() {
         ]}
       />
     <div className="container-prose py-16">
-      <p className="section-eyebrow">Legal</p>
+      <PageBreadcrumbs
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Terms of Service", path: "/terms" },
+        ]}
+      />
+      <p className="section-eyebrow mt-8">Legal</p>
       <h1 className="mt-6 font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
         Terms of Service
       </h1>
@@ -68,6 +76,7 @@ export default function TermsPage() {
         </Link>
         .
       </p>
+      <RelatedResources path="/terms" excludeHref="/terms" />
     </div>
     </>
   );

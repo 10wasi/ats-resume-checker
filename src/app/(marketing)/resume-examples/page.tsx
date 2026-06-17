@@ -3,6 +3,7 @@ import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { ResumeExamplesLibraryGrid } from "@/components/examples/ResumeExamplesLibraryGrid";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { ResumeExamplesItemListJsonLd } from "@/components/seo/ResumeExamplesItemListJsonLd";
@@ -128,6 +129,8 @@ export default function ResumeExamplesLibraryPage() {
               ))}
             </div>
           </section>
+
+          <RelatedResources path={RESUME_EXAMPLES_LIBRARY_PATH} excludeHref={RESUME_EXAMPLES_LIBRARY_PATH} />
 
           <BlogResumeCta />
         </div>

@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { CareerHubRelated } from "@/components/career/CareerHubRelated";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
-import { TopicClusterLinks } from "@/components/seo/TopicClusterLinks";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
@@ -90,7 +90,7 @@ export function CareerLandingPage({
             <BlogContent content={entry.body} />
           </div>
 
-          <TopicClusterLinks />
+          <RelatedResources path={entry.path} excludeHref={entry.path} />
 
           <section
             className="mt-16 border-t border-slate-200 pt-14"

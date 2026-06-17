@@ -2,6 +2,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { KnowledgeCenterRelated } from "@/components/knowledge/KnowledgeCenterRelated";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
@@ -188,6 +189,8 @@ export default function ResumeJobDescriptionMatchPage() {
               for AI rewrites, improvement plans, and PDF export.
             </p>
           </div>
+
+          <RelatedResources path="/resume-job-description-match" excludeHref="/resume-job-description-match" />
 
           <KnowledgeCenterRelated
             excludeId="match"

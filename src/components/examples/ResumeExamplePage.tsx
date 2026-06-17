@@ -4,7 +4,7 @@ import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { ResumeExamplesRelated } from "@/components/examples/ResumeExamplesRelated";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
-import { TopicClusterLinks } from "@/components/seo/TopicClusterLinks";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import type { ResumeExampleEntry } from "@/lib/content/resume-examples/types";
@@ -117,7 +117,7 @@ export function ResumeExamplePage({
             </div>
           </section>
 
-          <TopicClusterLinks />
+          <RelatedResources path={example.path} excludeHref={example.path} />
 
           <ResumeExamplesRelated currentSlug={example.slug} />
 

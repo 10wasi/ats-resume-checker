@@ -5,7 +5,12 @@ import { readingTimeMinutes } from "@/lib/blog/reading-time";
 import { BlogCoverPlaceholder } from "@/components/blog/BlogExtras";
 import { BlogIndexJsonLd } from "@/components/blog/BlogIndexJsonLd";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
+import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
+import { PageFaqSection } from "@/components/seo/PageFaqSection";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
+import { blogIndexFaqItems } from "@/lib/seo/blog-index-faq";
 
 import { getSiteUrl } from "@/lib/site-url";
 
@@ -47,7 +52,8 @@ export default function BlogIndexPage() {
   const [featured, ...rest] = posts;
 
   return (
-    <div className="container-page py-14 sm:py-20">
+    <>
+      <PageFaqJsonLd items={blogIndexFaqItems} />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", path: "/" },
@@ -55,6 +61,15 @@ export default function BlogIndexPage() {
         ]}
       />
       <BlogIndexJsonLd posts={posts} />
+      <div className="container-page py-14 sm:py-20">
+        <div className="mx-auto max-w-3xl">
+          <PageBreadcrumbs
+            items={[
+              { name: "Home", path: "/" },
+              { name: "Blog", path: "/blog" },
+            ]}
+          />
+        </div>
       <div className="mx-auto max-w-3xl text-center">
         <p className="section-eyebrow mx-auto">The ResumeIQ blog</p>
         <h1 className="mt-6 font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
@@ -169,7 +184,9 @@ export default function BlogIndexPage() {
       </ul>
 
       <div className="mx-auto mt-16 max-w-3xl">
-        <div className="rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-soft sm:p-12">
+        <PageFaqSection heading="Blog FAQ" items={blogIndexFaqItems} />
+        <RelatedResources path="/blog" excludeHref="/blog" />
+        <div className="mt-10 rounded-3xl border border-slate-200 bg-white p-8 text-center shadow-soft sm:p-12">
           <p className="section-eyebrow mx-auto">Stop reading. Start scoring.</p>
           <h2 className="mt-4 font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
             Run your resume through ResumeIQ now.
@@ -185,7 +202,8 @@ export default function BlogIndexPage() {
             Check resume score free
           </Link>
         </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

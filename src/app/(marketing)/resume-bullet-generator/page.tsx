@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { BlogResumeCta } from "@/components/blog/BlogExtras";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { resumeBulletGeneratorFaqItems } from "@/lib/seo/resume-bullet-generator-faq";
@@ -89,6 +90,7 @@ export default function ResumeBulletGeneratorPage() {
               ))}
             </div>
           </section>
+          <RelatedResources path="/resume-bullet-generator" excludeHref="/resume-bullet-generator" />
           <BlogResumeCta />
         </div>
       </article>
