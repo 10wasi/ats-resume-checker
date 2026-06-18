@@ -24,54 +24,41 @@ export function HeroSection() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="section-eyebrow">
             <IconSparkle className="h-3.5 w-3.5 shrink-0 text-[#4ade80]" />
-            Free ATS Resume Checker · resume optimization for US &amp; UK
+            Free resume checker · fix rejection before you apply again
           </p>
           <h1 className="mt-6 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.85rem] lg:leading-[1.1]">
             {CTR_HOME.h1}
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            Analyze your resume, discover missing keywords, compare against job
-            descriptions, and improve ATS visibility. Our free{" "}
-            <strong className="font-semibold text-slate-800">
-              ATS Resume Checker
-            </strong>{" "}
-            helps you build an{" "}
-            <strong className="font-semibold text-slate-800">
-              ATS friendly resume
-            </strong>{" "}
-            with honest{" "}
-            <strong className="font-semibold text-slate-800">
-              resume optimization
-            </strong>{" "}
-            —not guesswork the night before you apply.
+            You are qualified—but your resume may be failing <strong className="font-semibold text-slate-800">screening</strong> before a human reads it. Our free{" "}
+            <strong className="font-semibold text-slate-800">ATS Resume Checker</strong> shows missing keywords, format problems, and match score vs any job—so you fix rejection reasons, not guess.
           </p>
           <div className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
             <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base">
-              Analyze My Resume Free
+              Check My Resume Free
             </Link>
             <Link
-              href="/resume-job-description-match"
+              href="/why-resume-not-getting-interviews"
               className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-8 text-base font-semibold text-slate-800 shadow-sm transition hover:border-accent-400 hover:text-accent-500"
             >
-              Match to a job posting
+              Why no interviews?
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500">
-            Free to use. No account or credit card. Built for US and UK job
-            seekers who want clear fixes—not another generic template.
+            Trusted by job seekers who wanted clear fixes—not another template. Free, no account, privacy-first processing.
           </p>
           <ul className="mx-auto mt-8 flex max-w-xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-slate-500">
             <li className="flex items-center gap-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-              ATS score &amp; match %
+              See why resumes get rejected
             </li>
             <li className="flex items-center gap-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-              Missing ATS keywords
+              Missing keywords &amp; match %
             </li>
             <li className="flex items-center gap-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-              AI rewrite suggestions
+              Action steps—not generic ATS tips
             </li>
           </ul>
         </div>

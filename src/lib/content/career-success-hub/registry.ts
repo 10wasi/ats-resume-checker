@@ -3,6 +3,14 @@ import { resumeOptimizationEntry } from "./resume-optimization";
 import { resumeScoreCheckerEntry } from "./resume-score-checker";
 import { resumeKeywordsCheckerEntry } from "./resume-keywords-checker";
 import { atsResumeCheckerEntry } from "./ats-resume-checker";
+import { whyResumeNotGettingInterviewsEntry } from "@/lib/content/search-intent/why-resume-not-getting-interviews";
+import { whyResumeGetsRejectedEntry } from "@/lib/content/search-intent/why-resume-gets-rejected";
+import { resumeNotPassingAtsEntry } from "@/lib/content/search-intent/resume-not-passing-ats";
+import { resumeKeywordsMissingEntry } from "@/lib/content/search-intent/resume-keywords-missing";
+import { howToTailorResumeEntry } from "@/lib/content/search-intent/how-to-tailor-resume-for-job-description";
+import { howToImproveResumeScoreEntry } from "@/lib/content/search-intent/how-to-improve-resume-score";
+import { resumeMistakesCostInterviewsEntry } from "@/lib/content/search-intent/resume-mistakes-that-cost-interviews";
+import { resumeScreeningExplainedEntry } from "@/lib/content/search-intent/resume-screening-explained";
 import type { CareerHubIndexItem, CareerLandingEntry } from "./types";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
@@ -15,6 +23,14 @@ export const CAREER_LANDING_PAGES: CareerLandingEntry[] = [
   resumeScoreCheckerEntry,
   resumeKeywordsCheckerEntry,
   atsResumeCheckerEntry,
+  whyResumeNotGettingInterviewsEntry,
+  whyResumeGetsRejectedEntry,
+  resumeNotPassingAtsEntry,
+  resumeKeywordsMissingEntry,
+  howToTailorResumeEntry,
+  howToImproveResumeScoreEntry,
+  resumeMistakesCostInterviewsEntry,
+  resumeScreeningExplainedEntry,
 ];
 
 export function getCareerLandingByPath(
@@ -111,6 +127,70 @@ export const CAREER_HUB_INDEX: CareerHubIndexItem[] = [
     description:
       "What match score means, good benchmarks, and how to improve keyword overlap ethically.",
     path: "/resume-match-score",
+    badge: "Guide",
+  },
+  {
+    id: "why-not-getting-interviews",
+    title: "Why No Interviews?",
+    description:
+      "Why your resume is not getting interviews—and screening fixes that work.",
+    path: "/why-resume-not-getting-interviews",
+    badge: "Guide",
+  },
+  {
+    id: "why-resume-gets-rejected",
+    title: "Why Resume Gets Rejected",
+    description:
+      "Rejection causes from parser to recruiter skim—with fixes at each stage.",
+    path: "/why-resume-gets-rejected",
+    badge: "Guide",
+  },
+  {
+    id: "resume-not-passing-ats",
+    title: "Resume Not Passing ATS",
+    description:
+      "Diagnose parse vs keyword failures and test your PDF before you apply again.",
+    path: "/resume-not-passing-ats",
+    badge: "Guide",
+  },
+  {
+    id: "resume-keywords-missing",
+    title: "Resume Keywords Missing",
+    description:
+      "Find missing keywords vs job posts and fix gaps ethically in bullets.",
+    path: "/resume-keywords-missing",
+    badge: "Guide",
+  },
+  {
+    id: "how-to-tailor-resume",
+    title: "Tailor Resume for JD",
+    description:
+      "15-minute tailoring workflow per application with match score tracking.",
+    path: "/how-to-tailor-resume-for-job-description",
+    badge: "Guide",
+  },
+  {
+    id: "how-to-improve-score",
+    title: "Improve Resume Score",
+    description:
+      "7-day plan to raise ATS and match scores without keyword stuffing.",
+    path: "/how-to-improve-resume-score",
+    badge: "Guide",
+  },
+  {
+    id: "resume-mistakes-interviews",
+    title: "Mistakes That Cost Interviews",
+    description:
+      "Top resume mistakes with before/after examples and a free audit.",
+    path: "/resume-mistakes-that-cost-interviews",
+    badge: "Guide",
+  },
+  {
+    id: "resume-screening-explained",
+    title: "Resume Screening Explained",
+    description:
+      "How screening works from ATS parser to recruiter review.",
+    path: "/resume-screening-explained",
     badge: "Guide",
   },
   {

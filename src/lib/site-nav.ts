@@ -26,9 +26,13 @@ export const SITE_TOOLS: SiteNavItem[] = [
 
 /** High-intent SEO landing pages (footer resources column). */
 export const SITE_CAREER_PAGES: SiteNavItem[] = [
+  { href: "/why-resume-not-getting-interviews", label: "Why no interviews?" },
+  { href: "/why-resume-gets-rejected", label: "Why resume gets rejected" },
+  { href: "/how-to-tailor-resume-for-job-description", label: "Tailor resume for job" },
+  { href: "/resume-screening-explained", label: "Resume screening explained" },
   { href: "/resume-review", label: "Resume review" },
-  { href: "/resume-optimization", label: "Resume optimization" },
-  { href: "/resume-match-score", label: "Resume match score guide" },
+  { href: "/resume-optimization", label: "Resume optimization guide" },
+  { href: "/resume-match-score", label: "Resume match score explained" },
   { href: "/resume-score-checker", label: "Resume score checker" },
   { href: "/resume-keywords-checker", label: "Resume keywords checker" },
   { href: "/ats-resume-checker", label: "ATS resume checker guide" },

@@ -34,7 +34,13 @@ export const resumeOptimizationEntry: CareerLandingEntry = {
     },
   ],
   body: `
-**Resume optimization** is a repeatable workflow—not a one-time rewrite. This page is your map from "uploaded resume" to "higher ATS score and resume match score" using tools that connect end to end.
+**Resume optimization** is how you stop getting filtered out before interviews—not a buzzword for keyword stuffing. This **resume optimization guide** maps a repeatable workflow from rejected applications to interview-ready files.
+
+## Who this guide is for
+
+- Applying for weeks with **no interviews** → start with [why no interviews](/why-resume-not-getting-interviews)
+- Resume **not passing ATS** → [diagnose parse vs keywords](/resume-not-passing-ats)
+- Low **match score** on target jobs → [tailor for job description](/how-to-tailor-resume-for-job-description)
 
 ## The 5-step resume optimization workflow
 

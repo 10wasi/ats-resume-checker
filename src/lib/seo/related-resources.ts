@@ -178,6 +178,46 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     title: "Terms of Service",
     description: "Acceptable use for free ATS tools and guides.",
   },
+  whyNoInterviews: {
+    href: "/why-resume-not-getting-interviews",
+    title: "Why No Interviews?",
+    description: "Screening fixes when applications go silent.",
+  },
+  whyRejected: {
+    href: "/why-resume-gets-rejected",
+    title: "Why Resume Gets Rejected",
+    description: "Parser, filters, and recruiter skim causes.",
+  },
+  notPassingAts: {
+    href: "/resume-not-passing-ats",
+    title: "Resume Not Passing ATS",
+    description: "Diagnose parse vs keyword failures.",
+  },
+  keywordsMissing: {
+    href: "/resume-keywords-missing",
+    title: "Resume Keywords Missing",
+    description: "Find and fix keyword gaps vs job posts.",
+  },
+  tailorResume: {
+    href: "/how-to-tailor-resume-for-job-description",
+    title: "Tailor Resume for Job",
+    description: "15-minute tailoring workflow per application.",
+  },
+  improveScore: {
+    href: "/how-to-improve-resume-score",
+    title: "Improve Resume Score",
+    description: "Raise ATS and match scores honestly.",
+  },
+  mistakesInterviews: {
+    href: "/resume-mistakes-that-cost-interviews",
+    title: "Mistakes That Cost Interviews",
+    description: "Top errors with before/after examples.",
+  },
+  screeningExplained: {
+    href: "/resume-screening-explained",
+    title: "Resume Screening Explained",
+    description: "ATS to recruiter review pipeline.",
+  },
 };
 
 const DEFAULT_KEYS = [
@@ -339,8 +379,8 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
   "/resume-optimization": [
     "checker",
     "match",
-    "keywordsFinder",
-    "checklist",
+    "tailorResume",
+    "whyNoInterviews",
     "ultimateGuide",
     "careerHub",
   ],
@@ -428,15 +468,79 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
   "/contact": ["checker", "about", "privacy", "terms", "careerHub", "blog"],
   "/privacy": ["terms", "contact", "about", "checker", "careerHub", "blog"],
   "/terms": ["privacy", "contact", "about", "checker", "knowledgeCenter", "blog"],
+  "/why-resume-not-getting-interviews": [
+    "checker",
+    "match",
+    "whyRejected",
+    "screeningExplained",
+    "improveScore",
+    "tailorResume",
+  ],
+  "/why-resume-gets-rejected": [
+    "checker",
+    "notPassingAts",
+    "whyNoInterviews",
+    "mistakesInterviews",
+    "screeningExplained",
+    "keywordsMissing",
+  ],
+  "/resume-not-passing-ats": [
+    "checker",
+    "formatGuide",
+    "whyRejected",
+    "keywordsMissing",
+    "improveScore",
+    "checklist",
+  ],
+  "/resume-keywords-missing": [
+    "keywordsFinder",
+    "match",
+    "keywordsChecker",
+    "resumeKeywordsDb",
+    "tailorResume",
+    "checker",
+  ],
+  "/how-to-tailor-resume-for-job-description": [
+    "match",
+    "keywordsFinder",
+    "keywordsMissing",
+    "checker",
+    "examples",
+    "matchScoreGuide",
+  ],
+  "/how-to-improve-resume-score": [
+    "checker",
+    "scoreChecker",
+    "atsScoreGuide",
+    "notPassingAts",
+    "tailorResume",
+    "checklist",
+  ],
+  "/resume-mistakes-that-cost-interviews": [
+    "checker",
+    "mistakesGuide",
+    "whyRejected",
+    "examples",
+    "checklist",
+    "resumeReview",
+  ],
+  "/resume-screening-explained": [
+    "checker",
+    "match",
+    "whyRejected",
+    "whyNoInterviews",
+    "notPassingAts",
+    "matchScoreGuide",
+  ],
 };
 
 const BLOG_POST_KEYS = [
   "checker",
-  "match",
+  "whyNoInterviews",
+  "whyRejected",
   "keywordsGuide",
   "formatGuide",
   "checklist",
-  "ultimateGuide",
 ] as const;
 
 function resolveKeys(path: string): readonly string[] {

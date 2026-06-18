@@ -12,11 +12,11 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: "ATS Resume Checker — Free Score & Match Tool",
+  title: "Not Getting Interviews? Free Resume Checker",
   description:
-    "Free ATS resume checker + resume match score. Upload PDF → keyword gaps, format fixes & optimization plan. Built for job seekers—no signup.",
-  ogTitle: "Free ATS Resume Checker — Score, Keywords & Match",
-  h1: "ATS Resume Checker & Resume Optimization Platform",
+    "Why your resume gets ignored—and how to fix it. Free checker finds missing keywords, format issues & match score vs any job. No signup required.",
+  ogTitle: "Fix Your Resume Before You Apply Again",
+  h1: "Stop Sending Resumes That Never Get Seen",
   primaryKeyword: "ATS Resume Checker",
   richSnippets: ["FAQPage", "WebApplication", "ItemList", "Organization", "BreadcrumbList"],
 };
@@ -42,12 +42,12 @@ export const CTR_RESUME_MATCH: PageCtrMeta = {
 };
 
 export const CTR_RESUME_MATCH_SCORE: PageCtrMeta = {
-  title: "Resume Match Score — What It Means (Free Guide)",
+  title: "Resume Match Score Explained — What % Means",
   description:
-    "Resume match score explained: vs ATS score, what good looks like & how to improve keyword overlap. Free match analyzer + keywords workflow included.",
-  ogTitle: "Resume Match Score Guide — Improve Before You Apply",
-  h1: "Resume Match Score: Meaning, Benchmarks & How to Improve",
-  primaryKeyword: "resume match score",
+    "Resume match score explained in plain English: benchmarks, vs ATS score, and how to raise overlap before you apply. Free match tool included.",
+  ogTitle: "Resume Match Score Explained — Improve Before Apply",
+  h1: "Resume Match Score Explained: Meaning & How to Improve",
+  primaryKeyword: "resume match score explained",
   richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
@@ -308,12 +308,12 @@ export const CTR_RESUME_REVIEW: PageCtrMeta = {
 };
 
 export const CTR_RESUME_OPTIMIZATION: PageCtrMeta = {
-  title: "Resume Optimization — 5-Step ATS Workflow (Free)",
+  title: "Resume Optimization Guide — Fix Before You Apply",
   description:
-    "Resume optimization workflow: score, match keywords, fix format, upgrade bullets & checklist QA. Free tools connected end to end—no thin tips.",
-  ogTitle: "Resume Optimization Guide — Free ATS Workflow",
-  h1: "Resume Optimization: Step-by-Step ATS Workflow",
-  primaryKeyword: "resume optimization",
+    "Practical resume optimization guide: score, tailor for each job, fix bullets & pass screening. Free tools connected step by step—real fixes, not fluff.",
+  ogTitle: "Resume Optimization Guide — Free Step-by-Step",
+  h1: "Resume Optimization Guide: From Rejected to Interview-Ready",
+  primaryKeyword: "resume optimization guide",
   richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
@@ -345,6 +345,86 @@ export const CTR_ATS_RESUME_CHECKER_LANDING: PageCtrMeta = {
   h1: "How ATS Resume Checker Works: Score, Keywords & Fixes",
   primaryKeyword: "how ATS resume checker works",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_WHY_NOT_GETTING_INTERVIEWS: PageCtrMeta = {
+  title: "Why My Resume Is Not Getting Interviews (2026)",
+  description:
+    "No interviews after applying? Real causes—screening, keywords, weak bullets—and a free action plan with checker & match tools. Fix what recruiters never see.",
+  ogTitle: "Why You're Not Getting Interviews — Fixes That Work",
+  h1: "Why My Resume Is Not Getting Interviews",
+  primaryKeyword: "why my resume is not getting interviews",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_WHY_RESUME_GETS_REJECTED: PageCtrMeta = {
+  title: "Why Your Resume Gets Rejected — Causes & Fixes",
+  description:
+    "Why resumes get rejected before interviews: parsing, filters, recruiter skim. Real examples + free checker to find your failure point fast.",
+  ogTitle: "Why Resume Gets Rejected — What to Fix First",
+  h1: "Why Your Resume Gets Rejected (And What to Fix)",
+  primaryKeyword: "why resume gets rejected",
+  richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_NOT_PASSING_ATS: PageCtrMeta = {
+  title: "Resume Not Passing ATS? Diagnose & Fix Free",
+  description:
+    "Resume not passing ATS? Learn parse vs keyword failures, see real layout examples, and test your PDF free—before you send another application.",
+  ogTitle: "Resume Not Passing ATS — Fix Parse & Keywords",
+  h1: "Resume Not Passing ATS: Diagnose and Fix",
+  primaryKeyword: "resume not passing ATS",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_KEYWORDS_MISSING: PageCtrMeta = {
+  title: "Resume Keywords Missing? Find & Fix Gaps Free",
+  description:
+    "Missing resume keywords kill match score. Find gaps vs job posts, see before/after bullet examples, and fix ethically with free tools.",
+  ogTitle: "Resume Keywords Missing — Free Gap Finder",
+  h1: "Resume Keywords Missing: Find and Fix Gaps",
+  primaryKeyword: "resume keywords missing",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_HOW_TO_TAILOR_RESUME: PageCtrMeta = {
+  title: "How to Tailor Resume for Job Description",
+  description:
+    "How to tailor your resume for a job description in 15 minutes: extract terms, edit bullets, re-check match %. Free analyzer walkthrough.",
+  ogTitle: "Tailor Resume to Job Description — Step-by-Step",
+  h1: "How to Tailor Resume for Job Description",
+  primaryKeyword: "how to tailor resume for job description",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_HOW_TO_IMPROVE_RESUME_SCORE: PageCtrMeta = {
+  title: "How to Improve Resume Score — 7-Day Plan",
+  description:
+    "How to improve resume score fast: format, keywords, metrics. Real before/after example + free checker. Not keyword stuffing—honest fixes.",
+  ogTitle: "How to Improve Resume Score — Free Checker",
+  h1: "How to Improve Resume Score Before You Apply",
+  primaryKeyword: "how to improve resume score",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_MISTAKES_INTERVIEWS: PageCtrMeta = {
+  title: "Resume Mistakes That Cost Interviews (2026)",
+  description:
+    "10 resume mistakes that cost interviews—with before/after examples. Free checker catches format & keyword issues before recruiters do.",
+  ogTitle: "Resume Mistakes That Cost You Interviews",
+  h1: "Resume Mistakes That Cost Interviews",
+  primaryKeyword: "resume mistakes that cost interviews",
+  richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_SCREENING_EXPLAINED: PageCtrMeta = {
+  title: "Resume Screening Explained — ATS to Recruiter",
+  description:
+    "Resume screening explained: who reads your file, when ATS filters, and what to fix at each stage. Free tools to test parse and match.",
+  ogTitle: "Resume Screening Explained for Job Seekers",
+  h1: "Resume Screening Explained: From Apply to Interview",
+  primaryKeyword: "resume screening explained",
+  richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
 export function buildCtrMetadata(

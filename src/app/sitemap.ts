@@ -27,6 +27,46 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
     },
     {
+      path: "/why-resume-not-getting-interviews",
+      priority: 0.91,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/why-resume-gets-rejected",
+      priority: 0.91,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/resume-not-passing-ats",
+      priority: 0.9,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/resume-keywords-missing",
+      priority: 0.9,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/how-to-tailor-resume-for-job-description",
+      priority: 0.9,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/how-to-improve-resume-score",
+      priority: 0.9,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/resume-mistakes-that-cost-interviews",
+      priority: 0.89,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/resume-screening-explained",
+      priority: 0.89,
+      changeFrequency: "weekly",
+    },
+    {
       path: "/resume-optimization",
       priority: 0.93,
       changeFrequency: "weekly",
