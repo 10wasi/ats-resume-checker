@@ -18,6 +18,7 @@ import {
   HomeTrustedBySection,
   HomeTrustStrip,
 } from "@/components/home/HomeSections";
+import { HomeGlobalReachSection } from "@/components/home/HomeGlobalReachSection";
 import { HomeTopicAuthoritySection } from "@/components/home/HomeTopicAuthoritySection";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
@@ -60,6 +61,7 @@ export default function HomePage() {
       <HeroSection />
       <HomeTrustedBySection />
       <HomeCoreToolsGridSection />
+      <HomeGlobalReachSection />
       <HomeTopicAuthoritySection />
       <HomeTrustStrip />
       <TestimonialsSection />

@@ -12,11 +12,11 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: "Not Getting Interviews? Free Resume Checker",
+  title: "ATS Resume Checker — Free Global Optimization",
   description:
-    "Why your resume gets ignored—and how to fix it. Free checker finds missing keywords, format issues & match score vs any job. No signup required.",
-  ogTitle: "Fix Your Resume Before You Apply Again",
-  h1: "Stop Sending Resumes That Never Get Seen",
+    "Optimize your resume for applicant tracking systems and improve interview chances worldwide. Free checker, match analyzer, keywords & examples—no signup.",
+  ogTitle: "ATS Resume Checker — Optimize Worldwide",
+  h1: "Optimize Your Resume for ATS—Worldwide",
   primaryKeyword: "ATS Resume Checker",
   richSnippets: ["FAQPage", "WebApplication", "ItemList", "Organization", "BreadcrumbList"],
 };
@@ -52,12 +52,32 @@ export const CTR_RESUME_MATCH_SCORE: PageCtrMeta = {
 };
 
 export const CTR_ABOUT: PageCtrMeta = {
-  title: "About ResumeIQ — Free ATS Resume Platform",
+  title: "About ResumeIQ — Global ATS Resume Platform",
   description:
-    "About ResumeIQ: mission, editorial standards, and privacy-first ATS resume checker tools. Learn who we are and how we help job seekers optimize resumes.",
-  h1: "About ResumeIQ: Free Resume Optimization for Job Seekers",
+    "About ResumeIQ: free ATS resume optimization for job seekers worldwide. Mission, methodology, privacy-first tools, and editorial standards.",
+  h1: "About ResumeIQ: Global Resume Optimization",
   primaryKeyword: "about ResumeIQ",
   richSnippets: ["Organization", "BreadcrumbList", "FAQPage"],
+};
+
+export const CTR_METHODOLOGY: PageCtrMeta = {
+  title: "How ATS Scoring Works — ResumeIQ Methodology",
+  description:
+    "How ResumeIQ scores resumes: what ATS checks, parse health, keyword proof, and match vs job posts. Transparent methodology for global applicants.",
+  ogTitle: "ATS Scoring Methodology — Transparent & Global",
+  h1: "How ATS Scoring Works",
+  primaryKeyword: "ATS scoring methodology",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_FAQ_CENTER: PageCtrMeta = {
+  title: "ATS Resume FAQ Center — Answers & Guides",
+  description:
+    "FAQ hub for ATS resume checker, match scores, keywords, and interview readiness. Job seekers worldwide—methodology, tools, and career guides.",
+  ogTitle: "ATS Resume FAQ Center — Help & Guides",
+  h1: "ATS Resume FAQ Center",
+  primaryKeyword: "ATS resume FAQ",
+  richSnippets: ["FAQPage", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_CONTACT: PageCtrMeta = {

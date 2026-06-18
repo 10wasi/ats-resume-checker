@@ -198,6 +198,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
     },
     { path: "/about", priority: 0.7, changeFrequency: "monthly" },
+    { path: "/methodology", priority: 0.82, changeFrequency: "monthly" },
+    { path: "/faq-center", priority: 0.8, changeFrequency: "monthly" },
     { path: "/contact", priority: 0.7, changeFrequency: "monthly" },
     { path: "/privacy", priority: 0.65, changeFrequency: "monthly" },
     { path: "/terms", priority: 0.65, changeFrequency: "monthly" },

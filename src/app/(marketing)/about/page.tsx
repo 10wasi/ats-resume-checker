@@ -36,18 +36,34 @@ export default function AboutPage() {
         <div className="mt-8 space-y-5 text-base leading-relaxed text-slate-700 sm:text-lg">
           <p>
             ResumeIQ exists because applying for jobs already costs enough time
-            and anxiety. We wanted a fast, honest AI resume analyzer that shows
-            ATS-style signals, keyword gaps, and formatting risks without hiding
-            the useful parts behind a paywall.
+            and anxiety—whether you are in North America, Europe, Asia-Pacific,
+            the Middle East, Africa, or applying for remote roles worldwide. We
+            wanted a fast, honest AI resume analyzer that shows ATS-style signals,
+            keyword gaps, and formatting risks without hiding the useful parts
+            behind a paywall.
           </p>
           <p>
             The site is aimed at job seekers, students, bootcamp grads, and
-            software engineers who need a resume optimization tool that behaves
-            more like a search utility than a subscription product.
+            professionals who need a resume optimization tool that behaves more
+            like a search utility than a subscription product.
           </p>
           <p>
             If the score helps you tighten one bullet, fix one parsing issue, or
-            align your CV with a real posting, that is the whole point.
+            align your CV with a real posting, that is the whole point. Read{" "}
+            <Link
+              href="/methodology"
+              className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/40 underline-offset-4 visited:text-[#22c55e] hover:text-[#16a34a]"
+            >
+              how ATS scoring works
+            </Link>{" "}
+            or browse the{" "}
+            <Link
+              href="/faq-center"
+              className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/40 underline-offset-4 visited:text-[#22c55e] hover:text-[#16a34a]"
+            >
+              FAQ Center
+            </Link>{" "}
+            for transparent answers.
           </p>
           <p>
             Editorial guides in the{" "}
@@ -75,9 +91,9 @@ export default function AboutPage() {
             href="/privacy"
           />
           <TrustCard
-            title="Editorial quality"
-            body="Guides include examples, FAQs, and actionable steps—not thin SEO filler."
-            href="/knowledge-center"
+            title="Scoring methodology"
+            body="Transparent explanation of what ATS checks and how scores are calculated."
+            href="/methodology"
           />
           <TrustCard
             title="Real support"

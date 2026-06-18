@@ -24,14 +24,15 @@ export function HeroSection() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="section-eyebrow">
             <IconSparkle className="h-3.5 w-3.5 shrink-0 text-[#4ade80]" />
-            Free resume checker · fix rejection before you apply again
+            Global ATS resume optimization · free tools
           </p>
           <h1 className="mt-6 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.85rem] lg:leading-[1.1]">
             {CTR_HOME.h1}
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            You are qualified—but your resume may be failing <strong className="font-semibold text-slate-800">screening</strong> before a human reads it. Our free{" "}
-            <strong className="font-semibold text-slate-800">ATS Resume Checker</strong> shows missing keywords, format problems, and match score vs any job—so you fix rejection reasons, not guess.
+            Optimize your resume for applicant tracking systems and improve your chances of getting interviews{" "}
+            <strong className="font-semibold text-slate-800">worldwide</strong>. Our free{" "}
+            <strong className="font-semibold text-slate-800">ATS Resume Checker</strong>, match analyzer, keywords finder, and examples library show what to fix—before you apply locally or remotely.
           </p>
           <div className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
             <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base">
@@ -119,7 +120,7 @@ export function HomeCoreToolsGridSection() {
       badge: "Match score",
     },
     {
-      title: "ATS Resume Examples",
+      title: "Resume Examples Library",
       desc: "See good vs bad layouts, bullet patterns, and ATS resume examples that parse cleanly in 2026.",
       href: "/resume-examples",
       cta: "View examples",
@@ -197,9 +198,16 @@ export function HomeCoreToolsGridSection() {
             Everything you need to improve ATS visibility
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
-            Start with the checker, match to a job post, then use guides,
-            checklists, and AI rewrites to build a stronger application—without
-            paying for a dozen separate tools.
+            Six core tools for global job applications:{" "}
+            <strong className="font-semibold text-slate-800">ATS Resume Checker</strong>,{" "}
+            <strong className="font-semibold text-slate-800">Resume Match Analyzer</strong>,{" "}
+            <strong className="font-semibold text-slate-800">Resume Keywords Finder</strong>,{" "}
+            <strong className="font-semibold text-slate-800">Resume Bullet Generator</strong>,{" "}
+            <strong className="font-semibold text-slate-800">Resume Examples Library</strong>, and{" "}
+            <Link href="/knowledge-center" className="font-semibold text-[#16a34a] underline">
+              ATS optimization guides
+            </Link>
+            —plus AI rewrites and profession keyword lists.
           </p>
         </div>
         <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -671,7 +679,7 @@ export function HomeTrustedBySection() {
   const stats = [
     { value: "Free", label: "No signup required to run your first check" },
     { value: "Minutes", label: "Upload, paste a job post, get actionable fixes" },
-    { value: "US & UK", label: "Built for competitive online application markets" },
+    { value: "Global", label: "Built for job seekers in every region and remote hiring" },
   ];
   return (
     <section className="border-b border-slate-200/70 bg-white py-12 sm:py-14">
@@ -1079,7 +1087,7 @@ export function HomeTrustStrip() {
     },
     {
       title: "Built for competitive markets",
-      body: "Especially helpful when you're applying at volume in the US, UK, or remote-first hiring pools.",
+      body: "Especially helpful when you apply at volume—locally, internationally, or for remote roles worldwide.",
     },
   ];
   return (
@@ -1107,7 +1115,7 @@ export function HomeTrustStrip() {
 }
 
 /**
- * Trust + education grid: ATS context for US/UK job seekers + internal links.
+ * Trust + education grid: ATS context for global job seekers + internal links.
  */
 export function HomeAtsEducationSection() {
   const blocks = [
@@ -1151,8 +1159,8 @@ export function HomeAtsEducationSection() {
             What you are up against—and how resume optimization helps
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
-            Whether you are in the US, UK, or applying remotely, the same rules
-            tend to apply: build an{" "}
+            Whether you apply in North America, Europe, Asia-Pacific, the Middle
+            East, Africa, or remotely, the same rules tend to apply: build an{" "}
             <strong className="font-semibold text-slate-900">
               ATS compatible resume
             </strong>

@@ -59,6 +59,8 @@ export const SITE_DASHBOARD_NAV: SiteNavItem[] = [
 
 export const SITE_COMPANY: SiteNavItem[] = [
   { href: "/about", label: "About" },
+  { href: "/methodology", label: "Methodology" },
+  { href: "/faq-center", label: "FAQ Center" },
   { href: "/contact", label: "Contact" },
 ];
 

@@ -7,6 +7,7 @@ import { buildJobMatchReport } from "@/lib/ats/build-job-match-report";
 import { buildAnalysisExportText, downloadTextFile } from "@/lib/ats/export-analysis";
 import { AnalysisPlatformNextSteps } from "@/components/tools/AnalysisPlatformNextSteps";
 import { AtsPassLikelihoodCard } from "@/components/resume/AtsPassLikelihoodCard";
+import { AnalysisRetentionPanel } from "@/components/resume/AnalysisRetentionPanel";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 type Props = {
@@ -377,6 +378,7 @@ export function ResumeJobMatchResults({
         </div>
       </section>
 
+      <AnalysisRetentionPanel analysis={analysis} variant="match" />
       <AnalysisPlatformNextSteps variant="match" />
 
       <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 sm:p-6">

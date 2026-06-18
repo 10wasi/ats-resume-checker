@@ -96,7 +96,7 @@ export default function UltimateAtsResumeGuidePage() {
               <strong className="font-semibold text-slate-800">
                 ATS friendly resume
               </strong>
-              —for US and UK job seekers tired of silence after submit. Run the{" "}
+              —for job seekers worldwide tired of silence after submit. Run the{" "}
               <Link
                 href={RESUME_CHECKER_PATH}
                 className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/40 underline-offset-4 hover:text-[#16a34a]"

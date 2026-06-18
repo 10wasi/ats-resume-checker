@@ -14,6 +14,7 @@ import { AtsResultsInsightsPanel } from "./AtsResultsInsightsPanel";
 import { PersonalizedImprovementPlan } from "./PersonalizedImprovementPlan";
 import { AiResumeImprovements } from "./AiResumeImprovements";
 import { AtsPassLikelihoodCard } from "./AtsPassLikelihoodCard";
+import { AnalysisRetentionPanel } from "./AnalysisRetentionPanel";
 import { AnalysisPlatformNextSteps } from "@/components/tools/AnalysisPlatformNextSteps";
 
 type Props = {
@@ -1470,6 +1471,7 @@ export function AtsAnalysisResults({
       </div>
 
       <div className="mt-8">
+        <AnalysisRetentionPanel analysis={analysis} variant="checker" />
         <AnalysisPlatformNextSteps variant="checker" />
       </div>
     </div>

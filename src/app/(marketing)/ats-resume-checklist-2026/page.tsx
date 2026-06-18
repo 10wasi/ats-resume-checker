@@ -32,7 +32,7 @@ const KEYWORDS = [
   "ATS resume mistakes",
   "online resume checker",
   "resume ATS test",
-  "US UK job seekers",
+  "global job applications",
 ];
 
 export const metadata = buildCtrMetadata(CTR_ATS_CHECKLIST, {
@@ -103,7 +103,7 @@ export default function AtsResumeChecklistPage() {
               <strong className="font-semibold text-slate-800">
                 ATS Resume Checklist
               </strong>{" "}
-              for US and UK job seekers—covering{" "}
+              for job seekers worldwide—covering{" "}
               <strong className="font-semibold text-slate-800">
                 ATS resume format
               </strong>

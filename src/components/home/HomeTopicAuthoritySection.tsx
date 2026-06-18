@@ -5,6 +5,18 @@ import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 export function HomeTopicAuthoritySection() {
   const pillars = [
     {
+      title: "How ATS Scoring Works",
+      desc: "Transparent methodology: what ATS checks, how scores are calculated, and what we do not claim.",
+      href: "/methodology",
+      badge: "Methodology",
+    },
+    {
+      title: "ATS Resume FAQ Center",
+      desc: "Answers on scoring, tools, interview readiness, and global job applications.",
+      href: "/faq-center",
+      badge: "FAQ",
+    },
+    {
       title: "ATS Knowledge Center",
       desc: "Ten pillar guides on format, keywords, match score, mistakes, and checklist QA.",
       href: "/knowledge-center",

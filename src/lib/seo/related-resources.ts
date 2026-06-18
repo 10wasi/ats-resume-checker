@@ -163,6 +163,16 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     title: "About ResumeIQ",
     description: "Mission, editorial standards, and privacy-first tooling.",
   },
+  methodology: {
+    href: "/methodology",
+    title: "How ATS Scoring Works",
+    description: "Transparent methodology: parse health, keywords, and match scoring.",
+  },
+  faqCenter: {
+    href: "/faq-center",
+    title: "ATS Resume FAQ Center",
+    description: "Answers on scoring, tools, interviews, and global applications.",
+  },
   contact: {
     href: "/contact",
     title: "Contact ResumeIQ",
@@ -231,7 +241,15 @@ const DEFAULT_KEYS = [
 
 /** Curated related clusters per route — avoids generic duplicate lists. */
 const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
-  "/": ["checker", "match", "knowledgeCenter", "careerHub", "ultimateGuide", "atsHub"],
+  "/": ["checker", "match", "methodology", "knowledgeCenter", "careerHub", "faqCenter"],
+  [RESUME_CHECKER_PATH]: [
+    "match",
+    "methodology",
+    "faqCenter",
+    "keywordsFinder",
+    "examples",
+    "checklist",
+  ],
   "/ats-keywords-finder": [
     "checker",
     "match",
@@ -464,8 +482,10 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "careerHub",
     "keywordsGuide",
   ],
-  "/about": ["checker", "careerHub", "knowledgeCenter", "contact", "privacy", "blog"],
-  "/contact": ["checker", "about", "privacy", "terms", "careerHub", "blog"],
+  "/about": ["checker", "methodology", "faqCenter", "careerHub", "knowledgeCenter", "contact"],
+  "/methodology": ["checker", "faqCenter", "atsScoreGuide", "matchScoreGuide", "careerHub", "checklist"],
+  "/faq-center": ["methodology", "checker", "about", "careerHub", "whyNoInterviews", "improveScore"],
+  "/contact": ["checker", "about", "faqCenter", "privacy", "terms", "careerHub"],
   "/privacy": ["terms", "contact", "about", "checker", "careerHub", "blog"],
   "/terms": ["privacy", "contact", "about", "checker", "knowledgeCenter", "blog"],
   "/why-resume-not-getting-interviews": [

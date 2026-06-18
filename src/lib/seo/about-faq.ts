@@ -4,7 +4,7 @@ export const aboutFaqItems: FaqItem[] = [
   {
     question: "What is ResumeIQ?",
     answer:
-      "ResumeIQ is a free resume optimization platform with an ATS resume checker, resume match analyzer, keywords tools, and editorial career guides—built for job seekers who want honest analysis without a subscription paywall.",
+      "ResumeIQ is a free resume optimization platform with an ATS resume checker, resume match analyzer, keywords tools, and editorial career guides—built for job seekers worldwide who want honest analysis without a subscription paywall.",
   },
   {
     question: "Is the ATS resume checker really free?",
