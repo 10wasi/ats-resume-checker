@@ -207,6 +207,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
     },
     { path: "/blog", priority: 0.85, changeFrequency: "weekly" },
+    { path: "/blog/how-ats-works", priority: 0.84, changeFrequency: "weekly" },
+    { path: "/blog/resume-mistakes", priority: 0.84, changeFrequency: "weekly" },
+    { path: "/blog/ats-keywords-guide", priority: 0.84, changeFrequency: "weekly" },
+    { path: "/blog/remote-job-resume-tips", priority: 0.83, changeFrequency: "weekly" },
     {
       path: "/ultimate-ats-resume-guide",
       priority: 0.9,

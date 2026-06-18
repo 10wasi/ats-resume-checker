@@ -1,34 +1,40 @@
 import Link from "next/link";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
-const PILLARS = [
+const FEATURES = [
   {
     title: "ATS Resume Checker",
-    desc: "Get your ATS resume score instantly—parse health, keyword gaps, and format flags.",
+    desc: "Free resume score checker—ATS %, format flags, and keyword gaps instantly.",
     href: RESUME_CHECKER_PATH,
     cta: "Check resume score",
   },
   {
     title: "Resume Match Analyzer",
-    desc: "Resume match score vs any job description—missing keywords and skill gaps.",
+    desc: "Resume match analyzer vs any job post—missing keywords and skill gaps.",
     href: "/resume-match-analyzer",
-    cta: "Match to job post",
+    cta: "Match to job",
   },
   {
-    title: "Resume Keyword Tool",
-    desc: "Extract, compare, and place ATS keywords ethically—from posting to bullets.",
+    title: "Resume Keyword Finder",
+    desc: "Resume keyword analyzer—extract ATS terms from postings and compare ethically.",
     href: "/resume-keyword-tool",
     cta: "Find keywords",
   },
   {
-    title: "Resume Examples Library",
-    desc: "ATS-friendly samples by role—layouts, bullets, and keyword patterns that parse.",
+    title: "Resume Examples",
+    desc: "ATS-friendly resume examples by role—layouts and bullets that parse worldwide.",
     href: "/resume-examples",
     cta: "View examples",
   },
   {
+    title: "AI Resume Suggestions",
+    desc: "AI resume review—bullet rewrites, summary drafts, and improvement suggestions.",
+    href: "/ai-resume-rewrite",
+    cta: "AI suggestions",
+  },
+  {
     title: "ATS Guide Hub",
-    desc: "Pillar guides, blog clusters, and workflows for professional resume optimization.",
+    desc: "Job application optimization guides—format, keywords, remote jobs, and mistakes.",
     href: "/ats-guide",
     cta: "Browse guides",
   },
@@ -43,22 +49,20 @@ export function HomePillarFeaturesSection() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="section-eyebrow mx-auto">Resume optimization platform</p>
+          <p className="section-eyebrow mx-auto">Resume optimization tool</p>
           <h2
             id="pillar-features-heading"
             className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
           >
-            Fix resume issues that block interviews
+            Best resume checker tools—in one platform
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
-            Five connected tools—{" "}
-            <strong className="font-semibold text-slate-800">ATS Resume Checker</strong>,{" "}
-            <strong className="font-semibold text-slate-800">Resume Match Analyzer</strong>,{" "}
-            keyword optimization, examples, and guides—for global job applications.
+            Free <strong className="font-semibold text-slate-800">resume analyzer online</strong>{" "}
+            for international job applications—checker, match, keywords, AI review, and examples.
           </p>
         </div>
         <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {PILLARS.map((item) => (
+          {FEATURES.map((item) => (
             <li key={item.href}>
               <Link
                 href={item.href}

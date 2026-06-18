@@ -3,12 +3,14 @@
 import dynamic from "next/dynamic";
 import {
   useCallback,
+  useEffect,
   useMemo,
   useRef,
   useState,
 } from "react";
 import type { AtsAnalysisResult } from "@/lib/ats/types";
 import { scoreRequestKey } from "@/lib/client/cache-key";
+import { consumeHeroResumeDraft } from "@/lib/client/hero-resume-draft";
 import { Button } from "@/components/ui/Button";
 import { IconUpload } from "@/components/ui/Icons";
 import { ErrorAlert } from "@/components/ui/ErrorAlert";
@@ -122,6 +124,11 @@ export function ResumeCheckerPanel() {
   const scoreCache = useRef(new Map<string, ScoreCacheEntry>());
   const extractInFlight = useRef(false);
   const analyzeInFlight = useRef(false);
+
+  useEffect(() => {
+    const draft = consumeHeroResumeDraft();
+    if (draft) setPasteText(draft);
+  }, []);
 
   const clearScoreCache = useCallback(() => {
     scoreCache.current.clear();

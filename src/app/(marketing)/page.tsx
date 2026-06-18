@@ -3,13 +3,8 @@ import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
 import { HomePlatformJsonLd } from "@/components/seo/HomePlatformJsonLd";
 import { HomeWebApplicationJsonLd } from "@/components/seo/HomeWebApplicationJsonLd";
 import { WebSiteJsonLd } from "@/components/seo/WebSiteJsonLd";
-import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import {
   HeroSection,
-  HomeAtsResumeExamplesSection,
-  HomeAuthorityHubSection,
-  HomeKeywordsGuidePreviewSection,
-  HomeResumeMatchPreviewSection,
   HomeStrongCtaSection,
   HomeTrustedBySection,
   HomeTrustStrip,
@@ -17,7 +12,7 @@ import {
 } from "@/components/home/HomeSections";
 import { HomeGlobalReachSection } from "@/components/home/HomeGlobalReachSection";
 import { HomePillarFeaturesSection } from "@/components/home/HomePillarFeaturesSection";
-import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import { HomeProblemSection } from "@/components/home/HomeProblemSection";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { buildCtrMetadata, CTR_HOME } from "@/lib/seo/ctr-metadata";
 
@@ -35,15 +30,35 @@ const FaqSection = dynamic(
   }
 );
 
+const HomeAuthorityHubSection = dynamic(
+  () =>
+    import("@/components/home/HomeSections").then((m) => ({
+      default: m.HomeAuthorityHubSection,
+    })),
+  { loading: () => null }
+);
+
+const AdPlaceholder = dynamic(
+  () =>
+    import("@/components/monetization/AdPlaceholder").then((m) => ({
+      default: m.AdPlaceholder,
+    })),
+  { loading: () => null }
+);
+
 export const metadata = buildCtrMetadata(CTR_HOME, {
   canonical: "/",
   keywords: [
     "ATS Resume Checker",
-    "resume optimization tool",
-    "resume score checker",
-    "resume keyword analyzer",
-    "resume match analyzer",
-    "resume improvement tool",
+    "Resume Optimization Tool",
+    "Resume Score Checker",
+    "Resume Keyword Analyzer",
+    "Resume Match Analyzer",
+    "CV Scanner Tool",
+    "AI Resume Checker",
+    "Resume Improvement Tool",
+    "resume analyzer free online",
+    "best resume checker tool",
   ],
 });
 
@@ -56,15 +71,12 @@ export default function HomePage() {
       <HomePlatformJsonLd />
       <FaqJsonLd />
       <HeroSection />
+      <HomeProblemSection />
       <HomePillarFeaturesSection />
       <HowItWorksSection />
       <HomeGlobalReachSection />
       <HomeTrustedBySection />
       <HomeTrustStrip />
-      <TestimonialsSection />
-      <HomeResumeMatchPreviewSection />
-      <HomeKeywordsGuidePreviewSection />
-      <HomeAtsResumeExamplesSection />
       <AdPlaceholder
         label="Advertisement · resume tools"
         className="border-b border-slate-100 py-6 sm:py-8"

@@ -5,6 +5,7 @@ import {
   IconSparkle,
   IconUpload,
 } from "@/components/ui/Icons";
+import { HomeHeroPasteForm } from "@/components/home/HomeHeroPasteForm";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 import { CTR_HOME } from "@/lib/seo/ctr-metadata";
 
@@ -30,24 +31,15 @@ export function HeroSection() {
             {CTR_HOME.h1}
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            Fix resume issues that block interviews—worldwide. Our free{" "}
-            <strong className="font-semibold text-slate-800">ATS Resume Checker</strong> and{" "}
-            <strong className="font-semibold text-slate-800">resume optimization tools</strong> show
-            your score, missing keywords, and match % before you apply locally or remotely.
+            Improve your resume score and get more interviews worldwide. Free{" "}
+            <strong className="font-semibold text-slate-800">ATS Resume Checker</strong>,{" "}
+            <strong className="font-semibold text-slate-800">AI resume checker</strong>, and{" "}
+            <strong className="font-semibold text-slate-800">CV scanner tool</strong>—paste
+            below or upload on the next screen.
           </p>
-          <div className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
-            <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base">
-              Check Resume Score
-            </Link>
-            <Link
-              href="/resume-match-analyzer"
-              className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-8 text-base font-semibold text-slate-800 shadow-sm transition hover:border-accent-400 hover:text-accent-500"
-            >
-              Resume match analyzer
-            </Link>
-          </div>
+          <HomeHeroPasteForm />
           <p className="mt-6 text-sm text-slate-500">
-            Trusted by job seekers who wanted clear fixes—not another template. Free, no account, privacy-first processing.
+            Used by job seekers worldwide · Free resume analyzer · No signup required
           </p>
           <ul className="mx-auto mt-8 flex max-w-xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-slate-500">
             <li className="flex items-center gap-1.5">
@@ -652,14 +644,8 @@ export function HomeStrongCtaSection() {
             for job seekers worldwide.
           </p>
           <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
-            <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base">
-              Check Resume Score
-            </Link>
-            <Link
-              href="/resume-match-analyzer"
-              className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-700 bg-slate-900/60 px-8 text-base font-semibold text-white transition hover:border-slate-500 hover:bg-slate-900"
-            >
-              Resume match analyzer
+            <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base font-semibold">
+              Improve Resume Now
             </Link>
           </div>
         </div>
@@ -1384,18 +1370,18 @@ export function HowItWorksSection() {
   const steps = [
     {
       step: "01",
-      title: "Upload your resume",
-      body: "Drop in PDF or DOCX (up to 10 MB). We pull the same kind of text hiring software reads first—so you’re not optimizing a fantasy version of your file.",
+      title: "Paste your resume",
+      body: "Paste text on the homepage or upload PDF/DOCX on the checker—same parsing hiring software uses worldwide.",
     },
     {
       step: "02",
-      title: "Analyze your ATS score",
-      body: "Get your resume ATS score plus structure and keyword signals. Add a job post anytime to sharpen resume optimization for that specific role.",
+      title: "Get your ATS score",
+      body: "See ATS score %, missing keywords, formatting issues, and readability—free resume score checker results in minutes.",
     },
     {
       step: "03",
-      title: "Improve your resume",
-      body: "Apply the fixes that matter—headings, bullets, keywords—then re-check until you’re happy. Export a report when you’re ready to apply for real.",
+      title: "Improve with suggestions",
+      body: "Apply AI resume suggestions, fix keywords, and re-check until your resume optimization score improves.",
     },
   ];
   return (
@@ -1430,7 +1416,7 @@ export function HowItWorksSection() {
             href={RESUME_CHECKER_PATH}
             className="btn-gradient px-8 text-base font-semibold"
           >
-            Analyze My Resume Free
+            Check Resume Score
           </Link>
           <Link
             href="/blog/how-to-make-your-resume-ats-friendly-2026-complete-guide"

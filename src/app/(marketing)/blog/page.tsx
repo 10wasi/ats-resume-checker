@@ -77,8 +77,26 @@ export default function BlogIndexPage() {
         </h1>
         <p className="mt-5 text-lg leading-relaxed text-slate-600">
           Practical articles on ATS keywords, resume match score, ATS friendly
-          resume format, and resume optimization for 2026 job seekers.
+          resume tips, and resume optimization for global job seekers.
         </p>
+      </div>
+
+      <div className="not-prose mx-auto mt-10 grid max-w-5xl gap-4 sm:grid-cols-2">
+        {[
+          { href: "/blog/how-ats-works", title: "How ATS works", desc: "Parsing, filters & scoring worldwide" },
+          { href: "/blog/resume-mistakes", title: "Resume mistakes", desc: "ATS errors that block interviews" },
+          { href: "/blog/ats-keywords-guide", title: "ATS keywords guide", desc: "Resume keywords for ATS placement" },
+          { href: "/blog/remote-job-resume-tips", title: "Remote job tips", desc: "Global & remote application advice" },
+        ].map((hub) => (
+          <Link
+            key={hub.href}
+            href={hub.href}
+            className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-emerald-300"
+          >
+            <p className="font-display text-lg font-bold text-slate-900">{hub.title}</p>
+            <p className="mt-1 text-sm text-slate-600">{hub.desc}</p>
+          </Link>
+        ))}
       </div>
 
       <AdPlaceholder
