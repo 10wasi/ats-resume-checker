@@ -1,6 +1,7 @@
 import type { FaqItem } from "./faq";
 import { aboutFaqItems } from "./about-faq";
 import { methodologyFaqItems } from "./methodology-faq";
+import { howAtsWorksFaqItems } from "./how-ats-works-faq";
 import { careerSuccessHubFaqItems } from "./career-success-hub-faq";
 
 export const FAQ_CENTER_PATH = "/faq-center" as const;
@@ -25,6 +26,12 @@ export const FAQ_CENTER_SECTIONS: FaqCenterSection[] = [
     title: "Scoring methodology",
     href: "/methodology",
     items: methodologyFaqItems,
+  },
+  {
+    id: "how-ats",
+    title: "How ATS works",
+    href: "/how-ats-works",
+    items: howAtsWorksFaqItems,
   },
   {
     id: "workflow",

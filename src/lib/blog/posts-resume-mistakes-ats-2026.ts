@@ -40,7 +40,7 @@ This guide walks through **why resumes get rejected** in automated workflows, th
 
 ## Why ATS rejections are increasing
 
-Hiring volume has not gone down, but recruiter time has not grown to match it. US and UK employers still receive large applicant pools for many roles, especially entry and mid-level positions. Teams use applicant tracking systems and related tools to store resumes, search for skills, and move candidates through stages.
+Hiring volume has not gone down, but recruiter time has not grown to match it. Employers worldwide still receive large applicant pools for many roles, especially entry and mid-level positions. Teams use applicant tracking systems and related tools to store resumes, search for skills, and move candidates through stages.
 
 That means your **job application resume** may be parsed before a human gives it a fair read. Parsing is not magic—it is extraction. If your layout scrambles text order, hides skills in graphics, or uses headings parsers do not recognize, your **resume ATS score** signals (and recruiter search results) can suffer even when your experience is real.
 
@@ -148,7 +148,7 @@ Think of an **ATS friendly resume** as a document that disappears in the right w
 - **Clean export** tested with copy/paste
 - **Role-specific tweaks** to the top third of page one
 
-US and UK norms differ on photos and length, but text-forward layouts help almost everywhere parsers show up.
+Regional norms differ on photos and length, but text-forward layouts help almost everywhere parsers show up.
 
 ## How to improve ATS resume scores
 
@@ -211,7 +211,7 @@ After any layout change or meaningful tailoring. Use the same file you will uplo
 
 ## Final checklist
 
-Before you hit submit on your next US or UK application:
+Before you hit submit on your next application:
 
 - Text selects cleanly from your PDF
 - Headings read Experience, Education, Skills (or close equivalents)

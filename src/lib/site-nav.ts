@@ -1,13 +1,23 @@
 /** Canonical resume / ATS tool path — one entry point for analysis. */
 export const RESUME_CHECKER_PATH = "/resume-checker" as const;
 
+/** SEO pillar paths — internal linking anchors. */
+export const ATS_RESUME_CHECKER_GUIDE_PATH = "/ats-resume-checker" as const;
+export const RESUME_MATCH_ANALYZER_PATH = "/resume-match-analyzer" as const;
+export const RESUME_KEYWORD_TOOL_PATH = "/resume-keyword-tool" as const;
+export const RESUME_EXAMPLES_PATH = "/resume-examples" as const;
+export const ATS_GUIDE_PATH = "/ats-guide" as const;
+export const HOW_ATS_WORKS_PATH = "/how-ats-works" as const;
+
 /** Internal routes and labels — edit here to update links app-wide. */
 export type SiteNavItem = { readonly href: string; readonly label: string };
 
 /** Product links (footer + dashboard footer). */
 export const SITE_TOOLS: SiteNavItem[] = [
-  { href: RESUME_CHECKER_PATH, label: "Resume & ATS checker" },
-  { href: "/resume-job-description-match", label: "Resume job match analyzer" },
+  { href: RESUME_CHECKER_PATH, label: "ATS Resume Checker" },
+  { href: "/resume-match-analyzer", label: "Resume match analyzer" },
+  { href: "/resume-keyword-tool", label: "Resume keyword tool" },
+  { href: "/resume-job-description-match", label: "Resume job match tool" },
   { href: "/resume-keywords", label: "Resume keywords database" },
   { href: "/ats-keywords-finder", label: "ATS keywords finder" },
   { href: "/resume-bullet-generator", label: "Resume bullet generator" },
@@ -18,6 +28,8 @@ export const SITE_TOOLS: SiteNavItem[] = [
   { href: "/career-success-hub", label: "Career Success Hub" },
   { href: "/knowledge-center", label: "ATS Knowledge Center" },
   { href: "/resume-examples", label: "Resume examples library" },
+  { href: "/ats-guide", label: "ATS guide hub" },
+  { href: "/how-ats-works", label: "How ATS works" },
   { href: "/ats-resume-hub", label: "ATS resume hub" },
   { href: "/ultimate-ats-resume-guide", label: "Ultimate ATS guide" },
   { href: "/ats-resume-checklist-2026", label: "ATS resume checklist" },
@@ -59,6 +71,7 @@ export const SITE_DASHBOARD_NAV: SiteNavItem[] = [
 
 export const SITE_COMPANY: SiteNavItem[] = [
   { href: "/about", label: "About" },
+  { href: "/how-ats-works", label: "How ATS works" },
   { href: "/methodology", label: "Methodology" },
   { href: "/faq-center", label: "FAQ Center" },
   { href: "/contact", label: "Contact" },

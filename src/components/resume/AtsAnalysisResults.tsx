@@ -1471,7 +1471,12 @@ export function AtsAnalysisResults({
       </div>
 
       <div className="mt-8">
-        <AnalysisRetentionPanel analysis={analysis} variant="checker" />
+        <AnalysisRetentionPanel
+          analysis={analysis}
+          variant="checker"
+          onRecheck={onRecheck}
+          recheckLoading={recheckLoading}
+        />
         <AnalysisPlatformNextSteps variant="checker" />
       </div>
     </div>

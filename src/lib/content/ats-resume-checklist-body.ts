@@ -63,7 +63,7 @@ Use all three in that order when quality matters: structure first, checklist sec
 
 ### Who this checklist is for
 
-This resource is built for job seekers who apply online in the US and UK—corporate roles, healthcare, tech, operations, sales, and early-career paths included. If you upload PDFs to Workday, Greenhouse, Lever, Taleo, or similar portals, these checks apply even when the employer never mentions “ATS” in the job ad.
+This resource is built for job seekers who apply online worldwide—corporate roles, healthcare, tech, operations, sales, and early-career paths included. If you upload PDFs to Workday, Greenhouse, Lever, Taleo, or similar portals, these checks apply even when the employer never mentions “ATS” in the job ad.
 
 Career changers should pay extra attention to the headline and summary sections: parsers and humans both need help connecting your old lane to the new one. International applicants should keep credentials and location intent explicit in plain text where postings require them—always verify legal requirements for your situation; this guide focuses on readability and searchability.
 
@@ -75,7 +75,7 @@ A first thorough run might take 25–35 minutes. After that, a tailored pass for
 
 **ATS compatibility** is not about gaming robots. It is about not accidentally hiding your career behind design choices that look fine on your laptop and fail in a portal upload.
 
-Most mid-size and large employers in the US and UK store applications in hiring software. Recruiters search that database with concrete terms: tools, titles, certifications, locations. If your **ATS friendly resume** never surfaces in those searches, you may never get a fair human read—even when you are qualified.
+Most mid-size and large employers worldwide store applications in hiring software. Recruiters search that database with concrete terms: tools, titles, certifications, locations. If your **ATS friendly resume** never surfaces in those searches, you may never get a fair human read—even when you are qualified.
 
 Compatibility also protects you from self-sabotage:
 

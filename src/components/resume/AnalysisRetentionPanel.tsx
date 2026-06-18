@@ -15,9 +15,16 @@ const EXAMPLE_LINKS = [
 type Props = {
   analysis: AtsAnalysisResult;
   variant?: "checker" | "match";
+  onRecheck?: () => void;
+  recheckLoading?: boolean;
 };
 
-export function AnalysisRetentionPanel({ analysis, variant = "checker" }: Props) {
+export function AnalysisRetentionPanel({
+  analysis,
+  variant = "checker",
+  onRecheck,
+  recheckLoading = false,
+}: Props) {
   const missing = analysis.missing_keywords.slice(0, 8);
   const formatFlags = analysis.formatting_issues.slice(0, 4);
   const grammarFlags = analysis.grammar_issues.slice(0, 3);
@@ -28,6 +35,7 @@ export function AnalysisRetentionPanel({ analysis, variant = "checker" }: Props)
 
   const path =
     variant === "match" ? "/resume-job-description-match" : RESUME_CHECKER_PATH;
+  const atsScore = analysis.ats_score ?? 0;
 
   return (
     <div className="not-prose mt-10 space-y-6">
@@ -38,10 +46,24 @@ export function AnalysisRetentionPanel({ analysis, variant = "checker" }: Props)
         <h3 className="mt-2 font-display text-lg font-bold text-slate-900">
           Your next moves after this scan
         </h3>
-        <p className="mt-2 text-sm text-slate-600">
-          Re-run the checker after edits. Tailor each application to the job
-          posting—whether you apply locally or for remote roles worldwide.
-        </p>
+
+        <div className="mt-4 flex flex-wrap items-center gap-4 rounded-xl border border-emerald-100 bg-white/80 px-4 py-3">
+          <div>
+            <p className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
+              ATS resume score
+            </p>
+            <p className="font-display text-3xl font-bold tabular-nums text-[#16a34a]">
+              {Math.round(atsScore)}%
+            </p>
+          </div>
+          <p className="max-w-md text-sm text-slate-600">
+            Re-run after edits to track improvement. Use the{" "}
+            <Link href="/resume-match-analyzer" className="font-semibold text-[#16a34a] underline">
+              resume match analyzer
+            </Link>{" "}
+            for each job posting.
+          </p>
+        </div>
 
         {missing.length > 0 ? (
           <div className="mt-5">
@@ -60,17 +82,17 @@ export function AnalysisRetentionPanel({ analysis, variant = "checker" }: Props)
               ))}
             </ul>
             <Link
-              href="/resume-keywords-missing"
+              href="/resume-keyword-tool"
               className="mt-3 inline-block text-xs font-semibold text-[#16a34a] underline"
             >
-              How to fix missing keywords →
+              Resume keyword analyzer →
             </Link>
           </div>
         ) : null}
 
         {suggestions.length > 0 ? (
           <div className="mt-5">
-            <p className="text-sm font-semibold text-slate-900">Suggested improvements</p>
+            <p className="text-sm font-semibold text-slate-900">Improvement suggestions</p>
             <ul className="mt-2 space-y-2 text-sm text-slate-700">
               {suggestions.map((s, i) => (
                 <li key={`${s.type}-${i}`} className="flex gap-2">
@@ -85,7 +107,7 @@ export function AnalysisRetentionPanel({ analysis, variant = "checker" }: Props)
         ) : null}
 
         <div className="mt-5">
-          <p className="text-sm font-semibold text-slate-900">Relevant resume examples</p>
+          <p className="text-sm font-semibold text-slate-900">Recommended resume examples</p>
           <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm">
             {EXAMPLE_LINKS.map((ex) => (
               <li key={ex.href}>
@@ -97,29 +119,40 @@ export function AnalysisRetentionPanel({ analysis, variant = "checker" }: Props)
           </ul>
         </div>
 
-        <div className="mt-5 flex flex-wrap gap-3">
+        <div className="mt-6 flex flex-wrap gap-3">
+          {onRecheck ? (
+            <button
+              type="button"
+              onClick={onRecheck}
+              disabled={recheckLoading}
+              className="inline-flex h-11 items-center justify-center rounded-xl bg-[#16a34a] px-5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#15803d] disabled:opacity-60"
+            >
+              {recheckLoading ? "Checking…" : "Improve Resume Again"}
+            </button>
+          ) : (
+            <Link
+              href={RESUME_CHECKER_PATH}
+              className="inline-flex h-11 items-center justify-center rounded-xl bg-[#16a34a] px-5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#15803d]"
+            >
+              Improve Resume Again
+            </Link>
+          )}
           <Link
             href="/how-to-improve-resume-score"
-            className="text-sm font-semibold text-slate-800 underline decoration-slate-300 hover:text-[#16a34a]"
+            className="inline-flex h-11 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-800 transition hover:border-emerald-300"
           >
             Improve resume score
           </Link>
           <Link
-            href="/resume-job-description-match"
-            className="text-sm font-semibold text-slate-800 underline decoration-slate-300 hover:text-[#16a34a]"
+            href="/ats-guide"
+            className="inline-flex h-11 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-800 transition hover:border-emerald-300"
           >
-            Match to job posting
-          </Link>
-          <Link
-            href="/methodology"
-            className="text-sm font-semibold text-slate-800 underline decoration-slate-300 hover:text-[#16a34a]"
-          >
-            How scoring works
+            ATS guide hub
           </Link>
         </div>
       </section>
 
-      <RelatedResources path={path} excludeHref={path} limit={4} />
+      <RelatedResources path={path} excludeHref={path} limit={5} />
     </div>
   );
-};
+}

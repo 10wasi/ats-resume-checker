@@ -44,7 +44,7 @@ You did everything right—or so you thought. You tailored your cover letter. Yo
 
 Then you hit submit and the silence started.
 
-If you are trying to **beat ATS filters** in 2026, you are not alone, and you are not failing because you lack talent. Most online applications in the US and UK pass through applicant tracking software before a recruiter gives you a fair read. The filter is often mechanical: parsing, keywords, structure—not a secret vote on your worth.
+If you are trying to **beat ATS filters** in 2026, you are not alone, and you are not failing because you lack talent. Most online applications worldwide pass through applicant tracking software before a recruiter gives you a fair read. The filter is often mechanical: parsing, keywords, structure—not a secret vote on your worth.
 
 This guide is a practical playbook for job seekers who want an **ATS friendly resume** that survives software *and* still sounds human when a person finally opens the file. We will cover how filters work, which **ATS resume mistakes** cost interviews, and how to **improve ATS score** signals honestly—without turning your career story into keyword soup.
 
@@ -190,9 +190,9 @@ Write for both audiences: machine-legible structure plus human skim lines.
 
 Our shorter piece on [how recruiters read your resume](/blog/how-recruiters-read-your-resume) pairs well with ATS formatting advice.
 
-### US vs UK nuance
+### Regional nuance
 
-Parsers behave similarly; culture differs. Match spelling and title norms to your target market (US vs UK English). Keep critical skills in plain text regardless of whether you call the document a CV or resume.
+Parsers behave similarly; culture differs. Match spelling and title norms to your target market (regional English variants). Keep critical skills in plain text regardless of whether you call the document a CV or resume.
 
 ### The ten-second skim test
 
@@ -236,7 +236,7 @@ These **ATS resume mistakes** show up in almost every batch of applications we r
 ### Bullet upgrade example
 
 - **Weak:** “Worked on marketing campaigns across channels.”
-- **Stronger:** “Owned paid social for UK launch; cut CPA 18% over two quarters while scaling spend 2x.”
+- **Stronger:** “Owned paid social for a regional launch; cut CPA 18% over two quarters while scaling spend 2x.”
 
 Same person. Different findability.
 

@@ -3,6 +3,9 @@ import { resumeOptimizationEntry } from "./resume-optimization";
 import { resumeScoreCheckerEntry } from "./resume-score-checker";
 import { resumeKeywordsCheckerEntry } from "./resume-keywords-checker";
 import { atsResumeCheckerEntry } from "./ats-resume-checker";
+import { resumeMatchAnalyzerEntry } from "./resume-match-analyzer";
+import { resumeKeywordToolEntry } from "./resume-keyword-tool";
+import { atsGuideEntry } from "./ats-guide";
 import { whyResumeNotGettingInterviewsEntry } from "@/lib/content/search-intent/why-resume-not-getting-interviews";
 import { whyResumeGetsRejectedEntry } from "@/lib/content/search-intent/why-resume-gets-rejected";
 import { resumeNotPassingAtsEntry } from "@/lib/content/search-intent/resume-not-passing-ats";
@@ -23,6 +26,9 @@ export const CAREER_LANDING_PAGES: CareerLandingEntry[] = [
   resumeScoreCheckerEntry,
   resumeKeywordsCheckerEntry,
   atsResumeCheckerEntry,
+  resumeMatchAnalyzerEntry,
+  resumeKeywordToolEntry,
+  atsGuideEntry,
   whyResumeNotGettingInterviewsEntry,
   whyResumeGetsRejectedEntry,
   resumeNotPassingAtsEntry,
@@ -90,8 +96,32 @@ export const CAREER_HUB_INDEX: CareerHubIndexItem[] = [
     badge: "Tool",
   },
   {
+    id: "resume-match-analyzer",
+    title: "Resume Match Analyzer",
+    description:
+      "Resume match score vs any job description—missing keywords, skill gaps, and tailoring steps.",
+    path: "/resume-match-analyzer",
+    badge: "Tool",
+  },
+  {
+    id: "resume-keyword-tool",
+    title: "Resume Keyword Tool",
+    description:
+      "ATS keyword analyzer hub—finders, checkers, and profession keyword lists.",
+    path: "/resume-keyword-tool",
+    badge: "Tool",
+  },
+  {
+    id: "ats-guide",
+    title: "ATS Guide Hub",
+    description:
+      "Pillar guides and blog clusters for professional resume optimization worldwide.",
+    path: "/ats-guide",
+    badge: "Guide",
+  },
+  {
     id: "resume-match",
-    title: "Resume Match Tool",
+    title: "Resume Match Analyzer",
     description:
       "Resume match score vs any job description—missing skills, keyword gaps, and next steps.",
     path: "/resume-job-description-match",

@@ -8,18 +8,15 @@ import {
   HeroSection,
   HomeAtsResumeExamplesSection,
   HomeAuthorityHubSection,
-  HomeChecklistSection,
-  HomeCoreToolsGridSection,
   HomeKeywordsGuidePreviewSection,
-  HomeResumeKeywordsByProfessionSection,
   HomeResumeMatchPreviewSection,
-  HomeRoleExamplesSection,
   HomeStrongCtaSection,
   HomeTrustedBySection,
   HomeTrustStrip,
+  HowItWorksSection,
 } from "@/components/home/HomeSections";
 import { HomeGlobalReachSection } from "@/components/home/HomeGlobalReachSection";
-import { HomeTopicAuthoritySection } from "@/components/home/HomeTopicAuthoritySection";
+import { HomePillarFeaturesSection } from "@/components/home/HomePillarFeaturesSection";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { buildCtrMetadata, CTR_HOME } from "@/lib/seo/ctr-metadata";
@@ -42,11 +39,11 @@ export const metadata = buildCtrMetadata(CTR_HOME, {
   canonical: "/",
   keywords: [
     "ATS Resume Checker",
-    "ATS friendly resume",
-    "resume optimization",
-    "ATS keywords",
-    "ATS resume examples",
-    "resume match score",
+    "resume optimization tool",
+    "resume score checker",
+    "resume keyword analyzer",
+    "resume match analyzer",
+    "resume improvement tool",
   ],
 });
 
@@ -59,18 +56,15 @@ export default function HomePage() {
       <HomePlatformJsonLd />
       <FaqJsonLd />
       <HeroSection />
-      <HomeTrustedBySection />
-      <HomeCoreToolsGridSection />
+      <HomePillarFeaturesSection />
+      <HowItWorksSection />
       <HomeGlobalReachSection />
-      <HomeTopicAuthoritySection />
+      <HomeTrustedBySection />
       <HomeTrustStrip />
       <TestimonialsSection />
-      <HomeAtsResumeExamplesSection />
-      <HomeChecklistSection />
       <HomeResumeMatchPreviewSection />
       <HomeKeywordsGuidePreviewSection />
-      <HomeResumeKeywordsByProfessionSection />
-      <HomeRoleExamplesSection />
+      <HomeAtsResumeExamplesSection />
       <AdPlaceholder
         label="Advertisement · resume tools"
         className="border-b border-slate-100 py-6 sm:py-8"

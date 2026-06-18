@@ -36,7 +36,7 @@ You finally open a job post for a role you could actually do. The stack matches 
 
 When nothing comes back, it is tempting to assume the market is broken or that you need another certification. Sometimes the fix is humbler: your resume never spoke the same language as the posting. Not because you lied, but because **ATS resume keywords** in tech hiring need to match how recruiters search and how parsers bucket your skills.
 
-This guide is for people in the US, UK, and anywhere else companies hire engineers at volume. You will learn how systems scan resumes, which **tech resume keywords** usually matter for software roles, how frontend and backend tracks differ, and how to avoid the classic mistakes that tank your **resume ATS score** without you noticing.
+This guide is for people in competitive online hiring markets worldwide and anywhere else companies hire engineers at volume. You will learn how systems scan resumes, which **tech resume keywords** usually matter for software roles, how frontend and backend tracks differ, and how to avoid the classic mistakes that tank your **resume ATS score** without you noticing.
 
 If you want a practical pass on your own file, you can [check your ATS score](/resume-checker) with the same resume you plan to upload—not a draft that lives only in Google Docs.
 
@@ -153,7 +153,7 @@ If you want a broader keyword strategy beyond engineering, our [best resume keyw
 
 Beyond stack lists, recruiters often search for hiring signals that cross roles.
 
-Examples you might see in US and UK job markets (only include what matches your background):
+Examples you might see in global job markets (only include what matches your background):
 
 - **Seniority cues:** tech lead, staff engineer, principal (if true)
 - **Ownership:** owned roadmap, mentored engineers, led technical design

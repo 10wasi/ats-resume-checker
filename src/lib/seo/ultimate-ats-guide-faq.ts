@@ -20,7 +20,7 @@ export const ultimateAtsGuideFaqItems: FaqItem[] = [
   {
     question: "What is the best ATS resume format for most job seekers?",
     answer:
-      "For most US and UK applications, a single-column PDF with standard section titles (Experience, Education, Skills), 10.5–12 pt body text, and normal margins works best. Avoid putting must-read content in images, headers/footers only, or complex tables.",
+      "For most global online applications, a single-column PDF with standard section titles (Experience, Education, Skills), 10.5–12 pt body text, and normal margins works best. Avoid putting must-read content in images, headers/footers only, or complex tables.",
   },
   {
     question: "Are ATS keywords just copying the job description?",

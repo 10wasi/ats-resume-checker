@@ -2,7 +2,7 @@ import type { BlogPost } from "./types";
 
 /**
  * Suggested image alt text (for featured/cover or in-article assets):
- * 1. "Stressed job seeker in the UK reading a resume on a laptop at a kitchen table, soft morning light"
+ * 1. "Stressed job seeker reading a resume on a laptop at a kitchen table, soft morning light"
  * 2. "Simple diagram: stack of digital resumes flowing into a filter labeled applicant tracking system"
  * 3. "Side-by-side comparison of a decorative two-column resume and a clean single-column ATS friendly resume"
  * 4. "Recruiter in an office skimming candidate profiles on a wide monitor with highlighter and coffee"
@@ -44,7 +44,7 @@ export const qualifiedCandidatesRejected2026Post: BlogPost = {
 
 You update your resume. You tighten the wording. You apply to roles that look like a genuine fit. Then your inbox goes quiet—not the polite “thanks, but no thanks” quiet, the kind of quiet that makes you stare at your ceiling at 1 a.m. wondering if you accidentally peaked in 2019.
 
-If that hits a little close to home, you are in very good company. In 2026, across the US, the UK, and competitive remote markets, a huge share of applications never reaches a human in any meaningful way. The gate is often an applicant tracking system (ATS) and a recruiter doing damage control with too many files and too little time.
+If that hits a little close to home, you are in very good company. In 2026, across competitive online hiring markets worldwide and competitive remote markets, a huge share of applications never reaches a human in any meaningful way. The gate is often an applicant tracking system (ATS) and a recruiter doing damage control with too many files and too little time.
 
 Here is the part people rarely say out loud: **you can be qualified, likable, and “good on paper” and still lose on mechanics**. Not because you failed. Because your paper did not travel cleanly through the digital hallway.
 
@@ -164,7 +164,7 @@ High-impact formatting habits:
 - **No critical skills trapped in icons, charts, or images**.
 - **Consistent dates** and titles—messy metadata reads like noisy data.
 
-This is also where people in the US vs the UK often get tripped up: spelling and phrasing differ. That is fine—just match your target market so you look locally fluent, not inconsistent.
+This is also where people applying across different regions often get tripped up: spelling and phrasing differ. That is fine—just match your target market so you look locally fluent, not inconsistent.
 
 For templates and layout debates without the mythology, see [best ATS resume format for 2026](/blog/best-ats-resume-format-2026-templates-tips).
 
@@ -210,7 +210,7 @@ Often because your application never cleared early filters: parsing issues, miss
 
 ### Does every company use ATS?
 
-Many mid-size and large employers do, especially in the US and UK. Smaller teams may use lighter tools—but the same habits (clean text, clear headings, honest keywords) still help because humans skim the same way.
+Many mid-size and large employers do, especially in competitive online hiring markets worldwide. Smaller teams may use lighter tools—but the same habits (clean text, clear headings, honest keywords) still help because humans skim the same way.
 
 ### Will a higher ATS score guarantee interviews?
 

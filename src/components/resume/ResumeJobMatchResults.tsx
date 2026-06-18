@@ -378,7 +378,12 @@ export function ResumeJobMatchResults({
         </div>
       </section>
 
-      <AnalysisRetentionPanel analysis={analysis} variant="match" />
+      <AnalysisRetentionPanel
+        analysis={analysis}
+        variant="match"
+        onRecheck={onRecheck}
+        recheckLoading={recheckLoading}
+      />
       <AnalysisPlatformNextSteps variant="match" />
 
       <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 sm:p-6">

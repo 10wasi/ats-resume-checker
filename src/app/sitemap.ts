@@ -92,6 +92,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
     },
     {
+      path: "/resume-match-analyzer",
+      priority: 0.93,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/resume-keyword-tool",
+      priority: 0.92,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/ats-guide",
+      priority: 0.93,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/how-ats-works",
+      priority: 0.84,
+      changeFrequency: "monthly",
+    },
+    {
       path: "/ats-keywords-finder",
       priority: 0.92,
       changeFrequency: "weekly",

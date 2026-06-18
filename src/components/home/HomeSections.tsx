@@ -30,19 +30,20 @@ export function HeroSection() {
             {CTR_HOME.h1}
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            Optimize your resume for applicant tracking systems and improve your chances of getting interviews{" "}
-            <strong className="font-semibold text-slate-800">worldwide</strong>. Our free{" "}
-            <strong className="font-semibold text-slate-800">ATS Resume Checker</strong>, match analyzer, keywords finder, and examples library show what to fix—before you apply locally or remotely.
+            Fix resume issues that block interviews—worldwide. Our free{" "}
+            <strong className="font-semibold text-slate-800">ATS Resume Checker</strong> and{" "}
+            <strong className="font-semibold text-slate-800">resume optimization tools</strong> show
+            your score, missing keywords, and match % before you apply locally or remotely.
           </p>
           <div className="mt-10 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
             <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base">
-              Check My Resume Free
+              Check Resume Score
             </Link>
             <Link
-              href="/why-resume-not-getting-interviews"
+              href="/resume-match-analyzer"
               className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-8 text-base font-semibold text-slate-800 shadow-sm transition hover:border-accent-400 hover:text-accent-500"
             >
-              Why no interviews?
+              Resume match analyzer
             </Link>
           </div>
           <p className="mt-6 text-sm text-slate-500">
@@ -643,29 +644,22 @@ export function HomeStrongCtaSection() {
             Free · No account required
           </p>
           <h2 className="mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Ready to stop losing interviews to ATS filters?
+            Improve your resume in minutes—then apply with confidence
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-slate-300">
-            Upload your resume, paste a job description, and walk away knowing
-            what to fix. Free{" "}
-            <strong className="font-semibold text-white">ATS Resume Checker</strong>
-            , missing{" "}
-            <strong className="font-semibold text-white">ATS keywords</strong>
-            ,{" "}
-            <strong className="font-semibold text-white">ATS resume examples</strong>
-            , and a clear path to an{" "}
-            <strong className="font-semibold text-white">ATS friendly resume</strong>
-            —in one session.
+            Get your ATS resume score, fix missing keywords, and raise match % with free{" "}
+            <strong className="font-semibold text-white">resume optimization tools</strong>—built
+            for job seekers worldwide.
           </p>
           <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
             <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base">
-              Analyze My Resume Free
+              Check Resume Score
             </Link>
             <Link
-              href="/resume-job-description-match"
+              href="/resume-match-analyzer"
               className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-700 bg-slate-900/60 px-8 text-base font-semibold text-white transition hover:border-slate-500 hover:bg-slate-900"
             >
-              Get resume match score
+              Resume match analyzer
             </Link>
           </div>
         </div>

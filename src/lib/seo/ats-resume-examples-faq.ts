@@ -14,7 +14,7 @@ export const atsResumeExamplesFaqItems: FaqItem[] = [
   {
     question: "Do ATS resume examples need a photo?",
     answer:
-      "US and UK ATS workflows rarely require photos, and image headers can interfere with parsing. Skip the headshot for upload versions unless a specific employer or region expects one.",
+      "Regional norms differ on photos and length, but text-forward layouts help almost everywhere parsers are used.",
   },
   {
     question: "How long should ATS resume examples be?",

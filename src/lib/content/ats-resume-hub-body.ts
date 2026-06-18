@@ -118,11 +118,11 @@ Picture hiring software as a mailroom plus search engine:
 
 **ATS resume rejection** often happens when step two garbles your layout or step four cannot find honest terms you actually possess. The hub targets those steps with specific guides—not generic motivation.
 
-### US vs UK job seekers
+### Global job seekers
 
 CV versus resume labeling differs; parser habits are similar. Match spelling to your target market. Keep licenses and work authorization language explicit where postings require it—always verify legal requirements for your situation. Structure rules transfer: plain text, standard headings, proof in bullets.
 
-UK readers: [ATS friendly CV tips](/blog/ats-friendly-cv-tips). US readers: prioritize one-column PDFs for portal uploads unless DOCX is required.
+For CV-focused guidance, see [ATS friendly CV tips](/blog/ats-friendly-cv-tips). For portal uploads, prioritize one-column PDFs unless DOCX is required.
 
 ## Start here: the ATS Resume Checker
 
@@ -306,7 +306,7 @@ That flow mirrors [ATS resume examples](/ats-resume-examples)—copy structure, 
 
 - **Freshers:** [ATS resume tips for freshers](/blog/ats-resume-tips-for-freshers-2026)
 - **Tech:** [Software engineer resume guide](/blog/software-engineer-resume-guide) + [tech keywords](/blog/best-ats-resume-keywords-tech-jobs-2026)
-- **UK CV norms:** [ATS friendly CV tips](/blog/ats-friendly-cv-tips)
+- **Global CV/resume guidance:** [ATS friendly CV tips](/blog/ats-friendly-cv-tips)
 - **Interviews:** [Best resume format for job interviews](/blog/best-resume-format-job-interviews-2026)
 
 ## When resumes get rejected (diagnostics hub)

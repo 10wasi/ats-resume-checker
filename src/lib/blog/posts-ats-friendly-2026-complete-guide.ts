@@ -48,7 +48,7 @@ Most job seekers think ATS is a mysterious black box. In reality, it is usually 
 
 The challenge is scale.
 
-US and UK employers often receive hundreds of resumes for one opening. Recruiters do not have time to manually review every file line by line. So systems are used to store, parse, search, and sort candidates by role fit.
+Employers worldwide often receive hundreds of resumes for one opening. Recruiters do not have time to manually review every file line by line. So systems are used to store, parse, search, and sort candidates by role fit.
 
 If your resume is clear, structured, and aligned with the role, it becomes easier to find and shortlist.
 
@@ -284,7 +284,7 @@ If all of these are done, your application is in a stronger position than most.
 
 A strong **ATS friendly resume** is not about gaming software. It is about clarity, relevance, and confidence. When your content is readable, role-aligned, and backed by proof, you give both machines and humans a better reason to move you forward.
 
-If your goal is to **improve resume score**, get more interviews, and build real momentum in the US/UK market, keep it simple: optimize, test, submit, and iterate.
+If your goal is to **improve resume score**, get more interviews, and build real momentum in global job markets, keep it simple: optimize, test, submit, and iterate.
 
 **Try our free ATS Resume Checker tool to instantly analyze your resume and improve your chances of getting shortlisted.**
 

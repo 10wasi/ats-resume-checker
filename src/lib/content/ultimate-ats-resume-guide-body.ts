@@ -4,7 +4,7 @@
  * Suggested URL slug: ultimate-ats-resume-guide (see ULTIMATE_ATS_GUIDE_PATH)
  *
  * Suggested image alt text (hero, social, or future inline images):
- * 1. "Job seeker in the US reviewing a printed resume next to a laptop showing an ATS resume checker score"
+ * 1. "Job seeker reviewing a printed resume next to a laptop showing an ATS resume checker score"
  * 2. "Simple diagram of resumes entering an applicant tracking system funnel with search and filter labels"
  * 3. "Side-by-side comparison: cluttered two-column resume versus clean single-column ATS friendly resume"
  * 4. "Recruiter skimming resumes on a large monitor with highlighting and coffee cup on desk"
@@ -21,7 +21,7 @@ export const ultimateAtsGuideSeo = {
 } as const;
 
 export const ultimateAtsGuideImageAlts = [
-  "Job seeker in the US reviewing a printed resume next to a laptop showing an ATS resume checker score",
+  "Job seeker reviewing a printed resume next to a laptop showing an ATS resume checker score",
   "Simple diagram of resumes entering an applicant tracking system funnel with search and filter labels",
   "Side-by-side comparison: cluttered two-column resume versus clean single-column ATS friendly resume",
   "Recruiter skimming resumes on a large monitor with highlighting and coffee cup on desk",
@@ -99,11 +99,11 @@ Separating **true mismatch** from **fixable issues** is a career skill. If you a
 
 For the emotional side of ghosting, read [why qualified candidates still get rejected in 2026](/blog/why-qualified-candidates-still-get-rejected-2026)—it pairs well with this technical guide.
 
-### US vs UK language: small differences, same parser reality
+### Regional language: small differences, same parser reality
 
-If you are applying in the **United States**, keep spelling and titles aligned with American postings (“license,” “honors,” common US role titles). If you are applying in the **United Kingdom**, match UK spelling where it is natural (“organise,” “programme” where appropriate) and the employer’s language.
+Match spelling and title norms to **your target employer's market**—whether you apply in North America, Europe, Asia-Pacific, the Middle East, Africa, or for remote international teams. Mirror the posting's language when your experience supports it.
 
-The parser does not “prefer” one country—it prefers **consistency** and **plain text**. Mixing US and UK spelling randomly can look like sloppiness to humans even if software still reads the file.
+The parser does not “prefer” one country—it prefers **consistency** and **plain text**. Mixing regional spelling randomly can look like sloppiness to humans even if software still reads the file.
 
 ### When silence is not ATS (be kind to yourself)
 
@@ -138,7 +138,7 @@ These **resume formatting tips** are not about looking fancy. They are about **A
 - Do not trap must-have skills inside icons, skill bars, or image-only lines.
 - Logos and photos may be culturally expected in some regions—still keep critical skills in plain text.
 
-If you want template-level detail, our [ATS resume format templates and tips for 2026](/blog/best-ats-resume-format-2026-templates-tips) expands on what “safe” looks like for US and UK seekers.
+If you want template-level detail, our [ATS resume format templates and tips for 2026](/blog/best-ats-resume-format-2026-templates-tips) expands on what “safe” looks like for global job seekers.
 
 ### Accessibility-adjacent habits that help ATS (and humans)
 

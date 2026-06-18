@@ -13,6 +13,26 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     title: "ATS Resume Checker",
     description: "Free ATS score, keyword gaps, format flags, and AI rewrites.",
   },
+  matchAnalyzer: {
+    href: "/resume-match-analyzer",
+    title: "Resume Match Analyzer",
+    description: "Resume match score vs job description with missing keywords.",
+  },
+  keywordTool: {
+    href: "/resume-keyword-tool",
+    title: "Resume Keyword Tool",
+    description: "ATS keyword analyzer hub—finders, checkers, and profession lists.",
+  },
+  atsGuide: {
+    href: "/ats-guide",
+    title: "ATS Guide Hub",
+    description: "Resume optimization guides, blog clusters, and workflows.",
+  },
+  howAtsWorks: {
+    href: "/how-ats-works",
+    title: "How ATS Works",
+    description: "What applicant tracking systems check on resumes worldwide.",
+  },
   atsResumeCheckerGuide: {
     href: "/ats-resume-checker",
     title: "How ATS Resume Checker Works",
@@ -232,23 +252,55 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
 
 const DEFAULT_KEYS = [
   "checker",
-  "match",
-  "keywordsFinder",
-  "checklist",
-  "knowledgeCenter",
-  "careerHub",
+  "matchAnalyzer",
+  "keywordTool",
+  "examples",
+  "atsGuide",
+  "howAtsWorks",
 ] as const;
 
 /** Curated related clusters per route — avoids generic duplicate lists. */
 const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
-  "/": ["checker", "match", "methodology", "knowledgeCenter", "careerHub", "faqCenter"],
+  "/": ["checker", "matchAnalyzer", "keywordTool", "examples", "atsGuide", "howAtsWorks"],
   [RESUME_CHECKER_PATH]: [
-    "match",
+    "matchAnalyzer",
+    "keywordTool",
+    "howAtsWorks",
     "methodology",
-    "faqCenter",
-    "keywordsFinder",
     "examples",
-    "checklist",
+    "atsGuide",
+  ],
+  "/resume-match-analyzer": [
+    "match",
+    "checker",
+    "keywordTool",
+    "matchScoreGuide",
+    "examples",
+    "atsGuide",
+  ],
+  "/resume-keyword-tool": [
+    "keywordsFinder",
+    "keywordsChecker",
+    "resumeKeywordsDb",
+    "matchAnalyzer",
+    "checker",
+    "atsGuide",
+  ],
+  "/ats-guide": [
+    "checker",
+    "howAtsWorks",
+    "knowledgeCenter",
+    "ultimateGuide",
+    "matchAnalyzer",
+    "keywordTool",
+  ],
+  "/how-ats-works": [
+    "methodology",
+    "checker",
+    "faqCenter",
+    "atsGuide",
+    "matchAnalyzer",
+    "keywordTool",
   ],
   "/ats-keywords-finder": [
     "checker",

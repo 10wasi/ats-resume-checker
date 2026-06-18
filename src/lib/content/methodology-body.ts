@@ -49,7 +49,7 @@ After analysis, we show an **ATS screening estimate**—a weighted blend of ATS 
 ## Regional notes (global, not US-only)
 
 - **CV vs resume:** Label matters less than parseable structure.
-- **Spelling:** Match the employer's market (US, UK, or international English)—stay consistent.
+- **Spelling:** Match your target employer's market—stay consistent throughout the document.
 - **Photos:** Optional in some regions; keep a text-only version for online portals.
 - **Length:** 1–2 pages is common globally for experienced professionals; early-career may use one page.
 
