@@ -41,6 +41,11 @@ export const SITE_TOOLS: SiteNavItem[] = [
 export const SITE_CAREER_PAGES: SiteNavItem[] = [
   { href: "/why-resume-not-getting-interviews", label: "Why no interviews?" },
   { href: "/why-resume-gets-rejected", label: "Why resume gets rejected" },
+  { href: "/resume-rejected-by-ats", label: "Resume rejected by ATS" },
+  { href: "/common-ats-resume-rejection-reasons", label: "ATS rejection reasons" },
+  { href: "/complete-guide-ats-resume-optimization", label: "Complete ATS guide" },
+  { href: "/ai-resume-review", label: "AI resume review" },
+  { href: "/cv-checker", label: "CV checker" },
   { href: "/how-to-tailor-resume-for-job-description", label: "Tailor resume for job" },
   { href: "/resume-screening-explained", label: "Resume screening explained" },
   { href: "/resume-review", label: "Resume review" },

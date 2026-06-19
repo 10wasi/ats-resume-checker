@@ -34,7 +34,9 @@ export const resumeScoreCheckerEntry: CareerLandingEntry = {
     },
   ],
   body: `
-A **resume score checker** tells you whether hiring software can read your file—and how closely your language matches what recruiters search for. ResumeIQ combines ATS scoring with keyword analysis and format detection in one free flow.
+A **resume score check** tells you whether hiring software can read your file—and how closely your language matches what recruiters search for. ResumeIQ combines ATS scoring with keyword analysis and format detection in one free flow.
+
+Run your **resume score check** now: [free ATS resume checker](/resume-checker) — upload PDF or paste text.
 
 ## What our resume score checker measures
 

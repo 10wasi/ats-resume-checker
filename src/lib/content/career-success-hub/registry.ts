@@ -9,6 +9,10 @@ import { atsGuideEntry } from "./ats-guide";
 import { whyResumeNotGettingInterviewsEntry } from "@/lib/content/search-intent/why-resume-not-getting-interviews";
 import { whyResumeGetsRejectedEntry } from "@/lib/content/search-intent/why-resume-gets-rejected";
 import { resumeNotPassingAtsEntry } from "@/lib/content/search-intent/resume-not-passing-ats";
+import { resumeRejectedByAtsEntry } from "@/lib/content/search-intent/resume-rejected-by-ats";
+import { commonAtsRejectionReasonsEntry } from "@/lib/content/search-intent/common-ats-resume-rejection-reasons";
+import { aiResumeReviewEntry } from "@/lib/content/search-intent/ai-resume-review";
+import { cvCheckerEntry } from "@/lib/content/search-intent/cv-checker";
 import { resumeKeywordsMissingEntry } from "@/lib/content/search-intent/resume-keywords-missing";
 import { howToTailorResumeEntry } from "@/lib/content/search-intent/how-to-tailor-resume-for-job-description";
 import { howToImproveResumeScoreEntry } from "@/lib/content/search-intent/how-to-improve-resume-score";
@@ -31,7 +35,11 @@ export const CAREER_LANDING_PAGES: CareerLandingEntry[] = [
   atsGuideEntry,
   whyResumeNotGettingInterviewsEntry,
   whyResumeGetsRejectedEntry,
+  resumeRejectedByAtsEntry,
+  commonAtsRejectionReasonsEntry,
   resumeNotPassingAtsEntry,
+  aiResumeReviewEntry,
+  cvCheckerEntry,
   resumeKeywordsMissingEntry,
   howToTailorResumeEntry,
   howToImproveResumeScoreEntry,
@@ -173,6 +181,46 @@ export const CAREER_HUB_INDEX: CareerHubIndexItem[] = [
     description:
       "Rejection causes from parser to recruiter skim—with fixes at each stage.",
     path: "/why-resume-gets-rejected",
+    badge: "Guide",
+  },
+  {
+    id: "resume-rejected-by-ats",
+    title: "Resume Rejected By ATS",
+    description:
+      "Why ATS rejects your resume—examples, mistakes, and free checker workflow.",
+    path: "/resume-rejected-by-ats",
+    badge: "Guide",
+  },
+  {
+    id: "common-ats-rejection-reasons",
+    title: "Common ATS Rejection Reasons",
+    description:
+      "Top ATS resume rejection reasons with fixes for each trigger.",
+    path: "/common-ats-resume-rejection-reasons",
+    badge: "Guide",
+  },
+  {
+    id: "ai-resume-review",
+    title: "AI Resume Review",
+    description:
+      "Free AI resume review—score, keywords, format flags, and suggestions.",
+    path: "/ai-resume-review",
+    badge: "Tool",
+  },
+  {
+    id: "cv-checker",
+    title: "CV Checker Online",
+    description:
+      "Free CV checker—ATS score and keyword scan for global job seekers.",
+    path: "/cv-checker",
+    badge: "Tool",
+  },
+  {
+    id: "complete-ats-guide",
+    title: "Complete ATS Optimization Guide",
+    description:
+      "Master guide: checker, score, review, rejection, and keywords.",
+    path: "/complete-guide-ats-resume-optimization",
     badge: "Guide",
   },
   {

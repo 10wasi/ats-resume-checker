@@ -10,6 +10,10 @@ import {
   HomeTrustStrip,
   HowItWorksSection,
 } from "@/components/home/HomeSections";
+import {
+  HomeGscIntentSection,
+  HomeSearchIntentStorySection,
+} from "@/components/home/HomeGscIntentSection";
 import { HomeGlobalReachSection } from "@/components/home/HomeGlobalReachSection";
 import {
   HomeMethodologyPreviewSection,
@@ -56,15 +60,14 @@ export const metadata = buildCtrMetadata(CTR_HOME, {
   canonical: "/",
   keywords: [
     "ATS Resume Checker",
-    "Resume Optimization Tool",
-    "Resume Score Checker",
-    "Resume Keyword Analyzer",
-    "Resume Match Analyzer",
-    "CV Scanner Tool",
-    "AI Resume Checker",
-    "Resume Improvement Tool",
-    "resume analyzer free online",
-    "best resume checker tool",
+    "resume rejected by ATS",
+    "resume checker free online",
+    "resume score check",
+    "free ATS resume checker",
+    "resume review online",
+    "AI resume review",
+    "CV checker",
+    "resume not working ATS",
   ],
 });
 
@@ -77,7 +80,9 @@ export default function HomePage() {
       <HomePlatformJsonLd />
       <FaqJsonLd />
       <HeroSection />
+      <HomeSearchIntentStorySection />
       <HomeProblemSection />
+      <HomeGscIntentSection />
       <HomeWhyTrustSection />
       <HomePillarFeaturesSection />
       <HomeMethodologyPreviewSection />

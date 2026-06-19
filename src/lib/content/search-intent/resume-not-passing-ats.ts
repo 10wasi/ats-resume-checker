@@ -34,7 +34,7 @@ export const resumeNotPassingAtsEntry: CareerLandingEntry = {
     },
   ],
   body: `
-When people say **resume not passing ATS**, they usually mean one of three things: the file **does not parse**, the resume **ranks too low** on keywords, or a **hard filter** removed them. Each needs a different fix.
+When people say **resume not passing ATS** or **resume not working ATS**, they usually mean one of three things: the file **does not parse**, the resume **ranks too low** on keywords, or a **hard filter** removed them. Each needs a different fix.
 
 ## Parse failure vs low score
 

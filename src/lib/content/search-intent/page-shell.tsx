@@ -19,15 +19,18 @@ export function createSearchIntentMetadata(entry: CareerLandingEntry) {
 export function SearchIntentPage({
   entry,
   intro,
+  toolCta,
 }: {
   entry: CareerLandingEntry;
   intro: ReactNode;
+  toolCta?: ReactNode;
 }) {
   return (
     <CareerLandingPage
       entry={entry}
       intro={intro}
       faqHeading={`FAQ: ${entry.ctr.h1}`}
+      toolCta={toolCta}
     />
   );
 }

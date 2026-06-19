@@ -34,7 +34,7 @@ export const resumeReviewEntry: CareerLandingEntry = {
     },
   ],
   body: `
-A strong **resume review** is not about rewriting everything—it is about catching what makes recruiters pass in under ten seconds. Pair this guide with our [ATS Resume Checker](/resume-checker) so you review both **human appeal** and **machine readability**.
+A strong **resume review online** is not about rewriting everything—it is about catching what makes recruiters pass in under ten seconds. Pair this guide with our [AI resume review](/ai-resume-review) and [free ATS resume checker](/resume-checker) so you review both **human appeal** and **machine readability**.
 
 ## The 10-minute resume review rubric
 

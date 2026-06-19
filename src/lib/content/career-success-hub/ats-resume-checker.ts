@@ -34,9 +34,9 @@ export const atsResumeCheckerEntry: CareerLandingEntry = {
     },
   ],
   body: `
-An **ATS resume checker** answers one question: *Can hiring software read and rank your resume?* ResumeIQ's checker scores parsing, keywords, and format—then gives you a prioritized fix list.
+A **free ATS resume checker** and **free ATS score checker** answer one question: *Can hiring software read and rank your resume?* ResumeIQ scores parsing, keywords, and format—then gives you a prioritized fix list.
 
-## What you get from the ATS resume checker
+## What you get from the free ATS resume checker
 
 - **ATS compatibility score** — Baseline health for parsers and recruiters
 - **Keyword gap analysis** — Skills and tools to add (especially with a job description)

@@ -12,22 +12,22 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: "Free ATS Resume Checker — Score & Fix in 60s",
+  title: "ATS Resume Checker — Find Why Your Resume Gets Rejected",
   description:
-    "Why no interviews? Free ATS resume checker shows missing keywords, format issues & match % in one scan. Resume optimization worldwide—no signup.",
-  ogTitle: "ATS Resume Checker — See What's Wrong Free",
-  h1: "Free ATS Resume Checker—Improve Your Score Worldwide",
+    "Resume rejected by ATS? Free checker shows why—missing keywords, format issues & score in 60s. Resume review online + match tool. Fix before you apply.",
+  ogTitle: "Free ATS Resume Checker & Resume Review Tool",
+  h1: "Why Your Resume Gets Rejected—and How to Fix It",
   primaryKeyword: "ATS Resume Checker",
   richSnippets: ["FAQPage", "WebApplication", "ItemList", "Organization", "BreadcrumbList"],
 };
 
 export const CTR_RESUME_CHECKER: PageCtrMeta = {
-  title: "Get ATS Resume Score Free — Keywords & Fixes",
+  title: "Resume Checker Free Online — ATS Score & Fixes",
   description:
-    "Upload PDF → instant ATS %, missing resume keywords & format warnings. Best free resume checker for global job applications.",
-  ogTitle: "Resume Score Checker — Free ATS Analysis",
-  h1: "Get Your ATS Resume Score—Free Keyword Scan",
-  primaryKeyword: "resume score checker",
+    "Resume checker free online: upload PDF → ATS score, missing keywords & format warnings. Free ATS score checker for global applications.",
+  ogTitle: "Free Resume Checker Online — ATS Analysis",
+  h1: "Resume Checker Free Online—Get Your ATS Score",
+  primaryKeyword: "resume checker free online",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
@@ -368,12 +368,12 @@ export const CTR_CAREER_SUCCESS_HUB: PageCtrMeta = {
 };
 
 export const CTR_RESUME_REVIEW: PageCtrMeta = {
-  title: "Free Resume Review — Rubric + ATS Check (2026)",
+  title: "Resume Review Online — Free Rubric + ATS Check",
   description:
-    "Free resume review guide: 10-minute rubric recruiters use, plus ATS checker & match tool. Fix clarity, keywords & format before you apply.",
-  ogTitle: "Resume Review Guide — Free ATS + Human Checklist",
-  h1: "Free Resume Review: Rubric, ATS Check & Next Steps",
-  primaryKeyword: "resume review",
+    "Free resume review online: 10-minute recruiter rubric plus ATS checker & match tool. Fix clarity, keywords & format before you apply worldwide.",
+  ogTitle: "Resume Review Online — Free ATS + Human Checklist",
+  h1: "Resume Review Online: Free Rubric, ATS Check & Next Steps",
+  primaryKeyword: "resume review online",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
@@ -388,12 +388,12 @@ export const CTR_RESUME_OPTIMIZATION: PageCtrMeta = {
 };
 
 export const CTR_RESUME_SCORE_CHECKER: PageCtrMeta = {
-  title: "Resume Score Checker — Free ATS Rating Tool",
+  title: "Resume Score Check — Free ATS Rating Guide",
   description:
-    "Free resume score checker: ATS compatibility, keyword coverage & format flags in one scan. Learn what your score means & how to improve fast.",
-  ogTitle: "Resume Score Checker — Free ATS Analysis",
-  h1: "Resume Score Checker: What Your ATS Rating Means",
-  primaryKeyword: "resume score checker",
+    "Resume score check explained: what ATS % means, good benchmarks & how to improve fast. Free resume score checker—upload PDF, get fixes in seconds.",
+  ogTitle: "Resume Score Check — Free ATS Analysis",
+  h1: "Resume Score Check: What Your ATS Rating Means",
+  primaryKeyword: "resume score check",
   richSnippets: ["Article", "FAQPage", "WebApplication", "BreadcrumbList", "Organization"],
 };
 
@@ -408,12 +408,12 @@ export const CTR_RESUME_KEYWORDS_CHECKER: PageCtrMeta = {
 };
 
 export const CTR_ATS_RESUME_CHECKER_LANDING: PageCtrMeta = {
-  title: "ATS Resume Checker — How Scoring Works (Free)",
+  title: "Free ATS Resume Checker — Score & Keywords",
   description:
-    "How the ATS resume checker scores PDFs: keyword gaps, format flags & improvement plan. Free upload—transparent methodology included.",
-  ogTitle: "ATS Resume Checker — Free Score & Keywords",
-  h1: "ATS Resume Checker: Free Score, Keywords & Fixes",
-  primaryKeyword: "ATS Resume Checker",
+    "Free ATS resume checker & free ATS score checker: upload PDF, get keyword gaps, format flags & improvement plan. No signup—resume checker free online.",
+  ogTitle: "Free ATS Score Checker — Upload & Fix",
+  h1: "Free ATS Resume Checker: Score, Keywords & Fixes",
+  primaryKeyword: "free ATS resume checker",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
@@ -438,12 +438,12 @@ export const CTR_WHY_RESUME_GETS_REJECTED: PageCtrMeta = {
 };
 
 export const CTR_RESUME_NOT_PASSING_ATS: PageCtrMeta = {
-  title: "Resume Not Passing ATS? Diagnose & Fix Free",
+  title: "Resume Not Working ATS? Diagnose & Fix Free",
   description:
-    "Resume not passing ATS? Learn parse vs keyword failures, see real layout examples, and test your PDF free—before you send another application.",
+    "Resume not working ATS or not passing? Learn parse vs keyword failures, see examples & test your PDF free with our resume checker online.",
   ogTitle: "Resume Not Passing ATS — Fix Parse & Keywords",
-  h1: "Resume Not Passing ATS: Diagnose and Fix",
-  primaryKeyword: "resume not passing ATS",
+  h1: "Resume Not Working ATS: Diagnose and Fix",
+  primaryKeyword: "resume not working ATS",
   richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
@@ -495,6 +495,56 @@ export const CTR_RESUME_SCREENING_EXPLAINED: PageCtrMeta = {
   h1: "Resume Screening Explained: From Apply to Interview",
   primaryKeyword: "resume screening explained",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_REJECTED_BY_ATS: PageCtrMeta = {
+  title: "Resume Rejected By ATS? Causes & Free Fix",
+  description:
+    "Resume rejected by ATS? See why hiring software filters you out—parse failures, keywords & real examples. Free resume checker online fixes it fast.",
+  ogTitle: "Resume Rejected By ATS — Diagnose Free",
+  h1: "Resume Rejected By ATS: Why It Happens and How to Fix It",
+  primaryKeyword: "resume rejected by ATS",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_COMMON_ATS_REJECTION_REASONS: PageCtrMeta = {
+  title: "Common ATS Resume Rejection Reasons (2026)",
+  description:
+    "Common ATS resume rejection reasons with examples & fixes: columns, keywords, filters. Free checker tests your PDF before the next apply.",
+  ogTitle: "Top ATS Rejection Reasons — Fix Before Apply",
+  h1: "Common ATS Resume Rejection Reasons—and How to Fix Each",
+  primaryKeyword: "common ATS resume rejection reasons",
+  richSnippets: ["Article", "FAQPage", "ItemList", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_AI_RESUME_REVIEW: PageCtrMeta = {
+  title: "AI Resume Review — Free Online ATS Scan",
+  description:
+    "Free AI resume review: ATS score, keyword gaps, format flags & bullet suggestions in seconds. Resume checker free online—no signup required.",
+  ogTitle: "AI Resume Review — Free ATS Analysis",
+  h1: "AI Resume Review: Free Online Score & Suggestions",
+  primaryKeyword: "AI resume review",
+  richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_CV_CHECKER: PageCtrMeta = {
+  title: "CV Checker Online — Free ATS Score & Scan",
+  description:
+    "Free CV checker online: upload PDF, get ATS score, keyword gaps & format warnings. Works worldwide—same engine as our resume checker free online.",
+  ogTitle: "CV Checker — Free Online ATS Scan",
+  h1: "CV Checker Online: Free ATS Score & Keyword Scan",
+  primaryKeyword: "CV checker",
+  richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_COMPLETE_ATS_GUIDE: PageCtrMeta = {
+  title: "Complete ATS Resume Optimization Guide (2026)",
+  description:
+    "The complete guide to ATS resume optimization: checker, resume score, review, rejection fixes & keywords. Most comprehensive resource on ResumeIQ.",
+  ogTitle: "Complete ATS Resume Optimization Guide",
+  h1: "The Complete Guide to ATS Resume Optimization",
+  primaryKeyword: "ATS resume optimization",
+  richSnippets: ["Article", "FAQPage", "HowTo", "ItemList", "BreadcrumbList", "Organization"],
 };
 
 export function buildCtrMetadata(

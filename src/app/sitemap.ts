@@ -34,7 +34,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       path: "/why-resume-gets-rejected",
-      priority: 0.91,
+      priority: 0.94,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/resume-rejected-by-ats",
+      priority: 0.95,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/common-ats-resume-rejection-reasons",
+      priority: 0.95,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/complete-guide-ats-resume-optimization",
+      priority: 0.98,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/ai-resume-review",
+      priority: 0.93,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/cv-checker",
+      priority: 0.92,
       changeFrequency: "weekly",
     },
     {

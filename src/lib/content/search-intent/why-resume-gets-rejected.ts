@@ -34,7 +34,7 @@ export const whyResumeGetsRejectedEntry: CareerLandingEntry = {
     },
   ],
   body: `
-**Why resume gets rejected** is not one mystery—it is a stack of filters. Understanding which layer failed saves weeks of blind rewriting.
+**Why resume gets rejected** is not one mystery—it is a stack of filters. If you searched **resume rejected by ATS**, start with our dedicated [resume rejected by ATS guide](/resume-rejected-by-ats) and [common rejection reasons](/common-ats-resume-rejection-reasons).
 
 ## The rejection stack (real order)
 
