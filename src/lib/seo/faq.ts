@@ -70,9 +70,9 @@ export const homepageFaqItems: FaqItem[] = [
       "It summarizes readability, structure, keyword coverage, and—when you add a posting—how closely your language mirrors that role. Think of it as a rehearsal for applicant software: a practical way to improve your ATS score and resume optimization before you upload to a real portal—not a guarantee a company uses the same weighting.",
   },
   {
-    question: "Is this ATS resume checker useful for UK and US applications?",
+    question: "Is this ATS resume checker useful for international applications?",
     answer:
-      "Yes. Employers in both markets rely on similar parsing and search patterns inside ATS tools. Keep honest spelling consistent with your target market (UK vs US English), then use this online resume checker on the exact file you plan to submit.",
+      "Yes. Employers worldwide rely on similar parsing and keyword search in applicant tracking systems. Match spelling and title norms to your target market, then run this online resume checker on the exact file you plan to submit.",
   },
   {
     question: "Should I stuff keywords to beat the ATS?",

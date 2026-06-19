@@ -38,9 +38,9 @@ export const resumeJdMatchFaqItems: FaqItem[] = [
       "No. Add only terms you can defend in an interview. Focus on relevant technical skills, tools, and certifications with real proof in your bullets.",
   },
   {
-    question: "Can this work for UK and US job applications?",
+    question: "Does resume match work for global job applications?",
     answer:
-      "Yes. ATS parsing principles are similar in both markets. Keep wording and spelling consistent with your target region and role.",
+      "Yes. ATS parsing principles are similar worldwide. Keep wording and spelling consistent with your target employer's market and role.",
   },
   {
     question: "What should I fix first: formatting or keywords?",

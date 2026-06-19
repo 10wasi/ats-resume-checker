@@ -35,9 +35,15 @@ export default function ContactPage() {
           {CTR_CONTACT.h1}
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-slate-700">
-          Bug reports, SEO ideas, university partnerships, or notes on how the
-          free ATS checker could be clearer — we are a small team and we actually
-          look at this inbox.
+          Bug reports, scoring questions, partnerships, or feedback on our{" "}
+          <Link href="/methodology" className="font-semibold text-[#16a34a] underline">
+            ATS methodology
+          </Link>
+          —we read every message. For scoring transparency, see{" "}
+          <Link href="/faq-center" className="font-semibold text-[#16a34a] underline">
+            FAQ Center
+          </Link>
+          .
         </p>
         <div className="mt-10 grid gap-5 sm:grid-cols-2">
           <ContactCard

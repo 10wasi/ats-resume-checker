@@ -23,9 +23,9 @@ export const atsResumeChecklistFaqItems: FaqItem[] = [
       "For most job seekers, the copy-paste test wins: select all text from your PDF and paste into Notepad. If experience appears out of order or skills land in the wrong place, fix the source document before you chase keywords.",
   },
   {
-    question: "Do ATS resume checklists work for UK and US applications?",
+    question: "Do ATS resume checklists work for international applications?",
     answer:
-      "Yes. Parser behavior is similar across markets. Match local spelling and title norms, keep credentials explicit where postings require them, and use standard section headings in plain text.",
+      "Yes. Parser behavior is similar across global hiring markets. Match employer spelling and title norms, keep credentials explicit where postings require them, and use standard section headings in plain text.",
   },
   {
     question: "Should I use the same checklist for every job?",

@@ -11,6 +11,12 @@ import {
   HowItWorksSection,
 } from "@/components/home/HomeSections";
 import { HomeGlobalReachSection } from "@/components/home/HomeGlobalReachSection";
+import {
+  HomeMethodologyPreviewSection,
+  HomeToolEcosystemSection,
+  HomeVsCompetitorsSection,
+  HomeWhyTrustSection,
+} from "@/components/home/HomeAuthoritySections";
 import { HomePillarFeaturesSection } from "@/components/home/HomePillarFeaturesSection";
 import { HomeProblemSection } from "@/components/home/HomeProblemSection";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
@@ -72,8 +78,12 @@ export default function HomePage() {
       <FaqJsonLd />
       <HeroSection />
       <HomeProblemSection />
+      <HomeWhyTrustSection />
       <HomePillarFeaturesSection />
+      <HomeMethodologyPreviewSection />
       <HowItWorksSection />
+      <HomeVsCompetitorsSection />
+      <HomeToolEcosystemSection />
       <HomeGlobalReachSection />
       <HomeTrustedBySection />
       <HomeTrustStrip />

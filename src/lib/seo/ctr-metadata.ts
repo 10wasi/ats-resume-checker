@@ -12,31 +12,31 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: "ATS Resume Checker — Free AI Score & Keywords",
+  title: "Free ATS Resume Checker — Score & Fix in 60s",
   description:
-    "Improve resume score worldwide. Free ATS Resume Checker, AI resume checker, CV scanner & match analyzer—resume analyzer free online, no signup.",
-  ogTitle: "Resume Optimization Tool — Check Score Free",
-  h1: "Improve Your Resume Score—Get More Interviews Worldwide",
+    "Why no interviews? Free ATS resume checker shows missing keywords, format issues & match % in one scan. Resume optimization worldwide—no signup.",
+  ogTitle: "ATS Resume Checker — See What's Wrong Free",
+  h1: "Free ATS Resume Checker—Improve Your Score Worldwide",
   primaryKeyword: "ATS Resume Checker",
   richSnippets: ["FAQPage", "WebApplication", "ItemList", "Organization", "BreadcrumbList"],
 };
 
 export const CTR_RESUME_CHECKER: PageCtrMeta = {
-  title: "Resume Score Checker — Free ATS % & Keywords",
+  title: "Get ATS Resume Score Free — Keywords & Fixes",
   description:
-    "Get your ATS resume score instantly: upload PDF, see keyword gaps & format warnings. Free resume optimization tool—fix issues before recruiters do.",
+    "Upload PDF → instant ATS %, missing resume keywords & format warnings. Best free resume checker for global job applications.",
   ogTitle: "Resume Score Checker — Free ATS Analysis",
-  h1: "Resume Score Checker: Free ATS Score & Keyword Scan",
+  h1: "Get Your ATS Resume Score—Free Keyword Scan",
   primaryKeyword: "resume score checker",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_RESUME_MATCH: PageCtrMeta = {
-  title: "Resume Match Analyzer — Free vs Job Post",
+  title: "Resume Match Tool — Free vs Job Posting",
   description:
-    "Resume match analyzer: paste any job post → match %, missing keywords & skill gaps. Improve resume score before you apply—free, worldwide.",
-  ogTitle: "Resume Match Analyzer — Free Job Match Score",
-  h1: "Resume Match Analyzer: Score vs Job Description",
+    "Resume match score in seconds: paste job description, see missing keywords & gaps. Free resume match tool—tailor before you apply.",
+  ogTitle: "Resume Match Analyzer — Free Match %",
+  h1: "Resume Match Tool: Free Score vs Job Description",
   primaryKeyword: "resume match analyzer",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
@@ -148,10 +148,10 @@ export const CTR_TERMS: PageCtrMeta = {
 };
 
 export const CTR_RESUME_KEYWORDS_DATABASE: PageCtrMeta = {
-  title: "Resume Keywords Database — ATS Lists by Role",
+  title: "Resume Keywords for ATS — Free Lists by Role",
   description:
-    "Searchable resume keywords database: ATS skills, verbs & phrases for 10 professions. Software, data, PM, marketing & more—free checker & match tool.",
-  ogTitle: "Resume Keywords by Profession — ATS Database",
+    "Resume keywords database: ATS skills, verbs & phrases for 10 professions. Pair with free resume match tool & checker.",
+  ogTitle: "Resume Keywords Database — ATS Lists by Role",
   h1: "Resume Keywords Database: ATS Lists by Profession",
   primaryKeyword: "resume keywords",
   richSnippets: ["ItemList", "FAQPage", "BreadcrumbList", "Organization"],
@@ -398,10 +398,10 @@ export const CTR_RESUME_KEYWORDS_CHECKER: PageCtrMeta = {
 };
 
 export const CTR_ATS_RESUME_CHECKER_LANDING: PageCtrMeta = {
-  title: "ATS Resume Checker — Free Score & Keyword Scan",
+  title: "ATS Resume Checker — How Scoring Works (Free)",
   description:
-    "ATS Resume Checker: get score instantly, find missing keywords & format issues. Free resume optimization tool for global job applications.",
-  ogTitle: "ATS Resume Checker — Fix Issues Before Apply",
+    "How the ATS resume checker scores PDFs: keyword gaps, format flags & improvement plan. Free upload—transparent methodology included.",
+  ogTitle: "ATS Resume Checker — Free Score & Keywords",
   h1: "ATS Resume Checker: Free Score, Keywords & Fixes",
   primaryKeyword: "ATS Resume Checker",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],

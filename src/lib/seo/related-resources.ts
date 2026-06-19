@@ -274,9 +274,9 @@ const DEFAULT_KEYS = [
   "checker",
   "matchAnalyzer",
   "keywordTool",
+  "resumeKeywordsDb",
   "examples",
   "atsGuide",
-  "howAtsWorks",
 ] as const;
 
 /** Curated related clusters per route — avoids generic duplicate lists. */
@@ -403,12 +403,12 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "careerHub",
   ],
   "/resume-keywords": [
-    "keywordsFinder",
-    "keywordsChecker",
     "checker",
-    "match",
-    "industryKeywords",
-    "keywordsGuide",
+    "matchAnalyzer",
+    "keywordTool",
+    "keywordsFinder",
+    "examples",
+    "atsGuide",
   ],
   "/resume-examples": [
     "checker",

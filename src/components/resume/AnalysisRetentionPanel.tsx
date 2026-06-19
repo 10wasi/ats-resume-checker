@@ -39,6 +39,11 @@ export function AnalysisRetentionPanel({
       : analysis.detected_skills ?? analysis.resume_strengths ?? []
   ).slice(0, 8);
   const formatFlags = analysis.formatting_issues.slice(0, 5);
+  const checklist = (
+    analysis.career_insights?.quick_fix_checklist ??
+    analysis.career_insights?.improvement_actions ??
+    []
+  ).slice(0, 6);
   const suggestions = [
     ...analysis.suggestions.slice(0, 3),
     ...formatFlags.map((f) => `Format: ${f}`),
@@ -134,6 +139,26 @@ export function AnalysisRetentionPanel({
                 </li>
               ))}
             </ul>
+          </div>
+        ) : null}
+
+        {checklist.length > 0 ? (
+          <div className="mt-5">
+            <p className="text-sm font-semibold text-slate-900">Improvement checklist</p>
+            <ul className="mt-2 space-y-2 text-sm text-slate-700">
+              {checklist.map((item) => (
+                <li key={item} className="flex gap-2">
+                  <span className="text-emerald-600" aria-hidden>✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <Link
+              href="/ats-resume-checklist-2026"
+              className="mt-3 inline-block text-xs font-semibold text-[#16a34a] underline"
+            >
+              Full ATS checklist →
+            </Link>
           </div>
         ) : null}
 

@@ -38,9 +38,9 @@ export const atsResumeHubFaqItems: FaqItem[] = [
       "Each guide targets one lever: format fixes extraction, keyword guides improve overlap, example pages show working patterns, and mistake articles prevent repeat errors. Combined with the checker, they turn vague anxiety into a fix list.",
   },
   {
-    question: "Do these ATS resources work for UK and US job seekers?",
+    question: "Do these ATS resources work for job seekers worldwide?",
     answer:
-      "Yes. Parser behavior is similar across markets. Match local spelling and title norms, keep credentials explicit where postings require them, and use plain-text skills in standard section headings.",
+      "Yes. Parser behavior is similar across global hiring markets. Match employer spelling and title norms for your target region, keep credentials explicit where postings require them, and use plain-text skills in standard section headings.",
   },
   {
     question: "Can I rely on the hub instead of hiring a resume writer?",

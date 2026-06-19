@@ -404,7 +404,7 @@ export function AtsAnalysisResults({
     "Echo critical phrases from the target posting where truthful.",
     "Use standard headings and a single column for ATS extraction.",
     "Keep page-one above-the-fold focused on role fit and top wins.",
-    "Match UK or US spelling to the posting and region you are applying in.",
+    "Match employer spelling and title norms for your target market.",
   ];
 
   return (

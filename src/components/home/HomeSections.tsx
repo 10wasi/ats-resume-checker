@@ -39,7 +39,7 @@ export function HeroSection() {
           </p>
           <HomeHeroPasteForm />
           <p className="mt-6 text-sm text-slate-500">
-            Used by job seekers worldwide · Free resume analyzer · No signup required
+            Improve your resume score and get more interviews worldwide · Free · No signup
           </p>
           <ul className="mx-auto mt-8 flex max-w-xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-slate-500">
             <li className="flex items-center gap-1.5">

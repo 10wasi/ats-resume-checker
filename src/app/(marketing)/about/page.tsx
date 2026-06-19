@@ -43,9 +43,13 @@ export default function AboutPage() {
             behind a paywall.
           </p>
           <p>
-            The site is aimed at job seekers, students, bootcamp grads, and
-            professionals who need a resume optimization tool that behaves more
-            like a search utility than a subscription product.
+            <strong className="font-semibold text-slate-900">Why we are different:</strong>{" "}
+            ResumeIQ publishes{" "}
+            <Link href="/methodology" className="font-semibold text-[#16a34a] underline">
+              open scoring methodology
+            </Link>
+            , keeps core ATS analysis free, and connects checker → match → keywords →
+            examples in one journey—so you always know what to do after your score.
           </p>
           <p>
             If the score helps you tighten one bullet, fix one parsing issue, or
