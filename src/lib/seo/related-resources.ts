@@ -108,6 +108,11 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     title: "ATS Knowledge Center",
     description: "Ten guides on format, keywords, match score, and mistakes.",
   },
+  resourceHub: {
+    href: "/resource-hub",
+    title: "ATS Resource Hub",
+    description: "Guides, tools, profession hubs, and trust docs in one library.",
+  },
   careerHub: {
     href: "/career-success-hub",
     title: "Career Success Hub",
@@ -274,6 +279,7 @@ const DEFAULT_KEYS = [
   "checker",
   "matchAnalyzer",
   "keywordTool",
+  "resourceHub",
   "resumeKeywordsDb",
   "examples",
   "atsGuide",
@@ -427,12 +433,21 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "checklist",
   ],
   "/knowledge-center": [
+    "resourceHub",
     "ultimateGuide",
     "checker",
     "careerHub",
     "formatGuide",
     "keywordsGuide",
     "matchScoreGuide",
+  ],
+  "/resource-hub": [
+    "checker",
+    "matchAnalyzer",
+    "keywordTool",
+    "knowledgeCenter",
+    "examples",
+    "checklist",
   ],
   "/career-success-hub": [
     "checker",
@@ -641,6 +656,16 @@ const BLOG_POST_KEYS = [
 
 function resolveKeys(path: string): readonly string[] {
   if (path.startsWith("/blog/")) return BLOG_POST_KEYS;
+  if (path.startsWith("/profession/")) {
+    return [
+      "resourceHub",
+      "checker",
+      "matchAnalyzer",
+      "examples",
+      "resumeKeywordsDb",
+      "checklist",
+    ] as const;
+  }
   return PATH_RELATED_KEYS[path] ?? DEFAULT_KEYS;
 }
 

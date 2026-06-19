@@ -39,7 +39,11 @@ export default function TermsPage() {
           scores them with AI, and returns suggestions. It does not
           guarantee employment outcomes, ATS pass rates, or compatibility
           with every employer system on Earth. Use it as one signal of
-          many.
+          many. See our{" "}
+          <Link href="/methodology" className="font-semibold text-[#16a34a] underline">
+            scoring methodology
+          </Link>{" "}
+          for how ATS analysis works.
         </Section>
         <Section title="3. Acceptable use">
           You won&apos;t misuse the service, attempt to disrupt

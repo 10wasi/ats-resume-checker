@@ -7,6 +7,7 @@ import { buildJobMatchReport } from "@/lib/ats/build-job-match-report";
 import { buildAnalysisExportText, downloadTextFile } from "@/lib/ats/export-analysis";
 import { AnalysisPlatformNextSteps } from "@/components/tools/AnalysisPlatformNextSteps";
 import { AtsPassLikelihoodCard } from "@/components/resume/AtsPassLikelihoodCard";
+import { AtsReadinessReport } from "@/components/resume/AtsReadinessReport";
 import { AnalysisRetentionPanel } from "@/components/resume/AnalysisRetentionPanel";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
@@ -378,6 +379,7 @@ export function ResumeJobMatchResults({
         </div>
       </section>
 
+      <AtsReadinessReport analysis={analysis} hasJobDescription />
       <AnalysisRetentionPanel
         analysis={analysis}
         variant="match"

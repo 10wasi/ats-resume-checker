@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getPostSlugs } from "@/lib/blog";
 import { getAtsResumeRoleSlugs } from "@/lib/content/ats-resume-roles/registry";
+import { getProfessionHubSlugs } from "@/lib/content/profession-hubs/registry";
 import { getResumeKeywordsSlugs } from "@/lib/content/resume-keywords/registry";
 import { getResumeExampleSlugs } from "@/lib/content/resume-examples/registry";
 import { getSiteUrl } from "@/lib/site-url";
@@ -142,6 +143,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
     },
     {
+      path: "/resource-hub",
+      priority: 0.97,
+      changeFrequency: "weekly",
+    },
+    {
       path: "/ats-resume-hub",
       priority: 0.95,
       changeFrequency: "weekly",
@@ -258,6 +264,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.85,
+    });
+  }
+  for (const slug of getProfessionHubSlugs()) {
+    entries.push({
+      url: `${base}/profession/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
     });
   }
   for (const slug of getPostSlugs()) {

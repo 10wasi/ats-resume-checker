@@ -92,7 +92,14 @@ export default function KnowledgeCenterPage() {
               >
                 ATS Resume Checker
               </Link>
-              .
+              . Browse the full{" "}
+              <Link
+                href="/resource-hub"
+                className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/40 underline-offset-4 hover:text-[#16a34a]"
+              >
+                Resource Hub
+              </Link>{" "}
+              for profession guides and tools.
             </p>
           </header>
 

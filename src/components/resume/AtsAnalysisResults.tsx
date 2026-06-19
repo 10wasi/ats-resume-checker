@@ -14,6 +14,7 @@ import { AtsResultsInsightsPanel } from "./AtsResultsInsightsPanel";
 import { PersonalizedImprovementPlan } from "./PersonalizedImprovementPlan";
 import { AiResumeImprovements } from "./AiResumeImprovements";
 import { AtsPassLikelihoodCard } from "./AtsPassLikelihoodCard";
+import { AtsReadinessReport } from "./AtsReadinessReport";
 import { AnalysisRetentionPanel } from "./AnalysisRetentionPanel";
 import { AnalysisPlatformNextSteps } from "@/components/tools/AnalysisPlatformNextSteps";
 
@@ -1470,7 +1471,8 @@ export function AtsAnalysisResults({
         </section>
       </div>
 
-      <div className="mt-8">
+      <div className="mt-8 space-y-6">
+        <AtsReadinessReport analysis={analysis} hasJobDescription={showJobMatch} />
         <AnalysisRetentionPanel
           analysis={analysis}
           variant="checker"

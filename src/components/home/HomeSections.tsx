@@ -917,6 +917,11 @@ export function HomeAuthorityHubSection() {
       desc: "Resume checker, match tool, optimization guides, and role examples in one hub.",
     },
     {
+      title: "Resource Hub",
+      href: "/resource-hub",
+      desc: "Guides, tools, profession hubs, and methodology in one place.",
+    },
+    {
       title: "Knowledge Center",
       href: "/knowledge-center",
       desc: "Ten guides, tools, and checklists in one library.",

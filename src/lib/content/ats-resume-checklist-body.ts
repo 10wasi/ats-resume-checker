@@ -145,7 +145,7 @@ If paste order looks wrong, fix the source document before keyword work. Deep di
 - [ ] Links are clickable and spelled correctly
 - [ ] Location line matches your target market (city/region or “open to remote” when true)
 
-### US vs UK formatting notes
+### Regional spelling & title norms
 
 Spelling and title norms differ; parser rules mostly do not. Use consistent UK or US spelling for the market you target. CV versus resume labeling is cultural—section structure matters more than the label on the file. If a posting repeats “programme” or “license,” mirror the employer’s language when your experience supports it.
 

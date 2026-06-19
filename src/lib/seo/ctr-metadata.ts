@@ -207,6 +207,16 @@ export const CTR_KNOWLEDGE_CENTER: PageCtrMeta = {
   richSnippets: ["ItemList", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
+export const CTR_RESOURCE_HUB: PageCtrMeta = {
+  title: "ATS Resource Hub — Guides, Tools & Examples",
+  description:
+    "Complete ATS resume optimization hub: examples, checklist, keywords DB, match tool & 8 profession guides. Free resume checker worldwide.",
+  ogTitle: "ATS Resource Hub — Resume Optimization Library",
+  h1: "ATS Resume Optimization Resource Hub",
+  primaryKeyword: "ATS resume optimization",
+  richSnippets: ["ItemList", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
 export const CTR_ATS_FORMAT: PageCtrMeta = {
   title: "ATS Resume Format — Layout Rules That Parse",
   description:

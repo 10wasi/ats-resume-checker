@@ -26,6 +26,7 @@ export const SITE_TOOLS: SiteNavItem[] = [
   { href: "/resume-achievement-generator", label: "Resume achievement generator" },
   { href: "/ai-resume-rewrite", label: "AI resume rewrite" },
   { href: "/career-success-hub", label: "Career Success Hub" },
+  { href: "/resource-hub", label: "Resource Hub" },
   { href: "/knowledge-center", label: "ATS Knowledge Center" },
   { href: "/resume-examples", label: "Resume examples library" },
   { href: "/ats-guide", label: "ATS guide hub" },
@@ -54,7 +55,7 @@ export const SITE_CAREER_PAGES: SiteNavItem[] = [
 export const SITE_MARKETING_NAV: SiteNavItem[] = [
   { href: RESUME_CHECKER_PATH, label: "Resume checker" },
   { href: "/career-success-hub", label: "Career Hub" },
-  { href: "/knowledge-center", label: "Resources" },
+  { href: "/resource-hub", label: "Resources" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
