@@ -59,14 +59,17 @@ export const SITE_CAREER_PAGES: SiteNavItem[] = [
   { href: "/ats-resume-checker", label: "ATS resume checker guide" },
 ];
 
-/** Sticky marketing header + mobile nav strip. */
+/** Sticky marketing header — keep ≤5 items; checker is the header CTA. */
 export const SITE_MARKETING_NAV: SiteNavItem[] = [
-  { href: RESUME_CHECKER_PATH, label: "Resume checker" },
-  { href: "/career-success-hub", label: "Career Hub" },
   { href: "/resume-optimization-platform", label: "Platform" },
-  { href: "/resource-hub", label: "Resources" },
+  { href: "/resource-hub", label: "Guides" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
+];
+
+/** Extra links shown in mobile drawer only (keeps desktop header clean). */
+export const SITE_MARKETING_NAV_MOBILE: SiteNavItem[] = [
+  { href: "/career-success-hub", label: "Career Hub" },
   { href: "/contact", label: "Contact" },
 ];
 

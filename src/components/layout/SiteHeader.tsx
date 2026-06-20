@@ -8,7 +8,40 @@ import { IconClose, IconMenu } from "@/components/ui/DashboardIcons";
 import {
   RESUME_CHECKER_PATH,
   SITE_MARKETING_NAV,
+  SITE_MARKETING_NAV_MOBILE,
 } from "@/lib/site-nav";
+
+function navActive(pathname: string, href: string) {
+  if (href === "/") return pathname === "/";
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
+function NavLink({
+  item,
+  pathname,
+  onClick,
+  className = "",
+}: {
+  item: { href: string; label: string };
+  pathname: string;
+  onClick?: () => void;
+  className?: string;
+}) {
+  const active = navActive(pathname, item.href);
+  return (
+    <Link
+      href={item.href}
+      onClick={onClick}
+      className={`rounded-lg px-3 py-2 text-sm font-medium transition ${
+        active
+          ? "bg-emerald-50 text-emerald-800 ring-1 ring-emerald-200/80"
+          : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+      } ${className}`}
+    >
+      {item.label}
+    </Link>
+  );
+}
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -28,10 +61,6 @@ export function SiteHeader() {
 
   return (
     <>
-      {/*
-        Mobile menu must NOT live inside the blurred header: backdrop-filter creates a
-        containing block, so position:fixed overlays are clipped and taps appear "broken".
-      */}
       {open ? (
         <button
           type="button"
@@ -52,7 +81,7 @@ export function SiteHeader() {
         >
           <div className="flex items-center justify-between gap-2 border-b border-slate-100 px-4 py-3">
             <Link href="/" onClick={close} className="min-w-0">
-              <Logo wordmarkClassName="truncate" />
+              <Logo />
             </Link>
             <button
               type="button"
@@ -65,27 +94,29 @@ export function SiteHeader() {
           </div>
           <div className="flex min-h-0 flex-1 flex-col overflow-y-auto overscroll-y-contain p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
             <nav className="flex flex-col gap-1" aria-label="Primary">
-              {SITE_MARKETING_NAV.map((item) => {
-                const active =
-                  item.href === "/"
-                    ? pathname === "/"
-                    : pathname === item.href ||
-                      pathname.startsWith(`${item.href}/`);
-                return (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={close}
-                    className={`rounded-xl px-4 py-3.5 text-base font-medium transition ${
-                      active
-                        ? "bg-slate-900 text-white shadow-sm"
-                        : "text-slate-700 hover:bg-slate-100"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                );
-              })}
+              {SITE_MARKETING_NAV.map((item) => (
+                <NavLink
+                  key={item.href}
+                  item={item}
+                  pathname={pathname}
+                  onClick={close}
+                  className="px-4 py-3.5 text-base"
+                />
+              ))}
+            </nav>
+            <nav
+              className="mt-4 flex flex-col gap-1 border-t border-slate-100 pt-4"
+              aria-label="More"
+            >
+              {SITE_MARKETING_NAV_MOBILE.map((item) => (
+                <NavLink
+                  key={item.href}
+                  item={item}
+                  pathname={pathname}
+                  onClick={close}
+                  className="px-4 py-3 text-base text-slate-600"
+                />
+              ))}
             </nav>
             <div className="mt-auto border-t border-slate-100 pt-6">
               <Link
@@ -100,57 +131,39 @@ export function SiteHeader() {
         </div>
       ) : null}
 
-      <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/75 shadow-[0_8px_24px_-12px_rgba(34,197,94,0.12)] backdrop-blur-xl supports-[backdrop-filter]:bg-white/60">
+      <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 shadow-[0_1px_0_rgba(15,23,42,0.04)] backdrop-blur-xl supports-[backdrop-filter]:bg-white/70">
         <div
-          className="relative mx-auto flex min-h-14 max-w-6xl w-full items-center justify-between gap-3 px-4 py-2 sm:min-h-[4.25rem] sm:px-6 lg:px-8"
+          className="mx-auto flex h-14 max-w-6xl items-center gap-3 px-4 sm:h-16 sm:gap-4 sm:px-6 lg:px-8"
           style={{
             paddingLeft: "max(1rem, env(safe-area-inset-left))",
             paddingRight: "max(1rem, env(safe-area-inset-right))",
-            paddingTop: "max(0.5rem, env(safe-area-inset-top))",
+            paddingTop: "max(0px, env(safe-area-inset-top))",
           }}
         >
           <Link
             href="/"
             aria-label="ResumeIQ home"
-            className="relative z-10 min-w-0 shrink-0 transition-opacity hover:opacity-90"
+            className="shrink-0 transition-opacity hover:opacity-90"
           >
-            <Logo wordmarkClassName="truncate max-[360px]:hidden" />
+            <Logo wordmarkClassName="hidden min-[400px]:inline" />
           </Link>
 
           <nav
-            className="pointer-events-none absolute left-1/2 top-1/2 z-10 hidden max-w-[min(100%,calc(100vw-14rem))] -translate-x-1/2 -translate-y-1/2 md:block"
+            className="hidden min-w-0 flex-1 items-center justify-center gap-0.5 md:flex"
             aria-label="Primary"
           >
-            <div className="pointer-events-auto flex max-w-full flex-nowrap items-center justify-center gap-1 overflow-x-auto overscroll-x-contain px-2 py-1">
-              {SITE_MARKETING_NAV.map((item) => {
-                const active =
-                  item.href === "/"
-                    ? pathname === "/"
-                    : pathname === item.href ||
-                      pathname.startsWith(`${item.href}/`);
-                return (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className={`shrink-0 rounded-lg px-3 py-2 text-sm font-medium transition ${
-                      active
-                        ? "bg-slate-900 text-white shadow-sm"
-                        : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                );
-              })}
-            </div>
+            {SITE_MARKETING_NAV.map((item) => (
+              <NavLink key={item.href} item={item} pathname={pathname} />
+            ))}
           </nav>
 
-          <div className="relative z-10 flex shrink-0 items-center gap-2">
+          <div className="ml-auto flex shrink-0 items-center gap-2 md:ml-0">
             <Link
               href={RESUME_CHECKER_PATH}
-              className="btn-gradient hidden h-10 whitespace-nowrap px-4 text-sm md:inline-flex"
+              className="btn-gradient hidden h-9 items-center whitespace-nowrap px-3.5 text-sm font-semibold sm:h-10 sm:px-4 md:inline-flex"
             >
-              Check resume score free
+              <span className="hidden lg:inline">Check resume score free</span>
+              <span className="lg:hidden">Check free</span>
             </Link>
             <button
               type="button"
