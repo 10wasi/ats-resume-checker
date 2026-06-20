@@ -14,6 +14,7 @@ import {
   HomeGscIntentSection,
   HomeSearchIntentStorySection,
 } from "@/components/home/HomeGscIntentSection";
+import { HomePlatformHubsSection } from "@/components/home/HomePlatformHubsSection";
 import { HomeGlobalReachSection } from "@/components/home/HomeGlobalReachSection";
 import {
   HomeMethodologyPreviewSection,
@@ -59,15 +60,15 @@ const AdPlaceholder = dynamic(
 export const metadata = buildCtrMetadata(CTR_HOME, {
   canonical: "/",
   keywords: [
-    "ATS Resume Checker",
-    "resume rejected by ATS",
+    "resume optimization platform",
     "resume checker free online",
-    "resume score check",
-    "free ATS resume checker",
     "resume review online",
-    "AI resume review",
+    "resume score checker",
+    "free ATS resume checker",
+    "ATS resume review",
     "CV checker",
-    "resume not working ATS",
+    "resume keywords",
+    "resume match analyzer",
   ],
 });
 
@@ -80,6 +81,7 @@ export default function HomePage() {
       <HomePlatformJsonLd />
       <FaqJsonLd />
       <HeroSection />
+      <HomePlatformHubsSection />
       <HomeSearchIntentStorySection />
       <HomeProblemSection />
       <HomeGscIntentSection />

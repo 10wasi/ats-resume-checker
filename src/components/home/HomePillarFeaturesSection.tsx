@@ -27,10 +27,10 @@ const FEATURES = [
     cta: "View examples",
   },
   {
-    title: "AI Resume Suggestions",
-    desc: "AI resume review—bullet rewrites, summary drafts, and improvement suggestions.",
-    href: "/ai-resume-rewrite",
-    cta: "AI suggestions",
+    title: "ATS Resume Review",
+    desc: "ATS resume review—parse health, keyword gaps, and readiness report.",
+    href: "/ats-resume-review",
+    cta: "ATS review",
   },
   {
     title: "ATS Guide Hub",
@@ -49,12 +49,12 @@ export function HomePillarFeaturesSection() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="section-eyebrow mx-auto">Resume optimization tool</p>
+          <p className="section-eyebrow mx-auto">Resume optimization platform</p>
           <h2
             id="pillar-features-heading"
             className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
           >
-            Best resume checker tools—in one platform
+            Core tools—checker, review, match, keywords, examples
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
             Free <strong className="font-semibold text-slate-800">resume analyzer online</strong>{" "}

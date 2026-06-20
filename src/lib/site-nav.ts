@@ -14,6 +14,9 @@ export type SiteNavItem = { readonly href: string; readonly label: string };
 
 /** Product links (footer + dashboard footer). */
 export const SITE_TOOLS: SiteNavItem[] = [
+  { href: "/resume-optimization-platform", label: "Optimization platform" },
+  { href: "/resume-checker-online", label: "Resume checker online" },
+  { href: "/ats-resume-review", label: "ATS resume review" },
   { href: RESUME_CHECKER_PATH, label: "ATS Resume Checker" },
   { href: "/resume-match-analyzer", label: "Resume match analyzer" },
   { href: "/resume-keyword-tool", label: "Resume keyword tool" },
@@ -60,6 +63,7 @@ export const SITE_CAREER_PAGES: SiteNavItem[] = [
 export const SITE_MARKETING_NAV: SiteNavItem[] = [
   { href: RESUME_CHECKER_PATH, label: "Resume checker" },
   { href: "/career-success-hub", label: "Career Hub" },
+  { href: "/resume-optimization-platform", label: "Platform" },
   { href: "/resource-hub", label: "Resources" },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },

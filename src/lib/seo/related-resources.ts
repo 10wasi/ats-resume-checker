@@ -108,6 +108,21 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     title: "ATS Knowledge Center",
     description: "Ten guides on format, keywords, match score, and mistakes.",
   },
+  platformHub: {
+    href: "/resume-optimization-platform",
+    title: "Resume Optimization Platform",
+    description: "Nine hubs: checker, review, score, keywords, match, ATS tools.",
+  },
+  resumeCheckerOnline: {
+    href: "/resume-checker-online",
+    title: "Resume Checker Free Online",
+    description: "Free resume checker hub—ATS score, keywords, format fixes.",
+  },
+  atsResumeReview: {
+    href: "/ats-resume-review",
+    title: "ATS Resume Review",
+    description: "Free ATS resume review—parse, keywords, readiness report.",
+  },
   resourceHub: {
     href: "/resource-hub",
     title: "ATS Resource Hub",
@@ -135,8 +150,8 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
   },
   resumeReview: {
     href: "/resume-review",
-    title: "Free Resume Review",
-    description: "Recruiter-style rubric plus ATS checker next steps.",
+    title: "Resume Review Online",
+    description: "Free resume review rubric plus ATS checker workflow.",
   },
   scoreChecker: {
     href: "/resume-score-checker",
@@ -302,17 +317,40 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
 
 const DEFAULT_KEYS = [
   "checker",
+  "resumeReview",
   "matchAnalyzer",
-  "keywordTool",
-  "resourceHub",
   "resumeKeywordsDb",
   "examples",
-  "atsGuide",
+  "platformHub",
 ] as const;
 
 /** Curated related clusters per route — avoids generic duplicate lists. */
 const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
-  "/": ["rejectedByAts", "commonRejectionReasons", "checker", "aiResumeReview", "completeAtsGuide", "howAtsWorks"],
+  "/": ["platformHub", "checker", "resumeReview", "matchAnalyzer", "resumeKeywordsDb", "examples"],
+  "/resume-optimization-platform": [
+    "checker",
+    "resumeReview",
+    "atsResumeReview",
+    "resumeCheckerOnline",
+    "completeAtsGuide",
+    "examples",
+  ],
+  "/resume-checker-online": [
+    "checker",
+    "atsResumeReview",
+    "resumeReview",
+    "scoreChecker",
+    "cvChecker",
+    "platformHub",
+  ],
+  "/ats-resume-review": [
+    "checker",
+    "resumeReview",
+    "aiResumeReview",
+    "scoreChecker",
+    "rejectedByAts",
+    "platformHub",
+  ],
   [RESUME_CHECKER_PATH]: [
     "matchAnalyzer",
     "keywordTool",

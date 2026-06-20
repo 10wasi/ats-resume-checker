@@ -1296,7 +1296,7 @@ Recruiters are not grading your soul — they are triaging. Make the yes path ea
     slug: "ats-friendly-cv-tips",
     title: "ATS Friendly CV Tips",
     seoTitle:
-      "ATS Friendly CV Tips | UK, EU & US Job Seekers (No Keyword Tricks)",
+      "ATS Friendly CV Tips for Global Job Seekers (No Keyword Tricks)",
     description:
       "ATS friendly CV tips for 2026: structure, honest keywords, file choices, and regional quirks — written for anyone calling their document a CV or resume.",
     date: "2026-04-24",

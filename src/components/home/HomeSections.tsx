@@ -25,20 +25,18 @@ export function HeroSection() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="section-eyebrow">
             <IconSparkle className="h-3.5 w-3.5 shrink-0 text-[#4ade80]" />
-            Resume rejected by ATS? Start here
+            Resume optimization platform · free tools
           </p>
           <h1 className="mt-6 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.85rem] lg:leading-[1.1]">
             {CTR_HOME.h1}
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            Most rejections happen before a recruiter reads your name—broken PDFs, missing keywords,
-            low match scores. Learn{" "}
-            <Link href="/how-ats-works" className="font-semibold text-[#16a34a] underline">
-              how ATS works
-            </Link>
-            , improve your score, and run the free{" "}
-            <strong className="font-semibold text-slate-800">resume checker online</strong> to see
-            exactly what to fix.
+            Not just an ATS checker—a full platform with{" "}
+            <strong className="font-semibold text-slate-800">resume review</strong>,{" "}
+            <strong className="font-semibold text-slate-800">match analyzer</strong>,{" "}
+            <strong className="font-semibold text-slate-800">keyword tools</strong>, and{" "}
+            <strong className="font-semibold text-slate-800">examples</strong>. Diagnose rejection,
+            improve scores, get more interviews—then verify with the free checker.
           </p>
           <HomeHeroPasteForm />
           <p className="mt-6 text-sm text-slate-500">

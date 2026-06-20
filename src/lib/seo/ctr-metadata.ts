@@ -12,12 +12,12 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: "ATS Resume Checker — Find Why Your Resume Gets Rejected",
+  title: "Resume Optimization Platform — Free Checker & Review",
   description:
-    "Resume rejected by ATS? Free checker shows why—missing keywords, format issues & score in 60s. Resume review online + match tool. Fix before you apply.",
-  ogTitle: "Free ATS Resume Checker & Resume Review Tool",
-  h1: "Why Your Resume Gets Rejected—and How to Fix It",
-  primaryKeyword: "ATS Resume Checker",
+    "Free resume optimization platform: checker, review, match, keywords & examples—not just an ATS score. Resume checker free online worldwide.",
+  ogTitle: "Resume Optimization Platform — ATS Checker & Review",
+  h1: "The Resume Optimization Platform for Global Job Seekers",
+  primaryKeyword: "resume optimization platform",
   richSnippets: ["FAQPage", "WebApplication", "ItemList", "Organization", "BreadcrumbList"],
 };
 
@@ -52,10 +52,10 @@ export const CTR_RESUME_MATCH_SCORE: PageCtrMeta = {
 };
 
 export const CTR_ABOUT: PageCtrMeta = {
-  title: "About ResumeIQ — Global ATS Resume Platform",
+  title: "About ResumeIQ — Resume Optimization Platform",
   description:
-    "About ResumeIQ: free ATS resume optimization for job seekers worldwide. Mission, methodology, privacy-first tools, and editorial standards.",
-  h1: "About ResumeIQ: Global Resume Optimization",
+    "About ResumeIQ: free resume optimization platform for job seekers worldwide—checker, review, match, keywords, methodology & editorial standards.",
+  h1: "About ResumeIQ: Resume Optimization Platform",
   primaryKeyword: "about ResumeIQ",
   richSnippets: ["Organization", "BreadcrumbList", "FAQPage"],
 };
@@ -545,6 +545,26 @@ export const CTR_COMPLETE_ATS_GUIDE: PageCtrMeta = {
   h1: "The Complete Guide to ATS Resume Optimization",
   primaryKeyword: "ATS resume optimization",
   richSnippets: ["Article", "FAQPage", "HowTo", "ItemList", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_PLATFORM_HUB_INDEX: PageCtrMeta = {
+  title: "Resume Optimization Platform — 9 Free Hubs",
+  description:
+    "Resume optimization platform: checker, review, score, keywords, match, ATS tools & CV checker. Cornerstone guides + free tools for global job seekers.",
+  ogTitle: "Resume Optimization Platform — Not Just a Checker",
+  h1: "Resume Optimization Platform",
+  primaryKeyword: "resume optimization platform",
+  richSnippets: ["ItemList", "FAQPage", "Organization", "BreadcrumbList"],
+};
+
+export const CTR_ATS_RESUME_REVIEW: PageCtrMeta = {
+  title: "ATS Resume Review — Free Online Scan & Score",
+  description:
+    "Free ATS resume review: parse test, keyword gaps, format flags & readiness report. ATS resume review online—global job applications.",
+  ogTitle: "ATS Resume Review — Free Scan & Fixes",
+  h1: "ATS Resume Review: Free Online Scan & Fixes",
+  primaryKeyword: "ATS resume review",
+  richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export function buildCtrMetadata(

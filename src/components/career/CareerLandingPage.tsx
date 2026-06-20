@@ -9,6 +9,8 @@ import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { CAREER_SUCCESS_HUB_PATH } from "@/lib/content/career-success-hub/registry";
 import type { CareerLandingEntry } from "@/lib/content/career-success-hub/types";
+import { getPlatformHubByPath } from "@/lib/content/platform-hubs/registry";
+import { PlatformHubSections } from "@/components/hub/PlatformHubSections";
 import type { FaqItem } from "@/lib/seo/faq";
 
 type Props = {
@@ -27,6 +29,7 @@ export function CareerLandingPage({
   toolCta,
 }: Props) {
   const faqItems: FaqItem[] = entry.faqItems;
+  const platformHub = getPlatformHubByPath(entry.path);
   return (
     <>
       <ResourceGuideJsonLd
@@ -91,6 +94,8 @@ export function CareerLandingPage({
           </div>
 
           <RelatedResources path={entry.path} excludeHref={entry.path} />
+
+          {platformHub ? <PlatformHubSections hub={platformHub} /> : null}
 
           <section
             className="mt-16 border-t border-slate-200 pt-14"

@@ -1,6 +1,7 @@
 export const RESOURCE_HUB_PATH = "/resource-hub" as const;
 
 export const RESOURCE_HUB_GUIDES = [
+  { title: "Resume Optimization Platform", href: "/resume-optimization-platform", desc: "All 9 hubs + cornerstone guides" },
   { title: "Complete ATS Guide", href: "/complete-guide-ats-resume-optimization", desc: "Master optimization reference" },
   { title: "Resume Rejected By ATS", href: "/resume-rejected-by-ats", desc: "Why ATS filters you out" },
   { title: "Common Rejection Reasons", href: "/common-ats-resume-rejection-reasons", desc: "Top ATS rejection triggers" },

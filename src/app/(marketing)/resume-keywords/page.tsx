@@ -7,8 +7,10 @@ import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { ResumeKeywordsItemListJsonLd } from "@/components/seo/ResumeKeywordsItemListJsonLd";
 import { TopicClusterLinks } from "@/components/seo/TopicClusterLinks";
+import { PlatformHubSections } from "@/components/hub/PlatformHubSections";
 import { resumeKeywordsIndexBody } from "@/lib/content/resume-keywords/index-body";
 import { RESUME_KEYWORDS_PATH } from "@/lib/content/resume-keywords/registry";
+import { getPlatformHubByPath } from "@/lib/content/platform-hubs/registry";
 import { resumeKeywordsDatabaseFaqItems } from "@/lib/seo/resume-keywords-database-faq";
 import { buildCtrMetadata, CTR_RESUME_KEYWORDS_DATABASE } from "@/lib/seo/ctr-metadata";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
@@ -26,6 +28,7 @@ export const metadata = buildCtrMetadata(CTR_RESUME_KEYWORDS_DATABASE, {
 });
 
 export default function ResumeKeywordsIndexPage() {
+  const platformHub = getPlatformHubByPath(RESUME_KEYWORDS_PATH);
   return (
     <>
       <ResourceGuideJsonLd
@@ -97,6 +100,8 @@ export default function ResumeKeywordsIndexPage() {
           </div>
 
           <TopicClusterLinks path={RESUME_KEYWORDS_PATH} />
+
+          {platformHub ? <PlatformHubSections hub={platformHub} /> : null}
 
           <section className="mt-16 border-t border-slate-200 pt-14">
             <h2 className="font-display text-2xl font-bold text-slate-900">
