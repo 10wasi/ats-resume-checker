@@ -6,23 +6,15 @@ import { WebSiteJsonLd } from "@/components/seo/WebSiteJsonLd";
 import {
   HeroSection,
   HomeStrongCtaSection,
-  HomeTrustedBySection,
-  HomeTrustStrip,
   HowItWorksSection,
 } from "@/components/home/HomeSections";
-import {
-  HomeGscIntentSection,
-  HomeSearchIntentStorySection,
-} from "@/components/home/HomeGscIntentSection";
+import { HomeGscIntentSection } from "@/components/home/HomeGscIntentSection";
 import { HomePlatformHubsSection } from "@/components/home/HomePlatformHubsSection";
-import { HomeGlobalReachSection } from "@/components/home/HomeGlobalReachSection";
 import {
   HomeMethodologyPreviewSection,
-  HomeToolEcosystemSection,
-  HomeVsCompetitorsSection,
+  HomeTrustScoringSection,
   HomeWhyTrustSection,
 } from "@/components/home/HomeAuthoritySections";
-import { HomePillarFeaturesSection } from "@/components/home/HomePillarFeaturesSection";
 import { HomeProblemSection } from "@/components/home/HomeProblemSection";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { buildCtrMetadata, CTR_HOME } from "@/lib/seo/ctr-metadata";
@@ -41,14 +33,6 @@ const FaqSection = dynamic(
   }
 );
 
-const HomeAuthorityHubSection = dynamic(
-  () =>
-    import("@/components/home/HomeSections").then((m) => ({
-      default: m.HomeAuthorityHubSection,
-    })),
-  { loading: () => null }
-);
-
 const AdPlaceholder = dynamic(
   () =>
     import("@/components/monetization/AdPlaceholder").then((m) => ({
@@ -60,15 +44,14 @@ const AdPlaceholder = dynamic(
 export const metadata = buildCtrMetadata(CTR_HOME, {
   canonical: "/",
   keywords: [
-    "resume optimization platform",
-    "resume checker free online",
-    "resume review online",
+    "resume checker",
     "resume score checker",
-    "free ATS resume checker",
-    "ATS resume review",
-    "CV checker",
-    "resume keywords",
-    "resume match analyzer",
+    "free resume checker online",
+    "ATS resume checker",
+    "resume optimization tool",
+    "free ATS score checker",
+    "resume rejected by ATS",
+    "resume checker free online",
   ],
 });
 
@@ -82,23 +65,16 @@ export default function HomePage() {
       <FaqJsonLd />
       <HeroSection />
       <HomePlatformHubsSection />
-      <HomeSearchIntentStorySection />
-      <HomeProblemSection />
-      <HomeGscIntentSection />
-      <HomeWhyTrustSection />
-      <HomePillarFeaturesSection />
-      <HomeMethodologyPreviewSection />
       <HowItWorksSection />
-      <HomeVsCompetitorsSection />
-      <HomeToolEcosystemSection />
-      <HomeGlobalReachSection />
-      <HomeTrustedBySection />
-      <HomeTrustStrip />
+      <HomeProblemSection />
+      <HomeWhyTrustSection />
+      <HomeTrustScoringSection />
+      <HomeMethodologyPreviewSection />
+      <HomeGscIntentSection />
       <AdPlaceholder
         label="Advertisement · resume tools"
         className="border-b border-slate-100 py-6 sm:py-8"
       />
-      <HomeAuthorityHubSection />
       <FaqSection />
       <HomeStrongCtaSection />
     </>

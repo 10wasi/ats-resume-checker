@@ -34,9 +34,20 @@ export const resumeScoreCheckerEntry: CareerLandingEntry = {
     },
   ],
   body: `
-A **resume score check** tells you whether hiring software can read your file—and how closely your language matches what recruiters search for. ResumeIQ combines ATS scoring with keyword analysis and format detection in one free flow.
+A **resume score checker** tells you whether hiring software can read your file—and how closely your language matches what recruiters search for. Use it as your **free ATS score checker** before every application batch.
 
-Run your **resume score check** now: [free ATS resume checker](/resume-checker) — upload PDF or paste text.
+Run your **resume score check** now: [free resume checker](/resume-checker) — upload PDF or paste text.
+
+## Practical example: reading your score
+
+| Score | What it usually means | First fix |
+|-------|----------------------|-----------|
+| Below 55 | Parse or layout failure | [ATS resume format](/ats-resume-format) |
+| 55–70 | Readable but weak keywords | [Resume keywords database](/resume-keywords) |
+| 70–85 | Competitive baseline | [Resume match tool](/resume-match-analyzer) |
+| 85+ | Strong file—tailor per job | Match + [resume examples](/resume-examples) |
+
+**Real case:** Marketing manager scored 88 on baseline but match was 52 for a "Performance Marketing" posting—missing Meta Ads, GA4, and CAC terms. After adding them to two bullets, match rose to 74 without changing employers.
 
 ## What our resume score checker measures
 
@@ -76,6 +87,12 @@ Re-check score after each pass. Diminishing returns after format and top keyword
 - **Score low with few flags** — Often thin keyword proof in recent roles, not layout.
 
 ## Connected tools
+
+- [Free resume checker online](/free-resume-checker-online) — Full scan workflow
+- [Free ATS score checker](/free-ats-score-checker) — Quick compatibility %
+- [ATS resume checker](/ats-resume-checker) — Parse + keyword deep dive
+- [Resume rejected by ATS](/resume-rejected-by-ats) — When low scores mean silence
+- [How to improve resume score](/how-to-improve-resume-score) — Three-pass plan
 
 This page is part of the [Career Success Hub](/career-success-hub). Next steps: [resume optimization](/resume-optimization) workflow, [ATS checklist](/ats-resume-checklist-2026), and [resume review](/resume-review) rubric.
 `,

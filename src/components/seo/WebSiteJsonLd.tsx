@@ -1,18 +1,28 @@
 import { getSiteUrl } from "@/lib/site-url";
+import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 export function WebSiteJsonLd() {
-  const base = getSiteUrl();
+  const base = getSiteUrl().replace(/\/$/, "");
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "ATS Resume Checker",
+    name: "ResumeIQ",
+    alternateName: "ATS Resume Checker",
     description:
-      "Check ATS score of your resume and improve job chances instantly. Free CV score tool and guides.",
+      "Free resume checker and resume score checker online—ATS score, keyword gaps, match tool, and resume optimization for job seekers worldwide.",
     url: base,
     publisher: {
       "@type": "Organization",
-      name: "ATS Resume Checker",
+      name: "ResumeIQ",
       url: base,
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${base}${RESUME_CHECKER_PATH}`,
+      },
+      name: "Run free resume checker",
     },
   };
 

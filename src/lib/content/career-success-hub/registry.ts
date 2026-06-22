@@ -18,6 +18,8 @@ import { howToTailorResumeEntry } from "@/lib/content/search-intent/how-to-tailo
 import { howToImproveResumeScoreEntry } from "@/lib/content/search-intent/how-to-improve-resume-score";
 import { resumeMistakesCostInterviewsEntry } from "@/lib/content/search-intent/resume-mistakes-that-cost-interviews";
 import { resumeScreeningExplainedEntry } from "@/lib/content/search-intent/resume-screening-explained";
+import { freeResumeCheckerOnlineEntry } from "@/lib/content/search-intent/free-resume-checker-online";
+import { freeAtsScoreCheckerEntry } from "@/lib/content/search-intent/free-ats-score-checker";
 import type { CareerHubIndexItem, CareerLandingEntry } from "./types";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
@@ -45,6 +47,8 @@ export const CAREER_LANDING_PAGES: CareerLandingEntry[] = [
   howToImproveResumeScoreEntry,
   resumeMistakesCostInterviewsEntry,
   resumeScreeningExplainedEntry,
+  freeResumeCheckerOnlineEntry,
+  freeAtsScoreCheckerEntry,
 ];
 
 export function getCareerLandingByPath(
@@ -55,6 +59,22 @@ export function getCareerLandingByPath(
 
 /** Full Career Success Hub index — tools + guides (existing routes included). */
 export const CAREER_HUB_INDEX: CareerHubIndexItem[] = [
+  {
+    id: "free-resume-checker-online",
+    title: "Free Resume Checker Online",
+    description:
+      "Resume checker free online—ATS score, keywords, format fixes. No signup.",
+    path: "/free-resume-checker-online",
+    badge: "Tool",
+  },
+  {
+    id: "free-ats-score-checker",
+    title: "Free ATS Score Checker",
+    description:
+      "Free ATS score checker—compatibility %, keyword gaps, and format flags.",
+    path: "/free-ats-score-checker",
+    badge: "Tool",
+  },
   {
     id: "resume-checker",
     title: "Resume Checker",

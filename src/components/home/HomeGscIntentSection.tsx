@@ -5,44 +5,44 @@ import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 export function HomeGscIntentSection() {
   const intents = [
     {
+      query: "Resume checker",
+      href: "/free-resume-checker-online",
+      desc: "Free resume checker online—upload PDF, get ATS score & fixes.",
+    },
+    {
+      query: "Resume score checker",
+      href: "/resume-score-checker",
+      desc: "What your ATS % means and how to improve it fast.",
+    },
+    {
+      query: "Resume checker free online",
+      href: "/free-resume-checker-online",
+      desc: "No signup—instant score, keywords & format flags.",
+    },
+    {
+      query: "Free ATS score checker",
+      href: "/free-ats-score-checker",
+      desc: "Free ATS score checker—compatibility % & keyword gaps.",
+    },
+    {
+      query: "ATS resume checker free online",
+      href: "/ats-resume-checker",
+      desc: "ATS resume checker built for parse health & keywords.",
+    },
+    {
       query: "Resume rejected by ATS",
       href: "/resume-rejected-by-ats",
-      desc: "Why hiring software filters you out—and the fix workflow.",
+      desc: "Why hiring software filters you—and the fix workflow.",
     },
     {
-      query: "Common ATS rejection reasons",
-      href: "/common-ats-resume-rejection-reasons",
-      desc: "Top 12 rejection triggers with examples and fixes.",
+      query: "Resume match tool",
+      href: "/resume-match-analyzer",
+      desc: "Match score vs any job description.",
     },
     {
-      query: "Resume score check",
-      href: "/resume-score-checker",
-      desc: "What your ATS % means and how to improve it.",
-    },
-    {
-      query: "Free ATS resume checker",
-      href: "/ats-resume-checker",
-      desc: "Free ATS score checker—upload PDF, get keyword gaps.",
-    },
-    {
-      query: "Resume review online",
-      href: "/resume-review",
-      desc: "10-minute recruiter rubric plus ATS scan.",
-    },
-    {
-      query: "AI resume review",
-      href: "/ai-resume-review",
-      desc: "AI score, format flags, and bullet suggestions.",
-    },
-    {
-      query: "Resume not working ATS",
-      href: "/resume-not-passing-ats",
-      desc: "Parse vs keyword diagnosis before you re-apply.",
-    },
-    {
-      query: "CV checker",
-      href: "/cv-checker",
-      desc: "Free CV checker online—works worldwide.",
+      query: "Resume keywords database",
+      href: "/resume-keywords",
+      desc: "ATS keyword lists by profession + finder tools.",
     },
   ];
 
@@ -58,12 +58,12 @@ export function HomeGscIntentSection() {
             id="gsc-intent-heading"
             className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
           >
-            Guides matched to real job-seeker searches
+            Resume checker guides matched to real searches
           </h2>
           <p className="mt-4 text-slate-600">
-            Rejection reasons, score checks, reviews, and CV scans—each guide links to the{" "}
+            Resume checker, resume score checker, and rejection fixes—each guide links to the{" "}
             <Link href={RESUME_CHECKER_PATH} className="font-semibold text-[#16a34a] underline">
-              free ATS checker
+              free resume checker
             </Link>{" "}
             as the fix step.
           </p>

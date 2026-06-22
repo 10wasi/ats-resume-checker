@@ -25,22 +25,21 @@ export function HeroSection() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="section-eyebrow">
             <IconSparkle className="h-3.5 w-3.5 shrink-0 text-[#4ade80]" />
-            Resume optimization platform · free tools
+            Free resume checker · resume score checker
           </p>
           <h1 className="mt-6 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.85rem] lg:leading-[1.1]">
             {CTR_HOME.h1}
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            Not just an ATS checker—a full platform with{" "}
-            <strong className="font-semibold text-slate-800">resume review</strong>,{" "}
-            <strong className="font-semibold text-slate-800">match analyzer</strong>,{" "}
-            <strong className="font-semibold text-slate-800">keyword tools</strong>, and{" "}
-            <strong className="font-semibold text-slate-800">examples</strong>. Diagnose rejection,
-            improve scores, get more interviews—then verify with the free checker.
+            Upload or paste your resume for an instant{" "}
+            <strong className="font-semibold text-slate-800">ATS resume score</strong>, missing
+            keywords, and format fixes—then use our{" "}
+            <strong className="font-semibold text-slate-800">resume optimization tool</strong>{" "}
+            (match analyzer, keyword database, examples) to turn rejections into interviews.
           </p>
           <HomeHeroPasteForm />
           <p className="mt-6 text-sm text-slate-500">
-            Free resume score check · Resume review online · No signup
+            Free resume checker online · Resume score checker · No signup
           </p>
           <ul className="mx-auto mt-8 flex max-w-xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-slate-500">
             <li className="flex items-center gap-1.5">
@@ -58,7 +57,7 @@ export function HeroSection() {
           </ul>
         </div>
 
-        <div className="relative mx-auto mt-16 max-w-4xl">
+        <div className="relative mx-auto mt-12 max-w-4xl" aria-hidden="true">
           <div className="absolute inset-0 -z-10 rounded-[2rem] bg-brand-gradient opacity-30 blur-2xl" />
           <div className="card-glass overflow-hidden rounded-3xl">
             <div className="flex items-center justify-between gap-4 border-b border-white/60 bg-white/60 px-5 py-3">
@@ -645,8 +644,17 @@ export function HomeStrongCtaSection() {
             for job seekers worldwide.
           </p>
           <div className="mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
-            <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-8 text-base font-semibold">
-              Improve Resume Now
+            <Link
+              href={RESUME_CHECKER_PATH}
+              className="btn-gradient w-full px-8 text-base font-semibold sm:w-auto"
+            >
+              Check resume score free
+            </Link>
+            <Link
+              href="/resume-match-analyzer"
+              className="inline-flex h-12 w-full items-center justify-center rounded-xl border border-white/20 bg-white/10 px-8 text-base font-semibold text-white transition hover:bg-white/15 sm:w-auto"
+            >
+              Match to job posting
             </Link>
           </div>
         </div>
@@ -1425,10 +1433,10 @@ export function HowItWorksSection() {
             Check Resume Score
           </Link>
           <Link
-            href="/blog/how-to-make-your-resume-ats-friendly-2026-complete-guide"
+            href="/complete-guide-ats-resume-optimization"
             className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-6 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-accent-400 hover:text-accent-600"
           >
-            Read the ATS-friendly guide
+            Read optimization guide
           </Link>
         </div>
       </div>

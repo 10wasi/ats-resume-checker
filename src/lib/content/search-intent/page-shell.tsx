@@ -8,9 +8,10 @@ export function createSearchIntentMetadata(entry: CareerLandingEntry) {
     canonical: entry.path,
     keywords: [
       entry.ctr.primaryKeyword,
-      "resume not getting interviews",
-      "ATS Resume Checker",
       "resume checker",
+      "resume score checker",
+      "free resume checker online",
+      "ATS resume checker",
     ],
     ogType: "article",
   });

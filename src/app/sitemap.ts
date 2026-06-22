@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" | "monthly";
   }[] = [
     { path: "", priority: 1, changeFrequency: "weekly" },
-    { path: RESUME_CHECKER_PATH, priority: 0.95, changeFrequency: "weekly" },
+    { path: RESUME_CHECKER_PATH, priority: 0.98, changeFrequency: "weekly" },
     {
       path: "/career-success-hub",
       priority: 0.96,
@@ -99,7 +99,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       path: "/resume-score-checker",
-      priority: 0.91,
+      priority: 0.95,
       changeFrequency: "weekly",
     },
     {
@@ -175,6 +175,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       path: "/resume-optimization-platform",
       priority: 0.99,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/free-resume-checker-online",
+      priority: 0.97,
+      changeFrequency: "weekly",
+    },
+    {
+      path: "/free-ats-score-checker",
+      priority: 0.96,
       changeFrequency: "weekly",
     },
     {

@@ -22,15 +22,15 @@ export type PlatformHubEntry = {
 export const PLATFORM_HUBS: PlatformHubEntry[] = [
   {
     slug: "resume-checker",
-    path: "/resume-checker-online",
+    path: "/free-resume-checker-online",
     title: "Resume Checker",
-    breadcrumbLabel: "Resume checker",
+    breadcrumbLabel: "Free resume checker online",
     ctr: {
-      title: "Resume Checker Free Online — ATS Score & Review",
+      title: "Free Resume Checker Online — ATS Score & Review",
       description:
         "Resume checker free online: upload PDF, get ATS score, keyword gaps & format fixes. Free resume score checker for job seekers worldwide.",
-      h1: "Resume Checker Free Online: ATS Score & Fixes",
-      primaryKeyword: "resume checker free online",
+      h1: "Free Resume Checker Online: ATS Score & Review",
+      primaryKeyword: "free resume checker online",
       richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
     },
     intro:
@@ -374,7 +374,7 @@ Use both: [ATS resume review](${RESUME_CHECKER_PATH}) then [resume review online
     toolHref: RESUME_CHECKER_PATH,
     toolCtaLabel: "Check my CV free",
     exampleLinks: [
-      { href: "/resume-checker-online", label: "Resume checker hub" },
+      { href: "/free-resume-checker-online", label: "Resume checker hub" },
       { href: "/ats-resume-format", label: "Format guide" },
       { href: "/resume-examples", label: "Examples library" },
     ],

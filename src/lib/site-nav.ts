@@ -15,7 +15,8 @@ export type SiteNavItem = { readonly href: string; readonly label: string };
 /** Product links (footer + dashboard footer). */
 export const SITE_TOOLS: SiteNavItem[] = [
   { href: "/resume-optimization-platform", label: "Optimization platform" },
-  { href: "/resume-checker-online", label: "Resume checker online" },
+  { href: "/free-resume-checker-online", label: "Free resume checker online" },
+  { href: "/free-ats-score-checker", label: "Free ATS score checker" },
   { href: "/ats-resume-review", label: "ATS resume review" },
   { href: RESUME_CHECKER_PATH, label: "ATS Resume Checker" },
   { href: "/resume-match-analyzer", label: "Resume match analyzer" },
@@ -55,7 +56,8 @@ export const SITE_CAREER_PAGES: SiteNavItem[] = [
   { href: "/resume-optimization", label: "Resume optimization guide" },
   { href: "/resume-match-score", label: "Resume match score explained" },
   { href: "/resume-score-checker", label: "Resume score checker" },
-  { href: "/resume-keywords-checker", label: "Resume keywords checker" },
+  { href: "/free-resume-checker-online", label: "Free resume checker online" },
+  { href: "/free-ats-score-checker", label: "Free ATS score checker" },
   { href: "/ats-resume-checker", label: "ATS resume checker guide" },
 ];
 

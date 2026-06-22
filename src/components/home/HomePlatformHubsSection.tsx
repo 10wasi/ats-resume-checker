@@ -7,8 +7,8 @@ export function HomePlatformHubsSection() {
   const featured = [
     {
       title: "Resume Checker",
-      desc: "Free online ATS score, keyword gaps, format flags.",
-      href: "/resume-checker-online",
+      desc: "Free resume checker online—ATS score, keyword gaps, format flags.",
+      href: "/free-resume-checker-online",
     },
     {
       title: "Resume Review",
@@ -49,11 +49,14 @@ export function HomePlatformHubsSection() {
             id="platform-hubs-heading"
             className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
           >
-            More than an ATS checker—six tools, one workflow
+            Resume checker plus match, keywords &amp; examples
           </h2>
           <p className="mt-4 text-slate-600">
-            Checker, review, match, keywords, examples, and improvement recommendations—built to
-            compete with Jobscan and Resume Worded, free for core analysis.
+            Start with the free{" "}
+            <Link href={RESUME_CHECKER_PATH} className="font-semibold text-[#16a34a] underline">
+              resume checker
+            </Link>
+            , then use match, keywords, and examples to optimize every application.
           </p>
         </div>
         <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

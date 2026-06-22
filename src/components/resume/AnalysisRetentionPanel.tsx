@@ -14,9 +14,15 @@ const EXAMPLE_LINKS = [
 
 const TOOL_LINKS = [
   { href: "/resume-match-analyzer", label: "Resume match analyzer" },
+  { href: "/resume-review", label: "Resume review online" },
   { href: "/resume-keyword-tool", label: "Keyword optimizer" },
-  { href: "/ai-resume-rewrite", label: "AI resume suggestions" },
-  { href: "/ats-guide", label: "ATS guide hub" },
+  { href: "/common-ats-resume-rejection-reasons", label: "ATS rejection reasons" },
+];
+
+const GUIDE_LINKS = [
+  { href: "/resume-rejected-by-ats", label: "Resume rejected by ATS" },
+  { href: "/how-to-improve-resume-score", label: "Improve resume score" },
+  { href: "/ats-resume-checklist-2026", label: "Pre-submit checklist" },
 ];
 
 type Props = {
@@ -54,15 +60,23 @@ export function AnalysisRetentionPanel({
     variant === "match" ? "/resume-job-description-match" : RESUME_CHECKER_PATH;
   const atsScore = analysis.ats_score ?? 0;
   const readability = analysis.readability_score ?? 0;
+  const needsMatch =
+    analysis.job_match_score == null && variant === "checker";
+  const scoreHeadline =
+    atsScore >= 75
+      ? "Strong baseline—tailor for each job next"
+      : atsScore >= 55
+        ? "Fix keywords & format, then re-check"
+        : "Priority: format and parse health first";
 
   return (
-    <div className="not-prose mt-10 space-y-6">
+    <div className="not-prose mt-10 space-y-6 pb-24 md:pb-0">
       <section className="rounded-2xl border border-emerald-200/80 bg-gradient-to-br from-emerald-50/90 to-white p-5 sm:p-6">
         <p className="text-[11px] font-bold uppercase tracking-wider text-emerald-800">
-          Resume improvement tool · next steps
+          Resume improvement · next steps
         </p>
         <h3 className="mt-2 font-display text-lg font-bold text-slate-900">
-          Your ATS analysis summary
+          {scoreHeadline}
         </h3>
 
         <div className="mt-4 grid gap-3 sm:grid-cols-3">
@@ -192,6 +206,19 @@ export function AnalysisRetentionPanel({
         </div>
 
         <div className="mt-5">
+          <p className="text-sm font-semibold text-slate-900">Recommended guides</p>
+          <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm">
+            {GUIDE_LINKS.map((g) => (
+              <li key={g.href}>
+                <Link href={g.href} className="font-semibold text-[#16a34a] underline">
+                  {g.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="mt-5">
           <p className="text-sm font-semibold text-slate-900">Related tools</p>
           <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm">
             {TOOL_LINKS.map((t) => (
@@ -210,32 +237,67 @@ export function AnalysisRetentionPanel({
               type="button"
               onClick={onRecheck}
               disabled={recheckLoading}
-              className="inline-flex h-11 items-center justify-center rounded-xl bg-[#16a34a] px-5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#15803d] disabled:opacity-60"
+              className="inline-flex h-11 min-w-[8rem] flex-1 items-center justify-center rounded-xl bg-[#16a34a] px-5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#15803d] disabled:opacity-60 sm:flex-none"
             >
-              {recheckLoading ? "Checking…" : "Improve again"}
+              {recheckLoading ? "Checking…" : "Re-check resume"}
             </button>
           ) : (
             <Link
               href={RESUME_CHECKER_PATH}
-              className="inline-flex h-11 items-center justify-center rounded-xl bg-[#16a34a] px-5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#15803d]"
+              className="inline-flex h-11 min-w-[8rem] flex-1 items-center justify-center rounded-xl bg-[#16a34a] px-5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#15803d] sm:flex-none"
             >
-              Improve again
+              Re-check resume
+            </Link>
+          )}
+          {needsMatch ? (
+            <Link
+              href="/resume-job-description-match"
+              className="inline-flex h-11 flex-1 items-center justify-center rounded-xl border border-emerald-300 bg-emerald-50 px-5 text-sm font-semibold text-emerald-900 transition hover:bg-emerald-100 sm:flex-none"
+            >
+              Add job match
+            </Link>
+          ) : (
+            <Link
+              href="/resume-keyword-tool"
+              className="inline-flex h-11 flex-1 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-800 transition hover:border-emerald-300 sm:flex-none"
+            >
+              Fix keywords
             </Link>
           )}
           <Link
-            href="/resume-keyword-tool"
-            className="inline-flex h-11 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-800 transition hover:border-emerald-300"
-          >
-            Try keyword optimizer
-          </Link>
-          <Link
             href="/resume-examples"
-            className="inline-flex h-11 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-800 transition hover:border-emerald-300"
+            className="inline-flex h-11 flex-1 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-800 transition hover:border-emerald-300 sm:flex-none"
           >
-            View resume examples
+            Examples
           </Link>
         </div>
       </section>
+
+      <div className="fixed inset-x-0 bottom-0 z-40 flex gap-2 border-t border-slate-200 bg-white/95 p-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-[0_-4px_20px_rgba(0,0,0,0.06)] backdrop-blur-md md:hidden">
+        {onRecheck ? (
+          <button
+            type="button"
+            onClick={onRecheck}
+            disabled={recheckLoading}
+            className="inline-flex h-11 flex-1 items-center justify-center rounded-xl bg-[#16a34a] text-sm font-semibold text-white disabled:opacity-60"
+          >
+            {recheckLoading ? "Checking…" : "Re-check"}
+          </button>
+        ) : (
+          <Link
+            href={RESUME_CHECKER_PATH}
+            className="inline-flex h-11 flex-1 items-center justify-center rounded-xl bg-[#16a34a] text-sm font-semibold text-white"
+          >
+            Re-check
+          </Link>
+        )}
+        <Link
+          href={needsMatch ? "/resume-job-description-match" : "/resume-review"}
+          className="inline-flex h-11 flex-1 items-center justify-center rounded-xl border border-slate-200 text-sm font-semibold text-slate-800"
+        >
+          {needsMatch ? "Match job" : "Review"}
+        </Link>
+      </div>
 
       <RelatedResources path={path} excludeHref={path} limit={5} />
     </div>

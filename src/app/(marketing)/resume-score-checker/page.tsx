@@ -23,15 +23,14 @@ export default function ResumeScoreCheckerPage() {
       intro={
         <>
           Understand what a <strong className="font-semibold text-slate-800">resume score checker</strong>{" "}
-          measures, how ATS ratings differ from resume match score, and how to improve fast—with a
-          free{" "}
+          measures, how ATS ratings differ from resume match score, and how to improve fast—run the{" "}
           <Link
             href={RESUME_CHECKER_PATH}
             className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"
           >
-            ATS scan
+            free resume checker
           </Link>{" "}
-          built in.
+          to get your score in seconds.
         </>
       }
       toolCta={

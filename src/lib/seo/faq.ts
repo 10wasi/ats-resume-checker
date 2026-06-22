@@ -5,6 +5,11 @@ export type FaqItem = {
 
 export const homepageFaqItems: FaqItem[] = [
   {
+    question: "What is a resume checker?",
+    answer:
+      "A resume checker simulates how applicant tracking systems read your file—parse health, keyword coverage, format flags, and an ATS score. ResumeIQ is a free resume checker online with resume score checker, match tool, and keyword database built in.",
+  },
+  {
     question: "What is an ATS resume optimization platform?",
     answer:
       "ResumeIQ combines an ATS Resume Checker, resume match analyzer, keyword finder, ATS resume examples, checklist, and AI resume rewrite assistant in one free flow. You analyze your file, compare it to a job description, and get actionable resume optimization—not just a single score.",
@@ -22,7 +27,7 @@ export const homepageFaqItems: FaqItem[] = [
   {
     question: "Where can I find ATS resume examples?",
     answer:
-      "Our ATS resume examples guide shows good vs bad layouts, bullet patterns, and keyword placement for 2026. Start from the homepage tools grid or read the full guide at /ats-resume-examples.",
+      "Our ATS resume examples guide shows good vs bad layouts, bullet patterns, and keyword placement. Browse role-specific samples in the resume examples library, then validate your file in the free checker.",
   },
   {
     question: "How accurate are ATS scores?",

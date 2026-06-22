@@ -1,5 +1,4 @@
 import { getSiteUrl } from "@/lib/site-url";
-import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 /** ItemList schema for homepage core tools — supports rich results and site understanding. */
 export function HomePlatformJsonLd() {
@@ -7,63 +6,63 @@ export function HomePlatformJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "ATS Resume Optimization Platform Tools",
+    name: "ResumeIQ Resume Checker Platform",
     description:
-      "Free tools for ATS resume checking, job match scoring, keyword finding, bullet generation, examples, checklists, and AI resume rewrites.",
+      "Free resume checker, resume score checker, ATS score checker, match tool, keywords database, and examples for job seekers worldwide.",
     itemListElement: [
       {
         "@type": "ListItem",
         position: 1,
-        name: "ATS Resume Checker",
-        url: `${base}${RESUME_CHECKER_PATH}`,
+        name: "Free Resume Checker Online",
+        url: `${base}/free-resume-checker-online`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: "Resume Match Analyzer",
-        url: `${base}/resume-job-description-match`,
+        name: "Resume Score Checker",
+        url: `${base}/resume-score-checker`,
       },
       {
         "@type": "ListItem",
         position: 3,
-        name: "ATS Keywords Finder",
-        url: `${base}/ats-keywords-finder`,
+        name: "Free ATS Score Checker",
+        url: `${base}/free-ats-score-checker`,
       },
       {
         "@type": "ListItem",
         position: 4,
-        name: "Resume Bullet Generator",
-        url: `${base}/resume-bullet-generator`,
+        name: "Resume Match Analyzer",
+        url: `${base}/resume-match-analyzer`,
       },
       {
         "@type": "ListItem",
         position: 5,
+        name: "Resume Keywords Database",
+        url: `${base}/resume-keywords`,
+      },
+      {
+        "@type": "ListItem",
+        position: 6,
         name: "Resume Examples Library",
         url: `${base}/resume-examples`,
       },
       {
         "@type": "ListItem",
-        position: 6,
-        name: "ATS Resume Checklist",
-        url: `${base}/ats-resume-checklist-2026`,
-      },
-      {
-        "@type": "ListItem",
         position: 7,
-        name: "Career Success Hub",
-        url: `${base}/career-success-hub`,
+        name: "Resume Rejected By ATS Guide",
+        url: `${base}/resume-rejected-by-ats`,
       },
       {
         "@type": "ListItem",
         position: 8,
-        name: "ATS Knowledge Center",
-        url: `${base}/knowledge-center`,
+        name: "ATS Resume Checker Free Online",
+        url: `${base}/ats-resume-checker`,
       },
       {
         "@type": "ListItem",
         position: 9,
-        name: "Resume Optimization Guide",
-        url: `${base}/resume-optimization`,
+        name: "How To Improve Resume Score",
+        url: `${base}/how-to-improve-resume-score`,
       },
     ],
   };

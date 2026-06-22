@@ -12,22 +12,42 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: "Resume Optimization Platform — Free Checker & Review",
+  title: "Free Resume Checker & ATS Resume Score Checker Online",
   description:
-    "Free resume optimization platform: checker, review, match, keywords & examples—not just an ATS score. Resume checker free online worldwide.",
-  ogTitle: "Resume Optimization Platform — ATS Checker & Review",
-  h1: "The Resume Optimization Platform for Global Job Seekers",
-  primaryKeyword: "resume optimization platform",
+    "Free resume checker online—upload PDF, get ATS score & missing keywords in 60s. Resume score checker, match tool & format fixes. No signup.",
+  ogTitle: "Free Resume Checker & ATS Resume Score Checker",
+  h1: "Free Resume Checker & ATS Resume Score Checker",
+  primaryKeyword: "resume checker",
   richSnippets: ["FAQPage", "WebApplication", "ItemList", "Organization", "BreadcrumbList"],
 };
 
 export const CTR_RESUME_CHECKER: PageCtrMeta = {
   title: "Resume Checker Free Online — ATS Score & Fixes",
   description:
-    "Resume checker free online: upload PDF → ATS score, missing keywords & format warnings. Free ATS score checker for global applications.",
+    "Free resume checker: upload PDF → ATS score, keyword gaps & format warnings. Resume score checker built for real job applications worldwide.",
   ogTitle: "Free Resume Checker Online — ATS Analysis",
-  h1: "Resume Checker Free Online—Get Your ATS Score",
-  primaryKeyword: "resume checker free online",
+  h1: "Free Resume Checker Online",
+  primaryKeyword: "resume checker",
+  richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_FREE_RESUME_CHECKER_ONLINE: PageCtrMeta = {
+  title: "Free Resume Checker Online — ATS Score & Review",
+  description:
+    "Resume checker free online: no signup, instant ATS score, keyword gaps & format fixes. Upload PDF or paste text—see what hiring software reads.",
+  ogTitle: "Resume Checker Free Online — Free ATS Score",
+  h1: "Free Resume Checker Online: ATS Score & Review",
+  primaryKeyword: "free resume checker online",
+  richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_FREE_ATS_SCORE_CHECKER: PageCtrMeta = {
+  title: "Free ATS Score Checker — Resume Score & Keywords",
+  description:
+    "Free ATS score checker: upload resume, get compatibility %, missing keywords & format flags. Resume score checker online—no paywall.",
+  ogTitle: "Free ATS Score Checker — Instant Resume Score",
+  h1: "Free ATS Score Checker: Instant Resume Score",
+  primaryKeyword: "free ATS score checker",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
@@ -388,12 +408,12 @@ export const CTR_RESUME_OPTIMIZATION: PageCtrMeta = {
 };
 
 export const CTR_RESUME_SCORE_CHECKER: PageCtrMeta = {
-  title: "Resume Score Check — Free ATS Rating Guide",
+  title: "Resume Score Checker Free — What Your ATS % Means",
   description:
-    "Resume score check explained: what ATS % means, good benchmarks & how to improve fast. Free resume score checker—upload PDF, get fixes in seconds.",
-  ogTitle: "Resume Score Check — Free ATS Analysis",
-  h1: "Resume Score Check: What Your ATS Rating Means",
-  primaryKeyword: "resume score check",
+    "Free resume score checker: what ATS % means, good benchmarks & how to improve fast. Upload PDF for instant score, keywords & format fixes.",
+  ogTitle: "Resume Score Checker Free — ATS Rating Guide",
+  h1: "Resume Score Checker: What Your ATS Rating Means",
+  primaryKeyword: "resume score checker",
   richSnippets: ["Article", "FAQPage", "WebApplication", "BreadcrumbList", "Organization"],
 };
 
@@ -408,12 +428,12 @@ export const CTR_RESUME_KEYWORDS_CHECKER: PageCtrMeta = {
 };
 
 export const CTR_ATS_RESUME_CHECKER_LANDING: PageCtrMeta = {
-  title: "Free ATS Resume Checker — Score & Keywords",
+  title: "ATS Resume Checker Free Online — Score & Keywords",
   description:
-    "Free ATS resume checker & free ATS score checker: upload PDF, get keyword gaps, format flags & improvement plan. No signup—resume checker free online.",
-  ogTitle: "Free ATS Score Checker — Upload & Fix",
-  h1: "Free ATS Resume Checker: Score, Keywords & Fixes",
-  primaryKeyword: "free ATS resume checker",
+    "ATS resume checker free online: upload PDF, get ATS score, keyword gaps & format flags. Free resume checker—no signup, instant results.",
+  ogTitle: "ATS Resume Checker Free Online — Upload & Fix",
+  h1: "ATS Resume Checker Free Online: Score & Keywords",
+  primaryKeyword: "ATS resume checker free online",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
@@ -498,11 +518,11 @@ export const CTR_RESUME_SCREENING_EXPLAINED: PageCtrMeta = {
 };
 
 export const CTR_RESUME_REJECTED_BY_ATS: PageCtrMeta = {
-  title: "Resume Rejected By ATS? Causes & Free Fix",
+  title: "Resume Rejected By ATS? Fix Free — Score & Guide",
   description:
-    "Resume rejected by ATS? See why hiring software filters you out—parse failures, keywords & real examples. Free resume checker online fixes it fast.",
-  ogTitle: "Resume Rejected By ATS — Diagnose Free",
-  h1: "Resume Rejected By ATS: Why It Happens and How to Fix It",
+    "Resume rejected by ATS? Diagnose parse failures & keyword gaps with our free resume checker. Real examples + 30-minute fix workflow.",
+  ogTitle: "Resume Rejected By ATS — Free Diagnosis",
+  h1: "Resume Rejected By ATS: Diagnose & Fix Free",
   primaryKeyword: "resume rejected by ATS",
   richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };

@@ -70,6 +70,15 @@ A **free ATS resume checker** and **free ATS score checker** answer one question
 - [ATS Resume Mistakes](/ats-resume-mistakes) — Silent rejection triggers
 - [Resume Examples](/resume-examples) — Role-specific benchmarks
 
+## Related resume checker pages
+
+- [Free resume checker online](/free-resume-checker-online) — Hub for score + review
+- [Resume score checker](/resume-score-checker) — What your ATS % means
+- [Free ATS score checker](/free-ats-score-checker) — Quick compatibility check
+- [Resume match tool](/resume-match-analyzer) — Tailor for each posting
+- [Resume keywords database](/resume-keywords) — Role-specific terms
+- [Resume examples](/resume-examples) — Layout benchmarks
+
 ## Part of a complete platform
 
 The ATS resume checker is the hub of the [Career Success Hub](/career-success-hub)—connected to match tools, keyword finders, bullet generators, and nine industry resume guides. One workflow, no paywall for core analysis.

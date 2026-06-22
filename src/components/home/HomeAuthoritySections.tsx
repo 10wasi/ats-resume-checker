@@ -19,8 +19,8 @@ export function HomeWhyTrustSection() {
     {
       title: "Unique value",
       body: "A connected platform—not a single score. Checker, resume match tool, keyword database, examples library, and guides link together so every scan leads to a clear next step.",
-      href: "/career-success-hub",
-      cta: "Explore tools",
+      href: "/resume-optimization-platform",
+      cta: "Explore platform",
     },
     {
       title: "After your score",
@@ -123,6 +123,73 @@ export function HomeMethodologyPreviewSection() {
             How ATS works
           </Link>
         </div>
+      </div>
+    </section>
+  );
+}
+
+/** GSC trust cluster — scoring education linked from homepage. */
+export function HomeTrustScoringSection() {
+  const guides = [
+    {
+      title: "How ATS scoring works",
+      body: "What parsers extract, how keywords are weighted, and why format flags matter before a recruiter ever sees your file.",
+      href: "/methodology",
+      cta: "Scoring methodology",
+    },
+    {
+      title: "What resume score means",
+      body: "Interpret your ATS %, benchmarks for 70 vs 85, and the difference between resume score and job match score.",
+      href: "/resume-score-checker",
+      cta: "Resume score checker guide",
+    },
+    {
+      title: "How to improve resume score",
+      body: "Three-pass workflow: fix format, add posting keywords into bullets, re-check after every export change.",
+      href: "/how-to-improve-resume-score",
+      cta: "Improvement guide",
+    },
+  ];
+
+  return (
+    <section
+      className="border-b border-slate-200/70 bg-slate-50/60 py-16 sm:py-20"
+      aria-labelledby="trust-scoring-heading"
+    >
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <p className="section-eyebrow mx-auto">Understand your score</p>
+          <h2
+            id="trust-scoring-heading"
+            className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
+          >
+            Resume score checker you can trust—not a black box
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
+            Before you apply again, learn how the{" "}
+            <Link href={RESUME_CHECKER_PATH} className="font-semibold text-[#16a34a] underline">
+              free resume checker
+            </Link>{" "}
+            scores your file and what to fix first.
+          </p>
+        </div>
+        <ul className="mt-12 grid gap-5 sm:grid-cols-3">
+          {guides.map((g) => (
+            <li
+              key={g.href}
+              className="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+            >
+              <h3 className="font-display text-lg font-bold text-slate-900">{g.title}</h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">{g.body}</p>
+              <Link
+                href={g.href}
+                className="mt-4 text-sm font-semibold text-[#16a34a] underline underline-offset-2"
+              >
+                {g.cta} →
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
