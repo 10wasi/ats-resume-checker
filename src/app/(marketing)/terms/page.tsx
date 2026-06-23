@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
+import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { termsFaqItems } from "@/lib/seo/legal-faq";
 import { buildCtrMetadata, CTR_TERMS } from "@/lib/seo/ctr-metadata";
 
 export const metadata = buildCtrMetadata(CTR_TERMS, {
@@ -17,6 +19,7 @@ export default function TermsPage() {
           { name: "Terms of Service", path: "/terms" },
         ]}
       />
+      <PageFaqJsonLd items={termsFaqItems} />
     <div className="container-prose py-16">
       <PageBreadcrumbs
         items={[
@@ -69,6 +72,17 @@ export default function TermsPage() {
           with an updated date at the top of this page.
         </Section>
       </div>
+      <section className="mt-14 border-t border-slate-200 pt-12">
+        <h2 className="font-display text-2xl font-bold text-slate-900">FAQ</h2>
+        <div className="mt-8 space-y-8">
+          {termsFaqItems.map((item) => (
+            <div key={item.question}>
+              <h3 className="text-lg font-semibold text-slate-900">{item.question}</h3>
+              <p className="mt-2 leading-relaxed text-slate-700">{item.answer}</p>
+            </div>
+          ))}
+        </div>
+      </section>
       <p className="mt-10 text-sm text-slate-500">
         See also{" "}
         <Link href="/privacy" className="font-semibold text-[#16a34a] underline underline-offset-2">

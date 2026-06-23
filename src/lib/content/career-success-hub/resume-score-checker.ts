@@ -1,4 +1,5 @@
 import type { CareerLandingEntry } from "./types";
+import { RESUME_SCORE_CHECKER_EXTRA } from "@/lib/content/money-pages/money-page-expansions";
 import { CTR_RESUME_SCORE_CHECKER } from "@/lib/seo/ctr-metadata";
 
 export const resumeScoreCheckerEntry: CareerLandingEntry = {
@@ -16,6 +17,16 @@ export const resumeScoreCheckerEntry: CareerLandingEntry = {
       question: "How is resume score different from resume match score?",
       answer:
         "Resume score measures overall ATS compatibility—format, structure, keyword breadth. Match score compares your resume to one job description. You need both: a healthy baseline score plus strong match for each application.",
+    },
+    {
+      question: "What score should I target before applying?",
+      answer:
+        "Fix all format flags first. Baseline 70+ with clean parse is a reasonable target for many roles—then optimize match per posting rather than chasing a perfect 100.",
+    },
+    {
+      question: "Can I trust a free resume score checker?",
+      answer:
+        "Free checkers approximate parser behavior and catch the issues that cause most rejections. Use scores to prioritize edits, not as interview guarantees.",
     },
     {
       question: "Is a free resume score checker accurate?",
@@ -95,5 +106,6 @@ Re-check score after each pass. Diminishing returns after format and top keyword
 - [How to improve resume score](/how-to-improve-resume-score) — Three-pass plan
 
 This page is part of the [Career Success Hub](/career-success-hub). Next steps: [resume optimization](/resume-optimization) workflow, [ATS checklist](/ats-resume-checklist-2026), and [resume review](/resume-review) rubric.
+${RESUME_SCORE_CHECKER_EXTRA}
 `,
 };

@@ -1,4 +1,5 @@
 import type { CareerLandingEntry } from "@/lib/content/career-success-hub/types";
+import { FREE_ATS_SCORE_CHECKER_EXTRA } from "@/lib/content/money-pages/money-page-expansions";
 import { CTR_FREE_ATS_SCORE_CHECKER } from "@/lib/seo/ctr-metadata";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
@@ -29,9 +30,14 @@ export const freeAtsScoreCheckerEntry: CareerLandingEntry = {
         "ATS score measures overall resume health. Match score compares you to one job description. Use the free ATS score checker for baseline, then match for each application.",
     },
     {
-      question: "How do I improve my ATS score fast?",
+      question: "How often should I check my ATS score?",
       answer:
-        "Fix format flags first (single column, standard headings), add 5–8 posting keywords into recent bullets, re-export PDF, and re-run the checker.",
+        "After every export change, template switch, or major bullet edit. Five minutes of re-checking prevents broken PDFs in application batches.",
+    },
+    {
+      question: "Is ResumeIQ's ATS score checker free worldwide?",
+      answer:
+        "Yes. Upload from any country—core score, keyword gaps, and format flags are free for standard use.",
     },
   ],
   body: `
@@ -89,5 +95,6 @@ Full plan: [How to improve resume score](/how-to-improve-resume-score).
 - [Resume checker free online](/free-resume-checker-online) — Hub for score + review
 - [Resume rejected by ATS](/resume-rejected-by-ats) — When low scores mean silence
 - [Resume examples](/resume-examples) — Role benchmarks
+${FREE_ATS_SCORE_CHECKER_EXTRA}
 `,
 };

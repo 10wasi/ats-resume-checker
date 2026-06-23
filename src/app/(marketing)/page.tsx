@@ -5,11 +5,15 @@ import { HomeWebApplicationJsonLd } from "@/components/seo/HomeWebApplicationJso
 import { WebSiteJsonLd } from "@/components/seo/WebSiteJsonLd";
 import {
   HeroSection,
+  HomeCoreToolsGridSection,
   HomeStrongCtaSection,
   HowItWorksSection,
 } from "@/components/home/HomeSections";
 import { HomeGscIntentSection } from "@/components/home/HomeGscIntentSection";
 import { HomePlatformHubsSection } from "@/components/home/HomePlatformHubsSection";
+import { HomeProductDifferentiationSection } from "@/components/home/HomeProductDifferentiationSection";
+import { HomeSeoContent } from "@/components/home/HomeSeoContent";
+import { HomeWhoItsForSection } from "@/components/home/HomeWhoItsForSection";
 import {
   HomeMethodologyPreviewSection,
   HomeTrustScoringSection,
@@ -64,13 +68,17 @@ export default function HomePage() {
       <HomePlatformJsonLd />
       <FaqJsonLd />
       <HeroSection />
+      <HomeWhoItsForSection />
       <HomePlatformHubsSection />
+      <HomeProductDifferentiationSection />
       <HowItWorksSection />
       <HomeProblemSection />
+      <HomeCoreToolsGridSection />
       <HomeWhyTrustSection />
       <HomeTrustScoringSection />
       <HomeMethodologyPreviewSection />
       <HomeGscIntentSection />
+      <HomeSeoContent />
       <AdPlaceholder
         label="Advertisement · resume tools"
         className="border-b border-slate-100 py-6 sm:py-8"

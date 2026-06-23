@@ -1,7 +1,7 @@
 export const METHODOLOGY_PATH = "/methodology" as const;
 
 export const methodologyBody = `
-ResumeIQ scoring is designed to mirror **what applicant tracking systems and recruiters actually search for**—not to predict interviews or offers. Our methodology is transparent, repeatable, and built for **global job applications** (North America, Europe, Asia-Pacific, Middle East, Africa, and remote hiring worldwide).
+ResumeIQ scoring is designed to mirror **what applicant tracking systems and recruiters actually search for**—not to predict interviews or offers. Our methodology is transparent, repeatable, and built for **global job applications** across regions, remote hiring, and international employer portals.
 
 ## What ATS systems check
 
@@ -27,6 +27,14 @@ The **ATS compatibility score** combines:
 
 Scores are **0–100**. They reflect file health and keyword coverage on your master resume—not a single job posting.
 
+### Skills sub-score
+
+We detect tools, technologies, and competencies mentioned in your text. Skills listed only in graphics or sidebars may score lower if parsers cannot read them.
+
+### Keyword sub-score
+
+With a job description, we compare posting terms to your bullets and skills sections. Ethical placement in experience lines scores higher than invisible stuffing.
+
 ## Resume match score (job-specific)
 
 When you attach a job description, **match score** measures overlap between posting terms and your resume text. This is always posting-specific—the same file can score 80% for one role and 55% for another.
@@ -39,25 +47,37 @@ After analysis, we show an **ATS screening estimate**—a weighted blend of ATS 
 
 **Important:** This estimates automated screening signals only. It does not predict interviews, offers, or human bias.
 
+## How resume scoring differs from competitors
+
+Many tools hide keyword lists or match scores behind subscriptions. ResumeIQ publishes this methodology and keeps core scoring free so you can verify changes on your own file.
+
 ## How to improve your results
 
-1. Fix **format** until extracted text reads cleanly in the checker.
-2. **Tailor** keywords per posting using the Resume Match Analyzer.
-3. Add **metrics** to bullets—globally, recruiters skim for outcomes.
+1. Fix **format** until extracted text reads cleanly in the [resume checker](/resume-checker).
+2. **Tailor** keywords per posting using the [Resume Match Analyzer](/resume-match-analyzer).
+3. Add **metrics** to bullets—recruiters globally skim for outcomes.
 4. Re-export and re-upload the **exact PDF** you will submit.
+5. Read [how to improve resume score](/how-to-improve-resume-score) for a structured plan.
 
-## Regional notes (global, not US-only)
+## Global resume notes
 
 - **CV vs resume:** Label matters less than parseable structure.
 - **Spelling:** Match your target employer's market—stay consistent throughout the document.
-- **Photos:** Optional in some regions; keep a text-only version for online portals.
-- **Length:** 1–2 pages is common globally for experienced professionals; early-career may use one page.
+- **Photos:** Optional in some markets; keep a text-only version for online portals.
+- **Length:** 1–2 pages is common for experienced professionals; early-career may use one page.
+- **Remote roles:** Same parser rules apply—keywords and clarity still drive visibility.
 
 ## Editorial standards
 
-Guides in our Knowledge Center and Career Hub are written for **job seekers everywhere**—with examples, FAQs, and links to free tools. We avoid country-specific resume myths when parser rules are universal.
+Guides in our Knowledge Center and Career Hub are written for **job seekers everywhere**—with examples, FAQs, and links to free tools. We focus on universal parser rules rather than country-specific myths.
 
-## Try the methodology yourself
+## Related resources
 
-Run the [ATS Resume Checker](/resume-checker) on your file, then read [ATS score explained](/ats-score-explained) and [resume screening explained](/resume-screening-explained) for context.
+- [How ATS works](/how-ats-works) — Parser and filter overview  
+- [Resume score checker](/resume-score-checker) — What your % means  
+- [ATS score explained](/ats-score-explained) — Score semantics  
+- [Resume screening explained](/resume-screening-explained) — Full hiring stack  
+- [Free resume checker online](/free-resume-checker-online) — Apply the methodology  
+
+Run the [ATS Resume Checker](/resume-checker) on your file to see these signals on your own resume.
 `;

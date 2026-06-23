@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { ResumeCheckerMoneyGuide } from "@/components/resume/ResumeCheckerMoneyGuide";
 import { ResumeCheckerPanel } from "@/components/resume/ResumeCheckerPanel";
 import { ResumeCheckerSeoIntro } from "@/components/resume/ResumeCheckerSeoIntro";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
@@ -12,21 +13,18 @@ import {
   HOWTO_RESUME_CHECKER,
   HOWTO_URLS,
 } from "@/lib/seo/how-to-steps";
-import { homepageFaqItems } from "@/lib/seo/faq";
+import { resumeCheckerFaqItems } from "@/lib/seo/resume-checker-faq";
 
 export const metadata = buildCtrMetadata(CTR_RESUME_CHECKER, {
   canonical: RESUME_CHECKER_PATH,
   absoluteTitle: true,
   keywords: [
-    "ATS Resume Checker",
-    "ATS resume score",
-    "resume keywords",
-    "resume optimization",
-    "ATS compatible resume",
+    "resume checker",
+    "resume score checker",
+    "free resume checker online",
+    "ATS resume checker",
   ],
 });
-
-const checkerFaq = homepageFaqItems.slice(0, 6);
 
 export default function ResumeCheckerPage() {
   return (
@@ -44,7 +42,7 @@ export default function ResumeCheckerPage() {
         steps={HOWTO_RESUME_CHECKER}
         path={HOWTO_URLS.checker}
       />
-      <PageFaqJsonLd items={checkerFaq} />
+      <PageFaqJsonLd items={resumeCheckerFaqItems} />
       <div className="min-h-full w-full">
         <div className="border-b border-zinc-200/90 bg-white/90 px-4 py-3 backdrop-blur sm:px-8">
           <nav
@@ -64,6 +62,7 @@ export default function ResumeCheckerPage() {
         <ErrorBoundary>
           <ResumeCheckerPanel />
         </ErrorBoundary>
+        <ResumeCheckerMoneyGuide />
       </div>
     </>
   );

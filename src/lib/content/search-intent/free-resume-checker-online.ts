@@ -1,4 +1,5 @@
 import type { CareerLandingEntry } from "@/lib/content/career-success-hub/types";
+import { FREE_RESUME_CHECKER_ONLINE_EXTRA } from "@/lib/content/money-pages/money-page-expansions";
 import { CTR_FREE_RESUME_CHECKER_ONLINE } from "@/lib/seo/ctr-metadata";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
@@ -29,9 +30,14 @@ export const freeResumeCheckerOnlineEntry: CareerLandingEntry = {
         "There is no universal pass mark. Fix format flags first, then role-specific keywords via the match tool. Scores in the 70–85 range with clean parse usually mean you are competitive.",
     },
     {
-      question: "Can I use the free resume checker for every job application?",
+      question: "How does ResumeIQ compare to Jobscan?",
       answer:
-        "Yes—re-check after every export change and run match analysis when you have a specific posting. Tailoring beats sending the same file everywhere.",
+        "ResumeIQ offers free core ATS score, keyword gaps, match analysis, and checklist without paywalling results. Methodology is published on our methodology page.",
+    },
+    {
+      question: "Can I check my resume online from any country?",
+      answer:
+        "Yes. The checker works for PDFs and DOCX from any region—match spelling and title norms to your target employer's market.",
     },
   ],
   body: `
@@ -86,5 +92,6 @@ Compare layouts in [resume examples](/resume-examples/software-engineer) and [AT
 - [How ATS scoring works](/methodology) — Transparent methodology
 - [How to improve resume score](/how-to-improve-resume-score) — Three-pass plan
 - [Complete ATS optimization guide](/complete-guide-ats-resume-optimization) — Master reference
+${FREE_RESUME_CHECKER_ONLINE_EXTRA}
 `,
 };

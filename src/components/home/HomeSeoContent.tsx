@@ -97,10 +97,10 @@ export function HomeSeoContent() {
             fit is off; other times a small formatting fix unlocks visibility.
             We unpack common failure modes in our guide{" "}
             <Link
-              href="/blog/why-resume-rejected-by-ats"
+              href="/resume-rejected-by-ats"
               className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/35 underline-offset-2 hover:text-[#16a34a]"
             >
-              why resumes get rejected by ATS
+              resume rejected by ATS
             </Link>{" "}
             — pair it with the checker to separate parsing issues from true role
             mismatch before you mass-apply.

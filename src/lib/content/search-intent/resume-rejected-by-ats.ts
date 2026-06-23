@@ -1,4 +1,5 @@
 import type { CareerLandingEntry } from "@/lib/content/career-success-hub/types";
+import { RESUME_REJECTED_BY_ATS_EXTRA } from "@/lib/content/money-pages/money-page-expansions";
 import { CTR_RESUME_REJECTED_BY_ATS } from "@/lib/seo/ctr-metadata";
 
 export const resumeRejectedByAtsEntry: CareerLandingEntry = {
@@ -31,6 +32,16 @@ export const resumeRejectedByAtsEntry: CareerLandingEntry = {
       question: "What is the fastest fix after ATS rejection?",
       answer:
         "Single-column export, standard headings, and matching must-have terms from the job post in experience bullets—then re-run the free checker.",
+    },
+    {
+      question: "Should I rewrite my entire resume after ATS rejection?",
+      answer:
+        "Usually no. Fix format and add 5–8 posting keywords into recent bullets where you have proof. Most rejections are layout or keyword gaps—not your entire career story.",
+    },
+    {
+      question: "How do I know if ATS rejected me vs a recruiter?",
+      answer:
+        "Low checker score with garbled extracted text suggests ATS failure. High score with silence may mean match or recruiter skim—use resume match and review tools to diagnose.",
     },
   ],
   body: `
@@ -83,5 +94,6 @@ Full list: [common ATS resume rejection reasons](/common-ats-resume-rejection-re
 - [Why resume gets rejected](/why-resume-gets-rejected) — full rejection stack
 - [Resume not passing ATS](/resume-not-passing-ats) — parse vs score diagnosis
 - [Complete ATS optimization guide](/complete-guide-ats-resume-optimization) — master reference
+${RESUME_REJECTED_BY_ATS_EXTRA}
 `,
 };

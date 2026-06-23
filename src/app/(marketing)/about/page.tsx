@@ -36,20 +36,28 @@ export default function AboutPage() {
         <div className="mt-8 space-y-5 text-base leading-relaxed text-slate-700 sm:text-lg">
           <p>
             ResumeIQ exists because applying for jobs already costs enough time
-            and anxiety—whether you are in North America, Europe, Asia-Pacific,
-            the Middle East, Africa, or applying for remote roles worldwide. We
-            wanted a fast, honest AI resume analyzer that shows ATS-style signals,
-            keyword gaps, and formatting risks without hiding the useful parts
-            behind a paywall.
+            and anxiety. We built a fast, honest resume checker for job seekers
+            worldwide—whether you apply locally, remotely, or across borders. You
+            get ATS-style signals, keyword gaps, and formatting risks without
+            hiding the useful parts behind a paywall.
           </p>
           <p>
-            <strong className="font-semibold text-slate-900">Why we are different:</strong>{" "}
-            ResumeIQ publishes{" "}
-            <Link href="/methodology" className="font-semibold text-[#16a34a] underline">
-              open scoring methodology
+            <strong className="font-semibold text-slate-900">Our mission:</strong>{" "}
+            Turn every job application into a measurable workflow—check, match,
+            fix, re-check—so qualified candidates are not filtered out by broken
+            PDFs or missing keywords. We publish{" "}
+            <Link href="/how-ats-works" className="font-semibold text-[#16a34a] underline">
+              how ATS works
             </Link>
-            , keeps core ATS analysis free, and connects checker → match → keywords →
-            examples in one journey—so you always know what to do after your score.
+            ,{" "}
+            <Link href="/methodology" className="font-semibold text-[#16a34a] underline">
+              how scoring works
+            </Link>
+            , and connect guides to the{" "}
+            <Link href={RESUME_CHECKER_PATH} className="font-semibold text-[#16a34a] underline">
+              free resume checker
+            </Link>
+            so you can verify every change.
           </p>
           <p>
             If the score helps you tighten one bullet, fix one parsing issue, or
@@ -121,7 +129,7 @@ export default function AboutPage() {
         <RelatedResources path="/about" excludeHref="/about" />
         <div className="mt-12 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-7">
-            Improve Your Resume
+            Check resume free
           </Link>
           <Link
             href="/blog"
