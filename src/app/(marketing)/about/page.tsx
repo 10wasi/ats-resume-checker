@@ -53,6 +53,14 @@ export default function AboutPage() {
             <Link href="/methodology" className="font-semibold text-[#16a34a] underline">
               how scoring works
             </Link>
+            ,{" "}
+            <Link href="/editorial-policy" className="font-semibold text-[#16a34a] underline">
+              editorial policy
+            </Link>
+            ,{" "}
+            <Link href="/how-resume-analysis-works" className="font-semibold text-[#16a34a] underline">
+              how analysis works
+            </Link>
             , and connect guides to the{" "}
             <Link href={RESUME_CHECKER_PATH} className="font-semibold text-[#16a34a] underline">
               free resume checker

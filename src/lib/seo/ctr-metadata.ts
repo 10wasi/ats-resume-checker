@@ -149,6 +149,25 @@ export const CTR_CONTACT: PageCtrMeta = {
   richSnippets: ["Organization", "BreadcrumbList", "FAQPage"],
 };
 
+export const CTR_EDITORIAL_POLICY: PageCtrMeta = {
+  title: "Editorial Policy — ResumeIQ Content Standards",
+  description:
+    "How ResumeIQ creates resume guides: accuracy, actionable advice, global audience, transparent methodology, and correction process.",
+  h1: "Editorial Policy: How We Write Resume Guides",
+  primaryKeyword: "editorial policy",
+  richSnippets: ["Article", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_HOW_RESUME_ANALYSIS: PageCtrMeta = {
+  title: "How Resume Analysis Works — ATS Checker Explained",
+  description:
+    "How ResumeIQ analyzes your resume: extraction, format checks, keywords, skills, AI feedback, and ATS score calculation—step by step.",
+  ogTitle: "How Resume Analysis Works — Full Breakdown",
+  h1: "How Resume Analysis Works",
+  primaryKeyword: "how resume analysis works",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
 export const CTR_PRIVACY: PageCtrMeta = {
   title: "Privacy Policy — ResumeIQ",
   description:

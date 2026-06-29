@@ -31,7 +31,9 @@ export function HeroSection() {
             {CTR_HOME.h1}
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            Upload or paste your resume for an instant{" "}
+            <strong className="font-semibold text-slate-800">ResumeIQ</strong> is a free{" "}
+            <strong className="font-semibold text-slate-800">resume checker</strong> and
+            resume optimization platform. Upload or paste your resume for an instant{" "}
             <strong className="font-semibold text-slate-800">ATS resume score</strong>, missing
             keywords, and format fixes—then use our{" "}
             <strong className="font-semibold text-slate-800">resume optimization tool</strong>{" "}
@@ -1153,8 +1155,8 @@ export function HomeAtsEducationSection() {
             What you are up against—and how resume optimization helps
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600 sm:text-lg">
-            Whether you apply in North America, Europe, Asia-Pacific, the Middle
-            East, Africa, or remotely, the same rules tend to apply: build an{" "}
+            Whether you apply locally, remotely, or across borders, the same rules
+            tend to apply: build an{" "}
             <strong className="font-semibold text-slate-900">
               ATS compatible resume
             </strong>

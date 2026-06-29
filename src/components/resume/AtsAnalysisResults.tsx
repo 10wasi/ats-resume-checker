@@ -15,6 +15,7 @@ import { PersonalizedImprovementPlan } from "./PersonalizedImprovementPlan";
 import { AiResumeImprovements } from "./AiResumeImprovements";
 import { AtsPassLikelihoodCard } from "./AtsPassLikelihoodCard";
 import { AtsReadinessReport } from "./AtsReadinessReport";
+import { AnalysisReportIndex } from "./AnalysisReportIndex";
 import { AnalysisRetentionPanel } from "./AnalysisRetentionPanel";
 import { AnalysisPlatformNextSteps } from "@/components/tools/AnalysisPlatformNextSteps";
 
@@ -473,6 +474,8 @@ export function AtsAnalysisResults({
           PDF export failed — try again or use the text report.
         </p>
       ) : null}
+
+      <AnalysisReportIndex analysis={analysis} showJobMatch={showJobMatch} />
 
       {/* Hero + composite signals */}
       <article

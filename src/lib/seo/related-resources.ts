@@ -233,6 +233,16 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     title: "How ATS Scoring Works",
     description: "Transparent methodology: parse health, keywords, and match scoring.",
   },
+  howResumeAnalysis: {
+    href: "/how-resume-analysis-works",
+    title: "How Resume Analysis Works",
+    description: "Full breakdown of checker stages and report sections.",
+  },
+  editorialPolicy: {
+    href: "/editorial-policy",
+    title: "Editorial Policy",
+    description: "How ResumeIQ writes and reviews resume guides.",
+  },
   faqCenter: {
     href: "/faq-center",
     title: "ATS Resume FAQ Center",
@@ -658,7 +668,9 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
   "/blog/ats-keywords-guide": ["keywordTool", "keywordsFinder", "checker", "blogRemote", "resumeKeywordsDb", "matchAnalyzer"],
   "/blog/remote-job-resume-tips": ["checker", "matchAnalyzer", "blogKeywords", "atsGuide", "howAtsWorks", "examples"],
   "/about": ["checker", "methodology", "faqCenter", "careerHub", "knowledgeCenter", "contact"],
-  "/methodology": ["checker", "faqCenter", "atsScoreGuide", "matchScoreGuide", "careerHub", "checklist"],
+  "/methodology": ["checker", "howResumeAnalysis", "faqCenter", "atsScoreGuide", "editorialPolicy", "checklist"],
+  "/how-resume-analysis-works": ["checker", "methodology", "atsScoreGuide", "scoreChecker", "editorialPolicy", "howAtsWorks"],
+  "/editorial-policy": ["about", "methodology", "howResumeAnalysis", "privacy", "contact", "faqCenter"],
   "/faq-center": ["methodology", "checker", "about", "careerHub", "whyNoInterviews", "improveScore"],
   "/contact": ["checker", "about", "faqCenter", "privacy", "terms", "careerHub"],
   "/privacy": ["terms", "contact", "about", "checker", "careerHub", "blog"],

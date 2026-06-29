@@ -23,21 +23,17 @@ const siteUrl = getSiteUrl();
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "ATS Resume Checker — Free Score & Keywords",
-    template: "%s | ATS Resume Checker",
+    default: "Resume Checker — Free ATS Score & Keywords",
+    template: "%s | ResumeIQ",
   },
   description:
-    "Free ATS resume checker: upload PDF, get your score, missing ATS keywords, and resume optimization fixes. Build an ATS friendly resume—no signup.",
+    "Free resume checker online—upload PDF, get ATS score, missing keywords, and format fixes. Resume score checker built for job seekers worldwide.",
   keywords: [
-    "ATS Resume Checker",
-    "Free ATS Resume Checker",
-    "ATS friendly resume",
+    "resume checker",
+    "resume score checker",
+    "ATS resume checker",
+    "free resume checker online",
     "resume optimization",
-    "resume keywords",
-    "ATS resume score",
-    "resume formatting",
-    "ATS compatible resume",
-    "online resume checker",
   ],
   applicationName: "ATS Resume Checker",
   authors: [{ name: "ATS Resume Checker" }],

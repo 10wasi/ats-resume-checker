@@ -9,6 +9,7 @@ import {
   HomeStrongCtaSection,
   HowItWorksSection,
 } from "@/components/home/HomeSections";
+import { HomeInstantAnswersSection } from "@/components/home/HomeInstantAnswersSection";
 import { HomeGscIntentSection } from "@/components/home/HomeGscIntentSection";
 import { HomePlatformHubsSection } from "@/components/home/HomePlatformHubsSection";
 import { HomeProductDifferentiationSection } from "@/components/home/HomeProductDifferentiationSection";
@@ -68,6 +69,7 @@ export default function HomePage() {
       <HomePlatformJsonLd />
       <FaqJsonLd />
       <HeroSection />
+      <HomeInstantAnswersSection />
       <HomeWhoItsForSection />
       <HomePlatformHubsSection />
       <HomeProductDifferentiationSection />

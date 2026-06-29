@@ -59,6 +59,6 @@ The **Resume Match Analyzer** answers: *Does my resume speak the same language a
 
 ## Global applications
 
-Match analysis matters whether you apply in North America, Europe, Asia-Pacific, the Middle East, Africa, or for remote roles. Mirror employer spelling and title norms for your target market—parser rules stay similar everywhere.
+Match analysis matters for **global applications**—company portals worldwide use similar parsing and keyword search. Mirror employer spelling and title norms for your target market; parser rules stay similar across regions.
 `,
 };

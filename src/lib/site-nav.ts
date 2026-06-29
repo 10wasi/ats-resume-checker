@@ -87,8 +87,11 @@ export const SITE_DASHBOARD_NAV: SiteNavItem[] = [
 export const SITE_COMPANY: SiteNavItem[] = [
   { href: "/about", label: "About" },
   { href: "/how-ats-works", label: "How ATS works" },
+  { href: "/how-resume-analysis-works", label: "How resume analysis works" },
   { href: "/methodology", label: "Methodology" },
+  { href: "/editorial-policy", label: "Editorial policy" },
   { href: "/faq-center", label: "FAQ Center" },
+  { href: "/resource-hub", label: "Resource Hub" },
   { href: "/contact", label: "Contact" },
 ];
 

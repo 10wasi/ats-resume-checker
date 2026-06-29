@@ -101,7 +101,7 @@ For the emotional side of ghosting, read [why qualified candidates still get rej
 
 ### Regional language: small differences, same parser reality
 
-Match spelling and title norms to **your target employer's market**—whether you apply in North America, Europe, Asia-Pacific, the Middle East, Africa, or for remote international teams. Mirror the posting's language when your experience supports it.
+Match spelling and title norms to **your target employer's market**—whether you apply locally, remotely, or across borders. Mirror the posting's language when your experience supports it.
 
 The parser does not “prefer” one country—it prefers **consistency** and **plain text**. Mixing regional spelling randomly can look like sloppiness to humans even if software still reads the file.
 
