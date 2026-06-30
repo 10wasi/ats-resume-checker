@@ -188,11 +188,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
     },
     {
-      path: "/resume-checker-online",
-      priority: 0.96,
-      changeFrequency: "weekly",
-    },
-    {
       path: "/ats-resume-review",
       priority: 0.94,
       changeFrequency: "weekly",

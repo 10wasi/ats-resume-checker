@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { OrganizationJsonLd } from "@/components/seo/OrganizationJsonLd";
 import { getSiteUrl } from "@/lib/site-url";
+import { getDefaultOgImages } from "@/lib/seo/og-defaults";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,10 +36,10 @@ export const metadata: Metadata = {
     "free resume checker online",
     "resume optimization",
   ],
-  applicationName: "ATS Resume Checker",
-  authors: [{ name: "ATS Resume Checker" }],
-  creator: "ATS Resume Checker",
-  publisher: "ATS Resume Checker",
+  applicationName: "ResumeIQ",
+  authors: [{ name: "ResumeIQ" }],
+  creator: "ResumeIQ",
+  publisher: "ResumeIQ",
   robots: {
     index: true,
     follow: true,
@@ -46,18 +47,20 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "en",
     url: siteUrl,
-    siteName: "ATS Resume Checker",
-    title: "ATS Resume Checker — Free Score, Keywords & Fixes",
+    siteName: "ResumeIQ",
+    title: "Resume Checker — Free ATS Score & Keywords",
     description:
-      "Free ATS resume checker: upload PDF, get your score, missing ATS keywords, and resume optimization fixes. Build an ATS friendly resume—no signup.",
+      "Free resume checker online—upload PDF, get ATS score, missing keywords, and format fixes. Built for job seekers worldwide.",
+    images: getDefaultOgImages(),
   },
   twitter: {
     card: "summary_large_image",
-    title: "ATS Resume Checker — Free Score, Keywords & Fixes",
+    title: "Resume Checker — Free ATS Score & Keywords",
     description:
-      "Free ATS resume checker: upload PDF, get your score, missing ATS keywords, and resume optimization fixes. Build an ATS friendly resume—no signup.",
+      "Free resume checker online—upload PDF, get ATS score, missing keywords, and format fixes. Built for job seekers worldwide.",
+    images: getDefaultOgImages().map((img) => img.url),
   },
 };
 

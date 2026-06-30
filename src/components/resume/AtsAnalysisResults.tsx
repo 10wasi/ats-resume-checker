@@ -16,6 +16,7 @@ import { AiResumeImprovements } from "./AiResumeImprovements";
 import { AtsPassLikelihoodCard } from "./AtsPassLikelihoodCard";
 import { AtsReadinessReport } from "./AtsReadinessReport";
 import { AnalysisReportIndex } from "./AnalysisReportIndex";
+import { AnalysisReportDetailSections } from "./AnalysisReportDetailSections";
 import { AnalysisRetentionPanel } from "./AnalysisRetentionPanel";
 import { AnalysisPlatformNextSteps } from "@/components/tools/AnalysisPlatformNextSteps";
 
@@ -800,6 +801,8 @@ export function AtsAnalysisResults({
           </div>
         </section>
       ) : null}
+
+      <AnalysisReportDetailSections analysis={analysis} />
 
       <AiResumeImprovements analysis={analysis} />
 

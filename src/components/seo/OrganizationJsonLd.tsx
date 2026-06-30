@@ -1,4 +1,5 @@
 import { getSiteUrl } from "@/lib/site-url";
+import { OG_IMAGE_HEIGHT, OG_IMAGE_PATH, OG_IMAGE_WIDTH } from "@/lib/seo/og-defaults";
 
 /** Site-wide Organization schema for trust and knowledge panel signals. */
 export function OrganizationJsonLd() {
@@ -11,9 +12,9 @@ export function OrganizationJsonLd() {
     url: base,
     logo: {
       "@type": "ImageObject",
-      url: `${base}/favicon.ico`,
-      width: 32,
-      height: 32,
+      url: `${base}${OG_IMAGE_PATH}`,
+      width: OG_IMAGE_WIDTH,
+      height: OG_IMAGE_HEIGHT,
     },
     foundingDate: "2024",
     description:

@@ -51,8 +51,8 @@ No account required for standard checks.
 
 | Term | Typical use | Parser behavior |
 |------|-------------|-----------------|
-| CV | UK, EU, academia, longer form | Same extraction rules |
-| Resume | US, Canada, tech, 1–2 pages | Same extraction rules |
+| CV | Academia, longer form, some markets | Same extraction rules |
+| Resume | Corporate roles, 1–2 pages | Same extraction rules |
 
 What matters: **plain text, standard sections, honest keywords**—not the filename label.
 

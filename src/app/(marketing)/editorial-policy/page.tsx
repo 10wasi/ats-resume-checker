@@ -2,12 +2,14 @@ import Link from "next/link";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
+import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import {
   EDITORIAL_POLICY_PATH,
   editorialPolicyBody,
 } from "@/lib/content/editorial-policy-body";
+import { editorialPolicyFaqItems } from "@/lib/seo/editorial-policy-faq";
 import { buildCtrMetadata, CTR_EDITORIAL_POLICY } from "@/lib/seo/ctr-metadata";
 
 export const metadata = buildCtrMetadata(CTR_EDITORIAL_POLICY, {
@@ -30,6 +32,7 @@ export default function EditorialPolicyPage() {
           { name: "Editorial Policy", path: EDITORIAL_POLICY_PATH },
         ]}
       />
+      <PageFaqJsonLd items={editorialPolicyFaqItems} />
       <article className="container-prose py-12 sm:py-16">
         <PageBreadcrumbs
           items={[
@@ -50,6 +53,24 @@ export default function EditorialPolicyPage() {
         <div className="mt-10">
           <BlogContent content={editorialPolicyBody} />
         </div>
+
+        <section className="mt-14" aria-labelledby="editorial-faq-heading">
+          <h2
+            id="editorial-faq-heading"
+            className="font-display text-2xl font-bold text-slate-900"
+          >
+            Editorial policy FAQ
+          </h2>
+          <dl className="mt-6 space-y-6">
+            {editorialPolicyFaqItems.map((item) => (
+              <div key={item.question}>
+                <dt className="font-semibold text-slate-900">{item.question}</dt>
+                <dd className="mt-2 text-slate-600">{item.answer}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+
         <RelatedResources path={EDITORIAL_POLICY_PATH} excludeHref={EDITORIAL_POLICY_PATH} />
         <div className="mt-10 flex flex-wrap gap-3">
           <Link href="/methodology" className="font-semibold text-[#16a34a] underline">

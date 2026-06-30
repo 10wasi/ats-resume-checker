@@ -22,6 +22,10 @@ function buildItems(analysis: AtsAnalysisResult, showJobMatch: boolean): Item[] 
     Boolean(analysis.career_insights?.narrative_summary);
   const hasActionVerbs =
     (analysis.ai_resume_improvements?.action_verbs?.length ?? 0) > 0;
+  const hasGrammar = analysis.grammar_issues.length > 0;
+  const hasWeakBullets =
+    (analysis.ai_resume_improvements?.experience_bullets?.length ?? 0) > 0 ||
+    analysis.improved_bullets.length > 0;
 
   return [
     {
@@ -54,6 +58,18 @@ function buildItems(analysis: AtsAnalysisResult, showJobMatch: boolean): Item[] 
       label: "Skills analysis",
       detail: hasSkills ? "Detected skills & gaps listed" : "Skills scan in report",
       status: hasSkills ? "included" : "partial",
+    },
+    {
+      label: "Weak bullet points",
+      detail: hasWeakBullets ? "Bullets flagged for stronger impact" : "No weak bullets flagged",
+      status: hasWeakBullets ? "included" : "partial",
+    },
+    {
+      label: "Grammar & clarity",
+      detail: hasGrammar
+        ? `${analysis.grammar_issues.length} wording fixes`
+        : "No grammar flags",
+      status: "included",
     },
     {
       label: "Resume summary review",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getSiteUrl } from "@/lib/site-url";
+import { getDefaultOgImages } from "@/lib/seo/og-defaults";
 
 /** CTR-optimized page metadata — titles ≤60 chars, descriptions ≤155 chars. */
 export type PageCtrMeta = {
@@ -155,7 +156,7 @@ export const CTR_EDITORIAL_POLICY: PageCtrMeta = {
     "How ResumeIQ creates resume guides: accuracy, actionable advice, global audience, transparent methodology, and correction process.",
   h1: "Editorial Policy: How We Write Resume Guides",
   primaryKeyword: "editorial policy",
-  richSnippets: ["Article", "BreadcrumbList", "Organization"],
+  richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_HOW_RESUME_ANALYSIS: PageCtrMeta = {
@@ -619,6 +620,7 @@ export function buildCtrMetadata(
   const ogTitle = meta.ogTitle ?? meta.title;
   const base = getSiteUrl().replace(/\/$/, "");
   const useAbsolute = options.absoluteTitle ?? true;
+  const ogImages = getDefaultOgImages();
   return {
     title: useAbsolute ? { absolute: meta.title } : meta.title,
     description: meta.description,
@@ -629,11 +631,13 @@ export function buildCtrMetadata(
       description: meta.description,
       url: `${base}${options.canonical}`,
       type: options.ogType ?? "website",
+      images: ogImages,
     },
     twitter: {
       card: "summary_large_image",
       title: ogTitle,
       description: meta.description,
+      images: ogImages.map((img) => img.url),
     },
     robots: { index: true, follow: true },
   };

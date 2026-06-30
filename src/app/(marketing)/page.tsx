@@ -4,14 +4,19 @@ import { HomePlatformJsonLd } from "@/components/seo/HomePlatformJsonLd";
 import { HomeWebApplicationJsonLd } from "@/components/seo/HomeWebApplicationJsonLd";
 import { WebSiteJsonLd } from "@/components/seo/WebSiteJsonLd";
 import {
+  FeatureHighlights,
   HeroSection,
+  HomeChecklistSection,
   HomeCoreToolsGridSection,
+  HomeKeywordsGuidePreviewSection,
+  HomeQuickResumeTipsSection,
+  HomeResumeMatchPreviewSection,
   HomeStrongCtaSection,
+  HomeTrustedBySection,
   HowItWorksSection,
+  ProblemSolutionSection,
 } from "@/components/home/HomeSections";
 import { HomeInstantAnswersSection } from "@/components/home/HomeInstantAnswersSection";
-import { HomeGscIntentSection } from "@/components/home/HomeGscIntentSection";
-import { HomePlatformHubsSection } from "@/components/home/HomePlatformHubsSection";
 import { HomeProductDifferentiationSection } from "@/components/home/HomeProductDifferentiationSection";
 import { HomeSeoContent } from "@/components/home/HomeSeoContent";
 import { HomeWhoItsForSection } from "@/components/home/HomeWhoItsForSection";
@@ -20,7 +25,6 @@ import {
   HomeTrustScoringSection,
   HomeWhyTrustSection,
 } from "@/components/home/HomeAuthoritySections";
-import { HomeProblemSection } from "@/components/home/HomeProblemSection";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { buildCtrMetadata, CTR_HOME } from "@/lib/seo/ctr-metadata";
 
@@ -33,6 +37,20 @@ const FaqSection = dynamic(
     loading: () => (
       <div className="container-page py-20">
         <div className="h-96 animate-pulse rounded-2xl bg-slate-100" />
+      </div>
+    ),
+  }
+);
+
+const BlogHighlightsSection = dynamic(
+  () =>
+    import("@/components/home/BlogHighlightsSection").then((m) => ({
+      default: m.BlogHighlightsSection,
+    })),
+  {
+    loading: () => (
+      <div className="container-page py-16">
+        <div className="h-64 animate-pulse rounded-2xl bg-slate-100" />
       </div>
     ),
   }
@@ -68,19 +86,38 @@ export default function HomePage() {
       <HomeWebApplicationJsonLd />
       <HomePlatformJsonLd />
       <FaqJsonLd />
+
+      {/* What it is + primary CTA */}
       <HeroSection />
       <HomeInstantAnswersSection />
+      <HomeTrustedBySection />
+
+      {/* Benefits & features */}
       <HomeWhoItsForSection />
-      <HomePlatformHubsSection />
-      <HomeProductDifferentiationSection />
+      <FeatureHighlights />
+
+      {/* Workflow + ATS explained */}
       <HowItWorksSection />
-      <HomeProblemSection />
-      <HomeCoreToolsGridSection />
-      <HomeWhyTrustSection />
+      <ProblemSolutionSection />
+
+      {/* Score, match, keywords, formatting */}
       <HomeTrustScoringSection />
+      <HomeResumeMatchPreviewSection />
+      <HomeKeywordsGuidePreviewSection />
+      <HomeChecklistSection />
+
+      {/* Success tips + differentiation */}
+      <HomeQuickResumeTipsSection />
+      <HomeProductDifferentiationSection />
+      <HomeCoreToolsGridSection />
+
+      {/* Trust & methodology */}
+      <HomeWhyTrustSection />
       <HomeMethodologyPreviewSection />
-      <HomeGscIntentSection />
       <HomeSeoContent />
+
+      {/* Latest resources + conversion */}
+      <BlogHighlightsSection />
       <AdPlaceholder
         label="Advertisement · resume tools"
         className="border-b border-slate-100 py-6 sm:py-8"
