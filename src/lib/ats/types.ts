@@ -83,6 +83,8 @@ export type AtsAnalysisResult = {
   matched_keywords?: string[];
   /** Skills and tools detected in resume text (lexicon + parsing). */
   detected_skills?: string[];
+  /** Standard section headers not detected (experience, education, skills). */
+  missing_sections?: string[];
   formatting_issues: string[];
   grammar_issues: string[];
   readability_score: number;

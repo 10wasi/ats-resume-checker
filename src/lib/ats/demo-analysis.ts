@@ -45,6 +45,7 @@ const DEMO_BASE: Omit<
     "sql",
     "git",
   ],
+  missing_sections: ["education"],
   formatting_issues: [
     "No clear section headings",
     "Inconsistent bullet formatting",

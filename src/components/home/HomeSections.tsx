@@ -1014,52 +1014,66 @@ export function ProblemSolutionSection() {
             .
           </p>
         </div>
-        <div className="mt-14 grid gap-8 lg:grid-cols-2 lg:gap-10">
+        <div className="mt-14 grid gap-8 lg:grid-cols-3 lg:gap-8">
           <div className="rounded-3xl border border-slate-200/80 bg-white p-8 shadow-soft">
             <h3 className="font-display text-xl font-bold text-slate-900">
-              Why resumes get rejected early
+              What is an ATS?
+            </h3>
+            <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">
+              An <strong className="font-semibold text-slate-900">applicant tracking system</strong>{" "}
+              is hiring software that stores applications, extracts resume text, and ranks candidates
+              by keywords and structure. Most online applications pass through one before a recruiter
+              opens your file.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-slate-200/80 bg-white p-8 shadow-soft">
+            <h3 className="font-display text-xl font-bold text-slate-900">
+              Why resumes fail ATS
             </h3>
             <ul className="mt-5 space-y-3 text-sm leading-relaxed text-slate-600 sm:text-base">
               <li className="flex gap-3">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-rose-400" />
-                PDFs that look fine on screen but extract like a jigsaw puzzle
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-rose-400" aria-hidden />
+                PDFs that extract in the wrong order
               </li>
               <li className="flex gap-3">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-rose-400" />
-                Fancy layouts that shuffle your skills away from experience
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-rose-400" aria-hidden />
+                Missing standard sections recruiters search for
               </li>
               <li className="flex gap-3">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-rose-400" />
-                Language that doesn&apos;t match how the employer describes the role
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-rose-400" aria-hidden />
+                Keywords from the posting absent from your text
               </li>
               <li className="flex gap-3">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-rose-400" />
-                Bullets that list tasks but never show impact
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-rose-400" aria-hidden />
+                Bullets that list tasks without measurable impact
               </li>
             </ul>
           </div>
           <div className="rounded-3xl border border-emerald-200/80 bg-gradient-to-br from-white via-emerald-50/40 to-white p-8 shadow-soft">
             <h3 className="font-display text-xl font-bold text-slate-900">
-              How ATS works—and how we help
+              How recruiters review resumes
             </h3>
             <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">
-              Most applicant systems ingest your file, pull out text, and file it
-              under headings like Experience and Skills. Recruiters search for
-              tools and phrases that match the job. If your resume never maps
-              cleanly—or those phrases aren&apos;t there—you simply don&apos;t surface the
-              same way.
+              After software ranking, recruiters skim in roughly six seconds: headline, most recent
+              role, metrics, and skills. If page one is dense or off-topic, they move on—even when
+              you are qualified.
             </p>
             <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base">
-              This tool gives you a practical preview: structure risks, keyword fit,
-              and plain-language suggestions so you can fix what matters before you
-              send another application into the void.
+              ResumeIQ previews both stages: parser health, keyword fit, and section quality—so you
+              fix what matters before you apply.
             </p>
-            <div className="mt-6">
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <Link
                 href={RESUME_CHECKER_PATH}
-                className="btn-gradient inline-flex px-7 text-sm sm:text-base"
+                className="btn-gradient inline-flex justify-center px-7 text-sm sm:text-base"
               >
-                Analyze My Resume Free
+                Scan my resume free
+              </Link>
+              <Link
+                href="/methodology"
+                className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-800 transition hover:border-emerald-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
+              >
+                How scoring works
               </Link>
             </div>
           </div>

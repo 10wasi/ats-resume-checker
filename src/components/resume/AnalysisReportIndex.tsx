@@ -26,17 +26,35 @@ function buildItems(analysis: AtsAnalysisResult, showJobMatch: boolean): Item[] 
   const hasWeakBullets =
     (analysis.ai_resume_improvements?.experience_bullets?.length ?? 0) > 0 ||
     analysis.improved_bullets.length > 0;
+  const hasMissingSections = (analysis.missing_sections?.length ?? 0) > 0;
+  const hasJdMatch = hasJd && analysis.keyword_match_detail != null;
 
   return [
     {
-      label: "Overall ATS score",
-      detail: `${Math.round(analysis.ats_score)}/100 composite`,
-      status: "included",
+      label: "Overall resume score",
+      detail: `${Math.round(analysis.ats_score)}/100 ATS composite`,
+      status: "included" as const,
     },
     {
       label: "ATS compatibility",
       detail: analysis.ats_compatibility_rating?.label ?? "Compatibility rating",
-      status: "included",
+      status: "included" as const,
+    },
+    {
+      label: "Keyword match",
+      detail: hasJdMatch
+        ? `${analysis.keyword_match_detail!.coverage_percent}% posting overlap`
+        : hasJd
+          ? "Match score in report"
+          : "Add job description for match %",
+      status: hasJdMatch ? ("included" as const) : ("add-jd" as const),
+    },
+    {
+      label: "Missing sections",
+      detail: hasMissingSections
+        ? `${analysis.missing_sections!.join(", ")} not detected`
+        : "Experience, skills, education found",
+      status: hasMissingSections ? ("included" as const) : ("included" as const),
     },
     {
       label: "Missing keywords",
@@ -138,7 +156,7 @@ export function AnalysisReportIndex({
         Every section below is included in this report. Scroll for details or download the
         full export.
       </p>
-      <ul className="mt-5 grid gap-2 sm:grid-cols-2">
+      <ul className="mt-5 grid gap-2 sm:grid-cols-2" role="list">
         {items.map((item) => (
           <li
             key={item.label}

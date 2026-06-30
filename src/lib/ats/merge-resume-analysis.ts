@@ -292,6 +292,8 @@ export function mergeResumeAnalysis(
       ? categorizeKeywords(dedupeStrings(signals.jdKeywordsMatched, 20))
       : undefined,
     detected_skills: dedupeStrings(signals.skillsFound, 24),
+    missing_sections:
+      signals.missingSections.length > 0 ? [...signals.missingSections] : undefined,
     formatting_issues,
     grammar_issues,
     readability_score,

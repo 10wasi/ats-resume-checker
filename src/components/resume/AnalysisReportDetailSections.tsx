@@ -49,6 +49,47 @@ export function AnalysisReportDetailSections({ analysis }: { analysis: AtsAnalys
   return (
     <div className="space-y-6">
       <section
+        id="missing-sections"
+        className="scroll-mt-24 rounded-2xl border border-zinc-200/90 bg-white p-5 shadow-soft sm:p-7"
+        aria-labelledby="missing-sections-heading"
+      >
+        <h2
+          id="missing-sections-heading"
+          className="font-display text-xl font-semibold text-zinc-950"
+        >
+          Missing resume sections
+        </h2>
+        <p className="mt-2 text-sm text-zinc-600">
+          Standard headings parsers and recruiters expect—Experience, Education, Skills, and
+          Summary.
+        </p>
+        {(analysis.missing_sections?.length ?? 0) > 0 ? (
+          <>
+            <IssueList
+              items={analysis.missing_sections!.map(
+                (s) =>
+                  `No "${s}" section detected — add a clear heading so ATS can map your ${s}.`
+              )}
+              emptyMessage=""
+              tone="rose"
+            />
+            <p className="mt-4 text-xs leading-relaxed text-zinc-500">
+              <strong className="text-zinc-700">Why this matters:</strong> without standard
+              headers, experience can land under the wrong field or disappear from search.{" "}
+              <strong className="text-zinc-700">How to fix:</strong> add plain-text headings
+              (Experience, Education, Skills).{" "}
+              <strong className="text-zinc-700">Expected impact:</strong> correct parsing and
+              keyword indexing on employer portals.
+            </p>
+          </>
+        ) : (
+          <p className="mt-3 rounded-xl border border-emerald-100 bg-emerald-50/60 px-4 py-3 text-sm text-emerald-900">
+            Core sections detected. Re-check after major layout changes.
+          </p>
+        )}
+      </section>
+
+      <section
         id="formatting-issues"
         className="scroll-mt-24 rounded-2xl border border-zinc-200/90 bg-white p-5 shadow-soft sm:p-7"
         aria-labelledby="formatting-issues-heading"
