@@ -134,8 +134,19 @@ function PriorityFixCard({
             ) : null}
           </div>
           <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+            <span className="font-semibold text-zinc-800">Why: </span>
+            {item.why ?? "This fix targets a common reason resumes fail automated screening."}
+          </p>
+          <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+            <span className="font-semibold text-zinc-800">How: </span>
             {item.detail}
           </p>
+          {item.expectedImpact ? (
+            <p className="mt-2 text-sm leading-relaxed text-zinc-600">
+              <span className="font-semibold text-zinc-800">Expected impact: </span>
+              {item.expectedImpact}
+            </p>
+          ) : null}
           {item.impact ? (
             <div
               className="mt-3 h-1.5 w-full max-w-xs overflow-hidden rounded-full bg-zinc-100"

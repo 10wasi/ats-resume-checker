@@ -5,6 +5,8 @@ export type PlanItem = {
   id: string;
   title: string;
   detail: string;
+  why?: string;
+  expectedImpact?: string;
   impact?: "high" | "medium" | "low";
   minutes?: number;
 };
@@ -38,6 +40,58 @@ function impactFromPosition(index: number): "high" | "medium" | "low" {
   return "low";
 }
 
+function enrichPlanItem(item: PlanItem): PlanItem {
+  if (item.why && item.expectedImpact) return item;
+
+  const t = item.title.toLowerCase();
+  let why = item.why;
+  let expectedImpact = item.expectedImpact;
+
+  if (t.includes("format") || t.includes("layout") || t.includes("compatibility")) {
+    why ??=
+      "Applicant tracking systems extract plain text—broken layouts scramble your experience and hide qualifications from recruiters.";
+    expectedImpact ??=
+      "Higher parse success so employers worldwide can read your roles in the correct order.";
+  } else if (t.includes("keyword") || t.includes("posting")) {
+    why ??=
+      "Recruiters and ATS search for role-specific terms; missing keywords mean your resume never surfaces in filtered results.";
+    expectedImpact ??=
+      "Stronger keyword match and visibility when your language mirrors the job description.";
+  } else if (t.includes("summary") || t.includes("headline")) {
+    why ??=
+      "Recruiters decide in seconds on page one—your summary is the hook that earns a deeper read.";
+    expectedImpact ??=
+      "Clearer first impression and faster recognition of your role fit.";
+  } else if (t.includes("bullet") || t.includes("experience") || t.includes("metric")) {
+    why ??=
+      "Weak bullets bury your impact; hiring managers look for scope, action, and measurable outcomes.";
+    expectedImpact ??=
+      "Stronger experience section that passes both ATS indexing and the six-second recruiter skim.";
+  } else if (t.includes("skill")) {
+    why ??=
+      "Skills blocks are indexed for search—tools and methods from the posting must appear where parsers look.";
+    expectedImpact ??=
+      "Better alignment with automated skill filters and recruiter keyword searches.";
+  } else if (t.includes("grammar") || t.includes("wording") || t.includes("readability")) {
+    why ??=
+      "Clarity reduces friction for recruiters and shows attention to detail before they meet you.";
+    expectedImpact ??=
+      "Easier scan and more professional tone without changing your facts.";
+  } else if (t.includes("copy-paste") || t.includes("export") || t.includes("file")) {
+    why ??=
+      "Many rejections happen because the uploaded file is not the same clean export you tested.";
+    expectedImpact ??=
+      "Fewer silent parse failures on employer portals.";
+  } else {
+    why ??=
+      "Small, targeted edits compound—fixing the highest-risk issue first saves time on every application.";
+    expectedImpact ??=
+      "Incremental ATS score improvement and fewer preventable rejections.";
+  }
+
+  return { ...item, why, expectedImpact };
+}
+
 export function buildPersonalizedImprovementPlan(
   analysis: AtsAnalysisResult,
   options: { hasJobDescription: boolean }
@@ -49,12 +103,14 @@ export function buildPersonalizedImprovementPlan(
   const insights = analysis.career_insights;
   const topPriorityFixes: PlanItem[] = recs.highPriority
     .slice(0, 5)
-    .map((item, i) => ({
-      id: item.id,
-      title: item.title,
-      detail: item.detail,
-      impact: impactFromPosition(i),
-    }));
+    .map((item, i) =>
+      enrichPlanItem({
+        id: item.id,
+        title: item.title,
+        detail: item.detail,
+        impact: impactFromPosition(i),
+      })
+    );
 
   const fallbackPriorities: PlanItem[] = [
     {
@@ -82,80 +138,92 @@ export function buildPersonalizedImprovementPlan(
   for (const fb of fallbackPriorities) {
     if (topPriorityFixes.length >= 5) break;
     if (topPriorityFixes.some((p) => p.title === fb.title)) continue;
-    topPriorityFixes.push({
-      ...fb,
-      impact: impactFromPosition(topPriorityFixes.length),
-    });
+    topPriorityFixes.push(
+      enrichPlanItem({
+        ...fb,
+        impact: impactFromPosition(topPriorityFixes.length),
+      })
+    );
   }
 
   const quickWins: PlanItem[] = [
-    {
+    enrichPlanItem({
       id: "qw-format",
       title: "Run the copy-paste test",
       detail:
         "Open your PDF, select all text, paste into Notepad. If order looks scrambled, fix layout before keywords.",
       minutes: 2,
-    },
-    {
+    }),
+    enrichPlanItem({
       id: "qw-headline",
       title: "Align your headline to the role",
       detail:
         "Change your headline to mirror the target job title family (only if truthful).",
       minutes: 3,
-    },
-    {
+    }),
+    enrichPlanItem({
       id: "qw-skills",
       title: "Reorder skills for this posting",
       detail:
         "Move the top 5 tools from the job description to the first line of your Skills section.",
       minutes: 5,
-    },
-    ...recs.quickWins.slice(0, 2).map((item, i) => ({
-      id: item.id,
-      title: item.title,
-      detail: item.detail,
-      minutes: 8,
-    })),
+    }),
+    ...recs.quickWins.slice(0, 2).map((item) =>
+      enrichPlanItem({
+        id: item.id,
+        title: item.title,
+        detail: item.detail,
+        minutes: 8,
+      })
+    ),
   ].slice(0, 5);
 
   const highImpactImprovements: PlanItem[] = [];
   if (options.hasJobDescription && analysis.keyword_match_detail) {
     const pct = analysis.keyword_match_detail.coverage_percent;
     if (pct < 55) {
-      highImpactImprovements.push({
-        id: "hi-keywords",
-        title: "Add 3 missing keywords with proof bullets",
-        detail:
-          "Pick the three highest-value missing terms and add one honest bullet each under your most relevant role.",
-        impact: "high",
-      });
+      highImpactImprovements.push(
+        enrichPlanItem({
+          id: "hi-keywords",
+          title: "Add 3 missing keywords with proof bullets",
+          detail:
+            "Pick the three highest-value missing terms and add one honest bullet each under your most relevant role.",
+          impact: "high",
+        })
+      );
     }
     if (analysis.ats_score < 70) {
-      highImpactImprovements.push({
-        id: "hi-format",
-        title: "Switch to single-column ATS layout",
-        detail:
-          "Use one column, standard headings, and plain-text skills for portal uploads.",
-        impact: "high",
-      });
+      highImpactImprovements.push(
+        enrichPlanItem({
+          id: "hi-format",
+          title: "Switch to single-column ATS layout",
+          detail:
+            "Use one column, standard headings, and plain-text skills for portal uploads.",
+          impact: "high",
+        })
+      );
     }
   }
   if (analysis.formatting_issues.length > 0) {
-    highImpactImprovements.push({
-      id: "hi-layout",
-      title: "Resolve top formatting flag",
-      detail: analysis.formatting_issues[0] ?? "Fix the first layout issue flagged in your report.",
-      impact: "high",
-    });
+    highImpactImprovements.push(
+      enrichPlanItem({
+        id: "hi-layout",
+        title: "Resolve top formatting flag",
+        detail: analysis.formatting_issues[0] ?? "Fix the first layout issue flagged in your report.",
+        impact: "high",
+      })
+    );
   }
   if (highImpactImprovements.length === 0) {
-    highImpactImprovements.push({
-      id: "hi-metrics",
-      title: "Add one metric to your top role",
-      detail:
-        "Rewrite your strongest recent bullet with a number: %, $, time saved, volume, or team size.",
-      impact: "medium",
-    });
+    highImpactImprovements.push(
+      enrichPlanItem({
+        id: "hi-metrics",
+        title: "Add one metric to your top role",
+        detail:
+          "Rewrite your strongest recent bullet with a number: %, $, time saved, volume, or team size.",
+        impact: "medium",
+      })
+    );
   }
 
   const missingKeywordsActionList: PlanItem[] = (

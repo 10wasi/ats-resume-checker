@@ -14,7 +14,7 @@ export const privacyFaqItems: FaqItem[] = [
   {
     question: "Is ResumeIQ GDPR compliant?",
     answer:
-      "We process data to provide the service you request. Users in the EU, UK, and similar jurisdictions may contact us for access or deletion requests where applicable.",
+      "We process data to provide the service you request. Users in regions with privacy regulations may contact us for access or deletion requests where applicable.",
   },
   {
     question: "Who can I contact about privacy?",

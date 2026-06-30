@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { homepageFaqItems, type FaqItem } from "@/lib/seo/faq";
-import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 const FAQ_RELATED: Partial<Record<string, { href: string; label: string }>> = {
   "What is a resume checker?": {
@@ -35,9 +34,41 @@ const FAQ_RELATED: Partial<Record<string, { href: string; label: string }>> = {
     href: "/how-to-improve-resume-score",
     label: "Improve resume score",
   },
+  "What is an AI resume checker?": {
+    href: "/ai-resume-review",
+    label: "AI resume review",
+  },
+  "What is the difference between a CV checker and resume checker?": {
+    href: "/cv-checker",
+    label: "CV checker guide",
+  },
+  "How do recruiters scan resumes?": {
+    href: "/resume-screening-explained",
+    label: "Resume screening explained",
+  },
+  "What is ATS compatibility?": {
+    href: "/ats-resume-format",
+    label: "ATS resume format",
+  },
+  "Is my resume data secure?": {
+    href: "/privacy",
+    label: "Privacy policy",
+  },
+  "What is resume keyword optimization?": {
+    href: "/resume-keywords",
+    label: "Resume keywords database",
+  },
   "Is this resume checker really free?": {
     href: "/methodology",
     label: "Scoring methodology",
+  },
+  "Can remote workers and international applicants use this?": {
+    href: "/how-ats-works",
+    label: "How ATS works globally",
+  },
+  "Should I stuff keywords to beat the ATS?": {
+    href: "/ats-resume-mistakes",
+    label: "Common ATS mistakes",
   },
 };
 
@@ -72,7 +103,7 @@ export function FaqSection() {
           id="home-faq-heading"
           className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
         >
-          ATS resume checker &amp; optimization FAQ
+          ATS resume checker FAQ — {homepageFaqItems.length} answers
         </h2>
         <p className="mt-4 text-lg text-slate-600">
           Plain answers about scoring,{" "}

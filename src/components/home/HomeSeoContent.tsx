@@ -13,7 +13,7 @@ export function HomeSeoContent() {
           id="home-seo-guide-heading"
           className="font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl"
         >
-          Free ATS resume checker for real job applications
+          Free resume analysis for candidates applying worldwide
         </h2>
         <div className="prose-custom mt-8 space-y-6 text-base leading-relaxed text-slate-700 sm:text-[17px]">
           <p>

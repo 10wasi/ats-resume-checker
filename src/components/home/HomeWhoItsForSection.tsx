@@ -1,24 +1,56 @@
 import Link from "next/link";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
-/** Homepage — who the resume checker is for + interview outcome framing. */
+/** Homepage — global audiences + interview outcome framing. */
 export function HomeWhoItsForSection() {
   const audiences = [
     {
-      title: "Active job seekers",
-      body: "Validate every PDF before you mass apply—catch parse failures and keyword gaps in minutes.",
+      title: "Students & fresh graduates",
+      body: "Learn what ATS friendly means on your real file—not generic tips that ignore your layout.",
+    },
+    {
+      title: "Experienced professionals",
+      body: "Validate every PDF before you apply—catch parse failures and keyword gaps in minutes.",
     },
     {
       title: "Career changers",
       body: "Test a new layout and keyword set before pivoting roles. Score moves prove the template works.",
     },
     {
-      title: "Students & new grads",
-      body: "Learn what ATS friendly means on your real file—not generic tips that ignore your layout.",
+      title: "Remote workers",
+      body: "Tailor language to each posting—match score shows overlap before you submit internationally.",
     },
     {
-      title: "Global applicants",
-      body: "Built for company portals worldwide—remote roles, international employers, and local ATS vendors.",
+      title: "Freelancers & contractors",
+      body: "Turn project history into parser-friendly bullets recruiters can skim in seconds.",
+    },
+    {
+      title: "Executives & senior hires",
+      body: "Keep impact on page one—summary and experience feedback tuned for leadership roles.",
+    },
+    {
+      title: "International applicants",
+      body: "Built for employer portals worldwide—match spelling and titles to each posting honestly.",
+    },
+    {
+      title: "Government & public sector",
+      body: "Plain-text structure and standard headings help strict applicant systems read your file.",
+    },
+    {
+      title: "Internship seekers",
+      body: "Strengthen early-career bullets with action verbs and skills employers search for.",
+    },
+    {
+      title: "Active job seekers",
+      body: "Re-check after every edit until format flags clear and keyword match improves.",
+    },
+    {
+      title: "CV & resume users",
+      body: "Same resume scanner whether your market calls it a CV or resume—one upload, full analysis.",
+    },
+    {
+      title: "Anyone applying online",
+      body: "If you submit through a portal, you are likely filtered by applicant tracking software first.",
     },
   ];
 
@@ -26,7 +58,7 @@ export function HomeWhoItsForSection() {
     "See what hiring software reads from your PDF",
     "Fix format before rewriting your entire career story",
     "Match each posting with job-description analysis",
-    "Re-check after edits until flags are clear",
+    "Get why, how, and expected impact on every recommendation",
   ];
 
   return (
@@ -42,27 +74,29 @@ export function HomeWhoItsForSection() {
               id="who-its-for-heading"
               className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
             >
-              A resume checker for anyone who applies online
+              A resume checker for every candidate, everywhere
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-slate-600">
-              ResumeIQ helps you get more interviews by making your resume readable to software{" "}
-              <em>and</em> recruiters—before silence turns into discouragement.
+              Whether you are a student, executive, career changer, or remote applicant—ResumeIQ
+              helps you pass applicant tracking systems and earn the recruiter skim that follows.
             </p>
-            <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2">
               {audiences.map((a) => (
                 <li
                   key={a.title}
-                  className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
+                  className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
                 >
-                  <h3 className="font-display font-bold text-slate-900">{a.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{a.body}</p>
+                  <h3 className="font-display text-sm font-bold text-slate-900">{a.title}</h3>
+                  <p className="mt-1.5 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                    {a.body}
+                  </p>
                 </li>
               ))}
             </ul>
           </div>
           <div className="rounded-2xl border border-emerald-200/80 bg-gradient-to-br from-emerald-50/90 to-white p-6 sm:p-8">
             <h3 className="font-display text-xl font-bold text-slate-900">
-              What the tool does for you
+              What happens after you check your resume
             </h3>
             <ul className="mt-6 space-y-3">
               {outcomes.map((o) => (
@@ -77,11 +111,11 @@ export function HomeWhoItsForSection() {
             </ul>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-6 text-center">
-                Check resume free
+                Run free resume scan
               </Link>
               <Link
                 href="/resume-score-checker"
-                className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-6 text-sm font-semibold text-slate-800 transition hover:border-emerald-300"
+                className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-6 text-sm font-semibold text-slate-800 transition hover:border-emerald-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
               >
                 Resume score guide
               </Link>

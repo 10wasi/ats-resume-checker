@@ -1,12 +1,12 @@
 import Link from "next/link";
 
 const REGIONS = [
-  { name: "North America", note: "Corporate ATS portals & high-volume hiring" },
-  { name: "Europe", note: "CV and resume formats—parser rules stay similar" },
-  { name: "Asia-Pacific", note: "Multinational employers & regional job boards" },
-  { name: "Middle East", note: "International postings & local champions" },
-  { name: "Africa", note: "Growing online application pipelines" },
-  { name: "Remote worldwide", note: "Global teams using the same ATS stacks" },
+  { name: "Corporate employers", note: "High-volume applicant tracking portals worldwide" },
+  { name: "Remote & hybrid roles", note: "Global teams using the same ATS stacks" },
+  { name: "Public sector", note: "Structured applications with strict parsing rules" },
+  { name: "Multinational hiring", note: "Cross-border postings and international candidates" },
+  { name: "Growing job markets", note: "Online application pipelines expanding globally" },
+  { name: "Every region", note: "Same parser logic—match language to each posting honestly" },
 ];
 
 /** Homepage global reach — not US/UK-only positioning. */

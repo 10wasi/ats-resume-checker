@@ -13,13 +13,13 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: "Free Resume Checker & ATS Resume Score Checker Online",
+  title: "Free ATS Resume Checker — Score, Scan & Fix Online",
   description:
-    "Free resume checker online—upload PDF, get ATS score & missing keywords in 60s. Resume score checker, match tool & format fixes. No signup.",
-  ogTitle: "Free Resume Checker & ATS Resume Score Checker",
-  h1: "Free Resume Checker & ATS Resume Score Checker",
-  primaryKeyword: "resume checker",
-  richSnippets: ["FAQPage", "WebApplication", "ItemList", "Organization", "BreadcrumbList"],
+    "Upload resume or CV—get ATS score, keyword match, format scan & fix plan in 60s. Free resume checker for job seekers worldwide. No signup.",
+  ogTitle: "Free ATS Resume Checker — Instant Resume Score",
+  h1: "Free ATS Resume Checker & Resume Score Online",
+  primaryKeyword: "ATS resume checker",
+  richSnippets: ["FAQPage", "SoftwareApplication", "WebSite", "Organization", "BreadcrumbList"],
 };
 
 export const CTR_RESUME_CHECKER: PageCtrMeta = {

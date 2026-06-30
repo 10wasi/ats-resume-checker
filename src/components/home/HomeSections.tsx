@@ -25,36 +25,35 @@ export function HeroSection() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="section-eyebrow">
             <IconSparkle className="h-3.5 w-3.5 shrink-0 text-[#4ade80]" />
-            Free resume checker · resume score checker
+            Free ATS resume checker · resume scanner
           </p>
           <h1 className="mt-6 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.85rem] lg:leading-[1.1]">
             {CTR_HOME.h1}
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            <strong className="font-semibold text-slate-800">ResumeIQ</strong> is a free{" "}
-            <strong className="font-semibold text-slate-800">resume checker</strong> and
-            resume optimization platform. Upload or paste your resume for an instant{" "}
-            <strong className="font-semibold text-slate-800">ATS resume score</strong>, missing
-            keywords, and format fixes—then use our{" "}
-            <strong className="font-semibold text-slate-800">resume optimization tool</strong>{" "}
-            (match analyzer, keyword database, examples) to turn rejections into interviews.
+            Most applications never reach a human—hiring software filters them first.{" "}
+            <strong className="font-semibold text-slate-800">ResumeIQ</strong> shows you
+            exactly what that software sees: your{" "}
+            <strong className="font-semibold text-slate-800">resume ATS score</strong>, missing
+            keywords, format risks, and a clear fix plan. Free resume analysis for candidates
+            worldwide—students, career changers, executives, and remote applicants alike.
           </p>
           <HomeHeroPasteForm />
           <p className="mt-6 text-sm text-slate-500">
-            Free resume checker online · Resume score checker · No signup
+            Resume checker online · CV scan · No signup · Results in minutes
           </p>
           <ul className="mx-auto mt-8 flex max-w-xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-slate-500">
             <li className="flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-              See why resumes get rejected
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
+              ATS compatibility scan
             </li>
             <li className="flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-              Missing keywords &amp; match %
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
+              Keyword match &amp; resume review
             </li>
             <li className="flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-              Action steps—not generic ATS tips
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
+              Why, how &amp; impact on every fix
             </li>
           </ul>
         </div>

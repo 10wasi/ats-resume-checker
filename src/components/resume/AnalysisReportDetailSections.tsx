@@ -66,6 +66,12 @@ export function AnalysisReportDetailSections({ analysis }: { analysis: AtsAnalys
           items={analysis.formatting_issues}
           emptyMessage="No major formatting flags—structure looks parse-friendly. Re-check after your next PDF export."
         />
+        <p className="mt-4 text-xs leading-relaxed text-zinc-500">
+          <strong className="text-zinc-700">Why this matters:</strong> parsers reorder or drop
+          text from broken layouts.{" "}
+          <strong className="text-zinc-700">Expected impact:</strong> fewer silent rejections on
+          employer portals worldwide.
+        </p>
       </section>
 
       <section
