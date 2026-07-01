@@ -83,6 +83,12 @@ export function computeAtsPassLikelihood(
     });
   }
 
+  factors.push({
+    name: "Readability & structure",
+    status: readability >= 65 ? "good" : readability >= 45 ? "warn" : "risk",
+    detail: `${Math.round(readability)}/100 — scan-friendly layout for recruiters and parsers`,
+  });
+
   if (failCount > 0) {
     factors.push({
       name: "QA checklist",

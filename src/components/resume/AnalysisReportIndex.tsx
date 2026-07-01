@@ -1,3 +1,4 @@
+import { computeAtsPassLikelihood } from "@/lib/ats/compute-ats-pass-likelihood";
 import type { AtsAnalysisResult } from "@/lib/ats/types";
 
 type Item = {
@@ -28,11 +29,17 @@ function buildItems(analysis: AtsAnalysisResult, showJobMatch: boolean): Item[] 
     analysis.improved_bullets.length > 0;
   const hasMissingSections = (analysis.missing_sections?.length ?? 0) > 0;
   const hasJdMatch = hasJd && analysis.keyword_match_detail != null;
+  const likelihood = computeAtsPassLikelihood(analysis, { hasJobDescription: hasJd });
 
   return [
     {
       label: "Overall resume score",
       detail: `${Math.round(analysis.ats_score)}/100 ATS composite`,
+      status: "included" as const,
+    },
+    {
+      label: "Interview readiness",
+      detail: `${likelihood.percent}% estimated · ${likelihood.tone} ATS risk`,
       status: "included" as const,
     },
     {
@@ -48,6 +55,11 @@ function buildItems(analysis: AtsAnalysisResult, showJobMatch: boolean): Item[] 
           ? "Match score in report"
           : "Add job description for match %",
       status: hasJdMatch ? ("included" as const) : ("add-jd" as const),
+    },
+    {
+      label: "Readability & structure",
+      detail: `${Math.round(analysis.readability_score)}/100 scan score`,
+      status: "included" as const,
     },
     {
       label: "Missing sections",

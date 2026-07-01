@@ -85,6 +85,13 @@ export type AtsAnalysisResult = {
   detected_skills?: string[];
   /** Standard section headers not detected (experience, education, skills). */
   missing_sections?: string[];
+  /** Parser-derived resume structure metrics for the results UI. */
+  resume_structure_stats?: {
+    bulletCount: number;
+    bulletsWithMetrics: number;
+    estimatedYearsExperience: number;
+    jdCoveragePercent?: number;
+  };
   formatting_issues: string[];
   grammar_issues: string[];
   readability_score: number;

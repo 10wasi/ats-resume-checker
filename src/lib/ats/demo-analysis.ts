@@ -46,6 +46,12 @@ const DEMO_BASE: Omit<
     "git",
   ],
   missing_sections: ["education"],
+  resume_structure_stats: {
+    bulletCount: 8,
+    bulletsWithMetrics: 3,
+    estimatedYearsExperience: 4,
+    jdCoveragePercent: 57,
+  },
   formatting_issues: [
     "No clear section headings",
     "Inconsistent bullet formatting",

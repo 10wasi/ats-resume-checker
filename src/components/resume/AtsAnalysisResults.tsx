@@ -17,6 +17,8 @@ import { AtsPassLikelihoodCard } from "./AtsPassLikelihoodCard";
 import { AtsReadinessReport } from "./AtsReadinessReport";
 import { AnalysisReportIndex } from "./AnalysisReportIndex";
 import { AnalysisReportDetailSections } from "./AnalysisReportDetailSections";
+import { AnalysisScoreContextCard } from "./AnalysisScoreContextCard";
+import { AnalysisStructureStats } from "./AnalysisStructureStats";
 import { AnalysisRetentionPanel } from "./AnalysisRetentionPanel";
 import { AnalysisPlatformNextSteps } from "@/components/tools/AnalysisPlatformNextSteps";
 
@@ -478,6 +480,8 @@ export function AtsAnalysisResults({
 
       <AnalysisReportIndex analysis={analysis} showJobMatch={showJobMatch} />
 
+      <AnalysisScoreContextCard analysis={analysis} showJobMatch={showJobMatch} />
+
       {/* Hero + composite signals */}
       <article
         className="overflow-hidden rounded-2xl border border-zinc-200/90 bg-white shadow-soft-lg"
@@ -656,7 +660,7 @@ export function AtsAnalysisResults({
               percent={skillsPct}
               detail={
                 hasBreakdown
-                  ? "ATS weight · up to 30 pts"
+                  ? `${breakdown.skills}/30 pts · ATS weight`
                   : "Run a full parse for component weights"
               }
               gradientClass="bg-gradient-to-br from-emerald-100/95 via-white to-teal-50/60"
@@ -666,7 +670,7 @@ export function AtsAnalysisResults({
               label="Experience score"
               icon={IconExp}
               percent={expPct}
-              detail={hasBreakdown ? "Weight · up to 25 pts" : "—"}
+              detail={hasBreakdown ? `${breakdown.experience}/25 pts` : "—"}
               gradientClass="bg-gradient-to-br from-brand-100/95 via-white to-brand-50/60"
               iconBg="bg-gradient-to-br from-brand-400 to-brand-600"
             />
@@ -674,7 +678,7 @@ export function AtsAnalysisResults({
               label="ATS match"
               icon={IconAts}
               percent={atsPct}
-              detail={hasBreakdown ? "Keyword & structure · up to 20 pts" : "—"}
+              detail={hasBreakdown ? `${breakdown.ats}/20 pts · keywords & structure` : "—"}
               gradientClass="bg-gradient-to-br from-brand-100/95 via-white to-brand-50/60"
               iconBg="bg-gradient-to-br from-brand-500 to-brand-600"
             />
@@ -682,7 +686,7 @@ export function AtsAnalysisResults({
               label="Formatting"
               icon={IconFmt}
               percent={formatPct}
-              detail={hasBreakdown ? "Layout · up to 15 pts" : "—"}
+              detail={hasBreakdown ? `${breakdown.formatting}/15 pts · layout` : "—"}
               gradientClass="bg-gradient-to-br from-orange-100/95 via-white to-amber-50/60"
               iconBg="bg-gradient-to-br from-orange-500 to-amber-600"
             />
@@ -702,13 +706,18 @@ export function AtsAnalysisResults({
               label="Education"
               icon={IconFmt}
               percent={eduPct}
-              detail={hasBreakdown ? "Weight · up to 10 pts" : "—"}
+              detail={hasBreakdown ? `${breakdown.education}/10 pts` : "—"}
               gradientClass="bg-gradient-to-br from-violet-100/95 via-white to-indigo-50/50"
               iconBg="bg-gradient-to-br from-violet-500 to-indigo-600"
             />
           </div>
         </div>
       </article>
+
+      <div className="grid gap-6 lg:grid-cols-2">
+        <AtsReadinessReport analysis={analysis} hasJobDescription={showJobMatch} />
+        <AnalysisStructureStats analysis={analysis} />
+      </div>
 
       {resumeStrengths.length > 0 ? (
         <section
@@ -1478,7 +1487,6 @@ export function AtsAnalysisResults({
       </div>
 
       <div className="mt-8 space-y-6">
-        <AtsReadinessReport analysis={analysis} hasJobDescription={showJobMatch} />
         <AnalysisRetentionPanel
           analysis={analysis}
           variant="checker"

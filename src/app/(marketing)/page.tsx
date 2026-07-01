@@ -16,6 +16,13 @@ function SectionSkeleton({ height = "h-48" }: { height?: string }) {
   );
 }
 
+const HomeComparisonSection = dynamic(
+  () =>
+    import("@/components/home/HomeComparisonSection").then((m) => ({
+      default: m.HomeComparisonSection,
+    })),
+  { loading: () => <SectionSkeleton height="h-56" /> }
+);
 const HomeTrustedBySection = dynamic(
   () => import("@/components/home/HomeSections").then((m) => ({ default: m.HomeTrustedBySection })),
   { loading: () => <SectionSkeleton /> }
@@ -50,10 +57,6 @@ const HomeKeywordsGuidePreviewSection = dynamic(
 );
 const HomeChecklistSection = dynamic(
   () => import("@/components/home/HomeSections").then((m) => ({ default: m.HomeChecklistSection })),
-  { loading: () => <SectionSkeleton /> }
-);
-const HomeQuickResumeTipsSection = dynamic(
-  () => import("@/components/home/HomeSections").then((m) => ({ default: m.HomeQuickResumeTipsSection })),
   { loading: () => <SectionSkeleton /> }
 );
 const HomeProductDifferentiationSection = dynamic(
@@ -91,10 +94,6 @@ const HomeTopicAuthoritySection = dynamic(
       default: m.HomeTopicAuthoritySection,
     })),
   { loading: () => <SectionSkeleton height="h-72" /> }
-);
-const HomeSeoContent = dynamic(
-  () => import("@/components/home/HomeSeoContent").then((m) => ({ default: m.HomeSeoContent })),
-  { loading: () => <SectionSkeleton height="h-96" /> }
 );
 const FaqSection = dynamic(
   () => import("@/components/home/FaqSection").then((m) => ({ default: m.FaqSection })),
@@ -143,23 +142,22 @@ export default function HomePage() {
 
       <HeroSection />
       <HomeInstantAnswersSection />
+      <HomeComparisonSection />
+      <HowItWorksSection />
+      <ProblemSolutionSection />
       <HomeTrustedBySection />
       <HomeWhoItsForSection />
       <FeatureHighlights />
-      <HowItWorksSection />
-      <ProblemSolutionSection />
       <HomeTrustScoringSection />
       <HomeResumeMatchPreviewSection />
       <HomeKeywordsGuidePreviewSection />
       <HomeChecklistSection />
-      <HomeQuickResumeTipsSection />
       <HomeProductDifferentiationSection />
       <HomeCoreToolsGridSection />
       <HomeTrustSecuritySection />
       <HomeWhyTrustSection />
       <HomeMethodologyPreviewSection />
       <HomeTopicAuthoritySection />
-      <HomeSeoContent />
       <BlogHighlightsSection />
       <AdPlaceholder
         label="Advertisement · resume tools"

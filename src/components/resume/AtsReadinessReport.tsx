@@ -14,6 +14,12 @@ type ReadinessRow = {
   detail: string;
 };
 
+const W = { skills: 30, experience: 25, ats: 20, formatting: 15, education: 10 } as const;
+
+function pctOfMax(points: number, max: number): number {
+  return Math.round((points / max) * 100);
+}
+
 function rowStatus(score: number, warnAt: number, critAt: number): ReadinessRow["status"] {
   if (score >= warnAt) return "ready";
   if (score >= critAt) return "attention";
@@ -31,52 +37,60 @@ export function AtsReadinessReport({
   hasJobDescription,
   className = "",
 }: Props) {
-  const atsScore = analysis.ats_score ?? 0;
-  const formatIssues = analysis.formatting_issues.length;
-  const missingKw = analysis.missing_keywords.length;
-  const matchScore = analysis.job_match_score;
-
-  const formatScore = Math.max(0, 100 - formatIssues * 18);
-  const keywordScore =
-    missingKw === 0
-      ? 92
-      : missingKw <= 3
-        ? 72
-        : missingKw <= 8
-          ? 52
-          : 32;
-
   const likelihood = computeAtsPassLikelihood(analysis, { hasJobDescription });
+  const b = analysis.score_breakdown;
 
-  const rows: ReadinessRow[] = [
-    {
-      label: "Overall ATS score",
-      status: rowStatus(atsScore, 75, 55),
-      detail: `${Math.round(atsScore)}% — structure, clarity, and baseline compatibility`,
-    },
-    {
-      label: "Parse & format",
-      status: rowStatus(formatScore, 70, 45),
-      detail:
-        formatIssues === 0
-          ? "No major format flags detected"
-          : `${formatIssues} format issue${formatIssues === 1 ? "" : "s"} to fix before upload`,
-    },
-    {
-      label: "Keyword coverage",
-      status: rowStatus(keywordScore, 70, 45),
-      detail:
-        missingKw === 0
-          ? "No obvious keyword gaps in scan"
-          : `${missingKw} missing keyword${missingKw === 1 ? "" : "s"} — add where you have proof`,
-    },
-  ];
+  const rows: ReadinessRow[] = b
+    ? [
+        {
+          label: "Skills coverage",
+          status: rowStatus(pctOfMax(b.skills, W.skills), 70, 50),
+          detail: `${b.skills}/${W.skills} pts — tools and terms parsers can index`,
+        },
+        {
+          label: "Experience depth",
+          status: rowStatus(pctOfMax(b.experience, W.experience), 70, 50),
+          detail: `${b.experience}/${W.experience} pts — bullets, tenure, and impact signals`,
+        },
+        {
+          label: "ATS keyword match",
+          status: rowStatus(pctOfMax(b.ats, W.ats), 70, 50),
+          detail: `${b.ats}/${W.ats} pts — structure and posting language overlap`,
+        },
+        {
+          label: "Formatting quality",
+          status: rowStatus(pctOfMax(b.formatting, W.formatting), 70, 45),
+          detail: `${b.formatting}/${W.formatting} pts — layout and export parse health`,
+        },
+        {
+          label: "Education relevance",
+          status: rowStatus(pctOfMax(b.education, W.education), 60, 40),
+          detail: `${b.education}/${W.education} pts — credentials section detected`,
+        },
+        {
+          label: "Readability & structure",
+          status: rowStatus(analysis.readability_score, 65, 45),
+          detail: `${Math.round(analysis.readability_score)}/100 — scan-friendly layout`,
+        },
+      ]
+    : [
+        {
+          label: "Overall ATS score",
+          status: rowStatus(analysis.ats_score, 75, 55),
+          detail: `${Math.round(analysis.ats_score)}/100 composite`,
+        },
+        {
+          label: "Readability & structure",
+          status: rowStatus(analysis.readability_score, 65, 45),
+          detail: `${Math.round(analysis.readability_score)}/100`,
+        },
+      ];
 
-  if (matchScore != null) {
+  if (analysis.job_match_score != null) {
     rows.push({
       label: "Job description match",
-      status: rowStatus(matchScore, 70, 50),
-      detail: `${Math.round(matchScore)}% overlap with pasted posting`,
+      status: rowStatus(analysis.job_match_score, 70, 50),
+      detail: `${Math.round(analysis.job_match_score)}% overlap with pasted posting`,
     });
   }
 
@@ -101,23 +115,21 @@ export function AtsReadinessReport({
       <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <p className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
-            ATS readiness report
+            Interview readiness estimate
           </p>
           <h3
             id="ats-readiness-heading"
             className="mt-1 font-display text-lg font-bold text-slate-900 sm:text-xl"
           >
-            {likelihood.label}
+            {likelihood.percent}% — {likelihood.label}
           </h3>
-          <p className="mt-2 text-sm leading-relaxed text-slate-600">
-            Snapshot of parse health, keywords, and match signals—not a hiring guarantee.
-          </p>
+          <p className="mt-2 text-sm leading-relaxed text-slate-600">{likelihood.summary}</p>
         </div>
         <span
           className={`inline-flex shrink-0 self-start rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wide ${STATUS_STYLES[overallStatus]}`}
         >
           {overallStatus === "ready"
-            ? "Submission ready"
+            ? "Strong signals"
             : overallStatus === "attention"
               ? "Needs polish"
               : "Fix before apply"}
@@ -145,7 +157,7 @@ export function AtsReadinessReport({
 
       {roadmap.length > 0 ? (
         <div className="mt-5">
-          <p className="text-sm font-semibold text-slate-900">Improvement roadmap</p>
+          <p className="text-sm font-semibold text-slate-900">Top priority fixes</p>
           <ol className="mt-2 list-decimal space-y-1.5 pl-5 text-sm text-slate-700">
             {roadmap.map((step) => (
               <li key={step}>{step}</li>
@@ -155,9 +167,9 @@ export function AtsReadinessReport({
       ) : null}
 
       <p className="mt-4 text-xs text-slate-500">
-        How scoring works:{" "}
+        Not a hiring guarantee.{" "}
         <Link href="/methodology" className="font-semibold text-[#16a34a] underline">
-          methodology
+          How scores are calculated
         </Link>
       </p>
     </section>

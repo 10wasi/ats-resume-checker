@@ -294,6 +294,14 @@ export function mergeResumeAnalysis(
     detected_skills: dedupeStrings(signals.skillsFound, 24),
     missing_sections:
       signals.missingSections.length > 0 ? [...signals.missingSections] : undefined,
+    resume_structure_stats: {
+      bulletCount: signals.bulletCount,
+      bulletsWithMetrics: signals.bulletsWithMetrics,
+      estimatedYearsExperience: signals.estimatedYearsExperience,
+      ...(hasJobDescription && signals.jdKeywords.length > 0
+        ? { jdCoveragePercent: Math.round(signals.jdCoverageRatio * 100) }
+        : {}),
+    },
     formatting_issues,
     grammar_issues,
     readability_score,

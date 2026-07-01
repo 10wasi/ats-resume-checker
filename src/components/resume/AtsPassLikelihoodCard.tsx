@@ -21,6 +21,12 @@ const BAR_STYLES = {
   critical: "bg-rose-500",
 };
 
+const FACTOR_STATUS_STYLES = {
+  good: "border-emerald-200 bg-emerald-50/80 text-emerald-950",
+  warn: "border-amber-200 bg-amber-50/80 text-amber-950",
+  risk: "border-rose-200 bg-rose-50/80 text-rose-950",
+};
+
 export function AtsPassLikelihoodCard({
   analysis,
   hasJobDescription,
@@ -68,14 +74,14 @@ export function AtsPassLikelihoodCard({
           style={{ width: `${likelihood.percent}%` }}
         />
       </div>
-      <ul className="mt-5 grid gap-2 sm:grid-cols-2">
+      <ul className="mt-5 grid gap-2 sm:grid-cols-2" role="list">
         {likelihood.factors.map((f) => (
           <li
             key={f.name}
-            className="rounded-lg bg-white/70 px-3 py-2 text-xs leading-relaxed"
+            className={`rounded-lg border px-3 py-2 text-xs leading-relaxed ${FACTOR_STATUS_STYLES[f.status]}`}
           >
             <span className="font-semibold">{f.name}</span>
-            <span className="text-zinc-600"> — {f.detail}</span>
+            <span className="opacity-90"> — {f.detail}</span>
           </li>
         ))}
       </ul>

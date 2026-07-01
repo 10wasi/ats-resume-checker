@@ -23,10 +23,10 @@ export const CTR_HOME: PageCtrMeta = {
 };
 
 export const CTR_RESUME_CHECKER: PageCtrMeta = {
-  title: "Resume Checker Free Online — ATS Score & Fixes",
+  title: "Resume Checker — ATS Score, Match & Fixes Free",
   description:
-    "Free resume checker: upload PDF → ATS score, keyword gaps & format warnings. Resume score checker built for real job applications worldwide.",
-  ogTitle: "Free Resume Checker Online — ATS Analysis",
+    "Free resume checker: ATS score, keyword match, structure analysis & priority fixes with why/how guidance. Upload PDF—results in minutes worldwide.",
+  ogTitle: "Free Resume Checker — Deep ATS Analysis",
   h1: "Free Resume Checker Online",
   primaryKeyword: "resume checker",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
