@@ -1,7 +1,7 @@
 import type { BlogPost } from "@/lib/blog/types";
+import { getContentLastUpdated } from "@/lib/seo/content-freshness";
+import { OG_IMAGE_HEIGHT, OG_IMAGE_PATH, OG_IMAGE_WIDTH } from "@/lib/seo/og-defaults";
 import { getSiteUrl } from "@/lib/site-url";
-
-const siteUrl = getSiteUrl();
 
 export function ArticleJsonLd({
   post,
@@ -10,14 +10,22 @@ export function ArticleJsonLd({
   post: BlogPost;
   slug: string;
 }) {
+  const base = getSiteUrl().replace(/\/$/, "");
   const headline = post.seoTitle ?? post.title;
+  const modified = getContentLastUpdated(`/blog/${slug}`);
   const data = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline,
     description: post.description,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: modified,
+    image: {
+      "@type": "ImageObject",
+      url: `${base}${OG_IMAGE_PATH}`,
+      width: OG_IMAGE_WIDTH,
+      height: OG_IMAGE_HEIGHT,
+    },
     author: {
       "@type": "Person",
       name: post.author,
@@ -25,11 +33,17 @@ export function ArticleJsonLd({
     publisher: {
       "@type": "Organization",
       name: "ResumeIQ",
-      url: siteUrl,
+      url: base,
+      logo: {
+        "@type": "ImageObject",
+        url: `${base}${OG_IMAGE_PATH}`,
+        width: OG_IMAGE_WIDTH,
+        height: OG_IMAGE_HEIGHT,
+      },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${siteUrl}/blog/${slug}`,
+      "@id": `${base}/blog/${slug}`,
     },
     keywords: post.tags?.join(", "),
     articleSection: "Career",

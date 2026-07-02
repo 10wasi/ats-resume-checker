@@ -123,4 +123,95 @@ Silence after apply often means parse or keyword failure—not lack of qualifica
 - [Resume skills analyzer](/resume-skills-analyzer) — Dedicated skills scan
 - [How to improve resume score](/how-to-improve-resume-score) — Three-pass plan
 - [Complete ATS optimization guide](/complete-guide-ats-resume-optimization) — Master reference
+
+## How applicant tracking systems work
+
+Before you optimize copy, understand what software actually does with your file:
+
+1. **Parse** — Extract plain text from PDF/DOCX into fields (name, employers, bullets)
+2. **Index** — Store searchable terms from experience and skills sections
+3. **Filter** — Apply must-have keywords, years of experience, or title rules
+4. **Rank** — Sort candidates by match signals for recruiter review
+5. **Skim** — Humans read top-ranked profiles in seconds—not every upload
+
+When parse fails, steps 3–5 never see your real qualifications. Read [how ATS works](/how-ats-works), then verify extraction in the checker above.
+
+## How ResumeIQ scoring works
+
+The ATS score is a weighted composite—not a hiring decision:
+
+| Dimension | Weight | What it measures |
+|-----------|--------|------------------|
+| Skills coverage | 30 pts | Tools and terms parsers can index |
+| Experience depth | 25 pts | Bullets, tenure, impact signals |
+| ATS keyword match | 20 pts | Structure + posting language overlap |
+| Formatting quality | 15 pts | Layout and export parse health |
+| Education | 10 pts | Credentials section detected |
+
+**Readability** and **interview readiness** estimates add recruiter-skim context. Full breakdown: [methodology](/methodology) and [how resume analysis works](/how-resume-analysis-works).
+
+## Resume parsing: what breaks and what passes
+
+| Signal | ATS risk | Fix |
+|--------|----------|-----|
+| Two-column Canva layout | High | Single-column Word/Google Docs export |
+| Skills in icons/charts | High | Plain-text Skills section + bullets |
+| Header/footer contact | Medium | Contact block in body text |
+| Image-only PDF | Critical | Regenerate with selectable text |
+| Standard headings | Low | Experience, Education, Skills |
+
+The checker shows **extracted text** so you see parser output before employers do.
+
+## Formatting analysis in your report
+
+Each scan flags layout issues that correlate with parse failures: tables, text boxes, inconsistent bullets, missing section headers, and non-standard file exports. Fix format before keyword stuffing—garbled text makes every keyword invisible to search.
+
+## Keyword matching vs resume score
+
+| Metric | Measures | Best use |
+|--------|----------|----------|
+| ATS score | Overall parse + structure + baseline keywords | Master resume health |
+| Match score | Overlap with one job posting | Per-application tailoring |
+| Missing keywords | Gaps vs pasted JD | Ethical bullet edits |
+
+Paste a job description in the checker session to get match % and categorized gaps in one pass.
+
+## Common ATS mistakes this checker catches
+
+- **Layout:** columns, graphics, skill charts
+- **Language:** missing must-have tools from the posting
+- **Structure:** no clear Experience or Skills headings
+- **Export:** broken PDF between Word and upload
+- **Stuffing:** keyword dumps without proof in bullets
+
+Deep dive: [ATS resume mistakes](/ats-resume-mistakes) and [common rejection reasons](/common-ats-resume-rejection-reasons).
+
+## Industry and role optimization
+
+Use profession-specific resources after your baseline scan:
+
+- [Resume examples library](/resume-examples) — ATS-friendly samples by role
+- [Resume keywords database](/resume-keywords) — Skills, verbs, and phrases
+- [Profession hubs](/resource-hub) — Example + keywords + guide per career
+- [Resume keywords by industry](/resume-keywords-by-industry) — Sector patterns
+
+## Recruiter insights (after ATS)
+
+Software filters; humans decide in seconds. Recruiters look for:
+
+- Title aligned with the posting
+- Recent employer and tenure visible in parse
+- Bullets with metrics—not duty lists
+- Skills that match a phone screen
+
+The report includes **recruiter perspective** notes and **priority fixes** with why/how guidance—not generic tips.
+
+## Resume checker comparison
+
+| Approach | Speed | ATS parse preview | Keyword match | Cost |
+|----------|-------|-------------------|---------------|------|
+| Manual friend review | Slow | No | Subjective | Free |
+| Employer ATS | Instant | Hidden | Yes | N/A |
+| Paid checker tools | Fast | Partial | Yes | Subscription |
+| **ResumeIQ checker** | Minutes | Yes (extracted text) | Yes (with JD) | **Free core report** |
 `;

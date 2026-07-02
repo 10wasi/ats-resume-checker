@@ -1,12 +1,17 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
+import { RolePageAuthorityPanel } from "@/components/content/RolePageAuthorityPanel";
+import { ProfessionRelatedCareers } from "@/components/hub/ProfessionRelatedCareers";
 import { ResumeExamplesRelated } from "@/components/examples/ResumeExamplesRelated";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
+import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
+import { GuideTrustBlock } from "@/components/seo/GuideTrustBlock";
+import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import type { ResumeExampleEntry } from "@/lib/content/resume-examples/types";
 import { RESUME_EXAMPLES_LIBRARY_PATH } from "@/lib/content/resume-examples/registry";
 
@@ -84,7 +89,15 @@ export function ResumeExamplePage({
             <div className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
               {intro}
             </div>
+            <ContentFreshnessLabel path={example.path} className="mt-4" />
           </header>
+
+          <RolePageAuthorityPanel
+            roleTitle={example.breadcrumbLabel.replace(/ resume$/i, "")}
+            slug={example.slug}
+            seoKeywords={example.keywords}
+            variant="example"
+          />
 
           <AdPlaceholder label="Advertisement · resource" className="mt-10" />
 
@@ -119,11 +132,21 @@ export function ResumeExamplePage({
 
           <RelatedResources path={example.path} excludeHref={example.path} />
 
+          <ProfessionRelatedCareers
+            currentSlug={example.slug}
+            roleTitle={example.breadcrumbLabel.replace(/ resume$/i, "")}
+          />
+
+          <div className="not-prose mt-10">
+            <GuideTrustBlock />
+          </div>
+
           <ResumeExamplesRelated currentSlug={example.slug} />
 
           <BlogResumeCta />
         </div>
       </article>
+      <StickyCheckerCta />
     </>
   );
 }

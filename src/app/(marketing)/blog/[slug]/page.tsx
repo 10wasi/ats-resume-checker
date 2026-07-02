@@ -15,8 +15,12 @@ import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { PageFaqSection } from "@/components/seo/PageFaqSection";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
+import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import { blogFaqBySlug } from "@/lib/seo/blog-page-faq";
 import { blogGenericFaqItems } from "@/lib/seo/blog-generic-faq";
+import { getDefaultOgImages } from "@/lib/seo/og-defaults";
+import { getContentLastUpdated } from "@/lib/seo/content-freshness";
 
 import { getSiteUrl } from "@/lib/site-url";
 
@@ -34,6 +38,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const pageTitle = post.seoTitle ?? post.title;
   const keywords = [...(post.tags ?? []), ...(post.keywords ?? [])];
+  const ogImages = getDefaultOgImages();
+  const modified = getContentLastUpdated(`/blog/${post.slug}`);
 
   return {
     title: pageTitle,
@@ -46,15 +52,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.description,
       type: "article",
       publishedTime: post.date,
-      modifiedTime: post.date,
+      modifiedTime: modified,
       url: `${siteUrl}/blog/${post.slug}`,
       authors: [post.author],
       siteName: "ResumeIQ",
+      images: ogImages,
     },
     twitter: {
       card: "summary_large_image",
       title: pageTitle,
       description: post.description,
+      images: ogImages.map((img) => img.url),
     },
   };
 }
@@ -113,6 +121,7 @@ export default function BlogPostPage({ params }: Props) {
           <p className="mt-5 text-lg leading-relaxed text-slate-600">
             {post.description}
           </p>
+          <ContentFreshnessLabel path={`/blog/${post.slug}`} className="mt-4" />
         </header>
 
         <div className="mt-10">
@@ -138,6 +147,7 @@ export default function BlogPostPage({ params }: Props) {
 
         <BlogResumeCta />
       </div>
+      <StickyCheckerCta />
 
       {related.length > 0 && (
         <section className="border-t border-slate-200/70 bg-white">

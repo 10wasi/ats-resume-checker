@@ -8,6 +8,8 @@ import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
 import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
 import { GuideTrustBlock } from "@/components/seo/GuideTrustBlock";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
+import { ItemListJsonLd } from "@/components/seo/ItemListJsonLd";
+import { ProfessionRelatedCareers } from "@/components/hub/ProfessionRelatedCareers";
 import type { ProfessionHubEntry } from "@/lib/content/profession-hubs/registry";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
@@ -37,6 +39,16 @@ export function ProfessionHubPage({ entry }: Props) {
         ]}
       />
       <PageFaqJsonLd items={entry.faqItems} />
+      <ItemListJsonLd
+        name={`${entry.title} resume resources`}
+        description={entry.ctr.description}
+        items={[
+          { name: "Resume example", url: entry.examplePath },
+          { name: "ATS keywords", url: entry.keywordsPath },
+          { name: "Optimization guide", url: entry.guidePath },
+          { name: "Resume checker", url: RESUME_CHECKER_PATH },
+        ]}
+      />
       <div className="container-prose py-12 sm:py-16">
         <PageBreadcrumbs
           items={[
@@ -118,6 +130,7 @@ export function ProfessionHubPage({ entry }: Props) {
         </div>
 
         <PageFaqSection heading={`FAQ: ${entry.title}`} items={entry.faqItems} />
+        <ProfessionRelatedCareers currentSlug={entry.slug} roleTitle={entry.title} />
         <RelatedResources path={entry.path} excludeHref={entry.path} />
       </div>
       <StickyCheckerCta />

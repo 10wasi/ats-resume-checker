@@ -11,10 +11,12 @@ import { PageFaqSection } from "@/components/seo/PageFaqSection";
 import { RelatedResources } from "@/components/seo/RelatedResources";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { blogIndexFaqItems } from "@/lib/seo/blog-index-faq";
+import { getDefaultOgImages } from "@/lib/seo/og-defaults";
 
 import { getSiteUrl } from "@/lib/site-url";
 
 const siteUrl = getSiteUrl();
+const ogImages = getDefaultOgImages();
 
 export const metadata: Metadata = {
   title: "Resume Blog — ATS Checker, Keywords & Optimization",
@@ -38,12 +40,14 @@ export const metadata: Metadata = {
     type: "website",
     url: `${siteUrl}/blog`,
     siteName: "ResumeIQ",
+    images: ogImages,
   },
   twitter: {
     card: "summary_large_image",
     title: "Resume & ATS Blog — ResumeIQ",
     description:
       "Guides on AI resume tools, ATS optimization, and job-winning resume strategies.",
+    images: ogImages.map((img) => img.url),
   },
 };
 

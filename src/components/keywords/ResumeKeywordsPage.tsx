@@ -1,12 +1,17 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
+import { RolePageAuthorityPanel } from "@/components/content/RolePageAuthorityPanel";
+import { ProfessionRelatedCareers } from "@/components/hub/ProfessionRelatedCareers";
 import { ResumeKeywordsRelated } from "@/components/keywords/ResumeKeywordsRelated";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { RelatedResources } from "@/components/seo/RelatedResources";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
+import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
+import { GuideTrustBlock } from "@/components/seo/GuideTrustBlock";
+import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import { RESUME_KEYWORDS_PATH } from "@/lib/content/resume-keywords/registry";
 import type { ResumeKeywordsEntry } from "@/lib/content/resume-keywords/types";
 
@@ -76,7 +81,15 @@ export function ResumeKeywordsPage({
             <div className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
               {intro}
             </div>
+            <ContentFreshnessLabel path={entry.path} className="mt-4" />
           </header>
+
+          <RolePageAuthorityPanel
+            roleTitle={entry.roleTitle}
+            slug={entry.slug}
+            seoKeywords={[entry.ctr.primaryKeyword, entry.roleTitle]}
+            variant="keywords"
+          />
 
           <AdPlaceholder label="Advertisement · resource" className="mt-10" />
 
@@ -85,6 +98,12 @@ export function ResumeKeywordsPage({
           </div>
 
           <RelatedResources path={entry.path} excludeHref={entry.path} />
+
+          <ProfessionRelatedCareers currentSlug={entry.slug} roleTitle={entry.roleTitle} />
+
+          <div className="not-prose mt-10">
+            <GuideTrustBlock />
+          </div>
 
           <section
             className="mt-16 border-t border-slate-200 pt-14"
@@ -117,6 +136,7 @@ export function ResumeKeywordsPage({
           <BlogResumeCta />
         </div>
       </article>
+      <StickyCheckerCta />
     </>
   );
 }

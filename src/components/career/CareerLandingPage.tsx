@@ -11,6 +11,9 @@ import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
 import { GuideTrustBlock } from "@/components/seo/GuideTrustBlock";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import { TopicPillarBanner } from "@/components/seo/TopicPillarBanner";
+import { CheckerFunnelWebApplicationJsonLd } from "@/components/seo/CheckerFunnelWebApplicationJsonLd";
+import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
+import { HOWTO_RESUME_CHECKER, HOWTO_URLS } from "@/lib/seo/how-to-steps";
 import { CAREER_SUCCESS_HUB_PATH } from "@/lib/content/career-success-hub/registry";
 import type { CareerLandingEntry } from "@/lib/content/career-success-hub/types";
 import { getPlatformHubByPath } from "@/lib/content/platform-hubs/registry";
@@ -35,6 +38,18 @@ const REJECTION_PILLAR_IDS = new Set([
   "resume-screening-explained",
 ]);
 
+const CHECKER_FUNNEL_IDS = new Set([
+  "free-resume-checker-online",
+  "free-ats-score-checker",
+  "ats-resume-checker",
+  "ai-resume-review",
+  "cv-checker",
+  "resume-score-checker",
+  "resume-review",
+  "resume-keywords-checker",
+  "resume-keywords-missing",
+]);
+
 export function CareerLandingPage({
   entry,
   intro,
@@ -44,8 +59,23 @@ export function CareerLandingPage({
 }: Props) {
   const faqItems: FaqItem[] = entry.faqItems;
   const platformHub = getPlatformHubByPath(entry.path);
+  const isCheckerFunnel = CHECKER_FUNNEL_IDS.has(entry.id);
   return (
     <>
+      {isCheckerFunnel ? (
+        <CheckerFunnelWebApplicationJsonLd
+          pageName={entry.ctr.title}
+          pageDescription={entry.ctr.description}
+        />
+      ) : null}
+      {isCheckerFunnel ? (
+        <HowToJsonLd
+          name={`How to use ${entry.ctr.primaryKeyword}`}
+          description={entry.ctr.description}
+          steps={HOWTO_RESUME_CHECKER}
+          path={HOWTO_URLS.checker}
+        />
+      ) : null}
       <ResourceGuideJsonLd
         path={entry.path}
         title={entry.ctr.title}
