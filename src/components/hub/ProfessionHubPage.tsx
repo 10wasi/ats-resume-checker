@@ -5,10 +5,21 @@ import { RelatedResources } from "@/components/seo/RelatedResources";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
+import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
+import { GuideTrustBlock } from "@/components/seo/GuideTrustBlock";
+import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import type { ProfessionHubEntry } from "@/lib/content/profession-hubs/registry";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 type Props = { entry: ProfessionHubEntry };
+
+const OPTIMIZATION_STEPS = [
+  "Run the free resume checker on the PDF you actually submit.",
+  "Compare your file to the role example—headings, bullet density, and metrics.",
+  "Paste the job post into the match tool; add 5–8 missing terms into recent bullets.",
+  "Fix format flags (columns, icons, headers) before the next application batch.",
+  "Re-check score and export a plain-text-friendly PDF for portals.",
+];
 
 export function ProfessionHubPage({ entry }: Props) {
   return (
@@ -40,6 +51,7 @@ export function ProfessionHubPage({ entry }: Props) {
             {entry.ctr.h1}
           </h1>
           <p className="mt-6 text-lg text-slate-600">{entry.intro}</p>
+          <ContentFreshnessLabel path={entry.path} className="mt-4" />
         </header>
 
         <div className="not-prose mt-10 grid gap-4 sm:grid-cols-2">
@@ -61,6 +73,17 @@ export function ProfessionHubPage({ entry }: Props) {
         </div>
 
         <section className="not-prose mt-12">
+          <h2 className="font-display text-xl font-bold text-slate-900">
+            5-step {entry.title.toLowerCase()} optimization workflow
+          </h2>
+          <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm leading-relaxed text-slate-700">
+            {OPTIMIZATION_STEPS.map((step) => (
+              <li key={step}>{step}</li>
+            ))}
+          </ol>
+        </section>
+
+        <section className="not-prose mt-12">
           <h2 className="font-display text-xl font-bold text-slate-900">Common mistakes</h2>
           <ul className="mt-4 space-y-2 text-sm text-slate-700">
             {entry.mistakes.map((m) => (
@@ -78,6 +101,10 @@ export function ProfessionHubPage({ entry }: Props) {
           </Link>
         </section>
 
+        <div className="not-prose mt-10">
+          <GuideTrustBlock />
+        </div>
+
         <div className="not-prose mt-10 flex flex-wrap gap-3">
           <Link href="/resume-match-analyzer" className="btn-gradient px-6">
             Resume match tool
@@ -93,6 +120,7 @@ export function ProfessionHubPage({ entry }: Props) {
         <PageFaqSection heading={`FAQ: ${entry.title}`} items={entry.faqItems} />
         <RelatedResources path={entry.path} excludeHref={entry.path} />
       </div>
+      <StickyCheckerCta />
     </>
   );
 }

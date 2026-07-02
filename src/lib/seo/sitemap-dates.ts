@@ -9,6 +9,12 @@ export const SITEMAP_DEFAULT_LAST_MODIFIED = "2026-06-03";
 export const SITEMAP_PATH_LAST_MODIFIED: Record<string, string> = {
   "": "2026-06-03",
   "/resume-checker": "2026-06-03",
+  "/knowledge-center": "2026-06-03",
+  "/complete-guide-ats-resume-optimization": "2026-06-03",
+  "/resume-rejected-by-ats": "2026-06-03",
+  "/why-resume-gets-rejected": "2026-06-03",
+  "/profession/graphic-designer": "2026-06-03",
+  "/profession/business-analyst": "2026-06-03",
   "/free-resume-checker-online": "2026-05-28",
   "/free-ats-score-checker": "2026-05-28",
   "/resume-score-checker": "2026-05-28",
@@ -21,7 +27,6 @@ export const SITEMAP_PATH_LAST_MODIFIED: Record<string, string> = {
   "/contact": "2026-05-14",
   "/resource-hub": "2026-06-01",
   "/resume-optimization-platform": "2026-05-28",
-  "/complete-guide-ats-resume-optimization": "2026-05-20",
   "/ats-resume-checklist-2026": "2026-05-14",
 };
 

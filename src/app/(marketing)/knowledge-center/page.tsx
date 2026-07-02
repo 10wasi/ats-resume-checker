@@ -75,7 +75,7 @@ export default function KnowledgeCenterPage() {
               {CTR_KNOWLEDGE_CENTER.h1}
             </h1>
             <p className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
-              Ten guides. One workflow. Build topical depth across{" "}
+          Thirteen guides. One workflow. Build topical depth across{" "}
               <strong className="font-semibold text-slate-800">
                 ATS resume examples
               </strong>

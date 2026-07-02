@@ -106,7 +106,7 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
   knowledgeCenter: {
     href: "/knowledge-center",
     title: "ATS Knowledge Center",
-    description: "Ten guides on format, keywords, match score, and mistakes.",
+    description: "Thirteen guides on format, keywords, match score, and mistakes.",
   },
   platformHub: {
     href: "/resume-optimization-platform",
@@ -348,6 +348,8 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "atsResumeReview",
     "resumeCheckerOnline",
     "completeAtsGuide",
+    "knowledgeCenter",
+    "resourceHub",
     "examples",
   ],
   "/free-resume-checker-online": [
@@ -379,8 +381,10 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "resumeReview",
     "aiResumeReview",
     "scoreChecker",
+    "methodology",
     "rejectedByAts",
-    "platformHub",
+    "completeAtsGuide",
+    "examples",
   ],
   [RESUME_CHECKER_PATH]: [
     "resumeCheckerOnline",
@@ -501,6 +505,8 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "keywordsGuide",
     "checklist",
     "careerHub",
+    "completeAtsGuide",
+    "resourceHub",
   ],
   "/resume-keywords": [
     "checker",
@@ -671,7 +677,16 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
   "/methodology": ["checker", "howResumeAnalysis", "faqCenter", "atsScoreGuide", "editorialPolicy", "checklist"],
   "/how-resume-analysis-works": ["checker", "methodology", "atsScoreGuide", "scoreChecker", "editorialPolicy", "howAtsWorks"],
   "/editorial-policy": ["about", "methodology", "howResumeAnalysis", "privacy", "contact", "faqCenter"],
-  "/faq-center": ["methodology", "checker", "about", "careerHub", "whyNoInterviews", "improveScore"],
+  "/faq-center": [
+    "methodology",
+    "checker",
+    "about",
+    "careerHub",
+    "whyNoInterviews",
+    "improveScore",
+    "howResumeAnalysis",
+    "editorialPolicy",
+  ],
   "/contact": ["checker", "about", "faqCenter", "privacy", "terms", "careerHub"],
   "/privacy": ["terms", "contact", "about", "checker", "careerHub", "blog"],
   "/terms": ["privacy", "contact", "about", "checker", "knowledgeCenter", "blog"],
@@ -778,6 +793,8 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "whyNoInterviews",
     "notPassingAts",
     "matchScoreGuide",
+    "completeAtsGuide",
+    "howAtsWorks",
   ],
 };
 
@@ -788,10 +805,244 @@ const BLOG_POST_KEYS = [
   "keywordsGuide",
   "formatGuide",
   "checklist",
+  "completeAtsGuide",
+  "methodology",
 ] as const;
 
+const BLOG_REJECTION_KEYS = [
+  "completeAtsGuide",
+  "rejectedByAts",
+  "commonRejectionReasons",
+  "notPassingAts",
+  "checker",
+  "screeningExplained",
+  "whyRejected",
+  "improveScore",
+] as const;
+
+const BLOG_KEYWORD_KEYS = [
+  "keywordTool",
+  "keywordsFinder",
+  "resumeKeywordsDb",
+  "keywordsChecker",
+  "match",
+  "checker",
+  "tailorResume",
+  "keywordsGuide",
+] as const;
+
+const BLOG_CHECKER_KEYS = [
+  "checker",
+  "resumeCheckerOnline",
+  "freeAtsScoreChecker",
+  "scoreChecker",
+  "methodology",
+  "completeAtsGuide",
+  "examples",
+  "matchAnalyzer",
+] as const;
+
+const PROFESSION_SLUGS = new Set([
+  "software-engineer",
+  "data-analyst",
+  "product-manager",
+  "project-manager",
+  "hr-manager",
+  "marketing-manager",
+  "accountant",
+  "customer-service",
+  "graphic-designer",
+  "business-analyst",
+]);
+
+function catalogItem(key: string): RelatedResourceItem | undefined {
+  return RESOURCE_CATALOG[key];
+}
+
+function roleResource(
+  slug: string,
+  kind: "example" | "keywords" | "guide" | "profession",
+  title: string,
+  description: string
+): RelatedResourceItem {
+  const paths = {
+    example: `/resume-examples/${slug}`,
+    keywords: `/resume-keywords/${slug}`,
+    guide: `/ats-resume/${slug}`,
+    profession: `/profession/${slug}`,
+  };
+  return { href: paths[kind], title, description };
+}
+
+function getProgrammaticRelatedResources(
+  path: string,
+  excludeHref?: string
+): RelatedResourceItem[] | null {
+  const parts = path.split("/").filter(Boolean);
+  if (parts.length < 2) return null;
+
+  const [section, slug] = parts;
+  if (!slug) return null;
+
+  const items: RelatedResourceItem[] = [];
+  const push = (item: RelatedResourceItem) => {
+    if (item.href === excludeHref || items.some((i) => i.href === item.href)) return;
+    items.push(item);
+  };
+
+  if (section === "resume-keywords") {
+    const exampleSlug = slug === "business-analyst" ? "data-analyst" : slug;
+    const guideSlug = slug === "business-analyst" ? "data-analyst" : slug;
+    push(catalogItem("checker")!);
+    push(catalogItem("keywordsFinder")!);
+    push(catalogItem("match")!);
+    push(
+      roleResource(
+        exampleSlug,
+        "example",
+        `${slug.replace(/-/g, " ")} resume example`,
+        "ATS-friendly sample layout and bullet patterns."
+      )
+    );
+    if (PROFESSION_SLUGS.has(slug)) {
+      push(
+        roleResource(
+          slug,
+          "profession",
+          `${slug.replace(/-/g, " ")} profession hub`,
+          "Example, keywords, and optimization guides connected."
+        )
+      );
+    }
+    if (slug !== "business-analyst") {
+      push(
+        roleResource(
+          guideSlug,
+          "guide",
+          `${slug.replace(/-/g, " ")} ATS guide`,
+          "Role-specific formatting and keyword placement."
+        )
+      );
+    }
+    push(catalogItem("keywordsGuide")!);
+    push(catalogItem("resumeKeywordsDb")!);
+    push(catalogItem("checklist")!);
+    return items;
+  }
+
+  if (section === "resume-examples" || section === "ats-resume") {
+    push(catalogItem("checker")!);
+    push(
+      roleResource(
+        slug,
+        "keywords",
+        `${slug.replace(/-/g, " ")} resume keywords`,
+        "Skills, verbs, and ATS phrases for this role."
+      )
+    );
+    if (section === "resume-examples") {
+      push(
+        roleResource(
+          slug,
+          "guide",
+          `${slug.replace(/-/g, " ")} ATS optimization guide`,
+          "Format rules and keyword placement for the role."
+        )
+      );
+    } else {
+      push(
+        roleResource(
+          slug,
+          "example",
+          `${slug.replace(/-/g, " ")} resume example`,
+          "Side-by-side ATS-friendly sample and bullets."
+        )
+      );
+    }
+    if (PROFESSION_SLUGS.has(slug)) {
+      push(
+        roleResource(
+          slug,
+          "profession",
+          `${slug.replace(/-/g, " ")} profession hub`,
+          "All role resources in one connected hub."
+        )
+      );
+    }
+    push(catalogItem("match")!);
+    push(catalogItem("formatGuide")!);
+    push(catalogItem("mistakesGuide")!);
+    push(catalogItem("examples")!);
+    return items;
+  }
+
+  if (section === "profession") {
+    push(catalogItem("checker")!);
+    push(
+      roleResource(
+        slug,
+        "example",
+        `${slug.replace(/-/g, " ")} resume example`,
+        "ATS-friendly sample for this profession."
+      )
+    );
+    push(
+      roleResource(
+        slug,
+        "keywords",
+        `${slug.replace(/-/g, " ")} keywords list`,
+        "Searchable skills and verbs for ATS filters."
+      )
+    );
+    push(
+      roleResource(
+        slug === "business-analyst" ? "data-analyst" : slug,
+        "guide",
+        `${slug.replace(/-/g, " ")} ATS guide`,
+        "Role-specific optimization workflow."
+      )
+    );
+    push(catalogItem("matchAnalyzer")!);
+    push(catalogItem("resourceHub")!);
+    push(catalogItem("checklist")!);
+    push(catalogItem("completeAtsGuide")!);
+    return items;
+  }
+
+  return null;
+}
+
+function getBlogRelatedKeys(path: string): readonly string[] {
+  const slug = path.replace(/^\/blog\//, "").toLowerCase();
+  if (
+    slug.includes("reject") ||
+    slug.includes("mistake") ||
+    slug.includes("pass-ats") ||
+    slug.includes("beat-ats") ||
+    slug.includes("filter")
+  ) {
+    return BLOG_REJECTION_KEYS;
+  }
+  if (
+    slug.includes("keyword") ||
+    slug.includes("skill") ||
+    slug.includes("tailor")
+  ) {
+    return BLOG_KEYWORD_KEYS;
+  }
+  if (
+    slug.includes("checker") ||
+    slug.includes("score") ||
+    slug.includes("scan") ||
+    slug.includes("free-resume")
+  ) {
+    return BLOG_CHECKER_KEYS;
+  }
+  return BLOG_POST_KEYS;
+}
+
 function resolveKeys(path: string): readonly string[] {
-  if (path.startsWith("/blog/")) return BLOG_POST_KEYS;
+  if (path.startsWith("/blog/") && path !== "/blog") return getBlogRelatedKeys(path);
   if (path.startsWith("/profession/")) {
     return [
       "resourceHub",
@@ -800,6 +1051,8 @@ function resolveKeys(path: string): readonly string[] {
       "examples",
       "resumeKeywordsDb",
       "checklist",
+      "completeAtsGuide",
+      "knowledgeCenter",
     ] as const;
   }
   return PATH_RELATED_KEYS[path] ?? DEFAULT_KEYS;
@@ -809,10 +1062,20 @@ export function getRelatedResources(
   path: string,
   options?: { excludeHref?: string; limit?: number }
 ): RelatedResourceItem[] {
-  const limit = options?.limit ?? 6;
+  const limit = options?.limit ?? 8;
   const exclude = options?.excludeHref;
   const seen = new Set<string>();
   const items: RelatedResourceItem[] = [];
+
+  const programmatic = getProgrammaticRelatedResources(path, exclude);
+  if (programmatic) {
+    for (const item of programmatic) {
+      if (seen.has(item.href) || item.href === exclude) continue;
+      seen.add(item.href);
+      items.push(item);
+      if (items.length >= limit) return items;
+    }
+  }
 
   for (const key of resolveKeys(path)) {
     const item = RESOURCE_CATALOG[key];

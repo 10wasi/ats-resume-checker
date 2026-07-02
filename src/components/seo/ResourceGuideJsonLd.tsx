@@ -1,10 +1,11 @@
 import { getSiteUrl } from "@/lib/site-url";
+import { getContentLastUpdated } from "@/lib/seo/content-freshness";
 
 export function ResourceGuideJsonLd({
   path,
   title,
   description,
-  date = "2026-05-14",
+  date,
 }: {
   path: string;
   title: string;
@@ -12,13 +13,14 @@ export function ResourceGuideJsonLd({
   date?: string;
 }) {
   const siteUrl = getSiteUrl().replace(/\/$/, "");
+  const modified = date ?? getContentLastUpdated(path);
   const data = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
     description,
-    datePublished: date,
-    dateModified: date,
+    datePublished: modified,
+    dateModified: modified,
     author: { "@type": "Organization", name: "ResumeIQ" },
     publisher: {
       "@type": "Organization",

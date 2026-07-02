@@ -7,6 +7,10 @@ import { RelatedResources } from "@/components/seo/RelatedResources";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
+import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
+import { GuideTrustBlock } from "@/components/seo/GuideTrustBlock";
+import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
+import { TopicPillarBanner } from "@/components/seo/TopicPillarBanner";
 import { CAREER_SUCCESS_HUB_PATH } from "@/lib/content/career-success-hub/registry";
 import type { CareerLandingEntry } from "@/lib/content/career-success-hub/types";
 import { getPlatformHubByPath } from "@/lib/content/platform-hubs/registry";
@@ -20,6 +24,16 @@ type Props = {
   faqIntro?: ReactNode;
   toolCta?: ReactNode;
 };
+
+const REJECTION_PILLAR_IDS = new Set([
+  "resume-rejected-by-ats",
+  "why-resume-gets-rejected",
+  "common-ats-rejection-reasons",
+  "resume-not-passing-ats",
+  "resume-mistakes-interviews",
+  "why-not-getting-interviews",
+  "resume-screening-explained",
+]);
 
 export function CareerLandingPage({
   entry,
@@ -83,7 +97,18 @@ export function CareerLandingPage({
             <div className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
               {intro}
             </div>
+            <ContentFreshnessLabel path={entry.path} className="mt-4" />
           </header>
+
+          {REJECTION_PILLAR_IDS.has(entry.id) ? (
+            <div className="mt-8">
+              <TopicPillarBanner
+                pillarHref="/complete-guide-ats-resume-optimization"
+                pillarTitle="Complete ATS resume optimization guide"
+                context="This page focuses on one angle of rejection or screening. The master guide connects checker, score, keywords, format, and interview readiness in one workflow."
+              />
+            </div>
+          ) : null}
 
           {toolCta ? <div className="mt-10">{toolCta}</div> : null}
 
@@ -91,6 +116,10 @@ export function CareerLandingPage({
 
           <div className="mt-10">
             <BlogContent content={entry.body} />
+          </div>
+
+          <div className="not-prose mt-10">
+            <GuideTrustBlock />
           </div>
 
           <RelatedResources path={entry.path} excludeHref={entry.path} />
@@ -128,6 +157,7 @@ export function CareerLandingPage({
           <BlogResumeCta />
         </div>
       </article>
+      <StickyCheckerCta />
     </>
   );
 }

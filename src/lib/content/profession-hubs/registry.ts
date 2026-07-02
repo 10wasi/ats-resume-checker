@@ -270,6 +270,78 @@ export const PROFESSION_HUBS: ProfessionHubEntry[] = [
       },
     ],
   },
+  {
+    slug: "graphic-designer",
+    path: "/profession/graphic-designer",
+    title: "Graphic Designer",
+    breadcrumbLabel: "Graphic designers",
+    ctr: {
+      title: "Graphic Designer Resume Hub — ATS Guide & Example",
+      description:
+        "Graphic designer resume hub: portfolio vs ATS balance, Adobe keywords, ATS example & optimization guide. Free resume checker worldwide.",
+      h1: "Graphic Designer Resume Hub: ATS Optimization",
+      primaryKeyword: "graphic designer resume ATS",
+      richSnippets: ["Article", "FAQPage", "ItemList", "BreadcrumbList"],
+    },
+    intro:
+      "Creative resumes often break parsers. This hub connects an ATS-readable example, keyword lists, and format rules so your design skills survive screening.",
+    examplePath: "/resume-examples/graphic-designer",
+    keywordsPath: "/resume-keywords/graphic-designer",
+    guidePath: "/ats-resume/graphic-designer",
+    mistakes: [
+      "Portfolio-only PDFs with text trapped in image layers",
+      "Skills listed as icons without plain-text Adobe/CC terms",
+      "Multi-column layouts that scramble employer names on parse",
+    ],
+    faqItems: [
+      {
+        question: "Can graphic designers use creative resume templates?",
+        answer:
+          "For ATS uploads, use a plain-text-friendly version. Save the visual portfolio for personal sites or recruiter email—not the initial portal upload.",
+      },
+      {
+        question: "Which tools should appear on a designer ATS resume?",
+        answer:
+          "Spell Adobe Creative Cloud apps, Figma, and production tools in a Skills section and in bullets where you delivered outcomes.",
+      },
+    ],
+  },
+  {
+    slug: "business-analyst",
+    path: "/profession/business-analyst",
+    title: "Business Analyst",
+    breadcrumbLabel: "Business analysts",
+    ctr: {
+      title: "Business Analyst Resume Hub — ATS Keywords & Guide",
+      description:
+        "Business analyst resume hub: requirements, UAT, SQL keywords, ATS optimization & related data analyst example. Free checker included.",
+      h1: "Business Analyst Resume Hub: ATS Optimization",
+      primaryKeyword: "business analyst resume ATS",
+      richSnippets: ["Article", "FAQPage", "ItemList", "BreadcrumbList"],
+    },
+    intro:
+      "BA roles filter on requirements, process mapping, and stakeholder proof. Connect keyword lists, the closest ATS example, and optimization tools here.",
+    examplePath: "/resume-examples/data-analyst",
+    keywordsPath: "/resume-keywords/business-analyst",
+    guidePath: "/ats-resume/data-analyst",
+    mistakes: [
+      "Listing Agile terms without requirements or UAT project context",
+      "BA title buried under unrelated job titles parsers cannot match",
+      "SQL mentioned only in skills—not in bullets with analysis outcomes",
+    ],
+    faqItems: [
+      {
+        question: "BA vs data analyst on a resume for ATS?",
+        answer:
+          "Match the posting title. Business analysts emphasize requirements and process improvement; data analysts emphasize SQL depth and statistical work.",
+      },
+      {
+        question: "Which BA keywords do ATS systems search?",
+        answer:
+          "Requirements gathering, user stories, UAT, BRD, process mapping, SQL, Agile, and stakeholder management—placed where you used them.",
+      },
+    ],
+  },
 ];
 
 export function getProfessionHub(slug: string): ProfessionHubEntry | undefined {

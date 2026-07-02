@@ -238,9 +238,9 @@ export const CTR_ATS_HUB: PageCtrMeta = {
 };
 
 export const CTR_KNOWLEDGE_CENTER: PageCtrMeta = {
-  title: "ATS Knowledge Center — 10 Resume Guides (Free)",
+  title: "ATS Knowledge Center — 13 Resume Guides (Free)",
   description:
-    "Ten free ATS guides: format, keywords, match score, mistakes, examples, and checklist—each links to the free resume checker workflow.",
+    "Thirteen free ATS guides: format, keywords, match score, mistakes, examples, and checklist—each links to the free resume checker workflow.",
   ogTitle: "ATS Knowledge Center — Free Resume Guides",
   h1: "ATS Knowledge Center for Resume Optimization",
   primaryKeyword: "ATS knowledge center",

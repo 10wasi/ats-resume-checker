@@ -8,6 +8,9 @@ import { RelatedResources } from "@/components/seo/RelatedResources";
 import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
+import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
+import { GuideTrustBlock } from "@/components/seo/GuideTrustBlock";
+import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import { KNOWLEDGE_CENTER_PATH } from "@/lib/content/knowledge-center-pages";
 import type { FaqItem } from "@/lib/seo/faq";
 import type { HowToStep } from "@/lib/seo/how-to-steps";
@@ -102,12 +105,17 @@ export function KnowledgeGuidePage({
             <div className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
               {intro}
             </div>
+            <ContentFreshnessLabel path={path} className="mt-4" />
           </header>
 
           <AdPlaceholder label="Advertisement · resource" className="mt-10" />
 
           <div className="mt-10">
             <BlogContent content={body} />
+          </div>
+
+          <div className="not-prose mt-10">
+            <GuideTrustBlock />
           </div>
 
           <section
@@ -146,6 +154,7 @@ export function KnowledgeGuidePage({
           <BlogResumeCta />
         </div>
       </article>
+      <StickyCheckerCta />
     </>
   );
 }

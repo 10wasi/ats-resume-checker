@@ -341,10 +341,144 @@ export const CAREER_HUB_INDEX: CareerHubIndexItem[] = [
   },
 ];
 
+/** Curated topical clusters — replaces naive slice for stronger internal linking. */
+const CAREER_HUB_RELATED_IDS: Record<string, readonly string[]> = {
+  "resume-rejected-by-ats": [
+    "complete-ats-guide",
+    "common-ats-rejection-reasons",
+    "resume-not-passing-ats",
+    "resume-checker",
+    "how-to-improve-score",
+    "resume-screening-explained",
+  ],
+  "why-resume-gets-rejected": [
+    "resume-rejected-by-ats",
+    "common-ats-rejection-reasons",
+    "resume-screening-explained",
+    "complete-ats-guide",
+    "resume-checker",
+    "resume-mistakes-interviews",
+  ],
+  "common-ats-rejection-reasons": [
+    "resume-rejected-by-ats",
+    "why-resume-gets-rejected",
+    "resume-not-passing-ats",
+    "ats-format-guide",
+    "resume-checker",
+    "complete-ats-guide",
+  ],
+  "resume-not-passing-ats": [
+    "resume-rejected-by-ats",
+    "common-ats-rejection-reasons",
+    "ats-format-guide",
+    "resume-checker",
+    "how-to-improve-score",
+    "complete-ats-guide",
+  ],
+  "why-not-getting-interviews": [
+    "resume-checker",
+    "resume-match-analyzer",
+    "why-resume-gets-rejected",
+    "how-to-tailor-resume",
+    "how-to-improve-score",
+    "resume-review",
+  ],
+  "resume-mistakes-interviews": [
+    "ats-keywords-guide",
+    "ats-format-guide",
+    "resume-examples",
+    "resume-checker",
+    "why-resume-gets-rejected",
+    "ats-checklist",
+  ],
+  "resume-screening-explained": [
+    "ats-guide",
+    "resume-rejected-by-ats",
+    "resume-checker",
+    "resume-match-analyzer",
+    "complete-ats-guide",
+    "why-not-getting-interviews",
+  ],
+  "free-resume-checker-online": [
+    "free-ats-score-checker",
+    "resume-checker",
+    "resume-score-checker",
+    "ats-resume-checker",
+    "ai-resume-review",
+    "complete-ats-guide",
+  ],
+  "free-ats-score-checker": [
+    "free-resume-checker-online",
+    "resume-score-checker",
+    "resume-checker",
+    "how-to-improve-score",
+    "ats-resume-checker",
+    "complete-ats-guide",
+  ],
+  "ats-resume-checker": [
+    "resume-checker",
+    "free-resume-checker-online",
+    "resume-score-checker",
+    "ats-guide",
+    "resume-review",
+    "complete-ats-guide",
+  ],
+  "ai-resume-review": [
+    "resume-review",
+    "resume-checker",
+    "cv-checker",
+    "resume-score-checker",
+    "ats-resume-checker",
+    "complete-ats-guide",
+  ],
+  "cv-checker": [
+    "resume-checker",
+    "ai-resume-review",
+    "free-resume-checker-online",
+    "ats-format-guide",
+    "resume-review",
+    "complete-ats-guide",
+  ],
+  "resume-keywords-missing": [
+    "resume-keywords-checker",
+    "resume-match-analyzer",
+    "how-to-tailor-resume",
+    "resume-keyword-tool",
+    "resume-checker",
+    "ats-keywords-guide",
+  ],
+  "how-to-tailor-resume": [
+    "resume-match-analyzer",
+    "resume-keywords-missing",
+    "resume-checker",
+    "resume-match-score",
+    "how-to-improve-score",
+    "resume-examples",
+  ],
+  "how-to-improve-score": [
+    "resume-score-checker",
+    "resume-checker",
+    "how-to-tailor-resume",
+    "ats-checklist",
+    "complete-ats-guide",
+    "ats-resume-checker",
+  ],
+};
+
 export function getRelatedCareerHubItems(
   currentId: string,
-  limit = 5
+  limit = 6
 ): CareerHubIndexItem[] {
+  const keys = CAREER_HUB_RELATED_IDS[currentId];
+  if (keys) {
+    const items: CareerHubIndexItem[] = [];
+    for (const id of keys) {
+      const item = CAREER_HUB_INDEX.find((e) => e.id === id);
+      if (item && item.id !== currentId) items.push(item);
+      if (items.length >= limit) break;
+    }
+    if (items.length > 0) return items;
+  }
   return CAREER_HUB_INDEX.filter((item) => item.id !== currentId).slice(
     0,
     limit

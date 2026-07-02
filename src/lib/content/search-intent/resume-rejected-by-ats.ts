@@ -33,16 +33,6 @@ export const resumeRejectedByAtsEntry: CareerLandingEntry = {
       answer:
         "Single-column export, standard headings, and matching must-have terms from the job post in experience bullets—then re-run the free checker.",
     },
-    {
-      question: "Should I rewrite my entire resume after ATS rejection?",
-      answer:
-        "Usually no. Fix format and add 5–8 posting keywords into recent bullets where you have proof. Most rejections are layout or keyword gaps—not your entire career story.",
-    },
-    {
-      question: "How do I know if ATS rejected me vs a recruiter?",
-      answer:
-        "Low checker score with garbled extracted text suggests ATS failure. High score with silence may mean match or recruiter skim—use resume match and review tools to diagnose.",
-    },
   ],
   body: `
 **Resume rejected by ATS** feels personal—but most rejections are mechanical. Hiring software parses your file, scores keywords, and applies filters **before** a recruiter reads your name. When that layer fails, you get silence, not feedback.

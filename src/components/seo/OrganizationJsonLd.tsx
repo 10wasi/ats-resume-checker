@@ -28,6 +28,12 @@ export function OrganizationJsonLd() {
       "resume keywords",
       "resume optimization",
       "resume examples",
+      "applicant tracking system",
+      "resume screening",
+      "resume parsing",
+      "job description matching",
+      "CV optimization",
+      "interview preparation",
     ],
     sameAs: ["https://github.com/10wasi/ats-resume-checker"],
     contactPoint: {

@@ -4,7 +4,7 @@ export const knowledgeCenterFaqItems: FaqItem[] = [
   {
     question: "What is the ATS Knowledge Center?",
     answer:
-      "The ATS Knowledge Center is ResumeIQ's library of ten guides covering ATS resume examples, checklist, keywords, formatting, mistakes, job matching, score, ATS-friendly builds, industry keywords, and templates—plus free tools to test your file.",
+      "The ATS Knowledge Center is ResumeIQ's library of thirteen guides covering ATS resume examples, checklist, keywords, formatting, mistakes, job matching, score, ATS-friendly builds, industry keywords, and templates—plus free tools to test your file.",
   },
   {
     question: "Where should I start in the knowledge center?",
