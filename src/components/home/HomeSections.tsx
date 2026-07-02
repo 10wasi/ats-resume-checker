@@ -1062,16 +1062,16 @@ export function ProblemSolutionSection() {
               ResumeIQ previews both stages: parser health, keyword fit, and section quality—so you
               fix what matters before you apply.
             </p>
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-6 flex flex-col gap-3">
               <Link
                 href={RESUME_CHECKER_PATH}
-                className="btn-gradient inline-flex justify-center px-7 text-sm sm:text-base"
+                className="btn-gradient w-full px-5 text-sm sm:text-base"
               >
                 Scan my resume free
               </Link>
               <Link
                 href="/methodology"
-                className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-800 transition hover:border-emerald-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
+                className="inline-flex min-h-12 w-full items-center justify-center rounded-xl border border-slate-200 bg-white px-5 text-center text-sm font-semibold leading-snug text-slate-800 transition hover:border-emerald-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
               >
                 How scoring works
               </Link>

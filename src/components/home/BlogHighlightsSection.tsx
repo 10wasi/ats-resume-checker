@@ -20,15 +20,15 @@ export function BlogHighlightsSection() {
           </div>
           <Link
             href="/blog"
-            className="inline-flex h-11 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-800 shadow-sm transition hover:border-accent-400 hover:text-accent-500"
+            className="inline-flex min-h-11 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white px-5 text-sm font-semibold text-slate-800 shadow-sm transition hover:border-accent-400 hover:text-accent-500"
           >
             Browse all posts
           </Link>
         </div>
-        <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <ul className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
           {posts.map((post) => (
-            <li key={post.slug}>
-              <article className="card-elevated flex h-full flex-col overflow-hidden">
+            <li key={post.slug} className="min-w-0">
+              <article className="card-elevated flex h-full min-h-[280px] flex-col overflow-hidden">
                 <div className="flex flex-1 flex-col p-5">
                   <time
                     dateTime={post.date}
@@ -40,7 +40,7 @@ export function BlogHighlightsSection() {
                       year: "numeric",
                     })}
                   </time>
-                  <h3 className="mt-3 font-display text-base font-bold leading-snug sm:text-lg">
+                  <h3 className="mt-3 line-clamp-3 min-h-[4.5rem] font-display text-base font-bold leading-snug sm:text-lg">
                     <Link
                       href={`/blog/${post.slug}`}
                       className="text-[#4ade80] decoration-[#4ade80]/40 underline-offset-4 transition-colors visited:text-[#22c55e] hover:text-[#16a34a] hover:underline"
@@ -48,12 +48,12 @@ export function BlogHighlightsSection() {
                       {post.title}
                     </Link>
                   </h3>
-                  <p className="mt-2 line-clamp-3 flex-1 text-sm text-slate-600">
+                  <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-slate-600">
                     {post.description}
                   </p>
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="mt-4 text-sm font-semibold text-[#4ade80] transition-colors visited:text-[#22c55e] hover:text-[#16a34a]"
+                    className="mt-auto inline-flex items-center pt-4 text-sm font-semibold text-[#4ade80] transition-colors visited:text-[#22c55e] hover:text-[#16a34a]"
                   >
                     Read article →
                   </Link>

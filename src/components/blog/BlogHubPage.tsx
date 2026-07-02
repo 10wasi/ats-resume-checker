@@ -117,7 +117,7 @@ export function BlogHubPage({ entry }: Props) {
             Run the free ATS Resume Checker—resume analyzer free online with score,
             keywords, and improvement suggestions.
           </p>
-          <Link href={RESUME_CHECKER_PATH} className="btn-gradient mt-4 inline-flex px-6">
+          <Link href={RESUME_CHECKER_PATH} className="btn-gradient mt-4 w-full sm:w-auto">
             Check Resume Score
           </Link>
         </div>

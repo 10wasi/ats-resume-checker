@@ -86,7 +86,7 @@ export function HomeComparisonSection() {
               {col.tone === "emerald" ? (
                 <Link
                   href={RESUME_CHECKER_PATH}
-                  className="btn-gradient mt-6 block text-center text-sm"
+                  className="btn-gradient mt-6 w-full text-sm"
                 >
                   Run free analysis
                 </Link>

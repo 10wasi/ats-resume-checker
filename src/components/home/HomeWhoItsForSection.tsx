@@ -109,13 +109,13 @@ export function HomeWhoItsForSection() {
                 </li>
               ))}
             </ul>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-6 text-center">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Link href={RESUME_CHECKER_PATH} className="btn-gradient w-full px-6 sm:w-auto">
                 Run free resume scan
               </Link>
               <Link
                 href="/resume-score-checker"
-                className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-6 text-sm font-semibold text-slate-800 transition hover:border-emerald-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500"
+                className="inline-flex min-h-12 w-full items-center justify-center rounded-xl border border-slate-200 bg-white px-6 text-center text-sm font-semibold leading-snug text-slate-800 transition hover:border-emerald-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 sm:w-auto"
               >
                 Resume score guide
               </Link>
