@@ -69,5 +69,26 @@ Our checker shows an **ATS screening estimate** based on format, keywords, and m
 - [How to improve resume score](/how-to-improve-resume-score)
 - [Resume screening explained](/resume-screening-explained)
 - [Why resume gets rejected](/why-resume-gets-rejected)
+
+
+## What extracted text reveals about parse failures
+
+When you upload to the [ATS Resume Checker](/resume-checker), the extracted-text preview shows exactly what the parser indexed.
+
+| What you see in extracted text | Meaning | Fix |
+|-------------------------------|---------|-----|
+| Employer names and dates scrambled | Two-column layout broke field order | Single column only |
+| Skills appear as random characters | Icon-based skills section | Plain text skills list |
+| Contact info missing | Email/phone only in header graphic | Move to body text |
+| Bullets appear as one wall of text | Text boxes used for layout | Remove tables and text boxes |
+
+Clean extraction is the prerequisite for every other optimization.
+
+## ATS myths that cause self-inflicted failures
+
+- "PDF always fails ATS" - A clean single-column PDF often outperforms a messy DOCX
+- "Keywords in white text work" - Modern parsers index visible text only
+- "More skills = higher score" - Unproven skills inflate score but lose recruiter trust
+- "ATS always rejects automatically" - Usually it ranks, not eliminates, unless hard filters are triggered
 `,
 };

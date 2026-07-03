@@ -67,12 +67,41 @@ Most guides only talk about step 3. Job seekers lose at steps 2 and 4 constantly
 
 [Resume screening explained](/resume-screening-explained) covers who reads your file and when. Rejection often happens **before** that human read.
 
+## The silent rejection pattern
+
+Most rejections never explain why. The most common causes in order:
+
+1. **Parse failure** - Garbled text means no searchable content
+2. **Missing required terms** - A filter removes you before any human reads the file
+3. **Weak first bullet** - Survived filters, then lost the skim in 3 seconds
+4. **Title misalignment** - Applying to a specialist role with a generalist title
+5. **Overqualified signals** - Compensation indicators above posting range
+
+Tools reveal causes 1, 2, and 3 quickly.
+
+## Before / after: same candidate, different outcome
+
+A finance candidate applied 30 times with a two-column Canva template and duty-only bullets. Score: 48. Result: silence.
+
+After switching to a single-column Word export, rewriting three bullets with metrics, and tailoring keywords per posting: score 79, match 72. Three phone screens in two weeks. Same experience.
+
+## Rejection diagnosis by symptom
+
+| Situation | Likely cause | Fix |
+|-----------|-------------|-----|
+| No responses after 20+ applications | Parse or keyword failure | [ATS Resume Checker](/resume-checker) |
+| Responses drop as role level rises | Scope gap in bullets | Add team size, budget, P&L signals |
+| Responses vary by company size | Template format issue | [ATS format guide](/ats-resume-format) |
+| Phone screens but no offers | Interview stage - not resume | Keep resume; practice stories |
+
 ## Tools
 
 | Tool | Use when |
 |------|----------|
 | [Resume Checker](/resume-checker) | Parse health, keyword gaps |
 | [Keywords Finder](/ats-keywords-finder) | Extract must-haves from JD |
+| [Resume Match Analyzer](/resume-job-description-match) | Keyword overlap per posting |
 | [Resume Examples](/resume-examples) | Bullet patterns that survive skim |
+| [ATS Checklist](/ats-resume-checklist-2026) | Pre-submit QA |
 `,
 };

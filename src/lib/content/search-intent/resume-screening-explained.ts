@@ -78,10 +78,54 @@ Same qualifications. Different **searchable proof**.
 
 Even perfect screening survival does not guarantee offers—interviews, compensation, and team fit still matter. Screening optimization removes **avoidable** early exits.
 
+## What ATS vendors actually do
+
+The most common enterprise ATS platforms—Workday, Greenhouse, Lever, iCIMS, Taleo—share similar mechanics:
+
+1. **Ingestion** — Resume file uploaded via portal
+2. **Parse** — Structured data extracted (name, dates, employers, skills, education)
+3. **Index** — Terms stored in a searchable database
+4. **Filter** — Recruiter applies rules (required keywords, years, location)
+5. **Rank** — Candidates sorted by match signal score
+
+ATS systems do not "read" resumes the way a person does. They match query terms to indexed fields. That is why spelling an employer's required tool exactly as they wrote it matters.
+
+## Six seconds: what recruiters actually scan
+
+Research into recruiter eye-tracking shows attention goes to:
+- Candidate name and current title — 2 seconds
+- Current and previous employers + dates — 2 seconds
+- First bullet of most recent role — 1 second
+- Education — 1 second
+
+If your title does not align and your first bullet does not show a clear win, recruiters move on. Screening optimization has two jobs: survive the software, then stop the skim.
+
+## The hidden screening stage: application form filters
+
+Many rejections happen before any human or ATS reads your resume file. Application form hard filters include:
+
+- Authorized to work in [country]?
+- Years of experience in [skill]?
+- Required degree (yes/no)?
+- Willing to relocate?
+
+If you answer disqualifying responses, your resume is filtered out regardless of quality. Always read requirements carefully before applying.
+
+## Improving screening survival — role-by-role
+
+| Role type | Primary screening gap | Fix |
+|-----------|-----------------------|-----|
+| Tech roles | Missing stack terms from JD | [ATS keywords finder](/ats-keywords-finder) per posting |
+| Finance/compliance | Certification abbreviations | Spell credentials fully in Skills section |
+| Healthcare | License + EHR system names | Echo posting's exact tool names |
+| Entry-level | Vague bullets, no metrics | [Achievement generator](/resume-achievement-generator) |
+| Senior/director | Missing scope signals | Add team size, budget, or P&L responsibility |
+
 ## Related resources
 
 - [Resume match score explained](/resume-match-score)
 - [Resume optimization guide](/resume-optimization)
+- [ATS resume mistakes](/ats-resume-mistakes)
 - [Career Success Hub](/career-success-hub)
 `,
 };

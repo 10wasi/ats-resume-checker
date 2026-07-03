@@ -72,5 +72,39 @@ More patterns: [resume examples](/resume-examples).
 ## Prevention habit
 
 Tailor each serious application: [how to tailor resume](/how-to-tailor-resume-for-job-description). Track which version you sent.
+
+## Hiring manager perspective: what actually kills applications
+
+Recruiters and hiring managers who review large volumes of applications cite the same patterns repeatedly:
+
+- **Generic summary** - Same opening paragraph for every role signals no research
+- **No numbers anywhere** - Duties without outcomes make comparison impossible
+- **Skills section mismatch** - 25 skills listed, none mentioned in experience bullets
+- **Date gaps with no explanation** - Leave gaps unexplained and they become questions
+- **Wrong level of detail** - Senior candidates describing tasks; junior candidates omitting depth
+
+Fixing these does not require inventing experience. It requires reframing real work with context, scale, and outcome.
+
+## Before / after: rewriting a duty into an achievement
+
+\BEFORE: Coordinated with stakeholders on project timelines.
+
+AFTER: Aligned 6 stakeholders across 3 departments on a
+       12-week ERP go-live; delivered on schedule with zero
+       post-launch critical defects.
+\
+The after version names: what (stakeholder alignment), scope (6 people, 3 departments), timeline (12 weeks), and result (on-schedule, zero defects). ATS indexes ERP. Recruiters remember the number.
+
+## ATS mistakes vs human-readable mistakes
+
+| Mistake type | Detected by | Fix |
+|-------------|------------|-----|
+| Two-column layout | ATS parser | Single column export |
+| Missing JD keywords | ATS keyword rank | [Keywords finder](/ats-keywords-finder) |
+| Duty-only bullets | Recruiter skim | Achievement rewrites |
+| Wrong file format | Portal upload | Re-export as PDF |
+| Generic summary | Hiring manager | Role-specific 2-sentence opener |
+
+Some mistakes block software. Others pass software but lose humans. You need to survive both.
 `,
 };

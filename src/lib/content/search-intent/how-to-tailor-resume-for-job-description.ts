@@ -79,5 +79,29 @@ If honest match stays below 60%, the role may be a stretch—see [why resume get
 - [Resume keywords missing](/resume-keywords-missing)
 - [Resume optimization](/resume-optimization)
 - [Resume examples](/resume-examples) for bullet patterns
+
+## Tailoring for different career situations
+
+| Situation | Primary tailoring focus |
+|-----------|------------------------|
+| Career change | Bridge language (transferable skills named in the new role) |
+| Promotion target | Scope and leadership signals in existing bullets |
+| Industry switch | Domain vocabulary from the posting |
+| Global/remote | Mirror the employer market spelling and tool names |
+| Return after gap | Recency signals: freelance, volunteer, course completions |
+
+## The 15-minute tailoring habit
+
+1. Open the JD and your master resume side by side
+2. Run match analysis (2 min) - note the score and top 5 gaps
+3. Edit 3 bullets to include verified missing terms (7 min)
+4. Adjust title/summary line if needed (3 min)
+5. Export PDF and re-check score (3 min)
+
+Track in a simple table: Role, Company, Version sent, Date, Response.
+
+## What over-tailoring looks like
+
+Mirror the employer vocabulary with your real evidence. Do not copy the JD verbatim, add tools you cannot explain, or change your title to one you never held. Tailoring is emphasis and language - not fabrication.
 `,
 };

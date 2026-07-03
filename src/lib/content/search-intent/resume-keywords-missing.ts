@@ -76,5 +76,28 @@ Deep strategy: [ATS resume keywords guide](/ats-resume-keywords).
 - [Resume not passing ATS](/resume-not-passing-ats)
 - [How to tailor resume for job description](/how-to-tailor-resume-for-job-description)
 - [Resume match score explained](/resume-match-score)
+
+
+## Why candidates miss keywords they actually have
+
+Language mismatch, not experience mismatch, causes most keyword gaps. The fix is mirroring the posting language with your real proof.
+
+| Their posting says | Your resume says | Fix |
+|-------------------|-----------------|-----|
+| Stakeholder alignment | Worked with other teams | Mirror the phrase |
+| Python automation | scripting | Name the language |
+| AWS Lambda / S3 | cloud experience | Name the specific services |
+| Agile ceremonies | worked in Agile | Name sprints, standups |
+
+## Keyword priority tiers
+
+1. **Must-have in requirements** - Absence often disqualifies before human review
+2. **Repeated 2+ times in posting** - Employer signals what matters most
+3. **In job title or team description** - Indicates domain vocabulary
+4. **Nice-to-have / preferred** - Add only if truthful; lower urgency
+
+## The ethical limit
+
+Only add keywords you can defend in a 30-second phone screen. If the term is on your resume, be ready to discuss it with a real example.
 `,
 };

@@ -23,11 +23,11 @@ export const CTR_HOME: PageCtrMeta = {
 };
 
 export const CTR_RESUME_CHECKER: PageCtrMeta = {
-  title: "Resume Checker — ATS Score, Match & Fixes Free",
+  title: "Free Resume Checker — ATS Score, Keywords & Parse Test",
   description:
-    "Free resume checker: ATS score, keyword match, structure analysis & priority fixes with why/how guidance. Upload PDF—results in minutes worldwide.",
-  ogTitle: "Free Resume Checker — Deep ATS Analysis",
-  h1: "Free Resume Checker Online",
+    "Free resume checker: ATS score, missing keywords, format parse test & fix checklist. Upload PDF or paste text—results in minutes. CV checker included.",
+  ogTitle: "Free Resume Checker — ATS Score + Parse Preview",
+  h1: "Free Resume Checker — ATS Score, Keywords & Fixes",
   primaryKeyword: "resume checker",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
@@ -468,11 +468,11 @@ export const CTR_WHY_NOT_GETTING_INTERVIEWS: PageCtrMeta = {
 };
 
 export const CTR_WHY_RESUME_GETS_REJECTED: PageCtrMeta = {
-  title: "Why Your Resume Gets Rejected — Causes & Fixes",
+  title: "Why Your Resume Gets Rejected — The Real 5-Stage Cause",
   description:
-    "Why resumes get rejected before interviews: parsing, filters, recruiter skim. Real examples + free checker to find your failure point fast.",
-  ogTitle: "Why Resume Gets Rejected — What to Fix First",
-  h1: "Why Your Resume Gets Rejected (And What to Fix)",
+    "Why resumes get rejected: parse failure, keyword filters, recruiter skim, title mismatch. Diagnose your exact failure point with the free checker.",
+  ogTitle: "Why Resume Gets Rejected — Diagnose by Stage",
+  h1: "Why Your Resume Gets Rejected (And How to Diagnose It)",
   primaryKeyword: "why resume gets rejected",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
@@ -498,11 +498,11 @@ export const CTR_RESUME_KEYWORDS_MISSING: PageCtrMeta = {
 };
 
 export const CTR_HOW_TO_TAILOR_RESUME: PageCtrMeta = {
-  title: "How to Tailor Resume for Job Description",
+  title: "How to Tailor Resume for Any Job — 15-Minute Method",
   description:
-    "How to tailor your resume for a job description in 15 minutes: extract terms, edit bullets, re-check match %. Free analyzer walkthrough.",
-  ogTitle: "Tailor Resume to Job Description — Step-by-Step",
-  h1: "How to Tailor Resume for Job Description",
+    "How to tailor your resume for a job description: extract terms, edit 3 bullets, re-check match % before you apply. Free match analyzer included.",
+  ogTitle: "Tailor Resume to Job Description — Step-by-Step Guide",
+  h1: "How to Tailor Resume for a Job Description (15-Minute Method)",
   primaryKeyword: "how to tailor resume for job description",
   richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
@@ -528,11 +528,11 @@ export const CTR_RESUME_MISTAKES_INTERVIEWS: PageCtrMeta = {
 };
 
 export const CTR_RESUME_SCREENING_EXPLAINED: PageCtrMeta = {
-  title: "Resume Screening Explained — ATS to Recruiter",
+  title: "Resume Screening Explained — 6 Stages From Upload to Interview",
   description:
-    "Resume screening explained: who reads your file, when ATS filters, and what to fix at each stage. Free tools to test parse and match.",
-  ogTitle: "Resume Screening Explained for Job Seekers",
-  h1: "Resume Screening Explained: From Apply to Interview",
+    "Resume screening explained step by step: ATS parse, keyword rank, recruiter skim, hiring manager review. See which stage loses most applicants.",
+  ogTitle: "Resume Screening Explained — ATS to Hiring Manager",
+  h1: "Resume Screening Explained: 6 Stages From Upload to Interview",
   primaryKeyword: "resume screening explained",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };

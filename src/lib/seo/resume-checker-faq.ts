@@ -41,4 +41,24 @@ export const resumeCheckerFaqItems: FaqItem[] = [
     answer:
       "After every major edit, template change, or new export. A five-minute re-check prevents shipping a broken PDF to dozens of portals.",
   },
+  {
+    question: "Can I use this as a CV checker for international applications?",
+    answer:
+      "Yes. Upload your CV in PDF or DOCX format—the parser extracts plain text the same way regardless of whether you call it a CV or resume. Check extracted text for two-column or photo layout failures common in EU-style CVs.",
+  },
+  {
+    question: "What does the AI resume checker suggest?",
+    answer:
+      "The AI layer generates bullet rewrites, summary improvements, action verb suggestions, and keyword additions. Every suggestion is draft quality—verify and personalise before using on your real file.",
+  },
+  {
+    question: "What is the difference between a resume scanner and a resume checker?",
+    answer:
+      "A resume scanner finds keywords present or absent. A resume checker includes parsing, scoring, keyword analysis, match scoring, and actionable feedback. ResumeIQ functions as both: it surfaces keyword gaps and explains what to do next.",
+  },
+  {
+    question: "Is this a free ATS resume checker—no paywall?",
+    answer:
+      "Core analysis is free: ATS score, keyword gaps, format flags, match %, and improvement checklist. No credit card required. Advanced AI report sections are included in the standard free flow.",
+  },
 ];

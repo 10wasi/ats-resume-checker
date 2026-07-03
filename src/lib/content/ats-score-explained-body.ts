@@ -153,4 +153,14 @@ Yes—reframe truthful bullets with posting vocabulary and metrics. Avoid tools 
 After every PDF export and before each application batch.
 
 Full FAQ: see on-page [FAQ section](/complete-guide-ats-resume-optimization) on the master guide.
+
+## Improve your score: next steps
+
+After understanding what the score measures, three actions raise it most reliably:
+
+1. [Fix format issues first](/ats-resume-format) - parse failures cap your score regardless of keywords
+2. [Run the free ATS resume checker](/resume-checker) - get your current score and top-3 fix list
+3. [Match against a specific job description](/resume-job-description-match) - target 70%+ match before applying
+
+Browse role-specific keyword lists in the [resume keywords database](/resume-keywords) to align vocabulary quickly.
 `;
