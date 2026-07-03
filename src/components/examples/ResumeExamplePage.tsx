@@ -10,7 +10,7 @@ import { RelatedResources } from "@/components/seo/RelatedResources";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
-import { GuideTrustBlock } from "@/components/seo/GuideTrustBlock";
+import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import type { ResumeExampleEntry } from "@/lib/content/resume-examples/types";
 import { RESUME_EXAMPLES_LIBRARY_PATH } from "@/lib/content/resume-examples/registry";
@@ -138,7 +138,7 @@ export function ResumeExamplePage({
           />
 
           <div className="not-prose mt-10">
-            <GuideTrustBlock />
+            <GuideEeatSection path={example.path} />
           </div>
 
           <ResumeExamplesRelated currentSlug={example.slug} />

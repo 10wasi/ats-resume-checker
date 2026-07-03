@@ -8,7 +8,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
-import { GuideTrustBlock } from "@/components/seo/GuideTrustBlock";
+import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import { TopicPillarBanner } from "@/components/seo/TopicPillarBanner";
 import { CheckerFunnelWebApplicationJsonLd } from "@/components/seo/CheckerFunnelWebApplicationJsonLd";
@@ -149,7 +149,7 @@ export function CareerLandingPage({
           </div>
 
           <div className="not-prose mt-10">
-            <GuideTrustBlock />
+            <GuideEeatSection path={entry.path} />
           </div>
 
           <RelatedResources path={entry.path} excludeHref={entry.path} />

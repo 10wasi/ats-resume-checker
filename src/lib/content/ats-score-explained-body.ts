@@ -85,4 +85,72 @@ Perfectionism is another rejection mode. Apply when:
 - A human read confirms clarity in 30 seconds
 
 Browse the full [ATS Knowledge Center](/knowledge-center) for the rest of the workflow.
+
+---
+
+## Who this guide is for
+
+Job seekers who see an **ATS score** or **resume score** in a tool and need to know what to fix first—before tailoring for a specific posting.
+
+## Research methodology
+
+Scores on ResumeIQ follow published weights in [methodology](/methodology): skills (30%), experience (25%), ATS keywords (20%), formatting (15%), education (10%). We test parser output on real PDF exports—not hypothetical templates.
+
+## Score benchmarks (practical, not official)
+
+| Range | Typical meaning | Priority action |
+|-------|-----------------|-----------------|
+| Below 55 | Parse or structure issues likely | Fix layout; read extracted text |
+| 55–70 | Readable file; keyword gaps remain | Bullet upgrades + skills in context |
+| 70–85 | Solid master resume | Tailor per posting with match tool |
+| 85+ | Strong baseline | Maintain; focus on match % per role |
+
+Employer ATS thresholds are unknown—use scores for **relative improvement**, not pass/fail certainty.
+
+## Before vs after: score lift from format only
+
+**Before:** Marketing coordinator, Canva two-column, ATS score 49. Extracted text shows skills before employers.
+
+**After:** Google Docs single column, same bullets. ATS score 67 without any keyword edits—proof that **resume parser** health comes first.
+
+## Common mistakes when interpreting scores
+
+- Chasing 90+ on master resume while match stays low for target roles
+- Adding keywords to footer instead of experience bullets
+- Testing Word file but submitting a different PDF export
+- Ignoring readability and recruiter skim signals
+
+## Interview readiness connection
+
+**Interview readiness** combines ATS score, readability, match (if provided), and format flags into prioritized fixes. It estimates screening survivability—not interview performance. Guide: [Complete ATS optimization](/complete-guide-ats-resume-optimization).
+
+## Checklist after each score check
+
+- [ ] Read extracted text order in [checker](/resume-checker)
+- [ ] Fix critical format flags before keywords
+- [ ] Run [match tool](/resume-job-description-match) for target posting
+- [ ] Re-export and re-upload same binary
+- [ ] Compare to [resume examples](/resume-examples) for your role
+
+## Next step
+
+Run the [free ATS resume checker](/resume-checker), then open the [master optimization guide](/complete-guide-ats-resume-optimization) for the full workflow.
+
+---
+
+## FAQs (quick reference)
+
+**What is a good ATS score?**  
+There is no universal pass mark. Fix critical format flags first, then compare match % against your target posting.
+
+**Does resume match score replace ATS score?**  
+No. ATS score audits your master file; match score audits one application. Use both.
+
+**Can I improve score without lying?**  
+Yes—reframe truthful bullets with posting vocabulary and metrics. Avoid tools you cannot defend.
+
+**How often should I re-check?**  
+After every PDF export and before each application batch.
+
+Full FAQ: see on-page [FAQ section](/complete-guide-ats-resume-optimization) on the master guide.
 `;

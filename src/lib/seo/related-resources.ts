@@ -419,6 +419,7 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "keywordTool",
   ],
   "/how-ats-works": [
+    "completeAtsGuide",
     "methodology",
     "checker",
     "faqCenter",
@@ -499,13 +500,13 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "examples",
   ],
   "/ultimate-ats-resume-guide": [
+    "completeAtsGuide",
     "checker",
     "knowledgeCenter",
     "formatGuide",
     "keywordsGuide",
     "checklist",
     "careerHub",
-    "completeAtsGuide",
     "resourceHub",
   ],
   "/resume-keywords": [
@@ -630,6 +631,7 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "match",
   ],
   "/ats-score-explained": [
+    "completeAtsGuide",
     "checker",
     "matchScoreGuide",
     "scoreChecker",

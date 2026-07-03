@@ -6,7 +6,7 @@ import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
 import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
-import { GuideTrustBlock } from "@/components/seo/GuideTrustBlock";
+import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import { ItemListJsonLd } from "@/components/seo/ItemListJsonLd";
 import { ProfessionRelatedCareers } from "@/components/hub/ProfessionRelatedCareers";
@@ -114,7 +114,7 @@ export function ProfessionHubPage({ entry }: Props) {
         </section>
 
         <div className="not-prose mt-10">
-          <GuideTrustBlock />
+          <GuideEeatSection path={entry.path} />
         </div>
 
         <div className="not-prose mt-10 flex flex-wrap gap-3">

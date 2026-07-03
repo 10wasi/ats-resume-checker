@@ -10,7 +10,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
-import { GuideTrustBlock } from "@/components/seo/GuideTrustBlock";
+import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import { RESUME_KEYWORDS_PATH } from "@/lib/content/resume-keywords/registry";
 import type { ResumeKeywordsEntry } from "@/lib/content/resume-keywords/types";
@@ -102,7 +102,7 @@ export function ResumeKeywordsPage({
           <ProfessionRelatedCareers currentSlug={entry.slug} roleTitle={entry.roleTitle} />
 
           <div className="not-prose mt-10">
-            <GuideTrustBlock />
+            <GuideEeatSection path={entry.path} />
           </div>
 
           <section

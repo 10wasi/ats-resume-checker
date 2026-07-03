@@ -9,7 +9,7 @@ import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
-import { GuideTrustBlock } from "@/components/seo/GuideTrustBlock";
+import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import { KNOWLEDGE_CENTER_PATH } from "@/lib/content/knowledge-center-pages";
 import type { FaqItem } from "@/lib/seo/faq";
@@ -115,7 +115,7 @@ export function KnowledgeGuidePage({
           </div>
 
           <div className="not-prose mt-10">
-            <GuideTrustBlock />
+            <GuideEeatSection path={path} />
           </div>
 
           <section

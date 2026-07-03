@@ -2,7 +2,7 @@ import Link from "next/link";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { RelatedResources } from "@/components/seo/RelatedResources";
 import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
-import { GuideTrustBlock } from "@/components/seo/GuideTrustBlock";
+import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import { RESUME_CHECKER_MONEY_BODY } from "@/lib/content/money-pages/resume-checker-body";
 import { resumeCheckerFaqItems } from "@/lib/seo/resume-checker-faq";
@@ -25,7 +25,7 @@ export function ResumeCheckerMoneyGuide() {
         <ContentFreshnessLabel path={RESUME_CHECKER_PATH} className="mt-3" />
         <BlogContent content={RESUME_CHECKER_MONEY_BODY} />
         <div className="not-prose mt-10">
-          <GuideTrustBlock />
+          <GuideEeatSection path={RESUME_CHECKER_PATH} />
         </div>
         <RelatedResources path={RESUME_CHECKER_PATH} excludeHref={RESUME_CHECKER_PATH} />
         <section className="mt-14 border-t border-slate-200 pt-12" aria-labelledby="checker-faq-heading">

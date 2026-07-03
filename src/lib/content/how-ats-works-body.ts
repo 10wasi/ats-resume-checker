@@ -1,23 +1,73 @@
 export const HOW_ATS_WORKS_PATH = "/how-ats-works" as const;
 
 export const howAtsWorksBody = `
-Applicant tracking systems (ATS) are the software layer between your application and a human recruiter. Understanding how they work—globally, not just in one country—helps you **improve resume score** signals and avoid silent rejections.
+Applicant tracking systems (ATS) are the **HR technology** layer between your application and a human recruiter. Understanding how **resume screening** works—globally, not just in one country—helps you **improve resume score** signals and avoid silent rejections after apply.
+
+This guide answers **what** ATS does, **why** resumes fail parsing, **how** to fix it, and **what to do next**. For the full master reference, see the [Complete ATS Resume Optimization Guide](/complete-guide-ats-resume-optimization).
+
+[Run the free ATS resume checker →](/resume-checker)
+
+## Who this page is for
+
+Job seekers applying through employer portals, LinkedIn Easy Apply, and job boards where **hiring software** parses uploads before humans read them. Especially useful if you get impressions in search but no interview callbacks.
+
+## Who should not rely on this alone
+
+If you fail hard filters (visa, clearance, required degree), ATS optimization cannot override them. Pair this with role-specific advice from [profession hubs](/resource-hub) for executive or career-change pivots.
+
+---
 
 ## What is an ATS?
 
-An **ATS** (applicant tracking system) stores job applications, parses resume files into searchable fields, and helps recruiters filter and rank candidates. Common platforms include Workday, Greenhouse, Lever, Taleo, SAP SuccessFactors, and regional equivalents used by employers worldwide.
+An **ATS** (applicant tracking system) stores job applications, runs a **resume parser**, indexes searchable text, and helps recruiters filter candidates. Common platforms include Workday, Greenhouse, Lever, Taleo, SAP SuccessFactors, iCIMS, and regional equivalents used by employers worldwide.
 
-ATS is not a single "American hiring system." Multinational companies, remote-first teams, and local champions all use similar parsing and keyword search patterns.
+ATS is not a single national system. Multinational companies, remote-first teams, and local employers all use similar **candidate screening** patterns: parse → index → search → skim.
 
-## What ATS checks on your resume
+### Related entities (plain language)
+
+| Term | Meaning |
+|------|---------|
+| Resume parser | Software that extracts text into fields (employer, title, dates) |
+| Resume screening | Automated and human review before interviews |
+| Keyword optimization | Placing posting terms where parsers and recruiters search |
+| Resume score | Estimate of parse health and keyword coverage |
+| Job description matching | Overlap between one posting and your resume text |
+
+---
+
+## Why resumes fail ATS (benefits of fixing vs drawbacks of ignoring)
+
+| Ignoring ATS | Fixing parse + keywords |
+|--------------|-------------------------|
+| Strong experience stays invisible to search | Recruiters find you for tool/title queries |
+| High apply volume, low interview rate | Better conversion per application |
+| Frustration and false "I'm not qualified" narrative | Data-driven fixes you can verify |
+
+**Drawback of over-optimizing:** Keyword stuffing without proof hurts recruiter trust. Optimize with integrity.
+
+Common failure paths: [Resume rejected by ATS](/resume-rejected-by-ats) · [Why resume gets rejected](/why-resume-gets-rejected) · [Resume not passing ATS](/resume-not-passing-ats)
+
+---
+
+## How ATS checks your resume (5 layers)
+
+\`\`\`
+Upload → Parse → Index → Match/Filter → Recruiter skim → Interview
+\`\`\`
 
 1. **Parse** — Can text be extracted from PDF or Word in logical order?
 2. **Index** — Are skills, titles, employers, and dates stored as searchable fields?
 3. **Match** — Does resume language overlap with the job posting's requirements?
 4. **Filter** — Do minimum criteria (years, certifications, location) pass automated rules?
-5. **Human skim** — Recruiters review survivors in seconds—often searching the same keywords.
+5. **Human skim** — Recruiters review survivors in ~6 seconds—often searching the same keywords.
 
 ResumeIQ focuses on steps 1–3 because that is where most fixable failures happen before anyone reads your story.
+
+### Mini case study
+
+A data analyst applied with a two-column Canva PDF. The **resume parser** read skills from the sidebar as empty. Recruiter search for "SQL + Tableau" missed them. After rebuilding in Google Docs with the same bullets, the profile matched and they reached a phone screen—same qualifications, different **resume formatting**.
+
+---
 
 ## How resume scoring works (simplified)
 
@@ -30,30 +80,93 @@ ResumeIQ focuses on steps 1–3 because that is where most fixable failures happ
 
 Your **ATS compatibility score** reflects these signals on your master resume. A separate **resume match score** measures overlap with one job description.
 
+| Score type | Measures | When to use |
+|------------|----------|-------------|
+| ATS score | File health + baseline keywords | Master resume QA |
+| Match score | Overlap with one JD | Before each apply |
+| Interview readiness | Composite priority list | Fix ordering |
+
 Read the full [Methodology](/methodology) for weights, disclaimers, and what we do not claim.
+
+---
 
 ## How keyword matching works
 
 ATS and recruiters search for concrete terms: job titles, tools, certifications, methodologies. A **resume keyword analyzer** workflow:
 
-1. Extract terms from the posting ([Resume Keyword Tool](/resume-keyword-tool))
+1. Extract terms from the posting ([ATS keywords finder](/ats-keywords-finder))
 2. Compare to your resume ([Resume Match Analyzer](/resume-match-analyzer))
 3. Add missing keywords only where you have honest proof
 4. Re-run the [ATS Resume Checker](/resume-checker) on your export
 
-Avoid stuffing—unrelated keyword lists can hurt recruiter trust.
+### Common keyword mistakes
 
-## How to improve your scores
+- Listing tools you cannot discuss in an interview
+- Skills section only—no proof in experience bullets
+- White-font or footer stuffing (hurts trust)
+- Ignoring exact spelling from the posting
+
+Avoid stuffing—unrelated keyword lists can hurt recruiter trust. Guide: [ATS resume keywords](/ats-resume-keywords) · [Resume keywords database](/resume-keywords)
+
+---
+
+## Before vs after: bullet that passes screening
+
+**Before:** "Responsible for managing stakeholder relationships and project deliverables."
+
+**After:** "Managed 12 cross-functional stakeholders across 3 Agile sprints; delivered CRM migration on time using Jira and Salesforce."
+
+The second version gives **resume parsers** and recruiters searchable entities with scope.
+
+---
+
+## How to improve your scores (actionable steps)
 
 1. Fix parse issues first (single column, plain text, standard headings)
 2. Upgrade bullets with metrics and posting-aligned language
 3. Tailor headline and summary per application
 4. Run checklist QA before submit ([ATS Resume Checklist](/ats-resume-checklist-2026))
 5. Compare to [Resume Examples Library](/resume-examples) for your role
+6. Re-scan the **exact PDF** you will upload—not a draft in the editor
 
-## Try it on your file
+Improvement guide: [How to improve resume score](/how-to-improve-resume-score) · [ATS score explained](/ats-score-explained)
 
-[Get your ATS resume score instantly →](/resume-checker)
+---
+
+## ATS myths vs facts
+
+| Myth | Fact |
+|------|------|
+| "ATS automatically rejects 75%" | Many failures are fixable parse and keyword gaps |
+| "PDF always fails" | Selectable-text PDFs work; image scans fail |
+| "One resume for all jobs" | Master resume + per-posting tailoring wins |
+| "Cover letter replaces resume keywords" | Most pipelines index the resume file |
+
+---
+
+## Checklist: verify ATS readiness
+
+- [ ] Extracted text order is correct in [checker](/resume-checker)
+- [ ] Single column, standard headings
+- [ ] Contact in body, not header graphic
+- [ ] Five bullets with metrics and tools
+- [ ] Match tool run against target posting
+- [ ] Same file re-scanned after edits
+
+---
+
+## What the tool cannot detect
+
+Automated **resume analysis** cannot predict recruiter preference, internal referrals, culture fit, or interview performance. It cannot override visa, clearance, or degree hard filters. See [privacy](/privacy) for file handling—we do not sell resume data.
+
+---
+
+## Next steps
+
+1. **[Upload your resume](/resume-checker)** — see parser output and ATS score
+2. **Fix format flags** before keywords
+3. **Paste job description** into [match tool](/resume-job-description-match)
+4. **Read master guide** — [Complete ATS optimization](/complete-guide-ats-resume-optimization)
 
 Questions? See the [FAQ Center](/faq-center) or [ATS Guide Hub](/ats-guide).
 `;

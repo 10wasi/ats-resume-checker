@@ -6,10 +6,15 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
+import { TopicPillarBanner } from "@/components/seo/TopicPillarBanner";
+import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
+import { KeyTakeawaysBox } from "@/components/seo/KeyTakeawaysBox";
+import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import {
   ultimateAtsResumeGuideBody,
   ULTIMATE_ATS_GUIDE_PATH,
 } from "@/lib/content/ultimate-ats-resume-guide-body";
+import { COMPLETE_ATS_GUIDE_PATH } from "@/lib/content/complete-ats-guide-body";
 import { KNOWLEDGE_CENTER_PATH } from "@/lib/content/knowledge-center-pages";
 import { ultimateAtsGuideFaqItems } from "@/lib/seo/ultimate-ats-guide-faq";
 import { buildCtrMetadata, CTR_ULTIMATE_GUIDE } from "@/lib/seo/ctr-metadata";
@@ -24,6 +29,14 @@ const KEYWORDS = [
   "ATS compatible resume",
   "ATS resume format",
   "online resume checker",
+];
+
+const ultimateGuideTakeaways = [
+  "An ATS resume is a normal resume structured so hiring software can parse and search it—not a special file type.",
+  "Parsing fails silently: always verify extracted text before keyword edits.",
+  "Match score is per posting; your master resume needs a baseline ATS score first.",
+  "Recruiters search the same keywords as software—place proof in experience bullets.",
+  "For workflows and decision trees, use the master Complete ATS Optimization Guide.",
 ];
 
 export const metadata = buildCtrMetadata(CTR_ULTIMATE_GUIDE, {
@@ -84,7 +97,7 @@ export default function UltimateAtsResumeGuidePage() {
               {CTR_ULTIMATE_GUIDE.h1}
             </h1>
             <p className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
-              Everything practical about{" "}
+              A narrative walkthrough of{" "}
               <strong className="font-semibold text-slate-800">
                 resume optimization
               </strong>
@@ -96,7 +109,14 @@ export default function UltimateAtsResumeGuidePage() {
               <strong className="font-semibold text-slate-800">
                 ATS friendly resume
               </strong>
-              —for job seekers worldwide tired of silence after submit. Run the{" "}
+              —with real-world scenes and examples. For workflows, decision trees, and the tools index, start with the{" "}
+              <Link
+                href={COMPLETE_ATS_GUIDE_PATH}
+                className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/40 underline-offset-4 hover:text-[#16a34a]"
+              >
+                master ATS optimization guide
+              </Link>
+              . Run the{" "}
               <Link
                 href={RESUME_CHECKER_PATH}
                 className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/40 underline-offset-4 hover:text-[#16a34a]"
@@ -107,10 +127,26 @@ export default function UltimateAtsResumeGuidePage() {
             </p>
           </header>
 
+          <TopicPillarBanner
+            pillarHref={COMPLETE_ATS_GUIDE_PATH}
+            pillarTitle="Complete ATS resume optimization guide (master reference)"
+            context="This Knowledge Center article teaches through stories and examples. The master guide consolidates scoring weights, checklists, case studies, and every free tool in one hub—use both together."
+          />
+
+          <KeyTakeawaysBox items={ultimateGuideTakeaways} />
+
           <AdPlaceholder label="Advertisement · resource" className="mt-10" />
 
           <div className="mt-10">
             <BlogContent content={ultimateAtsResumeGuideBody} />
+          </div>
+
+          <div className="not-prose mt-10">
+            <GuideEeatSection
+              path={ULTIMATE_ATS_GUIDE_PATH}
+              audience="Readers who want a long-form narrative on ATS behavior, with composite real-world scenes—not a quick checklist."
+              notFor="Applicants who need only a tools index or decision tree should start with the Complete ATS Optimization Guide instead of this article."
+            />
           </div>
 
           <section
@@ -162,6 +198,7 @@ export default function UltimateAtsResumeGuidePage() {
           <BlogResumeCta />
         </div>
       </article>
+      <StickyCheckerCta />
     </>
   );
 }

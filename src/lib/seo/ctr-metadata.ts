@@ -318,11 +318,11 @@ export const CTR_ATS_TEMPLATES: PageCtrMeta = {
 };
 
 export const CTR_ULTIMATE_GUIDE: PageCtrMeta = {
-  title: "Ultimate ATS Resume Guide — Format, Keywords & Score",
+  title: "Ultimate ATS Resume Guide — 7 Real Examples & Fixes",
   description:
-    "The complete ATS resume guide: format rules, keyword placement, scoring, and mistakes. Step-by-step workflow with free checker and match tools.",
-  ogTitle: "Ultimate ATS Resume Guide — Full Optimization",
-  h1: "Ultimate ATS Resume Guide: Format, Keywords & Score",
+    "Narrative ATS resume guide: parsing stories, keyword wins, format traps & score fixes. Step-by-step with free checker—pair with our master optimization hub.",
+  ogTitle: "Ultimate ATS Resume Guide — Stories That Fix Silence",
+  h1: "Ultimate ATS Resume Guide: Real Examples & Fixes",
   primaryKeyword: "ultimate ATS resume guide",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
@@ -578,11 +578,11 @@ export const CTR_CV_CHECKER: PageCtrMeta = {
 };
 
 export const CTR_COMPLETE_ATS_GUIDE: PageCtrMeta = {
-  title: "Complete ATS Resume Optimization Guide (2026)",
+  title: "ATS Resume Optimization Guide — 12 Steps + Free Checker",
   description:
-    "The complete guide to ATS resume optimization: checker, resume score, review, rejection fixes & keywords. Most comprehensive resource on ResumeIQ.",
-  ogTitle: "Complete ATS Resume Optimization Guide",
-  h1: "The Complete Guide to ATS Resume Optimization",
+    "Master ATS resume optimization: parsing, resume score, keywords, format & rejection fixes. 12-step workflow, case studies & free checker—global job seekers.",
+  ogTitle: "ATS Resume Optimization — #1 Master Guide (Free Tools)",
+  h1: "The Ultimate ATS Resume Optimization Guide",
   primaryKeyword: "ATS resume optimization",
   richSnippets: ["Article", "FAQPage", "HowTo", "ItemList", "BreadcrumbList", "Organization"],
 };
