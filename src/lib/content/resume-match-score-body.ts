@@ -65,6 +65,31 @@ Use the [Resume Bullet Generator](/resume-bullet-generator) for structure, then 
 
 Target a higher match score on a second pass. Complete the [ATS Resume Checklist](/ats-resume-checklist-2026) before export. Upload the **exact PDF you tested**.
 
+## Anatomy of a match score (worked example)
+
+Numbers feel abstract until you see one built. Suppose a posting for a **Marketing Manager** repeats these requirements:
+
+| Requirement in posting | On your resume? | Weight |
+|------------------------|-----------------|--------|
+| "Marketing Manager" (title) | Yes, in summary | High |
+| HubSpot | Yes, in a bullet | High |
+| SEO / SEM | SEO only | Medium |
+| Campaign ROI / CAC | Missing | High |
+| Team leadership | Yes ("led 4 marketers") | Medium |
+| B2B SaaS domain | Missing | Medium |
+
+A tool reading this would land somewhere around **62%**—viable but not strong. The two high-weight gaps (campaign ROI, and no B2B SaaS signal) are the fastest lift.
+
+**The fix is one honest bullet, not a rewrite:**
+
+\`\`\`
+ADDED BULLET
+• Owned demand-gen for a B2B SaaS product; cut CAC 22% and
+  drove $1.4M pipeline through HubSpot + paid SEM campaigns.
+\`\`\`
+
+That single line adds "campaign ROI/CAC," "B2B SaaS," and reinforces "HubSpot" and "SEM"—pushing match into the high-70s without touching anything else. This is why match score is a targeting tool, not a grade: it tells you the *one or two* edits with the highest return.
+
 ## Common mistakes that lower match score
 
 - **Keyword footer** — 40 skills with no experience proof; parsers and recruiters discount it

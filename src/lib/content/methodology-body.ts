@@ -47,6 +47,36 @@ After analysis, we show an **ATS screening estimate**—a weighted blend of ATS 
 
 **Important:** This estimates automated screening signals only. It does not predict interviews, offers, or human bias.
 
+## How we test parsing (our process)
+
+We do not guess how a resume will parse—we build our checks against observable parser behavior. Our testing process:
+
+1. **Text-extraction baseline.** Every uploaded file is run through text extraction first. If the raw text stream is out of order or missing sections, we flag format before scoring keywords—because that is exactly what a real ATS import would surface.
+2. **Layout stress tests.** We validate detectors against known failure patterns: two-column layouts, header/footer contact blocks, text boxes, image-based logos, and custom bullet glyphs. These are the layouts that historically scramble on import.
+3. **Keyword placement checks.** We compare terms found in a Skills list against terms proven in Experience bullets, because a skill that only appears in a dump carries less weight with recruiters and some filters.
+4. **Regression on real resumes.** When we adjust a detector, we re-run it against a set of previously analyzed resumes to confirm scores move for the right reasons and do not swing arbitrarily.
+
+## What we can and cannot detect
+
+Being honest about limits is part of the methodology:
+
+| We can detect | We cannot detect |
+|---------------|------------------|
+| Whether text extracts in a logical order | Which specific ATS an employer uses |
+| Missing/late contact information | A recruiter's personal preferences |
+| Keyword coverage vs a pasted job description | Internal referrals or unposted shortlists |
+| Common format flags (columns, boxes, images) | Whether you meet undisclosed hard requirements |
+| Readability and bullet-proof density | Culture fit or interview performance |
+
+If a claim requires knowing an employer's private configuration, we do not make it. We report signals you can act on.
+
+## Editorial and review process
+
+- **Written for job seekers, not for keyword density.** Every guide answers a real question with examples and a next step.
+- **Reviewed for accuracy.** We correct guidance when parser behavior or hiring norms change, and we show a last-updated signal on guides.
+- **No fabricated statistics.** We avoid citing rejection percentages that cannot be verified. Where we give benchmarks, we label them as practical ranges, not official thresholds.
+- **Corrections welcome.** Found something inaccurate? Tell us via [contact](/contact); standards live in our [editorial policy](/editorial-policy).
+
 ## How resume scoring differs from competitors
 
 Many tools hide keyword lists or match scores behind subscriptions. ResumeIQ publishes this methodology and keeps core scoring free so you can verify changes on your own file.
@@ -66,6 +96,16 @@ Many tools hide keyword lists or match scores behind subscriptions. ResumeIQ pub
 - **Photos:** Optional in some markets; keep a text-only version for online portals.
 - **Length:** 1–2 pages is common for experienced professionals; early-career may use one page.
 - **Remote roles:** Same parser rules apply—keywords and clarity still drive visibility.
+
+## Privacy and data security
+
+Trust in a scoring tool depends on how it treats your file:
+
+- Your resume is processed to generate your score and recommendations—not sold to recruiters or listed in a candidate marketplace.
+- Keep your authoritative copy in your own storage; export before major edits.
+- Do not upload confidential documents you are not permitted to share.
+
+Full details are in our [privacy policy](/privacy). For how the analysis pipeline handles your file end to end, see [how resume analysis works](/how-resume-analysis-works).
 
 ## Editorial standards
 

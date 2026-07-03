@@ -73,6 +73,64 @@ You edited at midnight and shipped a draft with a wrong company name.
 
 **Fix:** Checklist + checker + human read-aloud. Ten minutes saves ten silent rejections.
 
+## Before vs after: the same bullet, fixed
+
+The most common candidate mistake is describing duties instead of proving impact. Here is what a recruiter and a keyword filter each gain from the rewrite:
+
+\`\`\`
+BEFORE
+• Responsible for managing social media accounts and content.
+
+AFTER
+• Grew Instagram following 8K→46K in 11 months; drove 3,200
+  site sessions/month via a content calendar and UTM tracking.
+\`\`\`
+
+The "after" version adds searchable tools (UTM), a metric (46K, 3,200), and a timeframe—signals both software and humans reward. Notice it is not longer keyword-stuffing; it is the same duty with proof attached.
+
+Second example, engineering:
+
+\`\`\`
+BEFORE
+• Worked on backend systems and fixed bugs.
+
+AFTER
+• Cut checkout API errors 62% by adding retry logic and
+  Redis caching to a Node.js service handling 40K req/day.
+\`\`\`
+
+## Candidate mistakes vs recruiter reality
+
+It helps to see how each mistake lands on the other side of the screen:
+
+| What the candidate does | What the recruiter/ATS experiences |
+|-------------------------|-------------------------------------|
+| Uploads a two-column PDF | Search misses skills trapped in the sidebar |
+| Lists 30 skills, no bullets | Reads it as padding; trusts the file less |
+| Uses "Growth Ninja" as a title | Cannot match the search for "Marketing Manager" |
+| Same resume for 40 jobs | Ranks below tailored candidates on every one |
+| Buries the target title on page 2 | Skims 6 seconds, sees unrelated work, moves on |
+| No metrics anywhere | Cannot tell a top performer from an average one |
+
+## Insights from the hiring side
+
+A few things recruiters rarely say out loud but that change how you should write:
+
+- **Search comes before reading.** Many recruiters never open resumes that do not surface in a keyword search. Your best bullet is worthless if the term never appears as plain text.
+- **Six seconds is real.** The first scan checks title match, current/last employer, and one or two metrics. Front-load them.
+- **Consistency signals care.** Mixed date formats, two spellings of the same tool, or a stray old company name read as carelessness.
+- **Recruiters also make mistakes.** Overly literal keyword searches and rigid filters reject good candidates. You cannot control that—but mirroring exact posting language (when truthful) reduces the odds of being filtered out by a synonym mismatch.
+
+## ATS myths that cause self-inflicted rejection
+
+| Myth | Reality |
+|------|---------|
+| "ATS auto-rejects most resumes with no human involved" | Most filtering is keyword search and ranking; humans review the shortlist. Fixable gaps, not a robot veto, cause most silence. |
+| "White-text hidden keywords beat the system" | Recruiters see them when they copy your text; it reads as dishonest and can get you dropped. |
+| "A higher word count looks more experienced" | Density of proof beats length. Two tight pages of metrics outperform three of duties. |
+| "PDF always fails ATS" | Text-based PDFs from Word/Docs parse fine. Only image/scanned PDFs fail. |
+| "One perfect resume works everywhere" | Baseline file, then tailor keywords per posting. Relevance is the whole game. |
+
 ## Recovery workflow
 
 1. Run [ATS Resume Checker](/resume-checker) — note format flags and score.
@@ -80,6 +138,15 @@ You edited at midnight and shipped a draft with a wrong company name.
 3. Tailor keywords per [ATS Resume Keywords Guide](/ats-resume-keywords).
 4. Match target JD in [Resume Match Analyzer](/resume-job-description-match).
 5. Re-check and apply.
+
+### Fast triage checklist
+
+- [ ] Copy-paste test passes (text extracts in order)
+- [ ] Contact info appears in the body
+- [ ] Target job title is in the top third of page one
+- [ ] Every recent role has at least two metric-backed bullets
+- [ ] Skills mirror posting spelling exactly
+- [ ] You are uploading the same file you tested
 
 More examples of good structure: [ATS Resume Examples](/ats-resume-examples). Full hub: [ATS Knowledge Center](/knowledge-center).
 `;

@@ -60,6 +60,42 @@ Core placement rules: [ATS Resume Keywords Guide](/ats-resume-keywords).
 
 **Common keywords:** curriculum development, grant writing, stakeholder engagement, program evaluation, fundraising, community outreach, LMS, IEP, accreditation, volunteer management.
 
+## Worked example: turning a job post into bullets
+
+Here is the full workflow on a real-style posting. Suppose a data analyst job lists: *"SQL, Tableau, stakeholder reporting, A/B testing, and experience with large datasets."*
+
+**Step 1 — pull the must-have terms:** SQL, Tableau, A/B testing, stakeholder reporting.
+
+**Step 2 — check your current bullet:**
+
+\`\`\`
+BEFORE
+• Analyzed data and created reports for the team.
+\`\`\`
+
+It contains none of the searchable terms. A recruiter searching "SQL Tableau" never finds it.
+
+**Step 3 — rewrite with proof, not stuffing:**
+
+\`\`\`
+AFTER
+• Built SQL + Tableau dashboards for 5 stakeholder teams;
+  ran A/B tests on 2M+ row datasets that lifted conversion 14%.
+\`\`\`
+
+Now every must-have term is present *and* backed by scope and a metric. That is the difference between keyword stuffing and keyword proof.
+
+## Skills-line vs bullet placement
+
+A frequent question: should keywords go in the Skills section or in bullets? The answer is **both, but weighted toward bullets.**
+
+| Placement | Value to ATS search | Value to recruiter | Best for |
+|-----------|---------------------|--------------------|----------|
+| Experience bullet | High (with context) | High (proof) | Your top 8–12 must-have terms |
+| Skills section | Medium (found, no proof) | Low–medium | Breadth; tools used but not bullet-worthy |
+| Summary line | Medium–high | High (front-loaded) | 3–4 signature terms + target title |
+| Footer/hidden text | Low or negative | Negative | Never |
+
 ## Cross-industry power keywords
 
 These appear everywhere—use only when accurate:
@@ -71,6 +107,17 @@ These appear everywhere—use only when accurate:
 - Data-driven decision making
 
 Replace generic lines with specifics: budget size, team size, tools, timelines.
+
+### The trap with power keywords
+
+"Results-driven team player with strong communication skills" is invisible to a keyword search and meaningless to a recruiter—every candidate claims it. Convert each generic phrase into evidence:
+
+| Generic claim | Evidence version |
+|---------------|------------------|
+| "Strong communicator" | "Presented quarterly results to a 40-person leadership org" |
+| "Detail-oriented" | "Reduced reporting errors 90% with a QA checklist" |
+| "Team player" | "Led a 6-person cross-functional launch across 3 time zones" |
+| "Results-driven" | "Hit 118% of pipeline target two years running" |
 
 ## Tailoring workflow
 

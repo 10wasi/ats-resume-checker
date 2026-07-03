@@ -101,9 +101,10 @@ export function BlogCoverPlaceholder({
 }
 
 /**
- * Lightweight markdown-ish renderer for our hand-authored blog posts.
+ * Lightweight markdown-ish renderer for our hand-authored guides.
  * Supports: # H1, ## H2, ### H3, paragraphs, [-] bullets, [1.] ordered,
- * inline **bold** and [text](url) links, and "---" rules.
+ * - [ ] / - [x] task checklists, GFM pipe tables, fenced ``` code/diagram
+ * blocks, inline **bold** and [text](url) links, and "---" rules.
  */
 function slugifyHeading(text: string): string {
   return text
@@ -111,6 +112,78 @@ function slugifyHeading(text: string): string {
     .replace(/[^a-z0-9\s-]/g, "")
     .trim()
     .replace(/\s+/g, "-");
+}
+
+function isTableSeparator(line: string): boolean {
+  return /^\s*\|?[\s:|-]*-[\s:|-]*\|?\s*$/.test(line) && line.includes("-");
+}
+
+function splitTableRow(line: string): string[] {
+  return line
+    .replace(/^\s*\|/, "")
+    .replace(/\|\s*$/, "")
+    .split("|")
+    .map((cell) => cell.trim());
+}
+
+function TaskChecklist({ items }: { items: { text: string; done: boolean }[] }) {
+  return (
+    <ul className="not-prose mt-4 space-y-2 rounded-2xl border border-slate-200/90 bg-slate-50/60 p-5">
+      {items.map((item, i) => (
+        <li key={i} className="flex items-start gap-3 text-[0.95rem] leading-relaxed text-slate-700">
+          <span
+            className={`mt-0.5 inline-flex h-4 w-4 shrink-0 items-center justify-center rounded border text-[10px] font-bold ${
+              item.done
+                ? "border-emerald-500 bg-emerald-500 text-white"
+                : "border-slate-300 bg-white text-transparent"
+            }`}
+            aria-hidden
+          >
+            {item.done ? "✓" : ""}
+          </span>
+          <span>
+            <InlineContent text={item.text} />
+          </span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function MarkdownTable({ rows }: { rows: string[][] }) {
+  const [header, ...body] = rows;
+  return (
+    <div className="not-prose mt-5 overflow-x-auto rounded-2xl border border-slate-200 shadow-sm">
+      <table className="w-full border-collapse text-left text-sm">
+        <thead>
+          <tr className="bg-slate-50">
+            {header.map((cell, i) => (
+              <th
+                key={i}
+                className="border-b border-slate-200 px-4 py-3 font-semibold text-slate-900"
+              >
+                <InlineContent text={cell} />
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {body.map((row, r) => (
+            <tr key={r} className="odd:bg-white even:bg-slate-50/50">
+              {row.map((cell, c) => (
+                <td
+                  key={c}
+                  className="border-b border-slate-100 px-4 py-3 align-top leading-relaxed text-slate-700"
+                >
+                  <InlineContent text={cell} />
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
 }
 
 export function BlogContent({ content }: { content: string }) {
@@ -121,6 +194,34 @@ export function BlogContent({ content }: { content: string }) {
     if (block === "---") {
       out.push(<hr key={idx} className="my-10 border-slate-200" />);
       return;
+    }
+    if (block.startsWith("```")) {
+      const inner = block
+        .replace(/^```[a-zA-Z0-9-]*\n?/, "")
+        .replace(/\n?```$/, "");
+      out.push(
+        <pre
+          key={idx}
+          className="not-prose mt-5 overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900 p-5 text-[0.82rem] leading-relaxed text-slate-100 shadow-sm"
+        >
+          <code className="whitespace-pre font-mono">{inner}</code>
+        </pre>
+      );
+      return;
+    }
+    {
+      const tableLines = block.split("\n");
+      if (
+        tableLines.length >= 2 &&
+        tableLines[0].includes("|") &&
+        isTableSeparator(tableLines[1])
+      ) {
+        const rows = [tableLines[0], ...tableLines.slice(2)]
+          .filter((l) => l.includes("|"))
+          .map(splitTableRow);
+        out.push(<MarkdownTable key={idx} rows={rows} />);
+        return;
+      }
     }
     if (block.startsWith("### ")) {
       out.push(
@@ -158,6 +259,18 @@ export function BlogContent({ content }: { content: string }) {
       return;
     }
     const lines = block.split("\n");
+    if (lines.every((l) => /^- \[[ xX]\]\s/.test(l))) {
+      out.push(
+        <TaskChecklist
+          key={idx}
+          items={lines.map((line) => ({
+            done: /^- \[[xX]\]/.test(line),
+            text: line.replace(/^- \[[ xX]\]\s/, ""),
+          }))}
+        />
+      );
+      return;
+    }
     if (lines.every((l) => l.startsWith("- "))) {
       out.push(
         <ul

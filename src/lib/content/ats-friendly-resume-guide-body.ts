@@ -82,5 +82,40 @@ Compare your structure to [ATS Resume Examples](/ats-resume-examples)—good vs 
 
 Maintain a single master resume in Word or Google Docs. Branch for tailoring; merge wins back into master so you do not lose proof over time.
 
+## Mini case study: from silent to shortlisted
+
+A candidate—call her Maya—applied to 30 project-coordinator roles over six weeks with zero replies. Nothing was wrong with her experience; the file was the problem.
+
+**What the audit found:**
+
+- Two-column Canva template (skills column parsed before her name)
+- Contact info only in the page header (phone did not import)
+- Bullets described duties, not outcomes, and named no tools
+
+**What she changed (in one evening):**
+
+\`\`\`
+BEFORE
+• Helped coordinate projects and supported the team.
+
+AFTER
+• Coordinated 6 concurrent projects in Asana; kept 94% of
+  milestones on time by running weekly stakeholder standups.
+\`\`\`
+
+Plus: single-column layout, contact in the body, and the target title "Project Coordinator" in her summary.
+
+**Result:** Her ATS score went from 51 to 78 with the same career history, and she had two interviews within two weeks of re-applying. The lesson is not "add keywords"—it is *make real work visible*.
+
+## The 10-minute weekly maintenance ritual
+
+An ATS-friendly resume decays as postings evolve. Once a week during an active search:
+
+- [ ] Re-run the [checker](/resume-checker) on your current master file
+- [ ] Add any new metric or win from the past week
+- [ ] Update tools/skills to match the roles you are now targeting
+- [ ] Confirm the copy-paste test still passes after edits
+- [ ] Save a dated version so you never lose a strong bullet
+
 Explore all ten guides in the [ATS Knowledge Center](/knowledge-center).
 `;
