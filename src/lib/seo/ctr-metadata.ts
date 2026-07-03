@@ -92,11 +92,11 @@ export const CTR_METHODOLOGY: PageCtrMeta = {
 };
 
 export const CTR_HOW_ATS_WORKS: PageCtrMeta = {
-  title: "How ATS Works — Global Hiring Software Explained",
+  title: "How ATS Works — 5-Layer Screening Explained (2026)",
   description:
-    "How ATS works worldwide: parsing, keyword search, filters & recruiter skim. Learn what applicant tracking systems check—then test your resume free.",
-  ogTitle: "How Applicant Tracking Systems Work",
-  h1: "How ATS Works: What Hiring Software Checks",
+    "How applicant tracking systems work: parse → index → keyword search → filter → human skim. Annotated diagram, mini case study, and fix checklist.",
+  ogTitle: "How ATS Works — From Upload to Recruiter Screen",
+  h1: "How ATS Works: The 5-Layer Resume Screening Process",
   primaryKeyword: "how ATS works",
   richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
@@ -258,21 +258,21 @@ export const CTR_RESOURCE_HUB: PageCtrMeta = {
 };
 
 export const CTR_ATS_FORMAT: PageCtrMeta = {
-  title: "ATS Resume Format — Layout Rules That Parse",
+  title: "ATS Resume Format Guide — What Parses vs Breaks (2026)",
   description:
-    "ATS resume format for an ATS friendly resume: single column, headings, fonts, PDF vs Word. Resume optimization starts with layout—test free.",
-  ogTitle: "ATS Resume Format Guide — What Parses in 2026",
-  h1: "ATS Resume Format: Build an ATS Friendly Resume",
+    "ATS resume format rules: what parsers read vs ignore, single-column vs two-column, PDF vs Word, and a decision tree. Test your layout free.",
+  ogTitle: "ATS Resume Format — Parser Sees This, Not Your Design",
+  h1: "ATS Resume Format: What the Parser Actually Reads",
   primaryKeyword: "ATS resume format",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_ATS_MISTAKES: PageCtrMeta = {
-  title: "ATS Resume Mistakes — Fix Before You Apply",
+  title: "10 ATS Resume Mistakes That Cause Silent Rejections",
   description:
-    "ATS resume mistakes that block resume optimization: columns, headers, keyword dumps. Fix fast, then run the free ATS Resume Checker.",
-  ogTitle: "ATS Resume Mistakes to Avoid in 2026",
-  h1: "ATS Resume Mistakes That Hurt Your Match Score",
+    "10 ATS resume mistakes with before/after examples: two columns, keyword dumps, buried titles. Recruiter reality + myths table + fix checklist.",
+  ogTitle: "ATS Resume Mistakes — Recruiter Reality vs Candidate Myths",
+  h1: "ATS Resume Mistakes That Cost You Interviews",
   primaryKeyword: "ATS resume mistakes",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
@@ -288,11 +288,11 @@ export const CTR_ATS_SCORE: PageCtrMeta = {
 };
 
 export const CTR_ATS_FRIENDLY: PageCtrMeta = {
-  title: "ATS Friendly Resume Guide — Build & Test Free",
+  title: "How to Build an ATS Friendly Resume (10 Steps + Case Study)",
   description:
-    "Build an ATS friendly resume step by step: format, ATS keywords, bullets, export QA. Resume optimization with our free ATS Resume Checker.",
-  ogTitle: "How to Build an ATS Friendly Resume in 2026",
-  h1: "How to Build an ATS Friendly Resume",
+    "Step-by-step ATS friendly resume guide: format, keywords, bullet proof, and export QA. Includes a real case study—51 to 78 score, same experience.",
+  ogTitle: "ATS Friendly Resume — 10 Steps + Before/After Case Study",
+  h1: "How to Build an ATS Friendly Resume: 10-Step Guide",
   primaryKeyword: "ATS friendly resume",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "HowTo", "Organization"],
 };
@@ -308,11 +308,11 @@ export const CTR_INDUSTRY_KEYWORDS: PageCtrMeta = {
 };
 
 export const CTR_ATS_TEMPLATES: PageCtrMeta = {
-  title: "ATS Resume Templates — Which Ones Parse (Free)",
+  title: "ATS Resume Templates — 3 Tiers Ranked for Parsers (Free)",
   description:
-    "ATS resume templates that work vs layouts that break parsing. Build an ATS friendly resume, then validate with our free ATS Resume Checker.",
-  ogTitle: "ATS Resume Templates — Good vs Bad Layouts",
-  h1: "ATS Resume Templates for an ATS Friendly Resume",
+    "Which ATS resume templates actually parse vs break on upload. Tier 1–3 ranking, free vs paid reality, and how to adapt a template you already have.",
+  ogTitle: "ATS Resume Templates — Ranked by Parse Safety",
+  h1: "ATS Resume Templates: Ranked by Parse Safety",
   primaryKeyword: "ATS resume templates",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
@@ -328,11 +328,11 @@ export const CTR_ULTIMATE_GUIDE: PageCtrMeta = {
 };
 
 export const CTR_ATS_KEYWORDS_FINDER: PageCtrMeta = {
-  title: "ATS Keywords Finder — Extract From Job Posts Free",
+  title: "ATS Keywords Finder — Extract Job Post Terms Free (2026)",
   description:
-    "Free ATS keywords finder: paste a job description, get skills, tools, and certifications to use in resume optimization. Then check match free.",
-  ogTitle: "ATS Keywords Finder — Free Job Description Tool",
-  h1: "ATS Keywords Finder: Extract Terms From Any Job Post",
+    "Paste any job post to extract ATS keywords: hard skills, tools, certifications, and domain phrases. Before/after bullet example + placement workflow.",
+  ogTitle: "ATS Keywords Finder — Placement Guide + Free Tool",
+  h1: "ATS Keywords Finder: Which Terms, Where to Place Them",
   primaryKeyword: "ATS keywords finder",
   richSnippets: ["WebApplication", "FAQPage", "BreadcrumbList", "Organization"],
 };
@@ -348,31 +348,31 @@ export const CTR_BULLET_GENERATOR: PageCtrMeta = {
 };
 
 export const CTR_RESUME_SKILLS_ANALYZER: PageCtrMeta = {
-  title: "Resume Skills Analyzer — Detect ATS Skills Free",
+  title: "Resume Skills Analyzer — Audit Skills vs ATS Free",
   description:
-    "Free resume skills analyzer: scan your resume for technical skills, tools, and gaps vs a job description. Then run full ATS match & keyword fixes.",
-  ogTitle: "Resume Skills Analyzer — Free ATS Skill Scan",
-  h1: "Resume Skills Analyzer: Find Skills & Gaps Fast",
+    "Resume skills analyzer: scan for tools with and without bullet proof, spot stuffed skills sections, and find gaps vs your target job description.",
+  ogTitle: "Resume Skills Analyzer — Skills Audit + ATS Credibility",
+  h1: "Resume Skills Analyzer: Audit, Fix, and Prove Your Skills",
   primaryKeyword: "resume skills analyzer",
   richSnippets: ["WebApplication", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_RESUME_SUMMARY_GENERATOR: PageCtrMeta = {
-  title: "Resume Summary Generator — ATS Headlines Free",
+  title: "Resume Summary Generator — ATS-Optimized Draft Free",
   description:
-    "Free resume summary generator: draft professional summary lines for your role, years, and highlights. Copy, refine, then score in our ATS checker.",
-  ogTitle: "Resume Summary Generator — Free Professional Summaries",
-  h1: "Resume Summary Generator for ATS Resumes",
+    "Generate ATS-friendly professional summaries: title + tools + scope in 2 sentences. Before/after examples, mistakes table, and free checker link.",
+  ogTitle: "Resume Summary Generator — Before/After Examples Included",
+  h1: "Resume Summary Generator: Draft, Fix, and Score",
   primaryKeyword: "resume summary generator",
   richSnippets: ["WebApplication", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_RESUME_ACHIEVEMENT_GENERATOR: PageCtrMeta = {
-  title: "Resume Achievement Generator — Impact Bullets Free",
+  title: "Resume Achievement Generator — Impact Bullets + 5 Rewrites",
   description:
-    "Free resume achievement generator: turn actions, metrics, and context into ATS-friendly achievement bullets. Copy and validate in the resume checker.",
-  ogTitle: "Resume Achievement Generator — Free Impact Lines",
-  h1: "Resume Achievement Generator for Stronger Bullets",
+    "Turn duties into achievements: XYZ formula, 5 before/after rewrites, estimation guide, and free ATS checker. Stronger bullets without fabricating metrics.",
+  ogTitle: "Resume Achievement Generator — 5 Before/After Rewrites",
+  h1: "Resume Achievement Generator: Turn Duties Into Proof",
   primaryKeyword: "resume achievement generator",
   richSnippets: ["WebApplication", "FAQPage", "BreadcrumbList", "Organization"],
 };

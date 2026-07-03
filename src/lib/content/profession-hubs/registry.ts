@@ -15,6 +15,8 @@ export type ProfessionHubEntry = {
   guidePath: string;
   mistakes: string[];
   faqItems: FaqItem[];
+  /** Role-specific optimization steps — shown instead of generic workflow */
+  optimizationSteps?: string[];
 };
 
 export const PROFESSION_HUBS: ProfessionHubEntry[] = [
@@ -36,6 +38,13 @@ export const PROFESSION_HUBS: ProfessionHubEntry[] = [
     examplePath: "/resume-examples/software-engineer",
     keywordsPath: "/resume-keywords/software-engineer",
     guidePath: "/ats-resume/software-engineer",
+    optimizationSteps: [
+      "Run the free checker on the PDF you submit—confirm your tech stack extracts in order.",
+      "Mirror the exact language from the job post: 'React' vs 'ReactJS,' 'AWS' vs 'Amazon Web Services.'",
+      "Add a bullet per major project: stack + scale + outcome (e.g., 'Reduced API latency 40% using Redis caching on 80K RPM service').",
+      "List certifications and cloud credentials fully (e.g., 'AWS Solutions Architect – Associate').",
+      "Re-export as PDF from Word/Docs—not from an IDE plugin or Canva—and re-scan before applying.",
+    ],
     mistakes: [
       "Two-column Canva templates that scramble code skills on parse",
       "Skills only in icons or charts—not plain-text bullets",
@@ -72,6 +81,13 @@ export const PROFESSION_HUBS: ProfessionHubEntry[] = [
     examplePath: "/resume-examples/data-analyst",
     keywordsPath: "/resume-keywords/data-analyst",
     guidePath: "/ats-resume/data-analyst",
+    optimizationSteps: [
+      "Run checker on your current PDF—confirm SQL, Python, and BI tool names extract as plain text.",
+      "Put your primary tool stack (SQL + one BI platform) in a Summary line and every recent bullet where honest.",
+      "Convert every dashboard or report bullet into scope + tool + outcome ('Built Tableau dashboard for 6 stakeholders; cut report prep 3 hrs → 20 min').",
+      "Check the posting for domain terms (B2B, healthcare, fintech) and echo them in your summary.",
+      "Run match analysis against each priority JD—analytics roles often have very specific stack requirements.",
+    ],
     mistakes: [
       "Listing tools without project context in bullets",
       "Burying SQL/Python below unrelated experience",
@@ -102,6 +118,13 @@ export const PROFESSION_HUBS: ProfessionHubEntry[] = [
     examplePath: "/resume-examples/product-manager",
     keywordsPath: "/resume-keywords/product-manager",
     guidePath: "/ats-resume/product-manager",
+    optimizationSteps: [
+      "Use the exact role title from the posting—'Product Manager' and 'Senior PM' are different keyword tokens.",
+      "Show shipped outcomes, not roadmap activity: 'Launched X, grew Y by Z%'—not 'owned roadmap for.'",
+      "Include OKR/metric framing: feature adoption %, user retention, revenue attribution.",
+      "Mirror discovery/research language if the posting uses it: 'user research,' 'A/B testing,' 'jobs to be done.'",
+      "Run match analysis per posting—PM roles vary widely in tool and domain language (Figma, Jira, Amplitude, SQL).",
+    ],
     mistakes: [
       "Buzzword summaries without shipped outcomes",
       "Confusing PM with project manager titles casually",
@@ -195,6 +218,13 @@ export const PROFESSION_HUBS: ProfessionHubEntry[] = [
     examplePath: "/resume-examples/marketing-manager",
     keywordsPath: "/resume-keywords/marketing-manager",
     guidePath: "/ats-resume/marketing-manager",
+    optimizationSteps: [
+      "Check that channel names (SEO, SEM, paid social) appear in bullets—not only the Skills list.",
+      "Tie every campaign bullet to a metric: impressions, conversion rate, CAC, pipeline influenced, or MQL volume.",
+      "Name CRM and automation tools (HubSpot, Marketo, Klaviyo) matching the posting's exact spelling.",
+      "Run match analysis—marketing JDs often use very specific funnel language; mirror it where accurate.",
+      "Keep portfolio and creative PDF separate from your ATS upload—portals need selectable text.",
+    ],
     mistakes: [
       "Campaign results trapped in image headers",
       "Channel buzzwords without ROI or conversion metrics",

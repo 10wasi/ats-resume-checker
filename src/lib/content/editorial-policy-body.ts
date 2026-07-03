@@ -3,6 +3,8 @@ export const EDITORIAL_POLICY_PATH = "/editorial-policy" as const;
 export const editorialPolicyBody = `
 ResumeIQ editorial content is written for **job seekers who apply through online systems**—not for search engines alone. Every guide, FAQ, and tool page should help someone improve a real resume before they click Apply.
 
+This page explains who writes our content, how it is reviewed, what we will and will not claim, and how to report errors.
+
 ## Our editorial principles
 
 1. **Accuracy over hype** — We explain what ATS and resume checkers can and cannot do. Scores estimate screening signals; they do not guarantee interviews.
@@ -25,6 +27,41 @@ If you spot an error in a guide or tool description, contact us via the [contact
 ## Advertising and independence
 
 ResumeIQ may display third-party ads (e.g. Google AdSense). Ads do not influence scoring, keyword suggestions, or editorial recommendations. Sponsored content, if ever introduced, will be clearly labeled.
+
+## What we will and will not claim
+
+**We will:**
+- Explain how ATS parsers, keyword search, and recruiter workflows operate—and what is publicly observable about how they behave
+- Provide transparent scoring weights and limitation disclaimers
+- Give examples that are composite or anonymized but structurally accurate
+- Update guides when product behavior or widely-accepted best practices change
+
+**We will not:**
+- Guarantee an interview or job offer from any score or resume change
+- Claim affiliation with ATS vendors (Workday, Greenhouse, Lever, etc.)
+- Fabricate rejection rate statistics or cite unverifiable "75% auto-rejected" claims
+- Recommend keyword stuffing, hidden text, or any approach that deceives recruiters
+
+## Review cadence
+
+| Content type | Reviewed when |
+|-------------|---------------|
+| Methodology and scoring docs | When algorithm or output changes |
+| Career guides | Annually or when hiring norms shift |
+| Tool landing pages | When the tool is updated |
+| Blog posts | Flagged articles reviewed on a rolling basis |
+
+Each guide shows a "Last updated" signal connected to our [sitemap dates system](/sitemap.xml).
+
+## EEAT and expertise signals
+
+We acknowledge that ResumeIQ is a tool platform, not a credentialed HR research body. Our expertise comes from:
+
+- Observable parser behavior tested against real file exports
+- Published ATS vendor documentation and recruiter workflow research
+- Iterative testing of scoring logic with real resumes (anonymized)
+
+We do not manufacture named experts or false bylines. Scoring methodology is published and linked from every major guide.
 
 ## Related trust documents
 

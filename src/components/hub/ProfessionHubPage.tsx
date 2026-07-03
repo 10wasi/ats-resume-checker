@@ -15,7 +15,7 @@ import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 type Props = { entry: ProfessionHubEntry };
 
-const OPTIMIZATION_STEPS = [
+const DEFAULT_OPTIMIZATION_STEPS = [
   "Run the free resume checker on the PDF you actually submit.",
   "Compare your file to the role example—headings, bullet density, and metrics.",
   "Paste the job post into the match tool; add 5–8 missing terms into recent bullets.",
@@ -86,10 +86,10 @@ export function ProfessionHubPage({ entry }: Props) {
 
         <section className="not-prose mt-12">
           <h2 className="font-display text-xl font-bold text-slate-900">
-            5-step {entry.title.toLowerCase()} optimization workflow
+            {entry.optimizationSteps ? `${entry.title} ATS optimization checklist` : `5-step ${entry.title.toLowerCase()} optimization workflow`}
           </h2>
           <ol className="mt-4 list-decimal space-y-2 pl-5 text-sm leading-relaxed text-slate-700">
-            {OPTIMIZATION_STEPS.map((step) => (
+            {(entry.optimizationSteps ?? DEFAULT_OPTIMIZATION_STEPS).map((step) => (
               <li key={step}>{step}</li>
             ))}
           </ol>

@@ -7,6 +7,7 @@ import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { PageFaqSection } from "@/components/seo/PageFaqSection";
 import { RelatedResources } from "@/components/seo/RelatedResources";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
+import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import {
   METHODOLOGY_PATH,
   methodologyBody,
@@ -68,6 +69,13 @@ export default function MethodologyPage() {
           <AdPlaceholder label="Advertisement · resource" className="mt-10" />
           <div className="mt-10">
             <BlogContent content={methodologyBody} />
+          </div>
+          <div className="not-prose mt-10">
+            <GuideEeatSection
+              path={METHODOLOGY_PATH}
+              audience="Anyone who wants to understand what our ATS score measures before trusting it in a job application."
+              notFor="This page does not predict employer-specific ATS behavior, hiring decisions, or interview outcomes—only what ResumeIQ's scoring estimates."
+            />
           </div>
           <PageFaqSection heading="Methodology FAQ" items={methodologyFaqItems} />
           <RelatedResources path={METHODOLOGY_PATH} excludeHref={METHODOLOGY_PATH} />

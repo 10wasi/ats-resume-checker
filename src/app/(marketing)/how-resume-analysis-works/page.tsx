@@ -5,6 +5,7 @@ import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
+import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import {
   HOW_RESUME_ANALYSIS_WORKS_PATH,
   howResumeAnalysisWorksBody,
@@ -90,6 +91,13 @@ export default function HowResumeAnalysisWorksPage() {
             ))}
           </div>
         </section>
+        <div className="not-prose mt-10">
+          <GuideEeatSection
+            path={HOW_RESUME_ANALYSIS_WORKS_PATH}
+            audience="Job seekers who want to understand exactly what the ResumeIQ checker measures before relying on results."
+            notFor="This page does not guarantee that our analysis matches any specific employer's ATS configuration or hiring criteria."
+          />
+        </div>
         <RelatedResources
           path={HOW_RESUME_ANALYSIS_WORKS_PATH}
           excludeHref={HOW_RESUME_ANALYSIS_WORKS_PATH}
