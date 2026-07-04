@@ -3,6 +3,7 @@ import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { KnowledgeCenterRelated } from "@/components/knowledge/KnowledgeCenterRelated";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
@@ -142,6 +143,8 @@ export default function AtsResumeChecklistPage() {
           <div className="mt-10">
             <BlogContent content={atsResumeChecklistBody} />
           </div>
+
+          <GuideEeatSection path={ATS_RESUME_CHECKLIST_PATH} />
 
           <section
             className="mt-16 border-t border-slate-200 pt-14"

@@ -148,5 +148,46 @@ A few things recruiters rarely say out loud but that change how you should write
 - [ ] Skills mirror posting spelling exactly
 - [ ] You are uploading the same file you tested
 
+## Mistake 11: Putting a photo on your resume
+
+In the US and Canada, a resume photo is strongly discouraged—it introduces protected-characteristic information (age, race, gender) that anti-discrimination law is designed to shield from early screening. Many North American ATS systems either skip photo regions or flag them as parse noise.
+
+In the UK and EU, photos are similarly discouraged under GDPR and equality regulations, even though they are culturally more common in some European countries. For portal applications, a photo header blocks the contact info zone and often causes the parser to skip your name.
+
+**Fix:** Remove the photo entirely for ATS portal submissions. If a specific market or employer explicitly requests one, supply it as a separate attachment—never embedded in the document.
+
+## Mistake 12: "References available upon request" and an outdated objective statement
+
+Both phrases are legacy holdovers from pre-digital recruiting:
+
+- **"References available upon request"** — Employers know this. It wastes a line, adds no keyword value, and signals an outdated template. Remove it; provide references only when specifically asked.
+- **Objective statement** — A two-line "seeking a challenging role to grow my skills" objective is ATS-neutral and recruiter-negative. Replace it with a targeted professional summary (2–3 lines) that mirrors your target title, core skills, and one proof metric.
+
+**Fix:** Delete the references line. Replace any objective statement with a focused summary. Guide: [Resume Summary Generator](/resume-summary-generator).
+
+## Mistake 13: Inconsistent date formats
+
+Mixing date styles across the same resume—"Jan 2024" in one role and "01/2024" in another, or "2022–Present" vs "2022 - Present"—creates two problems:
+
+1. **Parser confusion:** Some ATS systems extract date ranges to calculate tenure. Inconsistent formats cause miscalculation or null extraction, artificially lowering your apparent years of experience.
+2. **Recruiter perception:** Mixed formats read as a rushed, unreviewed file—the opposite of the detail-oriented signal most roles require.
+
+**Fix:** Choose one format and apply it everywhere. Recommended: **Month YYYY - Month YYYY** (e.g., "Mar 2021 - Jun 2023"). Avoid slashes in date ranges — some parsers treat them as fractions. For current roles, use "Present" rather than leaving the end date blank.
+
+If your resume is failing ATS parsing for unclear reasons, the [Resume Parsing Guide](/resume-parsing) covers exactly how parsers extract dates, employers, and titles—and what causes them to fail.
+
 More examples of good structure: [ATS Resume Examples](/ats-resume-examples). Full hub: [ATS Knowledge Center](/knowledge-center).
+
+## Recovery checklist
+
+- [ ] Single-column layout (no Canva, no tables, no icon sidebars)
+- [ ] Contact info in the document body
+- [ ] No photo embedded in the file
+- [ ] No "references available upon request" line
+- [ ] Professional summary instead of objective statement
+- [ ] Consistent date format throughout
+- [ ] Copy-paste test passes on your exported PDF
+- [ ] [ATS Resume Checker](/resume-checker) shows no critical format flags
+
+Browse all optimization guides in the [Career Success Hub](/career-success-hub) and the [ATS Knowledge Center](/knowledge-center).
 `;

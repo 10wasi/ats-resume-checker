@@ -75,9 +75,87 @@ Read [ATS Score Explained](/ats-score-explained) for how scoring and matching di
 
 Browse all guides in the [ATS Knowledge Center](/knowledge-center).
 
+## Synonyms and abbreviations: why both matter
+
+ATS systems match exact strings, not meaning. If the posting says "Amazon Web Services" and your resume says "AWS," that specific system may count it as a miss—even though any recruiter knows they are the same. The safest practice: use the posting's version, then include the abbreviation (or vice versa) once in a natural sentence.
+
+Common pairs to mirror carefully:
+
+| Posting term | Equivalent you might use | Recommended practice |
+|-------------|--------------------------|----------------------|
+| React | ReactJS | Use whichever the posting uses; include the other in context once |
+| Amazon Web Services | AWS | Follow posting; mention both in a bullet if space allows |
+| Product Manager | PM | Match title exactly; abbreviate in Skills list |
+| Machine Learning | ML | Spell out in summary; abbreviate in bullets |
+| Search Engine Optimization | SEO | Spell out if the posting spells out; abbreviate in Skills |
+| JavaScript | Javascript | Mirror exact capitalisation from the posting |
+
+## Before and after: keywords in bullets
+
+Keyword placement is most effective when tied to proof. Here are two rewrites showing the difference:
+
+**Example 1 — Data role:**
+
+    BEFORE
+    Analyzed data and produced reports for the finance team.
+
+    AFTER
+    Built automated Python + SQL dashboards in Tableau, cutting
+    weekly reporting time from 4 hours to 20 minutes for a 12-person
+    finance team.
+
+The after version contains searchable terms (Python, SQL, Tableau) in a real context. A recruiter searching for "Tableau" now finds this bullet; the before version returns nothing.
+
+**Example 2 — Marketing role:**
+
+    BEFORE
+    Managed social media and helped grow the brand online.
+
+    AFTER
+    Grew LinkedIn organic reach 340% in 6 months using HubSpot
+    content scheduling and a/b-tested copy; reduced cost-per-click
+    by 28% on Meta Ads campaigns.
+
+Searchable terms added: LinkedIn, HubSpot, Meta Ads, a/b testing. Every term is defensible in a phone screen.
+
+## How many keywords is enough?
+
+There is no ideal number, but a practical guideline: **5–10 honest exact matches per role** covers the must-have signal without triggering spam patterns. Break it down:
+
+- **3–5 hard skills** from required qualifications (tools, languages, platforms)
+- **1–2 certification or credential** mentions if the posting lists them
+- **2–3 domain phrases** that repeat in the posting (e.g., "pipeline generation," "informed consent," "GAAP compliance")
+- **1 title echo** in your summary matching the posted role level
+
+Beyond that, adding more keywords without new proof adds noise, not signal.
+
+## Soft skills vs hard skills: what gets indexed
+
+Hard skills (Python, Salesforce, patient triage) appear in recruiter search filters and are reliably indexed. Soft skills ("communication," "leadership") are rarely searched by keyword and do not improve match scores. Include soft skills only in bullets where they demonstrate a specific outcome—not as a standalone list at the top.
+
+| Type | Indexed by ATS search? | Include where |
+|------|------------------------|---------------|
+| Hard skills and tools | Yes — primary signal | Bullets + Skills section |
+| Certifications and credentials | Yes | Education + Skills |
+| Domain phrases | Often — depends on recruiter search | Summary + bullets |
+| Soft skills | Rarely | Bullets only (with proof) |
+
+## Tool workflow: from keyword gap to applied resume
+
+1. **Identify gaps** — Use the [ATS Keywords Finder](/ats-keywords-finder) to extract required terms from each posting
+2. **Analyze coverage** — [Resume Skills Analyzer](/resume-skills-analyzer) shows which of your current skills are detected
+3. **Baseline check** — [ATS Resume Checker](/resume-checker) gives your current keyword match and format health
+4. **Edit ethically** — Add missing terms into real bullets where you have proof; never fabricate
+5. **Re-check** — Upload the revised PDF and confirm keyword coverage improved
+6. **Validate match** — [Resume Match Analyzer](/resume-job-description-match) gives per-role match % after edits
+
+Browse all profession-specific keyword lists in the [ATS Knowledge Center](/knowledge-center) and the [Resume Keywords Database](/resume-keywords).
+
 ## Related guides
 
 - [Resume Keywords by Industry](/resume-keywords-by-industry)
 - [Resume vs Job Description Matching](/resume-job-description-match)
 - [ATS Resume Mistakes](/ats-resume-mistakes) — stuffing and dump sections
+- [Resume Score Checker](/resume-score-checker) — understand how keyword coverage affects your score
+- [Career Success Hub](/career-success-hub) — complete career optimization resources
 `;

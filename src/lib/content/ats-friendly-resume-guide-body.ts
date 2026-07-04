@@ -117,5 +117,67 @@ An ATS-friendly resume decays as postings evolve. Once a week during an active s
 - [ ] Confirm the copy-paste test still passes after edits
 - [ ] Save a dated version so you never lose a strong bullet
 
-Explore all ten guides in the [ATS Knowledge Center](/knowledge-center).
+## File naming conventions
+
+Most job seekers overlook the filename entirely. Some ATS platforms and applicant portals do read it—and a generic name ("resume.pdf" or "CV_final_v3.pdf") signals a low-effort application, while a garbled name creates confusion if a recruiter downloads it.
+
+**Best practice:** Name your file clearly and professionally.
+
+Recommended format: **FirstName-LastName-JobTitle.pdf**
+
+Example: **Maria-Chen-Data-Analyst.pdf**
+
+- Avoid spaces (use hyphens); some systems do not handle spaces in filenames reliably
+- Avoid special characters (@, #, &, !)
+- Keep it under 50 characters
+- Match the target job title to the filename for subtle alignment
+- Never use "final," "v2," or date stamps in the filename you submit
+
+## LinkedIn alignment
+
+Your LinkedIn profile and your resume will be compared—by recruiters and sometimes by ATS integrations that pull profile data. Inconsistencies create doubt.
+
+Key areas to keep in sync:
+
+| Area | Resume | LinkedIn |
+|------|--------|----------|
+| Current job title | Match exactly | Match exactly |
+| Employment dates | Mar 2021 - Present | Same month/year |
+| Employer names | Full legal name | Same full name |
+| Core skills | Top 5–8 tools | Listed in Skills section |
+| Certifications | With year | With year, linked if possible |
+
+The LinkedIn headline should mirror the target role title in your resume summary. If your resume says "Senior Product Manager" but LinkedIn says "PM | Building products people love," a recruiter searching LinkedIn for SPMs may not find you.
+
+## International market note: page length and conventions
+
+One resume rule does not apply globally:
+
+| Market | Typical length | Photo | Date of birth | Address |
+|--------|---------------|-------|---------------|---------|
+| US / Canada | 1 page (entry–mid) / 2 pages (senior) | Never | Never | City, State only |
+| UK | 2 pages typical | Not recommended (GDPR) | Not recommended | Town/city only |
+| Germany / Austria | 2–3 pages, photo traditionally included | Common but optional for ATS | Avoid on portal submissions | Standard |
+| Australia / NZ | 2–3 pages | Not expected | Not expected | City and state |
+| India | 2–3 pages | Sometimes expected | Sometimes requested | City |
+
+For ATS portal submissions in any market: a single-column, photo-free, plain-text-parsable PDF applies universally. Save market-specific formatting for direct email or printed submissions.
+
+## What not to include: a removal checklist
+
+Some resume content actively hurts ATS parse quality or legal compliance:
+
+- [ ] **Photo** — Remove for any ATS portal submission (see Mistake 11 in [ATS Resume Mistakes](/ats-resume-mistakes))
+- [ ] **Full home address** — City and country are sufficient; full street address is unnecessary and a GDPR concern in the EU
+- [ ] **Date of birth** — Never include; it introduces protected-characteristic data
+- [ ] **Marital status or nationality** — Irrelevant to qualification; filtered out by ethical hiring processes
+- [ ] **Hobbies without relevance** — "Hiking and cooking" adds no keyword value and wastes lines; only include hobbies tied directly to the role
+- [ ] **References section** — Remove "References available upon request"; provide references only on explicit request
+- [ ] **Objective statement** — Replace with a targeted professional summary
+- [ ] **Salary history** — Never include unless explicitly required (and illegal to request in some US states)
+- [ ] **"Responsible for" and "Duties included"** — Replace with action verbs and metrics
+
+Run the cleaned file through the [ATS Resume Checker](/resume-checker) to confirm the removal of unnecessary content didn't accidentally break any critical sections.
+
+Explore all optimization guides in the [Career Success Hub](/career-success-hub) and the [ATS Knowledge Center](/knowledge-center).
 `;

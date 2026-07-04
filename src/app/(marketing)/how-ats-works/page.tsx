@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { PageFaqSection } from "@/components/seo/PageFaqSection";
@@ -72,6 +73,7 @@ export default function HowAtsWorksPage() {
           <div className="mt-10">
             <BlogContent content={howAtsWorksBody} />
           </div>
+          <GuideEeatSection path={HOW_ATS_WORKS_PATH} />
           <PageFaqSection heading="How ATS works — FAQ" items={howAtsWorksFaqItems} />
           <RelatedResources path={HOW_ATS_WORKS_PATH} excludeHref={HOW_ATS_WORKS_PATH} />
           <BlogResumeCta />

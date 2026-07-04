@@ -3,6 +3,7 @@ import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { KnowledgeCenterGrid } from "@/components/knowledge/KnowledgeCenterGrid";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { RelatedResources } from "@/components/seo/RelatedResources";
 import { KnowledgeCenterItemListJsonLd } from "@/components/seo/KnowledgeCenterItemListJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
@@ -75,7 +76,7 @@ export default function KnowledgeCenterPage() {
               {CTR_KNOWLEDGE_CENTER.h1}
             </h1>
             <p className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
-          Thirteen guides. One workflow. Build topical depth across{" "}
+          Sixteen guides. One workflow. Build topical depth across{" "}
               <strong className="font-semibold text-slate-800">
                 ATS resume examples
               </strong>
@@ -112,6 +113,8 @@ export default function KnowledgeCenterPage() {
           <div className="mt-10">
             <BlogContent content={knowledgeCenterBody} />
           </div>
+
+          <GuideEeatSection path={KNOWLEDGE_CENTER_PATH} />
 
           <section
             className="mt-16 border-t border-slate-200 pt-14"

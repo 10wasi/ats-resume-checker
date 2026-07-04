@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { CareerSuccessHubGrid } from "@/components/career/CareerSuccessHubGrid";
-import { TopicClusterLinks } from "@/components/seo/TopicClusterLinks";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
+import { TopicClusterLinks } from "@/components/seo/TopicClusterLinks";
 import {
   CAREER_SUCCESS_HUB_PATH,
 } from "@/lib/content/career-success-hub/registry";
@@ -86,6 +87,7 @@ export default function CareerSuccessHubPage() {
           </header>
           <CareerSuccessHubGrid />
           <TopicClusterLinks path={CAREER_SUCCESS_HUB_PATH} />
+          <GuideEeatSection path={CAREER_SUCCESS_HUB_PATH} />
           <section className="mt-16 border-t border-slate-200 pt-14">
             <h2 className="font-display text-2xl font-bold text-slate-900">
               FAQ: Career Success Hub

@@ -4,13 +4,13 @@
 export const RESUME_CHECKER_MONEY_BODY = `
 A **resume checker** is the fastest way to see what hiring software reads before you click Apply. ResumeIQ is a free **resume checker online** that scores parse health, keyword coverage, and format risksâ€”then shows exactly what to fix so your next application has a fair shot at a human review.
 
-[Run the free resume checker â†’](${RESUME_CHECKER_PATH})
+[Run the free resume checker →](${RESUME_CHECKER_PATH})
 
 ## What this resume checker does
 
 When you upload a PDF or paste text, the tool:
 
-- Shows an **ATS compatibility score** (0â€“100) for your master resume
+- Shows an **ATS compatibility score** (0—100) for your master resume
 - Lists **missing keywords**â€”especially when you paste a job description
 - Flags **format issues** that break parsers (columns, tables, graphics)
 - Displays **extracted text** so you see the same order ATS likely reads
@@ -21,7 +21,7 @@ Unlike tools that hide keyword gaps behind subscriptions, core analysis is free�
 
 ## Who this resume checker is for
 
-| You areâ€¦ | Why use the checker |
+| You are… | Why use the checker |
 |----------|---------------------|
 | Active job seeker | Validate every export before mass applying |
 | Career changer | Test a new layout before pivoting roles |
@@ -82,7 +82,7 @@ Export a PDF report or re-run after each edit to measure progress.
 2. Open the [free resume checker](${RESUME_CHECKER_PATH}) and upload the exact file you will submit
 3. Read **extracted text**â€”if garbled, fix layout before editing copy
 4. Paste the **job description** for match % and tailored keyword gaps
-5. Fix top **format flags**, then add 5â€“8 posting terms into recent bullets
+5. Fix top **format flags**, then add 5—8 posting terms into recent bullets
 6. Complete the [ATS resume checklist](/ats-resume-checklist-2026) before your next batch
 7. **Re-check** after every export change
 
@@ -134,7 +134,7 @@ Before you optimize copy, understand what software actually does with your file:
 4. **Rank** â€” Sort candidates by match signals for recruiter review
 5. **Skim** â€” Humans read top-ranked profiles in secondsâ€”not every upload
 
-When parse fails, steps 3â€“5 never see your real qualifications. Read [how ATS works](/how-ats-works), then verify extraction in the checker above.
+When parse fails, steps 3—5 never see your real qualifications. Read [how ATS works](/how-ats-works), then verify extraction in the checker above.
 
 ## How ResumeIQ scoring works
 
@@ -263,5 +263,36 @@ The [resume keywords checker](/resume-keywords-checker) and [ATS keywords finder
 5. **Re-check** - Upload the revised PDF and confirm improvement
 
 Browse the [resume keywords database](/resume-keywords) for profession-specific term lists.
+
+## Free resume checker — no paywall, no account
+
+Most resume checkers gate the results you actually need behind a subscription. ResumeIQ keeps the full core analysis permanently free:
+
+- **ATS compatibility score** — immediate, no sign-up required
+- **Keyword gap list** — see exactly which posting terms are missing
+- **Format flags** — layout warnings that cause parse failures
+- **Extracted text preview** — confirm what the parser reads before applying
+- **Improvement checklist** — ordered actions, not vague tips
+- **Resume vs job description match %** — add a JD for free match analysis
+
+No credit card. No hidden export fee. No trial timer. The same analysis paywalled tools charge for is here in a single free flow. [Start your free check](${RESUME_CHECKER_PATH}) and see your score in under two minutes.
+
+## What your report contains
+
+After analysis your report includes every layer you need to make a decision:
+
+| Section | What you get |
+|---------|-------------|
+| **ATS score (0–100)** | Composite rating across parse health, keywords, structure |
+| **Extracted text** | Raw text the parser sees — spot garbled sections instantly |
+| **Keyword gaps** | Missing terms from a pasted job description, grouped by type |
+| **Format flags** | Specific layout issues (columns, headers, images) with fix guidance |
+| **Skills analysis** | Detected skills vs posting requirements when JD is provided |
+| **Match score %** | Vocabulary overlap between your resume and the target role |
+| **Quick-fix checklist** | Ordered action list — format first, keywords second |
+| **AI improvement bullets** | Draft rewrites for weak bullets; verify before using |
+| **Summary feedback** | Section-by-section notes on experience, skills, and summary |
+
+Every section links to a deeper guide so you know exactly what to do next. The [resume parsing](/resume-parsing) section shows extracted text order — the most direct signal of whether your layout will pass employer systems.
 `;
 

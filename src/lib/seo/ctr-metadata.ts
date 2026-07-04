@@ -92,9 +92,9 @@ export const CTR_METHODOLOGY: PageCtrMeta = {
 };
 
 export const CTR_HOW_ATS_WORKS: PageCtrMeta = {
-  title: "How ATS Works — 5-Layer Screening Explained (2026)",
+  title: "How ATS Works — 5-Layer Resume Screening Explained",
   description:
-    "How applicant tracking systems work: parse → index → keyword search → filter → human skim. Annotated diagram, mini case study, and fix checklist.",
+    "Exactly how ATS reads your resume: parse, index, search, filter, then 6-second human skim. Understand each layer so you can fix the right problem first.",
   ogTitle: "How ATS Works — From Upload to Recruiter Screen",
   h1: "How ATS Works: The 5-Layer Resume Screening Process",
   primaryKeyword: "how ATS works",
@@ -104,10 +104,10 @@ export const CTR_HOW_ATS_WORKS: PageCtrMeta = {
 export const CTR_RESUME_MATCH_ANALYZER_LANDING: PageCtrMeta = {
   title: "Resume Match Analyzer — Free Job Match Score",
   description:
-    "Resume match analyzer: score vs job description, missing keywords & skill gaps. Free resume optimization for global applications—paste & compare.",
+    "Paste any job description alongside your resume and get a keyword match %, categorized gaps, and tailoring suggestions—free, no account required.",
   ogTitle: "Resume Match Analyzer — Improve Before Apply",
   h1: "Resume Match Analyzer: Free Job Description Match",
-  primaryKeyword: "resume match analyzer",
+  primaryKeyword: "free job description match tool",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
@@ -238,10 +238,10 @@ export const CTR_ATS_HUB: PageCtrMeta = {
 };
 
 export const CTR_KNOWLEDGE_CENTER: PageCtrMeta = {
-  title: "ATS Knowledge Center — 13 Resume Guides (Free)",
+  title: "ATS Knowledge Center — 16 Free Resume Guides",
   description:
-    "Thirteen free ATS guides: format, keywords, match score, mistakes, examples, and checklist—each links to the free resume checker workflow.",
-  ogTitle: "ATS Knowledge Center — Free Resume Guides",
+    "Sixteen free ATS guides covering format, keywords, match score, mistakes, examples, checklist, parsing, and action verbs—each connected to the free resume checker workflow.",
+  ogTitle: "ATS Knowledge Center — 16 Free Resume Guides",
   h1: "ATS Knowledge Center for Resume Optimization",
   primaryKeyword: "ATS knowledge center",
   richSnippets: ["ItemList", "FAQPage", "BreadcrumbList", "Organization"],
@@ -250,10 +250,10 @@ export const CTR_KNOWLEDGE_CENTER: PageCtrMeta = {
 export const CTR_RESOURCE_HUB: PageCtrMeta = {
   title: "ATS Resource Hub — Guides, Tools & Examples",
   description:
-    "Complete ATS resume optimization hub: examples, checklist, keywords DB, match tool & 8 profession guides. Free resume checker worldwide.",
+    "Everything in one place: ATS guides, resume examples, keyword database, match tool, profession hubs, and checklist. Your free resume optimization library.",
   ogTitle: "ATS Resource Hub — Resume Optimization Library",
   h1: "ATS Resume Optimization Resource Hub",
-  primaryKeyword: "ATS resume optimization",
+  primaryKeyword: "ATS resume resource hub",
   richSnippets: ["ItemList", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
@@ -398,10 +398,10 @@ export const CTR_AI_REWRITE: PageCtrMeta = {
 };
 
 export const CTR_CAREER_SUCCESS_HUB: PageCtrMeta = {
-  title: "Career Success Hub — Resume Tools & Guides (Free)",
+  title: "Career Success Hub — 7 Free Resume Tools & Guides",
   description:
-    "Career Success Hub: resume checker, match tool, keywords checker, examples, checklist, and guides—one connected workflow for job seekers.",
-  ogTitle: "Career Success Hub — Resume Tools Platform",
+    "Career Success Hub: 7 free tools including resume checker, match analyzer, keywords finder, skills analyzer, summary generator, and achievement writer—one connected workflow.",
+  ogTitle: "Career Success Hub — 7 Free Resume Tools",
   h1: "Career Success Hub: Resume Tools & Optimization Guides",
   primaryKeyword: "career success hub",
   richSnippets: ["ItemList", "FAQPage", "BreadcrumbList", "Organization"],
@@ -580,8 +580,8 @@ export const CTR_CV_CHECKER: PageCtrMeta = {
 export const CTR_COMPLETE_ATS_GUIDE: PageCtrMeta = {
   title: "ATS Resume Optimization Guide — 12 Steps + Free Checker",
   description:
-    "Master ATS resume optimization: parsing, resume score, keywords, format & rejection fixes. 12-step workflow, case studies & free checker—global job seekers.",
-  ogTitle: "ATS Resume Optimization — #1 Master Guide (Free Tools)",
+    "The complete ATS optimization walkthrough: parsing mechanics, score interpretation, keyword placement, format QA, and rejection diagnosis. 12-step workflow with case studies.",
+  ogTitle: "ATS Resume Optimization — Complete 12-Step Master Guide",
   h1: "The Ultimate ATS Resume Optimization Guide",
   primaryKeyword: "ATS resume optimization",
   richSnippets: ["Article", "FAQPage", "HowTo", "ItemList", "BreadcrumbList", "Organization"],

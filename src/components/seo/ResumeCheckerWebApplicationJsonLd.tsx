@@ -21,6 +21,18 @@ export function ResumeCheckerWebApplicationJsonLd() {
       price: "0",
       priceCurrency: "USD",
     },
+    isAccessibleForFree: true,
+    featureList: [
+      "ATS score (0–100)",
+      "Keyword gap analysis",
+      "Format parse test",
+      "Resume match analyzer",
+      "AI bullet suggestions",
+    ],
+    potentialAction: {
+      "@type": "UseAction",
+      target: url,
+    },
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.8",

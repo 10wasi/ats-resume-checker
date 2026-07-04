@@ -61,4 +61,34 @@ export const resumeCheckerFaqItems: FaqItem[] = [
     answer:
       "Core analysis is free: ATS score, keyword gaps, format flags, match %, and improvement checklist. No credit card required. Advanced AI report sections are included in the standard free flow.",
   },
+  {
+    question: "Is my resume data private and secure?",
+    answer:
+      "Your resume content is used only to generate your report. We do not sell, share, or store your resume data for advertising. Check our privacy policy for full details on data handling and retention.",
+  },
+  {
+    question: "What is the difference between an ATS score and a match score?",
+    answer:
+      "Your ATS score rates your overall resume health—parse quality, structure, and baseline keywords—on a 0–100 scale. Your match score is per-role: it measures vocabulary overlap between your resume and a specific job description. A strong ATS score is your foundation; match score tells you how well you've tailored for a target posting.",
+  },
+  {
+    question: "Can I paste my resume text instead of uploading a file?",
+    answer:
+      "Yes. The checker accepts plain-text paste as well as PDF and DOCX uploads. Pasting is useful for a quick keyword and structure check. However, uploading your actual file is recommended for format analysis—it reveals parse issues like columns, headers, and image-only sections that pasting bypasses.",
+  },
+  {
+    question: "Can ATS detect AI-written resumes?",
+    answer:
+      "ATS software doesn't flag AI-written text—it scores keywords, structure, and parse quality. However, some employers use separate AI-detection tools on shortlisted candidates. The safer approach is to use AI suggestions as a starting draft and then rewrite in your own voice with specific evidence from your real experience.",
+  },
+  {
+    question: "My score is already 85+. What should I do next?",
+    answer:
+      "A high baseline ATS score means your format and general keyword coverage are strong. The next step is per-role tailoring: paste each target job description to get a match score and a gap list for that specific posting. Add 5–8 honest keyword touches per role, re-export, and re-check. Format health doesn't replace role relevance.",
+  },
+  {
+    question: "Does ATS read cover letters?",
+    answer:
+      "Some ATS platforms parse attached cover letters for additional keyword signals; others ignore them entirely and store them as unstructured text. Never rely on a cover letter to supply keywords that are missing from your resume. Keywords in your resume bullets are always indexed—cover letter treatment is system-dependent.",
+  },
 ];
