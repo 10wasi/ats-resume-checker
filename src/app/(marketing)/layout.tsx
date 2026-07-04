@@ -9,12 +9,18 @@ export default function MarketingLayout({
 }) {
   return (
     <div className="flex min-h-screen flex-col">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[200] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-slate-900 focus:shadow-lg focus:outline-2 focus:outline-brand-500"
+      >
+        Skip to main content
+      </a>
       <SiteHeader />
       <AdPlaceholder
         label="Advertisement · below header"
         className="border-b border-slate-100 bg-white py-3"
       />
-      <main className="flex-1">{children}</main>
+      <main id="main-content" className="flex-1">{children}</main>
       <SiteFooter />
     </div>
   );

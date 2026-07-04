@@ -34,6 +34,9 @@ export const SITEMAP_PATH_LAST_MODIFIED: Record<string, string> = {
   "/resource-hub": "2026-06-01",
   "/resume-optimization-platform": "2026-05-28",
   "/ats-resume-checklist-2026": "2026-05-14",
+  "/resume-action-verbs": "2026-07-04",
+  "/resume-parsing": "2026-07-04",
+  "/resume-objective": "2026-07-04",
 };
 
 export function getSitemapLastModified(path: string, fallback?: string): Date {

@@ -19,11 +19,11 @@ export function CareerToolCta({
       <p className="text-sm font-semibold uppercase tracking-wide text-emerald-800">
         Free tool
       </p>
-      <p className="mt-2 font-display text-xl font-bold text-slate-900">{title}</p>
+      <h2 className="mt-2 font-display text-xl font-bold text-slate-900">{title}</h2>
       <p className="mt-2 text-base leading-relaxed text-slate-700">{description}</p>
       <Link
         href={href}
-        className="mt-5 inline-flex items-center justify-center rounded-xl bg-[#16a34a] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#15803d]"
+        className="btn-gradient mt-5 inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold"
       >
         {buttonLabel}
       </Link>

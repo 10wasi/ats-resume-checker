@@ -20,8 +20,9 @@ export function WebSiteJsonLd() {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: `${base}${RESUME_CHECKER_PATH}`,
+        urlTemplate: `${base}${RESUME_CHECKER_PATH}?q={search_term_string}`,
       },
+      "query-input": "required name=search_term_string",
       name: "Run free resume checker",
     },
   };

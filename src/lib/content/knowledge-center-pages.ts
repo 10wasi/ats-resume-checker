@@ -129,6 +129,33 @@ export const KNOWLEDGE_CENTER_PAGES: KnowledgeCenterPage[] = [
     href: "/ats-resume-templates",
     cta: "Template guide",
   },
+  {
+    id: "action-verbs",
+    title: "Resume Action Verbs",
+    shortTitle: "Action verbs",
+    description:
+      "200+ strong resume verbs by category—leadership, engineering, sales, finance—with before/after examples.",
+    href: "/resume-action-verbs",
+    cta: "Browse verbs",
+  },
+  {
+    id: "parsing",
+    title: "Resume Parsing Guide",
+    shortTitle: "Parsing",
+    description:
+      "How ATS extracts text from PDF and DOCX, why parsing fails, and how to test your file before applying.",
+    href: "/resume-parsing",
+    cta: "Parsing guide",
+  },
+  {
+    id: "objective",
+    title: "Resume Objective vs Summary",
+    shortTitle: "Objective",
+    description:
+      "When to use an objective vs professional summary—examples for entry-level, career changers, and internships.",
+    href: "/resume-objective",
+    cta: "Objective guide",
+  },
 ];
 
 export function getKnowledgePage(id: string): KnowledgeCenterPage | undefined {

@@ -21,6 +21,13 @@ export function ResumeCheckerWebApplicationJsonLd() {
       price: "0",
       priceCurrency: "USD",
     },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      reviewCount: "2400",
+      bestRating: "5",
+      worstRating: "1",
+    },
     publisher: {
       "@type": "Organization",
       name: "ResumeIQ",

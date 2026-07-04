@@ -24,7 +24,7 @@ const siteUrl = getSiteUrl();
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Resume Checker — Free ATS Score & Keywords",
+    default: "ResumeIQ — Free ATS Resume Checker & Score",
     template: "%s | ResumeIQ",
   },
   description:
@@ -40,6 +40,9 @@ export const metadata: Metadata = {
   authors: [{ name: "ResumeIQ" }],
   creator: "ResumeIQ",
   publisher: "ResumeIQ",
+  verification: {
+    google: "Fzn210VwpRc6YzJJrIe3FN8Zn239C9hf6s4mbcZ89QM",
+  },
   robots: {
     index: true,
     follow: true,
@@ -50,14 +53,14 @@ export const metadata: Metadata = {
     locale: "en",
     url: siteUrl,
     siteName: "ResumeIQ",
-    title: "Resume Checker — Free ATS Score & Keywords",
+    title: "ResumeIQ — Free ATS Resume Checker & Score",
     description:
       "Free resume checker online—upload PDF, get ATS score, missing keywords, and format fixes. Built for job seekers worldwide.",
     images: getDefaultOgImages(),
   },
   twitter: {
     card: "summary_large_image",
-    title: "Resume Checker — Free ATS Score & Keywords",
+    title: "ResumeIQ — Free ATS Resume Checker & Score",
     description:
       "Free resume checker online—upload PDF, get ATS score, missing keywords, and format fixes. Built for job seekers worldwide.",
     images: getDefaultOgImages().map((img) => img.url),
@@ -75,12 +78,6 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${inter.variable} ${poppins.variable} font-sans`}
     >
-      <head>
-        <meta
-          name="google-site-verification"
-          content="Fzn210VwpRc6YzJJrIe3FN8Zn239C9hf6s4mbcZ89QM"
-        />
-      </head>
       <body
         className="min-h-screen bg-[#f8f9fb] text-slate-900 antialiased"
         suppressHydrationWarning

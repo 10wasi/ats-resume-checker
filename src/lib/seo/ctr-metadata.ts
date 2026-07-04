@@ -607,6 +607,36 @@ export const CTR_ATS_RESUME_REVIEW: PageCtrMeta = {
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
+export const CTR_RESUME_ACTION_VERBS: PageCtrMeta = {
+  title: "Resume Action Verbs — 200+ Strong Words by Category",
+  description:
+    "Strong resume action verbs for every role: leadership, engineering, sales, finance, healthcare. Before/after examples and ATS keyword guidance.",
+  ogTitle: "200+ Resume Action Verbs — By Category & Role",
+  h1: "Resume Action Verbs: 200+ Strong Words by Category",
+  primaryKeyword: "resume action verbs",
+  richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_PARSING: PageCtrMeta = {
+  title: "Resume Parsing — How ATS Reads Your File (2026)",
+  description:
+    "Resume parsing explained: how ATS extracts text from PDF and DOCX, why parsers fail, and how to test your file before applying.",
+  ogTitle: "Resume Parsing — What ATS Extracts From Your File",
+  h1: "Resume Parsing: How ATS Reads Your Resume",
+  primaryKeyword: "resume parsing",
+  richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_OBJECTIVE: PageCtrMeta = {
+  title: "Resume Objective vs Summary — When to Use Each (+ Examples)",
+  description:
+    "Resume objective vs professional summary: when to use each, ATS keyword tips, examples for entry-level, career changers, and internships.",
+  ogTitle: "Resume Objective — When to Use It & How to Write It",
+  h1: "Resume Objective vs Summary: When to Use Each (With Examples)",
+  primaryKeyword: "resume objective",
+  richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
 export function buildCtrMetadata(
   meta: PageCtrMeta,
   options: {

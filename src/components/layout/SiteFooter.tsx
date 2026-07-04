@@ -13,7 +13,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-block transition opacity-100 hover:opacity-90">
+            <Link href="/" aria-label="ResumeIQ home" className="inline-block transition opacity-100 hover:opacity-90">
               <Logo wordmarkClassName="text-white" />
             </Link>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-slate-400">
@@ -60,11 +60,15 @@ function FooterColumn({
   title: string;
   links: { href: string; label: string }[];
 }) {
+  const id = `footer-col-${title.toLowerCase().replace(/\s+/g, "-")}`;
   return (
-    <div>
-      <p className="text-xs font-bold uppercase tracking-wide text-slate-500">
+    <nav aria-labelledby={id}>
+      <h2
+        id={id}
+        className="text-xs font-bold uppercase tracking-wide text-slate-500"
+      >
         {title}
-      </p>
+      </h2>
       <ul className="mt-4 space-y-2.5">
         {links.map((link) => (
           <li key={link.href + link.label}>
@@ -77,6 +81,6 @@ function FooterColumn({
           </li>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 }

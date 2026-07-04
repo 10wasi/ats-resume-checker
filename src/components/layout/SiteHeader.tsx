@@ -170,6 +170,7 @@ export function SiteHeader() {
               className="touch-manipulation rounded-lg p-2.5 text-[#4ade80] hover:bg-brand-50 md:hidden"
               onClick={() => setOpen(true)}
               aria-expanded={open}
+              aria-controls="marketing-mobile-nav"
               aria-label="Open navigation"
             >
               <IconMenu className="h-6 w-6" />

@@ -133,6 +133,21 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     title: "ATS Resource Hub",
     description: "Guides, tools, profession hubs, and trust docs in one library.",
   },
+  resumeActionVerbs: {
+    href: "/resume-action-verbs",
+    title: "Resume Action Verbs",
+    description: "200+ strong resume verbs by category: leadership, engineering, sales, finance.",
+  },
+  resumeParsing: {
+    href: "/resume-parsing",
+    title: "Resume Parsing Guide",
+    description: "How ATS extracts text from your file and why parsing fails.",
+  },
+  resumeObjective: {
+    href: "/resume-objective",
+    title: "Resume Objective vs Summary",
+    description: "When to use an objective, with examples for entry-level and career changers.",
+  },
   careerHub: {
     href: "/career-success-hub",
     title: "Career Success Hub",
@@ -341,6 +356,36 @@ const DEFAULT_KEYS = [
 
 /** Curated related clusters per route — avoids generic duplicate lists. */
 const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
+  "/resume-action-verbs": [
+    "checker",
+    "resumeKeywordsDb",
+    "achievementGenerator",
+    "bulletGenerator",
+    "summaryGenerator",
+    "keywordsGuide",
+    "mistakesGuide",
+    "knowledgeCenter",
+  ],
+  "/resume-parsing": [
+    "checker",
+    "formatGuide",
+    "mistakesGuide",
+    "howAtsWorks",
+    "keywordsFinder",
+    "match",
+    "resumeObjective",
+    "knowledgeCenter",
+  ],
+  "/resume-objective": [
+    "summaryGenerator",
+    "checker",
+    "resumeKeywordsDb",
+    "keywordsGuide",
+    "resumeParsing",
+    "formatGuide",
+    "knowledgeCenter",
+    "examples",
+  ],
   "/": ["platformHub", "checker", "resumeReview", "matchAnalyzer", "resumeKeywordsDb", "examples"],
   "/resume-optimization-platform": [
     "checker",

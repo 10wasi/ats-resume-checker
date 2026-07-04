@@ -59,6 +59,9 @@ export const SITE_CAREER_PAGES: SiteNavItem[] = [
   { href: "/free-resume-checker-online", label: "Free resume checker online" },
   { href: "/free-ats-score-checker", label: "Free ATS score checker" },
   { href: "/ats-resume-checker", label: "ATS resume checker guide" },
+  { href: "/resume-action-verbs", label: "Resume action verbs" },
+  { href: "/resume-parsing", label: "Resume parsing explained" },
+  { href: "/resume-objective", label: "Resume objective vs summary" },
 ];
 
 /** Sticky marketing header — keep ≤5 items; checker is the header CTA. */

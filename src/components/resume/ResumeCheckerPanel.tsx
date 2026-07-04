@@ -85,6 +85,9 @@ function AnalyzeLoadingBar() {
       className="w-full overflow-hidden rounded-full bg-slate-200"
       role="progressbar"
       aria-label="Calculating score"
+      aria-valuemin={0}
+      aria-valuemax={100}
+      aria-valuenow={0}
     >
       <div className="h-2 w-1/3 rounded-full bg-slate-700 animate-score-loading" />
     </div>

@@ -57,7 +57,7 @@ export function BlogResumeCta() {
         href={RESUME_CHECKER_PATH}
         className="btn-gradient mt-6 inline-flex px-7 text-sm"
       >
-        Improve Your Resume
+        Check Resume Score Free
       </Link>
     </aside>
   );
