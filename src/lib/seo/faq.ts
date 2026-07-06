@@ -134,4 +134,44 @@ export const homepageFaqItems: FaqItem[] = [
     answer:
       "Most checks complete in under a minute after upload or paste. You get overall score, formatting flags, keyword gaps, section feedback, and priority fixes immediately—no waiting for a human reviewer.",
   },
+  {
+    question: "Does ATS reject Canva resumes?",
+    answer:
+      "Frequently. Canva resumes export as image-heavy PDFs with embedded fonts and design layers that ATS cannot parse correctly. Skills in sidebars, icons replacing text, and two-column layouts cause the parser to skip or scramble your content. Export to plain DOCX or a single-column Word template, then re-run your ATS scan before submitting.",
+  },
+  {
+    question: "Can ATS read PDF resumes?",
+    answer:
+      "Yes — if the PDF was exported from a word processor and contains selectable text. ATS cannot read scanned PDFs, image-based PDFs, or PDFs saved from Canva with embedded design layers. Test by opening your PDF and trying to select and copy text. If you cannot select it, convert to DOCX before applying.",
+  },
+  {
+    question: "Why is my resume rejected by ATS?",
+    answer:
+      "The most common reasons: a multi-column or Canva layout that breaks parsing, contact details in headers that ATS skips, missing job-specific keywords, generic bullet points without measurable outcomes, and non-standard section labels like 'My Story' instead of 'Work Experience'. Our free ATS resume checker identifies all of these in one scan.",
+  },
+  {
+    question: "How many keywords should a resume contain?",
+    answer:
+      "There is no single number, but as a guide: mirror 6–10 must-have terms directly from the job description (tools, skills, certifications) and 3–5 industry-standard terms. Each keyword should appear inside a bullet point with supporting evidence — not in a standalone keyword block. Quality and placement beat quantity.",
+  },
+  {
+    question: "What is the best resume format for ATS?",
+    answer:
+      "Single-column chronological or hybrid format, exported as .docx or selectable .pdf. Use standard section headers (Work Experience, Education, Skills), Calibri or Georgia font, plain bullet points, and contact information in the document body — not in headers or text boxes. Avoid tables, columns, graphics, and icon fonts.",
+  },
+  {
+    question: "Can ATS read graphics and images on a resume?",
+    answer:
+      "No. ATS systems extract text only. Graphs showing skill levels, profile photos, icon sidebars, and background images are either stripped or cause parse errors. Your profile photo will not be seen by the ATS — but it may corrupt the section immediately after it. Remove all graphics from your resume file.",
+  },
+  {
+    question: "What resume format do recruiters prefer?",
+    answer:
+      "Recruiters see resumes after ATS processing. They consistently prefer: a clean single-column layout they can scan in 6 seconds, bullet points starting with action verbs and containing one measurable outcome each, a two-line professional summary at the top, and standard fonts like Calibri, Garamond, or Georgia at 10–11pt. A well-formatted resume passes ATS and reads well to humans.",
+  },
+  {
+    question: "How do I know if my resume passed ATS?",
+    answer:
+      "You cannot know for certain from the employer's side, but you can verify the most critical factors: run a free ATS resume checker, confirm all text is selectable in your PDF, check that your top 8 keywords appear in experience bullets (not just a skills list), and ensure your formatting uses a single column with standard section labels. If your checker score is above 75 and your keyword match is above 70%, your file is likely to parse cleanly.",
+  },
 ];

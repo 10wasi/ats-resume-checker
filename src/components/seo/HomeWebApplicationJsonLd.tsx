@@ -24,12 +24,21 @@ export function HomeWebApplicationJsonLd() {
     },
     featureList: [
       "ATS resume score",
-      "Resume keyword analysis",
-      "Job description match",
+      "Resume keyword gap analysis",
+      "Job description match score",
       "Format and parsing scan",
+      "Extracted text preview",
+      "Section completeness check",
+      "Priority fix recommendations",
       "AI resume improvements",
       "PDF and DOCX upload",
+      "Paste text mode",
     ],
+    potentialAction: {
+      "@type": "Action",
+      name: "Check your resume ATS score free",
+      target: `${base}/resume-checker`,
+    },
     provider: {
       "@type": "Organization",
       name: "ResumeIQ",

@@ -7,6 +7,9 @@ import { HeroSection } from "@/components/home/HomeSections";
 import { HomeInstantAnswersSection } from "@/components/home/HomeInstantAnswersSection";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { buildCtrMetadata, CTR_HOME } from "@/lib/seo/ctr-metadata";
+import { HomeBeforeAfterSection } from "@/components/home/HomeBeforeAfterSection";
+import { HomeAtsReportPreviewSection } from "@/components/home/HomeAtsReportPreviewSection";
+import { HomeAtsMistakesSection } from "@/components/home/HomeAtsMistakesSection";
 
 function SectionSkeleton({ height = "h-48" }: { height?: string }) {
   return (
@@ -107,6 +110,10 @@ const HomeStrongCtaSection = dynamic(
   () => import("@/components/home/HomeSections").then((m) => ({ default: m.HomeStrongCtaSection })),
   { loading: () => <SectionSkeleton height="h-40" /> }
 );
+const TestimonialsSection = dynamic(
+  () => import("@/components/home/TestimonialsSection").then((m) => ({ default: m.TestimonialsSection })),
+  { loading: () => <SectionSkeleton height="h-64" /> }
+);
 const AdPlaceholder = dynamic(
   () => import("@/components/monetization/AdPlaceholder").then((m) => ({ default: m.AdPlaceholder })),
   { loading: () => null }
@@ -144,10 +151,13 @@ export default function HomePage() {
       <HomeInstantAnswersSection />
       <HomeComparisonSection />
       <HowItWorksSection />
+      <HomeAtsReportPreviewSection />
       <ProblemSolutionSection />
+      <HomeBeforeAfterSection />
       <HomeTrustedBySection />
       <HomeWhoItsForSection />
       <FeatureHighlights />
+      <HomeAtsMistakesSection />
       <HomeTrustScoringSection />
       <HomeResumeMatchPreviewSection />
       <HomeKeywordsGuidePreviewSection />
@@ -155,6 +165,7 @@ export default function HomePage() {
       <HomeProductDifferentiationSection />
       <HomeCoreToolsGridSection />
       <HomeTrustSecuritySection />
+      <TestimonialsSection />
       <HomeWhyTrustSection />
       <HomeMethodologyPreviewSection />
       <HomeTopicAuthoritySection />
