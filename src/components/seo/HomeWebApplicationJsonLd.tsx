@@ -1,11 +1,11 @@
 import { getSiteUrl } from "@/lib/site-url";
 
-/** Schema.org SoftwareApplication for the homepage primary tool. */
+/** Schema.org WebApplication for the homepage primary tool. */
 export function HomeWebApplicationJsonLd() {
   const base = getSiteUrl().replace(/\/$/, "");
   const schema = {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
+    "@type": "WebApplication",
     name: "ResumeIQ ATS Resume Checker",
     alternateName: "Free ATS Resume Checker",
     description:
@@ -15,6 +15,7 @@ export function HomeWebApplicationJsonLd() {
     operatingSystem: "Any",
     browserRequirements: "Requires JavaScript. Requires HTML5.",
     inLanguage: "en",
+    isAccessibleForFree: true,
     offers: {
       "@type": "Offer",
       price: "0",

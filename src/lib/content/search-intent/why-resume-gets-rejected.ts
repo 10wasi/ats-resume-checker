@@ -103,5 +103,47 @@ After switching to a single-column Word export, rewriting three bullets with met
 | [Resume Match Analyzer](/resume-job-description-match) | Keyword overlap per posting |
 | [Resume Examples](/resume-examples) | Bullet patterns that survive skim |
 | [ATS Checklist](/ats-resume-checklist-2026) | Pre-submit QA |
+
+## Why rejection rates vary by industry and role level
+
+Not all rejections have the same cause. The rejection layer that matters most shifts with context:
+
+| Context | Most common rejection layer | Fix priority |
+|---------|----------------------------|--------------|
+| Tech roles (software, data) | Keyword filter — tool names missing | Add exact tools from posting to bullets |
+| Healthcare | Hard filter — license/credential requirement | Verify you meet requirements before applying |
+| Finance | Years-of-experience filter | Apply to roles within your tenure range |
+| Entry-level (any field) | Human skim — no metrics or proof | Rewrite 3 bullets with scope + result |
+| Career changers | Title + keyword mismatch | Bridge language in summary; highlight transferable tools |
+| Senior roles (director+) | Scope gap — no team size, budget, P&L | Add leadership metrics to top 3 bullets |
+
+## What recruiters actually say about resume rejection
+
+Here is how the experience looks from the other side of the screen — based on common recruiter-shared patterns:
+
+- **"I search for the job title first."** If your target title does not appear prominently in your resume, you may not surface in recruiter search at all — even if your experience matches.
+- **"I spend about 6 seconds deciding if I'll read more."** The first bullet of your most recent role is the most important sentence on the page. If it describes a duty rather than an outcome, the read stops.
+- **"I can tell when someone used a template."** Cookie-cutter language ("results-oriented professional seeking a challenging role") signals a generic application to every recruiter.
+- **"I rarely see the files that don't match our ATS filter."** Hard filters — location, work authorization, required degree — remove candidates before any human review. No resume quality fixes a hard filter you do not meet.
+- **"Metrics make it easy to rank candidates."** "Reduced cost by 23%" is concrete; "improved efficiency" is noise. Every claim without a number is a missed opportunity.
+
+## The 3-minute diagnosis
+
+Before rewriting everything, spend 3 minutes on this self-diagnosis:
+
+1. **Copy-paste test** — Can you paste your PDF into Notepad and read it in logical order? If not: fix layout first.
+2. **Title check** — Does your target job title (exact phrase from the posting) appear in your resume summary or most recent role? If not: add it.
+3. **First bullet test** — Does the first bullet of your most recent role contain a number and a recognizable tool or domain term? If not: rewrite it.
+
+These three checks cover the majority of ATS and recruiter-skim failures. Everything else is refinement.
+
+## What rejection does NOT mean
+
+- It does not mean you are unqualified — parse failures reject strong candidates constantly
+- It does not mean you need to rewrite your entire resume history
+- It does not mean the job market is impossible — it usually means one fixable layer failed
+- It does not mean cover letters will fix it — if parse or keywords are the issue, a cover letter does not change those signals
+
+Explore all optimization guides in the [Career Success Hub](/career-success-hub) and the [ATS Knowledge Center](/knowledge-center).
 `,
 };

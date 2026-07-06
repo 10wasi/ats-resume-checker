@@ -13,30 +13,30 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: "Free ATS Resume Checker — Score, Scan & Fix Online",
+  title: "Free ATS Resume Checker (2026) — Score in 60 Seconds",
   description:
-    "Upload resume or CV—get ATS score, keyword match, format scan & fix plan in 60s. Free resume checker for job seekers worldwide. No signup.",
+    "Still no callbacks? Upload your resume—get ATS score, missing keywords & format errors in 60 sec. Free. No signup. Fix before your next apply.",
   ogTitle: "Free ATS Resume Checker — Instant Resume Score",
   h1: "Free ATS Resume Checker & Resume Score Online",
   primaryKeyword: "ATS resume checker",
-  richSnippets: ["FAQPage", "SoftwareApplication", "WebSite", "Organization", "BreadcrumbList"],
+  richSnippets: ["FAQPage", "WebApplication", "WebSite", "Organization", "BreadcrumbList"],
 };
 
 export const CTR_RESUME_CHECKER: PageCtrMeta = {
-  title: "Free Resume Checker — ATS Score, Keywords & Parse Test",
+  title: "ATS Resume Checker — Parse Test + Keyword Gaps (Free)",
   description:
-    "Free resume checker: ATS score, missing keywords, format parse test & fix checklist. Upload PDF or paste text—results in minutes. CV checker included.",
-  ogTitle: "Free Resume Checker — ATS Score + Parse Preview",
+    "See exactly what hiring software reads from your PDF. ATS score, keyword gaps, parse preview & fix checklist—upload now, results in under 2 minutes. Free.",
+  ogTitle: "ATS Resume Checker — Parse Test + Keyword Gaps",
   h1: "Free Resume Checker — ATS Score, Keywords & Fixes",
   primaryKeyword: "resume checker",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_FREE_RESUME_CHECKER_ONLINE: PageCtrMeta = {
-  title: "Free Resume Checker Online — ATS Score & Review",
+  title: "Resume Checker Free Online — Instant ATS Scan (2026)",
   description:
-    "Resume checker free online: no signup, instant ATS score, keyword gaps & format fixes. Upload PDF or paste text—see what hiring software reads.",
-  ogTitle: "Resume Checker Free Online — Free ATS Score",
+    "No account, no paywall: upload PDF or paste text for ATS score, keyword gaps & format flags. See what recruiters' software actually extracts.",
+  ogTitle: "Free Resume Checker Online — Instant ATS Scan",
   h1: "Free Resume Checker Online: ATS Score & Review",
   primaryKeyword: "free resume checker online",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
@@ -92,9 +92,9 @@ export const CTR_METHODOLOGY: PageCtrMeta = {
 };
 
 export const CTR_HOW_ATS_WORKS: PageCtrMeta = {
-  title: "How ATS Works — 5-Layer Resume Screening Explained",
+  title: "How ATS Works in 2026 — 5 Layers Explained",
   description:
-    "Exactly how ATS reads your resume: parse, index, search, filter, then 6-second human skim. Understand each layer so you can fix the right problem first.",
+    "Where resumes die: parse, index, keyword rank, filters, then 6-second human skim. Learn each ATS layer and test your file free—fix the right problem first.",
   ogTitle: "How ATS Works — From Upload to Recruiter Screen",
   h1: "How ATS Works: The 5-Layer Resume Screening Process",
   primaryKeyword: "how ATS works",
@@ -188,9 +188,9 @@ export const CTR_TERMS: PageCtrMeta = {
 };
 
 export const CTR_RESUME_KEYWORDS_DATABASE: PageCtrMeta = {
-  title: "Resume Keywords for ATS — Free Lists by Role",
+  title: "Resume Keywords for ATS — Free Lists by Role (2026)",
   description:
-    "Resume keywords database: ATS skills, verbs & phrases for 10 professions. Pair with free resume match tool & checker.",
+    "ATS keyword lists for 10+ professions: skills, verbs & must-have phrases. Find your gaps with the free match tool—scan in 60 seconds.",
   ogTitle: "Resume Keywords Database — ATS Lists by Role",
   h1: "Resume Keywords Database: ATS Lists by Profession",
   primaryKeyword: "resume keywords",
@@ -278,17 +278,17 @@ export const CTR_ATS_MISTAKES: PageCtrMeta = {
 };
 
 export const CTR_ATS_SCORE: PageCtrMeta = {
-  title: "ATS Score Explained — What It Means (Free Checker)",
+  title: "What Is a Good ATS Score? Free Checker + 2026 Guide",
   description:
-    "What your ATS score measures, how it differs from resume match score, and resume optimization steps. Check free with our ATS Resume Checker.",
-  ogTitle: "ATS Score Explained — Improve Before You Apply",
+    "ATS score isn't a pass/fail grade—learn what yours measures, how it differs from match %, and which fixes raise it fastest. Check free with one upload.",
+  ogTitle: "What Is a Good ATS Score? Benchmarks + Free Checker",
   h1: "ATS Score Explained for Resume Optimization",
   primaryKeyword: "ATS score",
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "HowTo", "Organization"],
 };
 
 export const CTR_ATS_FRIENDLY: PageCtrMeta = {
-  title: "How to Build an ATS Friendly Resume (10 Steps + Case Study)",
+  title: "ATS Friendly Resume — 10 Steps + Case Study (2026)",
   description:
     "Step-by-step ATS friendly resume guide: format, keywords, bullet proof, and export QA. Includes a real case study—51 to 78 score, same experience.",
   ogTitle: "ATS Friendly Resume — 10 Steps + Before/After Case Study",
@@ -468,9 +468,9 @@ export const CTR_WHY_NOT_GETTING_INTERVIEWS: PageCtrMeta = {
 };
 
 export const CTR_WHY_RESUME_GETS_REJECTED: PageCtrMeta = {
-  title: "Why Your Resume Gets Rejected — The Real 5-Stage Cause",
+  title: "Why Your Resume Gets Rejected — 5 Stages Diagnosed",
   description:
-    "Why resumes get rejected: parse failure, keyword filters, recruiter skim, title mismatch. Diagnose your exact failure point with the free checker.",
+    "Rejected before a human sees you? Pinpoint parse failure, keyword filters, or title mismatch—then fix that layer with our free checker. Real examples included.",
   ogTitle: "Why Resume Gets Rejected — Diagnose by Stage",
   h1: "Why Your Resume Gets Rejected (And How to Diagnose It)",
   primaryKeyword: "why resume gets rejected",
@@ -528,9 +528,9 @@ export const CTR_RESUME_MISTAKES_INTERVIEWS: PageCtrMeta = {
 };
 
 export const CTR_RESUME_SCREENING_EXPLAINED: PageCtrMeta = {
-  title: "Resume Screening Explained — 6 Stages From Upload to Interview",
+  title: "Resume Screening Explained — 6 Stages to Interview",
   description:
-    "Resume screening explained step by step: ATS parse, keyword rank, recruiter skim, hiring manager review. See which stage loses most applicants.",
+    "Resume screening explained: ATS parse, keyword rank, recruiter skim, hiring manager review. See which stage loses most applicants—and fix yours.",
   ogTitle: "Resume Screening Explained — ATS to Hiring Manager",
   h1: "Resume Screening Explained: 6 Stages From Upload to Interview",
   primaryKeyword: "resume screening explained",
@@ -538,20 +538,20 @@ export const CTR_RESUME_SCREENING_EXPLAINED: PageCtrMeta = {
 };
 
 export const CTR_RESUME_REJECTED_BY_ATS: PageCtrMeta = {
-  title: "Resume Rejected By ATS? Fix Free — Score & Guide",
+  title: "Resume Rejected by ATS? Free 30-Min Fix Plan (2026)",
   description:
-    "Resume rejected by ATS? Diagnose parse failures & keyword gaps with our free resume checker. Real examples + 30-minute fix workflow.",
-  ogTitle: "Resume Rejected By ATS — Free Diagnosis",
+    "ATS blocked your resume? Diagnose parse vs keyword failures, see before/after examples, and run the free checker on your exact PDF—fix in 30 minutes.",
+  ogTitle: "Resume Rejected By ATS — Free Diagnosis + Fix Plan",
   h1: "Resume Rejected By ATS: Diagnose & Fix Free",
   primaryKeyword: "resume rejected by ATS",
   richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_COMMON_ATS_REJECTION_REASONS: PageCtrMeta = {
-  title: "Common ATS Resume Rejection Reasons (2026)",
+  title: "12 ATS Rejection Reasons — With Fixes (2026)",
   description:
-    "Common ATS resume rejection reasons with examples & fixes: columns, keywords, filters. Free checker tests your PDF before the next apply.",
-  ogTitle: "Top ATS Rejection Reasons — Fix Before Apply",
+    "Columns, keyword dumps, buried titles—12 reasons ATS silently rejects you, each with a fix. Test your PDF free before the next application.",
+  ogTitle: "12 ATS Rejection Reasons — Fix Before You Apply",
   h1: "Common ATS Resume Rejection Reasons—and How to Fix Each",
   primaryKeyword: "common ATS resume rejection reasons",
   richSnippets: ["Article", "FAQPage", "ItemList", "BreadcrumbList", "Organization"],
@@ -578,9 +578,9 @@ export const CTR_CV_CHECKER: PageCtrMeta = {
 };
 
 export const CTR_COMPLETE_ATS_GUIDE: PageCtrMeta = {
-  title: "ATS Resume Optimization Guide — 12 Steps + Free Checker",
+  title: "ATS Resume Guide — 12 Steps to Pass Screening (2026)",
   description:
-    "The complete ATS optimization walkthrough: parsing mechanics, score interpretation, keyword placement, format QA, and rejection diagnosis. 12-step workflow with case studies.",
+    "Master ATS optimization: parsing, scores, keyword placement, format QA & rejection fixes. 12-step workflow with case studies—start with the free checker.",
   ogTitle: "ATS Resume Optimization — Complete 12-Step Master Guide",
   h1: "The Ultimate ATS Resume Optimization Guide",
   primaryKeyword: "ATS resume optimization",
@@ -588,10 +588,10 @@ export const CTR_COMPLETE_ATS_GUIDE: PageCtrMeta = {
 };
 
 export const CTR_PLATFORM_HUB_INDEX: PageCtrMeta = {
-  title: "Resume Optimization Platform — 9 Free Hubs",
+  title: "9 Free Resume Tools — Checker, Match & Keywords",
   description:
-    "Resume optimization platform: checker, review, score, keywords, match, ATS tools & CV checker. Cornerstone guides + free tools for global job seekers.",
-  ogTitle: "Resume Optimization Platform — Not Just a Checker",
+    "One platform: ATS checker, match analyzer, keyword finder, score guides & rejection fixes. Nine free hubs wired together—start with a 60-second scan.",
+  ogTitle: "9 Free Resume Tools — Checker, Match & Keywords",
   h1: "Resume Optimization Platform",
   primaryKeyword: "resume optimization platform",
   richSnippets: ["ItemList", "FAQPage", "Organization", "BreadcrumbList"],

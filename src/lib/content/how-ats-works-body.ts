@@ -169,4 +169,118 @@ Automated **resume analysis** cannot predict recruiter preference, internal refe
 4. **Read master guide** — [Complete ATS optimization](/complete-guide-ats-resume-optimization)
 
 Questions? See the [FAQ Center](/faq-center) or [ATS Guide Hub](/ats-guide).
+
+---
+
+## The recruiter's actual experience (after ATS)
+
+Once a profile survives parse and keyword filters, a recruiter opens it in the ATS interface — not as a beautifully formatted PDF, but as extracted plain text fields. They are typically searching against specific queries and reviewing 20–50 profiles at once.
+
+What they see in ~6 seconds:
+- **Title field** — Does it match what they searched for?
+- **Current employer and tenure** — Is it recent, relevant?
+- **First bullet of most recent role** — Is there a metric? A recognizable tool?
+- **Skills section** — Does it match must-have terms?
+
+If any of those four fail, they click Next. Your 8-page career summary never gets read.
+
+**Implication:** The most impactful resume edits are almost always at the top — title, summary, and the first two bullets of your most recent role. Fixing page 2 is lower priority than tightening page 1's first 6 lines.
+
+---
+
+## ATS by vendor: key differences that matter to you
+
+Not all ATS systems behave identically. Here are known differences for the platforms most job seekers encounter:
+
+| Platform | Used by | Known quirk for applicants |
+|----------|---------|----------------------------|
+| **Workday** | Large enterprise, Fortune 500 | Strong field parsing; supports PDF and DOCX reliably; internal job codes affect search |
+| **Greenhouse** | Tech startups, mid-size | Clean parsing; match quality varies by recruiter search configuration |
+| **Lever** | Growth-stage companies | Similar to Greenhouse; handles DOCX well |
+| **Taleo (Oracle)** | Enterprise, government | Older parser; two-column layouts frequently scramble; always use plain DOCX |
+| **iCIMS** | Healthcare, manufacturing | File type sensitive; DOCX preferred in many configurations |
+| **SAP SuccessFactors** | Global enterprise | Handles multilingual resumes; keyword matching tied to job template configuration |
+| **LinkedIn Easy Apply** | Global | Parses your LinkedIn profile first, then your uploaded file; profile-resume consistency matters |
+| **SmartRecruiters** | SMB, European companies | Generally modern parser; PDF text extraction reliable for most standard templates |
+
+**Rule of thumb:** When you do not know which ATS an employer uses, optimize for Taleo-level strictness (single-column, plain text, no tables or headers). That level of parse-friendliness works everywhere.
+
+---
+
+## How ATS handles different file types
+
+| Format | Parse reliability | Notes |
+|--------|------------------|-------|
+| **DOCX (Word)** | Highest | Clean field extraction; most compatible across old and new systems |
+| **PDF (text-based)** | High | Works if exported from Word/Google Docs with selectable text |
+| **PDF (image/scanned)** | Fails | No extractable text; treated as blank by most parsers |
+| **PDF (Canva/InDesign export)** | Variable | Graphics may be treated as images; text order often scrambled |
+| **Google Docs → Download as PDF** | High | Generally clean; verify with copy-paste test |
+| **RTF** | Medium | Supported by most systems but rarely necessary |
+| **TXT** | Low | No formatting; loses section context |
+
+Always run a copy-paste test: open your exported file, select all, paste into a text editor. If the result is out of order, parsers will see the same.
+
+---
+
+## Semantic entities ATS systems recognise
+
+Modern ATS platforms index not just exact keywords but associated **semantic entities** — technical terms that hiring workflows are built around. Being fluent in the language of your target industry is keyword optimization done right:
+
+- **Technology:** JavaScript/TypeScript, AWS/Azure/GCP, Docker/Kubernetes, SQL/NoSQL, CI/CD, Agile/Scrum
+- **Finance:** GAAP, IFRS, FP&A, DCF, SOX compliance, P&L ownership
+- **Healthcare:** EMR/EHR, HIPAA, patient triage, CPT codes, clinical documentation
+- **Marketing:** CRM (Salesforce/HubSpot), SEO/SEM, Google Analytics, A/B testing, CAC/LTV
+- **Project management:** PMP, Agile, Waterfall, JIRA, stakeholder management, OKRs
+
+The [Resume Keywords Database](/resume-keywords) lists profession-specific terms. The [ATS Keywords Finder](/ats-keywords-finder) extracts them from your target job posting.
+
+---
+
+## Common ATS misconceptions — debunked
+
+These circulate widely on job advice forums and cause candidates to focus on the wrong fixes:
+
+| Misconception | What actually happens |
+|---------------|----------------------|
+| "ATS auto-rejects 75% of resumes" | ATS ranks and filters; most human shortlists involve recruiter judgment. Parse and keyword issues reduce ranking—not an automatic binary reject. |
+| "You need a special ATS resume template" | Any clean single-column document works. Proprietary "ATS templates" often solve problems that do not exist while introducing new formatting quirks. |
+| "White-text hidden keywords beat the system" | Recruiters see highlighted hidden text when they paste your file. It signals dishonesty and gets candidates disqualified at many companies. |
+| "Higher keyword density = better ranking" | Repetition is a spam signal in both ATS and recruiter review. 2–3 honest appearances of a key term in context beats 12 stuffed appearances. |
+| "PDF always fails ATS" | Text-based PDFs from Word/Docs parse well. The problem is image PDFs, scanned files, and design-tool exports — not PDF as a format. |
+| "My ATS score is low so I failed" | Third-party tools estimate parse quality; they cannot replicate any specific employer's ATS configuration. Use scores for relative improvement tracking, not pass/fail certainty. |
+| "ATS reads in the order I intended" | Only if you use a single-column layout with sequential reading flow. Multi-column layouts cause parsers to read across columns horizontally, mixing content from different sections. |
+
+---
+
+## Industry-specific ATS patterns
+
+Different industries configure ATS differently:
+
+**Technology:** Title matching is strict — "Software Engineer" and "Developer" are different searches. Certifications (AWS SAA, CKA) are often hard-filter fields. GitHub contributions are sometimes scraped by integrations.
+
+**Healthcare:** Licensure numbers and credentials are required fields. Specialisation terms (ICU, NICU, perioperative) map to internal job codes. Location and availability are often hard filters.
+
+**Finance/Accounting:** Regulatory terms (SOX, GAAP, FCA) are common required fields. Years of experience filters are frequently used for titles like "Senior" or "Manager."
+
+**Creative/Marketing:** Portfolio links are extracted as separate fields in many systems. Tool fluency (Adobe suite, HubSpot, Google Analytics) drives keyword matching.
+
+**Government/Public sector:** Often use legacy ATS (USAJobs, similar national platforms) with strict structured fields. Resumes must explicitly match job announcement language — even down to phrasing.
+
+---
+
+## Quick-fix priority order
+
+When you have limited time before applying, fix in this sequence:
+
+1. **Copy-paste test** — 5 minutes: Does extracted text read logically? If not, fix layout before everything else.
+2. **Section headers** — 5 minutes: Are Experience, Education, Skills using standard labels?
+3. **Contact in body** — 2 minutes: Name, email, phone in the document body — not locked in header/footer.
+4. **First bullet of most recent role** — 15 minutes: Add a tool name + metric where you have proof.
+5. **Keyword match** — 20 minutes: Run [Resume Match Analyzer](/resume-job-description-match) against target posting; add 5 missing terms to existing bullets.
+6. **Re-export and re-check** — 5 minutes: Upload the exact binary to [ATS Resume Checker](/resume-checker) after each edit.
+
+Total: under 60 minutes for most candidates. Start with the checker before editing so you have a baseline to compare against.
+
+Explore all optimization guides in the [Career Success Hub](/career-success-hub) and the [ATS Knowledge Center](/knowledge-center).
 `;

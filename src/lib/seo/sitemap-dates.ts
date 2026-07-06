@@ -3,16 +3,22 @@
  * Update path entries when page content materially changes — avoids
  * Google seeing every URL as "just changed" on each deploy.
  */
-export const SITEMAP_DEFAULT_LAST_MODIFIED = "2026-07-03";
+export const SITEMAP_DEFAULT_LAST_MODIFIED = "2026-07-06";
 
 /** Path-specific overrides (ISO date YYYY-MM-DD). */
 export const SITEMAP_PATH_LAST_MODIFIED: Record<string, string> = {
-  "": "2026-07-03",
-  "/resume-checker": "2026-07-03",
-  "/knowledge-center": "2026-07-03",
-  "/complete-guide-ats-resume-optimization": "2026-07-03",
-  "/resume-rejected-by-ats": "2026-07-03",
-  "/why-resume-gets-rejected": "2026-07-03",
+  "": "2026-07-06",
+  "/resume-checker": "2026-07-06",
+  "/knowledge-center": "2026-07-06",
+  "/complete-guide-ats-resume-optimization": "2026-07-06",
+  "/resume-rejected-by-ats": "2026-07-06",
+  "/why-resume-gets-rejected": "2026-07-06",
+  "/how-ats-works": "2026-07-06",
+  "/ats-score-explained": "2026-07-06",
+  "/common-ats-resume-rejection-reasons": "2026-07-06",
+  "/ats-resume-keywords": "2026-07-06",
+  "/ats-resume-mistakes": "2026-07-06",
+  "/ats-friendly-resume-guide": "2026-07-06",
   "/profession/graphic-designer": "2026-06-03",
   "/profession/business-analyst": "2026-06-03",
   "/free-resume-checker-online": "2026-05-28",

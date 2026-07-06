@@ -86,6 +86,89 @@ Perfectionism is another rejection mode. Apply when:
 
 Browse the full [ATS Knowledge Center](/knowledge-center) for the rest of the workflow.
 
+## Score components in detail
+
+Understanding what feeds each component helps you target your editing time:
+
+### Skills coverage (30 points)
+Tools, languages, platforms, and certifications found in your resume. Measured against a general pool of professional terms — not against a specific posting (that is the match score's job). A Skills section alone contributes less than skills appearing in Experience bullets where there is context.
+
+### Experience depth (25 points)
+Bullet depth, tenure signals, and impact language. Bullet-heavy files with metrics outperform duty-only descriptions. Files with no Experience section at all often score near zero on this component.
+
+### ATS keyword match (20 points)
+Structural keywords and commonly indexed terms present in the document. This is the component most influenced by posting-specific tailoring — but since master resume scoring is posting-agnostic, this reflects general professional vocabulary coverage.
+
+### Formatting quality (15 points)
+Single vs multi-column, standard headings, extractable text, and absence of format flags (tables, text boxes, image-only elements). A single-column export from Word with standard section labels maxes this component with zero content edits.
+
+### Education (10 points)
+Credentials section detected and parseable: degree, institution, year. Missing or buried education sections penalise this component.
+
+---
+
+## ATS score vs rival tools: what different scores mean
+
+Different tools use different scoring algorithms. A "72" on ResumeIQ is not the same as a "72" on another platform. What stays consistent:
+
+- **Relative improvement** — if your score goes up after a format fix, parsing improved
+- **Format signal** — very low scores almost always indicate parse issues
+- **Baseline vs tailored gap** — master resume score vs match score reveals tailoring opportunity
+
+Use any score as a **directional signal**, not a hiring prediction.
+
+| Score range (ResumeIQ) | What it typically means | First action |
+|------------------------|------------------------|--------------|
+| Below 40 | Critical parse failure | Fix layout immediately; single column + text-based export |
+| 40–55 | Parse issues + sparse content | Format first, then strengthen bullets |
+| 55–70 | Readable but keyword-thin | Add 5–8 honest terms from target posting |
+| 70–85 | Strong master resume | Focus on match score per role |
+| 85–100 | Excellent baseline | Maintain; apply and refine per posting |
+
+---
+
+## Industry benchmarks: what scores look like by profession
+
+Scores vary by industry because professional vocabulary density varies. A software engineer resume naturally includes more indexed terms (Python, Docker, CI/CD) than a general operations resume.
+
+| Role type | Typical strong-file range | Main driver |
+|-----------|--------------------------|-------------|
+| Software engineering | 78–90 | High keyword density from tools and languages |
+| Marketing | 70–82 | Good when tools (HubSpot, Google Analytics) appear in bullets |
+| Finance/accounting | 68–80 | GAAP, FP&A, and credential terms drive the score |
+| Healthcare | 65–78 | Clinical terms index well; format issues more common |
+| Operations/admin | 60–75 | Lower baseline vocabulary density; gaps in bullets hurt most |
+| Entry-level (new grad) | 50–68 | Education and internship coverage offset experience gaps |
+
+These are not pass/fail thresholds — they reflect what a well-constructed resume in each field typically achieves.
+
+---
+
+## The match score workflow (when to use it)
+
+After establishing a strong baseline ATS score, the **match score** is the primary tool for each application:
+
+1. **Find a target posting** with requirements you genuinely meet
+2. **Open the [Resume Match Analyzer](/resume-job-description-match)** and paste the full job description
+3. **Review missing keywords** — focus on must-have qualifications, not every listed skill
+4. **Edit 3–5 bullets** to include missing terms where you have genuine proof
+5. **Re-export the PDF** and re-run both ATS score and match score
+6. **Target 70%+ match** on must-have terms before applying
+
+Chasing 90%+ match by adding terms you cannot defend is counterproductive — phone screens reveal the gap immediately. Focus on the intersection of "posting requires it" and "you have done it."
+
+---
+
+## When a high ATS score is not enough
+
+A strong ATS score and match score together are necessary but not sufficient:
+
+- **Hard filters override scores** — Required degree, visa, clearance, minimum years of experience are binary gates that no score optimization changes.
+- **Recruiter skim is the next gate** — Surviving keyword search means a human reads you for 6–10 seconds. Is the first bullet of your most recent role compelling?
+- **Interview readiness is separate** — ATS scores measure filing-system signals. Your ability to tell stories, answer technical questions, and demonstrate culture fit is not measured here.
+
+If you are passing ATS filters but not getting interviews, the issue is often the **human skim layer** — not the score. Read [why resume not getting interviews](/why-resume-not-getting-interviews) for that diagnostic.
+
 ---
 
 ## Who this guide is for

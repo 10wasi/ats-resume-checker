@@ -84,6 +84,69 @@ Full list: [common ATS resume rejection reasons](/common-ats-resume-rejection-re
 - [Why resume gets rejected](/why-resume-gets-rejected) — full rejection stack
 - [Resume not passing ATS](/resume-not-passing-ats) — parse vs score diagnosis
 - [Complete ATS optimization guide](/complete-guide-ats-resume-optimization) — master reference
+
+## How to interpret "no response" vs "quick rejection"
+
+The timing and method of non-response gives diagnostic clues:
+
+| Signal | Likely cause | What to check |
+|--------|-------------|---------------|
+| No response within 48 hours of apply | Hard filter or immediate parse failure | ATS Resume Checker — extract text and format flags |
+| Auto-rejection email within minutes | Required field filter (degree, visa, years) | Re-read job requirements — hard filter you cannot override |
+| Response from some companies, silence from others | Format-specific parse issue | Try DOCX vs PDF — some portals handle one better |
+| Phone screens for junior roles, silence for senior | Scope gap in bullets | Add team size, budget, and ownership language |
+| Good response rate in past, drops after resume update | New template broke parsing | Run new version through checker immediately |
+
+## Before vs after: same candidate, ATS rejection to phone screen
+
+Here is a real example of the same work history producing different outcomes through layout and language changes alone:
+
+**Before (4 weeks of silence):**
+- Two-column Canva template
+- Contact info in header graphic
+- Skills in icon sidebar (not extractable)
+- Bullets: "Responsible for managing vendor relationships"
+- ATS score: 44 — multiple format flags
+
+**After (3 phone screens in 10 days):**
+- Single-column Google Docs export
+- Name, email, phone in document body
+- Skills listed in plain-text Skills section
+- Bullet: "Negotiated 6 vendor contracts reducing SaaS spend $180K annually; managed 3 agency relationships across 4 markets"
+- ATS score: 76 — no critical flags
+
+The candidate's experience did not change. The file changed. The [ATS Resume Checker](/resume-checker) revealed the parse failures in under 2 minutes on the original file.
+
+## What actually triggers the ATS "reject" flag vs low rank
+
+ATS systems typically do two things: apply hard filters and rank survivors. Understanding which one you are hitting changes your fix:
+
+**Hard filter rejection** (binary — cannot be fixed by resume quality):
+- Required degree or credential you do not have
+- Required work authorization you cannot claim
+- Required location you are not in or willing to relocate to
+- Required minimum years of experience you are significantly under
+
+**Rank-based exclusion** (fixable):
+- Parse failure means your content never gets indexed properly
+- Missing must-have keywords means you rank below other candidates
+- Generic bullets mean you rank below candidates with more specific proof
+- Low match score means you appear further down the recruiter's sorted list
+
+If you are hitting hard filters — stop applying to that role and find better-fit postings. If you are losing on rank — fix parse first, then keywords, then bullets. The [ATS Resume Checker](/resume-checker) diagnoses the rank-based issues directly.
+
+## Checklist: confirm you are not hitting hard filters first
+
+Before spending time on resume optimization, confirm:
+
+- [ ] You meet the minimum years of experience listed (or are within 1–2 years)
+- [ ] You have the required degree or certification if listed as "required" (not "preferred")
+- [ ] You are authorized to work in the listed location
+- [ ] You meet any explicit technical requirement listed as "must have"
+
+If any of these fail, no resume fix helps. Redirect your application energy to roles where you clear every hard filter first.
+
+Explore all guides in the [Career Success Hub](/career-success-hub) and the [ATS Knowledge Center](/knowledge-center).
 ${RESUME_REJECTED_BY_ATS_EXTRA}
 `,
 };

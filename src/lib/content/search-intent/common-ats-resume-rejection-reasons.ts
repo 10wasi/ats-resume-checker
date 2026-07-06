@@ -85,5 +85,58 @@ See [resume examples](/resume-examples) for role-specific patterns.
 | Match % | [Resume match tool](/resume-job-description-match) |
 | Human skim | [Resume review online](/resume-review) |
 | AI suggestions | [AI resume review](/ai-resume-review) |
+
+## Recruiter perspective: what they see when these reasons apply
+
+Understanding what a recruiter actually experiences on their screen explains why these issues matter:
+
+**Reason 1 (two-column layout):** In many ATS interfaces, recruiters see extracted text — not your beautifully formatted PDF. Two-column text often renders as a scrambled mix of your skills and your employer names because the parser reads left to right across the page. Recruiters searching "Salesforce" may not find you because "Salesforce" appeared in a sidebar column that extracted out of order.
+
+**Reason 5 (missing must-have keyword):** Recruiters often set up saved searches with required terms. If "Salesforce" or "PMP" are marked as required by the recruiter's filter and your file doesn't contain them, you do not appear in their candidate list — even if you have the experience. You are not rejected; you are invisible.
+
+**Reason 10 (date gaps):** Parsers attempt to calculate total years of experience. If date fields are in non-standard formats (tables, text boxes, odd spacing), the parser fails to extract them correctly — sometimes reporting 0 or 1 year of experience regardless of your actual tenure. This can trigger automatic exclusion from roles requiring minimum experience.
+
+## The cascading failure pattern
+
+Most rejections are not caused by one issue — they cascade:
+
+1. Poor template choice (two-column) → parser scrambles text
+2. Scrambled text → keywords don't extract correctly
+3. Keywords not extracted → match score is artificially low
+4. Low match score → file ranks near the bottom
+5. Recruiter search → your file never surfaces
+
+The fix is also cascading: fix layout → keywords extract → score improves → ranking improves → recruiter search finds you.
+
+Start at step 1. Everything else improves automatically when parse is fixed.
+
+## Industry-specific rejection patterns
+
+Different industries have characteristically different rejection reasons:
+
+**Technology roles:** Title mismatch is the top cause. "Developer" vs "Software Engineer" vs "Software Development Engineer" are different search strings to most ATS systems. Mirror the exact title from the posting.
+
+**Healthcare:** Missing credential fields (RN, NP, PA-C, MD) trigger immediate hard filters. Credential abbreviations must appear exactly as the system expects.
+
+**Finance:** Years-of-experience filters are aggressive. A posting for "Senior Analyst" often filters for 5–7+ years. Check requirements before applying.
+
+**Creative/Marketing:** Portfolio links are frequently listed as required fields in ATS forms. If the field is required and blank, the application may not submit or may auto-exclude.
+
+**Government/Public sector:** Job announcements often use very specific mandatory keyword phrasing. Resumes that do not mirror the exact language used in the announcement score poorly in specialized government ATS systems.
+
+## After fixing: how to verify each reason is resolved
+
+| Reason | Verification method |
+|--------|---------------------|
+| Two-column layout | Copy-paste test: text reads in logical order in a plain text editor |
+| Scanned PDF | Open file → can you select text with your cursor? If not, it's image-only |
+| Non-standard headings | Extracted text in [checker](/resume-checker) shows your sections correctly labeled |
+| Missing keyword | [Match analyzer](/resume-job-description-match) shows 0 gap for must-have terms |
+| Low match score | Match score above 65–70% for posting-specific must-have terms |
+| Date format issues | Checker shows your employment dates correctly extracted |
+
+Run the full [ATS Resume Checklist](/ats-resume-checklist-2026) before each application batch.
+
+Explore all optimization guides in the [Career Success Hub](/career-success-hub) and the [ATS Knowledge Center](/knowledge-center).
 `,
 };

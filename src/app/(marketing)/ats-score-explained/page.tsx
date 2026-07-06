@@ -7,6 +7,7 @@ import {
 } from "@/lib/content/ats-score-explained-body";
 import { atsScoreExplainedFaqItems } from "@/lib/seo/ats-score-explained-faq";
 import { buildCtrMetadata, CTR_ATS_SCORE } from "@/lib/seo/ctr-metadata";
+import { HOWTO_ATS_SCORE, HOWTO_URLS } from "@/lib/seo/how-to-steps";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 const KEYWORDS = [
@@ -58,6 +59,12 @@ export default function AtsScoreExplainedPage() {
       }
       seo={atsScoreExplainedSeo}
       relatedIds={["match", "keywords", "checklist", "mistakes"]}
+      howTo={{
+        name: "How to improve your ATS score",
+        description: CTR_ATS_SCORE.description,
+        steps: HOWTO_ATS_SCORE,
+        path: HOWTO_URLS.atsScore,
+      }}
     />
   );
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
+import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
 import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { PageFaqSection } from "@/components/seo/PageFaqSection";
@@ -13,6 +14,7 @@ import {
 } from "@/lib/content/how-ats-works-body";
 import { buildCtrMetadata, CTR_HOW_ATS_WORKS } from "@/lib/seo/ctr-metadata";
 import { howAtsWorksFaqItems } from "@/lib/seo/how-ats-works-faq";
+import { HOWTO_HOW_ATS_WORKS, HOWTO_URLS } from "@/lib/seo/how-to-steps";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 export const metadata = buildCtrMetadata(CTR_HOW_ATS_WORKS, {
@@ -39,6 +41,12 @@ export default function HowAtsWorksPage() {
           { name: "Home", path: "/" },
           { name: "How ATS Works", path: HOW_ATS_WORKS_PATH },
         ]}
+      />
+      <HowToJsonLd
+        name="How to optimize your resume for ATS"
+        description={CTR_HOW_ATS_WORKS.description}
+        steps={HOWTO_HOW_ATS_WORKS}
+        path={HOWTO_URLS.howAtsWorks}
       />
       <PageFaqJsonLd items={howAtsWorksFaqItems} />
       <article className="relative">
