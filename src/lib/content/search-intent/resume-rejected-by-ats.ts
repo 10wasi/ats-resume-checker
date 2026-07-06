@@ -135,6 +135,8 @@ ATS systems typically do two things: apply hard filters and rank survivors. Unde
 
 If you are hitting hard filters — stop applying to that role and find better-fit postings. If you are losing on rank — fix parse first, then keywords, then bullets. The [ATS Resume Checker](/resume-checker) diagnoses the rank-based issues directly.
 
+[CTA]
+
 ## Checklist: confirm you are not hitting hard filters first
 
 Before spending time on resume optimization, confirm:

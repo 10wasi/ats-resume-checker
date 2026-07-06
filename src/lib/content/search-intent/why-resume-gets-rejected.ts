@@ -137,6 +137,8 @@ Before rewriting everything, spend 3 minutes on this self-diagnosis:
 
 These three checks cover the majority of ATS and recruiter-skim failures. Everything else is refinement.
 
+[CTA]
+
 ## What rejection does NOT mean
 
 - It does not mean you are unqualified — parse failures reject strong candidates constantly

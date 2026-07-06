@@ -127,6 +127,8 @@ Use any score as a **directional signal**, not a hiring prediction.
 
 ---
 
+[CTA]
+
 ## Industry benchmarks: what scores look like by profession
 
 Scores vary by industry because professional vocabulary density varies. A software engineer resume naturally includes more indexed terms (Python, Docker, CI/CD) than a general operations resume.

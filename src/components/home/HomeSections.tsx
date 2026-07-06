@@ -23,37 +23,63 @@ export function HeroSection() {
       />
       <div className="relative mx-auto max-w-6xl px-4 pb-24 pt-20 sm:px-6 sm:pb-28 sm:pt-24 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="section-eyebrow">
-            <IconSparkle className="h-3.5 w-3.5 shrink-0 text-[#4ade80]" />
-            Free ATS resume checker · resume scanner
-          </p>
-          <h1 className="mt-6 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.85rem] lg:leading-[1.1]">
+          {/* Star rating trust badge */}
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700">
+              <span aria-hidden>★★★★★</span>
+              Trusted by job seekers worldwide
+            </span>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
+              <IconSparkle className="h-3 w-3 shrink-0" aria-hidden />
+              Free · No signup required
+            </span>
+          </div>
+
+          <h1 className="mt-5 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.85rem] lg:leading-[1.1]">
             {CTR_HOME.h1}
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            Most applications never reach a human—hiring software filters them first.{" "}
+          <p className="mx-auto mt-5 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
+            Most applications never reach a human — hiring software filters them first.{" "}
             <strong className="font-semibold text-slate-800">ResumeIQ</strong> shows you
             exactly what that software sees: your{" "}
-            <strong className="font-semibold text-slate-800">resume ATS score</strong>, missing
-            keywords, format risks, and a clear fix plan. Free resume analysis for candidates
-            worldwide—students, career changers, executives, and remote applicants alike.
+            <strong className="font-semibold text-slate-800">resume ATS score</strong>, keyword
+            gaps, format risks, and a clear fix plan.{" "}
+            <strong className="font-semibold text-slate-800">Free. Instant. No account.</strong>
           </p>
           <HomeHeroPasteForm />
-          <p className="mt-6 text-sm text-slate-500">
-            Resume checker online · CV scan · No signup · Results in minutes
-          </p>
-          <ul className="mx-auto mt-8 flex max-w-xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-slate-500">
+
+          {/* Trust pill strip */}
+          <ul className="mx-auto mt-6 flex flex-wrap items-center justify-center gap-2 text-xs font-medium">
+            {[
+              { icon: "🔒", text: "No signup required" },
+              { icon: "⚡", text: "Results in under 2 min" },
+              { icon: "🆓", text: "Free ATS score" },
+              { icon: "📄", text: "PDF or paste text" },
+              { icon: "🌍", text: "Works worldwide" },
+            ].map((b) => (
+              <li
+                key={b.text}
+                className="flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3 py-1 text-slate-600 shadow-sm"
+              >
+                <span aria-hidden>{b.icon}</span>
+                {b.text}
+              </li>
+            ))}
+          </ul>
+
+          {/* Feature highlights */}
+          <ul className="mx-auto mt-5 flex max-w-xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-slate-500">
             <li className="flex items-center gap-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
-              ATS compatibility scan
+              ATS compatibility &amp; parse test
             </li>
             <li className="flex items-center gap-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
-              Keyword match &amp; resume review
+              Keyword match vs job description
             </li>
             <li className="flex items-center gap-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
-              Why, how &amp; impact on every fix
+              Priority fix list with reasoning
             </li>
           </ul>
         </div>

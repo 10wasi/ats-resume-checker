@@ -8,7 +8,7 @@ import { RelatedResources } from "@/components/seo/RelatedResources";
 import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
-import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
+import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
 import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import { KNOWLEDGE_CENTER_PATH } from "@/lib/content/knowledge-center-pages";
@@ -105,7 +105,7 @@ export function KnowledgeGuidePage({
             <div className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
               {intro}
             </div>
-            <ContentFreshnessLabel path={path} className="mt-4" />
+            <GuideArticleMeta path={path} />
           </header>
 
           <AdPlaceholder label="Advertisement · resource" className="mt-10" />

@@ -478,11 +478,11 @@ export const CTR_WHY_RESUME_GETS_REJECTED: PageCtrMeta = {
 };
 
 export const CTR_RESUME_NOT_PASSING_ATS: PageCtrMeta = {
-  title: "Resume Not Working ATS? Diagnose & Fix Free",
+  title: "Resume Not Passing ATS? Diagnose & Fix Free (2026)",
   description:
-    "Resume not working ATS or not passing? Learn parse vs keyword failures, see examples & test your PDF free with our resume checker online.",
-  ogTitle: "Resume Not Passing ATS — Fix Parse & Keywords",
-  h1: "Resume Not Working ATS: Diagnose and Fix",
+    "Resume not passing ATS screening? Identify parse vs keyword failure in 5 minutes—see real examples and test your PDF free before your next application.",
+  ogTitle: "Resume Not Passing ATS — Free Diagnosis + Fix Plan",
+  h1: "Resume Not Passing ATS: Diagnose and Fix",
   primaryKeyword: "resume not working ATS",
   richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
@@ -598,10 +598,10 @@ export const CTR_PLATFORM_HUB_INDEX: PageCtrMeta = {
 };
 
 export const CTR_ATS_RESUME_REVIEW: PageCtrMeta = {
-  title: "ATS Resume Review — Free Online Scan & Score",
+  title: "ATS Resume Review — Free Scan, Score & Fix Plan",
   description:
-    "Free ATS resume review: parse test, keyword gaps, format flags & readiness report. ATS resume review online—global job applications.",
-  ogTitle: "ATS Resume Review — Free Scan & Fixes",
+    "Free ATS resume review: see what parsers extract, find keyword gaps vs your job post, and get a priority fix checklist. No signup, results in under 2 minutes.",
+  ogTitle: "ATS Resume Review — Free Parse Test + Fix Plan",
   h1: "ATS Resume Review: Free Online Scan & Fixes",
   primaryKeyword: "ATS resume review",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],

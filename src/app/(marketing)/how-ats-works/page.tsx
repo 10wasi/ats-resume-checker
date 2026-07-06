@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
 import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
 import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
@@ -66,7 +67,12 @@ export default function HowAtsWorksPage() {
             <h1 className="mt-4 font-display text-3xl font-bold text-slate-900 sm:text-4xl">
               {CTR_HOW_ATS_WORKS.h1}
             </h1>
-            <p className="mt-6 text-lg text-slate-600">
+            <GuideArticleMeta
+              path={HOW_ATS_WORKS_PATH}
+              readTime={10}
+              audience="Job seekers applying through employer portals and job boards globally"
+            />
+            <p className="mt-5 text-lg text-slate-600">
               What applicant tracking systems do, what they check on your resume, and how to{" "}
               <strong className="font-semibold text-slate-800">improve resume score</strong>{" "}
               signals— for job seekers applying{" "}

@@ -186,11 +186,34 @@ function MarkdownTable({ rows }: { rows: string[][] }) {
   );
 }
 
+function BlogInlineCta() {
+  return (
+    <aside className="not-prose my-10 flex flex-col items-center gap-3 rounded-2xl border border-emerald-200 bg-emerald-50/60 px-6 py-5 text-center sm:flex-row sm:text-left">
+      <div className="flex-1">
+        <p className="font-semibold text-slate-900">See exactly how your resume scores right now</p>
+        <p className="mt-1 text-sm text-slate-600">
+          Upload PDF or paste text — free ATS score, keyword gaps &amp; priority fixes in under 2 minutes.
+        </p>
+      </div>
+      <Link
+        href={RESUME_CHECKER_PATH}
+        className="btn-gradient shrink-0 px-5 text-sm"
+      >
+        Check my resume free
+      </Link>
+    </aside>
+  );
+}
+
 export function BlogContent({ content }: { content: string }) {
   const blocks = content.split(/\n\n+/).map((b) => b.trim()).filter(Boolean);
 
   const out: ReactNode[] = [];
   blocks.forEach((block, idx) => {
+    if (block === "[CTA]") {
+      out.push(<BlogInlineCta key={idx} />);
+      return;
+    }
     if (block === "---") {
       out.push(<hr key={idx} className="my-10 border-slate-200" />);
       return;

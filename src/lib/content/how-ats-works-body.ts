@@ -237,6 +237,8 @@ The [Resume Keywords Database](/resume-keywords) lists profession-specific terms
 
 ---
 
+[CTA]
+
 ## Common ATS misconceptions — debunked
 
 These circulate widely on job advice forums and cause candidates to focus on the wrong fixes:
