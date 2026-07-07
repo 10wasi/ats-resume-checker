@@ -52,6 +52,30 @@ export function HomeTopicAuthoritySection() {
       href: "/ats-resume-checker",
       badge: "Tool guide",
     },
+    {
+      title: "Resume Score Checker",
+      desc: "What your ATS score percentage means, good benchmarks, and how to improve it fast.",
+      href: "/resume-score-checker",
+      badge: "Score guide",
+    },
+    {
+      title: "ATS Optimization Guide",
+      desc: "Complete guide to passing ATS: format, keywords, match score, and pre-submit QA.",
+      href: "/ats-guide",
+      badge: "Guide",
+    },
+    {
+      title: "Resume Keywords by Industry",
+      desc: "ATS keyword lists for tech, healthcare, finance, marketing, and more.",
+      href: "/resume-keywords-by-industry",
+      badge: "Keywords",
+    },
+    {
+      title: "Resume Not Passing ATS?",
+      desc: "Diagnose whether you have a parse failure or keyword gap — and get the right fix first.",
+      href: "/resume-not-passing-ats",
+      badge: "Diagnosis",
+    },
   ];
 
   return (

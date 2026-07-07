@@ -34,6 +34,13 @@ export function HomeWebApplicationJsonLd() {
       "PDF and DOCX upload",
       "Paste text mode",
     ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      ratingCount: "3200",
+      bestRating: "5",
+      worstRating: "1",
+    },
     potentialAction: {
       "@type": "Action",
       name: "Check your resume ATS score free",

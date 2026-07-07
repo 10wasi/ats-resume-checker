@@ -7,7 +7,7 @@ export const SITEMAP_DEFAULT_LAST_MODIFIED = "2026-07-06";
 
 /** Path-specific overrides (ISO date YYYY-MM-DD). */
 export const SITEMAP_PATH_LAST_MODIFIED: Record<string, string> = {
-  "": "2026-07-08",
+  "": "2026-07-09",
   "/resume-checker": "2026-07-06",
   "/knowledge-center": "2026-07-06",
   "/complete-guide-ats-resume-optimization": "2026-07-06",

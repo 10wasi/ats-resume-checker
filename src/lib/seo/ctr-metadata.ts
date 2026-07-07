@@ -13,20 +13,20 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: "Free ATS Resume Checker (2026) — Score in 60 Seconds",
+  title: "Free ATS Resume Checker & Resume Score Analyzer | Improve Your Resume in Minutes",
   description:
-    "Still no callbacks? Upload your resume—get ATS score, missing keywords & format errors in 60 sec. Free. No signup. Fix before your next apply.",
-  ogTitle: "Free ATS Resume Checker — Instant Resume Score",
+    "Check your resume against ATS systems, find missing keywords, improve your resume score, and increase your chances of getting interviews. Free ATS resume checker online.",
+  ogTitle: "Free ATS Resume Checker — Instant Resume Score & Keyword Analysis",
   h1: "Free ATS Resume Checker & Resume Score Online",
   primaryKeyword: "ATS resume checker",
   richSnippets: ["FAQPage", "WebApplication", "WebSite", "Organization", "BreadcrumbList"],
 };
 
 export const CTR_RESUME_CHECKER: PageCtrMeta = {
-  title: "ATS Resume Checker — Parse Test + Keyword Gaps (Free)",
+  title: "ATS Resume Checker – Free Resume Score & Keyword Analysis",
   description:
-    "See exactly what hiring software reads from your PDF. ATS score, keyword gaps, parse preview & fix checklist—upload now, results in under 2 minutes. Free.",
-  ogTitle: "ATS Resume Checker — Parse Test + Keyword Gaps",
+    "Upload your resume and get an ATS score, keyword analysis, formatting feedback, and improvement suggestions instantly. Free ATS resume checker — no signup required.",
+  ogTitle: "ATS Resume Checker — Free Score, Keywords & Fixes",
   h1: "Free Resume Checker — ATS Score, Keywords & Fixes",
   primaryKeyword: "resume checker",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],

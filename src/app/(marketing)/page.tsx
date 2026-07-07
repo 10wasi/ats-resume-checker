@@ -10,6 +10,7 @@ import { buildCtrMetadata, CTR_HOME } from "@/lib/seo/ctr-metadata";
 import { HomeBeforeAfterSection } from "@/components/home/HomeBeforeAfterSection";
 import { HomeAtsReportPreviewSection } from "@/components/home/HomeAtsReportPreviewSection";
 import { HomeAtsMistakesSection } from "@/components/home/HomeAtsMistakesSection";
+import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 
 function SectionSkeleton({ height = "h-48" }: { height?: string }) {
   return (
@@ -176,6 +177,7 @@ export default function HomePage() {
       />
       <FaqSection />
       <HomeStrongCtaSection />
+      <StickyCheckerCta />
     </>
   );
 }
