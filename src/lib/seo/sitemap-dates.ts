@@ -3,11 +3,16 @@
  * Update path entries when page content materially changes — avoids
  * Google seeing every URL as "just changed" on each deploy.
  */
-export const SITEMAP_DEFAULT_LAST_MODIFIED = "2026-07-06";
+export const SITEMAP_DEFAULT_LAST_MODIFIED = "2026-07-08";
 
 /** Path-specific overrides (ISO date YYYY-MM-DD). */
 export const SITEMAP_PATH_LAST_MODIFIED: Record<string, string> = {
   "": "2026-07-09",
+  "/resume-headline-generator": "2026-07-08",
+  "/cover-letter-generator": "2026-07-08",
+  "/ats-guide": "2026-07-08",
+  "/resume-review": "2026-07-08",
+  "/resume-optimization": "2026-07-08",
   "/resume-checker": "2026-07-06",
   "/knowledge-center": "2026-07-06",
   "/complete-guide-ats-resume-optimization": "2026-07-06",

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
+import { TableOfContents } from "@/components/blog/TableOfContents";
 import { KnowledgeCenterRelated } from "@/components/knowledge/KnowledgeCenterRelated";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
@@ -110,7 +111,11 @@ export function KnowledgeGuidePage({
 
           <AdPlaceholder label="Advertisement · resource" className="mt-10" />
 
-          <div className="mt-10">
+          <div className="mt-8">
+            <TableOfContents content={body} />
+          </div>
+
+          <div className="mt-6">
             <BlogContent content={body} />
           </div>
 

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
+import { TableOfContents } from "@/components/blog/TableOfContents";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
 import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
@@ -84,7 +85,10 @@ export default function HowAtsWorksPage() {
               .
             </p>
           </header>
-          <div className="mt-10">
+          <div className="mt-8">
+            <TableOfContents content={howAtsWorksBody} />
+          </div>
+          <div className="mt-6">
             <BlogContent content={howAtsWorksBody} />
           </div>
           <GuideEeatSection path={HOW_ATS_WORKS_PATH} />

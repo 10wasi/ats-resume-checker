@@ -637,6 +637,26 @@ export const CTR_RESUME_OBJECTIVE: PageCtrMeta = {
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
+export const CTR_RESUME_HEADLINE_GENERATOR: PageCtrMeta = {
+  title: "Resume Headline Generator — 60+ Examples by Role & Industry",
+  description:
+    "Write a powerful resume headline in minutes. See 60+ ATS-friendly resume headline examples by role, formula templates, and common mistakes to avoid.",
+  ogTitle: "Resume Headline Generator — ATS Examples by Industry",
+  h1: "Resume Headline Generator: 60+ Examples & Formulas",
+  primaryKeyword: "resume headline generator",
+  richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_COVER_LETTER_GENERATOR: PageCtrMeta = {
+  title: "Cover Letter Generator — Free ATS-Friendly Templates (2026)",
+  description:
+    "Generate an ATS-friendly cover letter using proven structures, keyword alignment tips, and role-specific examples. Free cover letter guide — no signup needed.",
+  ogTitle: "Cover Letter Generator — ATS-Friendly Templates & Examples",
+  h1: "Cover Letter Generator: ATS-Friendly Templates & Examples",
+  primaryKeyword: "cover letter generator",
+  richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
 export function buildCtrMetadata(
   meta: PageCtrMeta,
   options: {
