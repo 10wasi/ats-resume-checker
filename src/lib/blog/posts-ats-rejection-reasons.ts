@@ -6,7 +6,7 @@ export const atsRejectionReasonsPost: BlogPost = {
   seoTitle:
     "Why Resumes Get Rejected by ATS (2026) | Top Reasons, Fixes & ATS Checker",
   description:
-    "Why resumes get rejected by ATS—even when you are qualified: parsing, keywords, layout, and filters explained in plain English, with examples, FAQ, and fixes. Check your ATS score before you apply.",
+    "Why resumes get rejected by ATS even when you are qualified: parsing failures, keyword gaps, layout issues, and hard filters — explained with examples and fixes.",
   date: "2026-05-14",
   author: "ResumeIQ Editorial",
   coverVariant: "violet",

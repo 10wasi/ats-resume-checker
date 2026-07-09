@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const modified = getContentLastUpdated(`/blog/${post.slug}`);
 
   return {
-    title: pageTitle,
+    title: { absolute: pageTitle },
     description: post.description,
     alternates: { canonical: `/blog/${post.slug}` },
     robots: { index: true, follow: true },

@@ -14,7 +14,7 @@ export const beatAtsFilters2026Post: BlogPost = {
   seoTitle:
     "How to Beat ATS Resume Filters in 2026 | Tips, Keywords & Free Checker",
   description:
-    "Learn how to beat ATS filters in 2026: formatting, ATS keywords, structure, and honest resume optimization—plus a free ATS Resume Checker to test before you apply.",
+    "Beat ATS filters in 2026 with better formatting, honest keywords, and clean structure. Test your resume free before every application.",
   date: "2026-05-19",
   author: "ResumeIQ Editorial",
   coverVariant: "emerald",

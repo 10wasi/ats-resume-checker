@@ -6,7 +6,7 @@ export const atsFriendly2026CompleteGuidePost: BlogPost = {
   seoTitle:
     "How to Make Your Resume ATS-Friendly in 2026 | Complete Guide + Checklist",
   description:
-    "A complete 2026 guide to building an ATS friendly resume: what ATS scans, common mistakes, formatting rules, keyword strategy, FAQs, and a final checklist to improve your resume ATS score.",
+    "Complete 2026 guide to making your resume ATS-friendly: what parsers scan, common mistakes, keyword strategy, and a final checklist to raise your ATS score.",
   date: "2026-05-09",
   author: "ATS Resume Checker Editorial",
   coverVariant: "emerald",

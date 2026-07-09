@@ -14,7 +14,7 @@ export const qualifiedCandidatesRejected2026Post: BlogPost = {
   seoTitle:
     "Why Qualified Candidates Still Get Rejected in 2026 | ATS Resume Tips | ResumeIQ",
   description:
-    "If you are qualified but ghosted after applying, you are not broken—hiring software might be. Learn why resumes get rejected, how ATS filters work, and how resume optimization + a free ATS resume checker can help.",
+    "Qualified but not getting interviews? Hiring software may be filtering you out. Learn why resumes get rejected by ATS and how to fix it — free checker included.",
   date: "2026-05-12",
   author: "ResumeIQ Editorial",
   coverVariant: "amber",

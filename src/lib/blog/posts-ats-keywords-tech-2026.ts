@@ -6,7 +6,7 @@ export const atsKeywordsTechJobs2026Post: BlogPost = {
   seoTitle:
     "Best ATS Resume Keywords for Tech Jobs (2026) | Software Engineer List",
   description:
-    "Tech resume keywords that help ATS parsing and recruiter search: software engineer, frontend, backend, and recruiter scan terms—plus mistakes to avoid and how to improve resume ATS score.",
+    "Tech resume keywords for ATS in 2026: software engineer, frontend, and backend terms that improve parsing and recruiter search visibility — plus common mistakes to avoid.",
   date: "2026-05-12",
   author: "ATS Resume Checker Editorial",
   coverVariant: "indigo",

@@ -6,7 +6,7 @@ export const resumeKeywords2026GuidePost: BlogPost = {
   seoTitle:
     "Best Resume Keywords 2026 | ATS Keywords List & CV Optimization Tips",
   description:
-    "Learn which resume keywords matter in 2026, why ATS systems use them, how to find keywords from job posts, and beginner-friendly CV optimization tips—with examples for IT, marketing, and freshers.",
+    "Which resume keywords matter in 2026, why ATS systems use them, and how to find them from job posts — with beginner-friendly tips and examples for IT, marketing, and freshers.",
   date: "2026-05-08",
   author: "ATS Resume Checker Editorial",
   coverVariant: "sky",

@@ -6,7 +6,7 @@ export const resumeMistakesAts2026Post: BlogPost = {
   seoTitle:
     "10 Resume Mistakes That Cause ATS Rejections in 2026 | Fix & Checklist",
   description:
-    "Ten resume mistakes that trigger ATS rejections in 2026—formatting, keywords, graphics, structure—and how to fix them with an ATS friendly resume checklist and free score check.",
+    "10 resume mistakes that trigger ATS rejections in 2026 — formatting, keywords, graphics, structure — with fixes and a free ATS score check.",
   date: "2026-05-11",
   author: "ATS Resume Checker Editorial",
   coverVariant: "amber",

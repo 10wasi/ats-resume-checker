@@ -15,7 +15,7 @@ export const resumeSkillsAtsVisibility2026Post: BlogPost = {
   seoTitle:
     "Best Resume Skills for ATS 2026 | Improve Visibility & ATS Score | ResumeIQ",
   description:
-    "Discover the best resume skills for ATS in 2026: hard vs soft skills, industry examples, keyword placement, formatting tips, mistakes to avoid, and a free ATS Resume Checker to improve ATS compatibility.",
+    "Best resume skills for ATS in 2026: hard vs soft skills, industry examples, keyword placement, formatting tips, and mistakes to avoid. Test your resume free.",
   date: "2026-05-22",
   author: "ResumeIQ Editorial",
   coverVariant: "emerald",

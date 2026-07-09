@@ -6,7 +6,7 @@ export const atsResumeFormat2026Post: BlogPost = {
   seoTitle:
     "Best ATS Resume Format 2026 | Templates, Rules & ATS Friendly CV Tips",
   description:
-    "Choose the best ATS resume format in 2026: section order, layout rules, do's and don'ts, and a simple template-style outline—plus how to verify your CV before you apply.",
+    "Best ATS resume format in 2026: section order, layout rules, do's and don'ts, and a simple outline — plus how to verify your CV parses correctly before you apply.",
   date: "2026-05-09",
   author: "ATS Resume Checker Editorial",
   coverVariant: "indigo",

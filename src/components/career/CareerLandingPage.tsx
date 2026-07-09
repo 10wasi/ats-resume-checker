@@ -1,13 +1,16 @@
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
+import { TableOfContents } from "@/components/blog/TableOfContents";
+import { AccordionFaq } from "@/components/ui/AccordionFaq";
 import { CareerHubRelated } from "@/components/career/CareerHubRelated";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { RelatedResources } from "@/components/seo/RelatedResources";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
-import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
+import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
 import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import { TopicPillarBanner } from "@/components/seo/TopicPillarBanner";
@@ -19,6 +22,11 @@ import type { CareerLandingEntry } from "@/lib/content/career-success-hub/types"
 import { getPlatformHubByPath } from "@/lib/content/platform-hubs/registry";
 import { PlatformHubSections } from "@/components/hub/PlatformHubSections";
 import type { FaqItem } from "@/lib/seo/faq";
+
+const ReadingProgress = dynamic(
+  () => import("@/components/ui/ReadingProgress").then((m) => ({ default: m.ReadingProgress })),
+  { ssr: false }
+);
 
 type Props = {
   entry: CareerLandingEntry;
@@ -89,6 +97,7 @@ export function CareerLandingPage({
         ]}
       />
       <PageFaqJsonLd items={faqItems} />
+      <ReadingProgress />
       <article className="relative">
         <div
           className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[380px] bg-mesh"
@@ -127,7 +136,7 @@ export function CareerLandingPage({
             <div className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
               {intro}
             </div>
-            <ContentFreshnessLabel path={entry.path} className="mt-4" />
+            <GuideArticleMeta path={entry.path} />
           </header>
 
           {REJECTION_PILLAR_IDS.has(entry.id) ? (
@@ -144,7 +153,11 @@ export function CareerLandingPage({
 
           <AdPlaceholder label="Advertisement · resource" className="mt-10" />
 
-          <div className="mt-10">
+          <div className="mt-8">
+            <TableOfContents content={entry.body} />
+          </div>
+
+          <div className="mt-6">
             <BlogContent content={entry.body} />
           </div>
 
@@ -156,32 +169,12 @@ export function CareerLandingPage({
 
           {platformHub ? <PlatformHubSections hub={platformHub} /> : null}
 
-          <section
-            className="mt-16 border-t border-slate-200 pt-14"
-            aria-labelledby="career-faq-heading"
-          >
-            <h2
-              id="career-faq-heading"
-              className="font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl"
-            >
-              {faqHeading}
-            </h2>
-            {faqIntro ? (
-              <div className="mt-3 text-slate-600">{faqIntro}</div>
-            ) : null}
-            <div className="mt-10 space-y-10">
-              {faqItems.map((item) => (
-                <div key={item.question}>
-                  <h3 className="text-lg font-semibold text-slate-900">
-                    {item.question}
-                  </h3>
-                  <p className="mt-2 leading-relaxed text-slate-700">
-                    {item.answer}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
+          <AccordionFaq
+            items={faqItems}
+            heading={faqHeading}
+            headingId="career-faq-heading"
+            intro={faqIntro}
+          />
 
           <CareerHubRelated currentId={entry.id} />
           <BlogResumeCta />

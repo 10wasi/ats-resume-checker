@@ -26,7 +26,7 @@ export const blogPosts: BlogPost[] = [
     seoTitle:
       "Best Free ATS Resume Checker Online (2026) | Boost Your Resume Score",
     description:
-      "Find the best free ATS resume checker online for job seekers in 2026. Learn how ATS systems work, why resumes get rejected, and how to improve your resume score with practical, human tips.",
+      "Best free ATS resume checker online for 2026. See why resumes get rejected, how ATS works, and how to improve your score — no signup, instant results.",
     date: "2026-05-08",
     author: "ResumeIQ Editorial",
     coverVariant: "violet",
@@ -334,7 +334,7 @@ A simple resume that gets read will always beat a beautiful one that gets ignore
     seoTitle:
       "Check Resume ATS Score Free Online (2026 Guide) | Free ATS Resume Checker",
     description:
-      "Learn how to check your resume ATS score free online in 2026. A practical guide on ATS resume checkers, improving your score, and building an ATS friendly resume that gets interviews.",
+      "How to check your resume ATS score free online in 2026: practical steps to improve your score, fix common rejections, and build a resume that gets interviews.",
     date: "2026-05-07",
     author: "ResumeIQ Editorial",
     coverVariant: "indigo",
@@ -1070,7 +1070,7 @@ For broader guidance and more real-world examples, you can also explore the [hom
     title: "How to Pass ATS Resume System Screening",
     seoTitle: "How to Pass ATS Resume System | Plain Steps That Still Work",
     description:
-      "Practical guide to passing ATS resume system filters: parsing-friendly files, honest keywords, section labels, and mistakes that quietly disqualify qualified candidates.",
+      "Pass ATS resume system filters with parsing-safe files, honest keywords, and correct section labels. Avoid the quiet mistakes that disqualify qualified candidates.",
     date: "2026-04-29",
     author: "ResumeIQ Editorial",
     coverVariant: "sky",
@@ -1158,7 +1158,7 @@ Readable, honest, and aligned with the role. Design is there to support those go
     seoTitle:
       "AI Resume Optimization Guide | Smart Use of an AI Resume Analyzer",
     description:
-      "AI resume optimization without losing your voice: when to trust an AI resume analyzer, what to ignore, and how to turn suggestions into interview-ready bullets.",
+      "AI resume optimization that keeps your voice: when to trust an AI resume analyzer, what to ignore, and how to turn suggestions into interview-ready bullets.",
     date: "2026-04-27",
     author: "ResumeIQ Editorial",
     coverVariant: "violet",
@@ -1438,7 +1438,7 @@ Anything on the page is fair game to drill into — especially **ATS resume scor
     seoTitle:
       "Job Winning Resume Strategies | Simple Moves for More Interviews",
     description:
-      "Job winning resume strategies for 2026: tailoring without burnout, proof over polish, networking hooks, and pairing a resume optimization tool with human effort.",
+      "Job-winning resume strategies for 2026: tailor without burnout, prioritize proof over polish, and pair a resume optimization tool with real human effort.",
     date: "2026-04-21",
     author: "ResumeIQ Editorial",
     coverVariant: "amber",
