@@ -83,6 +83,21 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     title: "Resume Achievement Generator",
     description: "Turn one win into metric-driven achievement bullets.",
   },
+  headlineGenerator: {
+    href: "/resume-headline-generator",
+    title: "Resume Headline Generator",
+    description: "60+ ATS-friendly headline examples and formulas by role.",
+  },
+  coverLetterGenerator: {
+    href: "/cover-letter-generator",
+    title: "Cover Letter Generator",
+    description: "ATS-friendly cover letter structure, templates, and examples.",
+  },
+  interviewQuestionGenerator: {
+    href: "/interview-question-generator",
+    title: "Interview Question Generator",
+    description: "100+ interview questions with STAR answers by role and type.",
+  },
   aiRewrite: {
     href: "/ai-resume-rewrite",
     title: "AI Resume Rewrite",
@@ -356,6 +371,36 @@ const DEFAULT_KEYS = [
 
 /** Curated related clusters per route — avoids generic duplicate lists. */
 const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
+  "/resume-headline-generator": [
+    "checker",
+    "summaryGenerator",
+    "bulletGenerator",
+    "achievementGenerator",
+    "coverLetterGenerator",
+    "interviewQuestionGenerator",
+    "examples",
+    "knowledgeCenter",
+  ],
+  "/cover-letter-generator": [
+    "checker",
+    "headlineGenerator",
+    "summaryGenerator",
+    "bulletGenerator",
+    "interviewQuestionGenerator",
+    "match",
+    "keywordsGuide",
+    "knowledgeCenter",
+  ],
+  "/interview-question-generator": [
+    "checker",
+    "bulletGenerator",
+    "summaryGenerator",
+    "headlineGenerator",
+    "coverLetterGenerator",
+    "achievementGenerator",
+    "examples",
+    "knowledgeCenter",
+  ],
   "/resume-action-verbs": [
     "checker",
     "resumeKeywordsDb",

@@ -80,6 +80,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/resume-objective", priority: 0.88, changeFrequency: "monthly" },
     { path: "/resume-headline-generator", priority: 0.89, changeFrequency: "weekly" },
     { path: "/cover-letter-generator", priority: 0.89, changeFrequency: "weekly" },
+    { path: "/interview-question-generator", priority: 0.89, changeFrequency: "weekly" },
     { path: "/ultimate-ats-resume-guide", priority: 0.9, changeFrequency: "monthly" },
     { path: "/ats-resume-checklist-2026", priority: 0.9, changeFrequency: "monthly" },
     { path: "/about", priority: 0.75, changeFrequency: "monthly" },

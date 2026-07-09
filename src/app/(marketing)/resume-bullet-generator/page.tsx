@@ -1,6 +1,7 @@
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { BlogResumeCta } from "@/components/blog/BlogExtras";
+import { AccordionFaq } from "@/components/ui/AccordionFaq";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
@@ -79,17 +80,7 @@ export default function ResumeBulletGeneratorPage() {
             <ResumeBulletGeneratorTool />
           </div>
           <AdPlaceholder label="Advertisement · tool" className="mt-10" />
-          <section className="mt-16 border-t border-slate-200 pt-14">
-            <h2 className="font-display text-2xl font-bold text-slate-900">FAQ</h2>
-            <div className="mt-10 space-y-10">
-              {resumeBulletGeneratorFaqItems.map((item) => (
-                <div key={item.question}>
-                  <h3 className="text-lg font-semibold text-slate-900">{item.question}</h3>
-                  <p className="mt-2 text-slate-700">{item.answer}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+          <AccordionFaq items={resumeBulletGeneratorFaqItems} heading="FAQ" />
           <RelatedResources path="/resume-bullet-generator" excludeHref="/resume-bullet-generator" />
           <BlogResumeCta />
         </div>

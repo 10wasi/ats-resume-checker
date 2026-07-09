@@ -657,6 +657,16 @@ export const CTR_COVER_LETTER_GENERATOR: PageCtrMeta = {
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
+export const CTR_INTERVIEW_QUESTION_GENERATOR: PageCtrMeta = {
+  title: "Interview Question Generator — 100+ Questions by Role & Type",
+  description:
+    "Prepare for any interview with 100+ role-specific questions, model answers, STAR method examples, and common mistake warnings. Free interview prep guide.",
+  ogTitle: "Interview Question Generator — Role-Specific Questions & Answers",
+  h1: "Interview Question Generator: 100+ Questions by Role & Type",
+  primaryKeyword: "interview question generator",
+  richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
 export function buildCtrMetadata(
   meta: PageCtrMeta,
   options: {

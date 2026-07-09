@@ -1,7 +1,14 @@
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { TableOfContents } from "@/components/blog/TableOfContents";
+import { AccordionFaq } from "@/components/ui/AccordionFaq";
+
+const ReadingProgress = dynamic(
+  () => import("@/components/ui/ReadingProgress").then((m) => ({ default: m.ReadingProgress })),
+  { ssr: false }
+);
 import { KnowledgeCenterRelated } from "@/components/knowledge/KnowledgeCenterRelated";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
@@ -68,6 +75,7 @@ export function KnowledgeGuidePage({
         />
       ) : null}
       <PageFaqJsonLd items={faqItems} />
+      <ReadingProgress />
       <article className="relative">
         <div
           className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[380px] bg-mesh"
@@ -123,30 +131,12 @@ export function KnowledgeGuidePage({
             <GuideEeatSection path={path} />
           </div>
 
-          <section
-            className="mt-16 border-t border-slate-200 pt-14"
-            aria-labelledby="kc-faq-heading"
-          >
-            <h2
-              id="kc-faq-heading"
-              className="font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl"
-            >
-              {faqHeading}
-            </h2>
-            <div className="mt-3 text-slate-600">{faqIntro}</div>
-            <div className="mt-10 space-y-10">
-              {faqItems.map((item) => (
-                <div key={item.question}>
-                  <h3 className="text-lg font-semibold text-slate-900">
-                    {item.question}
-                  </h3>
-                  <p className="mt-2 leading-relaxed text-slate-700">
-                    {item.answer}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
+          <AccordionFaq
+            items={faqItems}
+            heading={faqHeading}
+            headingId="kc-faq-heading"
+            intro={faqIntro}
+          />
 
           <RelatedResources path={path} excludeHref={path} />
 

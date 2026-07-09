@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BlogResumeCta } from "@/components/blog/BlogExtras";
+import { AccordionFaq } from "@/components/ui/AccordionFaq";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
@@ -341,20 +342,11 @@ export default function CoverLetterGeneratorPage() {
             </Link>
           </div>
 
-          {/* FAQ */}
-          <section className="mt-16 border-t border-slate-200 pt-14" id="faq">
-            <h2 className="font-display text-2xl font-bold text-slate-900">
-              Frequently asked questions
-            </h2>
-            <div className="mt-10 space-y-10">
-              {coverLetterGeneratorFaqItems.map((item) => (
-                <div key={item.question}>
-                  <h3 className="text-lg font-semibold text-slate-900">{item.question}</h3>
-                  <p className="mt-2 text-slate-700">{item.answer}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+          <AccordionFaq
+            items={coverLetterGeneratorFaqItems}
+            heading="Frequently asked questions"
+            headingId="faq"
+          />
 
           <RelatedResources
             path={PATH}
