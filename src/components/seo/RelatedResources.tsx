@@ -15,7 +15,7 @@ export function RelatedResources({
   heading = "Related resources",
   eyebrow = "ATS resume optimization",
   excludeHref,
-  limit = 8,
+  limit = 5,
   className = "",
 }: Props) {
   const items = getRelatedResources(path, { excludeHref, limit });
