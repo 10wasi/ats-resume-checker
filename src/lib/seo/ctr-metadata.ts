@@ -667,6 +667,36 @@ export const CTR_INTERVIEW_QUESTION_GENERATOR: PageCtrMeta = {
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
+export const CTR_RESUME_GRAMMAR_CHECKER: PageCtrMeta = {
+  title: "Resume Grammar Checker — Fix Tense, Tone & Errors (2026)",
+  description:
+    "Spot grammar errors, tense inconsistencies, passive voice, and weak language on your resume before applying. Free resume grammar guide with examples.",
+  ogTitle: "Resume Grammar Checker — Tense, Tone & Error Guide",
+  h1: "Resume Grammar Checker: Fix Errors Before You Apply",
+  primaryKeyword: "resume grammar checker",
+  richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_FORMATTER: PageCtrMeta = {
+  title: "Resume Formatter — ATS-Safe Format Guide & Rules (2026)",
+  description:
+    "Format your resume for ATS and recruiter readability. Covers fonts, margins, columns, section order, file type, and common formatting errors to avoid.",
+  ogTitle: "Resume Formatter — ATS-Safe Formatting Rules & Examples",
+  h1: "Resume Formatter: ATS-Safe Format Rules & Examples",
+  primaryKeyword: "resume formatter",
+  richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_TEMPLATE_BUILDER: PageCtrMeta = {
+  title: "Resume Template Builder — Free ATS-Safe Templates (2026)",
+  description:
+    "Choose an ATS-compatible resume template. Covers single-column layouts, clean fonts, proper section order, and what to avoid. Free guide with examples.",
+  ogTitle: "Resume Template Builder — ATS-Safe Templates & Examples",
+  h1: "Resume Template Builder: ATS-Safe Templates & Layouts",
+  primaryKeyword: "resume template builder",
+  richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
 export function buildCtrMetadata(
   meta: PageCtrMeta,
   options: {

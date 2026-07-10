@@ -101,16 +101,15 @@ export function HomeAtsMistakesSection() {
             id="ats-mistakes-heading"
             className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
           >
-            12 resume mistakes that cause instant ATS rejection
+            6 resume mistakes that cause instant ATS rejection
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-slate-600">
-            These errors appear in more than half of all resumes. Each one causes a specific, fixable failure in
-            how hiring software reads and scores your file — before any human sees it.
+            Each one causes a specific, fixable failure in how hiring software reads your file — before a recruiter ever sees it.
           </p>
         </div>
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {mistakes.map((m) => (
+          {mistakes.slice(0, 6).map((m) => (
             <article
               key={m.title}
               className="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"

@@ -121,7 +121,7 @@ export function HomeBeforeAfterSection() {
         </div>
 
         <div className="mt-16 space-y-16">
-          {examples.map((ex, idx) => (
+          {examples.slice(0, 2).map((ex, idx) => (
             <article
               key={ex.role}
               className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"

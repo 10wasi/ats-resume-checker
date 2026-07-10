@@ -1421,6 +1421,55 @@ export function FeatureHighlights() {
   );
 }
 
+/** Three key benefits — compact trust + value prop strip. */
+export function HomeBenefitsSection() {
+  const benefits = [
+    {
+      icon: "⚡",
+      title: "Instant ATS score",
+      body: "Upload or paste your resume and see your ATS compatibility score in under 2 minutes — no waiting, no signup.",
+    },
+    {
+      icon: "🎯",
+      title: "Keyword gap analysis",
+      body: "Paste the job description and get a precise list of missing keywords that are costing you interviews.",
+    },
+    {
+      icon: "🔧",
+      title: "Priority fix plan",
+      body: "See exactly what to fix first — formatting, keywords, or bullet strength — so you improve the fastest.",
+    },
+  ];
+  return (
+    <section
+      className="border-b border-slate-200/70 bg-white py-12 sm:py-14"
+      aria-labelledby="benefits-heading"
+    >
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <h2 id="benefits-heading" className="sr-only">
+          Why use ResumeIQ
+        </h2>
+        <div className="grid gap-5 sm:grid-cols-3">
+          {benefits.map((b) => (
+            <div
+              key={b.title}
+              className="flex gap-4 rounded-2xl border border-slate-100 bg-slate-50/60 px-6 py-5"
+            >
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-xl shadow-sm ring-1 ring-slate-200/80">
+                {b.icon}
+              </span>
+              <div>
+                <p className="font-semibold text-slate-900">{b.title}</p>
+                <p className="mt-1 text-sm leading-relaxed text-slate-600">{b.body}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function HowItWorksSection() {
   const steps = [
     {

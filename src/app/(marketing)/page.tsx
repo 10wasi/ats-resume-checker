@@ -3,12 +3,14 @@ import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
 import { HomePlatformJsonLd } from "@/components/seo/HomePlatformJsonLd";
 import { HomeWebApplicationJsonLd } from "@/components/seo/HomeWebApplicationJsonLd";
 import { WebSiteJsonLd } from "@/components/seo/WebSiteJsonLd";
-import { HeroSection } from "@/components/home/HomeSections";
+import { HeroSection, HomeBenefitsSection } from "@/components/home/HomeSections";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { buildCtrMetadata, CTR_HOME } from "@/lib/seo/ctr-metadata";
 import { HomeBeforeAfterSection } from "@/components/home/HomeBeforeAfterSection";
 import { HomeAtsReportPreviewSection } from "@/components/home/HomeAtsReportPreviewSection";
 import { HomeAtsMistakesSection } from "@/components/home/HomeAtsMistakesSection";
+import { HomeRecruiterReviewSection } from "@/components/home/HomeRecruiterReviewSection";
+import { HomeRelatedToolsSection } from "@/components/home/HomeRelatedToolsSection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 
 function SectionSkeleton({ height = "h-48" }: { height?: string }) {
@@ -30,10 +32,6 @@ const FeatureHighlights = dynamic(
 const FaqSection = dynamic(
   () => import("@/components/home/FaqSection").then((m) => ({ default: m.FaqSection })),
   { loading: () => <SectionSkeleton height="h-96" /> }
-);
-const BlogHighlightsSection = dynamic(
-  () => import("@/components/home/BlogHighlightsSection").then((m) => ({ default: m.BlogHighlightsSection })),
-  { loading: () => <SectionSkeleton height="h-64" /> }
 );
 
 export const metadata = buildCtrMetadata(CTR_HOME, {
@@ -64,29 +62,35 @@ export default function HomePage() {
       <HomePlatformJsonLd />
       <FaqJsonLd />
 
-      {/* 1 — Hero */}
+      {/* 1 — Hero: headline, paste form, trust badges */}
       <HeroSection />
 
-      {/* 2 — How it Works */}
+      {/* 2 — Three Key Benefits */}
+      <HomeBenefitsSection />
+
+      {/* 3 — How It Works (3 steps) */}
       <HowItWorksSection />
 
-      {/* 3 — ATS Report Demo */}
+      {/* 4 — ATS Report Preview */}
       <HomeAtsReportPreviewSection />
 
-      {/* 4 — Before vs After */}
+      {/* 5 — Before vs After Resume (2 examples) */}
       <HomeBeforeAfterSection />
 
-      {/* 5 — Top Features */}
+      {/* 6 — Top Features */}
       <FeatureHighlights />
 
-      {/* 6 — Common ATS Mistakes */}
+      {/* 7 — Recruiter Review Example */}
+      <HomeRecruiterReviewSection />
+
+      {/* 8 — Common ATS Mistakes (6 cards) */}
       <HomeAtsMistakesSection />
 
-      {/* 7 — FAQ */}
-      <FaqSection />
+      {/* 9 — Related Resume Tools */}
+      <HomeRelatedToolsSection />
 
-      {/* 8 — Latest Guides */}
-      <BlogHighlightsSection />
+      {/* 10 — Compact FAQ */}
+      <FaqSection />
 
       <StickyCheckerCta />
     </>
