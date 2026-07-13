@@ -11,6 +11,8 @@ import { HomeAtsReportPreviewSection } from "@/components/home/HomeAtsReportPrev
 import { HomeAtsMistakesSection } from "@/components/home/HomeAtsMistakesSection";
 import { HomeRecruiterReviewSection } from "@/components/home/HomeRecruiterReviewSection";
 import { HomeRelatedToolsSection } from "@/components/home/HomeRelatedToolsSection";
+import { HomeAtsToolSection } from "@/components/home/HomeAtsToolSection";
+import { HomeResumeImprovementSection } from "@/components/home/HomeResumeImprovementSection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 
 function SectionSkeleton({ height = "h-48" }: { height?: string }) {
@@ -23,10 +25,6 @@ function SectionSkeleton({ height = "h-48" }: { height?: string }) {
 
 const HowItWorksSection = dynamic(
   () => import("@/components/home/HomeSections").then((m) => ({ default: m.HowItWorksSection })),
-  { loading: () => <SectionSkeleton /> }
-);
-const FeatureHighlights = dynamic(
-  () => import("@/components/home/HomeSections").then((m) => ({ default: m.FeatureHighlights })),
   { loading: () => <SectionSkeleton /> }
 );
 const FaqSection = dynamic(
@@ -65,31 +63,34 @@ export default function HomePage() {
       {/* 1 — Hero: headline, paste form, trust badges */}
       <HeroSection />
 
-      {/* 2 — Three Key Benefits */}
+      {/* 2 — ATS Tool: upload gateway with output preview */}
+      <HomeAtsToolSection />
+
+      {/* 3 — Three Key Benefits */}
       <HomeBenefitsSection />
 
-      {/* 3 — How It Works (3 steps) */}
+      {/* 4 — How It Works (3 steps) */}
       <HowItWorksSection />
 
-      {/* 4 — ATS Report Preview */}
+      {/* 5 — ATS Report Preview */}
       <HomeAtsReportPreviewSection />
 
-      {/* 5 — Before vs After Resume (2 examples) */}
+      {/* 6 — Before vs After Resume (2 examples) */}
       <HomeBeforeAfterSection />
 
-      {/* 6 — Top Features */}
-      <FeatureHighlights />
+      {/* 7 — Resume Improvement Example */}
+      <HomeResumeImprovementSection />
 
-      {/* 7 — Recruiter Review Example */}
+      {/* 8 — Recruiter Review */}
       <HomeRecruiterReviewSection />
 
-      {/* 8 — Common ATS Mistakes (6 cards) */}
+      {/* 9 — Common ATS Mistakes (6 cards) */}
       <HomeAtsMistakesSection />
 
-      {/* 9 — Related Resume Tools */}
+      {/* 10 — Related Resume Tools */}
       <HomeRelatedToolsSection />
 
-      {/* 10 — Compact FAQ */}
+      {/* 11 — Compact FAQ */}
       <FaqSection />
 
       <StickyCheckerCta />

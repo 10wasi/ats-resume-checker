@@ -13,20 +13,20 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: "Free ATS Resume Checker & Resume Score Analyzer | Improve Your Resume in Minutes",
+  title: "Free ATS Resume Checker — Score, Keywords & Fixes",
   description:
-    "Check your resume against ATS systems, find missing keywords, improve your resume score, and increase your chances of getting interviews. Free ATS resume checker online.",
-  ogTitle: "Free ATS Resume Checker — Instant Resume Score & Keyword Analysis",
-  h1: "Free ATS Resume Checker & Resume Score Online",
+    "Get your ATS score, find missing keywords, and see exactly what to fix — free, no signup. Upload PDF or paste text. Results in under 2 minutes.",
+  ogTitle: "Free ATS Resume Checker — Instant Score & Keyword Gaps",
+  h1: "Free ATS Resume Checker — Score, Keywords & Fixes",
   primaryKeyword: "ATS resume checker",
   richSnippets: ["FAQPage", "WebApplication", "WebSite", "Organization", "BreadcrumbList"],
 };
 
 export const CTR_RESUME_CHECKER: PageCtrMeta = {
-  title: "ATS Resume Checker – Free Resume Score & Keyword Analysis",
+  title: "ATS Resume Checker — Free Score, Keywords & Fixes",
   description:
-    "Upload your resume and get an ATS score, keyword analysis, formatting feedback, and improvement suggestions instantly. Free ATS resume checker — no signup required.",
-  ogTitle: "ATS Resume Checker — Free Score, Keywords & Fixes",
+    "Upload your resume. Get an ATS score, missing keywords, format issues, and a priority fix list in under 2 minutes. Free — no account, no paywall.",
+  ogTitle: "ATS Resume Checker — Free Score & Keyword Gaps",
   h1: "Free Resume Checker — ATS Score, Keywords & Fixes",
   primaryKeyword: "resume checker",
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
@@ -398,10 +398,10 @@ export const CTR_AI_REWRITE: PageCtrMeta = {
 };
 
 export const CTR_CAREER_SUCCESS_HUB: PageCtrMeta = {
-  title: "Career Success Hub — 7 Free Resume Tools & Guides",
+  title: "Career Success Hub — Resume Tools, Guides & Score",
   description:
-    "Career Success Hub: 7 free tools including resume checker, match analyzer, keywords finder, skills analyzer, summary generator, and achievement writer—one connected workflow.",
-  ogTitle: "Career Success Hub — 7 Free Resume Tools",
+    "Free resume checker, match analyzer, keyword finder, skills gap tool, and 3 generators — all connected. One hub, one workflow, zero signups.",
+  ogTitle: "Career Success Hub — Free Resume Tools & Guides",
   h1: "Career Success Hub: Resume Tools & Optimization Guides",
   primaryKeyword: "career success hub",
   richSnippets: ["ItemList", "FAQPage", "BreadcrumbList", "Organization"],
@@ -578,20 +578,20 @@ export const CTR_CV_CHECKER: PageCtrMeta = {
 };
 
 export const CTR_COMPLETE_ATS_GUIDE: PageCtrMeta = {
-  title: "ATS Resume Guide — 12 Steps to Pass Screening (2026)",
+  title: "ATS Resume Optimization Guide — 12 Steps (2026)",
   description:
-    "Master ATS optimization: parsing, scores, keyword placement, format QA & rejection fixes. 12-step workflow with case studies—start with the free checker.",
-  ogTitle: "ATS Resume Optimization — Complete 12-Step Master Guide",
+    "Fix parsing, add missing keywords, rewrite weak bullets, and pass ATS screening. 12-step guide with real before/after examples and a free score check.",
+  ogTitle: "ATS Resume Optimization — 12-Step Guide With Examples",
   h1: "The Ultimate ATS Resume Optimization Guide",
   primaryKeyword: "ATS resume optimization",
   richSnippets: ["Article", "FAQPage", "HowTo", "ItemList", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_PLATFORM_HUB_INDEX: PageCtrMeta = {
-  title: "9 Free Resume Tools — Checker, Match & Keywords",
+  title: "12 Free Resume Tools — ATS Checker, Match & More",
   description:
-    "One platform: ATS checker, match analyzer, keyword finder, score guides & rejection fixes. Nine free hubs wired together—start with a 60-second scan.",
-  ogTitle: "9 Free Resume Tools — Checker, Match & Keywords",
+    "ATS checker, job match analyzer, keyword finder, bullet generator, and 8 more free tools. No signup. Start with a free resume scan in 2 minutes.",
+  ogTitle: "12 Free Resume Tools — ATS Score, Keywords & Fixes",
   h1: "Resume Optimization Platform",
   primaryKeyword: "resume optimization platform",
   richSnippets: ["ItemList", "FAQPage", "Organization", "BreadcrumbList"],
