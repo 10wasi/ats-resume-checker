@@ -175,3 +175,47 @@ export const homepageFaqItems: FaqItem[] = [
       "You cannot know for certain from the employer's side, but you can verify the most critical factors: run a free ATS resume checker, confirm all text is selectable in your PDF, check that your top 8 keywords appear in experience bullets (not just a skills list), and ensure your formatting uses a single column with standard section labels. If your checker score is above 75 and your keyword match is above 70%, your file is likely to parse cleanly.",
   },
 ];
+
+/** Homepage FAQ — 8 high-intent questions only (schema + on-page). */
+export const homepageFaqCompact: FaqItem[] = [
+  {
+    question: "What is a free ATS resume checker?",
+    answer:
+      "A free ATS resume checker scans your PDF or pasted text for applicant tracking system compatibility — structure, keyword coverage, and parse health — then returns an ATS score and priority fixes. ResumeIQ runs core resume analysis without signup or payment.",
+  },
+  {
+    question: "What does my resume ATS score measure?",
+    answer:
+      "Your resume ATS score reflects how cleanly hiring software can read your file: heading order, bullet clarity, keyword alignment, and formatting risks. It is a resume score checker signal — not a guarantee of an interview — so you know what to fix before you apply.",
+  },
+  {
+    question: "Why do resumes fail ATS systems?",
+    answer:
+      "Most failures are technical: two-column layouts, tables, missing job keywords, or bullets without measurable outcomes. The resume scanner flags these so you can build an ATS friendly resume that still reads well to recruiters.",
+  },
+  {
+    question: "How can I improve my ATS score?",
+    answer:
+      "Fix parsing first (single column, standard headings), then weave posting keywords into experience bullets with proof, and strengthen weak bullets. Re-run resume analysis after each edit — small layout changes can shift extraction.",
+  },
+  {
+    question: "Do you store my resume?",
+    answer:
+      "Your file is processed to generate feedback for that request. We do not sell resume data or use it to train unrelated models. See our privacy policy for full details.",
+  },
+  {
+    question: "Which file formats work with the resume scanner?",
+    answer:
+      "PDF and DOCX up to 10 MB. Use selectable text — scanned image PDFs and design-heavy exports often break resume parsing. Export from Word or Google Docs for the cleanest resume review results.",
+  },
+  {
+    question: "What is a resume match score?",
+    answer:
+      "Resume match score compares your text to a job description — overlap on skills, tools, and role language. Paste a posting in the checker to see missing keywords and match % for that specific application.",
+  },
+  {
+    question: "Is this resume checker really free?",
+    answer:
+      "Yes. Upload or paste a resume, run ATS scoring, keyword scan, and format checks without an account. Core resume optimization and resume review outputs stay free.",
+  },
+];

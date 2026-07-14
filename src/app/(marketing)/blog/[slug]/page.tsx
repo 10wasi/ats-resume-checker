@@ -8,6 +8,7 @@ import {
   BlogCoverPlaceholder,
   BlogResumeCta,
 } from "@/components/blog/BlogExtras";
+import { BlogHubLinks } from "@/components/blog/BlogHubLinks";
 import { ArticleJsonLd } from "@/components/blog/ArticleJsonLd";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
@@ -145,6 +146,7 @@ export default function BlogPostPage({ params }: Props) {
 
         <RelatedResources path={`/blog/${post.slug}`} />
 
+        <BlogHubLinks />
         <BlogResumeCta />
       </div>
       <StickyCheckerCta />

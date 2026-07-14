@@ -1,10 +1,10 @@
-import { homepageFaqItems } from "@/lib/seo/faq";
+import { homepageFaqCompact } from "@/lib/seo/faq";
 
 export function FaqJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: homepageFaqItems.map((item) => ({
+    mainEntity: homepageFaqCompact.map((item) => ({
       "@type": "Question",
       name: item.question,
       acceptedAnswer: {

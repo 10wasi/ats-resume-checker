@@ -1,30 +1,14 @@
 import Link from "next/link";
-import { homepageFaqItems, type FaqItem } from "@/lib/seo/faq";
+import { homepageFaqCompact, type FaqItem } from "@/lib/seo/faq";
 
 const FAQ_RELATED: Partial<Record<string, { href: string; label: string }>> = {
-  "What is a resume checker?": {
-    href: "/free-resume-checker-online",
-    label: "Free resume checker online",
-  },
-  "What is an ATS resume optimization platform?": {
-    href: "/resume-optimization-platform",
-    label: "Explore the platform",
-  },
-  "What is an ATS resume checker?": {
+  "What is a free ATS resume checker?": {
     href: "/ats-resume-checker",
     label: "ATS resume checker guide",
   },
-  "What does my ATS score actually measure?": {
+  "What does my resume ATS score measure?": {
     href: "/resume-score-checker",
     label: "Resume score checker",
-  },
-  "What is a resume match score?": {
-    href: "/resume-match-analyzer",
-    label: "Resume match tool",
-  },
-  "Where can I find ATS resume examples?": {
-    href: "/ats-resume-examples",
-    label: "ATS resume examples",
   },
   "Why do resumes fail ATS systems?": {
     href: "/common-ats-resume-rejection-reasons",
@@ -34,41 +18,21 @@ const FAQ_RELATED: Partial<Record<string, { href: string; label: string }>> = {
     href: "/how-to-improve-resume-score",
     label: "Improve resume score",
   },
-  "What is an AI resume checker?": {
-    href: "/ai-resume-review",
-    label: "AI resume review",
-  },
-  "What is the difference between a CV checker and resume checker?": {
-    href: "/cv-checker",
-    label: "CV checker guide",
-  },
-  "How do recruiters scan resumes?": {
-    href: "/resume-screening-explained",
-    label: "Resume screening explained",
-  },
-  "What is ATS compatibility?": {
-    href: "/ats-resume-format",
-    label: "ATS resume format",
-  },
-  "Is my resume data secure?": {
+  "Do you store my resume?": {
     href: "/privacy",
     label: "Privacy policy",
   },
-  "What is resume keyword optimization?": {
-    href: "/resume-keywords",
-    label: "Resume keywords database",
+  "Which file formats work with the resume scanner?": {
+    href: "/free-resume-checker-online",
+    label: "Free resume checker online",
+  },
+  "What is a resume match score?": {
+    href: "/resume-job-description-match",
+    label: "Resume match tool",
   },
   "Is this resume checker really free?": {
     href: "/methodology",
     label: "Scoring methodology",
-  },
-  "Can remote workers and international applicants use this?": {
-    href: "/how-ats-works",
-    label: "How ATS works globally",
-  },
-  "Should I stuff keywords to beat the ATS?": {
-    href: "/ats-resume-mistakes",
-    label: "Common ATS mistakes",
   },
 };
 
@@ -94,7 +58,7 @@ function FaqAnswer({ item }: { item: FaqItem }) {
 export function FaqSection() {
   return (
     <section
-      className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8"
+      className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8"
       aria-labelledby="home-faq-heading"
     >
       <div className="mx-auto max-w-2xl text-center">
@@ -103,22 +67,22 @@ export function FaqSection() {
           id="home-faq-heading"
           className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
         >
-          ATS resume checker FAQ — {homepageFaqItems.length} answers
+          ATS resume checker FAQ
         </h2>
-        <p className="mt-4 text-lg text-slate-600">
-          Plain answers about scoring,{" "}
+        <p className="mt-4 text-base text-slate-600">
+          Answers on resume ATS score,{" "}
           <Link href="/resume-review" className="font-semibold text-[#16a34a] underline">
             resume review
           </Link>
-          , and honest optimization—see our{" "}
+          , and optimization. More in our{" "}
           <Link href="/faq-center" className="font-semibold text-[#16a34a] underline">
-            full FAQ center
-          </Link>{" "}
-          for more.
+            FAQ center
+          </Link>
+          .
         </p>
       </div>
       <div className="mx-auto mt-12 max-w-3xl divide-y divide-slate-200 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-soft">
-        {homepageFaqItems.map((item) => (
+        {homepageFaqCompact.map((item) => (
           <details
             key={item.question}
             className="group px-5 py-5 transition hover:bg-slate-50/60 sm:px-7 [&_summary::-webkit-details-marker]:hidden"

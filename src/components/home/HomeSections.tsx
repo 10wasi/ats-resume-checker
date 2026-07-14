@@ -14,44 +14,30 @@ export function HeroSection() {
     <section className="relative overflow-hidden border-b border-slate-200/70 bg-white">
       <div className="pointer-events-none absolute inset-0 bg-mesh" aria-hidden />
       <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-[600px] bg-grid opacity-[0.55]"
+        className="pointer-events-none absolute inset-x-0 top-0 h-[400px] bg-grid opacity-[0.45]"
         aria-hidden
       />
-      <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-white"
-        aria-hidden
-      />
-      <div className="relative mx-auto max-w-6xl px-4 pb-24 pt-20 sm:px-6 sm:pb-28 sm:pt-24 lg:px-8">
+      <div className="relative mx-auto max-w-6xl px-4 pb-14 pt-16 sm:px-6 sm:pb-16 sm:pt-20 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          {/* Star rating trust badge */}
-          <div className="flex flex-wrap items-center justify-center gap-2">
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700">
-              <span aria-hidden>★★★★★</span>
-              Trusted by job seekers worldwide
-            </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
-              <IconSparkle className="h-3 w-3 shrink-0" aria-hidden />
-              Free · No signup required
-            </span>
-          </div>
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
+            <IconSparkle className="h-3 w-3 shrink-0" aria-hidden />
+            Free ATS resume checker · No signup
+          </span>
 
-          <h1 className="mt-5 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.85rem] lg:leading-[1.1]">
+          <h1 className="mt-5 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
             {CTR_HOME.h1}
           </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            Upload your resume and get an instant ATS score, keyword gaps, format risks, and a
-            priority fix plan. Free — no account required.
+          <p className="mx-auto mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
+            Upload or paste your resume for an instant resume ATS score, keyword gaps, and format
+            risks — a free resume scanner built for applicant tracking system screening.
           </p>
           <HomeHeroPasteForm />
 
-          {/* Trust pill strip */}
-          <ul className="mx-auto mt-6 flex flex-wrap items-center justify-center gap-2 text-xs font-medium">
+          <ul className="mx-auto mt-5 flex flex-wrap items-center justify-center gap-2 text-xs font-medium">
             {[
-              { icon: "🔒", text: "No signup required" },
               { icon: "⚡", text: "Results in under 2 min" },
-              { icon: "🆓", text: "Free ATS score" },
-              { icon: "📄", text: "PDF or paste text" },
-              { icon: "🌍", text: "Works worldwide" },
+              { icon: "📄", text: "PDF, DOCX, or paste" },
+              { icon: "🔒", text: "No resume storage" },
             ].map((b) => (
               <li
                 key={b.text}
@@ -62,56 +48,6 @@ export function HeroSection() {
               </li>
             ))}
           </ul>
-
-          {/* Feature highlights */}
-          <ul className="mx-auto mt-5 flex max-w-xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs font-medium text-slate-500">
-            <li className="flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
-              ATS compatibility &amp; parse test
-            </li>
-            <li className="flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
-              Keyword match vs job description
-            </li>
-            <li className="flex items-center gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden />
-              Priority fix list with reasoning
-            </li>
-          </ul>
-        </div>
-
-        <div className="relative mx-auto mt-12 max-w-4xl" aria-hidden="true">
-          <div className="absolute inset-0 -z-10 rounded-[2rem] bg-brand-gradient opacity-30 blur-2xl" />
-          <div className="card-glass overflow-hidden rounded-3xl">
-            <div className="flex items-center justify-between gap-4 border-b border-white/60 bg-white/60 px-5 py-3">
-              <div className="flex items-center gap-2 text-xs font-semibold text-slate-500">
-                <span className="h-2.5 w-2.5 rounded-full bg-rose-400" />
-                <span className="h-2.5 w-2.5 rounded-full bg-amber-400" />
-                <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
-                <span className="ml-2 hidden sm:inline">
-                  ATS checker · score preview
-                </span>
-              </div>
-              <span className="pill border-emerald-200 bg-emerald-50 text-emerald-700">
-                Live
-              </span>
-            </div>
-            <div className="grid gap-6 p-6 sm:grid-cols-3 sm:p-8">
-              <ScoreTile label="ATS readability" value={92} tone="emerald" />
-              <ScoreTile label="Keyword match" value={78} tone="mint" />
-              <ScoreTile label="Impact bullets" value={64} tone="amber" />
-            </div>
-            <div className="grid gap-3 border-t border-white/60 bg-white/40 p-6 text-left sm:grid-cols-2 sm:p-8">
-              <FixRow
-                title="Add 4 missing keywords"
-                detail="‘TypeScript’, ‘CI/CD’, ‘code review’, ‘mentor’"
-              />
-              <FixRow
-                title="Tighten 3 weak bullets"
-                detail="Lead with impact verbs, add metrics where you can."
-              />
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -720,7 +656,7 @@ export function HomeTrustedBySection() {
 }
 
 /** Why ATS rejects — emotional + educational. */
-export function HomeWhyAtsRejectsSection() {
+export function HomeWhyAtsRejectsLegacySection() {
   return (
     <section
       className="border-b border-slate-200/80 bg-slate-50/90 py-16 sm:py-20"
@@ -1106,7 +1042,7 @@ export function ProblemSolutionSection() {
 }
 
 /** Compact trust row below key sections. */
-export function HomeTrustStrip() {
+export function HomeTrustStripLegacy() {
   const items = [
     {
       title: "No signup pressure",
@@ -1470,61 +1406,49 @@ export function HowItWorksSection() {
   const steps = [
     {
       step: "01",
-      title: "Paste your resume",
-      body: "Paste text on the homepage or upload PDF/DOCX on the checker—same parsing hiring software uses worldwide.",
+      title: "Upload your resume",
+      body: "Paste text in the hero or upload PDF/DOCX — the resume scanner uses the same parsing applicant tracking systems rely on.",
     },
     {
       step: "02",
-      title: "Get your ATS score",
-      body: "See ATS score %, missing keywords, formatting issues, and readability—free resume score checker results in minutes.",
+      title: "Get resume analysis",
+      body: "See your resume ATS score, keyword gaps, formatting flags, and match % when you add a job description.",
     },
     {
       step: "03",
-      title: "Improve with suggestions",
-      body: "Apply AI resume suggestions, fix keywords, and re-check until your resume optimization score improves.",
+      title: "Apply the fix plan",
+      body: "Follow ranked resume optimization suggestions, then re-check until your ATS friendly resume is ready to submit.",
     },
   ];
   return (
-    <section className="relative border-y border-slate-200/70 bg-slate-50/80 py-24">
+    <section
+      className="relative border-b border-slate-200/70 bg-slate-50/80 py-14 sm:py-16"
+      aria-labelledby="how-it-works-heading"
+    >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="section-eyebrow mx-auto">Simple 3-step process</p>
-          <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-            Upload. Analyze. Improve—then apply with confidence
+          <p className="section-eyebrow mx-auto">How it works</p>
+          <h2
+            id="how-it-works-heading"
+            className="mt-3 font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl"
+          >
+            Three steps to a stronger resume review
           </h2>
         </div>
-        <ol className="mt-14 grid gap-6 md:grid-cols-3">
+        <ol className="mt-10 grid gap-5 md:grid-cols-3">
           {steps.map((s) => (
             <li
               key={s.step}
-              className="card-elevated relative overflow-hidden p-6"
+              className="rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm"
             >
-              <span className="font-display text-5xl font-bold tracking-tight text-gradient">
+              <span className="font-display text-4xl font-bold tracking-tight text-gradient">
                 {s.step}
               </span>
-              <h3 className="mt-3 text-lg font-semibold text-slate-900">
-                {s.title}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                {s.body}
-              </p>
+              <h3 className="mt-3 text-lg font-semibold text-slate-900">{s.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">{s.body}</p>
             </li>
           ))}
         </ol>
-        <div className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Link
-            href={RESUME_CHECKER_PATH}
-            className="btn-gradient px-8 text-base font-semibold"
-          >
-            Check Resume Score
-          </Link>
-          <Link
-            href="/complete-guide-ats-resume-optimization"
-            className="inline-flex h-12 items-center justify-center rounded-xl border border-slate-200 bg-white px-6 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-accent-400 hover:text-accent-600"
-          >
-            Read optimization guide
-          </Link>
-        </div>
       </div>
     </section>
   );

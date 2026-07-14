@@ -31,8 +31,8 @@ export function HomePlatformJsonLd() {
       {
         "@type": "ListItem",
         position: 4,
-        name: "Resume Match Analyzer",
-        url: `${base}/resume-match-analyzer`,
+        name: "Resume Job Description Match",
+        url: `${base}/resume-job-description-match`,
       },
       {
         "@type": "ListItem",

@@ -15,7 +15,9 @@ export type PageCtrMeta = {
 
 export const CTR_HOME: PageCtrMeta = {
   title: ctrTitle("Free ATS Resume Checker", "Score & Fixes"),
-  description: ctrMeta("Upload PDF or paste text — results in under 2 minutes."),
+  description: ctrMeta(
+    "Free ATS resume checker — upload PDF or paste text for instant resume ATS score, keyword gaps, and priority fixes. No signup."
+  ),
   ogTitle: "Free ATS Resume Checker — Instant Score & Fixes",
   h1: "Free ATS Resume Checker",
   primaryKeyword: "free ATS resume checker",
