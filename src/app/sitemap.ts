@@ -84,6 +84,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/resume-grammar-checker", priority: 0.89, changeFrequency: "weekly" },
     { path: "/resume-formatter", priority: 0.89, changeFrequency: "weekly" },
     { path: "/resume-template-builder", priority: 0.89, changeFrequency: "weekly" },
+    { path: "/resume-objective-generator", priority: 0.89, changeFrequency: "weekly" },
+    { path: "/resume-skills-generator", priority: 0.89, changeFrequency: "weekly" },
     { path: "/ultimate-ats-resume-guide", priority: 0.9, changeFrequency: "monthly" },
     { path: "/ats-resume-checklist-2026", priority: 0.9, changeFrequency: "monthly" },
     { path: "/about", priority: 0.75, changeFrequency: "monthly" },

@@ -667,6 +667,26 @@ export const CTR_INTERVIEW_QUESTION_GENERATOR: PageCtrMeta = {
   richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
+export const CTR_RESUME_OBJECTIVE_GENERATOR: PageCtrMeta = {
+  title: "Resume Objective Generator — 40+ Examples by Role",
+  description:
+    "Write a targeted resume objective in minutes. See 40+ examples for entry-level, career changers, and internships. Formula, mistakes to avoid, and ATS tips.",
+  ogTitle: "Resume Objective Generator — Examples & Formula",
+  h1: "Resume Objective Generator: 40+ Examples by Role & Situation",
+  primaryKeyword: "resume objective generator",
+  richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_SKILLS_GENERATOR: PageCtrMeta = {
+  title: "Resume Skills Generator — ATS-Ready Skills by Role",
+  description:
+    "Generate an ATS-optimized skills section in minutes. See skills lists by role, how to format them, what to avoid, and how to match keywords to any job post.",
+  ogTitle: "Resume Skills Generator — Skills List by Job Role",
+  h1: "Resume Skills Generator: ATS-Ready Skills Lists by Role",
+  primaryKeyword: "resume skills generator",
+  richSnippets: ["WebApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
 export const CTR_RESUME_GRAMMAR_CHECKER: PageCtrMeta = {
   title: "Resume Grammar Checker — Fix Tense, Tone & Errors (2026)",
   description:

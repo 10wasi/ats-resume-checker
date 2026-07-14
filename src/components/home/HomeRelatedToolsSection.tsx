@@ -97,6 +97,22 @@ const tools = [
     badge: "Templates",
     badgeColor: "bg-slate-100 text-slate-700",
   },
+  {
+    emoji: "🎯",
+    title: "Resume Objective Generator",
+    desc: "40+ objective examples for new graduates, career changers, and interns.",
+    href: "/resume-objective-generator",
+    badge: "Generator",
+    badgeColor: "bg-violet-100 text-violet-800",
+  },
+  {
+    emoji: "⚙️",
+    title: "Resume Skills Generator",
+    desc: "ATS-ready skills lists by role — what to include and how to format.",
+    href: "/resume-skills-generator",
+    badge: "Generator",
+    badgeColor: "bg-violet-100 text-violet-800",
+  },
 ];
 
 export function HomeRelatedToolsSection() {
@@ -112,7 +128,7 @@ export function HomeRelatedToolsSection() {
             id="related-tools-heading"
             className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
           >
-            12 free resume tools — one platform
+            14 free resume tools — one platform
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-600">
             Every tool is free, instant, and requires no signup. Start with the ATS checker, then use the generators to fix what it finds.

@@ -98,6 +98,16 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     title: "Interview Question Generator",
     description: "100+ interview questions with STAR answers by role and type.",
   },
+  objectiveGenerator: {
+    href: "/resume-objective-generator",
+    title: "Resume Objective Generator",
+    description: "40+ ATS-friendly objective examples for entry-level, career changers, and internships.",
+  },
+  skillsGenerator: {
+    href: "/resume-skills-generator",
+    title: "Resume Skills Generator",
+    description: "ATS-ready skills lists by role — what to include, how to format, and what to avoid.",
+  },
   grammarChecker: {
     href: "/resume-grammar-checker",
     title: "Resume Grammar Checker",
@@ -414,6 +424,26 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "coverLetterGenerator",
     "achievementGenerator",
     "examples",
+    "knowledgeCenter",
+  ],
+  "/resume-objective-generator": [
+    "checker",
+    "summaryGenerator",
+    "headlineGenerator",
+    "bulletGenerator",
+    "skillsGenerator",
+    "coverLetterGenerator",
+    "resumeObjective",
+    "knowledgeCenter",
+  ],
+  "/resume-skills-generator": [
+    "checker",
+    "skillsAnalyzer",
+    "keywordsFinder",
+    "objectiveGenerator",
+    "summaryGenerator",
+    "bulletGenerator",
+    "resumeKeywordsDb",
     "knowledgeCenter",
   ],
   "/resume-grammar-checker": [

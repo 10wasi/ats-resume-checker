@@ -12,7 +12,6 @@ import { HomeAtsMistakesSection } from "@/components/home/HomeAtsMistakesSection
 import { HomeRecruiterReviewSection } from "@/components/home/HomeRecruiterReviewSection";
 import { HomeRelatedToolsSection } from "@/components/home/HomeRelatedToolsSection";
 import { HomeAtsToolSection } from "@/components/home/HomeAtsToolSection";
-import { HomeResumeImprovementSection } from "@/components/home/HomeResumeImprovementSection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 
 function SectionSkeleton({ height = "h-48" }: { height?: string }) {
@@ -60,37 +59,34 @@ export default function HomePage() {
       <HomePlatformJsonLd />
       <FaqJsonLd />
 
-      {/* 1 — Hero: headline, paste form, trust badges */}
+      {/* 1 — Hero */}
       <HeroSection />
 
-      {/* 2 — ATS Tool: upload gateway with output preview */}
+      {/* 2 — ATS Resume Checker Tool */}
       <HomeAtsToolSection />
 
-      {/* 3 — Three Key Benefits */}
+      {/* 3 — Three Benefits */}
       <HomeBenefitsSection />
 
-      {/* 4 — How It Works (3 steps) */}
+      {/* 4 — How It Works */}
       <HowItWorksSection />
 
-      {/* 5 — ATS Report Preview */}
+      {/* 5 — ATS Sample Report */}
       <HomeAtsReportPreviewSection />
 
-      {/* 6 — Before vs After Resume (2 examples) */}
+      {/* 6 — Before vs After Resume */}
       <HomeBeforeAfterSection />
 
-      {/* 7 — Resume Improvement Example */}
-      <HomeResumeImprovementSection />
-
-      {/* 8 — Recruiter Review */}
+      {/* 7 — Recruiter Feedback Example */}
       <HomeRecruiterReviewSection />
 
-      {/* 9 — Common ATS Mistakes (6 cards) */}
+      {/* 8 — ATS Mistakes */}
       <HomeAtsMistakesSection />
 
-      {/* 10 — Related Resume Tools */}
+      {/* 9 — Related Resume Tools */}
       <HomeRelatedToolsSection />
 
-      {/* 11 — Compact FAQ */}
+      {/* 10 — Compact FAQ */}
       <FaqSection />
 
       <StickyCheckerCta />
