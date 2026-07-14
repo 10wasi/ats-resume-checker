@@ -1,21 +1,21 @@
 import { getSiteUrl } from "@/lib/site-url";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
-/** Schema.org WebApplication for the unified resume / ATS checker. */
+/** Schema.org SoftwareApplication for the unified resume / ATS checker. */
 export function ResumeCheckerWebApplicationJsonLd() {
   const base = getSiteUrl();
   const url = `${base}${RESUME_CHECKER_PATH}`;
 
   const schema = {
     "@context": "https://schema.org",
-    "@type": "WebApplication",
-    name: "ResumeIQ Resume ATS Checker",
+    "@type": "SoftwareApplication",
+    name: "ATS Resume Checker",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Any",
     browserRequirements: "Requires JavaScript.",
     url,
     description:
-      "Free ATS Resume Checker: analyze score, keyword match %, missing terms, formatting flags, and compatibility. Upload PDF or paste text.",
+      "ATS resume checker: instant ATS score, keyword analysis, formatting check, and recruiter suggestions. Upload PDF or paste text.",
     offers: {
       "@type": "Offer",
       price: "0",
@@ -23,22 +23,15 @@ export function ResumeCheckerWebApplicationJsonLd() {
     },
     isAccessibleForFree: true,
     featureList: [
-      "ATS score (0–100)",
+      "Instant ATS score (0–100)",
       "Keyword gap analysis",
-      "Format parse test",
-      "Resume match analyzer",
-      "AI bullet suggestions",
+      "Formatting check",
+      "Recruiter suggestions",
+      "Job description match analyzer",
     ],
     potentialAction: {
       "@type": "UseAction",
       target: url,
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "2400",
-      bestRating: "5",
-      worstRating: "1",
     },
     publisher: {
       "@type": "Organization",

@@ -34,19 +34,11 @@ const FaqSection = dynamic(
 export const metadata = buildCtrMetadata(CTR_HOME, {
   canonical: "/",
   keywords: [
-    "ATS resume checker",
-    "resume checker",
     "free ATS resume checker",
+    "ATS resume checker",
     "resume ATS score",
     "resume scanner",
-    "resume analysis",
-    "CV checker",
-    "resume optimization",
-    "resume match",
-    "resume keywords",
-    "ATS compatibility",
-    "AI resume checker",
-    "resume checker online",
+    "resume checker free",
   ],
 });
 

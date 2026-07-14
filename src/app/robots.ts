@@ -1,14 +1,18 @@
 import type { MetadataRoute } from "next";
-import { getSiteUrl } from "@/lib/site-url";
+
+/** Canonical production sitemap — must match Google Search Console submission. */
+export const SITEMAP_ABSOLUTE_URL =
+  "https://ats-resume-checker-pearl.vercel.app/sitemap.xml";
+
+export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
-  const base = getSiteUrl().replace(/\/$/, "");
   return {
     rules: {
       userAgent: "*",
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: `${base}/sitemap.xml`,
+    sitemap: SITEMAP_ABSOLUTE_URL,
   };
 }

@@ -7,6 +7,7 @@ const BASE = process.env.SITEMAP_VALIDATE_BASE ?? "http://127.0.0.1:3847";
 const REDIRECT_SOURCES = new Set([
   "/ats-score-checker",
   "/resume-checker-online",
+  "/resume-match-analyzer",
   "/ats-resume/marketing-professionals",
   "/ats-resume/accountants",
   "/ats-resume/hr-professionals",

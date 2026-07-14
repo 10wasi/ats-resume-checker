@@ -27,7 +27,8 @@
     "open:3080": "start http://localhost:3080",
     "ping:local": "node scripts/ping-local.mjs",
     "ping:routes": "node scripts/ping-local.mjs",
-    "lint": "next lint"
+    "lint": "next lint",
+    "validate:sitemap": "node scripts/validate-sitemap-routes.mjs"
   },
   "dependencies": {
     "jspdf": "^4.2.1",

@@ -9,7 +9,7 @@ export function WebSiteJsonLd() {
     name: "ResumeIQ",
     alternateName: "ATS Resume Checker",
     description:
-      "Free resume checker and resume score checker online—ATS score, keyword gaps, match tool, and resume optimization for job seekers worldwide.",
+      "Free ATS resume checker — instant score, keyword analysis, formatting check, and recruiter suggestions for job seekers worldwide.",
     url: base,
     publisher: {
       "@type": "Organization",

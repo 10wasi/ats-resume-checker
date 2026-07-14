@@ -7,6 +7,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/resume-match-analyzer",
+        destination: "/resume-job-description-match",
+        permanent: true,
+      },
+      {
         source: "/ats-score-checker",
         destination: "/free-ats-score-checker",
         permanent: true,
@@ -39,6 +44,10 @@ const nextConfig = {
         source: "/sitemap.xml",
         headers: [
           {
+            key: "Content-Type",
+            value: "application/xml; charset=utf-8",
+          },
+          {
             key: "Cache-Control",
             value: "public, max-age=3600, s-maxage=86400",
           },
@@ -47,6 +56,10 @@ const nextConfig = {
       {
         source: "/robots.txt",
         headers: [
+          {
+            key: "Content-Type",
+            value: "text/plain; charset=utf-8",
+          },
           {
             key: "Cache-Control",
             value: "public, max-age=3600, s-maxage=86400",

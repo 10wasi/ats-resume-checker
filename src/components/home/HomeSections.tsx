@@ -39,12 +39,8 @@ export function HeroSection() {
             {CTR_HOME.h1}
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            Most applications never reach a human — hiring software filters them first.{" "}
-            <strong className="font-semibold text-slate-800">ResumeIQ</strong> shows you
-            exactly what that software sees: your{" "}
-            <strong className="font-semibold text-slate-800">resume ATS score</strong>, keyword
-            gaps, format risks, and a clear fix plan.{" "}
-            <strong className="font-semibold text-slate-800">Free. Instant. No account.</strong>
+            Upload your resume and get an instant ATS score, keyword gaps, format risks, and a
+            priority fix plan. Free — no account required.
           </p>
           <HomeHeroPasteForm />
 
