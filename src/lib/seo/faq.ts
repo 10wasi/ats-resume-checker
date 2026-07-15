@@ -209,9 +209,9 @@ export const homepageFaqCompact: FaqItem[] = [
       "PDF and DOCX up to 10 MB. Use selectable text — scanned image PDFs and design-heavy exports often break resume parsing. Export from Word or Google Docs for the cleanest resume review results.",
   },
   {
-    question: "What is a resume match score?",
+    question: "How does the resume parser work?",
     answer:
-      "Resume match score compares your text to a job description — overlap on skills, tools, and role language. Paste a posting in the checker to see missing keywords and match % for that specific application.",
+      "The resume parser extracts text and sections from your PDF or DOCX — the same step applicant tracking systems perform before ranking candidates. If parsing fails or text order scrambles, your score drops and recruiters may not find your skills. The checker shows a parse preview so you fix the source file first.",
   },
   {
     question: "Is this resume checker really free?",

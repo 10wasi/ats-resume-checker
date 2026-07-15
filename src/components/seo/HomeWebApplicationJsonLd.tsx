@@ -6,8 +6,8 @@ export function HomeWebApplicationJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Free ATS Resume Checker",
-    alternateName: "ResumeIQ ATS Resume Checker",
+    name: "ATS Resume Checker",
+    alternateName: ["ResumeIQ", "Free ATS Resume Checker"],
     description:
       "Free ATS resume checker: upload resume, get instant ATS score, keyword analysis, formatting check, and recruiter suggestions.",
     url: `${base}/`,
@@ -23,7 +23,8 @@ export function HomeWebApplicationJsonLd() {
       availability: "https://schema.org/InStock",
     },
     featureList: [
-      "Instant ATS score",
+      "Resume parser test",
+      "Resume score checker",
       "Keyword gap analysis",
       "Formatting check",
       "Recruiter suggestions",

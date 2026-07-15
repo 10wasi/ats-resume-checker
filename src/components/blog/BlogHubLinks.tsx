@@ -2,10 +2,10 @@ import Link from "next/link";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 const hubs = [
-  { href: "/", label: "Homepage" },
-  { href: RESUME_CHECKER_PATH, label: "Resume Checker" },
+  { href: "/", label: "ATS Resume Checker" },
+  { href: RESUME_CHECKER_PATH, label: "Free Resume Score Checker" },
   { href: "/career-success-hub", label: "Career Success Hub" },
-  { href: "/resume-review", label: "Resume Review" },
+  { href: "/resume-review", label: "Resume Review Tool" },
 ];
 
 export function BlogHubLinks() {

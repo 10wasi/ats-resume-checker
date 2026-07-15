@@ -13,41 +13,27 @@ export function HeroSection() {
   return (
     <section className="relative overflow-hidden border-b border-slate-200/70 bg-white">
       <div className="pointer-events-none absolute inset-0 bg-mesh" aria-hidden />
-      <div
-        className="pointer-events-none absolute inset-x-0 top-0 h-[400px] bg-grid opacity-[0.45]"
-        aria-hidden
-      />
-      <div className="relative mx-auto max-w-6xl px-4 pb-14 pt-16 sm:px-6 sm:pb-16 sm:pt-20 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
+      <div className="relative mx-auto max-w-6xl px-4 pb-10 pt-12 sm:px-6 sm:pb-12 sm:pt-14 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
           <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
             <IconSparkle className="h-3 w-3 shrink-0" aria-hidden />
-            Free ATS resume checker · No signup
+            Free · For job seekers applying online
           </span>
 
-          <h1 className="mt-5 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
+          <h1 className="mt-4 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.65rem] lg:leading-[1.1]">
             {CTR_HOME.h1}
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
-            Upload or paste your resume for an instant resume ATS score, keyword gaps, and format
-            risks — a free resume scanner built for applicant tracking system screening.
+          <p className="mx-auto mt-3 max-w-xl text-pretty text-base leading-relaxed text-slate-600 sm:text-lg">
+            Upload your resume, run a resume parser test, and get an ATS score with keyword match
+            and AI fix suggestions — free, no account.
           </p>
+
           <HomeHeroPasteForm />
 
-          <ul className="mx-auto mt-5 flex flex-wrap items-center justify-center gap-2 text-xs font-medium">
-            {[
-              { icon: "⚡", text: "Results in under 2 min" },
-              { icon: "📄", text: "PDF, DOCX, or paste" },
-              { icon: "🔒", text: "No resume storage" },
-            ].map((b) => (
-              <li
-                key={b.text}
-                className="flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3 py-1 text-slate-600 shadow-sm"
-              >
-                <span aria-hidden>{b.icon}</span>
-                {b.text}
-              </li>
-            ))}
-          </ul>
+          <p className="mx-auto mt-4 max-w-lg text-xs leading-relaxed text-slate-500">
+            Unlike generic grammar checkers, ResumeIQ scores how applicant tracking systems read
+            your file — parse health, keyword gaps, and format risks recruiters never see.
+          </p>
         </div>
       </div>
     </section>
@@ -1405,47 +1391,44 @@ export function HomeBenefitsSection() {
 export function HowItWorksSection() {
   const steps = [
     {
-      step: "01",
-      title: "Upload your resume",
-      body: "Paste text in the hero or upload PDF/DOCX — the resume scanner uses the same parsing applicant tracking systems rely on.",
+      step: "1",
+      title: "Upload resume",
+      body: "PDF, DOCX, or paste — resume parser extracts text like hiring software.",
     },
     {
-      step: "02",
-      title: "Get resume analysis",
-      body: "See your resume ATS score, keyword gaps, formatting flags, and match % when you add a job description.",
+      step: "2",
+      title: "Get ATS score",
+      body: "Resume score checker returns parse health, keyword match, and format flags.",
     },
     {
-      step: "03",
-      title: "Apply the fix plan",
-      body: "Follow ranked resume optimization suggestions, then re-check until your ATS friendly resume is ready to submit.",
+      step: "3",
+      title: "Improve & re-check",
+      body: "Apply AI suggestions, fix gaps, re-run until your resume review score is ready.",
     },
   ];
   return (
     <section
-      className="relative border-b border-slate-200/70 bg-slate-50/80 py-14 sm:py-16"
+      className="relative border-b border-slate-200/70 bg-slate-50/80 py-10 sm:py-12"
       aria-labelledby="how-it-works-heading"
     >
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="section-eyebrow mx-auto">How it works</p>
-          <h2
-            id="how-it-works-heading"
-            className="mt-3 font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl"
-          >
-            Three steps to a stronger resume review
-          </h2>
-        </div>
-        <ol className="mt-10 grid gap-5 md:grid-cols-3">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <h2
+          id="how-it-works-heading"
+          className="text-center font-display text-xl font-bold tracking-tight text-slate-900 sm:text-2xl"
+        >
+          How the ATS resume checker works
+        </h2>
+        <ol className="mt-6 grid gap-3 md:grid-cols-3">
           {steps.map((s) => (
             <li
               key={s.step}
-              className="rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm"
+              className="rounded-xl border border-slate-200/90 bg-white p-4"
             >
-              <span className="font-display text-4xl font-bold tracking-tight text-gradient">
-                {s.step}
+              <span className="text-xs font-bold uppercase tracking-wider text-emerald-600">
+                Step {s.step}
               </span>
-              <h3 className="mt-3 text-lg font-semibold text-slate-900">{s.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">{s.body}</p>
+              <h3 className="mt-1 text-sm font-semibold text-slate-900">{s.title}</h3>
+              <p className="mt-1 text-sm leading-relaxed text-slate-600">{s.body}</p>
             </li>
           ))}
         </ol>

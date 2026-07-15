@@ -26,9 +26,9 @@ const FAQ_RELATED: Partial<Record<string, { href: string; label: string }>> = {
     href: "/free-resume-checker-online",
     label: "Free resume checker online",
   },
-  "What is a resume match score?": {
-    href: "/resume-job-description-match",
-    label: "Resume match tool",
+  "How does the resume parser work?": {
+    href: "/resume-parsing",
+    label: "Resume parsing guide",
   },
   "Is this resume checker really free?": {
     href: "/methodology",
@@ -58,30 +58,18 @@ function FaqAnswer({ item }: { item: FaqItem }) {
 export function FaqSection() {
   return (
     <section
-      className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16 lg:px-8"
+      className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8"
       aria-labelledby="home-faq-heading"
     >
       <div className="mx-auto max-w-2xl text-center">
-        <p className="section-eyebrow mx-auto">FAQ</p>
         <h2
           id="home-faq-heading"
-          className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
+          className="font-display text-xl font-bold tracking-tight text-slate-900 sm:text-2xl"
         >
           ATS resume checker FAQ
         </h2>
-        <p className="mt-4 text-base text-slate-600">
-          Answers on resume ATS score,{" "}
-          <Link href="/resume-review" className="font-semibold text-[#16a34a] underline">
-            resume review
-          </Link>
-          , and optimization. More in our{" "}
-          <Link href="/faq-center" className="font-semibold text-[#16a34a] underline">
-            FAQ center
-          </Link>
-          .
-        </p>
       </div>
-      <div className="mx-auto mt-12 max-w-3xl divide-y divide-slate-200 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-soft">
+      <div className="mx-auto mt-8 max-w-2xl divide-y divide-slate-200 overflow-hidden rounded-xl border border-slate-200 bg-white">
         {homepageFaqCompact.map((item) => (
           <details
             key={item.question}
