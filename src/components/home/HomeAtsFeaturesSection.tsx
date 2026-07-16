@@ -1,55 +1,58 @@
-const features = [
+const steps = [
   {
-    icon: "📊",
-    title: "ATS score & resume parser test",
-    body: "0–100 score plus parse preview — see exactly what hiring software extracts from your file.",
+    step: "1",
+    title: "Upload & parser test",
+    body: "PDF or DOCX — see what hiring software extracts before you apply.",
   },
   {
-    icon: "🔑",
-    title: "Resume keyword match",
-    body: "Paste a job description to find missing terms and match % before you apply.",
+    step: "2",
+    title: "ATS score & keyword match",
+    body: "0–100 score plus missing terms vs any job description.",
   },
   {
-    icon: "✨",
+    step: "3",
     title: "AI resume analysis",
-    body: "Bullet rewrites and optimization tips based on your text — not generic templates.",
+    body: "Bullet rewrites from your text — not generic templates.",
   },
   {
-    icon: "✅",
+    step: "4",
     title: "Priority fix plan",
-    body: "Ranked actions so you improve resume ATS score in the right order.",
+    body: "Ranked actions to improve your resume ATS score fastest.",
   },
 ];
 
 export function HomeAtsFeaturesSection() {
   return (
     <section
-      className="border-b border-slate-200/70 bg-slate-50/60 py-10 sm:py-12"
+      className="border-b border-slate-200/70 bg-slate-50/60 py-8 sm:py-10"
       aria-labelledby="ats-features-heading"
     >
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <h2
           id="ats-features-heading"
-          className="text-center font-display text-xl font-bold tracking-tight text-slate-900 sm:text-2xl"
+          className="text-center font-display text-lg font-bold tracking-tight text-slate-900 sm:text-xl"
         >
           Upload → score → AI analysis → improve
         </h2>
-        <ul className="mt-8 grid gap-3 sm:grid-cols-2">
-          {features.map((f) => (
+        <p className="mt-2 text-center text-sm text-slate-600">
+          Scores parse health and keyword fit — not grammar alone.
+        </p>
+        <ol className="mt-6 grid gap-2 sm:grid-cols-2">
+          {steps.map((s) => (
             <li
-              key={f.title}
-              className="flex gap-3 rounded-xl border border-slate-200/90 bg-white p-4"
+              key={s.step}
+              className="flex gap-3 rounded-lg border border-slate-200/90 bg-white px-4 py-3"
             >
-              <span className="text-lg" aria-hidden>
-                {f.icon}
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-xs font-bold text-emerald-700">
+                {s.step}
               </span>
               <div>
-                <h3 className="text-sm font-semibold text-slate-900">{f.title}</h3>
-                <p className="mt-0.5 text-sm leading-relaxed text-slate-600">{f.body}</p>
+                <h3 className="text-sm font-semibold text-slate-900">{s.title}</h3>
+                <p className="mt-0.5 text-sm leading-snug text-slate-600">{s.body}</p>
               </div>
             </li>
           ))}
-        </ul>
+        </ol>
       </div>
     </section>
   );

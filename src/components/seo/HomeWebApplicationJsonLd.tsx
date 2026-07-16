@@ -7,7 +7,7 @@ export function HomeWebApplicationJsonLd() {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "ATS Resume Checker",
-    alternateName: ["ResumeIQ", "Free ATS Resume Checker"],
+    alternateName: ["ResumeIQ", "ATS Score Checker", "Free ATS Resume Checker"],
     description:
       "Free ATS resume checker: upload resume, get instant ATS score, keyword analysis, formatting check, and recruiter suggestions.",
     url: `${base}/`,

@@ -176,46 +176,46 @@ export const homepageFaqItems: FaqItem[] = [
   },
 ];
 
-/** Homepage FAQ — 8 high-intent questions only (schema + on-page). */
+/** Homepage FAQ — 8 high-intent questions (schema + on-page). */
 export const homepageFaqCompact: FaqItem[] = [
   {
-    question: "What is a free ATS resume checker?",
+    question: "Can ATS read my resume?",
     answer:
-      "A free ATS resume checker scans your PDF or pasted text for applicant tracking system compatibility — structure, keyword coverage, and parse health — then returns an ATS score and priority fixes. ResumeIQ runs core resume analysis without signup or payment.",
+      "Only if your file exports selectable text in logical order. Scanned PDFs, Canva layouts, and two-column designs often fail — the resume parser test shows exactly what hiring software extracts before you apply.",
   },
   {
-    question: "What does my resume ATS score measure?",
+    question: "How is my ATS score calculated?",
     answer:
-      "Your resume ATS score reflects how cleanly hiring software can read your file: heading order, bullet clarity, keyword alignment, and formatting risks. It is a resume score checker signal — not a guarantee of an interview — so you know what to fix before you apply.",
+      "Your score weighs parse health (can software read your file?), keyword alignment, section structure, and formatting risks — the same signals applicant tracking systems use to rank candidates. See our methodology for the full weighting.",
   },
   {
-    question: "Why do resumes fail ATS systems?",
+    question: "How accurate is this ATS score checker?",
     answer:
-      "Most failures are technical: two-column layouts, tables, missing job keywords, or bullets without measurable outcomes. The resume scanner flags these so you can build an ATS friendly resume that still reads well to recruiters.",
+      "It mirrors common ATS parsing and keyword-filtering rules — not one employer's private algorithm. Use it to catch fixable issues (layout, missing terms, weak bullets) before you submit. Re-check after every edit for the most accurate read.",
+  },
+  {
+    question: "Why was my resume rejected by ATS?",
+    answer:
+      "Usually parsing failed, keywords didn't match the posting, or bullets lacked measurable outcomes. The resume scanner flags which of these applies to your file so you fix the right problem.",
   },
   {
     question: "How can I improve my ATS score?",
     answer:
-      "Fix parsing first (single column, standard headings), then weave posting keywords into experience bullets with proof, and strengthen weak bullets. Re-run resume analysis after each edit — small layout changes can shift extraction.",
+      "Fix parsing first (single column, standard headings), then weave posting keywords into experience bullets with proof, and strengthen weak bullets. Re-run resume analysis after each edit.",
   },
   {
     question: "Do you store my resume?",
     answer:
-      "Your file is processed to generate feedback for that request. We do not sell resume data or use it to train unrelated models. See our privacy policy for full details.",
-  },
-  {
-    question: "Which file formats work with the resume scanner?",
-    answer:
-      "PDF and DOCX up to 10 MB. Use selectable text — scanned image PDFs and design-heavy exports often break resume parsing. Export from Word or Google Docs for the cleanest resume review results.",
+      "No. Your file is processed to generate feedback for that request only. We do not sell resume data or use it to train unrelated models.",
   },
   {
     question: "How does the resume parser work?",
     answer:
-      "The resume parser extracts text and sections from your PDF or DOCX — the same step applicant tracking systems perform before ranking candidates. If parsing fails or text order scrambles, your score drops and recruiters may not find your skills. The checker shows a parse preview so you fix the source file first.",
+      "It extracts text and sections from PDF or DOCX — the same step ATS performs before ranking. If text order scrambles, your score drops. The checker shows a parse preview so you fix the source file first.",
   },
   {
     question: "Is this resume checker really free?",
     answer:
-      "Yes. Upload or paste a resume, run ATS scoring, keyword scan, and format checks without an account. Core resume optimization and resume review outputs stay free.",
+      "Yes. Upload or paste a resume, run ATS scoring, keyword scan, and format checks without an account. Core resume optimization outputs stay free.",
   },
 ];

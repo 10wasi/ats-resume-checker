@@ -12,28 +12,21 @@ import { CTR_HOME } from "@/lib/seo/ctr-metadata";
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden border-b border-slate-200/70 bg-white">
-      <div className="pointer-events-none absolute inset-0 bg-mesh" aria-hidden />
-      <div className="relative mx-auto max-w-6xl px-4 pb-10 pt-12 sm:px-6 sm:pb-12 sm:pt-14 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+      <div className="relative mx-auto max-w-6xl px-4 pb-8 pt-10 sm:px-6 sm:pb-10 sm:pt-12 lg:px-8">
+        <div className="mx-auto max-w-xl text-center">
           <span className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
             <IconSparkle className="h-3 w-3 shrink-0" aria-hidden />
-            Free · For job seekers applying online
+            Free · No signup
           </span>
 
-          <h1 className="mt-4 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.65rem] lg:leading-[1.1]">
+          <h1 className="mt-3 text-balance font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             {CTR_HOME.h1}
           </h1>
-          <p className="mx-auto mt-3 max-w-xl text-pretty text-base leading-relaxed text-slate-600 sm:text-lg">
-            Upload your resume, run a resume parser test, and get an ATS score with keyword match
-            and AI fix suggestions — free, no account.
+          <p className="mx-auto mt-2 text-pretty text-base text-slate-600">
+            Resume parser test, ATS score &amp; AI fixes for job seekers — in under 2 minutes.
           </p>
 
           <HomeHeroPasteForm />
-
-          <p className="mx-auto mt-4 max-w-lg text-xs leading-relaxed text-slate-500">
-            Unlike generic grammar checkers, ResumeIQ scores how applicant tracking systems read
-            your file — parse health, keyword gaps, and format risks recruiters never see.
-          </p>
         </div>
       </div>
     </section>
