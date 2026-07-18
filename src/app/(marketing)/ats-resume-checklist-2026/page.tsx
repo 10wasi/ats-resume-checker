@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { KnowledgeCenterRelated } from "@/components/knowledge/KnowledgeCenterRelated";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
@@ -189,6 +190,8 @@ export default function AtsResumeChecklistPage() {
             excludeId="checklist"
             relatedIds={["format", "friendly", "keywords", "score"]}
           />
+
+          <RelatedResources path={ATS_RESUME_CHECKLIST_PATH} excludeHref={ATS_RESUME_CHECKLIST_PATH} />
 
           <BlogResumeCta />
         </div>

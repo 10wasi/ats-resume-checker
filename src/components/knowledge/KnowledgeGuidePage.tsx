@@ -17,8 +17,12 @@ import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
+import { GuideAuthorBlock } from "@/components/seo/GuideAuthorBlock";
 import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
+import { PaaAnswersSection } from "@/components/seo/PaaAnswersSection";
+import { SemanticEntitySection } from "@/components/seo/SemanticEntitySection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
+import { TrustBadgesStrip } from "@/components/seo/TrustBadgesStrip";
 import { KNOWLEDGE_CENTER_PATH } from "@/lib/content/knowledge-center-pages";
 import type { FaqItem } from "@/lib/seo/faq";
 import type { HowToStep } from "@/lib/seo/how-to-steps";
@@ -127,7 +131,11 @@ export function KnowledgeGuidePage({
             <BlogContent content={body} />
           </div>
 
-          <div className="not-prose mt-10">
+          <SemanticEntitySection path={path} />
+
+          <div className="not-prose mt-10 space-y-6">
+            <TrustBadgesStrip />
+            <GuideAuthorBlock />
             <GuideEeatSection path={path} />
           </div>
 
@@ -137,6 +145,8 @@ export function KnowledgeGuidePage({
             headingId="kc-faq-heading"
             intro={faqIntro}
           />
+
+          <PaaAnswersSection path={path} />
 
           <RelatedResources path={path} excludeHref={path} />
 

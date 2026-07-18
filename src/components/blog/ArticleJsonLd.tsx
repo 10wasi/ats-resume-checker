@@ -29,6 +29,7 @@ export function ArticleJsonLd({
     author: {
       "@type": "Person",
       name: post.author,
+      url: `${base}/about`,
     },
     publisher: {
       "@type": "Organization",

@@ -11,8 +11,12 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
+import { GuideAuthorBlock } from "@/components/seo/GuideAuthorBlock";
 import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
+import { PaaAnswersSection } from "@/components/seo/PaaAnswersSection";
+import { SemanticEntitySection } from "@/components/seo/SemanticEntitySection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
+import { TrustBadgesStrip } from "@/components/seo/TrustBadgesStrip";
 import { TopicPillarBanner } from "@/components/seo/TopicPillarBanner";
 import { CheckerFunnelWebApplicationJsonLd } from "@/components/seo/CheckerFunnelWebApplicationJsonLd";
 import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
@@ -161,7 +165,11 @@ export function CareerLandingPage({
             <BlogContent content={entry.body} />
           </div>
 
-          <div className="not-prose mt-10">
+          <SemanticEntitySection path={entry.path} />
+
+          <div className="not-prose mt-10 space-y-6">
+            <TrustBadgesStrip />
+            <GuideAuthorBlock />
             <GuideEeatSection path={entry.path} />
           </div>
 
@@ -175,6 +183,8 @@ export function CareerLandingPage({
             headingId="career-faq-heading"
             intro={faqIntro}
           />
+
+          <PaaAnswersSection path={entry.path} />
 
           <CareerHubRelated currentId={entry.id} />
           <BlogResumeCta />

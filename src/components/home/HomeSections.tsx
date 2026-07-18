@@ -23,7 +23,8 @@ export function HeroSection() {
             {CTR_HOME.h1}
           </h1>
           <p className="mx-auto mt-2 text-pretty text-base text-slate-600">
-            Resume parser test, ATS score &amp; AI fixes for job seekers — in under 2 minutes.
+            Upload PDF free — instant ATS score, resume parser test &amp; keyword gaps. Fix before
+            you apply.
           </p>
 
           <HomeHeroPasteForm />

@@ -4,6 +4,7 @@ import { getAtsResumeRoleSlugs } from "@/lib/content/ats-resume-roles/registry";
 import { getProfessionHubSlugs } from "@/lib/content/profession-hubs/registry";
 import { getResumeKeywordsSlugs } from "@/lib/content/resume-keywords/registry";
 import { getResumeExampleSlugs } from "@/lib/content/resume-examples/registry";
+import { getResumeCheckerRoleSlugs } from "@/lib/content/resume-checker-roles/registry";
 import { getSiteUrl } from "@/lib/site-url";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 import {
@@ -91,6 +92,8 @@ const STATIC_PATHS: StaticPath[] = [
   { path: "/ats-resume-checklist-2026", priority: 0.9, changeFrequency: "monthly" },
   { path: "/about", priority: 0.75, changeFrequency: "monthly" },
   { path: "/methodology", priority: 0.84, changeFrequency: "monthly" },
+  { path: "/how-we-score-resumes", priority: 0.84, changeFrequency: "monthly" },
+  { path: "/our-algorithm", priority: 0.83, changeFrequency: "monthly" },
   { path: "/how-resume-analysis-works", priority: 0.83, changeFrequency: "monthly" },
   { path: "/editorial-policy", priority: 0.72, changeFrequency: "monthly" },
   { path: "/faq-center", priority: 0.8, changeFrequency: "monthly" },
@@ -158,6 +161,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const path = `/profession/${slug}`;
     if (isExcluded(path)) continue;
     entries.push(makeEntry(base, path, { priority: 0.9, changeFrequency: "monthly", lastModified: hubLastMod }));
+  }
+
+  for (const role of getResumeCheckerRoleSlugs()) {
+    const path = `/resume-checker/${role}`;
+    if (isExcluded(path)) continue;
+    entries.push(makeEntry(base, path, { priority: 0.88, changeFrequency: "weekly", lastModified: hubLastMod }));
   }
 
   for (const slug of getPostSlugs()) {

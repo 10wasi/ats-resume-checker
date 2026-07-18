@@ -8,6 +8,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { buildCtrMetadata, CTR_HOME } from "@/lib/seo/ctr-metadata";
 import { HomeAtsFeaturesSection } from "@/components/home/HomeAtsFeaturesSection";
 import { HomeTrustStrip } from "@/components/home/HomeTrustStrip";
+import { HomeTopicHubSection } from "@/components/home/HomeTopicHubSection";
 
 function SectionSkeleton({ height = "h-64" }: { height?: string }) {
   return (
@@ -20,6 +21,30 @@ function SectionSkeleton({ height = "h-64" }: { height?: string }) {
 const FaqSection = dynamic(
   () => import("@/components/home/FaqSection").then((m) => ({ default: m.FaqSection })),
   { loading: () => <SectionSkeleton /> }
+);
+
+const TestimonialsSection = dynamic(
+  () =>
+    import("@/components/home/TestimonialsSection").then((m) => ({
+      default: m.TestimonialsSection,
+    })),
+  { loading: () => <SectionSkeleton height="h-96" /> }
+);
+
+const PaaAnswersSection = dynamic(
+  () =>
+    import("@/components/seo/PaaAnswersSection").then((m) => ({
+      default: m.PaaAnswersSection,
+    })),
+  { loading: () => <SectionSkeleton height="h-48" /> }
+);
+
+const StickyCheckerCta = dynamic(
+  () =>
+    import("@/components/seo/StickyCheckerCta").then((m) => ({
+      default: m.StickyCheckerCta,
+    })),
+  { ssr: false }
 );
 
 export const metadata = buildCtrMetadata(CTR_HOME, {
@@ -48,7 +73,13 @@ export default function HomePage() {
       <HeroSection />
       <HomeAtsFeaturesSection />
       <HomeTrustStrip />
+      <TestimonialsSection />
+      <HomeTopicHubSection />
+      <div className="container-prose pb-4">
+        <PaaAnswersSection path="/" />
+      </div>
       <FaqSection />
+      <StickyCheckerCta />
     </>
   );
 }

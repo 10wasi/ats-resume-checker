@@ -14,13 +14,34 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: ctrTitle("ATS Score Checker", "Free Resume Scan"),
-  description:
-    "ATS resume checker free — upload PDF for instant score, resume parser test & keyword match. AI fixes in 2 min. No signup. Try now.",
-  ogTitle: "ATS Score Checker — Free Resume Parser Test & AI Fixes",
-  h1: "ATS Resume Checker",
+  title: ctrTitle("Free ATS Resume Checker", "Score in Seconds"),
+  description: ctrMeta(
+    "Upload PDF free — instant ATS score, resume parser test & keyword match. AI fixes in 2 min. No signup. Try now."
+  ),
+  ogTitle: "Free ATS Resume Checker (Score Your Resume in Seconds)",
+  h1: "Free ATS Resume Checker — Score in Seconds",
   primaryKeyword: "ATS resume checker",
   richSnippets: ["FAQPage", "SoftwareApplication", "WebSite", "Organization", "BreadcrumbList"],
+};
+
+export const CTR_HOW_WE_SCORE: PageCtrMeta = {
+  title: ctrTitle("How We Score Resumes", "ATS Methodology"),
+  description: ctrMeta(
+    "Transparent ATS scoring — parse health, keywords, structure & match. How ResumeIQ calculates your score."
+  ),
+  h1: "How We Score Resumes",
+  primaryKeyword: "how we score resumes",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_OUR_ALGORITHM: PageCtrMeta = {
+  title: ctrTitle("Our Resume Algorithm", "How Analysis Works"),
+  description: ctrMeta(
+    "Step-by-step resume analysis — extraction, format checks, keyword match & AI suggestions explained."
+  ),
+  h1: "Our Resume Analysis Algorithm",
+  primaryKeyword: "resume analysis algorithm",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_RESUME_CHECKER: PageCtrMeta = {

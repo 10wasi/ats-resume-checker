@@ -1,21 +1,26 @@
 const BRAND = "ResumeIQ";
 
-/** CTR meta with required elements: score, keywords, format, recruiter tips, free scan. */
+/** Meta description — direct, curiosity-driven, max 155 chars. No duplicate boilerplate. */
 export function ctrMeta(benefit: string): string {
-  const base =
-    "Free scan: instant ATS score, keyword analysis, formatting check & recruiter suggestions.";
   const trimmed = benefit.trim();
-  if (!trimmed) return `${base} No signup.`;
-  const sep = trimmed.endsWith(".") ? " " : ". ";
-  const text = `${base}${sep}${trimmed}`;
-  return text.length <= 160 ? `${text} No signup.` : text.slice(0, 157) + "…";
+  if (!trimmed) {
+    return "Upload free — instant ATS score, resume parser test & keyword gaps. Results in 2 min. No signup.";
+  }
+  const text = trimmed.endsWith(".") ? trimmed : `${trimmed}.`;
+  return text.length <= 155 ? text : `${text.slice(0, 152)}…`;
 }
 
-/** Title: primary keyword — benefit | brand (≤60 chars). */
-export function ctrTitle(keyword: string, benefit: string): string {
-  const raw = `${keyword} — ${benefit} | ${BRAND}`;
-  if (raw.length <= 60) return raw;
-  const shorter = `${keyword} — ${benefit}`;
-  if (shorter.length <= 60) return shorter;
-  return `${keyword.slice(0, 40)}… | ${BRAND}`;
+/**
+ * Title: Keyword (Curiosity Hook) | Brand — max 60 chars.
+ * Example: Free ATS Resume Checker (Score in Seconds) | ResumeIQ
+ */
+export function ctrTitle(keyword: string, hook: string): string {
+  const paren = `${keyword} (${hook})`;
+  const withBrand = `${paren} | ${BRAND}`;
+  if (withBrand.length <= 60) return withBrand;
+  if (paren.length <= 60) return paren;
+  const shortHook = hook.length > 18 ? `${hook.slice(0, 15)}…` : hook;
+  const short = `${keyword} (${shortHook})`;
+  if (short.length <= 60) return short;
+  return `${keyword.slice(0, 32)}… (${shortHook})`.slice(0, 60);
 }

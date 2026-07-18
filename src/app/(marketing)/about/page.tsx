@@ -54,6 +54,14 @@ export default function AboutPage() {
               how scoring works
             </Link>
             ,{" "}
+            <Link href="/how-we-score-resumes" className="font-semibold text-[#16a34a] underline">
+              how we score resumes
+            </Link>
+            ,{" "}
+            <Link href="/our-algorithm" className="font-semibold text-[#16a34a] underline">
+              our algorithm
+            </Link>
+            ,{" "}
             <Link href="/editorial-policy" className="font-semibold text-[#16a34a] underline">
               editorial policy
             </Link>

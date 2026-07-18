@@ -3,7 +3,11 @@ import { CareerSuccessHubGrid } from "@/components/career/CareerSuccessHubGrid";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
+import { RelatedResources } from "@/components/seo/RelatedResources";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
+import { PaaAnswersSection } from "@/components/seo/PaaAnswersSection";
+import { SemanticEntitySection } from "@/components/seo/SemanticEntitySection";
+import { TrustBadgesStrip } from "@/components/seo/TrustBadgesStrip";
 import { TopicClusterLinks } from "@/components/seo/TopicClusterLinks";
 import {
   CAREER_SUCCESS_HUB_PATH,
@@ -86,8 +90,12 @@ export default function CareerSuccessHubPage() {
             </Link>
           </header>
           <CareerSuccessHubGrid />
+          <SemanticEntitySection path={CAREER_SUCCESS_HUB_PATH} />
           <TopicClusterLinks path={CAREER_SUCCESS_HUB_PATH} />
+          <TrustBadgesStrip className="mt-10" />
+          <RelatedResources path={CAREER_SUCCESS_HUB_PATH} excludeHref={CAREER_SUCCESS_HUB_PATH} limit={8} />
           <GuideEeatSection path={CAREER_SUCCESS_HUB_PATH} />
+          <PaaAnswersSection path={CAREER_SUCCESS_HUB_PATH} />
           <section className="mt-16 border-t border-slate-200 pt-14">
             <h2 className="font-display text-2xl font-bold text-slate-900">
               FAQ: Career Success Hub

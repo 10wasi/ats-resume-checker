@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllPosts, getPostBySlug, getPostSlugs } from "@/lib/blog";
+import { BlogPostNavigation } from "@/components/blog/BlogPostNavigation";
+import {
+  getAdjacentPosts,
+  getPopularPosts,
+  getSmartRelatedPosts,
+} from "@/lib/blog/navigation";
+import { getPostBySlug, getPostSlugs } from "@/lib/blog";
 import { readingTimeMinutes } from "@/lib/blog/reading-time";
 import {
   BlogContent,
@@ -24,6 +31,11 @@ import { getDefaultOgImages } from "@/lib/seo/og-defaults";
 import { getContentLastUpdated } from "@/lib/seo/content-freshness";
 
 import { getSiteUrl } from "@/lib/site-url";
+
+const ReadingProgress = dynamic(
+  () => import("@/components/ui/ReadingProgress").then((m) => ({ default: m.ReadingProgress })),
+  { ssr: false }
+);
 
 type Props = { params: { slug: string } };
 
@@ -74,12 +86,13 @@ export default function BlogPostPage({ params }: Props) {
 
   const minutes = readingTimeMinutes(post.content);
   const faqItems = blogFaqBySlug[post.slug] ?? blogGenericFaqItems;
-  const related = getAllPosts()
-    .filter((p) => p.slug !== post.slug)
-    .slice(0, 3);
+  const related = getSmartRelatedPosts(post.slug, 3);
+  const { prev, next } = getAdjacentPosts(post.slug);
+  const popular = getPopularPosts(4);
 
   return (
     <article className="relative">
+      <ReadingProgress />
       <ArticleJsonLd post={post} slug={post.slug} />
       <BreadcrumbJsonLd
         items={[
@@ -145,6 +158,8 @@ export default function BlogPostPage({ params }: Props) {
         />
 
         <RelatedResources path={`/blog/${post.slug}`} />
+
+        <BlogPostNavigation prev={prev} next={next} popular={popular} />
 
         <BlogHubLinks />
         <BlogResumeCta />

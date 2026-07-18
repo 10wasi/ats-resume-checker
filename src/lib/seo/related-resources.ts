@@ -14,7 +14,7 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     description: "Free ATS score, keyword gaps, format flags, and AI rewrites.",
   },
   matchAnalyzer: {
-    href: "/resume-match-analyzer",
+    href: "/resume-job-description-match",
     title: "Resume Match Analyzer",
     description: "Resume match score vs job description with missing keywords.",
   },
@@ -488,13 +488,13 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
   ],
   "/": [
     "checker",
+    "resumeReview",
+    "careerHub",
     "scoreChecker",
-    "resumeKeywordsDb",
-    "summaryGenerator",
-    "skillsGenerator",
-    "coverLetterGenerator",
     "match",
+    "resumeKeywordsDb",
     "methodology",
+    "completeAtsGuide",
   ],
   "/resume-optimization-platform": [
     "checker",
@@ -866,6 +866,8 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
   "/blog/remote-job-resume-tips": ["checker", "matchAnalyzer", "blogKeywords", "atsGuide", "howAtsWorks", "examples"],
   "/about": ["checker", "methodology", "faqCenter", "careerHub", "knowledgeCenter", "contact"],
   "/methodology": ["checker", "howResumeAnalysis", "faqCenter", "atsScoreGuide", "editorialPolicy", "checklist"],
+  "/how-we-score-resumes": ["checker", "howResumeAnalysis", "methodology", "atsScoreGuide", "scoreChecker", "editorialPolicy", "faqCenter"],
+  "/our-algorithm": ["checker", "methodology", "howResumeAnalysis", "howAtsWorks", "resumeParsing", "scoreChecker", "editorialPolicy"],
   "/how-resume-analysis-works": ["checker", "methodology", "atsScoreGuide", "scoreChecker", "editorialPolicy", "howAtsWorks"],
   "/editorial-policy": ["about", "methodology", "howResumeAnalysis", "privacy", "contact", "faqCenter"],
   "/faq-center": [
@@ -1080,6 +1082,42 @@ function getProgrammaticRelatedResources(
     if (item.href === excludeHref || items.some((i) => i.href === item.href)) return;
     items.push(item);
   };
+
+  if (section === "resume-checker" && slug) {
+    const exampleSlug = slug === "business-analyst" ? "data-analyst" : slug;
+    push(catalogItem("checker")!);
+    push(catalogItem("scoreChecker")!);
+    push(
+      roleResource(
+        exampleSlug,
+        "example",
+        `${slug.replace(/-/g, " ")} resume example`,
+        "ATS-friendly sample for this role."
+      )
+    );
+    push(
+      roleResource(
+        exampleSlug,
+        "keywords",
+        `${slug.replace(/-/g, " ")} resume keywords`,
+        "Skills and verbs recruiters filter on."
+      )
+    );
+    if (PROFESSION_SLUGS.has(slug)) {
+      push(
+        roleResource(
+          slug,
+          "profession",
+          `${slug.replace(/-/g, " ")} profession hub`,
+          "Connected guides, keywords, and examples."
+        )
+      );
+    }
+    push(catalogItem("match")!);
+    push(catalogItem("methodology")!);
+    push(catalogItem("howResumeAnalysis")!);
+    return items;
+  }
 
   if (section === "resume-keywords") {
     const exampleSlug = slug === "business-analyst" ? "data-analyst" : slug;
