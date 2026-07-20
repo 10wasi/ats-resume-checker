@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { KnowledgeCenterRelated } from "@/components/knowledge/KnowledgeCenterRelated";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { ToolPageSeoEnrichment } from "@/components/seo/ToolPageSeoEnrichment";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
@@ -200,6 +201,7 @@ export default function ResumeJobDescriptionMatchPage() {
           <BlogResumeCta />
         </div>
       </article>
+      <ToolPageSeoEnrichment path="/resume-job-description-match" />
     </>
   );
 }

@@ -4,6 +4,7 @@ import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { ToolPageSeoEnrichment } from "@/components/seo/ToolPageSeoEnrichment";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { resumeSkillsAnalyzerBody } from "@/lib/content/resume-skills-analyzer-body";
@@ -114,6 +115,7 @@ export default function ResumeSkillsAnalyzerPage() {
           <BlogResumeCta />
         </div>
       </article>
+      <ToolPageSeoEnrichment path={PATH} />
     </>
   );
 }
