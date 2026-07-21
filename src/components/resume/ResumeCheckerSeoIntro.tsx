@@ -16,6 +16,11 @@ const CHECKER_GUIDE_LINKS = [
 
 const TRUST_GUIDES = [
   {
+    title: "Free resume review rubric",
+    body: "Recruiter scan checklist plus ATS section feedback before you apply.",
+    href: "/resume-review",
+  },
+  {
     title: "How ATS scoring works",
     body: "Parse health, keyword weighting, and format flags—see our transparent methodology.",
     href: "/methodology",

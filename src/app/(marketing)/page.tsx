@@ -8,7 +8,8 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { buildCtrMetadata, CTR_HOME } from "@/lib/seo/ctr-metadata";
 import { HomeAtsFeaturesSection } from "@/components/home/HomeAtsFeaturesSection";
 import { HomeTrustStrip } from "@/components/home/HomeTrustStrip";
-import { HomeTopicHubSection } from "@/components/home/HomeTopicHubSection";
+import { HomePlatformAuthority } from "@/components/home/HomePlatformAuthority";
+import { HomeBlogHighlights } from "@/components/home/HomeBlogHighlights";
 
 function SectionSkeleton({ height = "h-64" }: { height?: string }) {
   return (
@@ -17,6 +18,22 @@ function SectionSkeleton({ height = "h-64" }: { height?: string }) {
     </div>
   );
 }
+
+const HomeTopicHubSection = dynamic(
+  () =>
+    import("@/components/home/HomeTopicHubSection").then((m) => ({
+      default: m.HomeTopicHubSection,
+    })),
+  { loading: () => <SectionSkeleton /> }
+);
+
+const HomeSuccessStories = dynamic(
+  () =>
+    import("@/components/home/HomeSuccessStories").then((m) => ({
+      default: m.HomeSuccessStories,
+    })),
+  { loading: () => <SectionSkeleton height="h-72" /> }
+);
 
 const FaqSection = dynamic(
   () => import("@/components/home/FaqSection").then((m) => ({ default: m.FaqSection })),
@@ -73,8 +90,11 @@ export default function HomePage() {
       <HeroSection />
       <HomeAtsFeaturesSection />
       <HomeTrustStrip />
-      <TestimonialsSection />
       <HomeTopicHubSection />
+      <HomePlatformAuthority />
+      <HomeSuccessStories />
+      <HomeBlogHighlights />
+      <TestimonialsSection />
       <div className="container-prose pb-4">
         <PaaAnswersSection path="/" />
       </div>

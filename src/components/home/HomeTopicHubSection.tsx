@@ -11,17 +11,37 @@ const HUB_LINKS = [
   {
     href: "/resume-review",
     title: "Resume Review",
-    desc: "Section feedback & improvement plan",
+    desc: "Recruiter rubric + section feedback",
   },
   {
     href: "/career-success-hub",
     title: "Career Success Hub",
-    desc: "Tools, guides & role resources",
+    desc: "All tools & guides in one workflow",
   },
   {
     href: "/resume-job-description-match",
     title: "Job Match Analyzer",
     desc: "Missing keywords vs any posting",
+  },
+  {
+    href: "/ats-resume-templates",
+    title: "Resume Templates",
+    desc: "ATS-safe layouts & formatting rules",
+  },
+  {
+    href: "/complete-guide-ats-resume-optimization",
+    title: "ATS Guide",
+    desc: "Complete optimization playbook",
+  },
+  {
+    href: "/interview-question-generator",
+    title: "Interview Guides",
+    desc: "Role-specific questions & STAR tips",
+  },
+  {
+    href: "/resume-examples",
+    title: "Resume Examples",
+    desc: "Strong bullets by profession",
   },
 ] as const;
 

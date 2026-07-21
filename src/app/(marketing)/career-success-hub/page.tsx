@@ -9,6 +9,7 @@ import { PaaAnswersSection } from "@/components/seo/PaaAnswersSection";
 import { SemanticEntitySection } from "@/components/seo/SemanticEntitySection";
 import { TrustBadgesStrip } from "@/components/seo/TrustBadgesStrip";
 import { TopicClusterLinks } from "@/components/seo/TopicClusterLinks";
+import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import {
   CAREER_SUCCESS_HUB_PATH,
 } from "@/lib/content/career-success-hub/registry";
@@ -80,7 +81,14 @@ export default function CareerSuccessHubPage() {
               >
                 ATS Resume Checker
               </Link>{" "}
-              or pick a resource below.
+              or pick a resource below. Also see{" "}
+              <Link
+                href="/resume-review"
+                className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"
+              >
+                resume review online
+              </Link>
+              .
             </p>
             <Link
               href={RESUME_CHECKER_PATH}
@@ -115,6 +123,7 @@ export default function CareerSuccessHubPage() {
           </section>
         </div>
       </div>
+      <StickyCheckerCta />
     </>
   );
 }
