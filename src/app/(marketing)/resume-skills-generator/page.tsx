@@ -3,6 +3,7 @@ import { BlogResumeCta } from "@/components/blog/BlogExtras";
 import { AccordionFaq } from "@/components/ui/AccordionFaq";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { ToolPageSeoEnrichment } from "@/components/seo/ToolPageSeoEnrichment";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
 import { resumeSkillsGeneratorFaqItems } from "@/lib/seo/resume-skills-generator-faq";
@@ -278,6 +279,7 @@ export default function ResumeSkillsGeneratorPage() {
 
         <RelatedResources path={PATH} heading="Related resume tools" />
       </main>
+      <ToolPageSeoEnrichment path={PATH} pageTitle="resume skills generator" />
     </>
   );
 }

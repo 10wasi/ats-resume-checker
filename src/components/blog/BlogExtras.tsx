@@ -57,7 +57,7 @@ export function BlogResumeCta() {
         href={RESUME_CHECKER_PATH}
         className="btn-gradient mt-6 inline-flex px-7 text-sm"
       >
-        Check Resume Score Free
+        Check Resume
       </Link>
     </aside>
   );
@@ -81,11 +81,15 @@ export function BlogCoverPlaceholder({
   eyebrow?: string;
 }) {
   const grad = coverStyles[variant] ?? coverStyles.indigo;
+  const altText = `${title} — ${eyebrow} cover illustration for ResumeIQ career blog`;
   return (
-    <div
-      className={`relative aspect-[16/9] w-full overflow-hidden rounded-3xl bg-gradient-to-br shadow-soft-lg ring-1 ring-slate-200/80 ${grad}`}
-      aria-hidden
-    >
+    <figure className="not-prose">
+      <div
+        className={`relative aspect-[16/9] w-full overflow-hidden rounded-3xl bg-gradient-to-br shadow-soft-lg ring-1 ring-slate-200/80 ${grad}`}
+        role="img"
+        aria-label={altText}
+        title={title}
+      >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.4),transparent_60%)]" />
       <div className="absolute inset-0 bg-grid opacity-[0.18]" />
       <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
@@ -96,7 +100,9 @@ export function BlogCoverPlaceholder({
           {title}
         </p>
       </div>
-    </div>
+      </div>
+      <figcaption className="sr-only">{altText}</figcaption>
+    </figure>
   );
 }
 

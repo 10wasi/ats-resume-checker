@@ -388,10 +388,14 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
 const DEFAULT_KEYS = [
   "checker",
   "resumeReview",
-  "matchAnalyzer",
+  "careerHub",
+  "completeAtsGuide",
+  "scoreChecker",
   "resumeKeywordsDb",
-  "examples",
-  "platformHub",
+  "templatesGuide",
+  "interviewQuestionGenerator",
+  "blog",
+  "matchAnalyzer",
 ] as const;
 
 /** Curated related clusters per route — avoids generic duplicate lists. */

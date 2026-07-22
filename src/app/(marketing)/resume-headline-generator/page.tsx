@@ -4,6 +4,7 @@ import { AccordionFaq } from "@/components/ui/AccordionFaq";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { ToolPageSeoEnrichment } from "@/components/seo/ToolPageSeoEnrichment";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
@@ -379,6 +380,7 @@ export default function ResumeHeadlineGeneratorPage() {
           <BlogResumeCta />
         </div>
       </article>
+      <ToolPageSeoEnrichment path={PATH} pageTitle="resume headline generator" />
     </>
   );
 }

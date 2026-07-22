@@ -3,6 +3,7 @@ import { BlogResumeCta } from "@/components/blog/BlogExtras";
 import { AccordionFaq } from "@/components/ui/AccordionFaq";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { ToolPageSeoEnrichment } from "@/components/seo/ToolPageSeoEnrichment";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
 import { resumeObjectiveGeneratorFaqItems } from "@/lib/seo/resume-objective-generator-faq";
@@ -293,6 +294,7 @@ export default function ResumeObjectiveGeneratorPage() {
 
         <RelatedResources path={PATH} heading="Related resume tools" />
       </main>
+      <ToolPageSeoEnrichment path={PATH} pageTitle="resume objective generator" />
     </>
   );
 }

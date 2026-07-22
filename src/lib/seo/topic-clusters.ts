@@ -57,4 +57,64 @@ export const TOPIC_CLUSTERS: TopicCluster[] = [
       { path: "/cv-checker", label: "CV checker" },
     ],
   },
+  {
+    pillar: "Resume Mistakes",
+    pillarPath: "/ats-resume-mistakes",
+    supporting: [
+      { path: "/resume-rejected-by-ats", label: "Rejected by ATS" },
+      { path: "/why-resume-gets-rejected", label: "Why rejected" },
+      { path: "/common-ats-resume-rejection-reasons", label: "Rejection reasons" },
+      { path: "/resume-mistakes-that-cost-interviews", label: "Interview mistakes" },
+    ],
+  },
+  {
+    pillar: "Resume Formatting",
+    pillarPath: "/ats-resume-format",
+    supporting: [
+      { path: "/ats-resume-templates", label: "Templates" },
+      { path: "/ats-friendly-resume-guide", label: "ATS-friendly guide" },
+      { path: "/resume-parsing", label: "Resume parser" },
+      { path: "/resume-checker", label: "Parser test tool" },
+    ],
+  },
+  {
+    pillar: "Interview Preparation",
+    pillarPath: "/interview-question-generator",
+    supporting: [
+      { path: "/why-resume-not-getting-interviews", label: "No interviews" },
+      { path: "/resume-screening-explained", label: "Screening explained" },
+      { path: "/career-success-hub", label: "Career hub" },
+      { path: "/blog", label: "Career blog" },
+    ],
+  },
+  {
+    pillar: "Job Search",
+    pillarPath: "/career-success-hub",
+    supporting: [
+      { path: "/resume-optimization", label: "Resume optimization" },
+      { path: "/how-to-tailor-resume-for-job-description", label: "Tailor for job" },
+      { path: "/resource-hub", label: "Resource hub" },
+      { path: "/blog", label: "Job search articles" },
+    ],
+  },
+  {
+    pillar: "Resume Scanner",
+    pillarPath: "/free-resume-checker-online",
+    supporting: [
+      { path: "/resume-checker", label: "Free scanner tool" },
+      { path: "/cv-checker", label: "CV scanner" },
+      { path: "/resume-score-checker", label: "Score checker" },
+      { path: "/ai-resume-review", label: "AI resume review" },
+    ],
+  },
+  {
+    pillar: "ATS Resume",
+    pillarPath: "/ats-resume-hub",
+    supporting: [
+      { path: "/ats-friendly-resume-guide", label: "ATS-friendly guide" },
+      { path: "/ats-resume-checklist-2026", label: "2026 checklist" },
+      { path: "/ultimate-ats-resume-guide", label: "Ultimate ATS guide" },
+      { path: "/complete-guide-ats-resume-optimization", label: "Complete optimization" },
+    ],
+  },
 ];

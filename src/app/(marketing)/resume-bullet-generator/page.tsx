@@ -5,6 +5,7 @@ import { AccordionFaq } from "@/components/ui/AccordionFaq";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { ToolPageSeoEnrichment } from "@/components/seo/ToolPageSeoEnrichment";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { resumeBulletGeneratorFaqItems } from "@/lib/seo/resume-bullet-generator-faq";
@@ -85,6 +86,7 @@ export default function ResumeBulletGeneratorPage() {
           <BlogResumeCta />
         </div>
       </article>
+      <ToolPageSeoEnrichment path={PATH} pageTitle="resume bullet generator" />
     </>
   );
 }

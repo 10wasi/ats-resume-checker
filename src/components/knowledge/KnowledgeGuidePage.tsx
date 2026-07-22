@@ -18,7 +18,10 @@ import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
 import { GuideAuthorBlock } from "@/components/seo/GuideAuthorBlock";
+import { GuideContentEnrichment } from "@/components/seo/GuideContentEnrichment";
+import { GuideConversionStrip } from "@/components/seo/GuideConversionStrip";
 import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
+import { MandatoryHubLinks } from "@/components/seo/MandatoryHubLinks";
 import { PaaAnswersSection } from "@/components/seo/PaaAnswersSection";
 import { SemanticEntitySection } from "@/components/seo/SemanticEntitySection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
@@ -131,13 +134,19 @@ export function KnowledgeGuidePage({
             <BlogContent content={body} />
           </div>
 
+          <GuideConversionStrip />
+
+          <GuideContentEnrichment path={path} pageTitle={h1} />
+
           <SemanticEntitySection path={path} />
 
           <div className="not-prose mt-10 space-y-6">
             <TrustBadgesStrip />
-            <GuideAuthorBlock />
+            <GuideAuthorBlock path={path} />
             <GuideEeatSection path={path} />
           </div>
+
+          <MandatoryHubLinks />
 
           <AccordionFaq
             items={faqItems}
@@ -155,6 +164,8 @@ export function KnowledgeGuidePage({
             relatedIds={relatedIds}
             heading="More guides in the Knowledge Center"
           />
+
+          <GuideConversionStrip className="mt-10" />
 
           <BlogResumeCta />
         </div>

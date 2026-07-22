@@ -4,6 +4,7 @@ import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { ToolPageSeoEnrichment } from "@/components/seo/ToolPageSeoEnrichment";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { resumeSummaryGeneratorBody } from "@/lib/content/resume-summary-generator-body";
@@ -121,6 +122,7 @@ export default function ResumeSummaryGeneratorPage() {
           <BlogResumeCta />
         </div>
       </article>
+      <ToolPageSeoEnrichment path={PATH} pageTitle="resume summary generator" />
     </>
   );
 }

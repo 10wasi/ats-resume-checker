@@ -12,7 +12,10 @@ import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
 import { GuideAuthorBlock } from "@/components/seo/GuideAuthorBlock";
+import { GuideContentEnrichment } from "@/components/seo/GuideContentEnrichment";
+import { GuideConversionStrip } from "@/components/seo/GuideConversionStrip";
 import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
+import { MandatoryHubLinks } from "@/components/seo/MandatoryHubLinks";
 import { PaaAnswersSection } from "@/components/seo/PaaAnswersSection";
 import { SemanticEntitySection } from "@/components/seo/SemanticEntitySection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
@@ -165,13 +168,19 @@ export function CareerLandingPage({
             <BlogContent content={entry.body} />
           </div>
 
+          <GuideConversionStrip />
+
+          <GuideContentEnrichment path={entry.path} pageTitle={entry.ctr.primaryKeyword} />
+
           <SemanticEntitySection path={entry.path} />
 
           <div className="not-prose mt-10 space-y-6">
             <TrustBadgesStrip />
-            <GuideAuthorBlock />
+            <GuideAuthorBlock path={entry.path} />
             <GuideEeatSection path={entry.path} />
           </div>
+
+          <MandatoryHubLinks />
 
           <RelatedResources path={entry.path} excludeHref={entry.path} />
 
@@ -185,6 +194,8 @@ export function CareerLandingPage({
           />
 
           <PaaAnswersSection path={entry.path} />
+
+          <GuideConversionStrip className="mt-10" />
 
           <CareerHubRelated currentId={entry.id} />
           <BlogResumeCta />
