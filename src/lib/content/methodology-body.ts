@@ -84,7 +84,7 @@ Many tools hide keyword lists or match scores behind subscriptions. ResumeIQ pub
 ## How to improve your results
 
 1. Fix **format** until extracted text reads cleanly in the [resume checker](/resume-checker).
-2. **Tailor** keywords per posting using the [Resume Match Analyzer](/resume-match-analyzer).
+2. **Tailor** keywords per posting using the [Resume Match Analyzer](/resume-job-description-match).
 3. Add **metrics** to bullets—recruiters globally skim for outcomes.
 4. Re-export and re-upload the **exact PDF** you will submit.
 5. Read [how to improve resume score](/how-to-improve-resume-score) for a structured plan.

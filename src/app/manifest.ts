@@ -17,9 +17,10 @@ export default function manifest(): MetadataRoute.Manifest {
         type: "image/png",
       },
       {
-        src: "/opengraph-image",
-        sizes: "1200x630",
+        src: "/apple-icon",
+        sizes: "180x180",
         type: "image/png",
+        purpose: "any",
       },
     ],
   };

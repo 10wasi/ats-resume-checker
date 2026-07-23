@@ -40,6 +40,7 @@ export default function KnowledgeCenterPage() {
         path={KNOWLEDGE_CENTER_PATH}
         title={CTR_KNOWLEDGE_CENTER.title}
         description={CTR_KNOWLEDGE_CENTER.description}
+        schemaType="CollectionPage"
       />
       <KnowledgeCenterItemListJsonLd />
       <BreadcrumbJsonLd

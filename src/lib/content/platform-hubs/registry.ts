@@ -55,7 +55,7 @@ Upload PDF or paste text → get **ATS score**, **format flags**, **missing keyw
 | Tool | Use when |
 |------|----------|
 | [Resume checker](${RESUME_CHECKER_PATH}) | Baseline ATS health |
-| [Resume match analyzer](/resume-match-analyzer) | You have a specific posting |
+| [Resume match analyzer](/resume-job-description-match) | You have a specific posting |
 | [Resume score guide](/resume-score-checker) | Interpreting your % |
 | [CV checker](/cv-checker) | CV label, same engine |
 
@@ -230,7 +230,7 @@ See [common ATS rejection reasons](/common-ats-resume-rejection-reasons) for wha
     intro: "Match % vs one job posting—distinct from overall ATS score.",
     body: "",
     faqItems: [],
-    toolHref: "/resume-match-analyzer",
+    toolHref: "/resume-job-description-match",
     toolCtaLabel: "Run match analyzer",
     exampleLinks: [
       { href: "/resume-job-description-match", label: "Match tool" },

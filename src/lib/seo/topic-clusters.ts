@@ -117,4 +117,34 @@ export const TOPIC_CLUSTERS: TopicCluster[] = [
       { path: "/complete-guide-ats-resume-optimization", label: "Complete optimization" },
     ],
   },
+  {
+    pillar: "Trust & EEAT",
+    pillarPath: "/about",
+    supporting: [
+      { path: "/editorial-policy", label: "Editorial policy" },
+      { path: "/methodology", label: "Methodology" },
+      { path: "/how-we-score-resumes", label: "How we score" },
+      { path: "/our-algorithm", label: "Our algorithm" },
+    ],
+  },
+  {
+    pillar: "AI Resume Tools",
+    pillarPath: "/resume-optimization-platform",
+    supporting: [
+      { path: "/resume-bullet-generator", label: "Bullet generator" },
+      { path: "/resume-summary-generator", label: "Summary generator" },
+      { path: "/cover-letter-generator", label: "Cover letter tool" },
+      { path: "/interview-question-generator", label: "Interview prep" },
+    ],
+  },
+  {
+    pillar: "Knowledge Center",
+    pillarPath: "/knowledge-center",
+    supporting: [
+      { path: "/how-ats-works", label: "How ATS works" },
+      { path: "/resume-parsing", label: "Resume parsing" },
+      { path: "/ats-score-explained", label: "ATS score explained" },
+      { path: "/resource-hub", label: "Resource hub" },
+    ],
+  },
 ];

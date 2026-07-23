@@ -95,7 +95,7 @@ Read the full [Methodology](/methodology) for weights, disclaimers, and what we 
 ATS and recruiters search for concrete terms: job titles, tools, certifications, methodologies. A **resume keyword analyzer** workflow:
 
 1. Extract terms from the posting ([ATS keywords finder](/ats-keywords-finder))
-2. Compare to your resume ([Resume Match Analyzer](/resume-match-analyzer))
+2. Compare to your resume ([Resume Match Analyzer](/resume-job-description-match))
 3. Add missing keywords only where you have honest proof
 4. Re-run the [ATS Resume Checker](/resume-checker) on your export
 

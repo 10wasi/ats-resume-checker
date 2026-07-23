@@ -1,27 +1,35 @@
 import { getSiteUrl } from "@/lib/site-url";
 import { getContentLastUpdated } from "@/lib/seo/content-freshness";
 
+type SchemaType = "Article" | "WebPage" | "CollectionPage";
+
 export function ResourceGuideJsonLd({
   path,
   title,
   description,
   date,
+  schemaType = "Article",
 }: {
   path: string;
   title: string;
   description: string;
   date?: string;
+  schemaType?: SchemaType;
 }) {
   const siteUrl = getSiteUrl().replace(/\/$/, "");
   const modified = date ?? getContentLastUpdated(path);
   const data = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: title,
+    "@type": schemaType,
+    name: title,
+    headline: schemaType === "Article" ? title : undefined,
     description,
-    datePublished: modified,
+    datePublished: schemaType === "Article" ? modified : undefined,
     dateModified: modified,
-    author: { "@type": "Organization", name: "ResumeIQ" },
+    author:
+      schemaType === "Article"
+        ? { "@type": "Organization", name: "ResumeIQ" }
+        : undefined,
     publisher: {
       "@type": "Organization",
       name: "ResumeIQ",
@@ -32,6 +40,7 @@ export function ResourceGuideJsonLd({
       "@type": "WebPage",
       "@id": `${siteUrl}${path}`,
     },
+    url: `${siteUrl}${path}`,
   };
 
   return (

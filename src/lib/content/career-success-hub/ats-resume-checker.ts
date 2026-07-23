@@ -75,7 +75,7 @@ A **free ATS resume checker** and **free ATS score checker** answer one question
 - [Free resume checker online](/free-resume-checker-online) — Hub for score + review
 - [Resume score checker](/resume-score-checker) — What your ATS % means
 - [Free ATS score checker](/free-ats-score-checker) — Quick compatibility check
-- [Resume match tool](/resume-match-analyzer) — Tailor for each posting
+- [Resume match tool](/resume-job-description-match) — Tailor for each posting
 - [Resume keywords database](/resume-keywords) — Role-specific terms
 - [Resume examples](/resume-examples) — Layout benchmarks
 

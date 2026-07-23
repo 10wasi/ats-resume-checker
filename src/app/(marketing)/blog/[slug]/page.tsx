@@ -23,6 +23,10 @@ import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { PageFaqSection } from "@/components/seo/PageFaqSection";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { GuideAuthorBlock } from "@/components/seo/GuideAuthorBlock";
+import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
+import { MandatoryHubLinks } from "@/components/seo/MandatoryHubLinks";
+import { GuideConversionStrip } from "@/components/seo/GuideConversionStrip";
 import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import { blogFaqBySlug } from "@/lib/seo/blog-page-faq";
@@ -151,11 +155,20 @@ export default function BlogPostPage({ params }: Props) {
           <BlogContent content={post.content} />
         </div>
 
+        <GuideConversionStrip className="mt-12" />
+
         <PageFaqSection
           heading="FAQ"
           items={faqItems}
           className="mt-16"
         />
+
+        <div className="not-prose mt-12 space-y-6">
+          <GuideAuthorBlock path={`/blog/${post.slug}`} />
+          <GuideEeatSection path={`/blog/${post.slug}`} />
+        </div>
+
+        <MandatoryHubLinks />
 
         <RelatedResources path={`/blog/${post.slug}`} />
 

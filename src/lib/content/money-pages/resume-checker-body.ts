@@ -39,7 +39,7 @@ Interviews rarely come from a perfect score. They come when:
 2. **Your language matches the posting** â€” filters and recruiter queries surface your profile
 3. **Humans can skim you in 6 seconds** â€” clear bullets with outcomes, not walls of duties
 
-A resume checker compresses those three checks into one workflow. Fix parse failures first (often a 20-point score jump from layout alone). Then tailor keywords per role with the [resume match tool](/resume-match-analyzer). Finally, run a [resume review](/resume-review) rubric for human readability.
+A resume checker compresses those three checks into one workflow. Fix parse failures first (often a 20-point score jump from layout alone). Then tailor keywords per role with the [resume match tool](/resume-job-description-match). Finally, run a [resume review](/resume-review) rubric for human readability.
 
 **Example:** A data analyst applied for 40 roles with a two-column template. Baseline score: 51. After single-column export and adding SQL, Tableau, and stakeholder terms from postings: score 78, match 72 for target rolesâ€”four interviews in two weeks with the same experience.
 
@@ -118,7 +118,7 @@ Silence after apply often means parse or keyword failureâ€”not lack of qual
 
 ## Related optimization tools
 
-- [Resume match tool](/resume-match-analyzer) â€” Tailor each application
+- [Resume match tool](/resume-job-description-match) â€” Tailor each application
 - [Resume keywords database](/resume-keywords) â€” ATS lists by profession
 - [Resume skills analyzer](/resume-skills-analyzer) â€” Dedicated skills scan
 - [How to improve resume score](/how-to-improve-resume-score) â€” Three-pass plan

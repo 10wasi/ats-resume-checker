@@ -85,7 +85,7 @@ Employers use proprietary systems with private rules. ResumeIQ approximates **co
 
 1. Fix format until extracted text is clean  
 2. Add posting keywords into recent bullets  
-3. Run [resume match tool](/resume-match-analyzer) per application  
+3. Run [resume match tool](/resume-job-description-match) per application  
 4. Re-check with the [free resume checker](/resume-checker)  
 5. Read [how to improve resume score](/how-to-improve-resume-score) for a structured plan  
 

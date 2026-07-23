@@ -55,7 +55,7 @@ Run your **resume score check** now: [free resume checker](/resume-checker) — 
 |-------|----------------------|-----------|
 | Below 55 | Parse or layout failure | [ATS resume format](/ats-resume-format) |
 | 55–70 | Readable but weak keywords | [Resume keywords database](/resume-keywords) |
-| 70–85 | Competitive baseline | [Resume match tool](/resume-match-analyzer) |
+| 70–85 | Competitive baseline | [Resume match tool](/resume-job-description-match) |
 | 85+ | Strong file—tailor per job | Match + [resume examples](/resume-examples) |
 
 **Real case:** Marketing manager scored 88 on baseline but match was 52 for a "Performance Marketing" posting—missing Meta Ads, GA4, and CAC terms. After adding them to two bullets, match rose to 74 without changing employers.

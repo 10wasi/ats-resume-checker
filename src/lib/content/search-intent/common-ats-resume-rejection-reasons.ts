@@ -72,7 +72,7 @@ See [resume examples](/resume-examples) for role-specific patterns.
 
 1. Run [free ATS resume checker](/resume-checker) — note format flags
 2. Read [resume rejected by ATS](/resume-rejected-by-ats) if silence continues
-3. Compare to posting in [resume match analyzer](/resume-match-analyzer)
+3. Compare to posting in [resume match analyzer](/resume-job-description-match)
 4. Walk [ATS resume mistakes](/ats-resume-mistakes) for silent triggers
 5. Use [complete ATS optimization guide](/complete-guide-ats-resume-optimization) as master reference
 

@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { EditorialPersonJsonLd } from "@/components/seo/PersonJsonLd";
 import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { TrustPageSeoFooter } from "@/components/seo/TrustPageSeoFooter";
 import { aboutFaqItems } from "@/lib/seo/about-faq";
 import { buildCtrMetadata, CTR_ABOUT } from "@/lib/seo/ctr-metadata";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
@@ -15,6 +17,7 @@ export const metadata = buildCtrMetadata(CTR_ABOUT, {
 export default function AboutPage() {
   return (
     <>
+      <EditorialPersonJsonLd />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", path: "/" },
@@ -111,6 +114,27 @@ export default function AboutPage() {
             </Link>{" "}
             so you can verify changes on your own file.
           </p>
+          <section aria-labelledby="about-team-heading">
+            <h2 id="about-team-heading" className="font-display text-2xl font-bold text-slate-900">
+              Editorial team &amp; transparency
+            </h2>
+            <p className="mt-4">
+              ResumeIQ guides are written by career writers and resume strategists who test
+              advice against real PDF and DOCX exports—not generic templates copied from
+              vendors. We publish{" "}
+              <Link href="/editorial-policy" className="font-semibold text-[#16a34a] underline">
+                editorial standards
+              </Link>
+              , link every recommendation to the free checker, and update pages when ATS
+              parsing behavior changes.
+            </p>
+            <p className="mt-4">
+              <strong className="font-semibold text-slate-900">Important:</strong> ATS scores
+              and keyword suggestions are estimates to help you improve your resume—they do
+              not guarantee interviews, offers, or ranking inside any employer&apos;s ATS.
+              Always verify claims you add to your resume in an interview.
+            </p>
+          </section>
         </div>
         <div className="mt-10 grid gap-4 sm:grid-cols-3">
           <TrustCard
@@ -142,6 +166,7 @@ export default function AboutPage() {
             ))}
           </div>
         </section>
+        <TrustPageSeoFooter path="/about" />
         <RelatedResources path="/about" excludeHref="/about" />
         <div className="mt-12 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-7">

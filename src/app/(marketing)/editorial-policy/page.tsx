@@ -4,6 +4,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { TrustPageSeoFooter } from "@/components/seo/TrustPageSeoFooter";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import {
   EDITORIAL_POLICY_PATH,
@@ -72,6 +73,7 @@ export default function EditorialPolicyPage() {
         </section>
 
         <RelatedResources path={EDITORIAL_POLICY_PATH} excludeHref={EDITORIAL_POLICY_PATH} />
+        <TrustPageSeoFooter path={EDITORIAL_POLICY_PATH} />
         <div className="mt-10 flex flex-wrap gap-3">
           <Link href="/methodology" className="font-semibold text-[#16a34a] underline">
             Scoring methodology →

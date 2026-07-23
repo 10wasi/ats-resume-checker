@@ -590,7 +590,7 @@ export function HomeStrongCtaSection() {
               Check resume score free
             </Link>
             <Link
-              href="/resume-match-analyzer"
+              href="/resume-job-description-match"
               className="inline-flex h-12 w-full items-center justify-center rounded-xl border border-white/20 bg-white/10 px-8 text-base font-semibold text-white transition hover:bg-white/15 sm:w-auto"
             >
               Match to job posting

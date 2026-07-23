@@ -18,7 +18,7 @@ export const RESOURCE_HUB_TOOLS = [
   { title: "Free Resume Checker Online", href: "/free-resume-checker-online" },
   { title: "Free ATS Score Checker", href: "/free-ats-score-checker" },
   { title: "ATS Resume Checker Guide", href: "/ats-resume-checker" },
-  { title: "Resume Match Tool", href: "/resume-match-analyzer" },
+  { title: "Resume Match Tool", href: "/resume-job-description-match" },
   { title: "Resume Keywords Database", href: "/resume-keywords" },
   { title: "Resume Bullet Generator", href: "/resume-bullet-generator" },
   { title: "Resume Skills Analyzer", href: "/resume-skills-analyzer" },

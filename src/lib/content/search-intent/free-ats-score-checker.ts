@@ -63,7 +63,7 @@ Full breakdown: [How ATS scoring works](/methodology).
 |-------|----------------------|-----------|
 | Below 55 | Parse or layout failure | [ATS resume format](/ats-resume-format) |
 | 55–70 | Readable but weak keywords | [Resume keywords database](/resume-keywords) |
-| 70–85 | Competitive baseline | [Resume match tool](/resume-match-analyzer) |
+| 70–85 | Competitive baseline | [Resume match tool](/resume-job-description-match) |
 | 85+ | Strong file—tailor per job | Match + [resume review](/resume-review) |
 
 Deep dive: [Resume score checker guide](/resume-score-checker).

@@ -133,6 +133,6 @@ For role-specific keyword lists and example bullets, see [Resume Keywords by Ind
 
 ## Tools in every workflow
 
-Every guide links to the [ATS Resume Checker](/resume-checker), [Resume Match Analyzer](/resume-match-analyzer), [ATS Keywords Finder](/ats-keywords-finder), and [Resume Examples Library](/resume-examples) — so you read, fix, and re-test in one connected loop.
+Every guide links to the [ATS Resume Checker](/resume-checker), [Resume Match Analyzer](/resume-job-description-match), [ATS Keywords Finder](/ats-keywords-finder), and [Resume Examples Library](/resume-examples) — so you read, fix, and re-test in one connected loop.
 `,
 };

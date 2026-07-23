@@ -18,7 +18,7 @@ export function HomePlatformHubsSection() {
     {
       title: "Resume Match Analyzer",
       desc: "Match score vs any job description.",
-      href: "/resume-match-analyzer",
+      href: "/resume-job-description-match",
     },
     {
       title: "Resume Keywords",

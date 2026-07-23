@@ -40,7 +40,7 @@ The **Resume Keyword Tool** hub connects every way ResumeIQ helps you find, comp
 | [ATS Keywords Finder](/ats-keywords-finder) | Extract skills from any job post instantly |
 | [Resume Keywords Checker](/resume-keywords-checker) | Compare resume text vs a posting |
 | [Resume Keywords Database](/resume-keywords) | Profession lists, verbs, example bullets |
-| [Resume Match Analyzer](/resume-match-analyzer) | Match % and missing keyword gaps |
+| [Resume Match Analyzer](/resume-job-description-match) | Match % and missing keyword gaps |
 
 ## Resume keyword analyzer workflow
 

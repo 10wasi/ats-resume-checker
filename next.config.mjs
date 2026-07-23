@@ -67,6 +67,19 @@ const nextConfig = {
         ],
       },
       {
+        source: "/feed.xml",
+        headers: [
+          {
+            key: "Content-Type",
+            value: "application/rss+xml; charset=utf-8",
+          },
+          {
+            key: "Cache-Control",
+            value: "public, max-age=3600, s-maxage=86400",
+          },
+        ],
+      },
+      {
         source: "/_next/static/:path*",
         headers: [
           {

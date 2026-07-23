@@ -254,7 +254,7 @@ export function HomeVsCompetitorsSection() {
 export function HomeToolEcosystemSection() {
   const tools = [
     { name: "ATS Resume Checker", href: RESUME_CHECKER_PATH },
-    { name: "Resume Match Tool", href: "/resume-match-analyzer" },
+    { name: "Resume Match Tool", href: "/resume-job-description-match" },
     { name: "Resume Keywords Database", href: "/resume-keywords" },
     { name: "Resume Examples", href: "/resume-examples" },
     { name: "ATS Guides", href: "/ats-guide" },

@@ -1,6 +1,7 @@
 import { GuideAuthorBlock } from "@/components/seo/GuideAuthorBlock";
 import { GuideContentEnrichment } from "@/components/seo/GuideContentEnrichment";
 import { GuideConversionStrip } from "@/components/seo/GuideConversionStrip";
+import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { MandatoryHubLinks } from "@/components/seo/MandatoryHubLinks";
 import { PaaAnswersSection } from "@/components/seo/PaaAnswersSection";
 import { SemanticEntitySection } from "@/components/seo/SemanticEntitySection";
@@ -24,6 +25,7 @@ export function ToolPageSeoEnrichment({ path, pageTitle }: Props) {
         <GuideAuthorBlock path={path} />
       </div>
       <MandatoryHubLinks />
+      <GuideEeatSection path={path} />
       <PaaAnswersSection path={path} className="mt-10" />
       <GuideConversionStrip className="mt-10" />
       <StickyCheckerCta />

@@ -65,6 +65,11 @@ export const metadata: Metadata = {
       "Free resume checker online—upload PDF, get ATS score, missing keywords, and format fixes. Built for job seekers worldwide.",
     images: getDefaultOgImages().map((img) => img.url),
   },
+  alternates: {
+    types: {
+      "application/rss+xml": [{ url: "/feed.xml", title: "ResumeIQ Blog RSS" }],
+    },
+  },
 };
 
 export default function RootLayout({

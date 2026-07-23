@@ -4,6 +4,7 @@ import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { PageFaqSection } from "@/components/seo/PageFaqSection";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { TrustPageSeoFooter } from "@/components/seo/TrustPageSeoFooter";
 import { buildCtrMetadata, CTR_CONTACT } from "@/lib/seo/ctr-metadata";
 import { contactFaqItems } from "@/lib/seo/contact-faq";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
@@ -63,6 +64,7 @@ export default function ContactPage() {
           are writing about.
         </p>
         <PageFaqSection heading="Contact FAQ" items={contactFaqItems} />
+        <TrustPageSeoFooter path="/contact" />
         <RelatedResources path="/contact" excludeHref="/contact" />
         <div className="mt-12 flex flex-wrap gap-3">
           <Link href={RESUME_CHECKER_PATH} className="btn-gradient px-7">

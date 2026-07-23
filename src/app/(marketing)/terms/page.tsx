@@ -3,6 +3,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { TrustPageSeoFooter } from "@/components/seo/TrustPageSeoFooter";
 import { termsFaqItems } from "@/lib/seo/legal-faq";
 import { buildCtrMetadata, CTR_TERMS } from "@/lib/seo/ctr-metadata";
 
@@ -95,6 +96,7 @@ export default function TermsPage() {
         .
       </p>
       <RelatedResources path="/terms" excludeHref="/terms" />
+      <TrustPageSeoFooter path="/terms" />
     </div>
     </>
   );

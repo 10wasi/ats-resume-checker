@@ -3,6 +3,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
+import { TrustPageSeoFooter } from "@/components/seo/TrustPageSeoFooter";
 import { privacyFaqItems } from "@/lib/seo/legal-faq";
 import { buildCtrMetadata, CTR_PRIVACY } from "@/lib/seo/ctr-metadata";
 
@@ -107,6 +108,7 @@ export default function PrivacyPage() {
           .
         </p>
         <RelatedResources path="/privacy" excludeHref="/privacy" />
+        <TrustPageSeoFooter path="/privacy" />
       </div>
     </>
   );

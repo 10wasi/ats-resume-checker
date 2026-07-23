@@ -1,28 +1,32 @@
 import type { BlogPost } from "@/lib/blog/types";
 import { getSiteUrl } from "@/lib/site-url";
 
-const siteUrl = getSiteUrl();
+const siteUrl = getSiteUrl().replace(/\/$/, "");
 
 export function BlogIndexJsonLd({ posts }: { posts: BlogPost[] }) {
   const data = {
     "@context": "https://schema.org",
-    "@type": "Blog",
-    name: "ResumeIQ Blog",
+    "@type": "CollectionPage",
+    name: "ResumeIQ Blog — ATS Resume Guides",
     description:
       "Guides on AI resume checking, ATS optimization, and interview-ready resumes.",
     url: `${siteUrl}/blog`,
+    inLanguage: "en-US",
     publisher: {
       "@type": "Organization",
       name: "ResumeIQ",
       url: siteUrl,
     },
-    blogPost: posts.slice(0, 20).map((p) => ({
-      "@type": "BlogPosting",
-      headline: p.seoTitle ?? p.title,
-      description: p.description,
-      datePublished: p.date,
-      url: `${siteUrl}/blog/${p.slug}`,
-    })),
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: posts.length,
+      itemListElement: posts.slice(0, 20).map((p, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        url: `${siteUrl}/blog/${p.slug}`,
+        name: p.seoTitle ?? p.title,
+      })),
+    },
   };
 
   return (

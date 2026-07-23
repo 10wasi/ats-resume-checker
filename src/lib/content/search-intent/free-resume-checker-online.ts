@@ -67,7 +67,7 @@ Compare layouts in [resume examples](/resume-examples/software-engineer) and [AT
 
 1. Upload the **exact PDF** you will submit
 2. Read extracted text—if garbled, fix layout before editing copy
-3. Optional: paste job description for [resume match score](/resume-match-analyzer)
+3. Optional: paste job description for [resume match score](/resume-job-description-match)
 4. Fix top format flags, then keyword gaps
 5. Re-check score; use [ATS resume checklist](/ats-resume-checklist-2026) before apply
 
@@ -82,7 +82,7 @@ Compare layouts in [resume examples](/resume-examples/software-engineer) and [AT
 
 ## Connected optimization tools
 
-- [Resume match tool](/resume-match-analyzer) — Tailor for each posting
+- [Resume match tool](/resume-job-description-match) — Tailor for each posting
 - [Resume keywords database](/resume-keywords) — Role-specific ATS terms
 - [Resume examples library](/resume-examples) — Benchmarks that parse
 - [Resume rejected by ATS](/resume-rejected-by-ats) — When silence means filters

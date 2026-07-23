@@ -7,7 +7,7 @@ export function HomeProductDifferentiationSection() {
     {
       title: "Resume vs job match",
       body: "Paste any job description—get match %, missing keywords, and skill gaps in the same checker session.",
-      href: "/resume-match-analyzer",
+      href: "/resume-job-description-match",
     },
     {
       title: "Missing keywords detection",

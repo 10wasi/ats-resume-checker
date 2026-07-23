@@ -77,7 +77,7 @@ Fix with [ATS resume format](/ats-resume-format) and [ATS resume examples](/ats-
 | Goal | Tool |
 |------|------|
 | Score & parse test | [CV checker / resume checker](/resume-checker) |
-| vs job posting | [Resume match tool](/resume-match-analyzer) |
+| vs job posting | [Resume match tool](/resume-job-description-match) |
 | Online review | [Resume review online](/resume-review) |
 | AI pass | [AI resume review](/ai-resume-review) |
 | Master guide | [Complete ATS guide](/complete-guide-ats-resume-optimization) |

@@ -43,7 +43,7 @@ Candidates who fix parse issues and keyword gaps typically report:
 - Higher match scores when tailoring per posting
 - Confidence that silence is not always "unqualified"—sometimes fixable format
 
-Pair score improvements with [resume match tool](/resume-match-analyzer) tailoring for each role.
+Pair score improvements with [resume match tool](/resume-job-description-match) tailoring for each role.
 
 ## Step-by-step: weekly optimization routine
 
@@ -123,7 +123,7 @@ Many paid tools show a teaser score then hide keyword lists. ResumeIQ shows:
 Before every application batch:
 
 1. [Free ATS score checker](${RESUME_CHECKER_PATH}) on master PDF  
-2. [Resume match tool](/resume-match-analyzer) for each priority posting  
+2. [Resume match tool](/resume-job-description-match) for each priority posting  
 3. [Resume keywords database](/resume-keywords) for role-specific terms  
 4. [Resume examples](/resume-examples) to benchmark bullet style  
 5. Re-score after edits
@@ -209,7 +209,7 @@ Low score + silence → likely ATS layer. High score + silence → match or huma
 - [Free resume checker online](/free-resume-checker-online)  
 - [Free ATS score checker](/free-ats-score-checker)  
 - [ATS resume checker](/ats-resume-checker)  
-- [Resume match tool](/resume-match-analyzer)  
+- [Resume match tool](/resume-job-description-match)  
 - [Complete optimization guide](/complete-guide-ats-resume-optimization)  
 `;
 
@@ -240,7 +240,7 @@ Browse [resume keywords](/resume-keywords) by role to spot common must-haves.
 
 **Day 1:** Upload same PDF to [free resume checker](${RESUME_CHECKER_PATH}) — read extracted text  
 **Day 2:** Fix layout per [ATS resume format](/ats-resume-format) — re-score  
-**Day 3:** Pick 3 target jobs — run [resume match tool](/resume-match-analyzer)  
+**Day 3:** Pick 3 target jobs — run [resume match tool](/resume-job-description-match)  
 **Day 4:** Add keywords to bullets with proof — re-match  
 **Day 5:** [Resume review](/resume-review) rubric for human skim  
 **Day 6:** [ATS checklist](/ats-resume-checklist-2026) on final export  

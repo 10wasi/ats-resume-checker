@@ -9,7 +9,7 @@ const CHECKER_GUIDE_LINKS = [
   { href: "/free-ats-score-checker", label: "Free ATS score checker" },
   { href: "/ats-resume-checker", label: "ATS resume checker free online" },
   { href: "/resume-rejected-by-ats", label: "Resume rejected by ATS" },
-  { href: "/resume-match-analyzer", label: "Resume match tool" },
+  { href: "/resume-job-description-match", label: "Resume match tool" },
   { href: "/resume-keywords", label: "Resume keywords database" },
   { href: "/resume-examples", label: "Resume examples library" },
 ];

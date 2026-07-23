@@ -13,7 +13,7 @@ const EXAMPLE_LINKS = [
 ];
 
 const TOOL_LINKS = [
-  { href: "/resume-match-analyzer", label: "Resume match analyzer" },
+  { href: "/resume-job-description-match", label: "Resume match analyzer" },
   { href: "/resume-review", label: "Resume review online" },
   { href: "/resume-keyword-tool", label: "Keyword optimizer" },
   { href: "/common-ats-resume-rejection-reasons", label: "ATS rejection reasons" },

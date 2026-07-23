@@ -36,7 +36,7 @@ export function HomeGscIntentSection() {
     },
     {
       query: "Resume match tool",
-      href: "/resume-match-analyzer",
+      href: "/resume-job-description-match",
       desc: "Match score vs any job description.",
     },
     {

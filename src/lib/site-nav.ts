@@ -3,7 +3,7 @@ export const RESUME_CHECKER_PATH = "/resume-checker" as const;
 
 /** SEO pillar paths — internal linking anchors. */
 export const ATS_RESUME_CHECKER_GUIDE_PATH = "/ats-resume-checker" as const;
-export const RESUME_MATCH_ANALYZER_PATH = "/resume-match-analyzer" as const;
+export const RESUME_MATCH_ANALYZER_PATH = "/resume-job-description-match" as const;
 export const RESUME_KEYWORD_TOOL_PATH = "/resume-keyword-tool" as const;
 export const RESUME_EXAMPLES_PATH = "/resume-examples" as const;
 export const ATS_GUIDE_PATH = "/ats-guide" as const;
@@ -19,7 +19,7 @@ export const SITE_TOOLS: SiteNavItem[] = [
   { href: "/free-ats-score-checker", label: "Free ATS score checker" },
   { href: "/ats-resume-review", label: "ATS resume review" },
   { href: RESUME_CHECKER_PATH, label: "ATS Resume Checker" },
-  { href: "/resume-match-analyzer", label: "Resume match analyzer" },
+  { href: "/resume-job-description-match", label: "Resume match analyzer" },
   { href: "/resume-keyword-tool", label: "Resume keyword tool" },
   { href: "/resume-job-description-match", label: "Resume job match tool" },
   { href: "/resume-keywords", label: "Resume keywords database" },

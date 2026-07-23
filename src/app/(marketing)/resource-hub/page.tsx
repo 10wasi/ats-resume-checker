@@ -52,6 +52,7 @@ export default function ResourceHubPage() {
         path={RESOURCE_HUB_PATH}
         title={CTR_RESOURCE_HUB.title}
         description={CTR_RESOURCE_HUB.description}
+        schemaType="CollectionPage"
       />
       <BreadcrumbJsonLd
         items={[
@@ -83,7 +84,7 @@ export default function ResourceHubPage() {
             Free ATS resume checker
           </Link>
           <Link
-            href="/resume-match-analyzer"
+            href="/resume-job-description-match"
             className="inline-flex h-11 items-center rounded-xl border border-slate-200 px-5 text-sm font-semibold text-slate-800"
           >
             Resume match tool

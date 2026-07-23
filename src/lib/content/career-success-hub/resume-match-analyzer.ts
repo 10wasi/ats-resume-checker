@@ -1,7 +1,7 @@
 import type { CareerLandingEntry } from "./types";
 import { CTR_RESUME_MATCH_ANALYZER_LANDING } from "@/lib/seo/ctr-metadata";
 
-export const RESUME_MATCH_ANALYZER_PATH = "/resume-match-analyzer" as const;
+export const RESUME_MATCH_ANALYZER_PATH = "/resume-job-description-match" as const;
 
 export const resumeMatchAnalyzerEntry: CareerLandingEntry = {
   id: "resume-match-analyzer",

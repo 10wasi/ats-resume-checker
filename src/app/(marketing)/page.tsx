@@ -1,7 +1,6 @@
 import dynamic from "next/dynamic";
 import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
 import { HomeWebApplicationJsonLd } from "@/components/seo/HomeWebApplicationJsonLd";
-import { OrganizationJsonLd } from "@/components/seo/OrganizationJsonLd";
 import { WebSiteJsonLd } from "@/components/seo/WebSiteJsonLd";
 import { HeroSection } from "@/components/home/HomeSections";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
@@ -82,7 +81,6 @@ export default function HomePage() {
   return (
     <>
       <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }]} />
-      <OrganizationJsonLd />
       <WebSiteJsonLd />
       <HomeWebApplicationJsonLd />
       <FaqJsonLd />

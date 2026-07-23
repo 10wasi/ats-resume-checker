@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { CareerSuccessHubGrid } from "@/components/career/CareerSuccessHubGrid";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { GuideAuthorBlock } from "@/components/seo/GuideAuthorBlock";
+import { MandatoryHubLinks } from "@/components/seo/MandatoryHubLinks";
 import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
@@ -35,6 +37,7 @@ export default function CareerSuccessHubPage() {
         path={CAREER_SUCCESS_HUB_PATH}
         title={CTR_CAREER_SUCCESS_HUB.title}
         description={CTR_CAREER_SUCCESS_HUB.description}
+        schemaType="CollectionPage"
       />
       <BreadcrumbJsonLd
         items={[
@@ -101,6 +104,8 @@ export default function CareerSuccessHubPage() {
           <SemanticEntitySection path={CAREER_SUCCESS_HUB_PATH} />
           <TopicClusterLinks path={CAREER_SUCCESS_HUB_PATH} />
           <TrustBadgesStrip className="mt-10" />
+          <GuideAuthorBlock path={CAREER_SUCCESS_HUB_PATH} />
+          <MandatoryHubLinks />
           <RelatedResources path={CAREER_SUCCESS_HUB_PATH} excludeHref={CAREER_SUCCESS_HUB_PATH} limit={8} />
           <GuideEeatSection path={CAREER_SUCCESS_HUB_PATH} />
           <PaaAnswersSection path={CAREER_SUCCESS_HUB_PATH} />

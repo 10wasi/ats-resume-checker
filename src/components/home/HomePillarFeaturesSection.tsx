@@ -11,7 +11,7 @@ const FEATURES = [
   {
     title: "Resume Match Analyzer",
     desc: "Resume match analyzer vs any job post—missing keywords and skill gaps.",
-    href: "/resume-match-analyzer",
+    href: "/resume-job-description-match",
     cta: "Match to job",
   },
   {

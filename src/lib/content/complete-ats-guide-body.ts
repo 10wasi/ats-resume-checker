@@ -203,7 +203,7 @@ Resources: [Resume keywords database](/resume-keywords) · [Keywords by industry
 | Layer | Question | Tool |
 |-------|----------|------|
 | Machine | Can software read and rank me? | [ATS resume checker](/resume-checker) |
-| Match | Does this posting see my language? | [Match analyzer](/resume-match-analyzer) |
+| Match | Does this posting see my language? | [Match analyzer](/resume-job-description-match) |
 | Human skim | Would a recruiter understand impact in 6s? | [Resume review](/resume-review) |
 | AI assist | What bullets need metrics? | [AI resume review](/ai-resume-review) |
 | Global CV | Does my CV parse internationally? | [CV checker](/cv-checker) |

@@ -21,9 +21,6 @@ import { SemanticEntitySection } from "@/components/seo/SemanticEntitySection";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import { TrustBadgesStrip } from "@/components/seo/TrustBadgesStrip";
 import { TopicPillarBanner } from "@/components/seo/TopicPillarBanner";
-import { CheckerFunnelWebApplicationJsonLd } from "@/components/seo/CheckerFunnelWebApplicationJsonLd";
-import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
-import { HOWTO_RESUME_CHECKER, HOWTO_URLS } from "@/lib/seo/how-to-steps";
 import { CAREER_SUCCESS_HUB_PATH } from "@/lib/content/career-success-hub/registry";
 import type { CareerLandingEntry } from "@/lib/content/career-success-hub/types";
 import { getPlatformHubByPath } from "@/lib/content/platform-hubs/registry";
@@ -77,24 +74,11 @@ export function CareerLandingPage({
   const isCheckerFunnel = CHECKER_FUNNEL_IDS.has(entry.id);
   return (
     <>
-      {isCheckerFunnel ? (
-        <CheckerFunnelWebApplicationJsonLd
-          pageName={entry.ctr.title}
-          pageDescription={entry.ctr.description}
-        />
-      ) : null}
-      {isCheckerFunnel ? (
-        <HowToJsonLd
-          name={`How to use ${entry.ctr.primaryKeyword}`}
-          description={entry.ctr.description}
-          steps={HOWTO_RESUME_CHECKER}
-          path={HOWTO_URLS.checker}
-        />
-      ) : null}
       <ResourceGuideJsonLd
         path={entry.path}
         title={entry.ctr.title}
         description={entry.ctr.description}
+        schemaType={isCheckerFunnel ? "WebPage" : "Article"}
       />
       <BreadcrumbJsonLd
         items={[

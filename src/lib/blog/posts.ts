@@ -866,8 +866,7 @@ The goal is not to game software. The goal is clarity. A strong ATS resume makes
     slug: "free-resume-checker-online-2026",
     title:
       "Free ATS Resume Checker Online – How to Check Your Resume Score (2026 Guide)",
-    seoTitle:
-      "Free ATS Resume Checker Online – How to Check Your Resume Score (2026 Guide)",
+    seoTitle: "Free Resume Checker Online 2026 — ATS Score Guide | ResumeIQ",
     description:
       "A practical 2026 guide to checking your ATS resume score, fixing common rejection issues, and improving your CV with simple, human-friendly steps.",
     date: "2026-04-30",

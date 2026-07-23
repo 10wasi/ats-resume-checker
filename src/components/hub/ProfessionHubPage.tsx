@@ -118,7 +118,7 @@ export function ProfessionHubPage({ entry }: Props) {
         </div>
 
         <div className="not-prose mt-10 flex flex-wrap gap-3">
-          <Link href="/resume-match-analyzer" className="btn-gradient px-6">
+          <Link href="/resume-job-description-match" className="btn-gradient px-6">
             Resume match tool
           </Link>
           <Link

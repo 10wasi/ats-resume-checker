@@ -64,7 +64,7 @@ export function getSitemapLastModified(path: string, fallback?: string): Date {
 export const SITEMAP_EXCLUDED_PATHS = new Set([
   "/ats-score-checker",
   "/resume-checker-online",
-  "/resume-match-analyzer",
+  "/resume-job-description-match",
   "/ats-resume/marketing-professionals",
   "/ats-resume/accountants",
   "/ats-resume/hr-professionals",
