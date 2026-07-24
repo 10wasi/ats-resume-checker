@@ -26,6 +26,7 @@ import { RelatedResources } from "@/components/seo/RelatedResources";
 import { GuideAuthorBlock } from "@/components/seo/GuideAuthorBlock";
 import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
 import { MandatoryHubLinks } from "@/components/seo/MandatoryHubLinks";
+import { ClusterBlogLinks } from "@/components/seo/ClusterBlogLinks";
 import { GuideConversionStrip } from "@/components/seo/GuideConversionStrip";
 import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
@@ -169,6 +170,8 @@ export default function BlogPostPage({ params }: Props) {
         </div>
 
         <MandatoryHubLinks />
+
+        <ClusterBlogLinks />
 
         <RelatedResources path={`/blog/${post.slug}`} />
 

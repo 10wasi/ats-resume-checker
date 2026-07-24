@@ -23,8 +23,11 @@ export function HeroSection() {
             {CTR_HOME.h1}
           </h1>
           <p className="mx-auto mt-2 text-pretty text-base text-slate-600">
-            Upload PDF free — instant ATS score, resume parser test &amp; keyword gaps. Fix before
-            you apply.
+            The free <strong className="font-semibold text-slate-800">AI resume checker</strong>{" "}
+            for job seekers—upload PDF, run an{" "}
+            <strong className="font-semibold text-slate-800">ATS resume scanner</strong>, see your{" "}
+            <strong className="font-semibold text-slate-800">resume ATS score</strong>, parser
+            preview, and keyword gaps before you apply.
           </p>
 
           <HomeHeroPasteForm />

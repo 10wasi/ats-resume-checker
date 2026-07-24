@@ -12,11 +12,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/ats-score-checker",
-        destination: "/free-ats-score-checker",
-        permanent: true,
-      },
-      {
         source: "/resume-checker-online",
         destination: "/free-resume-checker-online",
         permanent: true,

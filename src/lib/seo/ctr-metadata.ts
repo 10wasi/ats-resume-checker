@@ -14,13 +14,13 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: ctrTitle("Free ATS Resume Checker", "Score in Seconds"),
+  title: ctrTitle("Free ATS Resume Checker", "AI Scanner & Score"),
   description: ctrMeta(
-    "Upload PDF free — instant ATS score, resume parser test & keyword match. AI fixes in 2 min. No signup. Try now."
+    "Free AI resume checker — ATS score, parser preview, keyword scanner & match in minutes. Upload PDF. No signup."
   ),
-  ogTitle: "Free ATS Resume Checker (Score Your Resume in Seconds)",
-  h1: "Free ATS Resume Checker — Score in Seconds",
-  primaryKeyword: "ATS resume checker",
+  ogTitle: "Free ATS Resume Checker | AI Resume Scanner & ATS Score",
+  h1: "Free ATS Resume Checker — AI Scan & ATS Score",
+  primaryKeyword: "free ATS resume checker",
   richSnippets: ["FAQPage", "SoftwareApplication", "WebSite", "Organization", "BreadcrumbList"],
 };
 
@@ -68,6 +68,67 @@ export const CTR_FREE_ATS_SCORE_CHECKER: PageCtrMeta = {
   ogTitle: "Free ATS Score Checker — Instant Resume Score",
   h1: "Free ATS Score Checker",
   primaryKeyword: "free ATS score checker",
+  richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+/** Cluster landing CTR — refine titles/descriptions when pages ship. */
+export const CTR_FREE_ATS_RESUME_CHECKER: PageCtrMeta = {
+  title: ctrTitle("Free ATS Resume Checker", "Scan PDF Free"),
+  description: ctrMeta(
+    "Free ATS resume checker — parser preview, ATS score, keyword scanner & fixes. Upload online. No signup."
+  ),
+  ogTitle: "Free ATS Resume Checker | AI Resume Scanner & ATS Score",
+  h1: "Free ATS Resume Checker",
+  primaryKeyword: "free ATS resume checker",
+  richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_ATS_RESUME_CHECKER_ONLINE: PageCtrMeta = {
+  title: ctrTitle("ATS Resume Checker Online", "Scan Free"),
+  description: ctrMeta(
+    "ATS resume checker online — upload PDF, see parser output, ATS score & keyword gaps in your browser."
+  ),
+  ogTitle: "ATS Resume Checker Online — Scan Resume Free",
+  h1: "ATS Resume Checker Online",
+  primaryKeyword: "ATS resume checker online",
+  richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_KEYWORD_CHECKER: PageCtrMeta = {
+  title: ctrTitle("Resume Keyword Checker", "Improve ATS Score"),
+  description: ctrMeta(
+    "Resume keyword checker — find missing ATS terms vs any job post. Free AI keyword scanner for your resume."
+  ),
+  ogTitle: "Resume Keyword Checker — Improve ATS Score",
+  h1: "Resume Keyword Checker",
+  primaryKeyword: "resume keyword checker",
+  richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_ATS_SCORE_CHECKER: PageCtrMeta = {
+  title: ctrTitle("ATS Score Checker", "Compatibility %"),
+  description: ctrMeta("Get your resume ATS score — interpret bands, fix parse & keywords. Free check."),
+  ogTitle: "ATS Score Checker — What Your % Means",
+  h1: "ATS Score Checker",
+  primaryKeyword: "ATS score checker",
+  richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_ANALYZER: PageCtrMeta = {
+  title: ctrTitle("Resume Analyzer", "AI Section Feedback"),
+  description: ctrMeta("Analyze resume sections — bullets, summary, skills & checklist. Free online tool."),
+  ogTitle: "Resume Analyzer — Improve Before You Apply",
+  h1: "Resume Analyzer",
+  primaryKeyword: "resume analyzer",
+  richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_PARSER: PageCtrMeta = {
+  title: ctrTitle("Resume Parser Test", "What ATS Reads"),
+  description: ctrMeta("See extracted resume text — test ATS parser output before you apply. Free upload."),
+  ogTitle: "Resume Parser — What Hiring Software Reads",
+  h1: "Resume Parser",
+  primaryKeyword: "resume parser",
   richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 

@@ -201,10 +201,62 @@ export function HomeComparisonSection() {
           </table>
         </div>
 
+        <h3 className="mt-12 font-display text-lg font-bold text-slate-900">
+          ResumeIQ vs Jobscan, ResumeWorded, Enhancv &amp; Kickresume
+        </h3>
+        <p className="mt-2 text-sm text-slate-600">
+          These tools solve different parts of the job search. None replaces a parse test on your
+          actual export file—compare objectively before you pay for a subscription.
+        </p>
+        <div className="mt-6 overflow-x-auto">
+          <table className="w-full min-w-[520px] border-collapse text-sm">
+            <thead>
+              <tr>
+                <th className="py-2 text-left text-xs font-semibold uppercase text-slate-500" scope="col">
+                  Focus
+                </th>
+                <th className="px-3 py-2 text-left text-xs font-semibold uppercase text-emerald-700" scope="col">
+                  ResumeIQ
+                </th>
+                <th className="px-3 py-2 text-left text-xs font-semibold uppercase text-slate-500" scope="col">
+                  Jobscan
+                </th>
+                <th className="px-3 py-2 text-left text-xs font-semibold uppercase text-slate-500" scope="col">
+                  ResumeWorded
+                </th>
+                <th className="px-3 py-2 text-left text-xs font-semibold uppercase text-slate-500" scope="col">
+                  Enhancv
+                </th>
+                <th className="px-3 py-2 text-left text-xs font-semibold uppercase text-slate-500" scope="col">
+                  Kickresume
+                </th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-200">
+              {[
+                ["Primary strength", "Free parse + score + keyword gaps", "Job match %", "Bullet & section scores", "Designed resume builder", "Templates + AI writer"],
+                ["Parser text preview", "Yes — free", "Limited on free tier", "No", "No", "No"],
+                ["Free core scan", "Yes — no signup", "Partial — scan limits", "Partial — daily limits", "Builder free; scan varies", "Partial — export limits"],
+                ["Best when", "Pre-apply QA on your PDF", "Tailoring to one posting", "Rewriting weak bullets", "Visual CV design", "Fast template export"],
+              ].map(([focus, ...cols]) => (
+                <tr key={focus} className="bg-white">
+                  <td className="py-3 pr-3 font-medium text-slate-800">{focus}</td>
+                  {cols.map((cell, i) => (
+                    <td key={i} className={`px-3 py-3 text-slate-600 ${i === 0 ? "bg-emerald-50/60 font-medium" : ""}`}>
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
         <p className="mt-3 text-xs text-slate-400">
           ✓ = full feature · ⚠ = limited or paywalled · ✗ = not available. Comparison reflects
           publicly available free tiers as of 2026. All product names are trademarks of their
-          respective owners.
+          respective owners. ResumeIQ is not affiliated with Jobscan, ResumeWorded, Enhancv, or
+          Kickresume.
         </p>
 
         {/* Value prop cards */}

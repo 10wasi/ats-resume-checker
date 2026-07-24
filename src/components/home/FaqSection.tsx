@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { homepageFaqCompact, type FaqItem } from "@/lib/seo/faq";
+import { homepageFaqItems, type FaqItem } from "@/lib/seo/faq";
 
 const FAQ_RELATED: Partial<Record<string, { href: string; label: string }>> = {
   "How is my ATS score calculated?": {
@@ -37,12 +37,16 @@ export function FaqSection() {
     >
       <h2
         id="home-faq-heading"
-        className="text-center font-display text-lg font-bold tracking-tight text-slate-900 sm:text-xl"
+        className="text-center font-display text-xl font-bold tracking-tight text-slate-900 sm:text-2xl"
       >
-        Common questions
+        ATS resume checker FAQ — 30+ expert answers
       </h2>
+      <p className="mt-2 text-center text-sm text-slate-600">
+        What is ATS, how parsers read PDFs, Canva risks, score improvement, and free AI resume
+        checking—each answer targets a different search question.
+      </p>
       <div className="mt-5 divide-y divide-slate-200 overflow-hidden rounded-xl border border-slate-200 bg-white">
-        {homepageFaqCompact.map((item) => (
+        {homepageFaqItems.map((item) => (
           <details
             key={item.question}
             className="group px-4 py-4 sm:px-5 [&_summary::-webkit-details-marker]:hidden"

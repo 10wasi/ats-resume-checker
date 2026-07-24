@@ -1,23 +1,23 @@
 const steps = [
   {
     step: "1",
-    title: "Upload & parser test",
-    body: "PDF or DOCX — see what hiring software extracts before you apply.",
+    title: "Upload & resume parser test",
+    body: "PDF or DOCX — see what the ATS resume scanner extracts before you apply.",
   },
   {
     step: "2",
-    title: "ATS score & keyword match",
-    body: "0–100 score plus missing terms vs any job description.",
+    title: "Resume ATS score & keyword match",
+    body: "Compatibility score plus missing terms from our resume keyword checker.",
   },
   {
     step: "3",
-    title: "AI resume analysis",
-    body: "Bullet rewrites from your text — not generic templates.",
+    title: "AI resume analyzer",
+    body: "Section feedback and bullet rewrites from your text—not generic templates.",
   },
   {
     step: "4",
-    title: "Priority fix plan",
-    body: "Ranked actions to improve your resume ATS score fastest.",
+    title: "Resume optimization plan",
+    body: "Ranked fixes to improve ATS score and resume match score fastest.",
   },
 ];
 
@@ -32,10 +32,10 @@ export function HomeAtsFeaturesSection() {
           id="ats-features-heading"
           className="text-center font-display text-lg font-bold tracking-tight text-slate-900 sm:text-xl"
         >
-          Upload → score → AI analysis → improve
+          How the free ATS resume checker works
         </h2>
         <p className="mt-2 text-center text-sm text-slate-600">
-          Scores parse health and keyword fit — not grammar alone.
+          Upload → resume parser → ATS score → AI resume analyzer → resume optimization fixes.
         </p>
         <ol className="mt-6 grid gap-2 sm:grid-cols-2">
           {steps.map((s) => (

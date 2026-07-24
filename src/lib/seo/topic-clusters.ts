@@ -7,6 +7,18 @@ export type TopicCluster = {
 
 export const TOPIC_CLUSTERS: TopicCluster[] = [
   {
+    pillar: "Free ATS Resume Checker",
+    pillarPath: "/free-ats-resume-checker",
+    supporting: [
+      { path: "/ats-resume-checker-online", label: "Checker online" },
+      { path: "/resume-keyword-checker", label: "Keyword checker" },
+      { path: "/ats-score-checker", label: "ATS score" },
+      { path: "/resume-analyzer", label: "Resume analyzer" },
+      { path: "/resume-parser", label: "Parser test" },
+      { path: "/resume-optimization", label: "Optimization" },
+    ],
+  },
+  {
     pillar: "ATS Resume Checker",
     pillarPath: "/",
     supporting: [

@@ -25,6 +25,12 @@ type StaticPath = {
 const STATIC_PATHS: StaticPath[] = [
   { path: "", priority: 1, changeFrequency: "weekly" },
   { path: RESUME_CHECKER_PATH, priority: 0.98, changeFrequency: "weekly" },
+  { path: "/free-ats-resume-checker", priority: 0.98, changeFrequency: "weekly" },
+  { path: "/ats-resume-checker-online", priority: 0.97, changeFrequency: "weekly" },
+  { path: "/resume-keyword-checker", priority: 0.96, changeFrequency: "weekly" },
+  { path: "/ats-score-checker", priority: 0.96, changeFrequency: "weekly" },
+  { path: "/resume-analyzer", priority: 0.95, changeFrequency: "weekly" },
+  { path: "/resume-parser", priority: 0.95, changeFrequency: "weekly" },
   { path: "/career-success-hub", priority: 0.96, changeFrequency: "weekly" },
   { path: "/resume-review", priority: 0.92, changeFrequency: "weekly" },
   { path: "/why-resume-not-getting-interviews", priority: 0.91, changeFrequency: "weekly" },
