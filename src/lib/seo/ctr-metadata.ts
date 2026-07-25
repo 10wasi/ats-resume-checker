@@ -14,14 +14,14 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: ctrTitle("Free ATS Resume Checker", "AI Scanner & Score"),
+  title: ctrTitle("Free ATS Resume Checker", "Instant Score & Scan"),
   description: ctrMeta(
-    "Free AI resume checker — ATS score, parser preview, keyword scanner & match in minutes. Upload PDF. No signup."
+    "See your ATS score in 60 seconds—parser preview, keyword gaps & fixes. Upload PDF free. No signup. Trusted by job seekers."
   ),
-  ogTitle: "Free ATS Resume Checker | AI Resume Scanner & ATS Score",
-  h1: "Free ATS Resume Checker — AI Scan & ATS Score",
+  ogTitle: "Free ATS Resume Checker — Instant AI Scan & Score",
+  h1: "Free ATS Resume Checker — See Your Score Before You Apply",
   primaryKeyword: "free ATS resume checker",
-  richSnippets: ["FAQPage", "SoftwareApplication", "WebSite", "Organization", "BreadcrumbList"],
+  richSnippets: ["FAQPage", "SoftwareApplication", "WebSite", "Organization", "BreadcrumbList", "SearchAction"],
 };
 
 export const CTR_HOW_WE_SCORE: PageCtrMeta = {

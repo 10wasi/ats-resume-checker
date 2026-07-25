@@ -203,6 +203,46 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     title: "ATS Resource Hub",
     description: "Guides, tools, profession hubs, and trust docs in one library.",
   },
+  resumeResourcesHub: {
+    href: "/resume-resources",
+    title: "Resume Resources",
+    description: "Skills library, fonts, length, file types, and ATS guides.",
+  },
+  glossary: {
+    href: "/glossary",
+    title: "ATS Glossary",
+    description: "Definitions for parsing, keyword match, and scoring terms.",
+  },
+  jobscanAlternative: {
+    href: "/jobscan-alternative",
+    title: "Jobscan Alternative",
+    description: "Unbiased comparison of ATS checkers for job seekers.",
+  },
+  resumeSkillsLibrary: {
+    href: "/resume-skills-library",
+    title: "Resume Skills Library",
+    description: "Hard skills and tools by function for ATS indexing.",
+  },
+  atsFriendlyFonts: {
+    href: "/ats-friendly-fonts",
+    title: "ATS Friendly Fonts",
+    description: "Safe typography and sizes for parse-ready PDFs.",
+  },
+  resumeLengthGuide: {
+    href: "/resume-length-guide",
+    title: "Resume Length Guide",
+    description: "One page vs two pages for ATS by experience level.",
+  },
+  resumeFileTypes: {
+    href: "/resume-file-types",
+    title: "Resume File Types",
+    description: "PDF vs DOCX upload rules for applicant portals.",
+  },
+  resumeCheckerUsa: {
+    href: "/resume-checker-usa",
+    title: "Resume Checker USA",
+    description: "US ATS norms, keywords, and free scan workflow.",
+  },
   resumeActionVerbs: {
     href: "/resume-action-verbs",
     title: "Resume Action Verbs",

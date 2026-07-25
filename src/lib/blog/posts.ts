@@ -12,8 +12,10 @@ import { atsFriendly2026CompleteGuidePost } from "./posts-ats-friendly-2026-comp
 import { resumeMistakesAts2026Post } from "./posts-resume-mistakes-ats-2026";
 import { atsKeywordsTechJobs2026Post } from "./posts-ats-keywords-tech-2026";
 import { careerPillarPosts } from "./posts-career-pillars";
+import { sprint3BlogPosts } from "./posts-sprint3";
 
 export const blogPosts: BlogPost[] = [
+  ...sprint3BlogPosts,
   resumeSkillsAtsVisibility2026Post,
   atsFriendlyResumeExamples2026Post,
   atsResumeKeywordsVisibility2026Post,

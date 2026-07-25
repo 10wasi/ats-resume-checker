@@ -11,6 +11,7 @@ import { HomePlatformAuthority } from "@/components/home/HomePlatformAuthority";
 import { HomeBlogHighlights } from "@/components/home/HomeBlogHighlights";
 import { HomeClusterSection } from "@/components/home/HomeClusterSection";
 import { HomeComparisonSection } from "@/components/home/HomeComparisonSection";
+import { HomeTrustAuthoritySection } from "@/components/home/HomeTrustAuthoritySection";
 
 function SectionSkeleton({ height = "h-64" }: { height?: string }) {
   return (
@@ -90,6 +91,7 @@ export default function HomePage() {
       <HeroSection />
       <HomeAtsFeaturesSection />
       <HomeTrustStrip />
+      <HomeTrustAuthoritySection />
       <HomeClusterSection />
       <HomeTopicHubSection />
       <HomeComparisonSection />

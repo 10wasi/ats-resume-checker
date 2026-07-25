@@ -256,7 +256,18 @@ export function HomeComparisonSection() {
           ✓ = full feature · ⚠ = limited or paywalled · ✗ = not available. Comparison reflects
           publicly available free tiers as of 2026. All product names are trademarks of their
           respective owners. ResumeIQ is not affiliated with Jobscan, ResumeWorded, Enhancv, or
-          Kickresume.
+          Kickresume.{" "}
+          <Link href="/jobscan-alternative" className="underline">
+            Jobscan alternative
+          </Link>
+          {" · "}
+          <Link href="/resumeworded-alternative" className="underline">
+            Resume Worded alternative
+          </Link>
+          {" · "}
+          <Link href="/resume-resources" className="underline">
+            Resume resources
+          </Link>
         </p>
 
         {/* Value prop cards */}

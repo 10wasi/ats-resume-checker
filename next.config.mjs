@@ -31,6 +31,31 @@ const nextConfig = {
         destination: "/ats-resume/hr-manager",
         permanent: true,
       },
+      {
+        source: "/resume-checker/marketing",
+        destination: "/resume-checker/marketing-manager",
+        permanent: true,
+      },
+      {
+        source: "/resume-checker/accounting",
+        destination: "/resume-checker/accountant",
+        permanent: true,
+      },
+      {
+        source: "/resume-checker/hr-professionals",
+        destination: "/resume-checker/hr-manager",
+        permanent: true,
+      },
+      {
+        source: "/resume-checker/managers",
+        destination: "/resume-checker/manager",
+        permanent: true,
+      },
+      {
+        source: "/resume-checker/graphic-designers",
+        destination: "/resume-checker/graphic-designer",
+        permanent: true,
+      },
     ];
   },
   async headers() {

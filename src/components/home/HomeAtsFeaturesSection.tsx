@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
+
 const steps = [
   {
     step: "1",
@@ -32,10 +35,13 @@ export function HomeAtsFeaturesSection() {
           id="ats-features-heading"
           className="text-center font-display text-lg font-bold tracking-tight text-slate-900 sm:text-xl"
         >
-          How the free ATS resume checker works
+          What you get in 60 seconds
         </h2>
         <p className="mt-2 text-center text-sm text-slate-600">
-          Upload → resume parser → ATS score → AI resume analyzer → resume optimization fixes.
+          Parser preview → ATS score → keyword gaps → prioritized fixes.{" "}
+          <Link href={RESUME_CHECKER_PATH} className="font-semibold text-[#16a34a] underline">
+            Check my resume free
+          </Link>
         </p>
         <ol className="mt-6 grid gap-2 sm:grid-cols-2">
           {steps.map((s) => (

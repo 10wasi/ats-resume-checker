@@ -23,11 +23,11 @@ export function HeroSection() {
             {CTR_HOME.h1}
           </h1>
           <p className="mx-auto mt-2 text-pretty text-base text-slate-600">
-            The free <strong className="font-semibold text-slate-800">AI resume checker</strong>{" "}
-            for job seekers—upload PDF, run an{" "}
-            <strong className="font-semibold text-slate-800">ATS resume scanner</strong>, see your{" "}
-            <strong className="font-semibold text-slate-800">resume ATS score</strong>, parser
-            preview, and keyword gaps before you apply.
+            Upload your resume and see what hiring software reads—{" "}
+            <strong className="font-semibold text-slate-800">ATS score</strong>, parser preview, and
+            missing keywords in under a minute. Free{" "}
+            <strong className="font-semibold text-slate-800">AI resume checker</strong>—no signup,
+            instant results, fix before you apply.
           </p>
 
           <HomeHeroPasteForm />
