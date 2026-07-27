@@ -238,6 +238,31 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     title: "Resume File Types",
     description: "PDF vs DOCX upload rules for applicant portals.",
   },
+  resumeStatistics: {
+    href: "/resume-statistics",
+    title: "Resume Statistics",
+    description: "2026 resume screening data and trends.",
+  },
+  atsStatistics: {
+    href: "/ats-statistics",
+    title: "ATS Statistics",
+    description: "How applicant tracking systems filter candidates.",
+  },
+  hiringStatistics: {
+    href: "/hiring-statistics",
+    title: "Hiring Statistics",
+    description: "Recruitment volume and time-to-fill trends.",
+  },
+  resumeBenchmarks: {
+    href: "/resume-benchmarks",
+    title: "Resume Benchmarks",
+    description: "ATS score bands and match targets.",
+  },
+  statisticsHub: {
+    href: "/statistics",
+    title: "Statistics Hub",
+    description: "Resume, ATS, and hiring data in one place.",
+  },
   resumeCheckerUsa: {
     href: "/resume-checker-usa",
     title: "Resume Checker USA",

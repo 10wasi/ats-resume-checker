@@ -1,7 +1,5 @@
 import dynamic from "next/dynamic";
 import { FaqJsonLd } from "@/components/seo/FaqJsonLd";
-import { HomeWebApplicationJsonLd } from "@/components/seo/HomeWebApplicationJsonLd";
-import { WebSiteJsonLd } from "@/components/seo/WebSiteJsonLd";
 import { HeroSection } from "@/components/home/HomeSections";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { buildCtrMetadata, CTR_HOME } from "@/lib/seo/ctr-metadata";
@@ -84,8 +82,6 @@ export default function HomePage() {
   return (
     <>
       <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }]} />
-      <WebSiteJsonLd />
-      <HomeWebApplicationJsonLd />
       <FaqJsonLd />
 
       <HeroSection />

@@ -56,6 +56,36 @@ const nextConfig = {
         destination: "/resume-checker/graphic-designer",
         permanent: true,
       },
+      {
+        source: "/resume-checker/nurses",
+        destination: "/resume-checker/nurse",
+        permanent: true,
+      },
+      {
+        source: "/resume-checker/doctors",
+        destination: "/resume-checker/doctor",
+        permanent: true,
+      },
+      {
+        source: "/resume-checker/developers",
+        destination: "/resume-checker/developer",
+        permanent: true,
+      },
+      {
+        source: "/resume-checker/designers",
+        destination: "/resume-checker/designer",
+        permanent: true,
+      },
+      {
+        source: "/resume-checker/engineers",
+        destination: "/resume-checker/engineer",
+        permanent: true,
+      },
+      {
+        source: "/resume-checker/accountants",
+        destination: "/resume-checker/accountant",
+        permanent: true,
+      },
     ];
   },
   async headers() {

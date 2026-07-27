@@ -20,7 +20,7 @@ function ensureMetaSignals(text: string): string {
 }
 
 function padMetaToMin(text: string): string {
-  const suffix = " Upload free & fix resume gaps before you apply.";
+  const suffix = " Free AI-powered scan — instant results, no signup, professional analysis.";
   let out = text;
   if (out.length < META_MIN) {
     out = `${out.replace(/\.$/, "")}${suffix}`;
@@ -31,12 +31,12 @@ function padMetaToMin(text: string): string {
   return out;
 }
 
-/** Meta description — 145–155 chars, CTR-focused, mentions resume + ATS + AI. */
+/** Meta description — 145–155 chars with CTR signals: Free, AI, Instant, No signup. */
 export function ctrMeta(benefit: string): string {
   const trimmed = benefit.trim();
   const base =
     trimmed ||
-    "Upload free — instant AI resume scan, ATS score & keyword gaps in 2 minutes. No signup required.";
+    "Free AI-powered ATS resume checker — instant results, parser preview & keyword gaps. No signup. Professional analysis.";
   let text = ensureMetaSignals(base);
   text = padMetaToMin(text);
   if (text.length <= META_MAX) return text;

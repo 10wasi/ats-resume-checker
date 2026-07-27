@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 
-import { OrganizationJsonLd } from "@/components/seo/OrganizationJsonLd";
+import { EntityGraphJsonLd } from "@/components/seo/EntityGraphJsonLd";
 import { getSiteUrl } from "@/lib/site-url";
 import { getDefaultOgImages } from "@/lib/seo/og-defaults";
 
@@ -87,7 +87,7 @@ export default function RootLayout({
         className="min-h-screen bg-[#f8f9fb] text-slate-900 antialiased"
         suppressHydrationWarning
       >
-        <OrganizationJsonLd />
+        <EntityGraphJsonLd />
         {children}
       </body>
     </html>

@@ -6,7 +6,7 @@ import { TableOfContents } from "@/components/blog/TableOfContents";
 import { AccordionFaq } from "@/components/ui/AccordionFaq";
 import { CareerHubRelated } from "@/components/career/CareerHubRelated";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
-import { RelatedResources } from "@/components/seo/RelatedResources";
+import { PageEngagementSection } from "@/components/seo/PageEngagementSection";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
@@ -166,7 +166,7 @@ export function CareerLandingPage({
 
           <MandatoryHubLinks />
 
-          <RelatedResources path={entry.path} excludeHref={entry.path} />
+          <PageEngagementSection path={entry.path} />
 
           {platformHub ? <PlatformHubSections hub={platformHub} /> : null}
 

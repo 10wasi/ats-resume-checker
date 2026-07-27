@@ -5,7 +5,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { CheckerFunnelWebApplicationJsonLd } from "@/components/seo/CheckerFunnelWebApplicationJsonLd";
 import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
-import { RelatedResources } from "@/components/seo/RelatedResources";
+import { PageEngagementSection } from "@/components/seo/PageEngagementSection";
 import { GuideAuthorBlock } from "@/components/seo/GuideAuthorBlock";
 import { PaaAnswersSection } from "@/components/seo/PaaAnswersSection";
 import { SemanticEntitySection } from "@/components/seo/SemanticEntitySection";
@@ -72,7 +72,7 @@ export function ResumeCheckerRoleLanding({ entry }: { entry: ResumeCheckerRoleEn
         <TrustBadgesStrip className="mt-10" />
         <GuideAuthorBlock />
         <PaaAnswersSection path={entry.path} />
-        <RelatedResources path={entry.path} excludeHref={entry.path} limit={8} />
+        <PageEngagementSection path={entry.path} heading={`More for ${entry.roleLabel} job seekers`} />
         <BlogResumeCta />
       </article>
       <StickyCheckerCta />

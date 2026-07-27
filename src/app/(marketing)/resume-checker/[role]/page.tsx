@@ -4,6 +4,7 @@ import { ResumeCheckerRoleLanding } from "@/components/hub/ResumeCheckerRoleLand
 import {
   getResumeCheckerRole,
   getResumeCheckerRoleSlugs,
+  resolveRoleSlug,
 } from "@/lib/content/resume-checker-roles/registry";
 import { buildCtrMetadata } from "@/lib/seo/ctr-metadata";
 
@@ -14,7 +15,7 @@ export function generateStaticParams() {
 }
 
 export function generateMetadata({ params }: Props): Metadata {
-  const entry = getResumeCheckerRole(params.role);
+  const entry = getResumeCheckerRole(resolveRoleSlug(params.role));
   if (!entry) return { robots: { index: false } };
   return buildCtrMetadata(entry.ctr, {
     canonical: entry.path,
@@ -24,7 +25,7 @@ export function generateMetadata({ params }: Props): Metadata {
 }
 
 export default function ResumeCheckerRolePage({ params }: Props) {
-  const entry = getResumeCheckerRole(params.role);
+  const entry = getResumeCheckerRole(resolveRoleSlug(params.role));
   if (!entry) notFound();
   return <ResumeCheckerRoleLanding entry={entry} />;
 }

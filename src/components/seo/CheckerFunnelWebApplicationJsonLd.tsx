@@ -1,5 +1,6 @@
 import { getSiteUrl } from "@/lib/site-url";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
+import { entityRefOrganization } from "@/lib/seo/entity-graph";
 
 /** WebApplication schema for landing pages that funnel to the free checker. */
 export function CheckerFunnelWebApplicationJsonLd({
@@ -20,7 +21,7 @@ export function CheckerFunnelWebApplicationJsonLd({
     url: `${base}${RESUME_CHECKER_PATH}`,
     description: pageDescription,
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-    publisher: { "@type": "Organization", name: "ResumeIQ", url: base },
+    publisher: entityRefOrganization(),
   };
 
   return (
