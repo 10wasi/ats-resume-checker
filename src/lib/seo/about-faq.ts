@@ -1,4 +1,9 @@
 import type { FaqItem } from "./faq";
+import {
+  CORE_CHECKER_FREE_ANSWER,
+  NO_ACCOUNT_REQUIRED_ANSWER,
+  RESUME_STORAGE_FAQ_ANSWER,
+} from "./trust-copy";
 
 export const aboutFaqItems: FaqItem[] = [
   {
@@ -8,17 +13,19 @@ export const aboutFaqItems: FaqItem[] = [
   },
   {
     question: "Is the ATS resume checker really free?",
-    answer:
-      "Yes. Core resume analysis—ATS score, keyword gaps, format flags, and improvement suggestions—is free. No credit card required for standard use.",
+    answer: CORE_CHECKER_FREE_ANSWER,
   },
   {
     question: "Do you store my resume?",
-    answer:
-      "We process resumes for your analysis request and do not persist files in a long-term database. See our Privacy Policy for full details.",
+    answer: RESUME_STORAGE_FAQ_ANSWER,
   },
   {
-    question: "Who writes the career guides?",
+    question: "Do you offer user accounts?",
+    answer: NO_ACCOUNT_REQUIRED_ANSWER,
+  },
+  {
+    question: "Who writes and reviews the career guides?",
     answer:
-      "Guides in the Career Success Hub and Knowledge Center are written for job seekers with practical steps, FAQs, and links to free tools—not thin SEO filler.",
+      "Guides are written and reviewed by the ResumeIQ Editorial Team using parse tests, published methodology, and our content review process—not fake individual author profiles or unverifiable recruiter personas.",
   },
 ];

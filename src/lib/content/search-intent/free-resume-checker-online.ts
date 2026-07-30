@@ -76,8 +76,8 @@ Compare layouts in [resume examples](/resume-examples/software-engineer) and [AT
 | Tool | Best for |
 |------|----------|
 | [Free resume checker](${RESUME_CHECKER_PATH}) | Full scan + fixes |
-| [Resume score checker](/resume-score-checker) | Understanding your ATS % |
-| [Free ATS score checker](/free-ats-score-checker) | Quick compatibility % |
+| [Resume score checker](/ats-score-checker) | Understanding your ATS % |
+| [Free ATS score checker](/ats-score-checker) | Quick compatibility % |
 | [ATS resume checker](/ats-resume-checker) | Parse + keyword deep dive |
 
 ## Connected optimization tools

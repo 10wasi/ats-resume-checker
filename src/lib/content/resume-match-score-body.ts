@@ -119,7 +119,7 @@ Full library: [Resume Examples](/resume-examples) · Role ATS guides: [Career Su
 | [Resume Match Analyzer](/resume-job-description-match) | Calculate match % and gaps |
 | [ATS Keywords Finder](/ats-keywords-finder) | Extract terms from any JD |
 | [ATS Resume Checker](/resume-checker) | Parse health + AI improvement plan |
-| [Resume Keywords Checker](/resume-keywords-checker) | Keywords workflow guide |
+| [Resume Keywords Checker](/resume-keyword-checker) | Keywords workflow guide |
 
 ## Related guides
 

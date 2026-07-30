@@ -498,7 +498,7 @@ Related: [Why resume not getting interviews](/why-resume-not-getting-interviews)
 | Per-posting keyword tailoring | High on match filters | 15–30 min each |
 | Networking / referrals | Highest on callbacks | Ongoing |
 
-No tool can promise a fixed **interview rate** percentage—labor market, role demand, and timing matter. Use [resume score checker](/resume-score-checker) for baselines and [AI resume review](/ai-resume-review) for bullet suggestions.
+No tool can promise a fixed **interview rate** percentage—labor market, role demand, and timing matter. Use [resume score checker](/ats-score-checker) for baselines and [AI resume review](/ai-resume-review) for bullet suggestions.
 
 ---
 
@@ -568,7 +568,7 @@ Use this before any application batch:
 |---------------|-----------|
 | Free ATS resume checker | [/resume-checker](/resume-checker) |
 | Resume checker online | [/free-resume-checker-online](/free-resume-checker-online) |
-| Resume score checker | [/resume-score-checker](/resume-score-checker) |
+| Resume score checker | [/ats-score-checker](/ats-score-checker) |
 | Resume rejected by ATS | [/resume-rejected-by-ats](/resume-rejected-by-ats) |
 | AI resume review | [/ai-resume-review](/ai-resume-review) |
 | Resume keywords | [/resume-keywords](/resume-keywords) |

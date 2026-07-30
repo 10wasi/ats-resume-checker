@@ -47,7 +47,11 @@ export default function TermsPage() {
           <Link href="/methodology" className="font-semibold text-[#16a34a] underline">
             scoring methodology
           </Link>{" "}
-          for how ATS analysis works.
+          and{" "}
+          <Link href="/disclaimer" className="font-semibold text-[#16a34a] underline">
+            disclaimer
+          </Link>{" "}
+          for how ATS analysis works and what we do not claim.
         </Section>
         <Section title="3. Acceptable use">
           You won&apos;t misuse the service, attempt to disrupt
@@ -86,6 +90,10 @@ export default function TermsPage() {
       </section>
       <p className="mt-10 text-sm text-slate-500">
         See also{" "}
+        <Link href="/disclaimer" className="font-semibold text-[#16a34a] underline underline-offset-2">
+          Disclaimer
+        </Link>
+        ,{" "}
         <Link href="/privacy" className="font-semibold text-[#16a34a] underline underline-offset-2">
           Privacy Policy
         </Link>{" "}

@@ -75,6 +75,9 @@ export default function EditorialPolicyPage() {
         <RelatedResources path={EDITORIAL_POLICY_PATH} excludeHref={EDITORIAL_POLICY_PATH} />
         <TrustPageSeoFooter path={EDITORIAL_POLICY_PATH} />
         <div className="mt-10 flex flex-wrap gap-3">
+          <Link href="/review-process" className="font-semibold text-[#16a34a] underline">
+            Review process →
+          </Link>
           <Link href="/methodology" className="font-semibold text-[#16a34a] underline">
             Scoring methodology →
           </Link>

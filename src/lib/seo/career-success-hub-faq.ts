@@ -1,4 +1,5 @@
 import type { FaqItem } from "./faq";
+import { CORE_CHECKER_FREE_ANSWER, RESUME_STORAGE_FAQ_ANSWER } from "./trust-copy";
 
 export const careerSuccessHubFaqItems: FaqItem[] = [
   {
@@ -23,7 +24,6 @@ export const careerSuccessHubFaqItems: FaqItem[] = [
   },
   {
     question: "Do you store my resume?",
-    answer:
-      "We process resumes for the analysis request and do not persist files in a long-term database. See our Privacy Policy for details.",
+    answer: RESUME_STORAGE_FAQ_ANSWER,
   },
 ];

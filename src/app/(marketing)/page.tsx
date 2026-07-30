@@ -19,6 +19,22 @@ function SectionSkeleton({ height = "h-64" }: { height?: string }) {
   );
 }
 
+const HomeAtsReportPreviewSection = dynamic(
+  () =>
+    import("@/components/home/HomeAtsReportPreviewSection").then((m) => ({
+      default: m.HomeAtsReportPreviewSection,
+    })),
+  { loading: () => <SectionSkeleton height="h-96" /> }
+);
+
+const HomeBeforeAfterSection = dynamic(
+  () =>
+    import("@/components/home/HomeBeforeAfterSection").then((m) => ({
+      default: m.HomeBeforeAfterSection,
+    })),
+  { loading: () => <SectionSkeleton height="h-96" /> }
+);
+
 const HomeTopicHubSection = dynamic(
   () =>
     import("@/components/home/HomeTopicHubSection").then((m) => ({
@@ -86,6 +102,8 @@ export default function HomePage() {
 
       <HeroSection />
       <HomeAtsFeaturesSection />
+      <HomeAtsReportPreviewSection />
+      <HomeBeforeAfterSection />
       <HomeTrustStrip />
       <HomeTrustAuthoritySection />
       <HomeClusterSection />

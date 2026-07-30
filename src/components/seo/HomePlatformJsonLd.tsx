@@ -20,13 +20,13 @@ export function HomePlatformJsonLd() {
         "@type": "ListItem",
         position: 2,
         name: "Resume Score Checker",
-        url: `${base}/resume-score-checker`,
+        url: `${base}/ats-score-checker`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Free ATS Score Checker",
-        url: `${base}/free-ats-score-checker`,
+        url: `${base}/ats-score-checker`,
       },
       {
         "@type": "ListItem",

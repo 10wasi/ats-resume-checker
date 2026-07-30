@@ -128,5 +128,5 @@ The correct order:
 - [ATS resume format](/ats-resume-format) — layout rules that parse cleanly
 - [ATS resume mistakes](/ats-resume-mistakes) — format errors that break parsers
 - [How ATS works](/how-ats-works) — the full screening pipeline beyond parsing
-- [Resume keywords checker](/resume-keywords-checker) — keyword gap analysis
+- [Resume keywords checker](/resume-keyword-checker) — keyword gap analysis
 `;

@@ -24,8 +24,8 @@ export function GuideAuthorBlock({ path }: Props) {
             </Link>
           </p>
           <p className="mt-1 text-sm text-slate-600">
-            Career writers &amp; resume strategists — 8+ years covering applicant tracking
-            systems, AI resume tools, and global hiring workflows.
+            In-house team that writes and reviews ResumeIQ guides. We test claims against the
+            live checker and published methodology—no fake individual author profiles.
           </p>
         </div>
       </div>
@@ -33,7 +33,12 @@ export function GuideAuthorBlock({ path }: Props) {
       <dl className="mt-5 grid gap-3 text-sm sm:grid-cols-2">
         <div>
           <dt className="font-semibold text-slate-900">Reviewed by</dt>
-          <dd className="mt-0.5 text-slate-600">ResumeIQ Editorial (methodology-aligned)</dd>
+          <dd className="mt-0.5 text-slate-600">
+            <Link href="/review-process" className="text-[#16a34a] underline">
+              ResumeIQ Editorial Team
+            </Link>{" "}
+            (methodology-aligned)
+          </dd>
         </div>
         <div>
           <dt className="font-semibold text-slate-900">Fact checked</dt>
@@ -67,8 +72,8 @@ export function GuideAuthorBlock({ path }: Props) {
               ResumeIQ scoring methodology
             </Link>
             {" · "}
-            <Link href="/how-we-score-resumes" className="underline hover:text-emerald-700">
-              How we score resumes
+            <Link href="/disclaimer" className="underline hover:text-emerald-700">
+              Disclaimer
             </Link>
           </li>
         </ul>

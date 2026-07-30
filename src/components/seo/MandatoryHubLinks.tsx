@@ -6,7 +6,7 @@ const HUB_LINKS = [
   { href: "/resume-review", label: "Resume Review" },
   { href: "/career-success-hub", label: "Career Success Hub" },
   { href: "/complete-guide-ats-resume-optimization", label: "ATS Guide" },
-  { href: "/resume-score-checker", label: "Resume Score" },
+  { href: "/ats-score-checker", label: "Resume Score" },
   { href: "/resume-keywords", label: "Resume Keywords" },
   { href: "/interview-question-generator", label: "Interview Guide" },
   { href: "/ats-resume-templates", label: "Resume Templates" },

@@ -3,7 +3,7 @@ import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 const CLUSTER = [
   { href: "/", label: "Free ATS Resume Checker" },
-  { href: "/free-ats-resume-checker", label: "Free ATS Guide" },
+  { href: "/", label: "Free ATS Guide" },
   { href: "/ats-resume-checker-online", label: "Checker Online" },
   { href: "/resume-keyword-checker", label: "Keyword Checker" },
   { href: "/ats-score-checker", label: "ATS Score" },

@@ -32,8 +32,8 @@ const BLOCKS: Record<string, SemanticEntityBlock> = {
       },
     ],
     relatedSearches: [
-      { label: "Resume score checker", href: "/resume-score-checker" },
-      { label: "Resume keyword checker", href: "/resume-keywords-checker" },
+      { label: "Resume score checker", href: "/ats-score-checker" },
+      { label: "Resume keyword checker", href: "/resume-keyword-checker" },
       { label: "CV checker", href: "/cv-checker" },
       { label: "How ATS works", href: "/how-ats-works" },
     ],

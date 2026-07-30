@@ -608,7 +608,7 @@ export function HomeStrongCtaSection() {
 /** Social proof strip — trust without inflated metrics. */
 export function HomeTrustedBySection() {
   const stats = [
-    { value: "Free", label: "No signup required to run your first check" },
+    { value: "Free", label: "No signup required to run a check" },
     { value: "Minutes", label: "Upload, paste a job post, get actionable fixes" },
     { value: "Global", label: "Built for job seekers in every region and remote hiring" },
   ];

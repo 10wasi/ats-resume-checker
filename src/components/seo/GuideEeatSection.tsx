@@ -70,6 +70,10 @@ export function GuideEeatSection({
         Reviewed under{" "}
         <Link href="/editorial-policy" className="font-semibold text-[#16a34a] underline">
           editorial policy
+        </Link>{" "}
+        and{" "}
+        <Link href="/review-process" className="font-semibold text-[#16a34a] underline">
+          review process
         </Link>
         . Report errors via{" "}
         <Link href="/contact" className="font-semibold text-[#16a34a] underline">

@@ -15,15 +15,15 @@ const trustItems = [
   },
   {
     label: "How scores are calculated",
-    detail: "Parse health, keywords & structure — weighted like ATS filters.",
-    href: "/methodology",
-    linkText: "Scoring methodology",
+    detail: "Parse health, keywords & structure — see what each band means.",
+    href: "/ats-score-explained",
+    linkText: "Score explanation",
   },
   {
     label: "How AI recommendations work",
-    detail: "Suggestions from your text + ATS rules, not blind templates.",
-    href: "/methodology",
-    linkText: "AI review process",
+    detail: "Suggestions from your text + published rules—not blind templates.",
+    href: "/review-process",
+    linkText: "Review process",
   },
 ];
 
@@ -56,8 +56,12 @@ export function HomeTrustStrip() {
         </ul>
         <p className="mt-4 text-center text-xs text-slate-500">
           Last updated July 2026 ·{" "}
+          <Link href="/review-process" className="underline">
+            Review process
+          </Link>
+          {" · "}
           <Link href="/editorial-policy" className="underline">
-            ResumeIQ editorial team
+            Editorial policy
           </Link>
         </p>
       </div>

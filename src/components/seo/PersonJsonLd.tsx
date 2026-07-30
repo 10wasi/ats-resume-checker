@@ -1,15 +1,17 @@
 import { getSiteUrl } from "@/lib/site-url";
 
-/** Editorial team Person schema — strengthens E-E-A-T sitewide. */
+/** Editorial team Organization schema — transparent team entity, not a fake individual. */
 export function EditorialPersonJsonLd() {
   const base = getSiteUrl().replace(/\/$/, "");
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Person",
-    name: "ResumeIQ Editorial",
-    url: `${base}/about`,
-    jobTitle: "Resume & ATS Content Team",
-    worksFor: {
+    "@type": "Organization",
+    "@id": `${base}/about#editorial-team`,
+    name: "ResumeIQ Editorial Team",
+    url: `${base}/review-process`,
+    description:
+      "In-house editorial team that writes and reviews ResumeIQ resume guides, tool pages, and FAQ content.",
+    parentOrganization: {
       "@type": "Organization",
       name: "ResumeIQ",
       url: base,

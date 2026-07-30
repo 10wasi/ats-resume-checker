@@ -1,78 +1,72 @@
 import Link from "next/link";
 
-const TRUST_ITEMS = [
+/** Compact ATS education + trust — replaces the 6-card authority grid on homepage. */
+const BRIEF_ITEMS = [
   {
-    title: "How ATS works",
-    body: "Applicant tracking systems parse resumes into fields and search keywords—millions of deployments use similar matching rules.",
+    title: "How ATS reads resumes",
+    body: "Applicant tracking systems extract text, index keywords, and rank candidates before a recruiter opens your file.",
     href: "/how-ats-works",
-    cta: "Learn ATS mechanics",
+    cta: "How ATS works",
   },
   {
-    title: "How AI scoring works",
-    body: "Scores combine parse health, keyword overlap, and structure—weighted like common ATS filters, with plain-language fix lists.",
-    href: "/how-we-score-resumes",
-    cta: "Scoring methodology",
+    title: "What your ATS score means",
+    body: "Scores reflect parse health, keyword overlap, and structure—not a guarantee any employer uses identical weighting.",
+    href: "/ats-score-explained",
+    cta: "Score bands explained",
+  },
+  {
+    title: "How AI analysis works",
+    body: "Suggestions come from your uploaded text plus published scoring rules—not generic templates. Reviewed by our Editorial Team.",
+    href: "/how-resume-analysis-works",
+    cta: "Analysis pipeline",
   },
   {
     title: "Privacy & no resume storage",
-    body: "Uploads processed per request—not sold or kept for training. You control what you download and share.",
+    body: "Files are processed for your request. We do not persist uploads in a long-term database or sell resume data.",
     href: "/privacy",
     cta: "Privacy policy",
-  },
-  {
-    title: "Instant analysis",
-    body: "Upload PDF or paste text—see parser preview, ATS score, and keyword gaps in minutes, no signup required.",
-    href: "/free-ats-resume-checker",
-    cta: "Run free scan",
-  },
-  {
-    title: "Keyword matching reality",
-    body: "Most ATS filters index exact tool names, certifications, and metrics from your experience bullets—mirror honest posting language.",
-    href: "/resume-keyword-checker",
-    cta: "Keyword checker",
-  },
-  {
-    title: "Professional recommendations",
-    body: "AI suggestions follow your text plus ATS rules—not generic templates. Review editorial policy and our algorithm.",
-    href: "/our-algorithm",
-    cta: "How analysis works",
   },
 ];
 
 export function HomeTrustAuthoritySection() {
   return (
     <section
-      className="border-b border-slate-200/70 bg-slate-50/80 py-10 sm:py-12"
+      className="border-b border-slate-200/70 bg-slate-50/80 py-8 sm:py-10"
       aria-labelledby="trust-authority-heading"
     >
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <h2
           id="trust-authority-heading"
-          className="text-center font-display text-xl font-bold tracking-tight text-slate-900 sm:text-2xl"
+          className="text-center font-display text-lg font-bold tracking-tight text-slate-900 sm:text-xl"
         >
-          Why job seekers trust ResumeIQ
+          How the checker works — and what we do with your file
         </h2>
-        <p className="mx-auto mt-2 max-w-2xl text-center text-sm text-slate-600">
-          Transparent ATS education, instant scans, and privacy-first processing—built for better
-          applications, not vanity scores.
-        </p>
-        <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {TRUST_ITEMS.map((item) => (
+        <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+          {BRIEF_ITEMS.map((item) => (
             <li
               key={item.title}
-              className="flex flex-col rounded-xl border border-slate-200/90 bg-white p-5 shadow-sm"
+              className="rounded-xl border border-slate-200/90 bg-white p-4 shadow-sm"
             >
-              <h3 className="font-semibold text-slate-900">{item.title}</h3>
-              <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">{item.body}</p>
+              <h3 className="text-sm font-semibold text-slate-900">{item.title}</h3>
+              <p className="mt-1.5 text-sm leading-relaxed text-slate-600">{item.body}</p>
               <Link
                 href={item.href}
-                className="mt-3 text-sm font-semibold text-[#16a34a] underline underline-offset-2"
+                className="mt-2 inline-block text-sm font-semibold text-[#16a34a] underline underline-offset-2"
               >
                 {item.cta}
               </Link>
             </li>
           ))}
         </ul>
+        <p className="mt-4 text-center text-xs text-slate-500">
+          <Link href="/review-process" className="underline hover:text-slate-700">
+            Content review process
+          </Link>
+          {" · "}
+          <Link href="/methodology" className="underline hover:text-slate-700">
+            Scoring methodology
+          </Link>
+        </p>
       </div>
     </section>
   );

@@ -100,7 +100,7 @@ Re-check score after each pass. Diminishing returns after format and top keyword
 ## Connected tools
 
 - [Free resume checker online](/free-resume-checker-online) — Full scan workflow
-- [Free ATS score checker](/free-ats-score-checker) — Quick compatibility %
+- [Free ATS score checker](/ats-score-checker) — Quick compatibility %
 - [ATS resume checker](/ats-resume-checker) — Parse + keyword deep dive
 - [Resume rejected by ATS](/resume-rejected-by-ats) — When low scores mean silence
 - [How to improve resume score](/how-to-improve-resume-score) — Three-pass plan

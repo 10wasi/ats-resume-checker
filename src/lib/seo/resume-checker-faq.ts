@@ -1,4 +1,5 @@
 import type { FaqItem } from "@/lib/seo/faq";
+import { CORE_CHECKER_FREE_ANSWER, RESUME_STORAGE_FAQ_ANSWER } from "@/lib/seo/trust-copy";
 
 export const resumeCheckerFaqItems: FaqItem[] = [
   {
@@ -8,13 +9,12 @@ export const resumeCheckerFaqItems: FaqItem[] = [
   },
   {
     question: "Is this resume checker free?",
-    answer:
-      "Yes. Upload or paste for ATS score, keyword gaps, format warnings, and improvement checklist—no credit card for standard use.",
+    answer: CORE_CHECKER_FREE_ANSWER,
   },
   {
     question: "What is a good ATS score from a resume checker?",
     answer:
-      "There is no universal pass mark. Below 55 often means format or parse issues. 70–85 with clean flags is a strong baseline. Always pair with match analysis for each posting.",
+      "There is no universal pass mark. Low scores with format or parse flags usually mean fix layout before keywords. Pair baseline score with match analysis for each posting you target.",
   },
   {
     question: "Do I need to paste a job description?",
@@ -58,13 +58,11 @@ export const resumeCheckerFaqItems: FaqItem[] = [
   },
   {
     question: "Is this a free ATS resume checker—no paywall?",
-    answer:
-      "Core analysis is free: ATS score, keyword gaps, format flags, match %, and improvement checklist. No credit card required. Advanced AI report sections are included in the standard free flow.",
+    answer: CORE_CHECKER_FREE_ANSWER,
   },
   {
     question: "Is my resume data private and secure?",
-    answer:
-      "Your resume content is used only to generate your report. We do not sell, share, or store your resume data for advertising. Check our privacy policy for full details on data handling and retention.",
+    answer: RESUME_STORAGE_FAQ_ANSWER,
   },
   {
     question: "What is the difference between an ATS score and a match score?",
@@ -82,9 +80,9 @@ export const resumeCheckerFaqItems: FaqItem[] = [
       "ATS software doesn't flag AI-written text—it scores keywords, structure, and parse quality. However, some employers use separate AI-detection tools on shortlisted candidates. The safer approach is to use AI suggestions as a starting draft and then rewrite in your own voice with specific evidence from your real experience.",
   },
   {
-    question: "My score is already 85+. What should I do next?",
+    question: "My score looks strong. What should I do next?",
     answer:
-      "A high baseline ATS score means your format and general keyword coverage are strong. The next step is per-role tailoring: paste each target job description to get a match score and a gap list for that specific posting. Add 5–8 honest keyword touches per role, re-export, and re-check. Format health doesn't replace role relevance.",
+      "Tailor per role: paste each target job description for match score and gap list, add honest keyword touches, re-export, and re-check. Strong baseline format does not replace posting-specific relevance.",
   },
   {
     question: "Does ATS read cover letters?",

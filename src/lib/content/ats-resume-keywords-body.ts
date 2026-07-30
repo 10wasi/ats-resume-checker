@@ -156,6 +156,6 @@ Browse all profession-specific keyword lists in the [ATS Knowledge Center](/know
 - [Resume Keywords by Industry](/resume-keywords-by-industry)
 - [Resume vs Job Description Matching](/resume-job-description-match)
 - [ATS Resume Mistakes](/ats-resume-mistakes) — stuffing and dump sections
-- [Resume Score Checker](/resume-score-checker) — understand how keyword coverage affects your score
+- [Resume Score Checker](/ats-score-checker) — understand how keyword coverage affects your score
 - [Career Success Hub](/career-success-hub) — complete career optimization resources
 `;

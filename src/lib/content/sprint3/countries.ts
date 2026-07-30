@@ -62,7 +62,7 @@ Common keyword clusters employers filter on in ${c.label}: **${c.keywordExamples
 
 | Resource | Use when |
 |----------|----------|
-| [Free ATS resume checker](/free-ats-resume-checker) | First scan before any application |
+| [Free ATS resume checker](/) | First scan before any application |
 | [Resume keyword checker](/resume-keyword-checker) | Missing terms vs posting |
 | [ATS score checker](/ats-score-checker) | Understanding compatibility % |
 | [Resume resources hub](/resume-resources) | Skills, verbs, fonts, file types |
@@ -87,7 +87,7 @@ Tailor keywords to your field:
 
 ## Privacy for international applicants
 
-ResumeIQ processes uploads per request—see [privacy policy](/privacy). We do not require account creation for a baseline scan. Read [how we score resumes](/how-we-score-resumes) to interpret results.
+ResumeIQ processes uploads per request—see [privacy policy](/privacy). We do not require account creation for a baseline scan. Read [scoring methodology](/methodology) to interpret results.
 
 ## Related country guides
 

@@ -79,8 +79,8 @@ Full list: [common ATS resume rejection reasons](/common-ats-resume-rejection-re
 ## Related guides
 
 - [Free resume checker online](/free-resume-checker-online) — Score + review hub
-- [Free ATS score checker](/free-ats-score-checker) — Quick compatibility check
-- [Resume score checker](/resume-score-checker) — Interpret your ATS %
+- [Free ATS score checker](/ats-score-checker) — Quick compatibility check
+- [Resume score checker](/ats-score-checker) — Interpret your ATS %
 - [Why resume gets rejected](/why-resume-gets-rejected) — full rejection stack
 - [Resume not passing ATS](/resume-not-passing-ats) — parse vs score diagnosis
 - [Complete ATS optimization guide](/complete-guide-ats-resume-optimization) — master reference

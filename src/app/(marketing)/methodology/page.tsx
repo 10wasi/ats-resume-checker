@@ -7,7 +7,7 @@ import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { PageFaqSection } from "@/components/seo/PageFaqSection";
 import { RelatedResources } from "@/components/seo/RelatedResources";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
-import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
+import { TrustPageSeoFooter } from "@/components/seo/TrustPageSeoFooter";
 import {
   METHODOLOGY_PATH,
   methodologyBody,
@@ -60,25 +60,24 @@ export default function MethodologyPage() {
               {CTR_METHODOLOGY.h1}
             </h1>
             <p className="mt-6 text-lg text-slate-600">
-              How we score resumes for <strong className="font-semibold text-slate-800">global job applications</strong>—what ATS checks, how match score works, and what we do not claim. Test your file in the{" "}
+              How we score resumes for <strong className="font-semibold text-slate-800">global job applications</strong>—what ATS checks, how match score works, and what we do not claim. Scores are guidance, not guarantees—read our{" "}
+              <Link href="/disclaimer" className="font-semibold text-[#16a34a] underline">
+                disclaimer
+              </Link>
+              . Test your file in the{" "}
               <Link href={RESUME_CHECKER_PATH} className="font-semibold text-[#16a34a] underline">
                 ATS Resume Checker
-              </Link>.
+              </Link>
+              .
             </p>
           </header>
           <AdPlaceholder label="Advertisement · resource" className="mt-10" />
           <div className="mt-10">
             <BlogContent content={methodologyBody} />
           </div>
-          <div className="not-prose mt-10">
-            <GuideEeatSection
-              path={METHODOLOGY_PATH}
-              audience="Anyone who wants to understand what our ATS score measures before trusting it in a job application."
-              notFor="This page does not predict employer-specific ATS behavior, hiring decisions, or interview outcomes—only what ResumeIQ's scoring estimates."
-            />
-          </div>
           <PageFaqSection heading="Methodology FAQ" items={methodologyFaqItems} />
           <RelatedResources path={METHODOLOGY_PATH} excludeHref={METHODOLOGY_PATH} />
+          <TrustPageSeoFooter path={METHODOLOGY_PATH} />
           <BlogResumeCta />
         </div>
       </article>

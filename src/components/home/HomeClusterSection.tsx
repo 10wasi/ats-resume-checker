@@ -2,7 +2,7 @@ import Link from "next/link";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 const CLUSTER_PAGES = [
-  { href: "/free-ats-resume-checker", label: "Free ATS Resume Checker", desc: "Primary free scan" },
+  { href: RESUME_CHECKER_PATH, label: "Free ATS Resume Checker", desc: "Upload & scan free" },
   { href: "/ats-resume-checker-online", label: "ATS Checker Online", desc: "Browser-based scan" },
   { href: "/resume-keyword-checker", label: "Keyword Checker", desc: "Missing ATS terms" },
   { href: "/ats-score-checker", label: "ATS Score Checker", desc: "Compatibility %" },

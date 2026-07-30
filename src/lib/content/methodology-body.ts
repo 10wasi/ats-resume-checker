@@ -1,18 +1,20 @@
 export const METHODOLOGY_PATH = "/methodology" as const;
 
 export const methodologyBody = `
-ResumeIQ scoring is designed to mirror **what applicant tracking systems and recruiters actually search for**—not to predict interviews or offers. Our methodology is transparent, repeatable, and built for **global job applications** across regions, remote hiring, and international employer portals.
+ResumeIQ scoring is designed to mirror **what applicant tracking systems and recruiters commonly search for**—not to predict interviews or offers. Our methodology is transparent, repeatable, and built for **global job applications** across regions, remote hiring, and international employer portals.
+
+**Independent product:** ResumeIQ is not affiliated with, endorsed by, or partnered with any applicant tracking vendor. Scores are **guidance only**—see our [disclaimer](/disclaimer) for full limitations.
 
 ## What ATS systems check
 
-Most hiring platforms—Workday, Greenhouse, Lever, Taleo, SAP SuccessFactors, and regional equivalents—follow similar patterns:
+Many hiring platforms follow similar patterns (examples include Workday, Greenhouse, Lever, Taleo, and regional equivalents—we name them for context, not as partners):
 
 1. **Parse** — Extract text from PDF or Word. Broken layouts lose data.
 2. **Index** — Store skills, titles, employers, dates as searchable fields.
 3. **Rank / filter** — Match resume language to job posting requirements.
 4. **Human skim** — Recruiters review survivors in seconds.
 
-ResumeIQ focuses on steps 1–3 because that is where most silent rejections happen.
+ResumeIQ focuses on steps 1–3 because that is where many silent rejections start. Step 4 depends on recruiter preference—we cannot model that fully.
 
 ## How our ATS score is calculated
 
@@ -45,7 +47,7 @@ Match uses: hard skills, tools, certifications, role language, and seniority sig
 
 After analysis, we show an **ATS screening estimate**—a weighted blend of ATS score, readability, keyword coverage, match (if provided), format flags, and QA checks.
 
-**Important:** This estimates automated screening signals only. It does not predict interviews, offers, or human bias.
+**Important:** This estimates automated screening signals only. It does not predict interviews, offers, recruiter preference, or human bias. We do **not** claim 100% accuracy versus any employer ATS. Full limitations: [disclaimer](/disclaimer).
 
 ## How we test parsing (our process)
 
@@ -105,7 +107,7 @@ Trust in a scoring tool depends on how it treats your file:
 - Keep your authoritative copy in your own storage; export before major edits.
 - Do not upload confidential documents you are not permitted to share.
 
-Full details are in our [privacy policy](/privacy). For how the analysis pipeline handles your file end to end, see [how resume analysis works](/how-resume-analysis-works).
+Full details are in our [privacy policy](/privacy). For how the analysis pipeline handles your file end to end, see [how resume analysis works](/how-resume-analysis-works). Limitations and non-guarantees: [disclaimer](/disclaimer).
 
 ## Editorial standards
 
@@ -113,8 +115,12 @@ Guides in our Knowledge Center and Career Hub are written for **job seekers ever
 
 ## Related resources
 
+- [Disclaimer](/disclaimer) — What we do and do not guarantee  
 - [How ATS works](/how-ats-works) — Parser and filter overview  
-- [Resume score checker](/resume-score-checker) — What your % means  
+- [About ResumeIQ](/about) — Platform overview  
+- [Editorial policy](/editorial-policy) — How guides are reviewed  
+- [Contact](/contact) — Report errors or ask questions  
+- [Resume score checker](/ats-score-checker) — What your % means  
 - [ATS score explained](/ats-score-explained) — Score semantics  
 - [Resume screening explained](/resume-screening-explained) — Full hiring stack  
 - [Free resume checker online](/free-resume-checker-online) — Apply the methodology  

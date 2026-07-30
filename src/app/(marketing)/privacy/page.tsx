@@ -32,7 +32,7 @@ export default function PrivacyPage() {
         <h1 className="mt-6 font-display text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
           Privacy Policy
         </h1>
-        <p className="mt-3 text-sm text-slate-500">Last updated: April 30, 2026</p>
+        <p className="mt-3 text-sm text-slate-500">Last updated: July 30, 2026</p>
         <div className="mt-10 space-y-8 text-slate-700">
           <Section title="1. The short version">
             ResumeIQ is built so you don&apos;t have to trust us with much. We
@@ -68,13 +68,18 @@ export default function PrivacyPage() {
             partner opt-out resources. When ads are live, we will update this
             section with the exact networks in use.
           </Section>
-          <Section title="6. Your rights">
+          <Section title="6. User accounts">
+            ResumeIQ does not offer user accounts or login today. You can run standard resume
+            checks without signup. If we add optional accounts in the future, this policy will
+            describe what data is stored and how to delete it before any feature goes live.
+          </Section>
+          <Section title="7. Your rights">
             You can request deletion of any data we hold about you (for example,
             a support thread). For users in the EU/UK and similar jurisdictions,
             GDPR/UK-GDPR rights apply: access, rectification, erasure,
             restriction, portability, and objection.
           </Section>
-          <Section title="7. Contact">
+          <Section title="8. Contact">
             Questions? Email{" "}
             <a
               href="mailto:wasihuxxain01@gmail.com"
@@ -98,10 +103,18 @@ export default function PrivacyPage() {
         </section>
         <p className="mt-10 text-sm text-slate-500">
           See also{" "}
+          <Link href="/disclaimer" className="font-semibold text-[#16a34a] underline underline-offset-2">
+            Disclaimer
+          </Link>
+          ,{" "}
+          <Link href="/review-process" className="font-semibold text-[#16a34a] underline underline-offset-2">
+            Review process
+          </Link>
+          ,{" "}
           <Link href="/terms" className="font-semibold text-[#16a34a] underline underline-offset-2">
             Terms of Service
-          </Link>{" "}
-          and{" "}
+          </Link>
+          , and{" "}
           <Link href="/contact" className="font-semibold text-[#16a34a] underline underline-offset-2">
             Contact
           </Link>

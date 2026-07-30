@@ -116,7 +116,7 @@ Millions of ATS deployments rely on **exact or stemmed keyword matching** in exp
 - [How ATS works](/how-ats-works)
 - [Resume statistics](/resume-statistics)
 - [Glossary](/glossary)
-- [Free ATS resume checker](/free-ats-resume-checker)`
+- [Free ATS resume checker](/)`
   ),
 };
 
@@ -201,7 +201,7 @@ Match % depends on job description length and honesty—aim to cover **required*
 | Stronger metrics in bullets | Medium | Medium |
 | Font/layout polish | Fast | Medium when parse was broken |`,
     `- [ATS score explained](/ats-score-explained)
-- [How we score resumes](/how-we-score-resumes)
+- [Scoring methodology](/methodology)
 - [Resume statistics](/resume-statistics)
 - [Check my resume](/resume-checker)`
   ),

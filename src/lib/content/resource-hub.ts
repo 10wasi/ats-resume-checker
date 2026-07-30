@@ -2,7 +2,7 @@ export const RESOURCE_HUB_PATH = "/resource-hub" as const;
 
 export const RESOURCE_HUB_GUIDES = [
   { title: "Free Resume Checker Online", href: "/free-resume-checker-online", desc: "Money page — score & review hub" },
-  { title: "Resume Score Checker", href: "/resume-score-checker", desc: "What your ATS % means" },
+  { title: "Resume Score Checker", href: "/ats-score-checker", desc: "What your ATS % means" },
   { title: "Resume Rejected By ATS", href: "/resume-rejected-by-ats", desc: "Diagnose silence after apply" },
   { title: "Complete ATS Guide", href: "/complete-guide-ats-resume-optimization", desc: "Master optimization reference" },
   { title: "Common Rejection Reasons", href: "/common-ats-resume-rejection-reasons", desc: "Top ATS rejection triggers" },
@@ -16,7 +16,7 @@ export const RESOURCE_HUB_GUIDES = [
 export const RESOURCE_HUB_TOOLS = [
   { title: "Resume Checker", href: "/resume-checker" },
   { title: "Free Resume Checker Online", href: "/free-resume-checker-online" },
-  { title: "Free ATS Score Checker", href: "/free-ats-score-checker" },
+  { title: "Free ATS Score Checker", href: "/ats-score-checker" },
   { title: "ATS Resume Checker Guide", href: "/ats-resume-checker" },
   { title: "Resume Match Tool", href: "/resume-job-description-match" },
   { title: "Resume Keywords Database", href: "/resume-keywords" },

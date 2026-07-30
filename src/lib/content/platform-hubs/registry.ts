@@ -56,7 +56,7 @@ Upload PDF or paste text → get **ATS score**, **format flags**, **missing keyw
 |------|----------|
 | [Resume checker](${RESUME_CHECKER_PATH}) | Baseline ATS health |
 | [Resume match analyzer](/resume-job-description-match) | You have a specific posting |
-| [Resume score guide](/resume-score-checker) | Interpreting your % |
+| [Resume score guide](/ats-score-checker) | Interpreting your % |
 | [CV checker](/cv-checker) | CV label, same engine |
 
 ## Common mistakes before checking
@@ -127,7 +127,7 @@ See [common ATS rejection reasons](/common-ats-resume-rejection-reasons) for wha
   },
   {
     slug: "resume-score",
-    path: "/resume-score-checker",
+    path: "/ats-score-checker",
     title: "Resume Score",
     breadcrumbLabel: "Resume score",
     ctr: {

@@ -66,3 +66,5 @@ export const FAQ_CENTER_SECTIONS: FaqCenterSection[] = [
 export const faqCenterAllItems: FaqItem[] = FAQ_CENTER_SECTIONS.flatMap(
   (s) => s.items
 );
+
+/** @deprecated Use faqCenterHubFaqItems for FAQPage schema on /faq-center. */

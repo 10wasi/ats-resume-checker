@@ -24,7 +24,7 @@ export const howAtsWorksFaqItems: FaqItem[] = [
   {
     question: "Do all companies use ATS?",
     answer:
-      "Most mid-size and large employers use ATS to manage application volume—estimates suggest over 90% of Fortune 500 companies use some form of ATS. Smaller companies and startups may use simpler tools or email-based hiring, but building an ATS-compatible resume protects you across every channel since you rarely know which system the employer uses.",
+      "Most mid-size and large employers use applicant tracking systems to manage application volume. Smaller companies may use email or lighter tools, but a parse-safe resume protects you when you cannot know which system an employer uses.",
   },
   {
     question: "Can ATS reject applications before a human sees them?",

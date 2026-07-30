@@ -16,7 +16,7 @@ This page explains who writes our content, how it is reviewed, what we will and 
 ## How content is created
 
 - **Tool pages** are maintained alongside product behavior—when analysis output changes, guides are updated.
-- **Career guides** are written by ResumeIQ editorial staff with ATS research and recruiter workflow input.
+- **Career guides** are written and reviewed by the **ResumeIQ Editorial Team** using parse tests, published methodology, and our [review process](/review-process).
 - **Blog articles** are reviewed for factual claims about hiring software and linked to free tools for verification.
 - **AI-assisted drafts** may be used for phrasing, but published copy is edited for accuracy and clarity.
 
@@ -61,13 +61,15 @@ We acknowledge that ResumeIQ is a tool platform, not a credentialed HR research 
 - Published ATS vendor documentation and recruiter workflow research
 - Iterative testing of scoring logic with real resumes (anonymized)
 
-We do not manufacture named experts or false bylines. Scoring methodology is published and linked from every major guide.
+We do not manufacture named experts or false bylines. All guides are attributed to the ResumeIQ Editorial Team. Scoring methodology is published and linked from every major guide. See the [content review process](/review-process) for pre-publish checks.
 
 ## Related trust documents
 
 - [About ResumeIQ](/about) — Mission and platform overview  
+- [Review process](/review-process) — How guides are checked before publish  
 - [Methodology](/methodology) — How ATS scores are calculated  
 - [How resume analysis works](/how-resume-analysis-works) — What the checker measures  
 - [Privacy Policy](/privacy) — Data handling  
-- [Terms of Service](/terms) — Usage and disclaimers  
+- [Terms of Service](/terms) — Usage and disclaimers
+- [Disclaimer](/disclaimer) — Scoring limitations and non-guarantees  
 `;

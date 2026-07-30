@@ -16,7 +16,7 @@ Every cluster guide on ResumeIQ connects to the same measurable workflow:
 
 | Guide | Best for |
 |-------|----------|
-| [Free ATS resume checker](/free-ats-resume-checker) | First scan before any application |
+| [Free ATS resume checker](/) | First scan before any application |
 | [ATS resume checker online](/ats-resume-checker-online) | Browser-based scan without installs |
 | [Resume analyzer](/resume-analyzer) | Section-level AI feedback |
 | [Resume keyword checker](/resume-keyword-checker) | Missing terms vs a posting |
@@ -26,5 +26,5 @@ Every cluster guide on ResumeIQ connects to the same measurable workflow:
 
 ## Trust & methodology
 
-Scores are estimates based on parse health, keyword overlap, and structure — not a guarantee any employer uses identical weighting. Read [how we score resumes](/how-we-score-resumes), [our algorithm](/our-algorithm), and [editorial policy](/editorial-policy). Questions: [FAQ Center](/faq-center) or [contact](/contact).
+Scores are estimates based on parse health, keyword overlap, and structure — not a guarantee any employer uses identical weighting. Read [scoring methodology](/methodology), [how resume analysis works](/how-resume-analysis-works), [disclaimer](/disclaimer), and [editorial policy](/editorial-policy). Questions: [FAQ Center](/faq-center) or [contact](/contact).
 `;

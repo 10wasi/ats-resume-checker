@@ -16,7 +16,7 @@ export type SiteNavItem = { readonly href: string; readonly label: string };
 export const SITE_TOOLS: SiteNavItem[] = [
   { href: "/resume-optimization-platform", label: "Optimization platform" },
   { href: "/free-resume-checker-online", label: "Free resume checker online" },
-  { href: "/free-ats-score-checker", label: "Free ATS score checker" },
+  { href: "/ats-score-checker", label: "ATS score checker" },
   { href: "/ats-resume-review", label: "ATS resume review" },
   { href: RESUME_CHECKER_PATH, label: "ATS Resume Checker" },
   { href: "/resume-job-description-match", label: "Resume match analyzer" },
@@ -55,9 +55,9 @@ export const SITE_CAREER_PAGES: SiteNavItem[] = [
   { href: "/resume-review", label: "Resume review" },
   { href: "/resume-optimization", label: "Resume optimization guide" },
   { href: "/resume-match-score", label: "Resume match score explained" },
-  { href: "/resume-score-checker", label: "Resume score checker" },
+  { href: "/ats-score-checker", label: "Resume score checker" },
   { href: "/free-resume-checker-online", label: "Free resume checker online" },
-  { href: "/free-ats-score-checker", label: "Free ATS score checker" },
+  { href: "/ats-score-checker", label: "ATS score checker" },
   { href: "/ats-resume-checker", label: "ATS resume checker guide" },
   { href: "/resume-action-verbs", label: "Resume action verbs" },
   { href: "/resume-parsing", label: "Resume parsing explained" },
@@ -93,6 +93,7 @@ export const SITE_COMPANY: SiteNavItem[] = [
   { href: "/how-resume-analysis-works", label: "How resume analysis works" },
   { href: "/methodology", label: "Methodology" },
   { href: "/editorial-policy", label: "Editorial policy" },
+  { href: "/review-process", label: "Review process" },
   { href: "/faq-center", label: "FAQ Center" },
   { href: "/resource-hub", label: "Resource Hub" },
   { href: "/contact", label: "Contact" },
@@ -100,5 +101,7 @@ export const SITE_COMPANY: SiteNavItem[] = [
 
 export const SITE_LEGAL: SiteNavItem[] = [
   { href: "/privacy", label: "Privacy" },
+  { href: "/disclaimer", label: "Disclaimer" },
+  { href: "/review-process", label: "Review process" },
   { href: "/terms", label: "Terms" },
 ];

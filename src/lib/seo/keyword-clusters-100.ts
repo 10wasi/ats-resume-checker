@@ -47,7 +47,7 @@ export const KEYWORD_CLUSTERS_100: KeywordClusterEntry[] = [
   e("resume file types", "Resume", "/resume-file-types", "informational", ["pdf vs word resume"]),
   e("resume examples", "Resume", "/resume-examples", "informational", ["sample resumes"]),
   // ATS (12)
-  e("free ATS resume checker", "ATS", "/free-ats-resume-checker", "transactional", ["ATS checker free"]),
+  e("free ATS resume checker", "ATS", "/", "transactional", ["ATS checker free"]),
   e("ATS resume checker online", "ATS", "/ats-resume-checker-online", "transactional", ["online ATS scan"]),
   e("best ATS resume checker", "ATS", "/", "commercial", ["top ATS checker"]),
   e("ATS score checker", "ATS", "/ats-score-checker", "transactional", ["ATS compatibility score"]),

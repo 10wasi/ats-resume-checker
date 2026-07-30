@@ -5,8 +5,8 @@ import { CTR_RESUME_CHECKER } from "@/lib/seo/ctr-metadata";
 
 const CHECKER_GUIDE_LINKS = [
   { href: "/free-resume-checker-online", label: "Free resume checker online" },
-  { href: "/resume-score-checker", label: "Resume score checker guide" },
-  { href: "/free-ats-score-checker", label: "Free ATS score checker" },
+  { href: "/ats-score-checker", label: "Resume score checker guide" },
+  { href: "/ats-score-checker", label: "Free ATS score checker" },
   { href: "/ats-resume-checker", label: "ATS resume checker free online" },
   { href: "/resume-rejected-by-ats", label: "Resume rejected by ATS" },
   { href: "/resume-job-description-match", label: "Resume match tool" },
@@ -28,7 +28,7 @@ const TRUST_GUIDES = [
   {
     title: "What resume score means",
     body: "Interpret your ATS %, benchmarks, and the difference vs job match score.",
-    href: "/resume-score-checker",
+    href: "/ats-score-checker",
   },
   {
     title: "How to improve resume score",

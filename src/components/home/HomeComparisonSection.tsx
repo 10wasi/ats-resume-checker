@@ -279,7 +279,7 @@ export function HomeComparisonSection() {
             },
             {
               title: "Free without a catch",
-              body: "Core analysis — ATS score, keyword gaps, format flags, priority fixes — runs free with no signup. Upgrade is optional, not a paywall on your results.",
+              body: "Core analysis — ATS score, keyword gaps, format flags, priority fixes — runs free with no signup and no paywall on results.",
             },
             {
               title: "Transparent scoring",

@@ -9,7 +9,7 @@ const STORIES = [
       "Score went from 51 to 88 after fixing two-column layout and mirroring job-posting keywords. Got a call within 3 days.",
     name: "Priya N.",
     role: "Data Analyst",
-    href: "/resume-score-checker",
+    href: "/ats-score-checker",
   },
   {
     quote:

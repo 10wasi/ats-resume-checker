@@ -37,7 +37,7 @@ export const resumeOptimizationEntry: CareerLandingEntry = {
   body: `
 **Resume optimization** is a systematic process for improving how your resume is parsed by applicant tracking systems, how it ranks against job descriptions, and how it reads to recruiters after screening. This guide maps a repeatable five-step workflow — from baseline score to interview-ready file.
 
-Use the cluster guides together: [free ATS resume checker](/free-ats-resume-checker), [ATS checker online](/ats-resume-checker-online), [resume keyword checker](/resume-keyword-checker), [ATS score checker](/ats-score-checker), [resume analyzer](/resume-analyzer), and [resume parser](/resume-parser).
+Use the cluster guides together: [free ATS resume checker](/), [ATS checker online](/ats-resume-checker-online), [resume keyword checker](/resume-keyword-checker), [ATS score checker](/ats-score-checker), [resume analyzer](/resume-analyzer), and [resume parser](/resume-parser).
 
 ## Who this guide is for
 

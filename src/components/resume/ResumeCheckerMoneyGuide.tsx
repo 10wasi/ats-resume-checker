@@ -52,7 +52,7 @@ export function ResumeCheckerMoneyGuide() {
             Free resume checker online hub
           </Link>
           {" · "}
-          <Link href="/resume-score-checker" className="font-semibold text-[#16a34a] underline">
+          <Link href="/ats-score-checker" className="font-semibold text-[#16a34a] underline">
             Resume score checker guide
           </Link>
         </p>

@@ -1,10 +1,14 @@
 import type { FaqItem } from "@/lib/seo/faq";
+import { NO_ACCOUNT_REQUIRED_ANSWER, RESUME_STORAGE_FAQ_ANSWER } from "@/lib/seo/trust-copy";
 
 export const privacyFaqItems: FaqItem[] = [
   {
     question: "Do you store my resume after analysis?",
-    answer:
-      "Resumes are processed to generate your score and feedback for the request. We do not sell resume data or use it to train unrelated models. Avoid uploading information you would not include in a normal job application.",
+    answer: RESUME_STORAGE_FAQ_ANSWER,
+  },
+  {
+    question: "Does ResumeIQ offer user accounts?",
+    answer: NO_ACCOUNT_REQUIRED_ANSWER,
   },
   {
     question: "What cookies does ResumeIQ use?",

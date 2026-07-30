@@ -4,7 +4,7 @@ export const editorialPolicyFaqItems: FaqItem[] = [
   {
     question: "Who writes ResumeIQ resume guides?",
     answer:
-      "Guides are written and reviewed by the ResumeIQ editorial team using hiring research, ATS parsing behavior, and recruiter feedback. We prioritize actionable advice over generic lists.",
+      "The ResumeIQ Editorial Team—a single in-house editorial function. We do not publish fake individual bylines or unverifiable recruiter personas. See our review process for how pages are checked before publish.",
   },
   {
     question: "How do you keep resume advice accurate?",
@@ -19,6 +19,6 @@ export const editorialPolicyFaqItems: FaqItem[] = [
   {
     question: "How can I report an error in a guide?",
     answer:
-      "Use the contact page with the page URL and what looks wrong. We correct factual errors promptly and note significant updates on affected pages.",
+      "Email us via the contact page with the guide URL, the incorrect sentence, and your suggested correction. Editorial updates are tracked on our review process page when practices change.",
   },
 ];

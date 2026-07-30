@@ -17,7 +17,6 @@ export const TOPIC_CLUSTER_ARCHITECTURE: ClusterNode[] = [
         label: "Category — Checker Tools",
         path: "/resume-checker",
         children: [
-          { label: "Free ATS Resume Checker", path: "/free-ats-resume-checker" },
           { label: "ATS Checker Online", path: "/ats-resume-checker-online" },
           { label: "Resume Analyzer", path: "/resume-analyzer" },
           { label: "Resume Parser", path: "/resume-parser" },

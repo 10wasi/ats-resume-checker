@@ -28,19 +28,20 @@ export const SITEMAP_PATH_LAST_MODIFIED: Record<string, string> = {
   "/profession/graphic-designer": "2026-06-03",
   "/profession/business-analyst": "2026-06-03",
   "/free-resume-checker-online": "2026-05-28",
-  "/free-ats-score-checker": "2026-05-28",
-  "/resume-score-checker": "2026-05-28",
+  "/ats-score-checker": "2026-05-28",
   "/why-resume-not-getting-interviews": "2026-07-03",
   "/resume-screening-explained": "2026-07-03",
   "/resume-keywords-missing": "2026-07-03",
   "/how-to-tailor-resume-for-job-description": "2026-07-03",
   "/resume-mistakes-that-cost-interviews": "2026-07-03",
   "/resume-not-passing-ats": "2026-07-03",
-  "/methodology": "2026-07-03",
-  "/how-resume-analysis-works": "2026-06-01",
+  "/methodology": "2026-07-30",
+  "/disclaimer": "2026-07-30",
+  "/how-resume-analysis-works": "2026-07-30",
   "/editorial-policy": "2026-06-01",
-  "/about": "2026-06-01",
-  "/privacy": "2026-05-14",
+  "/review-process": "2026-07-30",
+  "/about": "2026-07-30",
+  "/privacy": "2026-07-30",
   "/terms": "2026-05-14",
   "/contact": "2026-05-14",
   "/resource-hub": "2026-06-01",
@@ -60,11 +61,12 @@ export function getSitemapLastModified(path: string, fallback?: string): Date {
   return new Date(`${iso}T00:00:00.000Z`);
 }
 
+import { CANNIBALIZATION_REDIRECT_SOURCES } from "./cannibalization-redirects";
+
 /** Redirect sources — never list in sitemap (301 targets only). */
 export const SITEMAP_EXCLUDED_PATHS = new Set([
-  "/ats-score-checker",
+  ...CANNIBALIZATION_REDIRECT_SOURCES,
   "/resume-checker-online",
-  "/resume-job-description-match",
   "/ats-resume/marketing-professionals",
   "/ats-resume/accountants",
   "/ats-resume/hr-professionals",

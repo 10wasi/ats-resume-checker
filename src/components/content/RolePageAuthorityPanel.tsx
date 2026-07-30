@@ -33,8 +33,8 @@ export function RolePageAuthorityPanel({
 
   const tools = [
     { href: RESUME_CHECKER_PATH, label: "ATS resume checker", desc: "Score & parse test" },
-    { href: "/resume-score-checker", label: "Resume score guide", desc: "Interpret your %" },
-    { href: "/resume-keywords-checker", label: "Keyword checker", desc: "Find missing terms" },
+    { href: "/ats-score-checker", label: "Resume score guide", desc: "Interpret your %" },
+    { href: "/resume-keyword-checker", label: "Keyword checker", desc: "Find missing terms" },
     { href: "/resume-job-description-match", label: "Job match tool", desc: "Compare to posting" },
   ];
 

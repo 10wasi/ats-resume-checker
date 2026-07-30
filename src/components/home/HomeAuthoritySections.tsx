@@ -140,7 +140,7 @@ export function HomeTrustScoringSection() {
     {
       title: "What resume score means",
       body: "Interpret your ATS %, benchmarks for 70 vs 85, and the difference between resume score and job match score.",
-      href: "/resume-score-checker",
+      href: "/ats-score-checker",
       cta: "Resume score checker guide",
     },
     {

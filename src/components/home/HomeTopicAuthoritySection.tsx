@@ -55,7 +55,7 @@ export function HomeTopicAuthoritySection() {
     {
       title: "Resume Score Checker",
       desc: "What your ATS score percentage means, good benchmarks, and how to improve it fast.",
-      href: "/resume-score-checker",
+      href: "/ats-score-checker",
       badge: "Score guide",
     },
     {

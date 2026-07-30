@@ -68,11 +68,11 @@ export const CAREER_HUB_INDEX: CareerHubIndexItem[] = [
     badge: "Tool",
   },
   {
-    id: "free-ats-score-checker",
-    title: "Free ATS Score Checker",
+    id: "ats-score-checker",
+    title: "ATS Score Checker",
     description:
-      "Free ATS score checker—compatibility %, keyword gaps, and format flags.",
-    path: "/free-ats-score-checker",
+      "ATS score checker — compatibility %, keyword gaps, and format flags. Free scan.",
+    path: "/ats-score-checker",
     badge: "Tool",
   },
   {
@@ -108,19 +108,11 @@ export const CAREER_HUB_INDEX: CareerHubIndexItem[] = [
     badge: "Guide",
   },
   {
-    id: "resume-score-checker",
-    title: "Resume Score Checker",
-    description:
-      "What resume score checkers measure, how to interpret results, and how to improve fast.",
-    path: "/resume-score-checker",
-    badge: "Tool",
-  },
-  {
-    id: "resume-keywords-checker",
-    title: "Resume Keywords Checker",
+    id: "resume-keyword-checker",
+    title: "Resume Keyword Checker",
     description:
       "Find missing resume keywords vs job posts—extract, compare, and place terms ethically.",
-    path: "/resume-keywords-checker",
+    path: "/resume-keyword-checker",
     badge: "Tool",
   },
   {
@@ -400,16 +392,14 @@ const CAREER_HUB_RELATED_IDS: Record<string, readonly string[]> = {
     "why-not-getting-interviews",
   ],
   "free-resume-checker-online": [
-    "free-ats-score-checker",
+    "ats-score-checker",
     "resume-checker",
-    "resume-score-checker",
     "ats-resume-checker",
     "ai-resume-review",
     "complete-ats-guide",
   ],
-  "free-ats-score-checker": [
+  "ats-score-checker": [
     "free-resume-checker-online",
-    "resume-score-checker",
     "resume-checker",
     "how-to-improve-score",
     "ats-resume-checker",
@@ -418,7 +408,7 @@ const CAREER_HUB_RELATED_IDS: Record<string, readonly string[]> = {
   "ats-resume-checker": [
     "resume-checker",
     "free-resume-checker-online",
-    "resume-score-checker",
+    "ats-score-checker",
     "ats-guide",
     "resume-review",
     "complete-ats-guide",
@@ -427,7 +417,7 @@ const CAREER_HUB_RELATED_IDS: Record<string, readonly string[]> = {
     "resume-review",
     "resume-checker",
     "cv-checker",
-    "resume-score-checker",
+    "ats-score-checker",
     "ats-resume-checker",
     "complete-ats-guide",
   ],
@@ -440,7 +430,7 @@ const CAREER_HUB_RELATED_IDS: Record<string, readonly string[]> = {
     "complete-ats-guide",
   ],
   "resume-keywords-missing": [
-    "resume-keywords-checker",
+    "resume-keyword-checker",
     "resume-match-analyzer",
     "how-to-tailor-resume",
     "resume-keyword-tool",
@@ -456,7 +446,7 @@ const CAREER_HUB_RELATED_IDS: Record<string, readonly string[]> = {
     "resume-examples",
   ],
   "how-to-improve-score": [
-    "resume-score-checker",
+    "ats-score-checker",
     "resume-checker",
     "how-to-tailor-resume",
     "ats-checklist",

@@ -68,12 +68,12 @@ function CheckItem({ text, status }: { text: string; status: "pass" | "warn" | "
 export function HomeAtsReportPreviewSection() {
   return (
     <section
-      className="border-b border-slate-200/80 bg-slate-50/60 py-20 sm:py-28"
+      className="border-b border-slate-200/80 bg-slate-50/60 py-12 sm:py-16"
       aria-labelledby="report-preview-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="section-eyebrow mx-auto">What you get</p>
+          <p className="section-eyebrow mx-auto">Sample report layout</p>
           <h2
             id="report-preview-heading"
             className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
@@ -81,8 +81,8 @@ export function HomeAtsReportPreviewSection() {
             A complete ATS analysis report — not just a score
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-slate-600">
-            Every upload produces a multi-layer report. Here is what a real scan looks like — for a
-            data analyst applying to a fintech role.
+            Every upload produces a multi-layer report. This sample shows score bands, parse checks,
+            keyword gaps, and priority fixes—the same sections your scan includes.
           </p>
         </div>
 

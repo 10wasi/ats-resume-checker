@@ -83,12 +83,12 @@ Browse the [resume skills library](/resume-skills-library) and [action verbs gui
 
 ## Trust, privacy, and how scoring works
 
-ResumeIQ analyzes your document per request—[no resume storage policy](/privacy). Scores combine parse health, keyword overlap, and structure estimates—read [how we score resumes](/how-we-score-resumes) and [how ATS works](/how-ats-works). AI suggestions follow your text plus ATS rules, not generic templates—see [our algorithm](/our-algorithm).
+ResumeIQ analyzes your document per request—[no resume storage policy](/privacy). Scores combine parse health, keyword overlap, and structure estimates—read [scoring methodology](/methodology) and [how ATS works](/how-ats-works). AI suggestions follow your text plus ATS rules, not generic templates—see [how resume analysis works](/how-resume-analysis-works).
 
 ## Related role and resource links
 
 - [Resume resources hub](/resume-resources)
-- [Free ATS resume checker](/free-ats-resume-checker)
+- [Free ATS resume checker](/)
 - [Country-specific guides](/resume-checker-usa)
 - [FAQ Center](/faq-center)
 - [Glossary: ATS terms](/glossary)`;

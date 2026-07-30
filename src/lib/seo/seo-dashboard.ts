@@ -19,7 +19,7 @@ export const SEO_DASHBOARD: SeoDashboardRow[] = [
     targetPage: "/",
     searchIntent: "transactional",
     currentPage: "/",
-    internalLinks: ["/free-ats-resume-checker", "/resume-checker", "/ats-score-checker", "/resume-parser"],
+    internalLinks: ["/", "/resume-checker", "/ats-score-checker", "/resume-parser"],
     futureBacklinks: ["Career blog guest posts", "Reddit r/resumes resource wiki", "University career center link lists"],
   },
   {
@@ -28,7 +28,7 @@ export const SEO_DASHBOARD: SeoDashboardRow[] = [
     targetPage: "/jobscan-alternative",
     searchIntent: "commercial",
     currentPage: "/jobscan-alternative",
-    internalLinks: ["/", "/free-ats-resume-checker", "/resumeworded-alternative", "/resume-job-description-match"],
+    internalLinks: ["/", "/resume-checker", "/resumeworded-alternative", "/resume-job-description-match"],
     futureBacklinks: ["Comparison roundup articles", "Product Hunt alternatives list"],
   },
   {

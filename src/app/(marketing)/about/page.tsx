@@ -54,23 +54,23 @@ export default function AboutPage() {
             </Link>
             ,{" "}
             <Link href="/methodology" className="font-semibold text-[#16a34a] underline">
-              how scoring works
+              scoring methodology
             </Link>
             ,{" "}
-            <Link href="/how-we-score-resumes" className="font-semibold text-[#16a34a] underline">
-              how we score resumes
+            <Link href="/how-resume-analysis-works" className="font-semibold text-[#16a34a] underline">
+              how analysis works
             </Link>
             ,{" "}
-            <Link href="/our-algorithm" className="font-semibold text-[#16a34a] underline">
-              our algorithm
+            <Link href="/disclaimer" className="font-semibold text-[#16a34a] underline">
+              disclaimer
             </Link>
             ,{" "}
             <Link href="/editorial-policy" className="font-semibold text-[#16a34a] underline">
               editorial policy
             </Link>
             ,{" "}
-            <Link href="/how-resume-analysis-works" className="font-semibold text-[#16a34a] underline">
-              how analysis works
+            <Link href="/review-process" className="font-semibold text-[#16a34a] underline">
+              review process
             </Link>
             , and connect guides to the{" "}
             <Link href={RESUME_CHECKER_PATH} className="font-semibold text-[#16a34a] underline">
@@ -116,17 +116,21 @@ export default function AboutPage() {
           </p>
           <section aria-labelledby="about-team-heading">
             <h2 id="about-team-heading" className="font-display text-2xl font-bold text-slate-900">
-              Editorial team &amp; transparency
+              ResumeIQ Editorial Team
             </h2>
             <p className="mt-4">
-              ResumeIQ guides are written by career writers and resume strategists who test
-              advice against real PDF and DOCX exports—not generic templates copied from
-              vendors. We publish{" "}
+              Guides, FAQs, and tool pages are written and reviewed by the{" "}
+              <strong className="font-semibold text-slate-900">ResumeIQ Editorial Team</strong>
+              —a single in-house editorial function. We test advice against real PDF and DOCX
+              exports in the free checker, follow our{" "}
               <Link href="/editorial-policy" className="font-semibold text-[#16a34a] underline">
-                editorial standards
+                editorial policy
               </Link>
-              , link every recommendation to the free checker, and update pages when ATS
-              parsing behavior changes.
+              , and document how pages are reviewed in our{" "}
+              <Link href="/review-process" className="font-semibold text-[#16a34a] underline">
+                review process
+              </Link>
+              . We do not use fake individual author profiles or unverifiable recruiter personas.
             </p>
             <p className="mt-4">
               <strong className="font-semibold text-slate-900">Important:</strong> ATS scores
@@ -138,19 +142,19 @@ export default function AboutPage() {
         </div>
         <div className="mt-10 grid gap-4 sm:grid-cols-3">
           <TrustCard
+            title="Review process"
+            body="How the Editorial Team verifies tool claims, guides, and FAQs before publish."
+            href="/review-process"
+          />
+          <TrustCard
             title="Privacy-first"
-            body="Resumes are processed for your request—not sold or stored long-term. Read our Privacy Policy."
+            body="Resumes are processed per request—not sold or stored long-term. Read our Privacy Policy."
             href="/privacy"
           />
           <TrustCard
             title="Scoring methodology"
             body="Transparent explanation of what ATS checks and how scores are calculated."
             href="/methodology"
-          />
-          <TrustCard
-            title="Real support"
-            body="Questions or feedback? We read the contact inbox and update docs when something is unclear."
-            href="/contact"
           />
         </div>
         <section className="mt-14 border-t border-slate-200 pt-12">

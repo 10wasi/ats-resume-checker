@@ -114,7 +114,7 @@ export function HomeWhoItsForSection() {
                 Run free resume scan
               </Link>
               <Link
-                href="/resume-score-checker"
+                href="/ats-score-checker"
                 className="inline-flex min-h-12 w-full items-center justify-center rounded-xl border border-slate-200 bg-white px-6 text-center text-sm font-semibold leading-snug text-slate-800 transition hover:border-emerald-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-500 sm:w-auto"
               >
                 Resume score guide

@@ -9,7 +9,7 @@ export const resumeMatchScoreFaqItems: FaqItem[] = [
   {
     question: "What is a good resume match score?",
     answer:
-      "Many applicants aim for 75–85% honest overlap with must-have terms covered in recent experience. Below 60% usually means significant tailoring is needed before applying.",
+      "Focus on covering must-have posting terms honestly in recent experience—not chasing a fixed percentage. Weak overlap usually means more tailoring before you apply.",
   },
   {
     question: "How is resume match score different from ATS score?",

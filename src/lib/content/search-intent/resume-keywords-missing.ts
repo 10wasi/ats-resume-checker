@@ -69,7 +69,7 @@ Deep strategy: [ATS resume keywords guide](/ats-resume-keywords).
 1. Fix top 5 missing terms in your most recent role.
 2. Re-run match score—target honest 70%+ for targeted applications.
 3. Use [Resume Skills Analyzer](/resume-skills-analyzer) to verify overlap.
-4. Complete [resume keywords checker](/resume-keywords-checker) workflow for ongoing batches.
+4. Complete [resume keywords checker](/resume-keyword-checker) workflow for ongoing batches.
 
 ## Related problems
 

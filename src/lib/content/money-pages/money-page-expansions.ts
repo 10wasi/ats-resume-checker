@@ -68,8 +68,8 @@ If applications go silent, read [resume rejected by ATS](/resume-rejected-by-ats
 ## Tool ecosystem links
 
 - [ATS resume checker](/ats-resume-checker) — Full ATS workflow guide  
-- [Resume score checker](/resume-score-checker) — Interpret your %  
-- [Free ATS score checker](/free-ats-score-checker) — Quick compatibility check  
+- [Resume score checker](/ats-score-checker) — Interpret your %  
+- [Free ATS score checker](/ats-score-checker) — Quick compatibility check  
 - [Resume examples](/resume-examples) — Layout benchmarks  
 - [Resume keywords database](/resume-keywords) — Role-specific terms  
 - [How ATS scoring works](/methodology) — Transparent methodology  
@@ -138,7 +138,7 @@ Before every application batch:
 ## Related guides
 
 - [Free resume checker online](/free-resume-checker-online)  
-- [Resume score checker](/resume-score-checker)  
+- [Resume score checker](/ats-score-checker)  
 - [ATS resume checker](/ats-resume-checker)  
 - [How to improve resume score](/how-to-improve-resume-score)  
 - [Resume rejected by ATS](/resume-rejected-by-ats)  
@@ -207,7 +207,7 @@ Low score + silence → likely ATS layer. High score + silence → match or huma
 ## Tool links
 
 - [Free resume checker online](/free-resume-checker-online)  
-- [Free ATS score checker](/free-ats-score-checker)  
+- [Free ATS score checker](/ats-score-checker)  
 - [ATS resume checker](/ats-resume-checker)  
 - [Resume match tool](/resume-job-description-match)  
 - [Complete optimization guide](/complete-guide-ats-resume-optimization)  
@@ -279,6 +279,6 @@ Sometimes silence is recruiter volume, internal hire, or role cancellation. ATS 
 - [Resume not passing ATS](/resume-not-passing-ats)  
 - [Why resume gets rejected](/why-resume-gets-rejected)  
 - [Free resume checker online](/free-resume-checker-online)  
-- [Resume score checker](/resume-score-checker)  
+- [Resume score checker](/ats-score-checker)  
 - [How to improve resume score](/how-to-improve-resume-score)  
 `;

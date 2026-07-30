@@ -20,7 +20,7 @@ export const resumeJdMatchFaqItems: FaqItem[] = [
   {
     question: "How is this different from Jobscan or Resume Worded?",
     answer:
-      "ResumeIQ offers free match scoring, ATS compatibility rating, keyword chips, skill gap categories, top priority fixes, quick wins, and suggested ATS keywords in one flow—optimized for fast edits before each application.",
+      "This page is built for job-description matching: paste a posting, read match %, missing keywords, skill gaps, and priority fixes in one flow. Competitors may emphasize different workflows—compare on the exact output you need before each application.",
   },
   {
     question: "How do I match resume to job description effectively?",

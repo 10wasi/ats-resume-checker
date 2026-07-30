@@ -14,7 +14,7 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     description: "Free ATS score, keyword gaps, format flags, and AI rewrites.",
   },
   freeAtsResumeChecker: {
-    href: "/free-ats-resume-checker",
+    href: "/",
     title: "Free ATS Resume Checker",
     description: "Free scan — parser preview, ATS score, keyword gaps, no signup.",
   },
@@ -84,8 +84,8 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     description: "Extract skills and tools from any job posting instantly.",
   },
   keywordsChecker: {
-    href: "/resume-keywords-checker",
-    title: "Resume Keywords Checker",
+    href: "/resume-keyword-checker",
+    title: "Resume Keyword Checker",
     description: "Find missing resume keywords vs job posts ethically.",
   },
   resumeKeywordsDb: {
@@ -189,9 +189,9 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     description: "Resume checker free online—ATS score, keywords, format fixes.",
   },
   freeAtsScoreChecker: {
-    href: "/free-ats-score-checker",
-    title: "Free ATS Score Checker",
-    description: "Free ATS score checker—compatibility %, keyword gaps, format flags.",
+    href: "/ats-score-checker",
+    title: "ATS Score Checker",
+    description: "ATS compatibility %, keyword gaps, and format flags — free scan.",
   },
   atsResumeReview: {
     href: "/ats-resume-review",
@@ -309,8 +309,8 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     description: "Free resume review rubric plus ATS checker workflow.",
   },
   scoreChecker: {
-    href: "/resume-score-checker",
-    title: "Resume Score Checker Guide",
+    href: "/ats-score-checker",
+    title: "ATS Score Checker Guide",
     description: "What resume scores measure and how to interpret results.",
   },
   keywordsGuide: {
@@ -389,19 +389,29 @@ export const RESOURCE_CATALOG: Record<string, RelatedResourceItem> = {
     description: "Full breakdown of checker stages and report sections.",
   },
   howWeScoreResumes: {
-    href: "/how-we-score-resumes",
+    href: "/methodology",
     title: "How We Score Resumes",
-    description: "Transparent ATS scoring signals and what each section measures.",
+    description: "Authoritative ATS scoring methodology—parse health, keywords, and match.",
   },
   ourAlgorithm: {
-    href: "/our-algorithm",
-    title: "Our Resume Scoring Algorithm",
-    description: "How ResumeIQ weights parsing, keywords, and match overlap.",
+    href: "/how-resume-analysis-works",
+    title: "How Resume Analysis Works",
+    description: "Analysis pipeline: extraction, checks, scoring, and report sections.",
+  },
+  disclaimer: {
+    href: "/disclaimer",
+    title: "Disclaimer",
+    description: "Scoring limitations, no guarantees, and independent product status.",
   },
   editorialPolicy: {
     href: "/editorial-policy",
     title: "Editorial Policy",
     description: "How ResumeIQ writes and reviews resume guides.",
+  },
+  reviewProcess: {
+    href: "/review-process",
+    title: "Content Review Process",
+    description: "How the Editorial Team verifies guides, tool claims, and FAQ accuracy.",
   },
   faqCenter: {
     href: "/faq-center",
@@ -629,14 +639,6 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "resumeKeywordsDb",
     "examples",
   ],
-  "/free-ats-score-checker": [
-    "checker",
-    "resumeCheckerOnline",
-    "scoreChecker",
-    "atsResumeCheckerGuide",
-    "improveScore",
-    "methodology",
-  ],
   "/resume-checker-online": [
     "checker",
     "resumeCheckerOnline",
@@ -663,16 +665,6 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "coverLetterGenerator",
     "match",
     "methodology",
-    "improveScore",
-  ],
-  "/resume-score-checker": [
-    "resumeKeywordsDb",
-    "summaryGenerator",
-    "skillsGenerator",
-    "coverLetterGenerator",
-    "match",
-    "checker",
-    "atsScoreGuide",
     "improveScore",
   ],
   "/resume-keywords": [
@@ -711,15 +703,6 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "headlineGenerator",
     "resumeKeywordsDb",
     "scoreChecker",
-  ],
-  "/free-ats-resume-checker": [
-    "checker",
-    "atsResumeCheckerOnline",
-    "resumeKeywordCheckerCluster",
-    "atsScoreCheckerCluster",
-    "resumeParserCluster",
-    "resumeOptimization",
-    "methodology",
   ],
   "/ats-resume-checker-online": [
     "checker",
@@ -942,14 +925,6 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "whyNoInterviews",
     "rejectedByAts",
   ],
-  "/resume-keywords-checker": [
-    "keywordsFinder",
-    "resumeKeywordsDb",
-    "checker",
-    "match",
-    "keywordsGuide",
-    "industryKeywords",
-  ],
   "/ats-resume-keywords": [
     "keywordsFinder",
     "keywordsChecker",
@@ -1026,12 +1001,12 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
   "/blog/resume-mistakes": ["checker", "blogHowAts", "whyRejected", "mistakesInterviews", "examples", "atsGuide"],
   "/blog/ats-keywords-guide": ["keywordTool", "keywordsFinder", "checker", "blogRemote", "resumeKeywordsDb", "matchAnalyzer"],
   "/blog/remote-job-resume-tips": ["checker", "matchAnalyzer", "blogKeywords", "atsGuide", "howAtsWorks", "examples"],
-  "/about": ["checker", "methodology", "faqCenter", "careerHub", "knowledgeCenter", "contact"],
-  "/methodology": ["checker", "howResumeAnalysis", "faqCenter", "atsScoreGuide", "editorialPolicy", "checklist"],
-  "/how-we-score-resumes": ["checker", "howResumeAnalysis", "methodology", "atsScoreGuide", "scoreChecker", "editorialPolicy", "faqCenter"],
-  "/our-algorithm": ["checker", "methodology", "howResumeAnalysis", "howAtsWorks", "resumeParsing", "scoreChecker", "editorialPolicy"],
-  "/how-resume-analysis-works": ["checker", "methodology", "atsScoreGuide", "scoreChecker", "editorialPolicy", "howAtsWorks"],
-  "/editorial-policy": ["about", "methodology", "howResumeAnalysis", "privacy", "contact", "faqCenter"],
+  "/about": ["checker", "methodology", "reviewProcess", "editorialPolicy", "faqCenter", "careerHub", "contact"],
+  "/methodology": ["checker", "howResumeAnalysis", "disclaimer", "faqCenter", "atsScoreGuide", "editorialPolicy", "reviewProcess", "checklist"],
+  "/how-resume-analysis-works": ["checker", "methodology", "disclaimer", "atsScoreGuide", "scoreChecker", "editorialPolicy", "howAtsWorks"],
+  "/disclaimer": ["methodology", "howResumeAnalysis", "privacy", "terms", "about", "editorialPolicy", "contact", "checker"],
+  "/editorial-policy": ["about", "reviewProcess", "methodology", "howResumeAnalysis", "privacy", "contact", "faqCenter"],
+  "/review-process": ["editorialPolicy", "about", "methodology", "privacy", "contact", "faqCenter"],
   "/faq-center": [
     "methodology",
     "checker",
@@ -1043,8 +1018,8 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "editorialPolicy",
   ],
   "/contact": ["checker", "about", "faqCenter", "privacy", "terms", "careerHub"],
-  "/privacy": ["terms", "contact", "about", "checker", "careerHub", "blog"],
-  "/terms": ["privacy", "contact", "about", "checker", "knowledgeCenter", "blog"],
+  "/privacy": ["terms", "disclaimer", "reviewProcess", "contact", "about", "editorialPolicy", "checker", "careerHub"],
+  "/terms": ["privacy", "disclaimer", "contact", "about", "checker", "knowledgeCenter", "blog"],
   "/why-resume-not-getting-interviews": [
     "checker",
     "match",

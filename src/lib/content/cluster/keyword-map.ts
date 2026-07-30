@@ -3,9 +3,12 @@
  * Homepage owns "Free ATS Resume Checker"; cluster landings own secondary intents.
  */
 export const KEYWORD_CLUSTER_MAP = [
-  { path: "/", primary: "Free ATS Resume Checker", secondary: ["AI resume checker", "ATS resume scanner"] },
-  { path: "/resume-checker", primary: "ATS Resume Checker", secondary: ["upload resume free", "resume compatibility checker"] },
-  { path: "/free-ats-resume-checker", primary: "Free ATS Resume Checker", secondary: ["free ATS scan", "no signup resume checker"] },
+  {
+    path: "/",
+    primary: "Free ATS Resume Checker",
+    secondary: ["AI resume checker", "best ATS resume checker", "free resume checker"],
+  },
+  { path: "/resume-checker", primary: "ATS Resume Checker", secondary: ["upload resume free", "ATS resume scanner"] },
   { path: "/ats-resume-checker-online", primary: "ATS Resume Checker Online", secondary: ["online resume scanner", "web ATS tool"] },
   { path: "/resume-keyword-checker", primary: "Resume Keyword Checker", secondary: ["resume keyword scanner", "ATS keyword gaps"] },
   { path: "/ats-score-checker", primary: "Resume ATS Score", secondary: ["ATS score checker", "compatibility score"] },

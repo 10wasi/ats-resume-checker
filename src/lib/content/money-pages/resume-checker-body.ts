@@ -99,9 +99,9 @@ Study patterns in [resume examples](/resume-examples) and [ATS resume examples](
 | Tool | Best for |
 |------|----------|
 | [Resume checker](${RESUME_CHECKER_PATH}) | Full scan + fixes + match |
-| [Resume score checker](/resume-score-checker) | Understanding your ATS % |
+| [Resume score checker](/ats-score-checker) | Understanding your ATS % |
 | [Free resume checker online](/free-resume-checker-online) | Hub workflow + guides |
-| [Free ATS score checker](/free-ats-score-checker) | Quick compatibility % |
+| [Free ATS score checker](/ats-score-checker) | Quick compatibility % |
 | [ATS resume checker](/ats-resume-checker) | Deep parse + keyword dive |
 
 ## Why job seekers choose ResumeIQ over paywalled checkers
@@ -254,7 +254,7 @@ After the automated checker pass, a **resume review online** covers what softwar
 
 ## Resume keyword checker workflow
 
-The [resume keywords checker](/resume-keywords-checker) and [ATS keywords finder](/ats-keywords-finder) extend the main checker with focused keyword workflows:
+The [resume keyword checker](/resume-keyword-checker) and [ATS keywords finder](/ats-keywords-finder) extend the main checker with focused keyword workflows:
 
 1. **Baseline scan** - Full checker for current keyword % and format health
 2. **Per-role extraction** - Keywords finder extracts posting-specific terms

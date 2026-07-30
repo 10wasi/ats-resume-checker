@@ -327,7 +327,7 @@ Some portals strip formatting—keep simple structure.`
     "- [Jobscan alternative](/jobscan-alternative)\n- [Resume Worded alternative](/resumeworded-alternative)",
     `## Free baseline first
 
-Run [free ATS resume checker](/free-ats-resume-checker) before subscriptions.
+Run [free ATS resume checker](/) before subscriptions.
 
 ## Evaluate privacy
 

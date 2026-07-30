@@ -1,7 +1,7 @@
 import { IconShield } from "@/components/ui/Icons";
 
 const BADGES = [
-  { label: "Free to start", detail: "No signup for first check" },
+  { label: "Free to start", detail: "No signup required" },
   { label: "Parse-tested", detail: "Real PDF/DOCX extraction" },
   { label: "Transparent scoring", detail: "Methodology published" },
   { label: "Privacy-first", detail: "See privacy policy" },

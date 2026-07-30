@@ -11,7 +11,7 @@ export function HomeGscIntentSection() {
     },
     {
       query: "Resume score checker",
-      href: "/resume-score-checker",
+      href: "/ats-score-checker",
       desc: "What your ATS % means and how to improve it fast.",
     },
     {
@@ -21,7 +21,7 @@ export function HomeGscIntentSection() {
     },
     {
       query: "Free ATS score checker",
-      href: "/free-ats-score-checker",
+      href: "/ats-score-checker",
       desc: "Free ATS score checker—compatibility % & keyword gaps.",
     },
     {

@@ -24,6 +24,11 @@ export const methodologyFaqItems: FaqItem[] = [
   {
     question: "Can I trust the pass likelihood percentage?",
     answer:
-      "Treat it as a screening estimate based on parse and keyword signals—with a clear disclaimer that it does not predict interviews or offers.",
+      "Treat it as a screening estimate based on parse and keyword signals—not a pass guarantee. Recruiter decisions vary. Read our disclaimer for full limitations.",
+  },
+  {
+    question: "Is ResumeIQ partnered with ATS vendors like Workday or Greenhouse?",
+    answer:
+      "No. ResumeIQ is independent. We describe common ATS patterns in guides but have no vendor partnerships, certifications, or official endorsements.",
   },
 ];

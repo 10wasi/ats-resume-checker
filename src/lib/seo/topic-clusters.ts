@@ -8,25 +8,25 @@ export type TopicCluster = {
 export const TOPIC_CLUSTERS: TopicCluster[] = [
   {
     pillar: "Free ATS Resume Checker",
-    pillarPath: "/free-ats-resume-checker",
+    pillarPath: "/",
     supporting: [
+      { path: "/resume-checker", label: "Upload & score tool" },
       { path: "/ats-resume-checker-online", label: "Checker online" },
       { path: "/resume-keyword-checker", label: "Keyword checker" },
       { path: "/ats-score-checker", label: "ATS score" },
       { path: "/resume-analyzer", label: "Resume analyzer" },
       { path: "/resume-parser", label: "Parser test" },
-      { path: "/resume-optimization", label: "Optimization" },
+      { path: "/free-resume-checker-online", label: "Free checker online" },
+      { path: "/methodology", label: "Scoring methodology" },
     ],
   },
   {
-    pillar: "ATS Resume Checker",
-    pillarPath: "/",
+    pillar: "How ATS Resume Checker Works",
+    pillarPath: "/ats-resume-checker",
     supporting: [
-      { path: "/resume-checker", label: "Upload & score tool" },
-      { path: "/free-resume-checker-online", label: "Free checker online" },
-      { path: "/ats-resume-checker", label: "How checker works" },
-      { path: "/resume-score-checker", label: "Score checker guide" },
-      { path: "/methodology", label: "Scoring methodology" },
+      { path: "/how-ats-works", label: "How ATS works" },
+      { path: "/resume-optimization", label: "Optimization" },
+      { path: "/ats-score-checker", label: "Score checker" },
     ],
   },
   {
@@ -44,7 +44,7 @@ export const TOPIC_CLUSTERS: TopicCluster[] = [
     pillarPath: "/resume-keywords",
     supporting: [
       { path: "/ats-keywords-finder", label: "Keywords finder" },
-      { path: "/resume-keywords-checker", label: "Keywords checker" },
+      { path: "/resume-keyword-checker", label: "Keywords checker" },
       { path: "/ats-resume-keywords", label: "Keyword placement" },
       { path: "/resume-job-description-match", label: "Job match tool" },
     ],
@@ -115,7 +115,7 @@ export const TOPIC_CLUSTERS: TopicCluster[] = [
     supporting: [
       { path: "/resume-checker", label: "Free scanner tool" },
       { path: "/cv-checker", label: "CV scanner" },
-      { path: "/resume-score-checker", label: "Score checker" },
+      { path: "/ats-score-checker", label: "Score checker" },
       { path: "/ai-resume-review", label: "AI resume review" },
     ],
   },
@@ -135,8 +135,8 @@ export const TOPIC_CLUSTERS: TopicCluster[] = [
     supporting: [
       { path: "/editorial-policy", label: "Editorial policy" },
       { path: "/methodology", label: "Methodology" },
-      { path: "/how-we-score-resumes", label: "How we score" },
-      { path: "/our-algorithm", label: "Our algorithm" },
+      { path: "/how-resume-analysis-works", label: "How analysis works" },
+      { path: "/disclaimer", label: "Disclaimer" },
     ],
   },
   {

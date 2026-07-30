@@ -22,7 +22,7 @@ export const freeAtsScoreCheckerEntry: CareerLandingEntry = {
     {
       question: "What is a good ATS score?",
       answer:
-        "Rough guide: below 60 often means format or parse problems; 60–75 needs keyword and bullet work; 75+ with clean flags is a strong baseline. Always pair score with job-specific match analysis.",
+        "Use score trends on your own file—not a universal pass line. Critical format flags and garbled parse preview mean fix layout first; then compare match analysis for each posting.",
     },
     {
       question: "ATS score vs resume match score—what is the difference?",
@@ -66,7 +66,7 @@ Full breakdown: [How ATS scoring works](/methodology).
 | 70–85 | Competitive baseline | [Resume match tool](/resume-job-description-match) |
 | 85+ | Strong file—tailor per job | Match + [resume review](/resume-review) |
 
-Deep dive: [Resume score checker guide](/resume-score-checker).
+Deep dive: [Resume score checker guide](/ats-score-checker).
 
 ## Example: same candidate, two exports
 

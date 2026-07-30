@@ -46,7 +46,7 @@ ${competitor} is known for ${competitorFocus}. ResumeIQ focuses on ${resumeIqFoc
 | Parser preview | Varies by plan and export | Extracted text preview on upload |
 | Keyword gaps | Often tied to job description paste | Keyword checker + job match tool |
 | Signup | Account may be required for saved scans | Free scan without signup for baseline check |
-| Pricing | Free tier + paid plans | Free core checker; optional premium features |
+| Pricing | Free tier + paid plans | Free core checker — no paid tier required |
 | Privacy | See each vendor privacy policy | Processed per request; [privacy policy](/privacy) |
 
 This table describes **categories** of features—not a live price quote. Always confirm current plans on each vendor site before purchasing.
@@ -88,7 +88,7 @@ Run the [free ATS resume checker](/resume-checker) on the final export—the sam
 
 ## Trust and methodology
 
-ResumeIQ scores estimate parse health, keyword overlap, and structure—similar signals many ATS filters use, but not identical to any single employer system. Read [how we score resumes](/how-we-score-resumes) and [editorial policy](/editorial-policy). Questions: [FAQ Center](/faq-center).`;
+ResumeIQ scores estimate parse health, keyword overlap, and structure—similar signals many ATS filters use, but not identical to any single employer system. Read [scoring methodology](/methodology), [disclaimer](/disclaimer), and [editorial policy](/editorial-policy). Questions: [FAQ Center](/faq-center).`;
 }
 
 export const JOBSCAN_COMPARISON: Sprint3LandingSpec = {

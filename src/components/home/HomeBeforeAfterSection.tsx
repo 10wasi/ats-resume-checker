@@ -102,25 +102,25 @@ function ScoreBadge({ score, label }: { score: number; label: string }) {
 export function HomeBeforeAfterSection() {
   return (
     <section
-      className="border-b border-slate-200/80 bg-white py-20 sm:py-28"
+      className="border-b border-slate-200/80 bg-white py-12 sm:py-16"
       aria-labelledby="before-after-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="section-eyebrow mx-auto">Real resume transformations</p>
+          <p className="section-eyebrow mx-auto">Illustrative examples</p>
           <h2
             id="before-after-heading"
             className="mt-4 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
           >
-            Before vs after: the same experience, dramatically different results
+            Before vs after: structure and keyword fixes
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-slate-600">
-            Four real candidates who fixed parse failures and keyword gaps — and went from silence to
-            interview callbacks. Same career history. Different file.
+            Composite examples showing how parse-safe layout and posting-aligned keywords change ATS
+            scores. Same career history—different file structure and bullet language.
           </p>
         </div>
 
-        <div className="mt-16 space-y-16">
+        <div className="mt-10 space-y-10">
           {examples.slice(0, 2).map((ex, idx) => (
             <article
               key={ex.role}

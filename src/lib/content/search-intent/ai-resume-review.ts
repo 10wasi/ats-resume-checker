@@ -83,7 +83,7 @@ Same flow powers [AI resume rewrite](/ai-resume-rewrite) suggestions when you at
 
 1. [Free ATS resume checker](/resume-checker) — AI score + gaps
 2. Paste job post — unlock match % and tailored keywords
-3. [Resume score check](/resume-score-checker) — interpret your numbers
+3. [Resume score check](/ats-score-checker) — interpret your numbers
 4. [Resume review online](/resume-review) — human-readability pass
 5. [Complete optimization guide](/complete-guide-ats-resume-optimization) — long-term system
 

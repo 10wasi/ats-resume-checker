@@ -6,6 +6,37 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Keyword cannibalization — 301 to canonical owners (see cannibalization-redirects.ts)
+      {
+        source: "/free-ats-resume-checker",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/resume-score-checker",
+        destination: "/ats-score-checker",
+        permanent: true,
+      },
+      {
+        source: "/free-ats-score-checker",
+        destination: "/ats-score-checker",
+        permanent: true,
+      },
+      {
+        source: "/resume-keywords-checker",
+        destination: "/resume-keyword-checker",
+        permanent: true,
+      },
+      {
+        source: "/how-we-score-resumes",
+        destination: "/methodology",
+        permanent: true,
+      },
+      {
+        source: "/our-algorithm",
+        destination: "/how-resume-analysis-works",
+        permanent: true,
+      },
       {
         source: "/resume-match-analyzer",
         destination: "/resume-job-description-match",

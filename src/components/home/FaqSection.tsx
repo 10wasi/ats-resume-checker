@@ -2,13 +2,17 @@ import Link from "next/link";
 import { homepageFaqItems, type FaqItem } from "@/lib/seo/faq";
 
 const FAQ_RELATED: Partial<Record<string, { href: string; label: string }>> = {
-  "How is my ATS score calculated?": {
-    href: "/methodology",
-    label: "Scoring methodology",
+  "What does my ATS score actually measure?": {
+    href: "/ats-score-explained",
+    label: "ATS score explained",
   },
   "Do you store my resume?": {
     href: "/privacy",
     label: "Privacy policy",
+  },
+  "Is this resume checker really free?": {
+    href: "/about",
+    label: "About ResumeIQ",
   },
 };
 
@@ -39,11 +43,10 @@ export function FaqSection() {
         id="home-faq-heading"
         className="text-center font-display text-xl font-bold tracking-tight text-slate-900 sm:text-2xl"
       >
-        ATS resume checker FAQ — 30+ expert answers
+        ATS resume checker FAQ
       </h2>
       <p className="mt-2 text-center text-sm text-slate-600">
-        What is ATS, how parsers read PDFs, Canva risks, score improvement, and free AI resume
-        checking—each answer targets a different search question.
+        Parsing, scores, file formats, privacy, and how to improve your resume before you apply.
       </p>
       <div className="mt-5 divide-y divide-slate-200 overflow-hidden rounded-xl border border-slate-200 bg-white">
         {homepageFaqItems.map((item) => (

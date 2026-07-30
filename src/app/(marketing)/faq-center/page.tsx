@@ -5,10 +5,10 @@ import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { buildCtrMetadata, CTR_FAQ_CENTER } from "@/lib/seo/ctr-metadata";
+import { faqCenterHubFaqItems } from "@/lib/seo/faq-center-hub-faq";
 import {
   FAQ_CENTER_PATH,
   FAQ_CENTER_SECTIONS,
-  faqCenterAllItems,
 } from "@/lib/seo/faq-center-items";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
@@ -36,7 +36,7 @@ export default function FaqCenterPage() {
           { name: "FAQ Center", path: FAQ_CENTER_PATH },
         ]}
       />
-      <PageFaqJsonLd items={faqCenterAllItems} />
+      <PageFaqJsonLd items={faqCenterHubFaqItems} />
       <div className="container-prose py-12 sm:py-16">
         <PageBreadcrumbs
           items={[
@@ -61,6 +61,20 @@ export default function FaqCenterPage() {
             </Link>.
           </p>
         </header>
+
+        <section className="mt-10 border-b border-slate-200 pb-10" aria-labelledby="faq-hub-heading">
+          <h2 id="faq-hub-heading" className="font-display text-xl font-bold text-slate-900">
+            Using this FAQ Center
+          </h2>
+          <div className="mt-6 space-y-6">
+            {faqCenterHubFaqItems.map((item) => (
+              <div key={item.question}>
+                <h3 className="text-base font-semibold text-slate-900">{item.question}</h3>
+                <p className="mt-2 leading-relaxed text-slate-700">{item.answer}</p>
+              </div>
+            ))}
+          </div>
+        </section>
 
         <div className="mt-12 space-y-16">
           {FAQ_CENTER_SECTIONS.map((section) => (

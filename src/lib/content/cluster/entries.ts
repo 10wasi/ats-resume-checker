@@ -7,6 +7,7 @@ import {
   CTR_RESUME_KEYWORD_CHECKER,
   CTR_RESUME_PARSER,
 } from "@/lib/seo/ctr-metadata";
+import { NO_ACCOUNT_REQUIRED_ANSWER } from "@/lib/seo/trust-copy";
 import { FREE_ATS_RESUME_CHECKER_BODY } from "./free-ats-resume-checker-body";
 import { ATS_RESUME_CHECKER_ONLINE_BODY } from "./ats-resume-checker-online-body";
 import { RESUME_KEYWORD_CHECKER_BODY } from "./resume-keyword-checker-body";
@@ -48,8 +49,7 @@ export const freeAtsResumeCheckerEntry: CareerLandingEntry = {
     },
     {
       question: "Do I need an account to use the free ATS resume checker?",
-      answer:
-        "Standard checks work without signup. Create an account only if you want saved history or advanced workflows described in the Career Success Hub.",
+      answer: NO_ACCOUNT_REQUIRED_ANSWER,
     },
     {
       question: "Can I re-check my resume for free after edits?",
@@ -103,8 +103,7 @@ export const atsResumeCheckerOnlineEntry: CareerLandingEntry = {
     },
     {
       question: "Do I need to create an account for the online checker?",
-      answer:
-        "No account is required for standard online scans. Sign in only if you want saved results or extended platform features.",
+      answer: NO_ACCOUNT_REQUIRED_ANSWER,
     },
     {
       question: "What should I do after an online ATS check?",
@@ -179,7 +178,7 @@ export const atsScoreCheckerEntry: CareerLandingEntry = {
     {
       question: "What is a good ATS score?",
       answer:
-        "Many competitive resumes fall between 70 and 85 with clean extracted text. Below 55 often signals parser emergencies; fix layout before keywords.",
+        "There is no universal pass line. Critical format flags or garbled extracted text mean fix layout first; then use match analysis for each posting you target.",
     },
     {
       question: "Why did my ATS score drop after a redesign?",

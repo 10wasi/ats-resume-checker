@@ -291,6 +291,16 @@ export const CTR_EDITORIAL_POLICY: PageCtrMeta = {
   richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
 };
 
+export const CTR_REVIEW_PROCESS: PageCtrMeta = {
+  title: ctrTitle("Review Process", "How We Verify Content"),
+  description: ctrMeta(
+    "How ResumeIQ reviews ATS checker output, guides, and FAQs—Editorial Team workflow, parse tests, and corrections."
+  ),
+  h1: "Review Process",
+  primaryKeyword: "review process",
+  richSnippets: ["Article", "FAQPage", "BreadcrumbList", "Organization"],
+};
+
 export const CTR_HOW_RESUME_ANALYSIS: PageCtrMeta = {
   title: ctrTitle("How Resume Analysis Works", "Explained"),
   description: ctrMeta("Extraction, format checks, keywords, skills, and ATS score calculation step by step."),
@@ -305,7 +315,7 @@ export const CTR_PRIVACY: PageCtrMeta = {
   description: "How ResumeIQ handles resume uploads, cookies, and analytics. We do not sell resume data.",
   h1: "Privacy Policy",
   primaryKeyword: "privacy policy",
-  richSnippets: ["BreadcrumbList"],
+  richSnippets: ["BreadcrumbList", "FAQPage"],
 };
 
 export const CTR_TERMS: PageCtrMeta = {
@@ -314,6 +324,15 @@ export const CTR_TERMS: PageCtrMeta = {
   h1: "Terms of Service",
   primaryKeyword: "terms of service",
   richSnippets: ["BreadcrumbList"],
+};
+
+export const CTR_DISCLAIMER: PageCtrMeta = {
+  title: ctrTitle("Disclaimer", "ResumeIQ ATS Checker"),
+  description:
+    "ResumeIQ scores are guidance—not guarantees. No ATS vendor partnerships. Read limitations before applying.",
+  h1: "Disclaimer",
+  primaryKeyword: "ResumeIQ disclaimer",
+  richSnippets: ["BreadcrumbList", "FAQPage"],
 };
 
 export const CTR_RESUME_KEYWORDS_DATABASE: PageCtrMeta = {

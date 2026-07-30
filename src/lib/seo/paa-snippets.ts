@@ -1,12 +1,13 @@
 import type { FaqItem } from "@/lib/seo/faq";
+import { NO_PAYMENT_FOR_CORE_CHECKER_ANSWER } from "@/lib/seo/trust-copy";
 
-/** People Also Ask–style Q&A blocks mapped by path prefix. */
+/** People Also Ask–style Q&A blocks mapped by path prefix. Must not duplicate on-page FAQ questions. */
 const PAA_BY_PREFIX: Record<string, FaqItem[]> = {
   "/resume-checker": [
     {
-      question: "Is ResumeIQ ATS checker really free?",
+      question: "How do I run my first resume check?",
       answer:
-        "Yes—you can upload or paste a resume and get an ATS score, parser preview, and priority fixes without creating an account.",
+        "Upload PDF or DOCX (or paste text), optionally add a job description, then review parse preview, score, and priority fixes. No account required.",
     },
     {
       question: "What file types work with the resume parser?",
@@ -40,19 +41,18 @@ const PAA_BY_PREFIX: Record<string, FaqItem[]> = {
   ],
   "/": [
     {
-      question: "What is a good ATS resume score?",
+      question: "What should I fix first on my resume?",
       answer:
-        "Aim for 75+ after tailoring to a specific job. Scores below 60 often indicate parse issues or missing posting keywords—not always lack of experience.",
+        "Parse and layout first—single column, standard headings, selectable text. Then tailor keywords per posting and strengthen bullets with proof.",
     },
     {
-      question: "Can ATS read PDF resumes?",
+      question: "Do I need an account to use ResumeIQ?",
       answer:
-        "Most can, if text is selectable. Run a copy-paste test: if order scrambles, switch to a single-column Word export.",
+        "No. Upload or paste for standard checks without signup. See our privacy policy for how files are handled per request.",
     },
     {
       question: "Do I need to pay for an ATS checker?",
-      answer:
-        "No—ResumeIQ offers a free first check with score, parser test, and keyword gaps. Paid tiers are optional for power users.",
+      answer: NO_PAYMENT_FOR_CORE_CHECKER_ANSWER,
     },
   ],
 };

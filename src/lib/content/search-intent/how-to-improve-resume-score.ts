@@ -69,7 +69,7 @@ Time spent: ~45 minutes. No invented experience.
 ## Understand your numbers
 
 - [ATS score explained](/ats-score-explained)
-- [Resume score checker guide](/resume-score-checker)
+- [Resume score checker guide](/ats-score-checker)
 - [Resume match score](/resume-match-score)
 
 ## If score is high but still no interviews
