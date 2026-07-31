@@ -27,6 +27,7 @@ export const CANNIBALIZATION_REDIRECT_SOURCES = [
   "/resume-score-checker",
   "/free-ats-score-checker",
   "/resume-keywords-checker",
+  "/resume-match-analyzer",
   "/how-we-score-resumes",
   "/our-algorithm",
 ] as const;
@@ -41,6 +42,7 @@ export const CANNIBALIZATION_REDIRECT_MAP: Record<
   "/resume-score-checker": CANONICAL_URL_OWNERS.atsScoreChecker,
   "/free-ats-score-checker": CANONICAL_URL_OWNERS.atsScoreChecker,
   "/resume-keywords-checker": CANONICAL_URL_OWNERS.resumeKeywordChecker,
+  "/resume-match-analyzer": "/resume-job-description-match",
   "/how-we-score-resumes": CANONICAL_URL_OWNERS.methodology,
   "/our-algorithm": CANONICAL_URL_OWNERS.howResumeAnalysisWorks,
 };

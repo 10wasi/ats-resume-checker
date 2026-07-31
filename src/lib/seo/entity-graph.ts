@@ -45,7 +45,7 @@ export function buildOrganizationEntity() {
     },
     foundingDate: "2024",
     description:
-      "Free AI-powered ATS resume checker — instant score, parser preview, keyword analysis, and professional fix recommendations. No signup required.",
+      "Free AI-powered ATS resume checker — instant score, parser preview, keyword analysis, and fix recommendations. No signup required.",
     knowsAbout: [
       "Applicant Tracking System",
       "ATS resume checker",
@@ -77,7 +77,7 @@ export function buildWebSiteEntity() {
     alternateName: "ATS Resume Checker",
     url: site,
     description:
-      "Highest-authority free ATS resume checker — AI scan, parser test, keyword gaps, and resume optimization guides.",
+      "Free ATS resume checker — AI scan, parser test, keyword gaps, and resume optimization guides.",
     publisher: { "@id": ENTITY_IDS.organization() },
     inLanguage: "en-US",
     potentialAction: {

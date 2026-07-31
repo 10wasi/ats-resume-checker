@@ -616,7 +616,7 @@ export function HomeTrustedBySection() {
     <section className="border-b border-slate-200/70 bg-white py-12 sm:py-14">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <p className="text-center text-sm font-semibold uppercase tracking-wider text-slate-500">
-          Trusted by job seekers optimizing real applications
+          Built for job seekers optimizing real applications
         </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-3">
           {stats.map((s) => (

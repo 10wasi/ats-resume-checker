@@ -85,16 +85,15 @@ export function TestimonialsSection() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="section-eyebrow mx-auto">Trusted by candidates worldwide</p>
+          <p className="section-eyebrow mx-auto">Illustrative feedback examples</p>
           <h2
             id="testimonials-heading"
             className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
           >
-            Job seekers, recruiters &amp; coaches — same conclusion
+            How people use ResumeIQ
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            From first-time applicants to HR managers, the feedback is consistent: the specific,
-            actionable fixes make the difference.
+            Composite examples of common fix patterns—not verified customer reviews or endorsements.
           </p>
         </div>
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

@@ -16,7 +16,7 @@ export type PageCtrMeta = {
 export const CTR_HOME: PageCtrMeta = {
   title: ctrTitle("Free ATS Resume Checker", "Instant Score & Scan"),
   description: ctrMeta(
-    "See your ATS score in 60 seconds—parser preview, keyword gaps & fixes. Upload PDF free. No signup. Trusted by job seekers."
+    "See your ATS score in 60 seconds—parser preview, keyword gaps & fixes. Upload PDF free. No signup."
   ),
   ogTitle: "Free ATS Resume Checker — Instant AI Scan & Score",
   h1: "Free ATS Resume Checker — See Your Score Before You Apply",
@@ -761,17 +761,20 @@ export function buildCtrMetadata(
 ): Metadata {
   const ogTitle = meta.ogTitle ?? meta.title;
   const base = getSiteUrl().replace(/\/$/, "");
+  const canonicalPath = options.canonical.startsWith("/")
+    ? options.canonical
+    : `/${options.canonical}`;
   const useAbsolute = options.absoluteTitle ?? true;
   const ogImages = getDefaultOgImages();
   return {
     title: useAbsolute ? { absolute: meta.title } : meta.title,
     description: meta.description,
     keywords: options.keywords,
-    alternates: { canonical: options.canonical },
+    alternates: { canonical: `${base}${canonicalPath}` },
     openGraph: {
       title: ogTitle,
       description: meta.description,
-      url: `${base}${options.canonical}`,
+      url: `${base}${canonicalPath}`,
       type: options.ogType ?? "website",
       images: ogImages,
     },

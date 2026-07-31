@@ -25,9 +25,6 @@ function padMetaToMin(text: string): string {
   if (out.length < META_MIN) {
     out = `${out.replace(/\.$/, "")}${suffix}`;
   }
-  if (out.length < META_MIN) {
-    out = `${out} Trusted ATS resume checker online.`;
-  }
   return out;
 }
 

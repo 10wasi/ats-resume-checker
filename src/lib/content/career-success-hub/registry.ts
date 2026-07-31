@@ -120,7 +120,7 @@ export const CAREER_HUB_INDEX: CareerHubIndexItem[] = [
     title: "Resume Match Analyzer",
     description:
       "Resume match score vs any job description—missing keywords, skill gaps, and tailoring steps.",
-    path: "/resume-match-analyzer",
+    path: "/resume-job-description-match",
     badge: "Tool",
   },
   {
@@ -138,14 +138,6 @@ export const CAREER_HUB_INDEX: CareerHubIndexItem[] = [
       "Pillar guides and blog clusters for professional resume optimization worldwide.",
     path: "/ats-guide",
     badge: "Guide",
-  },
-  {
-    id: "resume-match",
-    title: "Resume Match Analyzer",
-    description:
-      "Resume match score vs any job description—missing skills, keyword gaps, and next steps.",
-    path: "/resume-job-description-match",
-    badge: "Tool",
   },
   {
     id: "resume-skills-analyzer",

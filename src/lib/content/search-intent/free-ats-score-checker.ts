@@ -5,7 +5,7 @@ import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 export const freeAtsScoreCheckerEntry: CareerLandingEntry = {
   id: "free-ats-score-checker",
-  path: "/free-ats-score-checker",
+  path: "/ats-score-checker",
   breadcrumbLabel: "Free ATS score checker",
   ctr: CTR_FREE_ATS_SCORE_CHECKER,
   faqItems: [

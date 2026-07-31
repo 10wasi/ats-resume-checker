@@ -4,14 +4,14 @@ import { CTR_RESUME_SCORE_CHECKER } from "@/lib/seo/ctr-metadata";
 
 export const resumeScoreCheckerEntry: CareerLandingEntry = {
   id: "resume-score-checker",
-  path: "/resume-score-checker",
+  path: "/ats-score-checker",
   breadcrumbLabel: "Resume score checker",
   ctr: CTR_RESUME_SCORE_CHECKER,
   faqItems: [
     {
       question: "What is a good resume score?",
       answer:
-        "There is no universal pass/fail. Scores in the 70–85 range with clean format flags usually mean you are competitive for many postings—if keywords match the job. Always pair score with a resume match analysis for the specific role.",
+        "There is no universal pass/fail. Use format flags and parse preview first, then pair baseline score with resume match analysis for each posting you target.",
     },
     {
       question: "How is resume score different from resume match score?",

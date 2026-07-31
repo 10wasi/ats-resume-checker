@@ -18,7 +18,7 @@ import { CLUSTER_WORKFLOW_APPENDIX } from "./shared-appendix";
 
 export const freeAtsResumeCheckerEntry: CareerLandingEntry = {
   id: "free-ats-resume-checker",
-  path: "/free-ats-resume-checker",
+  path: "/",
   breadcrumbLabel: "Free ATS resume checker",
   ctr: CTR_FREE_ATS_RESUME_CHECKER,
   faqItems: [
