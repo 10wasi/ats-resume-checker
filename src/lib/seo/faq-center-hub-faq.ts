@@ -15,11 +15,11 @@ export const faqCenterHubFaqItems: FaqItem[] = [
   {
     question: "Where are privacy and data-handling answers?",
     answer:
-      "See the Platform & trust section below or read the privacy policy for resume storage, cookies, and contact options.",
+      "See the Platform & trust topic below or read the privacy policy for resume storage, cookies, and contact options.",
   },
   {
     question: "Where do scoring and methodology questions live?",
     answer:
-      "The Scoring methodology section summarizes how scores work. The full weighting and disclaimers are on the methodology page linked from that section.",
+      "Use the Scoring methodology topic below. The full weighting and disclaimers are on the methodology page linked from that card.",
   },
 ];

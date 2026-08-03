@@ -35,7 +35,7 @@ The **ATS Guide Hub** is your structured map for **ATS resume optimization**—t
 
 ## What is ATS resume optimization — and why does it matter?
 
-An **applicant tracking system (ATS)** is software used by over 98% of Fortune 500 companies and the majority of mid-size employers to receive, parse, and rank incoming applications. Your resume reaches the ATS before any human sees it.
+An **applicant tracking system (ATS)** is software used by many large employers and a growing share of mid-size companies to receive, parse, and rank incoming applications. Your resume reaches the ATS before any human sees it.
 
 ATS optimization means addressing three distinct layers:
 

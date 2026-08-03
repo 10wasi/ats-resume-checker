@@ -6,7 +6,6 @@ import { ResumeCheckerSeoIntro } from "@/components/resume/ResumeCheckerSeoIntro
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { HowToJsonLd } from "@/components/seo/HowToJsonLd";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
-import { ResumeCheckerWebApplicationJsonLd } from "@/components/seo/ResumeCheckerWebApplicationJsonLd";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 import { buildCtrMetadata, CTR_RESUME_CHECKER } from "@/lib/seo/ctr-metadata";
 import {
@@ -29,7 +28,6 @@ export const metadata = buildCtrMetadata(CTR_RESUME_CHECKER, {
 export default function ResumeCheckerPage() {
   return (
     <>
-      <ResumeCheckerWebApplicationJsonLd />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", path: "/" },

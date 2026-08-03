@@ -194,7 +194,7 @@ Not all ATS systems behave identically. Here are known differences for the platf
 
 | Platform | Used by | Known quirk for applicants |
 |----------|---------|----------------------------|
-| **Workday** | Large enterprise, Fortune 500 | Strong field parsing; supports PDF and DOCX reliably; internal job codes affect search |
+| **Workday** | Large enterprise employers | Strong field parsing; supports PDF and DOCX reliably; internal job codes affect search |
 | **Greenhouse** | Tech startups, mid-size | Clean parsing; match quality varies by recruiter search configuration |
 | **Lever** | Growth-stage companies | Similar to Greenhouse; handles DOCX well |
 | **Taleo (Oracle)** | Enterprise, government | Older parser; two-column layouts frequently scramble; always use plain DOCX |

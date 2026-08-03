@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "ResumeIQ — Free Resume Checker & ATS Score";
+export const alt = "ResumeIQ — Free ATS Resume Checker & Score";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -50,10 +50,10 @@ export default function OpenGraphImage() {
           </span>
         </div>
         <div style={{ fontSize: "56px", fontWeight: 700, lineHeight: 1.1, maxWidth: "900px" }}>
-          Free Resume Checker & ATS Score
+          Free ATS Resume Checker
         </div>
         <div style={{ marginTop: "24px", fontSize: "28px", color: "#bbf7d0", maxWidth: "820px" }}>
-          Upload PDF · Get score, keywords & format fixes · Job seekers worldwide
+          Upload PDF · ATS score, parser preview & keyword gaps · No signup
         </div>
       </div>
     ),

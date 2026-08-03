@@ -1,70 +1,74 @@
 import type { FaqItem } from "./faq";
-import { aboutFaqItems } from "./about-faq";
-import { methodologyFaqItems } from "./methodology-faq";
-import { howAtsWorksFaqItems } from "./how-ats-works-faq";
-import { careerSuccessHubFaqItems } from "./career-success-hub-faq";
 
 export const FAQ_CENTER_PATH = "/faq-center" as const;
 
-export type FaqCenterSection = {
+export type FaqCenterTopic = {
   id: string;
   title: string;
   href: string;
-  items: FaqItem[];
+  description: string;
+  previewQuestion: string;
 };
 
-/** Curated FAQ hub — links to deeper guides per topic. */
-export const FAQ_CENTER_SECTIONS: FaqCenterSection[] = [
+/** Topic index — full FAQs live on linked canonical pages only. */
+export const FAQ_CENTER_TOPICS: FaqCenterTopic[] = [
   {
     id: "platform",
     title: "Platform & trust",
     href: "/about",
-    items: aboutFaqItems,
+    description:
+      "Who runs ResumeIQ, how uploads are handled, cookies, analytics, and how to reach support.",
+    previewQuestion: "Do you store my resume after I upload?",
   },
   {
     id: "methodology",
     title: "Scoring methodology",
     href: "/methodology",
-    items: methodologyFaqItems,
+    description:
+      "How parse health, keyword overlap, structure, and job-post match combine into your ATS score—and what we do not claim.",
+    previewQuestion: "Is my ATS score a guarantee employers use the same formula?",
   },
   {
     id: "how-ats",
     title: "How ATS works",
     href: "/how-ats-works",
-    items: howAtsWorksFaqItems,
+    description:
+      "Parsing, indexing, keyword ranking, filters, and recruiter skim—fix the layer that actually blocked your file.",
+    previewQuestion: "Why did my resume look fine but fail ATS parsing?",
   },
   {
     id: "workflow",
     title: "Tools & workflow",
     href: "/career-success-hub",
-    items: careerSuccessHubFaqItems,
+    description:
+      "Checker, keyword scan, match analyzer, and optimization guides in one job-search workflow.",
+    previewQuestion: "Which ResumeIQ tool should I run first?",
   },
   {
     id: "interviews",
     title: "Interviews & rejection",
     href: "/why-resume-not-getting-interviews",
-    items: [
-      {
-        question: "Why am I not getting interviews?",
-        answer:
-          "Often screening fails before humans read your file—parse errors, missing keywords, or weak bullets. Start with the ATS Resume Checker and Resume Match Analyzer.",
-      },
-      {
-        question: "Is my resume rejected by ATS or recruiters?",
-        answer:
-          "Both layers matter. Software may filter first; recruiters skim survivors in seconds. Fix parse and keywords, then improve bullet proof.",
-      },
-      {
-        question: "Does this work for remote jobs worldwide?",
-        answer:
-          "Yes. Remote employers use the same ATS patterns. Tailor keywords to each posting regardless of your location.",
-      },
-    ],
+    description:
+      "When silence means parse failure vs weak bullets—and how to tell ATS rejection from recruiter skim.",
+    previewQuestion: "Why am I not getting interviews after applying online?",
+  },
+  {
+    id: "privacy",
+    title: "Privacy & disclaimer",
+    href: "/privacy",
+    description:
+      "Data retention, cookies, third-party processors, and limits on scores, AI suggestions, and outcomes.",
+    previewQuestion: "Where can I read the full privacy and disclaimer policies?",
   },
 ];
 
-export const faqCenterAllItems: FaqItem[] = FAQ_CENTER_SECTIONS.flatMap(
-  (s) => s.items
-);
+/** @deprecated Use FAQ_CENTER_TOPICS — hub page no longer inlines topic FAQs. */
+export const FAQ_CENTER_SECTIONS = FAQ_CENTER_TOPICS.map((topic) => ({
+  id: topic.id,
+  title: topic.title,
+  href: topic.href,
+  items: [] as FaqItem[],
+}));
 
-/** @deprecated Use faqCenterHubFaqItems for FAQPage schema on /faq-center. */
+/** @deprecated Hub schema uses faqCenterHubFaqItems only. */
+export const faqCenterAllItems: FaqItem[] = [];

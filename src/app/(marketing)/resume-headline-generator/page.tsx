@@ -8,6 +8,7 @@ import { ToolPageSeoEnrichment } from "@/components/seo/ToolPageSeoEnrichment";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
+import { ExampleLibraryWorkflow } from "@/components/seo/ExampleLibraryWorkflow";
 import { resumeHeadlineGeneratorFaqItems } from "@/lib/seo/resume-headline-generator-faq";
 import {
   buildCtrMetadata,
@@ -89,7 +90,7 @@ const HEADLINE_EXAMPLES = [
     role: "Recent Graduate / Entry Level",
     headlines: [
       "Computer Science Graduate | Python, Java & React | AWS Cloud Practitioner",
-      "Marketing Graduate | Google Analytics Certified | Internship at Fortune 500",
+      "Marketing Graduate | Google Analytics Certified | SaaS marketing internship experience",
       "Finance Graduate | CFA Level I Candidate | Excel & Bloomberg Terminal",
     ],
   },
@@ -135,7 +136,7 @@ export default function ResumeHeadlineGeneratorPage() {
 
           {/* Header */}
           <header className="mt-8">
-            <p className="section-eyebrow">Free tool · ResumeIQ</p>
+            <p className="section-eyebrow">Example library · ResumeIQ</p>
             <h1 className="mt-4 font-display text-3xl font-bold text-slate-900 sm:text-4xl">
               {CTR_RESUME_HEADLINE_GENERATOR.h1}
             </h1>
@@ -169,6 +170,11 @@ export default function ResumeHeadlineGeneratorPage() {
               Generate a full summary
             </Link>
           </div>
+
+          <ExampleLibraryWorkflow
+            resourceLabel="headline examples"
+            workflowTip="Headlines must match the posting title and include 2–3 hard skills or credentials parsers can index—adapt each sample before copying."
+          />
 
           <AdPlaceholder label="Advertisement · tool" className="mt-10" />
 

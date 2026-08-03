@@ -1,15 +1,13 @@
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { MandatoryHubLinks } from "@/components/seo/MandatoryHubLinks";
 import { PageBreadcrumbs } from "@/components/seo/PageBreadcrumbs";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { RelatedResources } from "@/components/seo/RelatedResources";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { buildCtrMetadata, CTR_FAQ_CENTER } from "@/lib/seo/ctr-metadata";
 import { faqCenterHubFaqItems } from "@/lib/seo/faq-center-hub-faq";
-import {
-  FAQ_CENTER_PATH,
-  FAQ_CENTER_SECTIONS,
-} from "@/lib/seo/faq-center-items";
+import { FAQ_CENTER_PATH, FAQ_CENTER_TOPICS } from "@/lib/seo/faq-center-items";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 export const metadata = buildCtrMetadata(CTR_FAQ_CENTER, {
@@ -58,7 +56,8 @@ export default function FaqCenterPage() {
             or read our{" "}
             <Link href="/methodology" className="font-semibold text-slate-800 underline">
               methodology
-            </Link>.
+            </Link>
+            .
           </p>
         </header>
 
@@ -76,37 +75,41 @@ export default function FaqCenterPage() {
           </div>
         </section>
 
-        <div className="mt-12 space-y-16">
-          {FAQ_CENTER_SECTIONS.map((section) => (
-            <section key={section.id} aria-labelledby={`faq-${section.id}`}>
-              <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <h2
-                  id={`faq-${section.id}`}
-                  className="font-display text-2xl font-bold text-slate-900"
-                >
-                  {section.title}
-                </h2>
+        <section className="mt-12" aria-labelledby="faq-topics-heading">
+          <h2 id="faq-topics-heading" className="font-display text-2xl font-bold text-slate-900">
+            Browse by topic
+          </h2>
+          <p className="mt-3 text-slate-600">
+            Each topic links to the canonical guide with full answers—this hub keeps hub-only FAQs above to avoid duplicate content.
+          </p>
+          <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+            {FAQ_CENTER_TOPICS.map((topic) => (
+              <li
+                key={topic.id}
+                className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-sm"
+              >
+                <h3 className="font-display text-lg font-bold text-slate-900">
+                  <Link href={topic.href} className="hover:text-[#16a34a]">
+                    {topic.title}
+                  </Link>
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">{topic.description}</p>
+                <p className="mt-3 text-sm text-slate-700">
+                  <span className="font-semibold text-slate-900">Example question: </span>
+                  {topic.previewQuestion}
+                </p>
                 <Link
-                  href={section.href}
-                  className="text-sm font-semibold text-[#16a34a] underline"
+                  href={topic.href}
+                  className="mt-4 inline-block text-sm font-semibold text-[#16a34a] underline"
                 >
-                  Full guide →
+                  Read full {topic.title.toLowerCase()} guide →
                 </Link>
-              </div>
-              <div className="mt-8 space-y-8">
-                {section.items.map((item) => (
-                  <div key={item.question}>
-                    <h3 className="text-lg font-semibold text-slate-900">
-                      {item.question}
-                    </h3>
-                    <p className="mt-2 leading-relaxed text-slate-700">{item.answer}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
-          ))}
-        </div>
+              </li>
+            ))}
+          </ul>
+        </section>
 
+        <MandatoryHubLinks className="mt-14" />
         <RelatedResources path={FAQ_CENTER_PATH} excludeHref={FAQ_CENTER_PATH} />
       </div>
     </>

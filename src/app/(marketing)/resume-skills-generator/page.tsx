@@ -6,6 +6,7 @@ import { RelatedResources } from "@/components/seo/RelatedResources";
 import { ToolPageSeoEnrichment } from "@/components/seo/ToolPageSeoEnrichment";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
+import { ExampleLibraryWorkflow } from "@/components/seo/ExampleLibraryWorkflow";
 import { resumeSkillsGeneratorFaqItems } from "@/lib/seo/resume-skills-generator-faq";
 import { buildCtrMetadata, CTR_RESUME_SKILLS_GENERATOR } from "@/lib/seo/ctr-metadata";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
@@ -138,6 +139,11 @@ export default function ResumeSkillsGeneratorPage() {
         </p>
 
         <BlogResumeCta />
+
+        <ExampleLibraryWorkflow
+          resourceLabel="skills lists"
+          workflowTip="Mirror posting vocabulary in your skills section, then prove each high-value skill in at least one experience bullet so ATS and recruiters see evidence."
+        />
 
         {/* Skills by role */}
         <h2 className="mt-14 font-display text-2xl font-bold text-slate-900">

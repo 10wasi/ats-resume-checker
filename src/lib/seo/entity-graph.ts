@@ -80,14 +80,6 @@ export function buildWebSiteEntity() {
       "Free ATS resume checker — AI scan, parser test, keyword gaps, and resume optimization guides.",
     publisher: { "@id": ENTITY_IDS.organization() },
     inLanguage: "en-US",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${site}${RESUME_CHECKER_PATH}?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
   };
 }
 

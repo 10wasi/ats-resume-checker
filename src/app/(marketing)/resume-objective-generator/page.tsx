@@ -6,6 +6,7 @@ import { RelatedResources } from "@/components/seo/RelatedResources";
 import { ToolPageSeoEnrichment } from "@/components/seo/ToolPageSeoEnrichment";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
+import { ExampleLibraryWorkflow } from "@/components/seo/ExampleLibraryWorkflow";
 import { resumeObjectiveGeneratorFaqItems } from "@/lib/seo/resume-objective-generator-faq";
 import { buildCtrMetadata, CTR_RESUME_OBJECTIVE_GENERATOR } from "@/lib/seo/ctr-metadata";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
@@ -137,6 +138,11 @@ export default function ResumeObjectiveGeneratorPage() {
         </p>
 
         <BlogResumeCta />
+
+        <ExampleLibraryWorkflow
+          resourceLabel="objective examples"
+          workflowTip="Objectives work best for entry-level and career-change files—keep them to two lines, name the target role, and swap in posting keywords before scanning."
+        />
 
         {/* Objective vs Summary */}
         <h2 className="mt-14 font-display text-2xl font-bold text-slate-900">

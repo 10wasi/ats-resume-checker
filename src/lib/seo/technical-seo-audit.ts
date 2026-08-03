@@ -84,7 +84,7 @@ export const TECHNICAL_SEO_CHECKLIST = {
   canonical: "buildCtrMetadata sets alternates.canonical on all CTR pages",
   robots: "src/app/robots.ts — allow /, disallow /api/, sitemap linked",
   sitemap: "src/app/sitemap.ts — static + dynamic role/blog loops, dedupeByUrl",
-  structuredData: "EntityGraphJsonLd + page-level FAQ/Breadcrumb/Article/HowTo",
+  structuredData: "EntityGraphJsonLd (single SoftwareApplication @id) + page-level FAQ/Breadcrumb/Article/HowTo",
   pagination: "Blog index single page; no paginated duplicate titles",
   lazyLoading: "Blog cover uses CSS gradients; ReadingProgress dynamic import ssr:false",
   webVitals: "next/font display:swap; static generation for marketing routes",

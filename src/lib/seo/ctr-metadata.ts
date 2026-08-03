@@ -16,37 +16,19 @@ export type PageCtrMeta = {
 export const CTR_HOME: PageCtrMeta = {
   title: ctrTitle("Free ATS Resume Checker", "Instant Score & Scan"),
   description: ctrMeta(
-    "See your ATS score in 60 seconds—parser preview, keyword gaps & fixes. Upload PDF free. No signup."
+    "Upload your resume PDF free—get ATS score, parser preview, keyword gaps, and a prioritized fix list in 60 seconds. No signup."
   ),
   ogTitle: "Free ATS Resume Checker — Instant AI Scan & Score",
   h1: "Free ATS Resume Checker — See Your Score Before You Apply",
   primaryKeyword: "free ATS resume checker",
-  richSnippets: ["FAQPage", "SoftwareApplication", "WebSite", "Organization", "BreadcrumbList", "SearchAction"],
-};
-
-export const CTR_HOW_WE_SCORE: PageCtrMeta = {
-  title: ctrTitle("How We Score Resumes", "ATS Methodology"),
-  description: ctrMeta(
-    "Transparent ATS scoring — parse health, keywords, structure & match. How ResumeIQ calculates your score."
-  ),
-  h1: "How We Score Resumes",
-  primaryKeyword: "how we score resumes",
-  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
-};
-
-export const CTR_OUR_ALGORITHM: PageCtrMeta = {
-  title: ctrTitle("Our Resume Algorithm", "How Analysis Works"),
-  description: ctrMeta(
-    "Step-by-step resume analysis — extraction, format checks, keyword match & AI suggestions explained."
-  ),
-  h1: "Our Resume Analysis Algorithm",
-  primaryKeyword: "resume analysis algorithm",
-  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+  richSnippets: ["FAQPage", "SoftwareApplication", "WebSite", "Organization", "BreadcrumbList"],
 };
 
 export const CTR_RESUME_CHECKER: PageCtrMeta = {
   title: ctrTitle("ATS Resume Checker", "Upload PDF Free"),
-  description: ctrMeta("Upload your resume for a priority fix list in under 2 minutes."),
+  description: ctrMeta(
+    "Interactive ATS resume checker—upload PDF or DOCX, view extracted text, compatibility score, keyword gaps, and section-level fixes."
+  ),
   ogTitle: "ATS Resume Checker — Upload & Score Free",
   h1: "ATS Resume Checker — Upload & Score Your Resume",
   primaryKeyword: "ATS resume checker",
@@ -54,39 +36,43 @@ export const CTR_RESUME_CHECKER: PageCtrMeta = {
 };
 
 export const CTR_FREE_RESUME_CHECKER_ONLINE: PageCtrMeta = {
-  title: ctrTitle("Free Resume Checker Online", "ATS Scan"),
-  description: ctrMeta("See what hiring software extracts from your PDF or pasted text."),
-  ogTitle: "Free Resume Checker Online — Instant ATS Scan",
-  h1: "Free Resume Checker Online",
-  primaryKeyword: "free resume checker online",
+  title: ctrTitle("Online Resume Checker", "Browser Upload"),
+  description: ctrMeta(
+    "Run a resume checker online in your browser—paste text or upload PDF to see what hiring software extracts before you hit apply."
+  ),
+  ogTitle: "Online Resume Checker — Browser ATS Scan",
+  h1: "Online Resume Checker",
+  primaryKeyword: "online resume checker",
   richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_FREE_ATS_SCORE_CHECKER: PageCtrMeta = {
-  title: ctrTitle("Free ATS Score Checker", "Instant Results"),
-  description: ctrMeta("Get your compatibility %, missing keywords, and format flags."),
-  ogTitle: "Free ATS Score Checker — Instant Resume Score",
-  h1: "Free ATS Score Checker",
-  primaryKeyword: "free ATS score checker",
+  title: ctrTitle("ATS Compatibility Score", "Free Percentage"),
+  description: ctrMeta(
+    "See your resume ATS compatibility percentage, missing keywords, and format flags—then learn which fixes raise the score fastest."
+  ),
+  ogTitle: "ATS Compatibility Score — Free Percentage Check",
+  h1: "ATS Compatibility Score Checker",
+  primaryKeyword: "ATS compatibility score",
   richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
-/** Cluster landing CTR — refine titles/descriptions when pages ship. */
+/** Cluster card copy for homepage hub — not a separate indexable URL. */
 export const CTR_FREE_ATS_RESUME_CHECKER: PageCtrMeta = {
-  title: ctrTitle("Free ATS Resume Checker", "Scan PDF Free"),
+  title: ctrTitle("Resume Scanner Hub", "Start Here"),
   description: ctrMeta(
-    "Free ATS resume checker — parser preview, ATS score, keyword scanner & fixes. Upload online. No signup."
+    "Start from the homepage scanner—parser preview, ATS score, keyword gaps, and fixes on the file you plan to submit."
   ),
-  ogTitle: "Free ATS Resume Checker | AI Resume Scanner & ATS Score",
-  h1: "Free ATS Resume Checker",
-  primaryKeyword: "free ATS resume checker",
+  ogTitle: "Resume Scanner Hub — Start Your ATS Check",
+  h1: "Start your free ATS scan",
+  primaryKeyword: "ATS resume scanner",
   richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_ATS_RESUME_CHECKER_ONLINE: PageCtrMeta = {
   title: ctrTitle("ATS Resume Checker Online", "Scan Free"),
   description: ctrMeta(
-    "ATS resume checker online — upload PDF, see parser output, ATS score & keyword gaps in your browser."
+    "Browser-based ATS resume checker online—upload PDF, inspect parser output, keyword gaps, and layout flags without installing software."
   ),
   ogTitle: "ATS Resume Checker Online — Scan Resume Free",
   h1: "ATS Resume Checker Online",
@@ -97,7 +83,7 @@ export const CTR_ATS_RESUME_CHECKER_ONLINE: PageCtrMeta = {
 export const CTR_RESUME_KEYWORD_CHECKER: PageCtrMeta = {
   title: ctrTitle("Resume Keyword Checker", "Improve ATS Score"),
   description: ctrMeta(
-    "Resume keyword checker — find missing ATS terms vs any job post. Free AI keyword scanner for your resume."
+    "Compare resume keywords against any job posting—surface missing hard skills, tools, and certifications before you submit."
   ),
   ogTitle: "Resume Keyword Checker — Improve ATS Score",
   h1: "Resume Keyword Checker",
@@ -107,7 +93,9 @@ export const CTR_RESUME_KEYWORD_CHECKER: PageCtrMeta = {
 
 export const CTR_ATS_SCORE_CHECKER: PageCtrMeta = {
   title: ctrTitle("ATS Score Checker", "Compatibility %"),
-  description: ctrMeta("Get your resume ATS score — interpret bands, fix parse & keywords. Free check."),
+  description: ctrMeta(
+    "Measure resume ATS score bands—interpret compatibility percentages, parse health, and keyword overlap vs a target role."
+  ),
   ogTitle: "ATS Score Checker — What Your % Means",
   h1: "ATS Score Checker",
   primaryKeyword: "ATS score checker",
@@ -268,7 +256,9 @@ export const CTR_ATS_GUIDE_LANDING: PageCtrMeta = {
 
 export const CTR_FAQ_CENTER: PageCtrMeta = {
   title: ctrTitle("ATS Resume FAQ", "Answers & Guides"),
-  description: ctrMeta("Answers on scoring, match %, keywords, and interview readiness."),
+  description: ctrMeta(
+    "Hub-only FAQs plus topic cards linking to scoring, privacy, ATS mechanics, tools, and interview screening guides—no duplicated answers."
+  ),
   ogTitle: "ATS Resume FAQ Center — Help & Guides",
   h1: "ATS Resume FAQ Center",
   primaryKeyword: "ATS resume FAQ",
@@ -679,47 +669,57 @@ export const CTR_RESUME_OBJECTIVE: PageCtrMeta = {
 
 export const CTR_RESUME_HEADLINE_GENERATOR: PageCtrMeta = {
   title: ctrTitle("Resume Headline Generator", "60+ Examples"),
-  description: ctrMeta("ATS-friendly headlines by role — formulas and common mistakes to avoid."),
-  ogTitle: "Resume Headline Generator — ATS Examples by Industry",
+  description: ctrMeta(
+    "60+ ATS-friendly resume headline examples by role—formulas, placement tips, and mistakes that break parser categorization."
+  ),
+  ogTitle: "Resume Headline Examples — ATS Formulas by Industry",
   h1: "Resume Headline Generator",
   primaryKeyword: "resume headline generator",
-  richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_COVER_LETTER_GENERATOR: PageCtrMeta = {
   title: ctrTitle("Cover Letter Generator", "ATS Templates"),
-  description: ctrMeta("Proven structures, keyword alignment tips, and role-specific examples."),
-  ogTitle: "Cover Letter Generator — ATS-Friendly Templates & Examples",
+  description: ctrMeta(
+    "Cover letter templates with posting-aligned keywords—structures for referral, career change, and role-specific applications."
+  ),
+  ogTitle: "Cover Letter Templates — ATS-Friendly Structures",
   h1: "Cover Letter Generator",
   primaryKeyword: "cover letter generator",
-  richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_INTERVIEW_QUESTION_GENERATOR: PageCtrMeta = {
   title: ctrTitle("Interview Questions", "100+ by Role"),
-  description: ctrMeta("Role-specific questions, STAR answers, and common mistake warnings."),
-  ogTitle: "Interview Question Generator — Role-Specific Questions & Answers",
+  description: ctrMeta(
+    "Role-specific interview questions with STAR answer frameworks—behavioral, technical, and situational prompts by job family."
+  ),
+  ogTitle: "Interview Questions by Role — STAR Answer Framework",
   h1: "Interview Question Generator",
   primaryKeyword: "interview question generator",
-  richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_RESUME_OBJECTIVE_GENERATOR: PageCtrMeta = {
   title: ctrTitle("Resume Objective Generator", "40+ Examples"),
-  description: ctrMeta("Entry-level, career changers, and internships — formula and mistakes to avoid."),
-  ogTitle: "Resume Objective Generator — Examples & Formula",
+  description: ctrMeta(
+    "Resume objective examples for graduates, career changers, and internships—two-line formula plus weak vs strong rewrites."
+  ),
+  ogTitle: "Resume Objective Examples — Formula & Mistakes",
   h1: "Resume Objective Generator",
   primaryKeyword: "resume objective generator",
-  richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_RESUME_SKILLS_GENERATOR: PageCtrMeta = {
   title: ctrTitle("Resume Skills Generator", "Lists by Role"),
-  description: ctrMeta("ATS-ready skills lists — what to include, how to format, what to avoid."),
-  ogTitle: "Resume Skills Generator — Skills List by Job Role",
+  description: ctrMeta(
+    "Copy-ready skills lists by role—technical, tools, and soft skills formatted for ATS parsers plus proof-in-bullet guidance."
+  ),
+  ogTitle: "Resume Skills Lists by Role — ATS Formatting Guide",
   h1: "Resume Skills Generator",
   primaryKeyword: "resume skills generator",
-  richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_RESUME_GRAMMAR_CHECKER: PageCtrMeta = {

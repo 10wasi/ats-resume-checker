@@ -1,41 +1,15 @@
 const BRAND = "ResumeIQ";
 export const SEO_YEAR = "2026";
 
-const META_MIN = 145;
-const META_MAX = 155;
+const META_MAX = 160;
 
-function ensureMetaSignals(text: string): string {
-  let out = text.trim();
-  const lower = out.toLowerCase();
-  if (!lower.includes("resume")) {
-    out = `${out} AI resume tips`;
-  }
-  if (!out.toLowerCase().includes("ats")) {
-    out = `${out} — ATS-ready guidance`;
-  }
-  if (!out.toLowerCase().includes("ai")) {
-    out = `${out} with smart AI insights`;
-  }
-  return out.endsWith(".") ? out : `${out}.`;
-}
-
-function padMetaToMin(text: string): string {
-  const suffix = " Free AI-powered scan — instant results, no signup, professional analysis.";
-  let out = text;
-  if (out.length < META_MIN) {
-    out = `${out.replace(/\.$/, "")}${suffix}`;
-  }
-  return out;
-}
-
-/** Meta description — 145–155 chars with CTR signals: Free, AI, Instant, No signup. */
+/** Meta description — use the provided copy as-is; trim only when over limit. */
 export function ctrMeta(benefit: string): string {
   const trimmed = benefit.trim();
   const base =
     trimmed ||
-    "Free AI-powered ATS resume checker — instant results, parser preview & keyword gaps. No signup. Professional analysis.";
-  let text = ensureMetaSignals(base);
-  text = padMetaToMin(text);
+    "Upload your resume PDF free—get ATS score, parser preview, keyword gaps, and fix list. No signup.";
+  const text = base.endsWith(".") ? base : `${base}.`;
   if (text.length <= META_MAX) return text;
   return `${text.slice(0, META_MAX - 1)}…`;
 }
