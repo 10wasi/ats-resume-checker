@@ -261,6 +261,14 @@ export function HomeComparisonSection() {
             Jobscan alternative
           </Link>
           {" · "}
+          <Link href="/resumeiq-vs-jobscan" className="underline">
+            ResumeIQ vs Jobscan
+          </Link>
+          {" · "}
+          <Link href="/resumeiq-vs-rezi" className="underline">
+            vs Rezi
+          </Link>
+          {" · "}
           <Link href="/resumeworded-alternative" className="underline">
             Resume Worded alternative
           </Link>

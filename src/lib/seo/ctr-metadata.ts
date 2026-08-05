@@ -121,11 +121,13 @@ export const CTR_RESUME_PARSER: PageCtrMeta = {
 };
 
 export const CTR_RESUME_MATCH: PageCtrMeta = {
-  title: ctrTitle("Resume Match Tool", "vs Job Posting"),
-  description: ctrMeta("Paste a job description — see missing keywords and skill gaps."),
-  ogTitle: "Resume Match Analyzer — Free Match %",
-  h1: "Resume Match Tool",
-  primaryKeyword: "resume match tool",
+  title: ctrTitle("Job Description Match", "Resume vs Posting"),
+  description: ctrMeta(
+    "Upload resume, paste the job description, and get ATS compatibility score, keyword match %, missing skills, section feedback, and a prioritized fix checklist."
+  ),
+  ogTitle: "Job Description Match Analyzer — Resume vs Job Posting",
+  h1: "Job Description Match — Resume vs Job Posting Analyzer",
+  primaryKeyword: "job description match",
   richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
@@ -497,10 +499,12 @@ export const CTR_RESUME_ACHIEVEMENT_GENERATOR: PageCtrMeta = {
 };
 
 export const CTR_RESUME_EXAMPLES_LIBRARY: PageCtrMeta = {
-  title: ctrTitle("Resume Examples", "9 ATS Samples"),
-  description: ctrMeta("Software engineer, data analyst, PM, marketing, HR, and more role samples."),
+  title: ctrTitle("Resume Examples", "10+ ATS Samples"),
+  description: ctrMeta(
+    "Software engineer, nurse, teacher, sales, marketing, HR, and more ATS-friendly resume examples with tips, keywords, and mistakes to avoid."
+  ),
   ogTitle: "Resume Examples Library — ATS Samples by Role",
-  h1: "Resume Examples",
+  h1: "Resume Examples by Role",
   primaryKeyword: "resume examples",
   richSnippets: ["ItemList", "FAQPage", "BreadcrumbList", "Organization"],
 };

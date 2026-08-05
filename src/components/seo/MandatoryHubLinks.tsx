@@ -1,15 +1,15 @@
 import Link from "next/link";
-import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
+import { RESUME_CHECKER_PATH, RESUME_EXAMPLES_PATH, RESUME_MATCH_ANALYZER_PATH } from "@/lib/site-nav";
 
 const HUB_LINKS = [
   { href: RESUME_CHECKER_PATH, label: "Resume Checker" },
-  { href: "/resume-review", label: "Resume Review" },
+  { href: RESUME_MATCH_ANALYZER_PATH, label: "Job Description Match" },
+  { href: RESUME_EXAMPLES_PATH, label: "Resume Examples" },
+  { href: "/resume-resources", label: "Tool Comparisons" },
   { href: "/career-success-hub", label: "Career Success Hub" },
   { href: "/complete-guide-ats-resume-optimization", label: "ATS Guide" },
-  { href: "/ats-score-checker", label: "Resume Score" },
+  { href: "/ats-score-checker", label: "ATS Score" },
   { href: "/resume-keywords", label: "Resume Keywords" },
-  { href: "/interview-question-generator", label: "Interview Guide" },
-  { href: "/ats-resume-templates", label: "Resume Templates" },
   { href: "/blog", label: "Career Blog" },
 ] as const;
 

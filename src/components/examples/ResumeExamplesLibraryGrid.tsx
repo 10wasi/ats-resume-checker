@@ -13,7 +13,7 @@ export function ResumeExamplesLibraryGrid() {
           id="resume-examples-grid-heading"
           className="mt-2 font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl"
         >
-          Eight ATS-friendly resume examples
+          10+ ATS-friendly resume examples
         </h2>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600 sm:text-base">
           Each sample includes a full example, why it works, ATS tips, and

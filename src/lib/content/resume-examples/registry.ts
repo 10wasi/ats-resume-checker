@@ -4,23 +4,30 @@ import { dataAnalystExample } from "./data-analyst";
 import { graphicDesignerExample } from "./graphic-designer";
 import { hrManagerExample } from "./hr-manager";
 import { marketingManagerExample } from "./marketing-manager";
+import { nurseExample } from "./nurse";
 import { productManagerExample } from "./product-manager";
 import { projectManagerExample } from "./project-manager";
+import { salesExecutiveExample } from "./sales-executive";
 import { softwareEngineerExample } from "./software-engineer";
+import { teacherExample } from "./teacher";
 import type { ResumeExampleEntry } from "./types";
 
 export const RESUME_EXAMPLES_LIBRARY_PATH = "/resume-examples" as const;
 
+/** Featured 10 roles (Week 2 Sprint 1) — additional examples appended. */
 export const RESUME_EXAMPLES: ResumeExampleEntry[] = [
   softwareEngineerExample,
-  dataAnalystExample,
-  projectManagerExample,
-  productManagerExample,
   marketingManagerExample,
-  customerServiceExample,
   accountantExample,
-  graphicDesignerExample,
   hrManagerExample,
+  teacherExample,
+  nurseExample,
+  customerServiceExample,
+  salesExecutiveExample,
+  projectManagerExample,
+  graphicDesignerExample,
+  dataAnalystExample,
+  productManagerExample,
 ];
 
 export function getResumeExampleBySlug(

@@ -3,6 +3,9 @@ import { BlogContent, BlogResumeCta } from "@/components/blog/BlogExtras";
 import { ResumeExamplesLibraryGrid } from "@/components/examples/ResumeExamplesLibraryGrid";
 import { AdPlaceholder } from "@/components/monetization/AdPlaceholder";
 import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
+import { MandatoryHubLinks } from "@/components/seo/MandatoryHubLinks";
+import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
+import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
 import { RelatedResources } from "@/components/seo/RelatedResources";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
@@ -76,9 +79,8 @@ export default function ResumeExamplesLibraryPage() {
             <p className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
               Role-specific{" "}
               <strong className="font-semibold text-slate-800">resume examples</strong>{" "}
-              built for ATS parsing—software
-              engineer, data analyst, project manager, and five more. Study the
-              structure, adapt your proof, then test in our{" "}
+              for software engineer, nurse, teacher, sales, marketing, HR, and more—each with
+              ATS tips, keywords, and mistakes to avoid. Test your export in the{" "}
               <Link
                 href={RESUME_CHECKER_PATH}
                 className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/40 underline-offset-4 hover:text-[#16a34a]"
@@ -94,6 +96,8 @@ export default function ResumeExamplesLibraryPage() {
               </Link>
               .
             </p>
+            <GuideArticleMeta path={RESUME_EXAMPLES_LIBRARY_PATH} />
+            <ContentFreshnessLabel path={RESUME_EXAMPLES_LIBRARY_PATH} className="mt-3" />
           </header>
 
           <div className="mt-10">
@@ -130,6 +134,7 @@ export default function ResumeExamplesLibraryPage() {
             </div>
           </section>
 
+          <MandatoryHubLinks className="mt-12" />
           <RelatedResources path={RESUME_EXAMPLES_LIBRARY_PATH} excludeHref={RESUME_EXAMPLES_LIBRARY_PATH} />
 
           <BlogResumeCta />

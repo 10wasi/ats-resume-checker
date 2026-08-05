@@ -1,5 +1,5 @@
 export const resumeExamplesLibraryIndexBody = `
-The **Resume Examples Library** is built for long-tail searches—"software engineer resume example," "data analyst resume ATS," "project manager resume format"—and for job seekers who need a starting point that actually parses.
+The **Resume Examples Library** includes **10+ role-focused samples**—software engineer, nurse, teacher, sales executive, marketing, HR, and more—for long-tail searches like "software engineer resume example" or "nurse resume ATS."
 
 Every sample below is **ATS-friendly**: single column, standard headings, plain-text contact info, and role keywords in experience bullets—not skill icon graphics.
 

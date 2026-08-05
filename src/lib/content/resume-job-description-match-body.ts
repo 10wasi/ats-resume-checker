@@ -9,9 +9,9 @@
 export const RESUME_JD_MATCH_PATH = "/resume-job-description-match" as const;
 
 export const resumeJdMatchSeo = {
-  title: "Resume Match Score — Free Job Description Tool",
+  title: "Job Description Match Analyzer — Resume vs Posting",
   description:
-    "Get your resume match score vs any job post. See missing ATS keywords, skill gaps, and resume optimization fixes—free, before you apply.",
+    "Upload resume, paste job description, get ATS compatibility score, keyword match %, missing skills, section feedback, and improvement checklist—free before you apply.",
 } as const;
 
 export const resumeJdMatchImageAlts = [

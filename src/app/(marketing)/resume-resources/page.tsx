@@ -3,6 +3,7 @@ import { buildCtrMetadata, CTR_HOME } from "@/lib/seo/ctr-metadata";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 import { TOPIC_CLUSTER_ARCHITECTURE } from "@/lib/seo/topic-cluster-architecture";
 import { COMPARISON_PAGES } from "@/lib/content/sprint3/comparisons";
+import { VS_COMPARISON_PAGES } from "@/lib/content/sprint3/vs-comparisons";
 import { COUNTRY_PAGES } from "@/lib/content/sprint3/countries";
 
 export const metadata = buildCtrMetadata(
@@ -118,9 +119,16 @@ export default function ResumeResourcesPage() {
           Tool comparisons (unbiased)
         </h2>
         <ul className="mt-4 grid gap-2 sm:grid-cols-2">
-          {COMPARISON_PAGES.map((p) => (
+          {VS_COMPARISON_PAGES.map((p) => (
             <li key={p.path}>
               <Link href={p.path} className="font-semibold text-[#16a34a] underline">
+                {p.breadcrumbLabel}
+              </Link>
+            </li>
+          ))}
+          {COMPARISON_PAGES.map((p) => (
+            <li key={p.path}>
+              <Link href={p.path} className="font-semibold text-slate-800 underline">
                 {p.breadcrumbLabel}
               </Link>
             </li>

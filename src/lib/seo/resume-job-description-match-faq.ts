@@ -43,9 +43,9 @@ export const resumeJdMatchFaqItems: FaqItem[] = [
       "Yes. ATS parsing principles are similar worldwide. Keep wording and spelling consistent with your target employer's market and role.",
   },
   {
-    question: "What should I fix first: formatting or keywords?",
+    question: "What is section-by-section feedback in the match report?",
     answer:
-      "Fix formatting first. If extraction order is broken, keyword improvements have limited impact.",
+      "After analysis, you receive targeted notes for your summary, experience bullets, and skills section—plus missing parser sections if headings are non-standard. Edit one section, re-export PDF, and re-analyze.",
   },
 ];
 

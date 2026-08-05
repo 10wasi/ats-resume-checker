@@ -10,7 +10,8 @@ import { RelatedResources } from "@/components/seo/RelatedResources";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
-import { GuideEeatSection } from "@/components/seo/GuideEeatSection";
+import { GuideAuthorBlock } from "@/components/seo/GuideAuthorBlock";
+import { MandatoryHubLinks } from "@/components/seo/MandatoryHubLinks";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
 import type { ResumeExampleEntry } from "@/lib/content/resume-examples/types";
 import { RESUME_EXAMPLES_LIBRARY_PATH } from "@/lib/content/resume-examples/registry";
@@ -131,6 +132,12 @@ export function ResumeExamplePage({
           </section>
 
           <RelatedResources path={example.path} excludeHref={example.path} />
+
+          <MandatoryHubLinks className="mt-10" />
+
+          <div className="not-prose mt-8">
+            <GuideAuthorBlock path={example.path} />
+          </div>
 
           <ProfessionRelatedCareers
             currentSlug={example.slug}

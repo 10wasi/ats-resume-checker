@@ -5,10 +5,12 @@ import { useMemo, useState } from "react";
 import type { AtsAnalysisResult } from "@/lib/ats/types";
 import { buildJobMatchReport } from "@/lib/ats/build-job-match-report";
 import { buildAnalysisExportText, downloadTextFile } from "@/lib/ats/export-analysis";
-import { AnalysisPlatformNextSteps } from "@/components/tools/AnalysisPlatformNextSteps";
+import { JobMatchSectionFeedback } from "@/components/resume/JobMatchSectionFeedback";
+import { JobMatchImprovementChecklist } from "@/components/resume/JobMatchImprovementChecklist";
 import { AtsPassLikelihoodCard } from "@/components/resume/AtsPassLikelihoodCard";
 import { AtsReadinessReport } from "@/components/resume/AtsReadinessReport";
 import { AnalysisRetentionPanel } from "@/components/resume/AnalysisRetentionPanel";
+import { AnalysisPlatformNextSteps } from "@/components/tools/AnalysisPlatformNextSteps";
 import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 
 type Props = {
@@ -256,6 +258,13 @@ export function ResumeJobMatchResults({
         </section>
       ) : null}
 
+      <JobMatchSectionFeedback analysis={analysis} />
+
+      <JobMatchImprovementChecklist
+        fixes={report.topPriorityFixes}
+        suggestions={analysis.suggestions}
+      />
+
       {report.formattingIssues.length > 0 ? (
         <section className="rounded-2xl border border-orange-200/80 bg-orange-50/30 p-5 sm:p-6">
           <h3 className="font-display text-lg font-semibold text-zinc-950">
@@ -321,30 +330,6 @@ export function ResumeJobMatchResults({
           </ul>
         </section>
       </div>
-
-      <section className="rounded-2xl border border-zinc-200/90 bg-white p-5 shadow-soft sm:p-6">
-        <h3 className="font-display text-lg font-semibold text-zinc-950">
-          Top 5 priority fixes
-        </h3>
-        <ol className="mt-5 space-y-3">
-          {report.topPriorityFixes.map((fix, i) => (
-            <li
-              key={i}
-              className="flex gap-4 rounded-xl border border-zinc-100 bg-zinc-50/50 p-4"
-            >
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand-600 text-sm font-bold text-white">
-                {i + 1}
-              </span>
-              <div>
-                <p className="text-sm font-semibold text-zinc-900">
-                  {fix.title}
-                </p>
-                <p className="mt-1 text-sm text-zinc-600">{fix.detail}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
-      </section>
 
       <section className="rounded-2xl border border-emerald-200/70 bg-white p-5 shadow-soft sm:p-6">
         <h3 className="font-display text-lg font-semibold text-zinc-950">
