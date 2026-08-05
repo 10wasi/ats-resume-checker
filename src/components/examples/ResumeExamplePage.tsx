@@ -144,10 +144,6 @@ export function ResumeExamplePage({
             roleTitle={example.breadcrumbLabel.replace(/ resume$/i, "")}
           />
 
-          <div className="not-prose mt-10">
-            <GuideEeatSection path={example.path} />
-          </div>
-
           <ResumeExamplesRelated currentSlug={example.slug} />
 
           <BlogResumeCta />
