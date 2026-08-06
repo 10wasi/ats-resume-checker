@@ -132,11 +132,57 @@ export const CTR_RESUME_MATCH: PageCtrMeta = {
 };
 
 export const CTR_RESUME_MATCH_SCORE: PageCtrMeta = {
-  title: ctrTitle("Resume Match Score", "What % Means"),
-  description: ctrMeta("Learn benchmarks, how match differs from ATS score, and how to improve."),
-  ogTitle: "Resume Match Score Explained — Improve Before Apply",
-  h1: "Resume Match Score Explained",
+  title: ctrTitle("Resume Match Score", "Benchmarks & Fixes"),
+  description: ctrMeta(
+    "What resume match % means vs ATS score, 60–85% benchmarks, worked example, and free job-description match workflow."
+  ),
+  ogTitle: "Resume Match Score Explained — Benchmarks Before You Apply",
+  h1: "Resume ATS Match Score Explained",
   primaryKeyword: "resume match score explained",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_ATS_RESUME_VS_JD: PageCtrMeta = {
+  title: ctrTitle("ATS Resume vs Job Description", "Two-Layer Guide"),
+  description: ctrMeta(
+    "ATS check vs job match explained—parse health, match %, worked example, and free tools before you apply."
+  ),
+  ogTitle: "ATS Resume vs Job Description — Match Workflow",
+  h1: "ATS Resume vs Job Description — Complete Guide",
+  primaryKeyword: "ATS resume vs job description",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_RESUME_KEYWORDS_EXPLAINED: PageCtrMeta = {
+  title: ctrTitle("Resume Keywords Explained", "Types & Placement"),
+  description: ctrMeta(
+    "Resume keywords for ATS—hard skills, tools, titles, certs, before/after examples, and match workflow."
+  ),
+  ogTitle: "Resume Keywords Explained — ATS Search Terms",
+  h1: "Resume Keywords Explained",
+  primaryKeyword: "resume keywords explained",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_HOW_RECRUITERS_MATCH: PageCtrMeta = {
+  title: ctrTitle("How Recruiters Match Resumes", "ATS + Skim"),
+  description: ctrMeta(
+    "How recruiters search ATS, rank candidates, and skim page one—with examples and job match checklist."
+  ),
+  ogTitle: "How Recruiters Match Resumes to Job Descriptions",
+  h1: "How Recruiters Match Resumes to Job Descriptions",
+  primaryKeyword: "how recruiters match resumes",
+  richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
+};
+
+export const CTR_WHY_ATS_REJECTS_GOOD: PageCtrMeta = {
+  title: ctrTitle("Why ATS Rejects Good Resumes", "Visibility Fixes"),
+  description: ctrMeta(
+    "Qualified but filtered out? Parse failure, hard filters, keyword gaps—diagnose with free match tools."
+  ),
+  ogTitle: "Why ATS Rejects Good Resumes — Fix Visibility",
+  h1: "Why ATS Rejects Good Resumes (When You're Qualified)",
+  primaryKeyword: "why ATS rejects good resumes",
   richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
@@ -356,7 +402,9 @@ export const CTR_ATS_CHECKLIST: PageCtrMeta = {
 
 export const CTR_ATS_KEYWORDS: PageCtrMeta = {
   title: ctrTitle("ATS Resume Keywords", "Where to Place"),
-  description: ctrMeta("Which terms matter, where they belong, and how to avoid keyword stuffing."),
+  description: ctrMeta(
+    "Which ATS keywords matter, where to place them in bullets, and how to avoid stuffing— with examples."
+  ),
   ogTitle: "ATS Resume Keywords Guide — Ethical Placement",
   h1: "ATS Resume Keywords",
   primaryKeyword: "ATS resume keywords",
@@ -392,7 +440,9 @@ export const CTR_RESOURCE_HUB: PageCtrMeta = {
 
 export const CTR_ATS_FORMAT: PageCtrMeta = {
   title: ctrTitle("ATS Resume Format", "What Parses"),
-  description: ctrMeta("Single-column vs two-column, PDF vs Word, and what parsers actually read."),
+  description: ctrMeta(
+    "Single-column vs two-column, PDF vs Word—what parsers read and copy-paste test steps."
+  ),
   ogTitle: "ATS Resume Format — Parser Sees This, Not Your Design",
   h1: "ATS Resume Format",
   primaryKeyword: "ATS resume format",
@@ -401,7 +451,9 @@ export const CTR_ATS_FORMAT: PageCtrMeta = {
 
 export const CTR_ATS_MISTAKES: PageCtrMeta = {
   title: ctrTitle("ATS Resume Mistakes", "10 Silent Rejects"),
-  description: ctrMeta("Two columns, keyword dumps, buried titles — before/after fixes for each."),
+  description: ctrMeta(
+    "Two columns, keyword dumps, buried titles—before/after fixes for each silent ATS reject."
+  ),
   ogTitle: "ATS Resume Mistakes — Recruiter Reality vs Candidate Myths",
   h1: "ATS Resume Mistakes",
   primaryKeyword: "ATS resume mistakes",
@@ -499,9 +551,9 @@ export const CTR_RESUME_ACHIEVEMENT_GENERATOR: PageCtrMeta = {
 };
 
 export const CTR_RESUME_EXAMPLES_LIBRARY: PageCtrMeta = {
-  title: ctrTitle("Resume Examples", "10+ ATS Samples"),
+  title: ctrTitle("Resume Examples", "20+ ATS Samples"),
   description: ctrMeta(
-    "Software engineer, nurse, teacher, sales, marketing, HR, and more ATS-friendly resume examples with tips, keywords, and mistakes to avoid."
+    "Software engineer, business analyst, nurses, engineers, warehouse, receptionist, and more ATS-friendly examples with tips and keyword lists."
   ),
   ogTitle: "Resume Examples Library — ATS Samples by Role",
   h1: "Resume Examples by Role",
@@ -547,7 +599,9 @@ export const CTR_WHY_NOT_GETTING_INTERVIEWS: PageCtrMeta = {
 
 export const CTR_WHY_RESUME_GETS_REJECTED: PageCtrMeta = {
   title: ctrTitle("Why Resume Gets Rejected", "5 Stages"),
-  description: ctrMeta("Pinpoint parse failure, keyword filters, or title mismatch — fix the right layer."),
+  description: ctrMeta(
+    "Diagnose parse failure, keyword filters, or title mismatch at each ATS stage—fix the right layer first."
+  ),
   ogTitle: "Why Resume Gets Rejected — Diagnose by Stage",
   h1: "Why Your Resume Gets Rejected",
   primaryKeyword: "why resume gets rejected",
@@ -556,7 +610,9 @@ export const CTR_WHY_RESUME_GETS_REJECTED: PageCtrMeta = {
 
 export const CTR_RESUME_NOT_PASSING_ATS: PageCtrMeta = {
   title: ctrTitle("Resume Not Passing ATS", "Diagnose & Fix"),
-  description: ctrMeta("Identify parse vs keyword failure in 5 minutes with real examples."),
+  description: ctrMeta(
+    "Resume not passing ATS? Separate parse vs keyword failure in 5 minutes with parser + match tools."
+  ),
   ogTitle: "Resume Not Passing ATS — Free Diagnosis + Fix Plan",
   h1: "Resume Not Passing ATS",
   primaryKeyword: "resume not passing ATS",
@@ -564,8 +620,10 @@ export const CTR_RESUME_NOT_PASSING_ATS: PageCtrMeta = {
 };
 
 export const CTR_RESUME_KEYWORDS_MISSING: PageCtrMeta = {
-  title: ctrTitle("Resume Keywords Missing", "Find Gaps"),
-  description: ctrMeta("Find keyword gaps vs job posts with before/after bullet examples."),
+  title: ctrTitle("Resume Keywords Missing", "Gap Finder"),
+  description: ctrMeta(
+    "Find missing resume keywords vs any job post—before/after bullets plus free job-description match."
+  ),
   ogTitle: "Resume Keywords Missing — Free Gap Finder",
   h1: "Resume Keywords Missing",
   primaryKeyword: "resume keywords missing",
@@ -574,7 +632,9 @@ export const CTR_RESUME_KEYWORDS_MISSING: PageCtrMeta = {
 
 export const CTR_HOW_TO_TAILOR_RESUME: PageCtrMeta = {
   title: ctrTitle("Tailor Resume for Job", "15-Min Method"),
-  description: ctrMeta("Extract terms, edit 3 bullets, re-check match % before you apply."),
+  description: ctrMeta(
+    "Tailor resume to job description in 15 minutes—extract terms, edit 3 bullets, re-check match % free."
+  ),
   ogTitle: "Tailor Resume to Job Description — Step-by-Step Guide",
   h1: "How to Tailor Resume for a Job Description",
   primaryKeyword: "how to tailor resume for job description",
@@ -601,7 +661,9 @@ export const CTR_RESUME_MISTAKES_INTERVIEWS: PageCtrMeta = {
 
 export const CTR_RESUME_SCREENING_EXPLAINED: PageCtrMeta = {
   title: ctrTitle("Resume Screening Explained", "6 Stages"),
-  description: ctrMeta("ATS parse, keyword rank, recruiter skim — see which stage loses you."),
+  description: ctrMeta(
+    "ATS parse → keyword rank → recruiter skim in 6 stages—see where your resume drops out."
+  ),
   ogTitle: "Resume Screening Explained — ATS to Hiring Manager",
   h1: "Resume Screening Explained",
   primaryKeyword: "resume screening explained",
@@ -619,7 +681,9 @@ export const CTR_RESUME_REJECTED_BY_ATS: PageCtrMeta = {
 
 export const CTR_COMMON_ATS_REJECTION_REASONS: PageCtrMeta = {
   title: ctrTitle("ATS Rejection Reasons", "12 Fixes"),
-  description: ctrMeta("12 silent rejection triggers — columns, keyword dumps, buried titles — each with a fix."),
+  description: ctrMeta(
+    "12 ATS rejection triggers—columns, keyword dumps, buried titles—each with a concrete fix."
+  ),
   ogTitle: "12 ATS Rejection Reasons — Fix Before You Apply",
   h1: "Common ATS Resume Rejection Reasons",
   primaryKeyword: "common ATS resume rejection reasons",

@@ -123,6 +123,10 @@ Full library: [Resume Examples](/resume-examples) · Role ATS guides: [Career Su
 
 ## Related guides
 
+- [ATS resume vs job description](/ats-resume-vs-job-description) — two-layer workflow
+- [Resume keywords explained](/resume-keywords-explained) — types and placement
+- [How recruiters match resumes](/how-recruiters-match-resumes) — search and skim
+- [Why ATS rejects good resumes](/why-ats-rejects-good-resumes) — visibility fixes
 - [ATS Resume Keywords Guide](/ats-resume-keywords) — ethical placement
 - [Resume optimization](/resume-optimization) — full platform workflow
 - [ATS Knowledge Center](/knowledge-center) — all pillar guides

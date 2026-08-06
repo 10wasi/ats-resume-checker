@@ -117,13 +117,17 @@ These are built to answer one question: what should you change before your next 
 
 This page is designed to route users to the right next step:
 
-- Formatting issues? Read [ATS resume format guide](/blog/best-ats-resume-format-2026-templates-tips)
-- Keyword gaps? Read [ATS resume keywords guide](/blog/best-ats-resume-keywords-improve-visibility-2026)
-- Need examples? Open [ATS resume examples](/ats-resume-examples)
-- Rejections despite fit? Read [ATS rejection reasons](/blog/why-resume-rejected-ats-top-reasons-fixes)
-- Need quick wins? Open [improve ATS score guide](/blog/how-to-improve-resume-score-instantly)
-
-For the full map, use the [ATS resume hub](/ats-resume-hub).
+- **Two-layer workflow:** [ATS resume vs job description](/ats-resume-vs-job-description)
+- **Keyword basics:** [Resume keywords explained](/resume-keywords-explained)
+- **Recruiter view:** [How recruiters match resumes](/how-recruiters-match-resumes)
+- **Match score bands:** [Resume match score explained](/resume-match-score)
+- **Qualified but filtered:** [Why ATS rejects good resumes](/why-ats-rejects-good-resumes)
+- Formatting issues? [ATS resume format](/ats-resume-format)
+- Keyword gaps? [ATS resume keywords](/ats-resume-keywords)
+- Need examples? [Resume examples](/resume-examples)
+- Tailoring steps: [How to tailor for job description](/how-to-tailor-resume-for-job-description)
+- Compare tools: [ResumeIQ vs Jobscan](/resumeiq-vs-jobscan) · [Resume resources](/resume-resources)
+- Full map: [Career Success Hub](/career-success-hub)
 
 ## Practical workflow you can use today
 

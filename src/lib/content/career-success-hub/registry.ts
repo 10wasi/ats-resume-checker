@@ -18,6 +18,10 @@ import { howToTailorResumeEntry } from "@/lib/content/search-intent/how-to-tailo
 import { howToImproveResumeScoreEntry } from "@/lib/content/search-intent/how-to-improve-resume-score";
 import { resumeMistakesCostInterviewsEntry } from "@/lib/content/search-intent/resume-mistakes-that-cost-interviews";
 import { resumeScreeningExplainedEntry } from "@/lib/content/search-intent/resume-screening-explained";
+import { atsResumeVsJobDescriptionEntry } from "@/lib/content/search-intent/ats-resume-vs-job-description";
+import { resumeKeywordsExplainedEntry } from "@/lib/content/search-intent/resume-keywords-explained";
+import { howRecruitersMatchResumesEntry } from "@/lib/content/search-intent/how-recruiters-match-resumes";
+import { whyAtsRejectsGoodResumesEntry } from "@/lib/content/search-intent/why-ats-rejects-good-resumes";
 import { freeResumeCheckerOnlineEntry } from "@/lib/content/search-intent/free-resume-checker-online";
 import { freeAtsScoreCheckerEntry } from "@/lib/content/search-intent/free-ats-score-checker";
 import type { CareerHubIndexItem, CareerLandingEntry } from "./types";
@@ -47,6 +51,10 @@ export const CAREER_LANDING_PAGES: CareerLandingEntry[] = [
   howToImproveResumeScoreEntry,
   resumeMistakesCostInterviewsEntry,
   resumeScreeningExplainedEntry,
+  atsResumeVsJobDescriptionEntry,
+  resumeKeywordsExplainedEntry,
+  howRecruitersMatchResumesEntry,
+  whyAtsRejectsGoodResumesEntry,
   freeResumeCheckerOnlineEntry,
   freeAtsScoreCheckerEntry,
 ];
@@ -169,6 +177,38 @@ export const CAREER_HUB_INDEX: CareerHubIndexItem[] = [
     description:
       "What match score means, good benchmarks, and how to improve keyword overlap ethically.",
     path: "/resume-match-score",
+    badge: "Guide",
+  },
+  {
+    id: "ats-resume-vs-job-description",
+    title: "ATS Resume vs Job Description",
+    description:
+      "Two-layer guide—ATS check vs job match %, worked example, and free workflow.",
+    path: "/ats-resume-vs-job-description",
+    badge: "Guide",
+  },
+  {
+    id: "resume-keywords-explained",
+    title: "Resume Keywords Explained",
+    description:
+      "Keyword types, placement, before/after examples, and match workflow.",
+    path: "/resume-keywords-explained",
+    badge: "Guide",
+  },
+  {
+    id: "how-recruiters-match-resumes",
+    title: "How Recruiters Match Resumes",
+    description:
+      "ATS search, ranking, and recruiter skim—with checklist and examples.",
+    path: "/how-recruiters-match-resumes",
+    badge: "Guide",
+  },
+  {
+    id: "why-ats-rejects-good-resumes",
+    title: "Why ATS Rejects Good Resumes",
+    description:
+      "Qualified but filtered? Parse, filters, and keyword gaps—with diagnostic steps.",
+    path: "/why-ats-rejects-good-resumes",
     badge: "Guide",
   },
   {
@@ -434,8 +474,42 @@ const CAREER_HUB_RELATED_IDS: Record<string, readonly string[]> = {
     "resume-keywords-missing",
     "resume-checker",
     "resume-match-score",
+    "ats-resume-vs-job-description",
+    "resume-keywords-explained",
     "how-to-improve-score",
     "resume-examples",
+  ],
+  "ats-resume-vs-job-description": [
+    "resume-match-analyzer",
+    "resume-match-score",
+    "resume-keywords-explained",
+    "how-recruiters-match-resumes",
+    "resume-checker",
+    "how-to-tailor-resume",
+  ],
+  "resume-keywords-explained": [
+    "resume-match-analyzer",
+    "resume-keywords-missing",
+    "ats-keywords-guide",
+    "resume-match-score",
+    "how-to-tailor-resume",
+    "resume-examples",
+  ],
+  "how-recruiters-match-resumes": [
+    "resume-screening-explained",
+    "resume-match-analyzer",
+    "why-ats-rejects-good-resumes",
+    "resume-match-score",
+    "resume-checker",
+    "how-to-tailor-resume",
+  ],
+  "why-ats-rejects-good-resumes": [
+    "why-resume-gets-rejected",
+    "common-ats-rejection-reasons",
+    "resume-match-analyzer",
+    "ats-resume-vs-job-description",
+    "resume-checker",
+    "resume-not-passing-ats",
   ],
   "how-to-improve-score": [
     "ats-score-checker",
