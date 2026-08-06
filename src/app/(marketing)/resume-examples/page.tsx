@@ -79,7 +79,7 @@ export default function ResumeExamplesLibraryPage() {
             <p className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
               Role-specific{" "}
               <strong className="font-semibold text-slate-800">resume examples</strong>{" "}
-              for software engineer, nurse, teacher, sales, marketing, HR, and more—each with
+              for software engineer, business analyst, nurse, engineer, warehouse, receptionist, and more—each with
               ATS tips, keywords, and mistakes to avoid. Test your export in the{" "}
               <Link
                 href={RESUME_CHECKER_PATH}

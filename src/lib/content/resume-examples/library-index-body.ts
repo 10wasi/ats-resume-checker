@@ -1,5 +1,5 @@
 export const resumeExamplesLibraryIndexBody = `
-The **Resume Examples Library** includes **10+ role-focused samples**—software engineer, nurse, teacher, sales executive, marketing, HR, and more—for long-tail searches like "software engineer resume example" or "nurse resume ATS."
+The **Resume Examples Library** includes **20+ role-focused samples**—software engineer, nurse, teacher, business analyst, civil/mechanical/electrical engineer, receptionist, warehouse worker, medical assistant, sales executive, marketing, HR, and more—for long-tail searches like "software engineer resume example" or "business analyst resume ATS."
 
 Every sample below is **ATS-friendly**: single column, standard headings, plain-text contact info, and role keywords in experience bullets—not skill icon graphics.
 

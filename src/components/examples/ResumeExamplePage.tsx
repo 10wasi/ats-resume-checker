@@ -10,6 +10,7 @@ import { RelatedResources } from "@/components/seo/RelatedResources";
 import { PageFaqJsonLd } from "@/components/seo/PageFaqJsonLd";
 import { ResourceGuideJsonLd } from "@/components/seo/ResourceGuideJsonLd";
 import { ContentFreshnessLabel } from "@/components/seo/ContentFreshnessLabel";
+import { GuideArticleMeta } from "@/components/seo/GuideArticleMeta";
 import { GuideAuthorBlock } from "@/components/seo/GuideAuthorBlock";
 import { MandatoryHubLinks } from "@/components/seo/MandatoryHubLinks";
 import { StickyCheckerCta } from "@/components/seo/StickyCheckerCta";
@@ -91,6 +92,7 @@ export function ResumeExamplePage({
               {intro}
             </div>
             <ContentFreshnessLabel path={example.path} className="mt-4" />
+            <GuideArticleMeta path={example.path} />
           </header>
 
           <RolePageAuthorityPanel

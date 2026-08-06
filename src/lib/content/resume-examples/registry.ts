@@ -1,15 +1,24 @@
 import { accountantExample } from "./accountant";
+import { businessAnalystExample } from "./business-analyst";
+import { cashierExample } from "./cashier";
+import { civilEngineerExample } from "./civil-engineer";
 import { customerServiceExample } from "./customer-service";
 import { dataAnalystExample } from "./data-analyst";
+import { electricalEngineerExample } from "./electrical-engineer";
 import { graphicDesignerExample } from "./graphic-designer";
 import { hrManagerExample } from "./hr-manager";
 import { marketingManagerExample } from "./marketing-manager";
+import { mechanicalEngineerExample } from "./mechanical-engineer";
+import { medicalAssistantExample } from "./medical-assistant";
 import { nurseExample } from "./nurse";
+import { officeAssistantExample } from "./office-assistant";
 import { productManagerExample } from "./product-manager";
 import { projectManagerExample } from "./project-manager";
+import { receptionistExample } from "./receptionist";
 import { salesExecutiveExample } from "./sales-executive";
 import { softwareEngineerExample } from "./software-engineer";
 import { teacherExample } from "./teacher";
+import { warehouseWorkerExample } from "./warehouse-worker";
 import type { ResumeExampleEntry } from "./types";
 
 export const RESUME_EXAMPLES_LIBRARY_PATH = "/resume-examples" as const;
@@ -28,6 +37,15 @@ export const RESUME_EXAMPLES: ResumeExampleEntry[] = [
   graphicDesignerExample,
   dataAnalystExample,
   productManagerExample,
+  businessAnalystExample,
+  civilEngineerExample,
+  mechanicalEngineerExample,
+  electricalEngineerExample,
+  receptionistExample,
+  cashierExample,
+  warehouseWorkerExample,
+  officeAssistantExample,
+  medicalAssistantExample,
 ];
 
 export function getResumeExampleBySlug(
