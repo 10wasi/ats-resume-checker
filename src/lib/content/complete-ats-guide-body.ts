@@ -9,6 +9,21 @@ export const completeAtsGuideKeyTakeaways = [
 ];
 
 export const completeAtsGuideBody = `
+## Quick answer: what is ATS resume optimization?
+
+**ATS resume optimization** means making your real experience machine-readable and searchable in applicant tracking systems—fix parse failures first, then align keywords with each job posting honestly. Upload to the [ATS Resume Checker](/resume-checker), compare overlap with [Job Description Match](/resume-job-description-match), and use the decision tree below before you mass-apply.
+
+**Workflow in four steps:**
+
+1. Baseline parse health and ATS score on your master PDF
+2. Fix layout (single column, standard headings) if extraction fails
+3. Match each target posting; edit headline and top bullets
+4. Re-scan the exact export and complete the [ATS checklist](/ats-resume-checklist-2026)
+
+For rejection diagnosis at scale, start with [why resumes get rejected by ATS](/blog/why-resume-rejected-ats-top-reasons-fixes)—then return here for the full system.
+
+---
+
 This is **the ultimate ATS resume optimization guide** on ResumeIQ—the master authority page for applicant tracking systems, resume parsing, resume screening, keyword optimization, and interview readiness. Use it when you need one comprehensive reference instead of scattered blog posts.
 
 [Run the free ATS resume checker →](/resume-checker)

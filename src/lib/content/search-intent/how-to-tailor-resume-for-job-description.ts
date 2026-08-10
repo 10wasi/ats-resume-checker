@@ -34,6 +34,20 @@ export const howToTailorResumeEntry: CareerLandingEntry = {
     },
   ],
   body: `
+## Quick answer: how to tailor a resume for a job description
+
+Tailoring means mapping **real experience** to the posting's must-have terms—not copying the job ad. In about 15 minutes: highlight repeated skills in the JD, run a baseline match score, edit your headline and top three bullets, then re-match before export.
+
+**5 steps:**
+
+1. Highlight must-have terms in the posting (5 min)
+2. Baseline match with [Resume Match Analyzer](/resume-job-description-match) (2 min)
+3. Edit headline, top 3 bullets, and summary (10 min)
+4. Re-match and verify (3 min)
+5. Export the PDF you tested
+
+---
+
 **How to tailor resume for job description** without rewriting your career every night: use the posting as a **checklist**, not a script.
 
 ## Tailoring workflow (per application)

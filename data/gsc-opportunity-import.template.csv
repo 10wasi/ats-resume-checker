@@ -1,0 +1,6 @@
+query,page,clicks,impressions,ctr,position,country
+# ResumeIQ GSC manual import — paste Search Console rows below this header.
+# Export from GSC: Performance → Search results → Export (Queries or Pages tab).
+# Columns: query | page (full URL) | clicks | impressions | CTR (decimal or %) | position | country (optional)
+# Do NOT commit real data if it contains sensitive business metrics you prefer to keep local.
+# Run: node scripts/classify-gsc-opportunities.mjs data/gsc-opportunity-import.csv

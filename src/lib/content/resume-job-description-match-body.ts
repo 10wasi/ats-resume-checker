@@ -23,6 +23,19 @@ export const resumeJdMatchImageAlts = [
 ] as const;
 
 export const resumeJdMatchBody = `
+## What is resume job description match?
+
+**Resume job description match** is the percentage of must-have terms from a posting found on your resume. Upload your file, paste the full job description, and compare overlap before you apply—the same signal many ATS filters use before a recruiter opens your profile.
+
+**How to run a match check (4 steps):**
+
+1. Upload resume (PDF or DOCX)
+2. Paste the full job description
+3. Read match % and the missing-keywords list
+4. Tailor bullets, then re-match the same PDF you plan to submit
+
+---
+
 If you have ever looked at a job description and thought, “I can do this,” then heard nothing after applying, you are not imagining the gap. A lot of qualified candidates lose visibility before a recruiter ever sees their best work.
 
 The issue is often translation. Your resume may describe the same work differently than the posting language, or your file structure may hide the proof in places ATS software does not parse cleanly.

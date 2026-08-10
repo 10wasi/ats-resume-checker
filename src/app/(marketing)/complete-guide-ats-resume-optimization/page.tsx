@@ -83,10 +83,23 @@ export default function CompleteAtsGuidePage() {
               {CTR_COMPLETE_ATS_GUIDE.h1}
             </h1>
             <p className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
-              The definitive guide to <strong className="font-semibold text-slate-800">applicant tracking systems</strong>,{" "}
-              <strong className="font-semibold text-slate-800">resume parsing</strong>,{" "}
-              <strong className="font-semibold text-slate-800">keyword optimization</strong>, and{" "}
-              <strong className="font-semibold text-slate-800">resume screening</strong>—with workflows, examples, and free tools.
+              A complete <strong className="font-semibold text-slate-800">ATS resume optimization</strong> workflow
+              fixes parse failures first, then keyword alignment with each job posting—not keyword stuffing. Start with
+              the{" "}
+              <Link
+                href={RESUME_CHECKER_PATH}
+                className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"
+              >
+                ATS Resume Checker
+              </Link>
+              , compare overlap via{" "}
+              <Link
+                href="/resume-job-description-match"
+                className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"
+              >
+                Job Description Match
+              </Link>
+              , then use this guide&apos;s decision tree, examples, and free tools below.
             </p>
           </header>
 

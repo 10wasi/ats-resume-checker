@@ -83,8 +83,29 @@ export default function CareerSuccessHubPage() {
                 className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"
               >
                 ATS Resume Checker
+              </Link>
+              , compare overlap with{" "}
+              <Link
+                href="/resume-job-description-match"
+                className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"
+              >
+                resume vs job posting match
+              </Link>
+              , then follow{" "}
+              <Link
+                href="/how-to-tailor-resume-for-job-description"
+                className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"
+              >
+                how to tailor for a job description
               </Link>{" "}
-              or pick a resource below. Also see{" "}
+              or{" "}
+              <Link
+                href="/resume-match-score"
+                className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"
+              >
+                resume match score benchmarks
+              </Link>
+              . Also see{" "}
               <Link
                 href="/resume-review"
                 className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"

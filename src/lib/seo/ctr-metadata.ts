@@ -14,11 +14,11 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: ctrTitle("Free ATS Resume Checker", "Instant Score & Scan"),
+  title: ctrTitle("ATS Resume Checker", "Score Before You Apply"),
   description: ctrMeta(
-    "Upload your resume PDF free—get ATS score, parser preview, keyword gaps, and a prioritized fix list in 60 seconds. No signup."
+    "See what hiring software extracts from your PDF—ATS score, parser preview, keyword gaps, and ranked fixes in one upload."
   ),
-  ogTitle: "Free ATS Resume Checker — Instant AI Scan & Score",
+  ogTitle: "ATS Resume Checker — Parser Preview & Keyword Gaps",
   h1: "Free ATS Resume Checker — See Your Score Before You Apply",
   primaryKeyword: "free ATS resume checker",
   richSnippets: ["FAQPage", "SoftwareApplication", "WebSite", "Organization", "BreadcrumbList"],
@@ -121,22 +121,22 @@ export const CTR_RESUME_PARSER: PageCtrMeta = {
 };
 
 export const CTR_RESUME_MATCH: PageCtrMeta = {
-  title: ctrTitle("Job Description Match", "Resume vs Posting"),
+  title: ctrTitle("Resume vs Job Posting", "Match % & Gaps"),
   description: ctrMeta(
-    "Upload resume, paste the job description, and get ATS compatibility score, keyword match %, missing skills, section feedback, and a prioritized fix checklist."
+    "Paste a job description, upload your resume, and see match %, missing keywords, skill gaps, and section fixes before you apply."
   ),
-  ogTitle: "Job Description Match Analyzer — Resume vs Job Posting",
+  ogTitle: "Resume vs Job Posting — Match Score & Keyword Gaps",
   h1: "Job Description Match — Resume vs Job Posting Analyzer",
   primaryKeyword: "job description match",
   richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
 
 export const CTR_RESUME_MATCH_SCORE: PageCtrMeta = {
-  title: ctrTitle("Resume Match Score", "Benchmarks & Fixes"),
+  title: ctrTitle("Resume Match Score", "What % Is Good?"),
   description: ctrMeta(
-    "What resume match % means vs ATS score, 60–85% benchmarks, worked example, and free job-description match workflow."
+    "Resume match score measures keyword overlap with one job posting—not overall ATS health. See 60–85% benchmarks and a 5-step fix workflow."
   ),
-  ogTitle: "Resume Match Score Explained — Benchmarks Before You Apply",
+  ogTitle: "Resume Match Score — Benchmarks vs One Job Posting",
   h1: "Resume ATS Match Score Explained",
   primaryKeyword: "resume match score explained",
   richSnippets: ["Article", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
@@ -633,7 +633,7 @@ export const CTR_RESUME_KEYWORDS_MISSING: PageCtrMeta = {
 export const CTR_HOW_TO_TAILOR_RESUME: PageCtrMeta = {
   title: ctrTitle("Tailor Resume for Job", "15-Min Method"),
   description: ctrMeta(
-    "Tailor resume to job description in 15 minutes—extract terms, edit 3 bullets, re-check match % free."
+    "Step-by-step: extract posting terms, edit headline plus 3 bullets, verify match %—honest tailoring without keyword stuffing."
   ),
   ogTitle: "Tailor Resume to Job Description — Step-by-Step Guide",
   h1: "How to Tailor Resume for a Job Description",
@@ -691,9 +691,11 @@ export const CTR_COMMON_ATS_REJECTION_REASONS: PageCtrMeta = {
 };
 
 export const CTR_COMPLETE_ATS_GUIDE: PageCtrMeta = {
-  title: ctrTitle("ATS Resume Optimization", "12-Step Guide"),
-  description: ctrMeta("Fix parsing, keywords, and bullets — real before/after examples included."),
-  ogTitle: "ATS Resume Optimization — 12-Step Guide With Examples",
+  title: ctrTitle("ATS Resume Optimization", "Examples + Workflow"),
+  description: ctrMeta(
+    "Complete ATS optimization guide: parsing, keywords, match score, and recruiter skim—with before/after examples and a free checker workflow."
+  ),
+  ogTitle: "ATS Resume Optimization Guide — Examples & Decision Tree",
   h1: "ATS Resume Optimization Guide",
   primaryKeyword: "ATS resume optimization guide",
   richSnippets: ["Article", "FAQPage", "HowTo", "ItemList", "BreadcrumbList", "Organization"],

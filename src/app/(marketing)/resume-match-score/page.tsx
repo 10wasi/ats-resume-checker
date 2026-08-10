@@ -30,23 +30,23 @@ export default function ResumeMatchScorePage() {
       h1={CTR_RESUME_MATCH_SCORE.h1}
       intro={
         <>
-          Learn what <strong className="font-semibold text-slate-800">resume match score</strong>{" "}
-          measures, how it differs from ATS score, and the free workflow to improve keyword overlap
-          before you apply—starting with the{" "}
+          A <strong className="font-semibold text-slate-800">resume match score</strong> is the
+          percentage of must-have terms from one job posting found on your resume—it differs from
+          overall ATS score, which checks parse health and structure. Use the{" "}
           <Link
             href="/resume-job-description-match"
             className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"
           >
             Resume Match Analyzer
           </Link>{" "}
-          and{" "}
+          for posting-specific overlap, then the{" "}
           <Link
             href={RESUME_CHECKER_PATH}
             className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"
           >
             ATS Resume Checker
-          </Link>
-          .
+          </Link>{" "}
+          for format and parser QA on the PDF you export.
         </>
       }
       body={resumeMatchScoreBody}

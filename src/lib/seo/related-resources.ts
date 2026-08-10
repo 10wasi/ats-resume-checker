@@ -653,6 +653,8 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
   "/": [
     "checker",
     "match",
+    "matchScoreGuide",
+    "tailorResume",
     "examples",
     "resumeiqVsJobscan",
     "careerHub",
@@ -874,6 +876,7 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
   "/resume-match-score": [
     "match",
     "checker",
+    "tailorResume",
     "atsScoreGuide",
     "keywordsFinder",
     "keywordsGuide",
@@ -1118,11 +1121,15 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
   ],
   "/complete-guide-ats-resume-optimization": [
     "checker",
+    "match",
+    "matchScoreGuide",
+    "checklist",
     "rejectedByAts",
     "commonRejectionReasons",
     "scoreChecker",
     "resumeReview",
     "aiResumeReview",
+    "tailorResume",
   ],
   "/resume-not-passing-ats": [
     "rejectedByAts",
@@ -1215,6 +1222,7 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
 
 const BLOG_POST_KEYS = [
   "checker",
+  "match",
   "whyNoInterviews",
   "whyRejected",
   "keywordsGuide",
@@ -1230,6 +1238,8 @@ const BLOG_REJECTION_KEYS = [
   "commonRejectionReasons",
   "notPassingAts",
   "checker",
+  "match",
+  "checklist",
   "screeningExplained",
   "whyRejected",
   "improveScore",
