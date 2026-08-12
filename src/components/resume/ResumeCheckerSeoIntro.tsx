@@ -4,10 +4,10 @@ import { RESUME_CHECKER_PATH } from "@/lib/site-nav";
 import { CTR_RESUME_CHECKER } from "@/lib/seo/ctr-metadata";
 
 const CHECKER_GUIDE_LINKS = [
+  { href: "/ats-resume-checklist-2026", label: "ATS checklist — pre-submit QA" },
   { href: "/free-resume-checker-online", label: "Free resume checker online" },
-  { href: "/ats-score-checker", label: "Resume score checker guide" },
-  { href: "/ats-score-checker", label: "Free ATS score checker" },
-  { href: "/ats-resume-checker", label: "ATS resume checker free online" },
+  { href: "/ats-score-checker", label: "ATS score checker guide" },
+  { href: "/ats-resume-checker", label: "How ATS resume checker works" },
   { href: "/resume-rejected-by-ats", label: "Resume rejected by ATS" },
   { href: "/resume-job-description-match", label: "Resume match tool" },
   { href: "/resume-keywords", label: "Resume keywords database" },
@@ -51,11 +51,19 @@ export function ResumeCheckerSeoIntro() {
         {CTR_RESUME_CHECKER.h1}
       </h1>
       <p className="mt-4 max-w-3xl text-pretty text-base leading-relaxed text-slate-600 sm:text-lg">
-        The <strong className="font-semibold text-slate-800">free resume checker</strong> job
-        seekers use before every apply—upload PDF, get your{" "}
-        <strong className="font-semibold text-slate-800">resume score</strong>, missing keywords,
-        and format fixes. Paste a job post for sharper{" "}
-        <strong className="font-semibold text-slate-800">resume optimization</strong>.
+        A <strong className="font-semibold text-slate-800">resume checker</strong> shows how
+        applicant tracking systems read your file—parse quality,{" "}
+        <strong className="font-semibold text-slate-800">ATS score</strong>, keyword coverage, and
+        format flags. Upload PDF or DOCX, review extracted text, then fix gaps before you apply.
+        Paste a job post for{" "}
+        <strong className="font-semibold text-slate-800">keyword match</strong> analysis. Run the{" "}
+        <Link
+          href="/ats-resume-checklist-2026"
+          className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"
+        >
+          ATS checklist
+        </Link>{" "}
+        on the export you plan to submit.
       </p>
 
       <h2 className="mt-10 text-lg font-semibold tracking-tight text-slate-900 sm:text-xl">

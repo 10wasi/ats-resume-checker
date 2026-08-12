@@ -2,6 +2,14 @@
 
 /** Long-form SEO body for /resume-checker (~1300 words). */
 export const RESUME_CHECKER_MONEY_BODY = `
+## Quick answer: what does a resume checker evaluate?
+
+A **resume checker** (also called an **ATS resume checker**) tests four layers hiring software uses before a recruiter opens your file: **parse quality** (can text be extracted in order?), **ATS score** (structure and baseline keyword proof), **keyword match** (overlap with a specific job posting when you paste a JD), and **format flags** (columns, tables, or graphics that break parsers). Upload the same PDF you plan to submit—not a draft in another format.
+
+After manual checks, use the [ATS checklist](/ats-resume-checklist-2026) for pre-submit QA, then re-run this tool until format flags clear.
+
+---
+
 A **resume checker** is the fastest way to see what hiring software reads before you click Apply. ResumeIQ is a free **resume checker online** that scores parse health, keyword coverage, and format risksâ€”then shows exactly what to fix so your next application has a fair shot at a human review.
 
 [Run the free resume checker →](${RESUME_CHECKER_PATH})

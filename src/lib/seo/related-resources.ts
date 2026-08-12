@@ -700,6 +700,7 @@ const PATH_RELATED_KEYS: Record<string, readonly string[]> = {
     "examples",
   ],
   [RESUME_CHECKER_PATH]: [
+    "checklist",
     "scoreChecker",
     "resumeKeywordsDb",
     "summaryGenerator",

@@ -29,6 +29,12 @@ export const atsResumeChecklistImageAlts = [
 
 /** Markdown-ish body for BlogContent. FAQ lives in ats-resume-checklist-faq.ts */
 export const atsResumeChecklistBody = `
+## Quick answer: what is an ATS checklist?
+
+An **ATS checklist** is a pre-submit pass for parse health, standard section headings, honest keyword proof, and export QA—run it before uploading to any job portal. Tick each item below, then validate the same PDF with the [resume checker](/resume-checker). For posting-specific gaps, follow with [Job Description Match](/resume-job-description-match).
+
+---
+
 You have read the articles. You have tweaked the font. You still hit submit and hear nothing.
 
 That quiet stretch after applying is brutal—not because you are unhireable, but because modern hiring runs on software that reads your resume before a recruiter does. If your file is hard to parse, or your strongest proof never lands in searchable text, you can disappear in the database while someone with a cleaner **ATS compatible resume** gets the call.

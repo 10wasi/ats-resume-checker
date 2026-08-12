@@ -25,9 +25,21 @@ export function HeroSection() {
           <p className="mx-auto mt-2 text-pretty text-base text-slate-600">
             Upload your resume and see what hiring software reads—{" "}
             <strong className="font-semibold text-slate-800">ATS score</strong>, parser preview, and
-            missing keywords in under a minute. Free{" "}
-            <strong className="font-semibold text-slate-800">AI resume checker</strong>—no signup,
-            instant results, fix before you apply.
+            missing keywords in under a minute. Open the{" "}
+            <Link
+              href={RESUME_CHECKER_PATH}
+              className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"
+            >
+              free resume checker
+            </Link>
+            , match any posting, or run the{" "}
+            <Link
+              href="/ats-resume-checklist-2026"
+              className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"
+            >
+              ATS checklist
+            </Link>{" "}
+            before you apply.
           </p>
 
           <HomeHeroPasteForm />

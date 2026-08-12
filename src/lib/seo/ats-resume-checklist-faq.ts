@@ -3,6 +3,11 @@ import type { FaqItem } from "./faq";
 /** FAQ for /ats-resume-checklist-2026 — rendered on-page and in FAQPage JSON-LD. */
 export const atsResumeChecklistFaqItems: FaqItem[] = [
   {
+    question: "What is an ATS checklist?",
+    answer:
+      "An ATS checklist is a pre-submit QA list for parse health, standard headings, keyword proof in bullets, and export hygiene. Use it before every application batch, then confirm results with the free resume checker on the file you upload.",
+  },
+  {
     question: "What is an ATS resume checklist?",
     answer:
       "An ATS resume checklist is a step-by-step list that helps you verify your resume is readable by applicant tracking systems before you apply. It covers formatting, structure, keywords, file hygiene, and common mistakes—so you can improve ATS score signals without guessing.",

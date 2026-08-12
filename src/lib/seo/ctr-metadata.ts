@@ -14,23 +14,23 @@ export type PageCtrMeta = {
 };
 
 export const CTR_HOME: PageCtrMeta = {
-  title: ctrTitle("ATS Resume Checker", "Score Before You Apply"),
+  title: ctrTitle("Resume Checker", "Free ATS Score Scan"),
   description: ctrMeta(
-    "See what hiring software extracts from your PDF—ATS score, parser preview, keyword gaps, and ranked fixes in one upload."
+    "Free resume checker—upload PDF, see parser output, ATS score, keyword gaps, and ranked fixes. Match any job posting in the same tool."
   ),
-  ogTitle: "ATS Resume Checker — Parser Preview & Keyword Gaps",
+  ogTitle: "Resume Checker — ATS Score, Parser & Keyword Gaps",
   h1: "Free ATS Resume Checker — See Your Score Before You Apply",
   primaryKeyword: "free ATS resume checker",
   richSnippets: ["FAQPage", "SoftwareApplication", "WebSite", "Organization", "BreadcrumbList"],
 };
 
 export const CTR_RESUME_CHECKER: PageCtrMeta = {
-  title: ctrTitle("ATS Resume Checker", "Upload PDF Free"),
+  title: ctrTitle("Resume Checker", "ATS Score & Parser"),
   description: ctrMeta(
-    "Interactive ATS resume checker—upload PDF or DOCX, view extracted text, compatibility score, keyword gaps, and section-level fixes."
+    "Upload PDF or paste text—see ATS score, parser output, keyword gaps, and format flags. Free resume checker workflow before every application."
   ),
-  ogTitle: "ATS Resume Checker — Upload & Score Free",
-  h1: "ATS Resume Checker — Upload & Score Your Resume",
+  ogTitle: "Resume Checker — ATS Score, Parser & Keyword Gaps",
+  h1: "Resume Checker — ATS Score, Parser & Keyword Match",
   primaryKeyword: "ATS resume checker",
   richSnippets: ["SoftwareApplication", "FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };
@@ -392,10 +392,12 @@ export const CTR_ATS_EXAMPLES: PageCtrMeta = {
 };
 
 export const CTR_ATS_CHECKLIST: PageCtrMeta = {
-  title: ctrTitle("ATS Resume Checklist", "Pre-Submit QA"),
-  description: ctrMeta("Format, keywords, contact block, and export QA — tick every item before you apply."),
-  ogTitle: "ATS Resume Checklist — Pre-Submit QA",
-  h1: "ATS Resume Checklist",
+  title: ctrTitle("ATS Checklist", "Pre-Submit 2026"),
+  description: ctrMeta(
+    "ATS checklist for pre-submit QA: format, headings, keywords, and export checks—then run the free resume checker on the file you upload."
+  ),
+  ogTitle: "ATS Checklist — Pre-Submit Resume QA (2026)",
+  h1: "ATS Checklist — Pre-Submit Resume QA",
   primaryKeyword: "ATS resume checklist",
   richSnippets: ["FAQPage", "HowTo", "BreadcrumbList", "Organization"],
 };

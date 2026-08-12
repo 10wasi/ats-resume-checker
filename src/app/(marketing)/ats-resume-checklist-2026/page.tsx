@@ -102,38 +102,21 @@ export default function AtsResumeChecklistPage() {
             </h1>
             <p className="mt-6 text-pretty text-lg leading-relaxed text-slate-600">
               A practical, print-friendly{" "}
-              <strong className="font-semibold text-slate-800">
-                ATS Resume Checklist
-              </strong>{" "}
-              for job seekers worldwide—covering{" "}
-              <strong className="font-semibold text-slate-800">
-                ATS resume format
-              </strong>
-              ,{" "}
-              <strong className="font-semibold text-slate-800">
-                ATS keywords
-              </strong>
-              , structure, and the{" "}
-              <strong className="font-semibold text-slate-800">
-                ATS resume mistakes
-              </strong>{" "}
-              that quietly kill callbacks. When you are ready to{" "}
-              <strong className="font-semibold text-slate-800">
-                check your ATS score
-              </strong>
-              , use our{" "}
+              <strong className="font-semibold text-slate-800">ATS checklist</strong> for job
+              seekers—covering format, keywords, structure, and common mistakes before you upload.
+              When you finish ticking items, run the same export through our{" "}
               <Link
                 href={RESUME_CHECKER_PATH}
                 className="font-semibold text-[#4ade80] underline decoration-[#4ade80]/40 underline-offset-4 hover:text-[#16a34a]"
               >
-                ATS Resume Checker
-              </Link>
-              . Want the long-form story first? See the{" "}
+                resume checker
+              </Link>{" "}
+              for parser output and ATS score. Tailoring for one posting? Use{" "}
               <Link
-                href="/ultimate-ats-resume-guide"
-                className="font-semibold text-slate-800 underline decoration-slate-300 underline-offset-2 hover:text-slate-950"
+                href="/resume-job-description-match"
+                className="font-semibold text-[#16a34a] underline decoration-emerald-300 underline-offset-2"
               >
-                ultimate ATS resume guide
+                Job Description Match
               </Link>
               .
             </p>

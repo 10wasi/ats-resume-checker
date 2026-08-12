@@ -34,9 +34,9 @@ const HUB_LINKS = [
     desc: "Complete optimization playbook",
   },
   {
-    href: "/interview-question-generator",
-    title: "Interview Guides",
-    desc: "Role-specific questions & STAR tips",
+    href: "/ats-resume-checklist-2026",
+    title: "ATS Checklist",
+    desc: "Pre-submit format & keyword QA",
   },
   {
     href: "/resume-examples",

@@ -19,9 +19,11 @@ export const metadata = buildCtrMetadata(CTR_RESUME_CHECKER, {
   absoluteTitle: true,
   keywords: [
     "resume checker",
+    "ATS resume checker",
     "resume score checker",
     "free resume checker online",
-    "ATS resume checker",
+    "ATS score checker",
+    "resume ATS parser",
   ],
 });
 

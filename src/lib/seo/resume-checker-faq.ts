@@ -3,6 +3,11 @@ import { CORE_CHECKER_FREE_ANSWER, RESUME_STORAGE_FAQ_ANSWER } from "@/lib/seo/t
 
 export const resumeCheckerFaqItems: FaqItem[] = [
   {
+    question: "What does an ATS resume checker evaluate?",
+    answer:
+      "Parse quality (text extraction order), ATS compatibility score, keyword coverage, format flags, and—when you paste a job description—match percentage and missing terms. Fix layout issues before chasing keywords.",
+  },
+  {
     question: "What is a resume checker?",
     answer:
       "A resume checker analyzes how applicant tracking systems likely read your file—parse health, keyword coverage, format flags, and an ATS score. ResumeIQ adds job-description match, missing keywords, checklist, and summary feedback in one free flow.",
